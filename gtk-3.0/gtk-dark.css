@@ -6018,8 +6018,8 @@ ConversationListView {
   font-weight: bold; }
 
 .nemo-window .places-treeview {
-  -NemoPlacesTreeView-disk-full-bg-color: #272f51;
-  -NemoPlacesTreeView-disk-full-fg-color: #00e8c6;
+  -NemoPlacesTreeView-disk-full-bg-color: #384373;
+  -NemoPlacesTreeView-disk-full-fg-color: #ff6a00;
   -GtkTreeView-vertical-separator: 7; }
   .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:hover {
