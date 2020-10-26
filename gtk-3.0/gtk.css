@@ -5520,6 +5520,14 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   border-radius: 0;
   box-shadow: none; }
 
+/*xfce timer color*/
+#xfce4-timer-plugin-19 progress {
+  background-color: #ff6a00;
+  border-color: #ff6a00; }
+#xfce4-timer-plugin-19 trough {
+  background-color: #BFC3CD;
+  border-color: #ff6a00; }
+
 /********
  * Gala *
  *******/

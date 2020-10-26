@@ -95,3 +95,15 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   border-radius: 0;
   box-shadow: none;
 }
+
+/*xfce timer color*/
+#xfce4-timer-plugin-19 {
+	progress {
+		background-color: $selected_bg_color;
+		border-color: $selected_bg_color;
+	}
+	trough {
+		background-color: $fg_color;
+		border-color: $selected_bg_color;
+	}
+}
