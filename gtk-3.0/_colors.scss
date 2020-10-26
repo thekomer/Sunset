@@ -27,6 +27,7 @@ $selected_bg_color: #ff6a00;
 //$selected_bg_color: #f7005a;
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
+$highlight_text_color: darken($selected_bg_color, 10%);
 $borders_color: if($variant == 'light', transparentize(black,0.87), transparentize(#0C0E15,0.2));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 

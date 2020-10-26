@@ -4,9 +4,9 @@
 
 // the panel widget at the top
 #panel_window {
-  background-color: $panel_bg_color;
+  background-color: transparentize($panel_bg_color, 0.20);
   color: $panel_fg_color;
-  font-weight: bold;
+  font-weight: normal;
   box-shadow: inset 0 -1px darken($panel_bg_color, 7%);
 
   // the menubars/menus of the panel, i.e. indicators
@@ -43,7 +43,7 @@
 // the top half of the login-window, in GtkDialog terms, the content
 #content_frame {
   padding-bottom: 14px;
-  background-color: $bg_color;
+  background-color: transparentize($bg_color, 0.20);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border: solid transparentize(black, 0.9);
@@ -63,7 +63,7 @@
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: if($variant=='light', $osd_bg_color, $headerbar_color);
+  background-color: transparentize($bg_color, 0.20);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid transparentize(black, 0.9);
@@ -80,8 +80,6 @@
 
 #login_window #user_combobox {
   color: $fg_color;
-  font-size: 13px;
-
   .menu,
   menu { font-weight: normal; }
 }
