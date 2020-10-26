@@ -2,8 +2,8 @@ $corner-radius: 2px;
 
 
 /* GLOBALS */
-$font-size: 10;
-$font-family: Roboto,Ubuntu, Cantarell, Sans-Serif;
+$font-size: 12;
+$font-family: Roboto, Ubuntu, Cantarell, Sans-Serif;
 $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
@@ -113,12 +113,12 @@ StScrollBar {
 
 .slider {
   height: 1em;
-  color: darken($selected_fg_color, 25%);
+  color: darken($selected_fg_color, 15%);
   border-color: black;
-  -slider-height: 0.1em;
+  -slider-height: 0.2em;
   -slider-background-color: $gray; //background of the trough
   -slider-border-color: black; //trough border color
-  -slider-active-background-color: $yellow; //active trough fill
+  -slider-active-background-color: $orange; //active trough fill
   -slider-active-border-color: $lime; //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
@@ -126,11 +126,11 @@ StScrollBar {
   -barlevel-height: 0.1em;
   -barlevel-background-color: $gray;
   -barlevel-border-color: black;
-  -barlevel-active-background-color: $yellow;
+  -barlevel-active-background-color: $orange;
   -barlevel-active-border-color: $lime;
   -barlevel-border-width: 0;
   -barlevel-handle-radius: 6px;
-  -barlevel-overdrive-color: $yellow;
+  -barlevel-overdrive-color: $orange;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
 }
@@ -318,7 +318,7 @@ StScrollBar {
 
   .end-session-dialog-app-list-item-description {
     color: darken($fg_color,5%);
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
 /* ShellMountOperation Dialogs */
@@ -375,7 +375,7 @@ StScrollBar {
   }
 
   .mount-dialog-app-list-item-name {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
 
@@ -402,13 +402,13 @@ StScrollBar {
   }
 
   .prompt-dialog-error-label {
-    font-size: 10pt;
+    font-size: 12pt;
     color: $error_color;
     padding-bottom: 8px;
   }
 
   .prompt-dialog-info-label {
-    font-size: 10pt;
+    font-size: 12pt;
     padding-bottom: 8px;
   }
 
@@ -417,7 +417,7 @@ StScrollBar {
   }
 
   .prompt-dialog-null-label {
-    font-size: 10pt;
+    font-size: 12pt;
     padding-bottom: 8px;
   }
 
@@ -1445,7 +1445,7 @@ StScrollBar {
   /* DASHBOARD */
 
   #dash {
-    font-size: 9pt;
+    font-size: 11pt;
     color: $topbar_color;
     background-color: $topbar_bg_color;
     padding: 6px 0;
@@ -1680,7 +1680,7 @@ StScrollBar {
 
   // Banners
   .notification-banner {
-    font-size: 11pt;
+    font-size: 12pt;
     width: 34em;
     margin: 5px;
     border-radius: 3px;
@@ -1711,7 +1711,7 @@ StScrollBar {
     }
   }
   .summary-source-counter {
-    font-size: 10pt;
+    font-size: 12pt;
     font-weight: bold;
     height: 1.6em; width: 1.6em;
     -shell-counter-overlap-x: 3px;
@@ -1741,7 +1741,7 @@ StScrollBar {
   }
   .chat-meta-message {
     padding-left: 4px;
-    font-size: 9pt;
+    font-size: 11pt;
     font-weight: bold;
     color: darken($fg_color,20%);
     &:rtl { padding-left: 0; padding-right: 4px; }
@@ -2160,3 +2160,4 @@ StScrollBar {
     border-radius: 4px;
     padding: 6px;
   }
+
