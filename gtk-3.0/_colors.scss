@@ -83,9 +83,10 @@ $info_color: $orange;
 $question_color: $cyan;
 
 // Panel colors
-$panel_bg_color: rgba($base_color, 1);
+$panel_darker: #06060A;
+$panel_bg_color: rgba($panel_darker, 0.85); //$panel_bg_color: rgba($base_color, 1);
 $panel_fg_color: white;
-$panel_borders_color: rgba($base_color, 0.8);
+$panel_borders_color: rgba($panel_darker, 0.8); //$panel_borders_color: rgba($base_color, 0.8);
 
 // Disabled state colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
