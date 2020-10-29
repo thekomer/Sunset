@@ -38,9 +38,9 @@
     }
     &:active, &:checked {
       color: $selected_fg_color;
-      // /* to underline button */ border-bottom: 2px solid $selected_bg_color; background-color: lighten($panel_bg_color, 15%);
-      // /* to gradient panel buttons */ @include button(active-header); border-radius: 10px;
-			background-color: transparentize($selected_bg_color, 0.6);
+      border-bottom: 2px solid $selected_bg_color;
+      // background-color: lighten($panel_bg_color, 15%);
+
       label, image { color: inherit; }
     }
   }
