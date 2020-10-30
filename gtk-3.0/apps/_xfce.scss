@@ -50,14 +50,43 @@
     }
   }
 
+/***************************
+ * xfce timer plugin color *
+ ***************************/
+
+#xfce4-timer-plugin-19 {
+	progress {
+		background-color: $selected_bg_color;
+		border-color: $selected_bg_color;
+	}
+	trough {
+		background-color: $fg_color;
+		border-color: $selected_bg_color;
+	}
+}
+
+/*****************************
+ * Workspace switcher plugin *
+ * ***************************/
+
+/*wnck-pager {
+	&:selected {
+		background-color: lightblue;
+	}
+	&:hover {
+		background-color: gray;
+	}
+}
+*/
+
 /****************
-/* Whisker menu *
+ * Whisker menu *
  ****************/
 
 // general
 #whiskermenu-window {
-	color: #fg_color;
-	background-color: #bg_color;
+	color: $fg_color;
+	background-color: $bg_color;
 }
 
 
@@ -89,13 +118,13 @@
 		&:selected {
 			background-color: $selected_bg_color;
 			color: $selected_fg_color;
-			outline-color: #borders_color;
+			outline-color: $borders_color;
 		}
 	}
 }
 
 /**********
-/* thunar *
+ * thunar *
  **********/
 .thunar toolbar {
   background-color: $headerbar_color;
@@ -131,17 +160,3 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   box-shadow: none;
 }
 
-/***************************
- * xfce timer plugin color *
- ***************************/
-
-#xfce4-timer-plugin-19 {
-	progress {
-		background-color: $selected_bg_color;
-		border-color: $selected_bg_color;
-	}
-	trough {
-		background-color: $fg_color;
-		border-color: $selected_bg_color;
-	}
-}

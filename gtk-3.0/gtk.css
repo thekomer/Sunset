@@ -5475,12 +5475,34 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
+/***************************
+ * xfce timer plugin color *
+ ***************************/
+#xfce4-timer-plugin-19 progress {
+  background-color: #ff6a00;
+  border-color: #ff6a00; }
+#xfce4-timer-plugin-19 trough {
+  background-color: #BFC3CD;
+  border-color: #ff6a00; }
+
+/*****************************
+ * Workspace switcher plugin *
+ * ***************************/
+/*wnck-pager {
+	&:selected {
+		background-color: lightblue;
+	}
+	&:hover {
+		background-color: gray;
+	}
+}
+*/
 /****************
-/* Whisker menu *
+ * Whisker menu *
  ****************/
 #whiskermenu-window {
-  color: #fg_color;
-  background-color: #bg_color; }
+  color: #BFC3CD;
+  background-color: #0E111D; }
 
 #whiskermenu-window button {
   background-color: transparent;
@@ -5503,10 +5525,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #whiskermenu-window treeview:selected {
     background-color: #ff6a00;
     color: #fefefe;
-    outline-color: #borders_color; }
+    outline-color: rgba(12, 14, 21, 0.8); }
 
 /**********
-/* thunar *
+ * thunar *
  **********/
 .thunar toolbar {
   background-color: #06060a; }
@@ -5542,16 +5564,6 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   color: white;
   border-radius: 0;
   box-shadow: none; }
-
-/***************************
- * xfce timer plugin color *
- ***************************/
-#xfce4-timer-plugin-19 progress {
-  background-color: #ff6a00;
-  border-color: #ff6a00; }
-#xfce4-timer-plugin-19 trough {
-  background-color: #BFC3CD;
-  border-color: #ff6a00; }
 
 /********
  * Gala *
@@ -6054,8 +6066,7 @@ ConversationListView {
     background: #ff6a00; }
 .nemo-window .sidebar {
   color: #98abb2;
-  #        background-color: #0E111D;
-  background-color: #0B0D16; }
+  background: #0b0d16; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
@@ -6080,7 +6091,7 @@ ConversationListView {
     border: none;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: 24px; }
+    min-height: 24px; }
     .nemo-window toolbar.primary-toolbar button:hover {
       color: #ff6a00; }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {

@@ -16,8 +16,7 @@
 
     .sidebar {
         color: #98abb2;
-#        background-color: $_sidebar_color;
-        background-color: #0B0D16;
+        background: darken($_sidebar_color, 2%);
         .view, .iconview, row {
             background-color: transparent;
         }
@@ -50,7 +49,7 @@
             @include button(normal-header);
             margin-top: 5px;
             margin-bottom: 5px;
-            height: 24px;
+            min-height: 24px;
             &:hover { color: $selected_bg_color; }
             &:selected,
             &:active,
