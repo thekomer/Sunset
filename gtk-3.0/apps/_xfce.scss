@@ -127,10 +127,16 @@ wnck-pager {
     padding: 2px;
     margin: 1px 0px;
     &:hover {
-        background-color: transparentize($selected_bg_color, 0.6);
+        //background-color: transparentize($selected_bg_color, 0.6);
+        @include button(hover-header2);
+        border-radius: 0;
+        box-shadow: none;
     }
     &:checked {
-        background-color: $selected_bg_color;
+        // background-color: $selected_bg_color;
+				@include button(active-header);
+				border-radius: 0;
+				box-shadow: none;
     }
 }
 

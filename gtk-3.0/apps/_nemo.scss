@@ -16,7 +16,8 @@
 
     .sidebar {
         color: #98abb2;
-        background: darken($_sidebar_color, 2%);
+        // background: darken($_sidebar_color, 2%);
+        background: $headerbar_color;
         .view, .iconview, row {
             background-color: transparent;
         }
@@ -56,5 +57,4 @@
             &:checked { @include button(active-header); }
         }
     }
-
 }
