@@ -5467,14 +5467,31 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .xfce4-panel.panel button.flat:hover {
     color: #fefefe;
     border: none;
-    background-color: rgba(255, 106, 0, 0.2); }
+    background-color: rgba(255, 106, 0, 0.3);
+    border-radius: 5px; }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
     color: #fefefe;
-    background-color: rgba(255, 106, 0, 0.5);
-    border-radius: 9px; }
+    /* to underline button */
+    /* to gradient transparent panel buttons */
+    background: linear-gradient(to right, rgba(255, 53, 0, 0.6), rgba(255, 159, 0, 0.6));
+    box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
+    border-radius: 5px; }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
+/*****************************
+ * Workspace switcher plugin *
+ * ***************************/
+/*
+wnck-pager {
+	&:selected {
+		background-color: #ff0000;
+	}
+	&:hover {
+		background-color: #777777;
+	}
+}
+*/
 /***************************
  * xfce timer plugin color *
  ***************************/
@@ -5485,18 +5502,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   background-color: #BFC3CD;
   border-color: #ff6a00; }
 
-/*****************************
- * Workspace switcher plugin *
- * ***************************/
-/*wnck-pager {
-	&:selected {
-		background-color: lightblue;
-	}
-	&:hover {
-		background-color: gray;
-	}
-}
-*/
 /****************
  * Whisker menu *
  ****************/
