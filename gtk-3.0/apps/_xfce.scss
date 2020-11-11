@@ -2,56 +2,81 @@
  * Xfce Panel *
  **************/
 .xfce4-panel.panel {
-    background-color: $panel_bg_color;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-     button.flat { @extend %panelbutton; }
-  }
+	background-color: $panel_bg_color;
+	text-shadow: none;
+	-gtk-icon-shadow: none;
+	button { @extend %panelbutton; }
+	button.flat { @extend %panelbuttonflat; }
+}
 
-  #tasklist-button {
-    color: transparentize($panel_fg_color, 0.2);
-    border-radius: 0;
-    border: none;
-    background-color: transparentize($panel_bg_color, 1);
+#tasklist-button {
+	color: transparentize($panel_fg_color, 0.2);
+	border-radius: 0;
+	border: none;
+	background-color: transparentize($panel_bg_color, 1);
 
-    &:hover {
-      color: lighten($panel_fg_color, 10%);
-      background-color: transparentize(black, 0.83);
-    }
+	&:hover {
+		color: lighten($panel_fg_color, 10%);
+		background-color: transparentize(black, 0.83);
+	}
 
-    &:checked {
-      color: white;
-      background-color: transparentize(black, 0.75);
-      box-shadow: inset 0 -2px $selected_bg_color;
-    }
+	&:checked {
+		color: white;
+		background-color: transparentize(black, 0.75);
+		box-shadow: inset 0 -2px $selected_bg_color;
+	}
+}
 
-  }
+%panelbutton {
+	color: $panel_fg_color;
+	border-radius: 0;
+	border: none;
+	background-color: transparentize($panel_bg_color, 1);
 
-  %panelbutton {
-    color: $panel_fg_color;
-    border-radius: 0;
-    border: none;
-    background-color: transparentize($panel_bg_color, 1);
+	&:hover {
+		color: $selected_fg_color;
+		border: none;
+		//background-color: lighten($panel_bg_color, 10%);
+		background-color: transparentize($selected_bg_color, 0.7);
+		border-radius: 7px;
+	}
+	&:active, &:checked {
+		color: $selected_fg_color;
+		font-weight: bold;
+		/* to underline button */
+			// border-bottom: 2px solid $selected_bg_color;
+			// background-color: lighten($panel_bg_color, 15%);
+		/* to gradient transparent panel buttons */
+		background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
+		box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
+		border-radius: 7px;
+		label, image { color: inherit; }
+	}
+}
 
-    &:hover {
-			color: $selected_fg_color;
-      border: none;
-      //background-color: lighten($panel_bg_color, 10%);
-      background-color: transparentize($selected_bg_color, 0.7);
-      border-radius: 5px;
-    }
-    &:active, &:checked {
-      color: $selected_fg_color;
-      /* to underline button */
-      // border-bottom: 2px solid $selected_bg_color;
-      // background-color: lighten($panel_bg_color, 15%);
-      /* to gradient transparent panel buttons */
-      background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
-      box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
-			border-radius: 5px;
-      label, image { color: inherit; }
-    }
-  }
+%panelbuttonflat {
+	color: $panel_fg_color;
+	border-radius: 0;
+	border: none;
+	background-color: transparentize($panel_bg_color, 1);
+
+	&:hover {
+		color: $selected_fg_color;
+		border: none;
+		background-color: transparentize($selected_bg_color, 0.7);
+		border-radius: 0px;
+	}
+	&:active, &:checked {
+		color: $selected_fg_color;
+		font-weight: bold;
+		/* to underline button */
+			// border-bottom: 2px solid $selected_bg_color;
+			// background-color: lighten($panel_bg_color, 15%);
+		background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
+		border-radius: 0px;
+		label, image { color: inherit; }
+	}
+}
 
 /*****************************
  * Workspace switcher plugin *
@@ -92,7 +117,6 @@ wnck-pager {
 	color: $fg_color;
 	background-color: $bg_color;
 }
-
 
 // category button
 #whiskermenu-window button {
