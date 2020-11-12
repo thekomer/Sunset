@@ -3770,7 +3770,7 @@ treeview ~ scrollbar.vertical {
     padding: 8px 12px;
     transition: all .12s ease-in; }
     .sidebar row label {
-      color: #98abb2; }
+      color: rgba(191, 195, 205, 0.8); }
     .sidebar row:selected {
       color: #fefefe; }
       .sidebar row:selected:backdrop {
