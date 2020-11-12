@@ -3,7 +3,7 @@
  ************/
 .nautilus-window {
   .frame{
-    *:selected, *:selected:backdrop{
+    *:selected, *:selected:backdrop {
       background: transparent;
       color: $selected_bg_color;
       label {
