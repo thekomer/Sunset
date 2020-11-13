@@ -3813,7 +3813,7 @@ stacksidebar row {
 /*******************************************************************/
 /*--*/
 placessidebar.sidebar {
-  background-color: #000000;
+  background-color: transparent;
   /* background-image:linear-gradient(to right, #171e27 40px,
   										$_sidebar_color 35px,$_sidebar_color 36px,
   										$_sidebar_color 36px,$_sidebar_color 99%,
