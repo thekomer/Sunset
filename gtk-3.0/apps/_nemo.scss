@@ -1,25 +1,28 @@
 .nemo-window {
-    .places-treeview {
+     .places-treeview {
         -NemoPlacesTreeView-disk-full-bg-color: lighten($_sidebar_color, 25%);
-        -NemoPlacesTreeView-disk-full-fg-color: $orange;
+        -NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 15%);
+        -NemoPlacesTreeView-disk-full-max-length: 100px;
         -GtkTreeView-vertical-separator: 7;
         .view.cell,
-        iconview.cell {
-            &:hover {
-                background: transparentize(darken($_sidebar_color, 3%), 0.3);
-            }
-            &:selected {
-                background: $selected_bg_color;
-            }
-        }
+        iconview.cell { }
     }
 
-    .sidebar {
-        color: #98abb2;
+    .sidebar, statusbar {
+        color: darken($fg_color, 2%);
         // background: darken($_sidebar_color, 2%);
-        background: $headerbar_color;
+        background: darken($_sidebar_color, 2%);
         .view, .iconview, row {
             background-color: transparent;
+            &:hover {
+								color: $selected_bg_color;
+                background: transparentize(darken($_sidebar_color, 3%), 0.3);
+            }
+            &:selected, &:active, &:checked {
+							color: $selected_fg_color;
+              // background: linear-gradient(to right, $my-gradient-start 0%, $my-gradient-end 100%);
+              background: $selected_bg_color;
+						}
         }
     }
 
@@ -48,6 +51,7 @@
         background: $headerbar_color;
         button {
             @include button(normal-header);
+            color: darken($fg_color, 3%);
             margin-top: 5px;
             margin-bottom: 5px;
             min-height: 24px;
@@ -57,4 +61,5 @@
             &:checked { @include button(active-header); }
         }
     }
+
 }

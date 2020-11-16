@@ -2,7 +2,7 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: if($variant == 'light', #ebf0f5, lighten(#0E111D, 1%));
+$base_color: if($variant == 'light', #ebf0f5, lighten(#0E111D, 2%));
 $text_color: if($variant == 'light', #31363D, #BFC3CD);
 $bg_color: if($variant == 'light', darken( #EEEEEE, 3%), #0E111D);
 $fg_color: if($variant == 'light', #31363d, #BFC3CD);
@@ -21,7 +21,7 @@ $blue: #7cb7ff;
 $cyan: #00c1e4;
 $slider: #7b7bbd;
 $teal: #00e8c6;
-$myorange: #ff6a00;
+$myorange: $orange;
 $selected_fg_color: #fefefe;
 $selected_bg_color: #ff6a00;
 //$selected_bg_color: #f7005a;
