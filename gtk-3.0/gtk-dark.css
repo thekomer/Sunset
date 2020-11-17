@@ -5878,6 +5878,10 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   border-radius: 0;
   box-shadow: none; }
 
+window.thunar statusbar {
+  color: #b9bec9;
+  background: #0b0d16; }
+
 /********
  * Gala *
  *******/

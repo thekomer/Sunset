@@ -194,3 +194,8 @@ window.thunar paned > scrolledwindow treeview.view:selected {
   box-shadow: none;
 }
 
+// thunar statusbar
+window.thunar statusbar {
+	color: darken($fg_color, 2%);
+	background: darken($_sidebar_color, 2%);
+}
