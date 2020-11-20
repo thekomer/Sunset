@@ -56,7 +56,7 @@
  * * * * * * */ 
 
 @mixin gradient($direction, $start, $end, $alpha) {
-	background-gradient-direction: $direction;
+	background-gradient-direction: $dir;
   background-gradient-start: rgba($start, $alpha);
   background-gradient-end: rgba($end, $alpha);
 }

@@ -22,7 +22,6 @@ $base_color: if($variant =='light', #ffffff, lighten(#0E111D, 3%));
 $text_color: if($variant == 'light', #202020, #BFC3CD);
 $bg_color: if($variant =='light', #F0F0F0, #0E111D);
 $fg_color: if($variant =='light', #202020, #BFC3CD);
-$accent_color: $orange;
 $selected_fg_color: #fefefe;
 $selected_bg_color: if($variant == 'light', #92b372, $orange);
 
