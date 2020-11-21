@@ -42,10 +42,10 @@
 
 // the top half of the login-window, in GtkDialog terms, the content
 #content_frame {
-  padding-bottom: 14px;
+  padding-bottom: 10px;
   background-color: transparentize($bg_color, 0.20);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   border: solid transparentize(black, 0.9);
   border-width: 1px 1px 0 1px;
 }
@@ -60,12 +60,12 @@
 
 // the lower half of the login-window, in GtkDialog terms the buttonbox or action area
 #buttonbox_frame {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 0px;
   border-style: none;
   background-color: transparentize($bg_color, 0.20);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   border: solid transparentize(black, 0.9);
   border-width: 0 1px 1px 1px;
 }
@@ -87,7 +87,7 @@
 // the user's avatar box
 #user_image {
   padding: 3px;
-  border-radius: 2px;
+  border-radius: 7px;
 }
 
 // the shutdown button
