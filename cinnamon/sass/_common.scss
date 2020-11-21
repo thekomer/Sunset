@@ -134,23 +134,20 @@ StScrollBar {
 .slider {
   -slider-height: 0.3em;
     //background of the trough
-  -slider-background-color: transparentize($fg_color, 0.7);
+  -slider-background-color: transparentize($fg_color, 0.5);
   	//trough border color
   -slider-border-color: transparentize($bg_color, 0.7);
   	//active trough fill
   -slider-active-background-color: $selected_bg_color;
   	//active trough border
   -slider-active-border-color: transparentize($bg_color, 0.7);
-  -slider-border-width: 1px;
+  -slider-border-width: 2px;
   -slider-handle-radius: 0.5em;
   height: 1em;
   min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  &:hover, &:active {
-  	-slider-active-background-color: $selected_fg_color;
-  }
 }
 
 /* * * * * * * * 
@@ -1407,13 +1404,13 @@ StScrollBar {
   }
 
   &-item-label {
-    font-weight: bold;
+    font-weight: normal;
     width: 15em;
     min-width: 5px;
   }
 
   &-item-box {
-    font-weight: bold;
+    font-weight: normal;
     background-image: none;
     padding-top: 0;
     padding-left: 8px;
@@ -1447,7 +1444,9 @@ StScrollBar {
     &:hover,
     &:groupFocus {
       color: $selected_fg_color;
-      background-color: transparentize($selected_fg_color, 0.9);
+      border-radius: 7px;
+      @include gradient(horizontal, $orange_gradient_start,
+      	$orange_gradient_end, 0.5);
     }
 
     &:active,
@@ -1455,7 +1454,12 @@ StScrollBar {
     &:focus,
     &:running {
       color: $selected_fg_color;
-      border-color: $selected_bg_color;
+      @include gradient(horizontal, $orange_gradient_start,
+      	$orange_gradient_end, 0.7);
+      &:hover{
+      	@include gradient(horizontal, $orange_gradient_start,
+      	$orange_gradient_end, 1);
+      }
     }
 
     & .progress {
@@ -1464,9 +1468,8 @@ StScrollBar {
   }
 
   &-item-demands-attention {
-    background-gradient-direction: vertical;
-    background-gradient-start: $destructive_color;
-    background-gradient-end: $destructive_color;
+    @include gradient(horizontal, $destructive_color,
+      	$destructive_color, 1);
   }
 
   &-preview {
@@ -1570,12 +1573,18 @@ StScrollBar {
 
   &-number-label {
     z-index: 99;
-    color: $tooltip_border_color;
+    color: $white;
+    font-size: 0.3em;
+    font-weight: 600;
+    text-shadow: none;
   }
 
   &-badge {
+    border-width: 0px;
+    border-color: $selected_bg_color;
     border-radius: 256px;
-    background-color: $accent_color;
+    background-color: $black;
+    color: $panel_fg;
   }
 
   &-button-label {
@@ -1744,9 +1753,9 @@ StScrollBar {
     padding: 0;
     border: none;
     -slider-height: 0.5em;
-    -slider-background-color: if($variant == 'light', $button_border, darken($bg_color, 5%));
+    -slider-background-color: if($variant == 'light', $button_border, lighten($bg_color, 10%));
     -slider-border-color: rgba(0,0,0,0);
-    -slider-active-background-color: $selected_bg_color;
+    -slider-active-background-color: $selected_bg_color;    
 	  -slider-active-border-color: rgba(0,0,0,0);
     -slider-border-width: 1px;
     -slider-handle-radius: 0px;
@@ -1776,34 +1785,38 @@ StScrollBar {
 .workspace-button {
   border: 1px solid transparentize(black, 0.6);
   background-color: transparentize(black, 0.8);
-  width: 20px;
-  height: 14px;
-  color: transparentize($selected_fg_color, 0.55);
-  padding: 3px;
+  width: 1em;//width: 20px;
+  height: 1em;//height: 14px;
+  color: transparentize($panel_fg, 0.50);
+  padding: 1px;
   padding-top: 4px;
   transition-duration: 200;
 
   &.vertical {
-    height: 1.5em;
-    width: 24px;
+    height: 1.2em;// 1.5em;
+    width: 1em;//24px;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 1px;
     padding-bottom: 3px;
   }
 
   &:outlined {
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
+    //background-color: $selected_bg_color;
+    color: $selected_bg_color;
 
     &:hover {
-      background-color: transparentize($selected_bg_color, 0.3);
+      @include gradient(horizontal, $orange_gradient_start,
+      	$orange_gradient_end, 0.5);
       color: $selected_fg_color;
+      border-radius: 7px;
     }
   }
 
   &:hover {
-    background-color: transparentize($fg_color, 0.8);
+    @include gradient(horizontal, $orange_gradient_start,
+    	$orange_gradient_end, 0.5);
     color: $selected_fg_color;
+    border-radius: 7px;
   }
 }
 

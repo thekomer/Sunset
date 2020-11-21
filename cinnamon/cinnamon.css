@@ -147,21 +147,17 @@ StScrollBar {
 .popup-slider-menu-item,
 .slider {
   -slider-height: 0.3em;
-  -slider-background-color: rgba(191, 195, 205, 0.3);
+  -slider-background-color: rgba(191, 195, 205, 0.5);
   -slider-border-color: rgba(14, 17, 29, 0.3);
   -slider-active-background-color: #ff6a00;
   -slider-active-border-color: rgba(14, 17, 29, 0.3);
-  -slider-border-width: 1px;
+  -slider-border-width: 2px;
   -slider-handle-radius: 0.5em;
   height: 1em;
   min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px; }
-  .popup-slider-menu-item:hover, .popup-slider-menu-item:active,
-  .slider:hover,
-  .slider:active {
-    -slider-active-background-color: #fefefe; }
 
 /* * * * * * * * 
  * Check Boxes *
@@ -243,7 +239,7 @@ StScrollBar {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 3px;
   padding: 5px 12px;
-  background-color: #131727;
+  background-color: #06070c;
   color: #BFC3CD;
   font-size: 1em;
   font-weight: normal;
@@ -1197,12 +1193,12 @@ StScrollBar {
     background-color: rgba(230, 0, 0, 0.5); }
 
 .window-list-item-label {
-  font-weight: bold;
+  font-weight: normal;
   width: 15em;
   min-width: 5px; }
 
 .window-list-item-box {
-  font-weight: bold;
+  font-weight: normal;
   background-image: none;
   padding-top: 0;
   padding-left: 8px;
@@ -1227,15 +1223,24 @@ StScrollBar {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
     color: #fefefe;
-    background-color: rgba(254, 254, 254, 0.1); }
+    border-radius: 7px;
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255, 53, 0, 0.5);
+    background-gradient-end: rgba(255, 159, 0, 0.5); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
     color: #fefefe;
-    border-color: #ff6a00; }
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255, 53, 0, 0.7);
+    background-gradient-end: rgba(255, 159, 0, 0.7); }
+    .window-list-item-box:active:hover, .window-list-item-box:checked:hover, .window-list-item-box:focus:hover, .window-list-item-box:running:hover {
+      background-gradient-direction: horizontal;
+      background-gradient-start: #ff3500;
+      background-gradient-end: #ff9f00; }
   .window-list-item-box .progress {
     background-color: rgba(255, 106, 0, 0.8); }
 
 .window-list-item-demands-attention {
-  background-gradient-direction: vertical;
+  background-gradient-direction: horizontal;
   background-gradient-start: #cc0000;
   background-gradient-end: #cc0000; }
 
@@ -1318,11 +1323,17 @@ StScrollBar {
 
 .grouped-window-list-number-label {
   z-index: 99;
-  color: rgba(255, 255, 255, 0.1); }
+  color: #ffffff;
+  font-size: 0.3em;
+  font-weight: 600;
+  text-shadow: none; }
 
 .grouped-window-list-badge {
+  border-width: 0px;
+  border-color: #ff6a00;
   border-radius: 256px;
-  background-color: #ff6a00; }
+  background-color: #000000;
+  color: #BFC3CD; }
 
 .grouped-window-list-button-label {
   padding-left: 4px; }
@@ -1463,7 +1474,7 @@ StScrollBar {
   padding: 0;
   border: none;
   -slider-height: 0.5em;
-  -slider-background-color: #06070c;
+  -slider-background-color: #1f253f;
   -slider-border-color: rgba(0, 0, 0, 0);
   -slider-active-background-color: #ff6a00;
   -slider-active-border-color: rgba(0, 0, 0, 0);
@@ -1487,27 +1498,32 @@ StScrollBar {
 .workspace-button {
   border: 1px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.2);
-  width: 20px;
-  height: 14px;
-  color: rgba(254, 254, 254, 0.45);
-  padding: 3px;
+  width: 1em;
+  height: 1em;
+  color: rgba(191, 195, 205, 0.5);
+  padding: 1px;
   padding-top: 4px;
   transition-duration: 200; }
   .workspace-button.vertical {
-    height: 1.5em;
-    width: 24px;
+    height: 1.2em;
+    width: 1em;
     padding: 0;
-    padding-top: 3px;
+    padding-top: 1px;
     padding-bottom: 3px; }
   .workspace-button:outlined {
-    background-color: #ff6a00;
-    color: #fefefe; }
+    color: #ff6a00; }
     .workspace-button:outlined:hover {
-      background-color: rgba(255, 106, 0, 0.7);
-      color: #fefefe; }
+      background-gradient-direction: horizontal;
+      background-gradient-start: rgba(255, 53, 0, 0.5);
+      background-gradient-end: rgba(255, 159, 0, 0.5);
+      color: #fefefe;
+      border-radius: 7px; }
   .workspace-button:hover {
-    background-color: rgba(191, 195, 205, 0.2);
-    color: #fefefe; }
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255, 53, 0, 0.5);
+    background-gradient-end: rgba(255, 159, 0, 0.5);
+    color: #fefefe;
+    border-radius: 7px; }
 
 /* Controls the style when using the "Visual representation" option */
 .workspace-graph {

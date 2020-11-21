@@ -22,6 +22,7 @@ $base_color: if($variant =='light', #ffffff, lighten(#0E111D, 3%));
 $text_color: if($variant == 'light', #202020, #BFC3CD);
 $bg_color: if($variant =='light', #F0F0F0, #0E111D);
 $fg_color: if($variant =='light', #202020, #BFC3CD);
+$accent_color: $orange;
 $selected_fg_color: #fefefe;
 $selected_bg_color: if($variant == 'light', #92b372, $orange);
 
@@ -47,7 +48,7 @@ $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_b
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
 
 // Tooltip
-$tooltip_bg_color: $base_color;
+$tooltip_bg_color: $bg_color;
 $tooltip_fg_color: $fg_color;
 $tooltip_border_color: transparentize(white, 0.9);
 

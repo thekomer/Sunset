@@ -48,7 +48,7 @@ $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_b
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
 
 // Tooltip
-$tooltip_bg_color: $base_color;
+$tooltip_bg_color: darken($bg_color, 5%);
 $tooltip_fg_color: $fg_color;
 $tooltip_border_color: transparentize(white, 0.9);
 
