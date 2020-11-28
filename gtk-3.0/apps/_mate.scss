@@ -2,7 +2,7 @@
  * Caja file manager *
  * * * * * * * * * * */
 
-// sidebar & sidebar buttons color 
+// sidebar & sidebar buttons color
 
 .caja-side-pane {
 	color: darken($fg_color, 2%);
@@ -13,7 +13,7 @@
 			color: $selected_fg_color;
 /*			background: linear-gradient(to right,
 				transparentize($my-gradient-start, 0.6) 0%,
-				transparentize($my-gradient-end, 0.6) 100%);		*/	
+				transparentize($my-gradient-end, 0.6) 100%);		*/
 			background: transparentize($selected_bg_color, 0.6);
 		}
 		&:selected, &:active, &:checked {
@@ -37,7 +37,8 @@
 
 MsdOsdWindow.background.osd {
   color: $osd_fg_color;
-  border: none;
+  border: 1px solid $borders_color;
+  border-radius: 9px;
   background-color: $osd_bg_color;
   background-clip: padding-box;
   box-shadow: none;

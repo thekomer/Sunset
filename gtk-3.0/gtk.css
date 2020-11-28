@@ -6452,7 +6452,8 @@ ConversationListView {
  * * * * * * * */
 MsdOsdWindow.background.osd {
   color: #fefefe;
-  border: none;
+  border: 1px solid rgba(12, 14, 21, 0.8);
+  border-radius: 9px;
   background-color: rgba(20, 23, 26, 0.8);
   background-clip: padding-box;
   box-shadow: none; }
