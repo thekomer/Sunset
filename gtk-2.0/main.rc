@@ -2425,7 +2425,7 @@ style "toolbar_button" {
   ythickness = 2
 
   GtkButton::inner-border = {2, 2, 2, 2}
-  
+
       engine "pixmap" {
     image {
       function = BOX
@@ -2517,9 +2517,9 @@ style "disable_separator" {
 
 }
 
-# Text Style
+#Text Style
 style "text" = "default" {
-  engine "murrine" { textstyle = 0 }
+	engine "murrine" { textstyle = 0 }
 }
 
 style "menu_text" = "menu_item" {
@@ -2609,7 +2609,7 @@ widget "gtk-tooltip*" style "tooltip"
 
 # Fixes ugly text shadows for insensitive text
 widget_class "*<GtkLabel>"                                          style "text"
-widget_class "*<GtkMenu>*<GtkLabel>"                                style "menu_text" 
+widget_class "*<GtkMenu>*<GtkLabel>"                                style "menu_text"
 widget_class "*<GtkComboBox>*<GtkCellLayout>"                       style "text"
 widget_class "*<GtkNotebook>*<GtkLabel>"                            style "text"
 widget_class "*<GtkNotebook>*<GtkCellLayout>"                       style "text"
