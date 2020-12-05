@@ -9,9 +9,9 @@ stage {
 }
 
 /* * * * * *
- * Buttons * 
+ * Buttons *
  * * * * * */
- 
+
 %button {
   min-height: 20px;
   padding: 5px 32px;
@@ -47,7 +47,7 @@ stage {
 /* * * * * *
  * Entries *
  * * * * * */
- 
+
 %entry {
   padding: 7px;
   caret-size: 1px;
@@ -129,7 +129,7 @@ StScrollBar {
 /* * * * * *
  * Slider  *
  * * * * * */
- 
+
 .popup-slider-menu-item,
 .slider {
   -slider-height: 0.3em;
@@ -150,10 +150,10 @@ StScrollBar {
   border-left-width: 5px;
 }
 
-/* * * * * * * * 
+/* * * * * * * *
  * Check Boxes *
  * * * * * * * */
- 
+
 .check-box {
 
   CinnamonGenericContainer {
@@ -177,10 +177,10 @@ StScrollBar {
   &:focus:checked StBin { background-image: url("#{$asset_path}/checkbox/checkbox-checked-focused.svg"); }
 }
 
-/* * * * * * * * * 
+/* * * * * * * * *
  * Radio Buttons *
  * * * * * * * * */
- 
+
 .radiobutton {
 
   CinnamonGenericContainer {
@@ -211,7 +211,7 @@ StScrollBar {
 /* * * * * * *
  * Switches  *
  * * * * * * */
- 
+
 .toggle-switch {
   width: 50px;
   height: 20px;
@@ -224,10 +224,10 @@ StScrollBar {
   }
 }
 
-/* * * * * 
+/* * * * *
  * Links *
  * * * * */
- 
+
 .cinnamon-link {
   color: $link_color;
   text-decoration: underline;
@@ -238,7 +238,7 @@ StScrollBar {
 /* * * * * *
  * Tooltip *
  * * * * * */
- 
+
 #Tooltip {
   border: 1px solid $tooltip_border_color;
   border-radius: 3px;
@@ -253,7 +253,7 @@ StScrollBar {
 /* * * * * * * * *
  * Looking Glass *
  * * * * * * * * */
- 
+
 #LookingGlassDialog {
     color: $fg_color;
     border: 1px solid $borders_color;
@@ -266,7 +266,7 @@ StScrollBar {
 /* * * * * * * * *
  * Popvers/Menus *
  * * * * * * * * */
- 
+
 .menu {
   color: $fg_color;
   border: 1px solid $borders_color;
@@ -420,11 +420,11 @@ StScrollBar {
 /* * * * *
  * Panel *
  * * * * */
- 
+
 #panel {
   font-weight: normal;
   color: $selected_fg_color;
-  height: 40px;		// sets the height of horizontal panels 
+  height: 40px;		// sets the height of horizontal panels
   width: 32px;		// sets the width of vertical panels */
 
   &Left {
@@ -591,7 +591,7 @@ StScrollBar {
 /* * * * * * *
  * Overview  *
  * * * * * * */
- 
+
 #overview { spacing: 12px; }
 
 .window-caption {
@@ -727,7 +727,7 @@ StScrollBar {
 /* * * * * * *
  * Calendar  *
  * * * * * * */
- 
+
 .calendar {
   padding: .4em 1.75em;
   spacing-rows: 0px;
@@ -846,10 +846,10 @@ StScrollBar {
   margin-top: 0.8em;
 }
 
-/* * * * * * * * * 
+/* * * * * * * * *
  * Notifications *
  * * * * * * * * */
- 
+
 #notification {
   border: 1px solid $borders_color;
   border-radius: 3px;
@@ -911,7 +911,7 @@ StScrollBar {
 /* * * * * *
  * Alt Tab *
  * * * * * */
- 
+
 #altTabPopup {
   padding: 8px;
   spacing: 16px;
@@ -991,7 +991,7 @@ StScrollBar {
 /* * * * * * * * * * * *
  * Activities Ripples  *
  * * * * * * * * * * * */
- 
+
 .ripple-box {
   width: 104px;
   height: 104px;
@@ -1001,10 +1001,10 @@ StScrollBar {
   &:rtl { background-image: url("common-assets/misc/corner-ripple.svg"); }
 }
 
-/* * * * * * * * * 
+/* * * * * * * * *
  * Modal dialogs *
  * * * * * * * * */
- 
+
 .lightbox { background-color: rgba(0, 0, 0, 0.4); }
 .flashspot { background-color: white; }
 
@@ -1038,7 +1038,7 @@ StScrollBar {
 /* * * * * * * *
  * Run dialog  *
  * * * * * * * */
- 
+
 .run-dialog {
   padding: 10px 15px 10px 15px;
   border: 1px solid $borders_color;
@@ -1145,17 +1145,17 @@ StScrollBar {
 /* * * * * * *
  * Magnifier *
  * * * * * * */
- 
+
 .magnifier-zoom-region {
   border: 2px solid rgba(128, 0, 0, 1);
 
   .full-screen { border-width: 0px; }
 }
 
-/* * * * * * * * * * * * 
+/* * * * * * * * * * * *
  * On-Screen Keyboard  *
  * * * * * * * * * * * */
- 
+
 #keyboard {
   background-color: $osd_bg_color;
   border-width: 0;
@@ -1297,11 +1297,11 @@ StScrollBar {
     padding-right: 30px;
     padding-left: 28px;
     text-align: right;
-    height: 30px;
+    height: 2.2em;
 
     &:rtl {
       padding-top: 10px;
-      height: 30px;
+      height: 2.2em;
     }
   }
 
@@ -1506,7 +1506,7 @@ StScrollBar {
     border-radius: 7px;
     transition-duration: 100;
     color: transparentize($selected_fg_color, 0.4);
-		
+
     &.top,
     &.bottom {
       border-bottom-width: 1px;
@@ -1630,10 +1630,10 @@ StScrollBar {
   }
 }
 
-/* * * * * * * * * * * * * * * * * * 
+/* * * * * * * * * * * * * * * * * *
  * Sound Applet (status/volume.js) *
  * * * * * * * * * * * * * * * * * */
- 
+
 .sound-button {
   width: 22px;
   height: 13px;
@@ -1755,7 +1755,7 @@ StScrollBar {
     -slider-height: 0.5em;
     -slider-background-color: if($variant == 'light', $button_border, lighten($bg_color, 10%));
     -slider-border-color: rgba(0,0,0,0);
-    -slider-active-background-color: $selected_bg_color;    
+    -slider-active-background-color: $selected_bg_color;
 	  -slider-active-border-color: rgba(0,0,0,0);
     -slider-border-width: 1px;
     -slider-handle-radius: 0px;
@@ -1765,7 +1765,7 @@ StScrollBar {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Workspace Switcher applet (workspaceSwitcher.js)  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * */
- 
+
 #workspaceSwitcher {
   spacing: 0px;
   padding: 3px;
@@ -1863,7 +1863,7 @@ StScrollBar {
     // border-bottom-width: 1px;
     transition-duration: 200;
 
-    &:hover { 
+    &:hover {
       @include gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.7);
       border-radius: 7px;
@@ -1884,10 +1884,10 @@ StScrollBar {
   }
 }
 
-/* * * * * * * * * * 
+/* * * * * * * * * *
  * Overview corner *
  * * * * * * * * * */
- 
+
 #overview-corner {
   background-image: url("common-assets/misc/overview.png");
 
@@ -1897,7 +1897,7 @@ StScrollBar {
 /* * * * * * * * * * * *
  * Applets (applet.js) *
  * * * * * * * * * * * */
- 
+
 .applet {
   &-separator {
     padding: 1px 4px;
@@ -1915,7 +1915,7 @@ StScrollBar {
     }
   }
 
-  &-box { 
+  &-box {
     padding-left: 4px;
     padding-right: 4px;
     spacing: 4px;
@@ -1984,7 +1984,7 @@ StScrollBar {
 /* * * * * * * *
  * User Applet *
  * * * * * * * */
- 
+
 .user-icon {
     width: 32px;
     height: 32px;
@@ -2000,7 +2000,7 @@ StScrollBar {
     margin: 0px;
 }
 
-/* * * * * * * * * * * * * 
+/* * * * * * * * * * * * *
  * Desklets (desklet.js) *
  * * * * * * * * * * * * */
 
@@ -2074,7 +2074,7 @@ StScrollBar {
 
 .notification-applet-container { max-height: 100px; }
 
-/* * * * * * * * * 
+/* * * * * * * * *
  * Tile Preview  *
  * * * * * * * * */
 
