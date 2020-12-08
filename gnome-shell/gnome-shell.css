@@ -889,6 +889,9 @@ StScrollBar {
   color: #a2a8b7;
   font-weight: bold; }
 
+.events-button .event-time {
+  color: #b4b8c4; }
+
 .world-clocks-grid {
   spacing-rows: 0.4em; }
 
