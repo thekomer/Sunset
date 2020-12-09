@@ -10,3 +10,4 @@ for item in $wm
 end
 echo "    ...copying ./wm_controls/*.svg to ../assets/ ; wait...   "
 cp ./wm_controls/*.svg ../assets/
+echo "    ...done!   "
