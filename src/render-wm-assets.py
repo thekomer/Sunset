@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 
 # Thanks to the GNOME theme nerds for the original source of this script
 

@@ -135,7 +135,8 @@ class ContentHandler(xml.sax.ContentHandler):
                 id = rect['id']
 
                 dir = os.path.join(MAINDIR, self.context)
-                outfile = os.path.join(dir, self.icon_name+'.png')
+                outfile = os.path.join(dir, self.icon_name+'@2.png')
+                #komer: added @2 in previous line
                 if not os.path.exists(dir):
                     os.makedirs(dir)
                 # Do a time based check!
