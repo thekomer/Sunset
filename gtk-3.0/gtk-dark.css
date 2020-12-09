@@ -5752,7 +5752,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     /* to underline button */
     /* to gradient transparent panel buttons */
     background: linear-gradient(to right, rgba(255, 53, 0, 0.6), rgba(255, 159, 0, 0.6));
-    box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     border-radius: 7px; }
     .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active image, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
       color: inherit; }

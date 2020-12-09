@@ -48,7 +48,7 @@
 			// background-color: lighten($panel_bg_color, 15%);
 		/* to gradient transparent panel buttons */
 		background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
-		box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
+		// box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
 		border-radius: 7px;
 		label, image { color: inherit; }
 	}
