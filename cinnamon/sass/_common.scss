@@ -1573,9 +1573,9 @@ StScrollBar {
 
   &-number-label {
     z-index: 99;
-    color: $white;
-    font-size: 0.3em;
-    font-weight: 600;
+    color: $black;
+    font-size: 0.4em;
+    font-weight: 700;
     text-shadow: none;
   }
 
@@ -1583,7 +1583,7 @@ StScrollBar {
     border-width: 0px;
     border-color: $selected_bg_color;
     border-radius: 256px;
-    background-color: $black;
+    background-color: $white;
     color: $panel_fg;
   }
 
