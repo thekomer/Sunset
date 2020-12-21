@@ -5881,6 +5881,20 @@ window.thunar statusbar {
   color: #b9bec9;
   background: #0b0d16; }
 
+/****************
+ * Log out menu *
+ * **************/
+.xfsm-logout-dialog {
+  border-radius: 0.4em; }
+  .xfsm-logout-dialog button {
+    border-radius: 0.4em; }
+    .xfsm-logout-dialog button:hover {
+      background: linear-gradient(to right, rgba(255, 53, 0, 0.6), rgba(255, 159, 0, 0.6)); }
+    .xfsm-logout-dialog button:active, .xfsm-logout-dialog button:checked {
+      background: linear-gradient(to right, rgba(255, 53, 0, 0.8), rgba(255, 159, 0, 0.8)); }
+      .xfsm-logout-dialog button:active label, .xfsm-logout-dialog button:active image, .xfsm-logout-dialog button:checked label, .xfsm-logout-dialog button:checked image {
+        color: inherit; }
+
 /********
  * Gala *
  *******/
