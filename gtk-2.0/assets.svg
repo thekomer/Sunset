@@ -14,7 +14,7 @@
    height="480px"
    id="svg3032"
    version="1.1"
-   inkscape:version="0.92.4 (unknown)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="assets.svg">
   <title
      id="title5071">EvoPop GTK2 Source</title>
@@ -485,6 +485,15 @@
        x2="36"
        y2="3"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1551"
+       id="linearGradient1562"
+       gradientUnits="userSpaceOnUse"
+       x1="160"
+       y1="7.5"
+       x2="190"
+       y2="7.5" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -493,19 +502,19 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="18.689518"
-     inkscape:cx="132.44533"
-     inkscape:cy="447.9053"
-     inkscape:current-layer="layer1"
+     inkscape:zoom="8"
+     inkscape:cx="460.1523"
+     inkscape:cy="426.98936"
+     inkscape:current-layer="tab-up-active"
      inkscape:document-units="px"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:snap-global="true"
      inkscape:snap-nodes="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-width="1876"
+     inkscape:window-height="1049"
+     inkscape:window-x="44"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -1811,7 +1820,7 @@
          id="g5137"
          transform="rotate(-90,127.5,-20.5)">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient1593);fill-opacity:1.0;stroke:none;stroke-width:1.29099441;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient1593);fill-opacity:1;stroke:none;stroke-width:1.29099441;marker:none;enable-background:accumulate"
            id="rect5139"
            width="5"
            height="4"
@@ -4722,7 +4731,7 @@
          id="rect5063"
          style="opacity:0.2;fill:none;fill-opacity:1;stroke:none" />
       <rect
-         style="opacity:1;fill:#ff6a00;fill-opacity:1;stroke:none;stroke-width:1.22474492"
+         style="opacity:1;fill:url(#linearGradient1562);fill-opacity:1;stroke:none;stroke-width:1.22474492"
          id="rect5061"
          width="30"
          height="3"
