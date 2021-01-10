@@ -186,9 +186,6 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   border: none;
   box-shadow: none;
 }
-window.thunar toolbar#location-toolbar entry {
-  border-radius: 0.5em;
-}
 
 // thunar sidepane
 window.thunar paned > scrolledwindow treeview.view:selected {
