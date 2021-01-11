@@ -18,7 +18,7 @@ stage {
   transition-duration: 0;
 
   &, &:focus, &:hover, &:hover:focus, &:active, &:active:focus, &:insensitive {
-    border-radius: 2px;
+    border-radius: 0.5em;
   }
 
   @include button(normal);
@@ -34,7 +34,7 @@ stage {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
-  border-radius: 2px;
+  border-radius: 0.5em;
 
   @include button(osd);
 
@@ -54,7 +54,7 @@ stage {
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 7px;
+  border-radius: 0.5em;
 
   @include entry(normal);
 
@@ -75,7 +75,7 @@ stage {
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 7px;
+  border-radius: 0.5em;
 
   @include entry(osd);
 
@@ -830,7 +830,7 @@ StScrollBar {
   font-weight: bold;
 	color: $selected_fg_color;
 	//background-color: $selected_bg_color;
-	@include gradient(horizontal, $orange_gradient_start,
+	@include bg_gradient(horizontal, $orange_gradient_start,
 		$orange_gradient_end, 1);
   border-width: 0;
 }
@@ -1222,7 +1222,7 @@ StScrollBar {
     border-radius: 9px;
     &:hover {
       //background-color: transparentize($selected_bg_color, 0.3);
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.7);
     }
   }
@@ -1253,7 +1253,7 @@ StScrollBar {
       padding: 7px;
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.7);
       border: 1px solid $borders_color;
 
@@ -1272,7 +1272,7 @@ StScrollBar {
       padding: 7px;
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 1);
       border: 1px solid $borders_color;
       border-radius: 9px;
@@ -1445,7 +1445,7 @@ StScrollBar {
     &:groupFocus {
       color: $selected_fg_color;
       border-radius: 7px;
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.5);
     }
 
@@ -1454,10 +1454,10 @@ StScrollBar {
     &:focus,
     &:running {
       color: $selected_fg_color;
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.7);
       &:hover{
-      	@include gradient(horizontal, $orange_gradient_start,
+      	@include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 1);
       }
     }
@@ -1468,7 +1468,7 @@ StScrollBar {
   }
 
   &-item-demands-attention {
-    @include gradient(horizontal, $destructive_color,
+    @include bg_gradient(horizontal, $destructive_color,
       	$destructive_color, 1);
   }
 
@@ -1533,7 +1533,7 @@ StScrollBar {
     &:hover{
     	border-radius: 7px;
       color: $selected_fg_color;
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.5);
     }
     &:focus {
@@ -1543,10 +1543,10 @@ StScrollBar {
     	border-right-width: 0px;
       color: $selected_fg_color;
       //background-color: transparentize($selected_bg_color, 0.3);
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.7);
       &:hover{
-      	@include gradient(horizontal, $orange_gradient_start,
+      	@include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 1);
       }
     }
@@ -1563,7 +1563,7 @@ StScrollBar {
   }
 
   &-item-demands-attention {
-    @include gradient(horizontal, $destructive_color,
+    @include bg_gradient(horizontal, $destructive_color,
       	$destructive_color, 1);
   }
 
@@ -1575,7 +1575,7 @@ StScrollBar {
     z-index: 99;
     color: $black;
     font-size: 0.4em;
-    font-weight: 600;
+    font-weight: 700;
     text-shadow: none;
   }
 
@@ -1805,7 +1805,7 @@ StScrollBar {
     color: $selected_bg_color;
 
     &:hover {
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.5);
       color: $selected_fg_color;
       border-radius: 7px;
@@ -1813,7 +1813,7 @@ StScrollBar {
   }
 
   &:hover {
-    @include gradient(horizontal, $orange_gradient_start,
+    @include bg_gradient(horizontal, $orange_gradient_start,
     	$orange_gradient_end, 0.5);
     color: $selected_fg_color;
     border-radius: 7px;
@@ -1864,7 +1864,7 @@ StScrollBar {
     transition-duration: 200;
 
     &:hover {
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.7);
       border-radius: 7px;
     }
@@ -1939,7 +1939,7 @@ StScrollBar {
     &:checked { //komer
       color: $selected_fg_color;
       // background-color: $selected_bg_color;
-      @include gradient(horizontal, $orange_gradient_start,
+      @include bg_gradient(horizontal, $orange_gradient_start,
       	$orange_gradient_end, 0.5);
       border-radius: 7px;
 
