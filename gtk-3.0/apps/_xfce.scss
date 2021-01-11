@@ -200,6 +200,15 @@ window.thunar statusbar {
 	background: darken($_sidebar_color, 2%);
 }
 
+// thunar copy-paste highlight
+.thunar :not(decoration):not(window):drop(active):focus,
+:not(decoration):not(window):drop(active) { // FIXME needs to be done widget by widget, this wildcard should really die
+  border-color: $drop_target_color;
+  box-shadow: inset 0 0 0 1px $drop_target_color;
+  caret-color: $drop_target_color;
+}
+
+
 /****************
  * Log out menu *
  * **************/

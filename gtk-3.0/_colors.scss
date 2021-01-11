@@ -71,12 +71,10 @@ $base_hover_color: transparentize($fg_color, 0.95);
 $tooltip_borders_color: transparentize(white, 0.9);
 $shadow_color: transparentize(black, 0.9);
 
-$drop_target_color: #a1ce4b;
-
 $text_shadow_color: if($variant == 'dark', $shadow_color, transparentize(white, 0.9));
 $icon_shadow_color: $text_shadow_color;
 
-$drop_target_color: $lime;
+$drop_target_color: transparentize($blue, 0.5);
 
 // Infobar colors
 $info_color: $orange;
