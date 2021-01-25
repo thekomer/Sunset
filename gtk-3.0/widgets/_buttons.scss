@@ -29,7 +29,7 @@ button {
     min-width: 16px;
     padding: 2px 6px;
     border: 1px solid $borders_color;
-    border-radius: 4px;
+    border-radius: 0.4em; //border-radius: 4px;
     transition: $button_transition;
 
     @include button(normal);
@@ -118,7 +118,7 @@ button {
     &.text-button.image-button {
       padding-left: 8px;
       padding-right: 8px;
-      border-radius: 2px;
+      border-radius: 0.2em; //border-radius: 2px;
       label {
         padding-left: 8px;
         padding-right: 8px;
@@ -154,7 +154,7 @@ button {
     &.image-button { min-width: 32px; }
 
     color: $osd_fg_color;
-    border-radius: 5px;
+    border-radius: 0.5em; //border-radius: 5px;
     outline-color: transparentize($osd_fg_color, 0.7);  //FIXME: define a color var?
 
     @include button(osd);
@@ -347,12 +347,19 @@ button {
 
   //inline-toolbar buttons
   .inline-toolbar &, .inline-toolbar &:backdrop {
-    border-radius: 2px;
+    border-radius: 0.2em; //border-radius: 2px;
     border-width: 1px;
     @extend %linked;
   }
 
-  .primary-toolbar & { -gtk-icon-shadow: none; } // tango icons don't need shadows
+  .primary-toolbar &, .primary-toolbar .raised & { // tango icons don't need shadows
+    -gtk-icon-shadow: none;
+
+    &:hover, &:focus {
+      @include button(hover, transparentize($selected_bg_color, 0.5), $selected_fg_color);
+    }
+
+  }
 
   .linked > &,
   .linked > &:hover,

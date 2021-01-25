@@ -280,7 +280,7 @@ button {
   min-width: 16px;
   padding: 2px 6px;
   border: 1px solid rgba(12, 14, 21, 0.8);
-  border-radius: 4px;
+  border-radius: 0.4em;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
   color: #BFC3CD;
@@ -414,7 +414,7 @@ button {
   button.text-button.image-button {
     padding-left: 8px;
     padding-right: 8px;
-    border-radius: 2px; }
+    border-radius: 0.2em; }
     notebook > header > tabs > arrow.text-button.image-button label,
     button.text-button.image-button label {
       padding-left: 8px;
@@ -438,7 +438,7 @@ button.osd {
   min-width: 24px;
   min-height: 20px;
   color: #fefefe;
-  border-radius: 5px;
+  border-radius: 0.5em;
   outline-color: rgba(254, 254, 254, 0.3);
   color: #fefefe;
   border-color: rgba(0, 0, 0, 0.7);
@@ -961,12 +961,22 @@ button {
 .inline-toolbar
 button, .inline-toolbar
 button:backdrop {
-  border-radius: 2px;
+  border-radius: 0.2em;
   border-width: 1px; }
 
 .primary-toolbar
+button, .primary-toolbar .raised
 button {
   -gtk-icon-shadow: none; }
+  .primary-toolbar
+  button:hover, .primary-toolbar
+  button:focus, .primary-toolbar .raised
+  button:hover, .primary-toolbar .raised
+  button:focus {
+    color: #fefefe;
+    outline-color: rgba(254, 254, 254, 0.3);
+    background-color: rgba(255, 106, 0, 0.5);
+    text-shadow: none; }
 
 .stack-switcher > button.needs-attention > label,
 .stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {
@@ -6436,7 +6446,8 @@ ConversationListView {
     margin-bottom: 5px;
     min-height: 24px; }
     .nemo-window toolbar.primary-toolbar button:hover {
-      color: #ff6a00; }
+      color: #ff6a00;
+      background: transparent; }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       border-radius: 23px;
       background: linear-gradient(to right, #ff3500, #ff9f00);
