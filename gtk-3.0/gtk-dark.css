@@ -5856,7 +5856,7 @@ wnck-pager {
   background-color: #06070c; }
 
 .thunar toolbar.horizontal button image {
-  -gtk-icon-transform: scale(0.72); }
+  -gtk-icon-transform: scale(1); }
 
 scrolledwindow.sidebar treeview.view {
   background: #0b0d16;

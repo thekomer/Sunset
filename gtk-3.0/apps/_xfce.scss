@@ -166,7 +166,7 @@ wnck-pager {
 
 // buttons in toolbar
 .thunar toolbar.horizontal button image {
-  -gtk-icon-transform:scale(0.72);
+  -gtk-icon-transform:scale(1); // it was 0.72
 }
 scrolledwindow.sidebar treeview.view {
   background: darken($_sidebar_color, 2%);
