@@ -188,10 +188,17 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 }
 
 // thunar sidepane
-window.thunar paned > scrolledwindow treeview.view:selected {
-  @include button(active-header);
-  border-radius: 0;
-  box-shadow: none;
+window.thunar paned > scrolledwindow treeview.view {
+	&:hover {
+		@include button(hover-header);
+		border-radius: 0;
+		box-shadow: none;
+	}
+	&:selected {
+		@include button(active-header);
+		border-radius: 0;
+		box-shadow: none;
+	}
 }
 
 // thunar statusbar
