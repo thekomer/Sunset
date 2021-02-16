@@ -6473,13 +6473,13 @@ ConversationListView {
     .caja-side-pane .view:hover, .caja-side-pane iconview:hover, .caja-side-pane .iconview:hover, .caja-side-pane row:hover {
       color: #fefefe;
       /*			background: linear-gradient(to right,
-				transparentize($my-gradient-start, 0.6) 0%,
-				transparentize($my-gradient-end, 0.6) 100%);		*/
+				transparentize($theme-gradient-start, 0.6) 0%,
+				transparentize($theme-gradient-end, 0.6) 100%);		*/
       background: rgba(255, 106, 0, 0.4); }
     .caja-side-pane .view:selected, .caja-side-pane iconview:selected, .caja-side-pane .view:active, .caja-side-pane iconview:active, .caja-side-pane .view:checked, .caja-side-pane iconview:checked, .caja-side-pane .iconview:selected, .caja-side-pane .iconview:active, .caja-side-pane .iconview:checked, .caja-side-pane row:selected, .caja-side-pane row:active, .caja-side-pane row:checked {
       color: #fefefe;
       /*			background: linear-gradient(to right,
-				$my-gradient-start 0%, $my-gradient-end 100%);*/
+				$theme-gradient-start 0%, $theme-gradient-end 100%);*/
       background: #ff6a00; }
 
 .caja-navigation-window {

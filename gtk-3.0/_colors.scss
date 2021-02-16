@@ -21,9 +21,10 @@ $blue: #7cb7ff;
 $cyan: #00c1e4;
 $slider: #7b7bbd;
 $teal: #00e8c6;
-$myorange: $orange;
+
+$theme_color: $orange;
 $selected_fg_color: #fefefe;
-$selected_bg_color: #ff6a00;
+$selected_bg_color: $theme_color;
 //$selected_bg_color: #f7005a;
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
@@ -31,10 +32,8 @@ $highlight_text_color: darken($selected_bg_color, 10%);
 $borders_color: if($variant == 'light', transparentize(black,0.87), transparentize(#0C0E15,0.2));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 
-$selected-tab-gradient-start: #ff3500;
-$selected-tab-gradient-end: #ff9f00;
-$my-gradient-start: #ff3500;
-$my-gradient-end: #ff9f00;
+$theme-gradient-start: #ff3500;
+$theme-gradient-end: #ff9f00;
 
 $link_color: $blue;
 $link_visited_color:transparentize($link_color,0.5);

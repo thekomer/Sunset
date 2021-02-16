@@ -20,7 +20,7 @@
             }
             &:selected, &:active, &:checked {
 							color: $selected_fg_color;
-              // background: linear-gradient(to right, $my-gradient-start 0%, $my-gradient-end 100%);
+              // background: linear-gradient(to right, $theme-gradient-start 0%, $theme-gradient-end 100%);
               background: $selected_bg_color;
 						}
         }

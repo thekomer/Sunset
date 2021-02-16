@@ -47,7 +47,7 @@
 			// border-bottom: 2px solid $selected_bg_color;
 			// background-color: lighten($panel_bg_color, 15%);
 		/* to gradient transparent panel buttons */
-		background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
+		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end,0.4));
 		// box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
 		border-radius: 7px;
 		label, image { color: inherit; }
@@ -72,7 +72,7 @@
 		/* to underline button */
 			// border-bottom: 2px solid $selected_bg_color;
 			// background-color: lighten($panel_bg_color, 15%);
-		background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
+		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end,0.4));
 		border-radius: 0px;
 		label, image { color: inherit; }
 	}
@@ -226,10 +226,10 @@ window.thunar statusbar {
 		border-radius: 0.4em;
 		&:hover {
 		//background-color: lighten($panel_bg_color, 10%);
-		background: linear-gradient(to right, transparentize($my-gradient-start, 0.4), transparentize($my-gradient-end,0.4));
+		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end,0.4));
 		}
 		&:active, &:checked {
-		background: linear-gradient(to right, transparentize($my-gradient-start, 0.2), transparentize($my-gradient-end,0.2));
+		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.2), transparentize($theme-gradient-end,0.2));
 		label, image { color: inherit; }
 	}}
 }

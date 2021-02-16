@@ -258,16 +258,16 @@
   border:none;
 }
 
-@else if $t==active-header {
-  border-radius: 23px;
-  background: linear-gradient(to right, $my-gradient-start, $my-gradient-end);
+@else if $t==hover-header2 {
+  border-radius: 0px;
+  background: linear-gradient(to right, transparentize($theme-gradient-start, 0.6), transparentize($theme-gradient-end, 0.6));
   box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
   color: rgb(255, 255, 255);
 }
 
-@else if $t==hover-header2 {
-  border-radius: 0px;
-  background: linear-gradient(to right, transparentize($my-gradient-start, 0.6), transparentize($my-gradient-end, 0.6));
+@else if $t==active-header {
+  border-radius: 23px;
+  background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
   box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
   color: rgb(255, 255, 255);
 }
@@ -607,12 +607,12 @@ box-shadow: none;
 
 @mixin scale-highlight($dir) {
 //  background: linear-gradient(to $dir, #FF6A00, #00f7d2);
-	background: linear-gradient(to $dir, $my-gradient-start, $my-gradient-end);
+	background: linear-gradient(to $dir, $theme-gradient-start, $theme-gradient-end);
 }
 
 @mixin selected-tab($dir) {
   background:
-  linear-gradient(to $dir, $selected-tab-gradient-start, $selected-tab-gradient-end)
+  linear-gradient(to $dir, $theme-gradient-start, $theme-gradient-end)
   left
   bottom
   lighten(mix($base_color, $headerbar_color, 30%), 2%)
