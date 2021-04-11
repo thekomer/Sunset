@@ -25,6 +25,17 @@
 	}
 }
 
+// BUG-fix: Fix text cursor color while renaming file in caja
+
+.caja-notebook .entry {
+    background: $bg_color;
+    color: $fg_color;
+    &:selected {
+      background: $selected_bg_color;
+      color: $selected_fg_color;
+    }
+}
+
 // toolbar and statusbar bg color
 
 .caja-navigation-window {

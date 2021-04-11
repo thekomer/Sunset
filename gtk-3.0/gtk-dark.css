@@ -6482,6 +6482,13 @@ ConversationListView {
 				$theme-gradient-start 0%, $theme-gradient-end 100%);*/
       background: #ff6a00; }
 
+.caja-notebook .entry {
+  background: #0E111D;
+  color: #BFC3CD; }
+  .caja-notebook .entry:selected {
+    background: #ff6a00;
+    color: #fefefe; }
+
 .caja-navigation-window {
   background: #0b0d16; }
 
