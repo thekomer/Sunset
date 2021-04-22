@@ -5,6 +5,7 @@
 // sidebar & sidebar buttons color
 
 .caja-side-pane {
+.frame { border-width: 0 0 1px; }
 	color: darken($fg_color, 2%);
 	background: darken($_sidebar_color, 2%);
 	.view, .iconview, row {
@@ -27,13 +28,17 @@
 
 // BUG-fix: Fix text cursor color while renaming file in caja
 
-.caja-notebook .entry {
+.caja-notebook {
+	.frame { border-width: 0 0 1px; }
+	.entry {
     background: $bg_color;
     color: $fg_color;
+		border-color: $borders_color;
     &:selected {
       background: $selected_bg_color;
       color: $selected_fg_color;
     }
+	}
 }
 
 // toolbar and statusbar bg color
