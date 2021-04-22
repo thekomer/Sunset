@@ -46,7 +46,7 @@
 // toolbar and statusbar bg color
 
 .caja-navigation-window paned, .caja-navigation-window .primary-toolbar {
-	background: $headerbar_color;
+		background: $headerbar_color;
 }
 
 // Toolhbar

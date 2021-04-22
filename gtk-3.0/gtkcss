@@ -6650,7 +6650,7 @@ menubar,
  * * * * * * * * * * */
 .caja-side-pane {
   color: #b9bec9;
-  background: #06070c; }
+  background: #0b0d16; }
   .caja-side-pane .frame {
     border-width: 1px 0 0; }
   .caja-side-pane treeview.view,
@@ -6663,7 +6663,10 @@ menubar,
     .caja-side-pane viewport.frame:hover,
     .caja-side-pane widget .vertical:hover {
       color: #fefefe;
-      background: linear-gradient(to right, rgba(255, 53, 0, 0.4) 0%, rgba(255, 159, 0, 0.4) 100%); }
+      /*			background: linear-gradient(to right,
+				transparentize($theme-gradient-start, 0.6) 0%,
+				transparentize($theme-gradient-end, 0.6) 100%);		*/
+      background: rgba(255, 106, 0, 0.4); }
     .caja-side-pane treeview.view:selected, .caja-side-pane treeview.view:active, .caja-side-pane treeview.view:checked,
     .caja-side-pane textview.view text:selected,
     .caja-side-pane textview.view text:active,
@@ -6675,7 +6678,9 @@ menubar,
     .caja-side-pane widget .vertical:active,
     .caja-side-pane widget .vertical:checked {
       color: #fefefe;
-      background: linear-gradient(to right, #ff3500 0%, #ff9f00 100%); }
+      /*			background: linear-gradient(to right,
+				$theme-gradient-start 0%, $theme-gradient-end 100%);*/
+      background: #ff6a00; }
 
 .caja-notebook .frame {
   border-width: 0 0 1px; }
@@ -6688,106 +6693,8 @@ menubar,
     background: #ff6a00;
     color: #fefefe; }
 
-.caja-navigation-window paned, .caja-navigation-window .primary-toolbar {
-  background: #06070c; }
-
-.caja-navigation-window .primary-toolbar button, .caja-navigation-window .primary-toolbar button:backdrop,
-.caja-navigation-window .vertical button.image-button.toggle:not(.text-button),
-.caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop,
-.caja-navigation-window .vertical label:backdrop selection:not(.text-button),
-label:backdrop .caja-navigation-window .vertical selection:not(.text-button),
-.caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button),
-progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button),
-.caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button),
-progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button) {
-  background-color: transparent;
-  background-image: none;
-  border-color: transparent;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none; }
-
-.caja-navigation-window .primary-toolbar button:hover,
-.caja-navigation-window .vertical button.image-button.toggle:not(.text-button):hover {
-  background: linear-gradient(to right, rgba(255, 53, 0, 0.4) 0%, rgba(255, 159, 0, 0.4) 100%);
-  box-shadow: none; }
-  .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):hover,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):hover label {
-    color: #fefefe; }
-
-.caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:checked,
-.caja-navigation-window .vertical button.image-button.toggle:not(.text-button):active,
-.caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop:active,
-.caja-navigation-window .vertical label:backdrop selection:not(.text-button):active,
-label:backdrop .caja-navigation-window .vertical selection:not(.text-button):active,
-.caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button):active,
-progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):active,
-.caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):active,
-progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):active,
-.caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop:checked,
-.caja-navigation-window .vertical label:backdrop selection:not(.text-button):checked,
-label:backdrop .caja-navigation-window .vertical selection:not(.text-button):checked,
-.caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button):checked,
-progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):checked,
-.caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):checked,
-progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):checked {
-  background: linear-gradient(to right, #ff3500 0%, #ff9f00 100%);
-  box-shadow: none; }
-  .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):active,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):active label,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop:active,
-  .caja-navigation-window .vertical label:backdrop selection:not(.text-button):active,
-  label:backdrop .caja-navigation-window .vertical selection:not(.text-button):active,
-  .caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button):active,
-  progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):active,
-  .caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):active,
-  progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):active,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop:active label,
-  .caja-navigation-window .vertical label:backdrop selection:not(.text-button):active label,
-  label:backdrop .caja-navigation-window .vertical selection:not(.text-button):active label,
-  .caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button):active label,
-  progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):active label,
-  .caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):active label,
-  progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):active label,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop:checked,
-  .caja-navigation-window .vertical label:backdrop selection:not(.text-button):checked,
-  label:backdrop .caja-navigation-window .vertical selection:not(.text-button):checked,
-  .caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button):checked,
-  progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):checked,
-  .caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):checked,
-  progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):checked,
-  .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):backdrop:checked label,
-  .caja-navigation-window .vertical label:backdrop selection:not(.text-button):checked label,
-  label:backdrop .caja-navigation-window .vertical selection:not(.text-button):checked label,
-  .caja-navigation-window .vertical progressbar:backdrop trough:not(.text-button):checked label,
-  progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):checked label,
-  .caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):checked label,
-  progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):checked label {
-    color: #fefefe; }
-
-.caja-pathbar button {
-  color: #8b8b8b;
-  text-shadow: none;
-  box-shadow: none;
-  background: transparent;
-  border: none;
-  margin-top: 7px;
-  margin-bottom: 7px; }
-  .caja-pathbar button:hover {
-    color: #ff6a00; }
-  .caja-pathbar button:checked {
-    border-radius: 23px;
-    background: linear-gradient(to right, #ff3500, #ff9f00);
-    box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
-    color: white; }
-  .caja-pathbar button:backdrop:disabled {
-    color: rgba(191, 195, 205, 0.2);
-    background-color: transparent;
-    border-radius: 0;
-    text-shadow: none;
-    box-shadow: none; }
+.caja-navigation-window {
+  background: #0b0d16; }
 
 /* * * * * * * *
  * Volume OSD  *
