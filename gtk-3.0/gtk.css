@@ -4388,7 +4388,7 @@ toolbar, .inline-toolbar, searchbar,
 .location-bar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
-  background-color: #0E111D; }
+  background-color: #06070c; }
 
 toolbar {
   padding: 4px 3px 3px 4px; }
