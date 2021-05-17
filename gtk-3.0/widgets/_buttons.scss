@@ -355,10 +355,9 @@ button {
   .primary-toolbar &, .primary-toolbar .raised & { // tango icons don't need shadows
     -gtk-icon-shadow: none;
 
-    &:hover, &:focus {
+    &:hover { //&:focus  ...  focus used to be with hover : BUGfix
       @include button(hover, transparentize($selected_bg_color, 0.5), $selected_fg_color);
     }
-
   }
 
   .linked > &,
