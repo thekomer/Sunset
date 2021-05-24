@@ -7,7 +7,7 @@ calendar {
 
   &:selected {
     @extend %selected_items;
-
+		@include button(active-header);
     border-radius: 3px;
   }
 
