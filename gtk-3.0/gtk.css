@@ -1144,8 +1144,8 @@ notebook .linked > button, list .linked > button, .view .linked > button, iconvi
   box-shadow: none; }
 
 /************
- * Calendar *
- ***********/
+* Calendar *
+***********/
 calendar {
   color: #BFC3CD;
   border: 1px solid rgba(12, 14, 21, 0.8); }
@@ -1154,6 +1154,7 @@ calendar {
     background: linear-gradient(to right, #ff3500, #ff9f00);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white;
+    font-weight: bolder;
     border-radius: 3px; }
   calendar.header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
