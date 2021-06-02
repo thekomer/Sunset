@@ -162,6 +162,20 @@ wnck-pager {
  **********/
 .thunar toolbar {
   background-color: $headerbar_color;
+	button {
+		@include button(normal-header);
+		color: darken($fg_color, 3%);
+		margin-top: 5px;
+		margin-bottom: 5px;
+		min-height: 24px;
+		&:hover {
+			color: $selected_bg_color;
+			background: transparent;
+		}
+		&:selected,
+		&:active,
+		&:checked { @include button(active-header); }
+	}
 }
 
 // buttons in toolbar
@@ -189,6 +203,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 
 // thunar sidepane
 window.thunar paned > scrolledwindow treeview.view {
+	background: $headerbar_color;
 	&:hover {
 		@include button(hover-header);
 		border-radius: 0;
@@ -204,7 +219,7 @@ window.thunar paned > scrolledwindow treeview.view {
 // thunar statusbar
 window.thunar statusbar {
 	color: darken($fg_color, 2%);
-	background: darken($_sidebar_color, 2%);
+	background: $headerbar_color;
 }
 
 // thunar copy-paste highlight
