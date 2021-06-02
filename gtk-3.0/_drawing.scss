@@ -228,9 +228,9 @@
 			//
 			// hovered button
 			//
-			color: $tc;
+			color: if($tc==$text_color, $selected_bg_color, $tc);
 			outline-color: transparentize($tc, 0.7);
-			background-color: $c;	//still not sure about code below so I reverted here
+			background-color: transparentize($c, 0.5);	//still not sure about code below so I reverted here
 			//background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end, 0.4));
 			text-shadow: none;
   }

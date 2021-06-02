@@ -301,7 +301,7 @@ button {
       transition-duration: 500ms;
       color: #fefefe;
       outline-color: rgba(254, 254, 254, 0.3);
-      background-color: #ff6a00;
+      background-color: rgba(255, 106, 0, 0.5);
       text-shadow: none; }
       notebook > header > tabs > arrow:hover:active,
       button.flat:hover:active {
@@ -310,7 +310,7 @@ button {
   button:hover {
     color: #fefefe;
     outline-color: rgba(254, 254, 254, 0.3);
-    background-color: #ff6a00;
+    background-color: rgba(255, 106, 0, 0.5);
     text-shadow: none;
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
@@ -638,7 +638,7 @@ button.suggested-action {
   button.suggested-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #00c1e4;
+    background-color: rgba(0, 193, 228, 0.5);
     text-shadow: none; }
   
   button.suggested-action:active,
@@ -791,7 +791,7 @@ button.destructive-action {
   button.destructive-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #cc0000;
+    background-color: rgba(204, 0, 0, 0.5);
     text-shadow: none; }
   
   button.destructive-action:active,
@@ -973,7 +973,7 @@ button {
   button:hover {
     color: #fefefe;
     outline-color: rgba(254, 254, 254, 0.3);
-    background-color: rgba(255, 106, 0, 0.5);
+    background-color: rgba(255, 106, 0, 0);
     text-shadow: none; }
 
 .stack-switcher > button.needs-attention > label,
@@ -1648,9 +1648,9 @@ colorswatch#add-color-button {
     background-color: #111423;
     text-shadow: none; }
     colorswatch#add-color-button overlay:hover {
-      color: #BFC3CD;
+      color: #ff6a00;
       outline-color: rgba(191, 195, 205, 0.3);
-      background-color: #111524;
+      background-color: rgba(17, 21, 36, 0.5);
       text-shadow: none; }
     colorswatch#add-color-button overlay:backdrop {
       color: #9da1ac;
@@ -2440,7 +2440,7 @@ headerbar {
       headerbar button.suggested-action:hover {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00c1e4;
+        background-color: rgba(0, 193, 228, 0.5);
         text-shadow: none; }
       .titlebar button.suggested-action:active,
       headerbar button.suggested-action:active {
@@ -2486,7 +2486,7 @@ headerbar {
       headerbar button.destructive-action:hover {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #cc0000;
+        background-color: rgba(204, 0, 0, 0.5);
         text-shadow: none; }
       .titlebar button.destructive-action:active,
       headerbar button.destructive-action:active {
@@ -6357,9 +6357,9 @@ ConversationListView {
   background-color: #111423;
   text-shadow: none; }
   #content_frame button:hover {
-    color: #BFC3CD;
+    color: #ff6a00;
     outline-color: rgba(191, 195, 205, 0.3);
-    background-color: #111524;
+    background-color: rgba(17, 21, 36, 0.5);
     text-shadow: none; }
   #content_frame button:active, #content_frame button:checked {
     color: #BFC3CD;
