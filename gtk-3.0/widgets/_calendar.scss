@@ -9,7 +9,7 @@ calendar {
 		@extend %selected_items;
 		@include button(active-header);
 		font-weight: bolder;
-	border-radius: 3px;
+		border-radius: 3px;
 	}
 
 	&.header {
