@@ -318,7 +318,7 @@ button {
   button:checked {
     color: #fefefe;
     outline-color: rgba(254, 254, 254, 0.3);
-    background-color: #e65f00;
+    background: #e65f00;
     text-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:backdrop,
@@ -645,7 +645,7 @@ button.suggested-action {
   button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #00c1e4;
+    background: #00c1e4;
     text-shadow: none; }
   .selection-mode button.titlebutton:backdrop,
   button.suggested-action:backdrop,
@@ -798,7 +798,7 @@ button.destructive-action {
   button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #cc0000;
+    background: #cc0000;
     text-shadow: none; }
   
   button.destructive-action:backdrop,
@@ -2446,7 +2446,7 @@ headerbar {
       headerbar button.suggested-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00c1e4;
+        background: #00c1e4;
         text-shadow: none; }
       .titlebar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled {
@@ -2492,7 +2492,7 @@ headerbar {
       headerbar button.destructive-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #cc0000;
+        background: #cc0000;
         text-shadow: none; }
       .titlebar button.destructive-action:disabled,
       headerbar button.destructive-action:disabled {
@@ -6365,7 +6365,7 @@ ConversationListView {
   #content_frame button:active, #content_frame button:checked {
     color: #BFC3CD;
     outline-color: rgba(191, 195, 205, 0.3);
-    background-color: #ff6a00;
+    background: linear-gradient(to right, #ff3500, #ff9f00);
     text-shadow: none; }
   #content_frame button:disabled {
     color: #9da1ac;
