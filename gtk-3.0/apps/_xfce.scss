@@ -131,6 +131,7 @@ wnck-pager {
         background: transparentize($fg_color, 0.8);
         border-radius: 0;
         box-shadow: none;
+        -gtk-icon-effect: highlight;
     }
     &:checked {
         // background-color: $selected_bg_color;
