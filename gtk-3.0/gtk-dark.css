@@ -4153,11 +4153,12 @@ spinbutton:not(.vertical) {
     spinbutton:not(.vertical) button:dir(rtl) {
       border-style: none solid none none; }
     spinbutton:not(.vertical) button:hover {
-      color: #BFC3CD;
-      background-color: rgba(191, 195, 205, 0.05); }
+      color: #fefefe;
+      background-color: transparent; }
     spinbutton:not(.vertical) button:disabled {
       color: rgba(103, 106, 117, 0.3); }
     spinbutton:not(.vertical) button:active {
+      color: #cc5500;
       background-color: rgba(0, 0, 0, 0.1);
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
     spinbutton:not(.vertical) button:backdrop {
@@ -4253,6 +4254,14 @@ spinbutton.vertical button {
   border-width: 1px;
   border-color: rgba(12, 14, 21, 0.8);
   box-shadow: 0 1px rgba(255, 255, 255, 0.1); }
+  spinbutton.vertical button:hover {
+    color: #fefefe;
+    background-color: transparent; }
+  spinbutton.vertical button:disabled {
+    color: rgba(103, 106, 117, 0.3); }
+  spinbutton.vertical button:active {
+    color: #cc5500;
+    background-color: rgba(0, 0, 0, 0.1); }
 
 spinbutton.vertical button.up {
   border-radius: 3px 3px 0 0;
