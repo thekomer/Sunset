@@ -4463,8 +4463,8 @@ tooltip {
     color: white; }
 
 /**************
- * Tree Views *
- **************/
+* Tree Views *
+**************/
 treeview.view {
   border-left-color: #686c78;
   border-top-color: #0E111D; }
@@ -4477,9 +4477,13 @@ treeview.view {
     -GtkTreeView-expander-size: 16; }
   treeview.view:selected:focus, treeview.view:selected {
     border-radius: 0; }
+    treeview.view:selected:focus:hover, treeview.view:selected:hover {
+      background-color: #ff791a; }
   treeview.view:selected:backdrop, treeview.view:selected {
     border-left-color: #ffb47f;
     border-top-color: rgba(191, 195, 205, 0.1); }
+  treeview.view:hover {
+    background-color: rgba(191, 195, 205, 0.05); }
   treeview.view:disabled {
     color: #676a75; }
     treeview.view:disabled:selected {
@@ -4559,11 +4563,7 @@ treeview.view {
       transition: none; }
   treeview.view header button:last-child:backdrop, treeview.view header button:last-child {
     border-right-style: none; }
-  treeview.view button.dnd:active, treeview.view button.dnd:selected, treeview.view button.dnd:hover, treeview.view button.dnd,
-  treeview.view header.button.dnd:active,
-  treeview.view header.button.dnd:selected,
-  treeview.view header.button.dnd:hover,
-  treeview.view header.button.dnd {
+  treeview.view button.dnd:active, treeview.view button.dnd:selected, treeview.view button.dnd:hover, treeview.view button.dnd, treeview.view header.button.dnd:active, treeview.view header.button.dnd:selected, treeview.view header.button.dnd:hover, treeview.view header.button.dnd {
     padding: 0 6px;
     transition: none;
     background-image: none;
