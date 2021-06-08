@@ -50,6 +50,10 @@ treeview.view {
 		}
 	}
 
+	&:insensitive {
+
+	}
+
 	&.separator {
 		min-height: 2px;
 		color: $bg_color;
