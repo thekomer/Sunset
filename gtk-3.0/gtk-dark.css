@@ -4492,7 +4492,8 @@ treeview.view {
     border-left-color: #ffb47f;
     border-top-color: rgba(191, 195, 205, 0.1); }
   treeview.view:hover {
-    background-color: rgba(191, 195, 205, 0.05); }
+    background-color: rgba(191, 195, 205, 0.05);
+    color: #fefefe; }
   treeview.view:disabled {
     color: #676a75; }
     treeview.view:disabled:selected {
