@@ -357,7 +357,7 @@ button {
     -gtk-icon-shadow: none;
 
     &:hover { //&:focus  ...  focus used to be with hover : BUGfix
-      @include button(hover, transparentize($selected_bg_color, 0.5), $selected_fg_color);
+      @include button(hover, $selected_bg_color , $selected_fg_color);
     }
   }
 

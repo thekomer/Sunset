@@ -230,7 +230,8 @@
 			//
 			color: if($tc==$text_color, $selected_bg_color, $tc);
 			outline-color: transparentize($tc, 0.7);
-			background-color: transparentize($c, 0.5);
+			background: linear-gradient(to right, transparentize($theme-gradient-start, 0.5) 0%, transparentize($theme-gradient-end, 0.5) 100%);
+			//background: transparentize($c, 0.5);
 			text-shadow: none;
   }
 
