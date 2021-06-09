@@ -53,8 +53,8 @@
 #content_frame button {
   @include button(normal);
 
-  &:hover { @include button(hover); }
-  &:active, &:checked { @include button(active); }
+  &:hover { @include button(hover, $selected_bg_color, $selected_fg_color); }
+  &:active, &:checked { @include button(active, $selected_bg_color, $selected_fg_color); }
   &:disabled { @include button(insensitive); }
 }
 
@@ -74,12 +74,13 @@
   @include button(osd);
 
   &:hover { @include button(osd-hover); }
-  &:active, &:checked { @include button(osd-active); }
-  &:disabled { @include button(osd-insensitive); }
+  &:active, &:checked { @include button(osd-active, $selected_bg_color, $selected_fg_color); }
+  &:disabled { @include button(osd-insensitive, $selected_bg_color, $selected_fg_color); }
 }
 
 #login_window #user_combobox {
   color: $fg_color;
+  font-size: inherit;
   .menu,
   menu { font-weight: normal; }
 }
