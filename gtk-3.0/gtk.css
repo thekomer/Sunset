@@ -5838,11 +5838,10 @@ wnck-pager {
   padding: 2px;
   margin: 1px 0px; }
   #whiskermenu-window button:hover {
-    color: #ff6a00;
+    color: #fefefe;
     border-radius: 0;
     text-shadow: none;
     border: none;
-    background: rgba(191, 195, 205, 0.2);
     border-radius: 0;
     box-shadow: none;
     -gtk-icon-effect: highlight; }
