@@ -15,10 +15,10 @@
     widget .vertical {
     	background-color: transparent;
     	&:hover {
-      	color: $selected_fg_color;
-				background: linear-gradient(to right,
-					transparentize($theme-gradient-start, 0.6) 0%,
-					transparentize($theme-gradient-end, 0.6) 100%);
+      	//color: $selected_fg_color;
+				//background: linear-gradient(to right, transparentize($theme-gradient-start, 0.6) 0%, transparentize($theme-gradient-end, 0.6) 100%);
+				color: $selected_bg_color;
+				background-color: transparentize($fg_color, 0.95);
       }
       &:selected, &:active, &:checked {
 				color: $selected_fg_color;
@@ -56,13 +56,13 @@
     .primary-toolbar button,
     .vertical button.image-button.toggle:not(.text-button) {
         &, &:backdrop { @include button(undecorated); }
-        &:hover { 
+        &:hover {
         	background: linear-gradient(to right,
 					transparentize($theme-gradient-start, 0.6) 0%,
 					transparentize($theme-gradient-end, 0.6) 100%);
 					box-shadow: none;
 					&, & label {
-        	  color: $selected_fg_color; 
+        	  color: $selected_fg_color;
         	}
         }
         &:active,
@@ -73,7 +73,7 @@
           //background: $selected_bg_color;
           box-shadow: none;
           &, & label {
-        	  color: $selected_fg_color;  
+        	  color: $selected_fg_color;
           }
         }
     }

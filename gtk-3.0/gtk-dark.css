@@ -5919,6 +5919,7 @@ window.thunar paned > scrolledwindow treeview.view {
     border-radius: 0;
     text-shadow: none;
     border: none;
+    background-color: rgba(191, 195, 205, 0.05);
     border-radius: 0;
     box-shadow: none; }
   window.thunar paned > scrolledwindow treeview.view:selected {
@@ -6458,7 +6459,7 @@ ConversationListView {
     background-color: transparent; }
     .nemo-window .sidebar .view:hover, .nemo-window .sidebar iconview:hover, .nemo-window .sidebar .iconview:hover, .nemo-window .sidebar row:hover, .nemo-window statusbar .view:hover, .nemo-window statusbar iconview:hover, .nemo-window statusbar .iconview:hover, .nemo-window statusbar row:hover {
       color: #ff6a00;
-      background: rgba(9, 11, 19, 0.7); }
+      background-color: rgba(191, 195, 205, 0.05); }
     .nemo-window .sidebar .view:selected, .nemo-window .sidebar iconview:selected, .nemo-window .sidebar .view:active, .nemo-window .sidebar iconview:active, .nemo-window .sidebar .view:checked, .nemo-window .sidebar iconview:checked, .nemo-window .sidebar .iconview:selected, .nemo-window .sidebar .iconview:active, .nemo-window .sidebar .iconview:checked, .nemo-window .sidebar row:selected, .nemo-window .sidebar row:active, .nemo-window .sidebar row:checked, .nemo-window statusbar .view:selected, .nemo-window statusbar iconview:selected, .nemo-window statusbar .view:active, .nemo-window statusbar iconview:active, .nemo-window statusbar .view:checked, .nemo-window statusbar iconview:checked, .nemo-window statusbar .iconview:selected, .nemo-window statusbar .iconview:active, .nemo-window statusbar .iconview:checked, .nemo-window statusbar row:selected, .nemo-window statusbar row:active, .nemo-window statusbar row:checked {
       color: #fefefe;
       background: #ff6a00; }
@@ -6518,8 +6519,8 @@ ConversationListView {
     .caja-side-pane textview.view text:hover,
     .caja-side-pane viewport.frame:hover,
     .caja-side-pane widget .vertical:hover {
-      color: #fefefe;
-      background: linear-gradient(to right, rgba(255, 53, 0, 0.4) 0%, rgba(255, 159, 0, 0.4) 100%); }
+      color: #ff6a00;
+      background-color: rgba(191, 195, 205, 0.05); }
     .caja-side-pane treeview.view:selected, .caja-side-pane treeview.view:active, .caja-side-pane treeview.view:checked,
     .caja-side-pane textview.view text:selected,
     .caja-side-pane textview.view text:active,
