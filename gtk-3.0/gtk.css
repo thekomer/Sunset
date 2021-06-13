@@ -4510,6 +4510,12 @@ treeview.view {
   treeview.view:backdrop {
     border-left-color: #3b3e49;
     border-top: #0E111D; }
+    treeview.view:backdrop:hover {
+      color: inherit;
+      background-color: inherit; }
+    treeview.view:backdrop:selected {
+      color: rgba(254, 254, 254, 0.5);
+      background-color: rgba(255, 106, 0, 0.6); }
   treeview.view:drop(active) {
     border-style: solid none;
     border-width: 1px;

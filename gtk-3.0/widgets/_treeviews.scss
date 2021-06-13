@@ -66,8 +66,12 @@ treeview.view {
 		border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
 		border-top: $backdrop_bg_color;
 		&:hover {
-	//		color: $backdrop_fg_color;
-	//		background-color: $backdrop_text_color;
+			color: inherit;
+			background-color: inherit;
+		}
+		&:selected {
+			color: $backdrop_selected_fg_color;
+			background-color: $backdrop_selected_bg_color;
 		}
 	}
 
