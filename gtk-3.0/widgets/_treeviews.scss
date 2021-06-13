@@ -34,7 +34,7 @@ treeview.view {
 
 	&:hover {
 		background-color: transparentize($fg_color, 0.95);
-		color: $selected_fg_color;
+		color: lighten($fg_color, 10%);
 	}
 
 	&:disabled {
