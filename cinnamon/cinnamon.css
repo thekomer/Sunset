@@ -724,8 +724,8 @@ StScrollBar {
   font-weight: bold;
   color: #fefefe;
   background-gradient-direction: horizontal;
-  background-gradient-start: #ff3500;
-  background-gradient-end: #ff9f00;
+  background-gradient-start: #ff3300;
+  background-gradient-end: #ffa100;
   border-width: 0; }
 
 .calendar-other-month-day {
@@ -1089,8 +1089,8 @@ StScrollBar {
     padding: 7px;
     color: #fefefe;
     background-gradient-direction: horizontal;
-    background-gradient-start: #ff3500;
-    background-gradient-end: #ff9f00;
+    background-gradient-start: #ff3300;
+    background-gradient-end: #ffa100;
     border: 1px solid #040508;
     border-radius: 9px; }
   .menu-category-button-hover {
@@ -1234,8 +1234,8 @@ StScrollBar {
     background-gradient-end: rgba(255, 159, 0, 0.7); }
     .window-list-item-box:active:hover, .window-list-item-box:checked:hover, .window-list-item-box:focus:hover, .window-list-item-box:running:hover {
       background-gradient-direction: horizontal;
-      background-gradient-start: #ff3500;
-      background-gradient-end: #ff9f00; }
+      background-gradient-start: #ff3300;
+      background-gradient-end: #ffa100; }
   .window-list-item-box .progress {
     background-color: rgba(255, 106, 0, 0.8); }
 
@@ -1305,8 +1305,8 @@ StScrollBar {
     background-gradient-end: rgba(255, 159, 0, 0.7); }
     .grouped-window-list-item-box:focus:hover {
       background-gradient-direction: horizontal;
-      background-gradient-start: #ff3500;
-      background-gradient-end: #ff9f00; }
+      background-gradient-start: #ff3300;
+      background-gradient-end: #ffa100; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
     color: #fefefe;
     border-color: #ff6a00; }

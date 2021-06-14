@@ -6,9 +6,9 @@ $black: #000000;
 $white: #ffffff;
 $lime: #71f79f;
 $red: #FF0000;
-$redorange: #ff3500;
+$redorange: #ff3300;
 $orange: #ff6a00;
-$orangeyellow: #ff9f00;
+$orangeyellow: #ffa100;
 $yellow: #FFD400;
 $purple: #c74ded;
 $darkpurple: #7b7bbd;
@@ -32,8 +32,8 @@ $link_color: if($variant == 'light', darken($selected_bg_color,10%),
                                      lighten($selected_bg_color,20%));
 
 // main gradient
-$orange_gradient_start: #ff3500;
-$orange_gradient_end: #ff9f00;
+$orange_gradient_start: #ff3300;
+$orange_gradient_end: #ffa100;
 
 
 

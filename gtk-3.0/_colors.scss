@@ -23,6 +23,7 @@ $slider: #7b7bbd;
 $teal: #00e8c6;
 
 $theme_color: $orange;
+$gradient_degree: 13;
 $selected_fg_color: #fefefe;
 $selected_bg_color: $theme_color;
 //$selected_bg_color: #f7005a;
@@ -32,8 +33,8 @@ $highlight_text_color: darken($selected_bg_color, 10%);
 $borders_color: if($variant == 'light', transparentize(black,0.87), transparentize(#0C0E15,0.2));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 
-$theme-gradient-start: #ff3500;
-$theme-gradient-end: #ff9f00;
+$theme-gradient-start: adjust-hue($orange, -$gradient_degree);
+$theme-gradient-end: adjust-hue($orange, $gradient_degree);
 
 $link_color: $blue;
 $link_visited_color:transparentize($link_color,0.5);
