@@ -24,6 +24,13 @@
               // background: linear-gradient(to right, $theme-gradient-start 0%, $theme-gradient-end 100%);
               background: $selected_bg_color;
 						}
+						&:backdrop {
+							background-color: inherit;
+							color: inherit;
+							&:selected{
+								background-color: $backdrop_selected_bg_color;
+							}
+						}
         }
     }
 
@@ -68,6 +75,7 @@
             &:selected,
             &:active,
             &:checked { @include button(active-header); }
+
         }
     }
 

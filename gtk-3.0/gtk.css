@@ -6469,6 +6469,11 @@ ConversationListView {
     .nemo-window .sidebar .view:selected, .nemo-window .sidebar iconview:selected, .nemo-window .sidebar .view:active, .nemo-window .sidebar iconview:active, .nemo-window .sidebar .view:checked, .nemo-window .sidebar iconview:checked, .nemo-window .sidebar .iconview:selected, .nemo-window .sidebar .iconview:active, .nemo-window .sidebar .iconview:checked, .nemo-window .sidebar row:selected, .nemo-window .sidebar row:active, .nemo-window .sidebar row:checked, .nemo-window statusbar .view:selected, .nemo-window statusbar iconview:selected, .nemo-window statusbar .view:active, .nemo-window statusbar iconview:active, .nemo-window statusbar .view:checked, .nemo-window statusbar iconview:checked, .nemo-window statusbar .iconview:selected, .nemo-window statusbar .iconview:active, .nemo-window statusbar .iconview:checked, .nemo-window statusbar row:selected, .nemo-window statusbar row:active, .nemo-window statusbar row:checked {
       color: #fefefe;
       background: #ff6a00; }
+    .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .iconview:backdrop, .nemo-window .sidebar row:backdrop, .nemo-window statusbar .view:backdrop, .nemo-window statusbar iconview:backdrop, .nemo-window statusbar .iconview:backdrop, .nemo-window statusbar row:backdrop {
+      background-color: inherit;
+      color: inherit; }
+      .nemo-window .sidebar .view:backdrop:selected, .nemo-window .sidebar iconview:backdrop:selected, .nemo-window .sidebar .iconview:backdrop:selected, .nemo-window .sidebar row:backdrop:selected, .nemo-window statusbar .view:backdrop:selected, .nemo-window statusbar iconview:backdrop:selected, .nemo-window statusbar .iconview:backdrop:selected, .nemo-window statusbar row:backdrop:selected {
+        background-color: rgba(255, 106, 0, 0.6); }
 
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
