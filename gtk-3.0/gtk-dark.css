@@ -337,7 +337,7 @@ button {
     button:backdrop:checked {
       color: rgba(254, 254, 254, 0.7);
       outline-color: rgba(191, 195, 205, 0.3);
-      background-color: #ff6a00;
+      background-color: rgba(255, 106, 0, 0.6);
       text-shadow: none; }
       notebook > header > tabs > arrow:backdrop:active label, notebook > header > tabs > arrow:backdrop:checked label, notebook > header > tabs > arrow:backdrop:active label, notebook > header > tabs > arrow:backdrop:checked label,
       button:backdrop.flat:active label,
@@ -359,7 +359,7 @@ button {
       button:backdrop:disabled:checked {
         color: rgba(254, 254, 254, 0.7);
         outline-color: rgba(191, 195, 205, 0.3);
-        background-color: #ff6a00;
+        background-color: rgba(255, 106, 0, 0.6);
         text-shadow: none; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:disabled, notebook > header > tabs > arrow:backdrop:disabled,
   button.flat:backdrop,
@@ -665,7 +665,7 @@ button.suggested-action {
     button.suggested-action.flat:backdrop:checked {
       color: rgba(254, 254, 254, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #ff6a00;
+      background-color: rgba(255, 106, 0, 0.6);
       text-shadow: none; }
       .selection-mode button.titlebutton:backdrop:active label, .selection-mode button.titlebutton:backdrop:checked label,
       button.suggested-action:backdrop:active label,
@@ -691,7 +691,7 @@ button.suggested-action {
       button.suggested-action.flat:backdrop:disabled:checked {
         color: rgba(254, 254, 254, 0.7);
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ff6a00;
+        background-color: rgba(255, 106, 0, 0.6);
         text-shadow: none; }
   .selection-mode button.titlebutton:backdrop, .selection-mode button.titlebutton:disabled, .selection-mode button.titlebutton:backdrop:disabled,
   button.suggested-action.flat:backdrop,
@@ -818,7 +818,7 @@ button.destructive-action {
     button.destructive-action.flat:backdrop:checked {
       color: rgba(254, 254, 254, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #ff6a00;
+      background-color: rgba(255, 106, 0, 0.6);
       text-shadow: none; }
       
       button.destructive-action:backdrop:active label,
@@ -844,7 +844,7 @@ button.destructive-action {
       button.destructive-action.flat:backdrop:disabled:checked {
         color: rgba(254, 254, 254, 0.7);
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ff6a00;
+        background-color: rgba(255, 106, 0, 0.6);
         text-shadow: none; }
   
   button.destructive-action.flat:backdrop,
@@ -5884,7 +5884,9 @@ wnck-pager {
     color: #b6bbc6;
     margin-top: 5px;
     margin-bottom: 5px;
-    min-height: 24px; }
+    min-height: 24px;
+    color: inherit;
+    background-color: inherit; }
     .thunar toolbar button:hover {
       color: #ff6a00;
       background: transparent; }
@@ -5928,13 +5930,30 @@ window.thunar paned > scrolledwindow treeview.view {
     background-color: rgba(191, 195, 205, 0.05);
     border-radius: 0;
     box-shadow: none; }
-  window.thunar paned > scrolledwindow treeview.view:selected {
+  window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned > scrolledwindow treeview.view:active, window.thunar paned > scrolledwindow treeview.view:checked {
     border-radius: 23px;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white;
     border-radius: 0;
     box-shadow: none; }
+  window.thunar paned > scrolledwindow treeview.view:backdrop {
+    color: inherit;
+    background: inherit; }
+    window.thunar paned > scrolledwindow treeview.view:backdrop:hover {
+      background-color: inherit;
+      color: inherit;
+      border-radius: 0;
+      box-shadow: none; }
+    window.thunar paned > scrolledwindow treeview.view:backdrop:selected, window.thunar paned > scrolledwindow treeview.view:backdrop:active, window.thunar paned > scrolledwindow treeview.view:backdrop:checked {
+      color: rgba(254, 254, 254, 0.7);
+      outline-color: rgba(191, 195, 205, 0.3);
+      background-color: rgba(255, 106, 0, 0.6);
+      text-shadow: none;
+      border-radius: 0;
+      box-shadow: none; }
+      window.thunar paned > scrolledwindow treeview.view:backdrop:selected label, window.thunar paned > scrolledwindow treeview.view:backdrop:active label, window.thunar paned > scrolledwindow treeview.view:backdrop:checked label {
+        color: rgba(254, 254, 254, 0.7); }
 
 window.thunar statusbar {
   color: #b9bec9;

@@ -173,9 +173,11 @@ wnck-pager {
 			color: $selected_bg_color;
 			background: transparent;
 		}
-		&:selected,
-		&:active,
-		&:checked { @include button(active-header); }
+		&:selected, &:active, &:checked {
+			@include button(active-header);
+		}
+		color: inherit;
+		background-color: inherit;
 	}
 }
 
@@ -211,10 +213,25 @@ window.thunar paned > scrolledwindow treeview.view {
 		border-radius: 0;
 		box-shadow: none;
 	}
-	&:selected {
+	&:selected, &:active, &:checked {
 		@include button(active-header);
 		border-radius: 0;
 		box-shadow: none;
+	}
+	&:backdrop {
+		color: inherit;
+		background: inherit;
+		&:hover {
+			background-color: inherit;
+			color: inherit;
+			border-radius: 0;
+			box-shadow: none;
+		}
+		&:selected, &:active, &:checked {
+			@include button(backdrop-active);
+			border-radius: 0;
+			box-shadow: none;
+		}
 	}
 }
 
