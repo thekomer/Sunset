@@ -10,13 +10,11 @@
 
     .sidebar, statusbar {
         color: darken($fg_color, 2%);
-        // background: darken($_sidebar_color, 2%);
         background: $headerbar_color;
         .view, .iconview, row {
             background-color: transparent;
             &:hover {
 								color: $selected_bg_color;
-                //background: transparentize(darken($_sidebar_color, 3%), 0.3);
                 background-color: transparentize($fg_color, 0.95);
             }
             &:selected, &:active, &:checked {
@@ -25,9 +23,11 @@
               background: $selected_bg_color;
 						}
 						&:backdrop {
+							color: $backdrop_fg_color;
 							background-color: inherit;
-							color: inherit;
+							color: $backdrop_fg_color;
 							&:selected{
+								color: $backdrop_selected_fg_color;
 								background-color: $backdrop_selected_bg_color;
 							}
 						}
@@ -55,16 +55,19 @@
     }
 
 		.nemo-inactive-pane .view, .nemo-inactive-pane iconview {
-			color: darken($fg_color, 0.2);
+			color: darken($fg_color, 0.3);
 			background-color: $headerbar_color;
+			&:backdrop {
+				color: $backdrop_fg_color;
+			}
 		}
 
     toolbar.primary-toolbar {
         margin-bottom: -1px;
         background: $headerbar_color;
         button {
-            @include button(normal-header);
-            color: darken($fg_color, 3%);
+					@include button(normal-header);
+						color: darken($fg_color, 3%);
             margin-top: 5px;
             margin-bottom: 5px;
             min-height: 24px;
@@ -72,10 +75,16 @@
             	color: $selected_bg_color;
 							background: transparent;
             }
-            &:selected,
-            &:active,
-            &:checked { @include button(active-header); }
-
+            &:selected, &:active, &:checked {
+							@include button(active-header);
+						}
+            &:backdrop {
+							color: inherit;
+							background: transparent;
+							&:selected, &:active, &:checked {
+								@include button(backdrop-active-header);
+							}
+            }
         }
     }
 

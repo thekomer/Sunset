@@ -27,7 +27,7 @@
 /* widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #0E111D;
 /* text widgets and the like base background color on backdrop windows */
-@define-color theme_unfocused_base_color #131727;
+@define-color theme_unfocused_base_color #15192b;
 /* base background color of selections on backdrop windows */
 @define-color theme_unfocused_selected_bg_color #ff6a00;
 /* text/foreground color of selections on backdrop windows */
@@ -49,7 +49,7 @@
 @define-color unfocused_fg_color #676a75;
 @define-color unfocused_text_color #BFC3CD;
 @define-color unfocused_bg_color #0E111D;
-@define-color unfocused_base_color #131727;
+@define-color unfocused_base_color #15192b;
 @define-color unfocused_selected_bg_color #ff6a00;
 @define-color unfocused_selected_fg_color #fefefe;
 /* these colors are exported for the window manager and shouldn't be used in applications,
@@ -71,7 +71,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color text_view_bg #111524;
 @define-color budgie_tasklist_indicator_color #ff6a00;
 @define-color budgie_tasklist_indicator_color_active #ff6a00;
-@define-color placeholder_text_color #9da1ac;
+@define-color placeholder_text_color #9da1ad;
 /*****************
 * Drawing mixins *
 *****************/
@@ -183,8 +183,8 @@ textview text {
   .view text:backdrop,
   iconview text:backdrop,
   textview text:backdrop {
-    color: #9da1ac;
-    background-color: #131727; }
+    color: #9da1ad;
+    background-color: #15192b; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
@@ -236,7 +236,7 @@ assistant .sidebar {
   background-color: #111524;
   border-top: 1px solid rgba(12, 14, 21, 0.8); }
   assistant .sidebar:backdrop {
-    background-color: #131727;
+    background-color: #15192b;
     border-color: rgba(12, 14, 22, 0.82); }
 
 assistant.csd .sidebar {
@@ -324,9 +324,9 @@ button {
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:backdrop,
   button:backdrop.flat,
   button:backdrop {
-    color: #9da1ac;
+    color: #9da1ad;
     outline-color: rgba(191, 195, 205, 0.3);
-    background-color: #131727;
+    background-color: #15192b;
     text-shadow: none;
     transition: 200ms ease-out;
     -gtk-icon-effect: none; }
@@ -348,7 +348,7 @@ button {
     notebook > header > tabs > arrow:backdrop:disabled, notebook > header > tabs > arrow:backdrop:disabled,
     button:backdrop.flat:disabled,
     button:backdrop:disabled {
-      color: #9da1ac;
+      color: #9da1ad;
       outline-color: rgba(191, 195, 205, 0.3);
       background-color: #0f1320;
       text-shadow: none; }
@@ -373,7 +373,7 @@ button {
     -gtk-icon-shadow: none; }
   notebook > header > tabs > arrow:disabled,
   button:disabled {
-    color: #9da1ac;
+    color: #9da1ad;
     outline-color: rgba(191, 195, 205, 0.3);
     background-color: #0f1320;
     text-shadow: none; }
@@ -1014,15 +1014,15 @@ toolbar button:active {
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #e65f00; }
   .inline-toolbar toolbutton > button:disabled {
-    color: #9da1ac; }
+    color: #9da1ad; }
     .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
       color: rgba(230, 95, 0, 0.3); }
   .inline-toolbar toolbutton > button:backdrop {
-    color: #9da1ac; }
+    color: #9da1ad; }
     .inline-toolbar toolbutton > button:backdrop:active, .inline-toolbar toolbutton > button:backdrop:checked {
       color: #e65f00; }
     .inline-toolbar toolbutton > button:backdrop:disabled {
-      color: #9da1ac; }
+      color: #9da1ad; }
       .inline-toolbar toolbutton > button:backdrop:disabled:active, .inline-toolbar toolbutton > button:backdrop:disabled:checked {
         color: rgba(230, 95, 0, 0.3); }
 
@@ -1175,7 +1175,7 @@ calendar {
     font-size: smaller;
     color: #BFC3CD; }
   calendar:backdrop {
-    color: #9da1ac;
+    color: #9da1ad;
     border-color: rgba(12, 14, 22, 0.82); }
 
 /*************************
@@ -1618,7 +1618,7 @@ colorswatch.light overlay {
   colorswatch.light overlay:hover {
     border-color: rgba(12, 14, 21, 0.8); }
   colorswatch.light overlay:backdrop {
-    color: #9da1ac; }
+    color: #9da1ad; }
 
 colorswatch:drop(active) {
   box-shadow: none; }
@@ -1653,9 +1653,9 @@ colorswatch#add-color-button {
       outline-color: rgba(191, 195, 205, 0.3);
       text-shadow: none; }
     colorswatch#add-color-button overlay:backdrop {
-      color: #9da1ac;
+      color: #9da1ad;
       outline-color: rgba(191, 195, 205, 0.3);
-      background-color: #131727;
+      background-color: #15192b;
       text-shadow: none; }
 
 colorswatch:disabled {
@@ -1802,9 +1802,9 @@ entry {
     box-shadow: none; }
   spinbutton:backdrop:not(.vertical),
   entry:backdrop {
-    color: #9da1ac;
+    color: #9da1ad;
     border-color: rgba(12, 14, 22, 0.82);
-    background-color: #131727;
+    background-color: #15192b;
     box-shadow: none;
     transition: 200ms ease-out; }
   spinbutton:backdrop:disabled:not(.vertical),
@@ -1852,7 +1852,7 @@ entry {
       color: #ff6a00; }
     spinbutton:not(.vertical) image:backdrop,
     entry image:backdrop {
-      color: #565965; }
+      color: #575a66; }
   spinbutton:drop(active):focus:not(.vertical), spinbutton:drop(active):not(.vertical),
   entry:drop(active):focus,
   entry:drop(active) {
@@ -1943,8 +1943,8 @@ entry:not(:disabled) + entry:not(:disabled),
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):backdrop:not(.vertical), .linked.vertical >
   entry:not(:disabled) + entry:not(:disabled):backdrop,
   .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical) {
-    border-top-color: rgba(17, 21, 35, 0.946);
-    background-image: linear-gradient(to bottom, #131727, #131727); }
+    border-top-color: rgba(19, 23, 38, 0.946);
+    background-image: linear-gradient(to bottom, #15192b, #15192b); }
 
 .linked.vertical > spinbutton:disabled:not(.vertical) + spinbutton:disabled:not(.vertical),
 .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, .linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical),
@@ -2837,7 +2837,7 @@ list {
   background-color: #111524;
   border-color: rgba(12, 14, 21, 0.8); }
   list:backdrop {
-    background-color: #131727;
+    background-color: #15192b;
     border-color: rgba(12, 14, 22, 0.82); }
 
 row {
@@ -2902,7 +2902,7 @@ menu,
   menu:backdrop,
   .menu:backdrop,
   .context-menu:backdrop {
-    background-color: #121625; }
+    background-color: #131728; }
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {
@@ -2984,7 +2984,7 @@ menu,
     menu > arrow:backdrop,
     .menu > arrow:backdrop,
     .context-menu > arrow:backdrop {
-      background-color: #121625; }
+      background-color: #131728; }
     menu > arrow:disabled,
     .menu > arrow:disabled,
     .context-menu > arrow:disabled {
@@ -3038,7 +3038,7 @@ assistant {
     border-top: 1px solid rgba(12, 14, 21, 0.8);
     border-bottom-left-radius: 4px; }
     assistant .sidebar:backdrop {
-      background-color: #131727;
+      background-color: #15192b;
       border-color: rgba(12, 14, 22, 0.82); }
   assistant.csd .sidebar {
     border-top-style: none; }
@@ -3175,7 +3175,7 @@ notebook > header {
       color: #676a75; }
       notebook > header tab:backdrop:checked.reorderable-page {
         border-color: rgba(12, 14, 22, 0.82);
-        background-color: #131727; }
+        background-color: #15192b; }
     notebook > header tab button.flat {
       padding: 0;
       margin-top: 4px;
@@ -3230,7 +3230,7 @@ notebook > header {
 notebook > stack:not(:only-child) {
   background-color: #111524; }
   notebook > stack:not(:only-child):backdrop {
-    background-color: #131727; }
+    background-color: #15192b; }
 
 /*********
  * Paned *
@@ -4022,7 +4022,7 @@ treeview ~ scrollbar.vertical {
     border-left: 1px solid rgba(12, 14, 21, 0.8);
     border-right-style: none; }
   .sidebar:backdrop {
-    background-color: #101422;
+    background-color: #111524;
     border-color: rgba(12, 14, 22, 0.82); }
   .sidebar row {
     padding: 8px 12px;
@@ -4162,7 +4162,7 @@ spinbutton:not(.vertical) {
       background-color: rgba(0, 0, 0, 0.1);
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
     spinbutton:not(.vertical) button:backdrop {
-      color: #5f626d;
+      color: #5f626e;
       background-color: transparent;
       border-color: rgba(12, 14, 22, 0.12);
       transition: 200ms ease-out; }
@@ -4540,7 +4540,7 @@ treeview.view {
     treeview.view.expander:checked {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
     treeview.view.expander:backdrop {
-      color: #4e515e; }
+      color: #4e525f; }
   treeview.view.progressbar {
     border: 1px solid #cc5500;
     border-radius: 4px;
@@ -4552,10 +4552,10 @@ treeview.view {
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
       background-image: linear-gradient(to bottom, #111524, #010101); }
       treeview.view.progressbar:selected:focus:backdrop, treeview.view.progressbar:selected:backdrop {
-        border-color: #131727;
-        background-color: #131727; }
+        border-color: #15192b;
+        background-color: #15192b; }
     treeview.view.progressbar:backdrop {
-      border-color: #131727;
+      border-color: #15192b;
       background-image: none;
       box-shadow: none; }
   treeview.view.trough {
@@ -4608,7 +4608,7 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
     border-style: none solid solid none;
     color: #3b3e49;
     background-image: none;
-    background-color: #131727; }
+    background-color: #15192b; }
     treeview.view header button:backdrop:disabled {
       border-color: #0E111D;
       background-image: none; }
@@ -5637,7 +5637,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window notebook > stack:only-child {
   background-color: #111524; }
   .nautilus-window notebook > stack:only-child:backdrop {
-    background-color: #131727; }
+    background-color: #15192b; }
 
 .nautilus-window searchbar {
   border-top: 1px solid rgba(0, 0, 0, 0.12); }
@@ -5874,6 +5874,7 @@ wnck-pager {
  * thunar *
  **********/
 .thunar toolbar {
+  margin-bottom: -1px;
   background-color: #06070c; }
   .thunar toolbar button {
     color: #8b8b8b;
@@ -5884,9 +5885,7 @@ wnck-pager {
     color: #b6bbc6;
     margin-top: 5px;
     margin-bottom: 5px;
-    min-height: 24px;
-    color: inherit;
-    background-color: inherit; }
+    min-height: 24px; }
     .thunar toolbar button:hover {
       color: #ff6a00;
       background: transparent; }
@@ -5895,6 +5894,15 @@ wnck-pager {
       background: linear-gradient(to right, #ff3300, #ffa100);
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
       color: white; }
+    .thunar toolbar button:backdrop {
+      color: inherit;
+      background: inherit; }
+      .thunar toolbar button:backdrop:selected, .thunar toolbar button:backdrop:active, .thunar toolbar button:backdrop:checked {
+        border-radius: 23px;
+        color: rgba(191, 195, 205, 0.4);
+        background: rgba(255, 106, 0, 0.6);
+        box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98);
+        background-color: red; }
 
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(1); }
@@ -5921,6 +5929,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   box-shadow: none; }
 
 window.thunar paned > scrolledwindow treeview.view {
+  color: #b9bec9;
   background: #06070c; }
   window.thunar paned > scrolledwindow treeview.view:hover {
     color: #ff6a00;
@@ -5938,8 +5947,8 @@ window.thunar paned > scrolledwindow treeview.view {
     border-radius: 0;
     box-shadow: none; }
   window.thunar paned > scrolledwindow treeview.view:backdrop {
-    color: inherit;
-    background: inherit; }
+    color: #676a75;
+    background: #0b0d16; }
     window.thunar paned > scrolledwindow treeview.view:backdrop:hover {
       background-color: inherit;
       color: inherit;
@@ -6405,7 +6414,7 @@ ConversationListView {
     background-color: #ff6a00;
     text-shadow: none; }
   #content_frame button:disabled {
-    color: #9da1ac;
+    color: #9da1ad;
     outline-color: rgba(191, 195, 205, 0.3);
     background-color: #0f1320;
     text-shadow: none; }
@@ -6489,9 +6498,11 @@ ConversationListView {
       color: #fefefe;
       background: #ff6a00; }
     .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .iconview:backdrop, .nemo-window .sidebar row:backdrop, .nemo-window statusbar .view:backdrop, .nemo-window statusbar iconview:backdrop, .nemo-window statusbar .iconview:backdrop, .nemo-window statusbar row:backdrop {
+      color: #676a75;
       background-color: inherit;
-      color: inherit; }
+      color: #676a75; }
       .nemo-window .sidebar .view:backdrop:selected, .nemo-window .sidebar iconview:backdrop:selected, .nemo-window .sidebar .iconview:backdrop:selected, .nemo-window .sidebar row:backdrop:selected, .nemo-window statusbar .view:backdrop:selected, .nemo-window statusbar iconview:backdrop:selected, .nemo-window statusbar .iconview:backdrop:selected, .nemo-window statusbar row:backdrop:selected {
+        color: rgba(254, 254, 254, 0.5);
         background-color: rgba(255, 106, 0, 0.6); }
 
 .nemo-window .nemo-window-pane widget.entry {
@@ -6507,8 +6518,10 @@ ConversationListView {
     color: #fefefe; }
 
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview, .nemo-window .nemo-inactive-pane iconview {
-  color: #bec2cd;
+  color: #bec2cc;
   background-color: #06070c; }
+  .nemo-window .nemo-inactive-pane .view:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop {
+    color: #676a75; }
 
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
@@ -6531,6 +6544,14 @@ ConversationListView {
       background: linear-gradient(to right, #ff3300, #ffa100);
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
       color: white; }
+    .nemo-window toolbar.primary-toolbar button:backdrop {
+      color: inherit;
+      background: transparent; }
+      .nemo-window toolbar.primary-toolbar button:backdrop:selected, .nemo-window toolbar.primary-toolbar button:backdrop:active, .nemo-window toolbar.primary-toolbar button:backdrop:checked {
+        border-radius: 23px;
+        color: rgba(191, 195, 205, 0.4);
+        background: rgba(255, 106, 0, 0.6);
+        box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
 
 /* * * * * * * * * * *
  * Caja file manager *

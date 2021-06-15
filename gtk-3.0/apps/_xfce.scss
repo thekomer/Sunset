@@ -162,6 +162,7 @@ wnck-pager {
  * thunar *
  **********/
 .thunar toolbar {
+	margin-bottom: -1px;
   background-color: $headerbar_color;
 	button {
 		@include button(normal-header);
@@ -176,8 +177,15 @@ wnck-pager {
 		&:selected, &:active, &:checked {
 			@include button(active-header);
 		}
-		color: inherit;
-		background-color: inherit;
+		&:backdrop {
+			color: inherit;
+			background: inherit;
+			&:selected, &:active, &:checked {
+				@include button(backdrop-active-header);
+			}
+		}
+		//color: inherit;
+		//background-color: inherit;
 	}
 }
 
@@ -206,6 +214,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 
 // thunar sidepane
 window.thunar paned > scrolledwindow treeview.view {
+	color: darken($fg_color, 2%);
 	background: $headerbar_color;
 	&:hover {
 		@include button(hover-header);
@@ -219,8 +228,8 @@ window.thunar paned > scrolledwindow treeview.view {
 		box-shadow: none;
 	}
 	&:backdrop {
-		color: inherit;
-		background: inherit;
+		color: $backdrop_fg_color;
+		background: darken($backdrop_bg_color, 2%);
 		&:hover {
 			background-color: inherit;
 			color: inherit;

@@ -93,7 +93,7 @@ $insensitive_base_color: darken($base_color, 5%);
 $insensitive_borders_color: $borders_color;
 
 // Backdrop state colors
-$backdrop_base_color: if($variant == 'light', darken($base_color, 1%), lighten($base_color, 1%));
+$backdrop_base_color: if($variant == 'light', darken($base_color, 1%), lighten($base_color, 2%));
 $backdrop_text_color: mix($text_color, $backdrop_base_color, 80%);
 $backdrop_bg_color: $bg_color;
 $backdrop_headerbar_bg_color: $headerbar_color;
