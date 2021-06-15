@@ -306,6 +306,10 @@ button {
       notebook > header > tabs > arrow:hover:active,
       button.flat:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    notebook > header > tabs > arrow:backdrop:hover,
+    button.flat:backdrop:hover {
+      color: inherit;
+      background: inherit; }
   notebook > header > tabs > arrow:hover,
   button:hover {
     color: #fefefe;
@@ -361,6 +365,17 @@ button {
         outline-color: rgba(191, 195, 205, 0.3);
         background-color: rgba(255, 106, 0, 0.6);
         text-shadow: none; }
+  notebook > header > tabs > arrow:backdrop:backdrop,
+  button:backdrop:backdrop {
+    color: inherit; }
+    notebook > header > tabs > arrow:backdrop:backdrop:hover,
+    button:backdrop:backdrop:hover {
+      background: inherit; }
+    notebook > header > tabs > arrow:backdrop:backdrop:active, notebook > header > tabs > arrow:backdrop:backdrop:checked, notebook > header > tabs > arrow:backdrop:backdrop:selected,
+    button:backdrop:backdrop:active,
+    button:backdrop:backdrop:checked,
+    button:backdrop:backdrop:selected {
+      background: rgba(255, 106, 0, 0.6); }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:disabled, notebook > header > tabs > arrow:backdrop:disabled,
   button.flat:backdrop,
   button.flat:disabled,
@@ -431,7 +446,8 @@ button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
   border-color: transparent; }
   row:selected
   button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
-    color: #676a75; }
+    color: #676a75;
+    background: #15192b; }
 
 
 button.osd {
@@ -5901,8 +5917,7 @@ wnck-pager {
         border-radius: 23px;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
-        box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98);
-        background-color: red; }
+        box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
 
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(1); }
