@@ -76,6 +76,10 @@
   &:hover { @include button(osd-hover); }
   &:active, &:checked { @include button(osd-active, $selected_bg_color, $selected_fg_color); }
   &:disabled { @include button(osd-insensitive, $selected_bg_color, $selected_fg_color); }
+  &:focus {
+		outline: 1px dashed transparentize($theme_color, 0.3);
+		outline-offset: -2px;
+	}
 }
 
 #login_window #user_combobox {
