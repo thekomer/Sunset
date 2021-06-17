@@ -43,3 +43,13 @@ $button_transition: all 200ms $ease-out-quad;
 
   -gtk-secondary-caret-color: $selected_bg_color;
 }
+
+/* komer: accessibility for keyboard navigation
+ * needs to be enhanced with focus for specific selected widgets
+ */
+
+*:focus {
+  outline: 1px dashed transparentize($theme_color, 0.3);
+  outline-offset: -2px;
+  &:active, &:selected { outline-color: black; }
+}

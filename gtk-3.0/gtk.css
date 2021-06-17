@@ -95,6 +95,15 @@ read if you used those and something break with a version upgrade you're on your
   -gtk-outline-radius: 2px;
   -gtk-secondary-caret-color: #ff6a00; }
 
+/* komer: accessibility for keyboard navigation
+ * needs to be enhanced with focus for specific selected widgets
+ */
+*:focus {
+  outline: 1px dashed rgba(255, 106, 0, 0.7);
+  outline-offset: -2px; }
+  *:focus:active, *:focus:selected {
+    outline-color: black; }
+
 /***********
  * Widgets *
  ***********/
@@ -6356,7 +6365,8 @@ SheetStyleDialog.unity-force-quit {
   opacity: 0; }
 
 ConversationListView {
-  -GtkTreeView-grid-line-width: 0; }
+  -GtkTreeView-grid-line-width: 1;
+  font-size: 150%; }
   ConversationListView .view:active, ConversationListView iconview:active, ConversationListView .view:selected, ConversationListView iconview:selected {
     background-color: #ff6a00;
     color: #fefefe; }

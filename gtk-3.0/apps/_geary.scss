@@ -4,14 +4,14 @@
 
 .geary-titlebar-left,
 .geary-titlebar-right {
-
   .separator {
     opacity: 0;
   }
 }
 
 ConversationListView {
-  -GtkTreeView-grid-line-width: 0;
+  -GtkTreeView-grid-line-width: 1;
+  font-size: 150%;
 
   .view {
     &:active,
