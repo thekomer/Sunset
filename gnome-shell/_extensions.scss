@@ -1,1 +1,11 @@
-@import "extensions/_openweather"
+/**********************
+ * DE-Specific Styles *
+ **********************/
+
+@import "extensions/_cosmic";
+
+/***********************
+ * App-Specific Styles *
+ ***********************/
+
+@import "extensions/_openweather";
