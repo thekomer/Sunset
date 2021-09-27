@@ -1587,11 +1587,11 @@ StScrollBar {
   %icon_tile {
     color: $selected_fg_color;
     border-radius: 2px;
-    padding: 7px 6px;
+    padding: 6px;
     border: none;
     transition-duration: 100ms;
     text-align: center;
-    box-shadow: $depth;
+    box-shadow: none;
   }
 
   .app-well-app.app-folder > .overview-icon {
