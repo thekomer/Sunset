@@ -21,6 +21,10 @@ decoration {
   // this is used for the resize cursor area
   margin: 10px;
 
+	// added for accessibility (window borders)
+	border: 1px solid mix($headerbar_color, $selected_bg_color, 50%);
+	background: mix($headerbar_color, $selected_bg_color, 50%);
+
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
     // change when we go to backdrop, to prevent jumping windows.
@@ -28,6 +32,9 @@ decoration {
     // or the jumping will happen during the transition.
     box-shadow: 0 4px 10px 2px transparentize($borders_color, 0.4);
     transition: $backdrop_transition;
+    // added for accessibility (window borders)
+    border: 1px solid mix($headerbar_color, $fg_color, 85%);
+		background: mix($headerbar_color, $fg_color, 85%);
   }
 
   .maximized &,
