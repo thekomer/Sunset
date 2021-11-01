@@ -41,7 +41,11 @@ decoration {
   .fullscreen &,
   .tiled & { border-radius: 0; }
 
-  .popup & { box-shadow: none; }
+  .popup & {
+		box-shadow: none;
+		border: 0px solid mix($headerbar_color, $fg_color, 85%);
+		background: mix($headerbar_color, $fg_color, 85%);
+  }
 
   // server-side decorations as used by mutter
   .ssd & { box-shadow: none; } //just doing borders, wm draws actual shadows
@@ -55,6 +59,8 @@ decoration {
   tooltip.csd & {
     border-radius: 5px;
     box-shadow: none;
+    border: 0px solid mix($headerbar_color, $fg_color, 85%);
+		background: mix($headerbar_color, $fg_color, 85%);
   }
 
   messagedialog.csd & {
