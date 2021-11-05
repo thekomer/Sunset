@@ -15,20 +15,23 @@ active_text_shadow_color=#929ba8
 inactive_text_color=#778085
 inactive_text_shadow_color=#778085
 
-highlight_color=ff6a00
 #active_color_1=#0e111d
 active_color_1=#06070c
 #active_color_2=#06060a
 active_color_2=#512508
 inactive_color_1=#06070c
-inactive_color_2=#222329
+#inactive_color_2=#222329
+inactive_color_2=#15161b
+
+active_hilight_2=#ff6a00
+inactive_hilight_2=#9b4205
 
 shadow_delta_height=2
 shadow_delta_width=0
 shadow_delta_x=0
 shadow_delta_y=-4
-shadow_opacity=46
+shadow_opacity=56
 
-#show_frame_shadow=true
+show_frame_shadow=true
 show_popup_shadow=true
 show_app_icon=true

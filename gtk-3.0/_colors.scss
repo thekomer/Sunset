@@ -64,7 +64,7 @@ $success_color: if($variant == 'light', $cyan, darken($cyan,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
 $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_bg_color,10%));
 
-$window_border_color: mix($headerbar_color, $selected_bg_color, 70%);
+$window_border_color: mix($headerbar_color, $selected_bg_color, 40%);
 $window_border_backdrop_color: mix($headerbar_color, $fg_color, 85%);
 
 $osd_fg_color: #fefefe;
