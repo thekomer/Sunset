@@ -22,8 +22,8 @@ decoration {
   margin: 10px;
 
 	// added for accessibility (window borders)
-	border: 1px solid mix($headerbar_color, $selected_bg_color, 50%);
-	background: mix($headerbar_color, $selected_bg_color, 50%);
+	border: 2px solid $window_border_color;
+	background: $window_border_color;
 
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
@@ -33,8 +33,8 @@ decoration {
     box-shadow: 0 4px 10px 2px transparentize($borders_color, 0.4);
     transition: $backdrop_transition;
     // added for accessibility (window borders)
-    border: 1px solid mix($headerbar_color, $fg_color, 85%);
-		background: mix($headerbar_color, $fg_color, 85%);
+    border: 2px solid $window_border_backdrop_color;
+		background: $window_border_backdrop_color;
   }
 
   .maximized &,
@@ -43,8 +43,8 @@ decoration {
 
   .popup & {
 		box-shadow: none;
-		border: 0px solid mix($headerbar_color, $fg_color, 85%);
-		background: mix($headerbar_color, $fg_color, 85%);
+		border: 0px solid $window_border_backdrop_color;
+		background: $window_border_backdrop_color;
   }
 
   // server-side decorations as used by mutter
@@ -59,14 +59,14 @@ decoration {
   tooltip.csd & {
     border-radius: 5px;
     box-shadow: none;
-    border: 0px solid mix($headerbar_color, $fg_color, 85%);
-		background: mix($headerbar_color, $fg_color, 85%);
+    border: 0px solid $window_border_backdrop_color;
+		background: $window_border_backdrop_color;
   }
 
   messagedialog.csd & {
     border-radius: 7px;
     box-shadow: 0 1px 2px transparentize(black, 0.8),
-                  0 0 0 1px transparentize($_wm_border,0.1);
+                0 0 0 1px transparentize($_wm_border,0.1);
   }
 
   .solid-csd & {

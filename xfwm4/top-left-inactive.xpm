@@ -2,7 +2,7 @@
 static char * top_left_inactive_xpm[] = {
 "6 31 3 1",
 "       c None",
-".      c #FFFFFF s inactive_color_2",
+".      c #FFFFFF s inactive_color_1",
 "x			c #000000 s inactive_color_2",
 "    xx"};
 "  xxxx"};

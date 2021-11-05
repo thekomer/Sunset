@@ -2,7 +2,7 @@
 static char * top_right_active_xpm[] = {
 "6 31 3 1",
 "       c None",
-".      c #FFFFFF s active_color_2",
+".      c #FFFFFF s active_color_1",
 "x			c #000000 s active_color_2",
 "xx    "};
 "xxxx  "};
