@@ -4,10 +4,10 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: if($variant == 'light', #ebf0f5, lighten(#0E111D, 2%));
-$text_color: if($variant == 'light', #31363D, #BFC3CD);
-$bg_color: if($variant == 'light', darken( #EEEEEE, 3%), #0E111D);
 $fg_color: if($variant == 'light', #31363d, #BFC3CD);
+$bg_color: if($variant == 'light', darken( #EEEEEE, 3%), #0E111D);
+$base_color: if($variant == 'light', #ebf0f5, lighten($bg_color, 2%));
+$text_color: if($variant == 'light', #31363D, #BFC3CD);
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
 $_sidebar_color: if($variant == 'light', #222e39, #0E111D);
@@ -64,8 +64,8 @@ $success_color: if($variant == 'light', $cyan, darken($cyan,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
 $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_bg_color,10%));
 
-$window_border_color: mix($headerbar_color, $selected_bg_color, 40%);
-$window_border_backdrop_color: mix($headerbar_color, $fg_color, 85%);
+$window_border_color: mix($headerbar_color, $selected_bg_color, 70%);
+$window_border_backdrop_color: mix($headerbar_color, $fg_color, 92%);
 
 $osd_fg_color: #fefefe;
 $osd_text_color: white;
@@ -77,8 +77,10 @@ $osd_borders_color: transparentize(white, 0.85);
 $sidebar_bg_color: mix($bg_color, $base_color, 50%);
 $base_hover_color: transparentize($fg_color, 0.95);
 
-$tooltip_borders_color: transparentize(white, 0.9);
+//$tooltip_borders_color: transparentize(white, 0.95);
+$tooltip_borders_color: mix($headerbar_color, $fg_color, 92%);
 $shadow_color: transparentize(black, 0.9);
+$shadow_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.9));
 
 $text_shadow_color: if($variant == 'dark', $shadow_color, transparentize(white, 0.9));
 $icon_shadow_color: $text_shadow_color;

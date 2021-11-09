@@ -15,14 +15,15 @@ active_text_shadow_color=#929ba8
 inactive_text_color=#778085
 inactive_text_shadow_color=#778085
 
-#active_color_1=#0e111d
+# $headerbar_color in gtk-3
 active_color_1=#06070c
-#active_color_2=#06060a
+# $window_border_color in gtk-3
 active_color_2=#512508
 inactive_color_1=#06070c
-#inactive_color_2=#222329
+# $window_border_backdrop_color in gtk-3
 inactive_color_2=#15161b
 
+# selected_bg_color in gtk-3
 active_hilight_2=#ff6a00
 inactive_hilight_2=#9b4205
 
@@ -34,4 +35,4 @@ shadow_opacity=56
 
 show_frame_shadow=true
 show_popup_shadow=true
-show_app_icon=true
+show_app_icon=false
