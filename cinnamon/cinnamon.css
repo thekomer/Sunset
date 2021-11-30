@@ -930,7 +930,7 @@ StScrollBar {
   background-color: #0E111D;
   border: 1px solid #040508;
   border-radius: 3px;
-  padding: 0; }
+  padding: 5px 10px; }
   .modal-dialog > StBoxLayout:first-child {
     padding: 10px; }
   .modal-dialog-button-box {
@@ -943,6 +943,11 @@ StScrollBar {
       padding-top: 0;
       padding-bottom: 0;
       height: 30px; }
+  .modal-dialog .confirm-dialog-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 12px; }
 
 /* * * * * * * *
  * Run dialog  *
@@ -955,15 +960,17 @@ StScrollBar {
   .run-dialog > * {
     padding: 0; }
   .run-dialog-label {
-    font-size: 0;
+    font-size: 1.3em;
     font-weight: bold;
     color: #BFC3CD;
-    padding-bottom: 0; }
-  .run-dialog-error-label {
-    color: #e60000; }
-  .run-dialog-error-box {
+    padding-bottom: 15px;
+    text-align: center; }
+  .run-dialog-description {
+    color: #BFC3CD;
     padding-top: 15px;
-    spacing: 5px; }
+    text-align: center; }
+    .run-dialog-description.error {
+      color: #e60000; }
   .run-dialog-completion-box {
     padding-top: 5px;
     padding-left: 15px;
