@@ -655,8 +655,19 @@ StScrollBar {
   border: 1px solid #040508;
   background-color: #131727; }
 
+.calendar-events-no-events-button {
+  margin: 6px 0 6px 0;
+  padding: 6px; }
+  .calendar-events-no-events-button:hover {
+    background-color: #ff6a00; }
+    .calendar-events-no-events-button:hover .calendar-events-no-events-icon,
+    .calendar-events-no-events-button:hover .calendar-events-no-events-label {
+      color: #fefefe; }
+
+.calendar-events-no-events-icon,
 .calendar-events-no-events-label {
-  color: rgba(191, 195, 205, 0.45);
+  font-weight: bold;
+  color: #BFC3CD;
   text-align: center; }
 
 .calendar-events-date-label {
@@ -727,8 +738,6 @@ StScrollBar {
 
 .calendar-today-home-button {
   padding: 6px; }
-  .calendar-today-home-button:hover {
-    background-color: rgba(255, 106, 0, 0.6); }
 
 .calendar-today-day-label {
   font-size: 1.75em;
@@ -742,6 +751,15 @@ StScrollBar {
   color: #BFC3CD;
   font-weight: bold;
   text-align: center; }
+
+.calendar-today-home-button-enabled {
+  padding: 6px; }
+  .calendar-today-home-button-enabled:hover {
+    background-color: #ff6a00; }
+    .calendar-today-home-button-enabled:hover .calendar-today-day-label {
+      color: #fefefe; }
+    .calendar-today-home-button-enabled:hover .calendar-today-date-label {
+      color: #fefefe; }
 
 .calendar-month-label {
   color: #BFC3CD;
