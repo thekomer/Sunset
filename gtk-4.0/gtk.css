@@ -4473,8 +4473,7 @@ switch {
 /************
  * Toolbars *
  ************/
-toolbar, .inline-toolbar, searchbar,
-.location-bar {
+toolbar, .inline-toolbar, searchbar > revealer > box {
   padding: 4px;
   background-color: #06070c; }
 
@@ -4506,18 +4505,15 @@ toolbar {
   border-width: 0 1px 1px;
   border-radius: 0  0 5px 5px; }
 
-searchbar,
-.location-bar {
+searchbar > revealer > box {
   border-width: 0 0 1px;
-  padding: 3px; }
+  padding: 5px; }
 
-.inline-toolbar, searchbar,
-.location-bar {
+.inline-toolbar, searchbar > revealer > box {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.05);
   background-color: rgba(17, 20, 31, 0.715); }
-  .inline-toolbar:backdrop, searchbar:backdrop,
-  .location-bar:backdrop {
+  .inline-toolbar:backdrop, searchbar > revealer > box:backdrop {
     border-color: rgba(59, 62, 71, 0.145);
     background-color: rgba(16, 19, 31, 0.70075);
     box-shadow: none;

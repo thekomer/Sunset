@@ -2,7 +2,8 @@
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 4px 4px;
+
 
   // lamefun trick to get rounded borders regardless of CSD use
   border-width: 0px;
@@ -12,7 +13,7 @@ decoration {
   $_wm_border: if($variant=='light', transparentize(black, 0.77), transparentize($borders_color, 0.1));
   $_wm_border_backdrop: if($variant=='light', transparentize(black, 0.82), transparentize($borders_color, 0.1));
 
-    // lamefun trick to get rounded borders regardless of CSD use
+  // lamefun trick to get rounded borders regardless of CSD use
   border-width: 0px;
 
   box-shadow: 0 4px 10px 2px transparentize($borders_color, 0.2);
