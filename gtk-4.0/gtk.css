@@ -4680,49 +4680,44 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
 /**********************
  * Window Decorations *
  *********************/
-decoration, window {
-  border-radius: 4px 4px 0 0;
+window {
   border-width: 0px;
-  border-width: 0px;
-  box-shadow: 0 4px 10px 2px rgba(255, 255, 255, 0);
-  margin: 10px;
-  border: 2px solid #512508;
-  background: #512508; }
-  decoration:backdrop, window:backdrop {
-    box-shadow: 0 4px 10px 2px rgba(255, 255, 255, 0);
-    transition: 200ms ease-out;
-    border: 2px solid #15161b;
-    background: #15161b; }
-  .maximized decoration,
-  .fullscreen decoration,
-  .tiled decoration, .maximized window,
-  .fullscreen window,
-  .tiled window {
-    border-radius: 0; }
-  .popup decoration, .popup window {
-    box-shadow: none;
-    border: 0px solid #15161b;
-    background: #15161b; }
-  .ssd decoration, .ssd window {
-    box-shadow: none; }
-  .csd.popup decoration, .csd.popup window {
-    border-radius: 7px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.05); }
-  tooltip.csd decoration, tooltip.csd window {
-    border-radius: 5px;
-    box-shadow: none;
-    border: 0px solid #15161b;
-    background: #15161b; }
-  messagedialog.csd decoration, messagedialog.csd window {
-    border-radius: 7px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0); }
-  .solid-csd decoration, .solid-csd window {
-    border-radius: 0;
+  border: 2px solid #512508; }
+  window.csd {
+    box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0);
     margin: 0px;
-    background-color: #0E111D;
-    border: solid 1px rgba(59, 62, 71, 0.145);
+    border-radius: 4px 4px 0 0; }
+    window.csd:backdrop {
+      box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0);
+      transition: 200ms ease-out;
+      border: 2px solid #15161b; }
+    window.csd.popup {
+      border-radius: 7px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0); }
+    window.csd.dialog.message {
+      border-radius: 4px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0); }
+  window.solid-csd {
+    margin: 0;
+    padding: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.05);
+    border-radius: 0;
+    box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.05), inset 0 0 0 #06070c, inset 0 1px rgba(191, 195, 205, 0.07); }
+    window.solid-csd:backdrop {
+      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.05), inset 0 0 0 3px #0E111D, inset 0 1px rgba(191, 195, 205, 0.07); }
+  window.maximized, window.fullscreen {
+    border-radius: 0;
     box-shadow: none; }
+  window.tiled, window.tiled-top, window.tiled-left, window.tiled-right, window.tiled-bottom {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0), 0 0 0 20px transparent; }
+  window:backdrop {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0), 0 0 0 20px transparent;
+    border: 2px solid #15161b; }
+  window.popup {
+    box-shadow: none; }
+  window.ssd {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0); }
 
 windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
   min-width: 20px;
