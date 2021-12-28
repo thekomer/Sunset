@@ -37,7 +37,7 @@ $highlight_text_color: darken($selected_bg_color, 10%);
 //$borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 // first try:
 $borders_color: if($variant == 'light', transparentize(black,0.87), transparentize(white,0.95));
-$borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(black, 0.5));
+$borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.5));
 
 $theme-gradient-start: adjust-hue($orange, -$gradient_degree);
 $theme-gradient-end: adjust-hue($orange, $gradient_degree);

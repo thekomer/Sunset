@@ -58,7 +58,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_title shade(#BFC3CD, 1.8);
 @define-color wm_unfocused_title #676a75;
 @define-color wm_highlight rgba(0, 0, 0, 0);
-@define-color wm_borders_edge rgba(0, 0, 0, 0.5);
+@define-color wm_borders_edge rgba(255, 255, 255, 0.5);
 @define-color wm_bg_a shade(#0E111D, 1.2);
 @define-color wm_bg_b #0E111D;
 @define-color wm_shadow alpha(black, 0.35);
@@ -354,7 +354,7 @@ button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
   color: #BFC3CD;
-  background-color: #111423;
+  background-color: #181c31;
   text-shadow: none; }
   notebook > header > tabs > arrow,
   button.flat {
@@ -1079,13 +1079,13 @@ button {
 toolbar button:hover {
   font-weight: normal;
   color: #BFC3CD;
-  background-color: #111423;
+  background-color: #181c31;
   text-shadow: none; }
 
 toolbar button:active {
   font-weight: normal;
   color: #BFC3CD;
-  background-color: #111423;
+  background-color: #181c31;
   text-shadow: none; }
 
 .inline-toolbar toolbutton > button {
@@ -1731,7 +1731,7 @@ colorswatch#add-color-button {
   colorswatch#add-color-button overlay {
     font-weight: normal;
     color: #BFC3CD;
-    background-color: #111423;
+    background-color: #181c31;
     text-shadow: none; }
     colorswatch#add-color-button overlay:hover {
       color: #ff6a00;
@@ -1837,7 +1837,7 @@ entry {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #BFC3CD;
   border-color: rgba(255, 255, 255, 0.05);
-  background-color: #111524; }
+  background-color: #181d32; }
   spinbutton:not(.vertical) image.left,
   entry image.left {
     padding-left: 0;
@@ -1903,7 +1903,7 @@ entry {
   entry.error {
     color: #BFC3CD;
     border-color: rgba(255, 255, 255, 0.05);
-    background-color: #111524;
+    background-color: #181d32;
     color: #e60000;
     border-color: #330000; }
     spinbutton.error:focus:not(.vertical),
@@ -1917,7 +1917,7 @@ entry {
   entry.warning {
     color: #BFC3CD;
     border-color: rgba(255, 255, 255, 0.05);
-    background-color: #111524;
+    background-color: #181d32;
     color: #cc5500;
     border-color: #1a0b00; }
     spinbutton.warning:focus:not(.vertical),
@@ -2519,7 +2519,7 @@ headerbar {
       border-radius: 4px;
       font-weight: normal;
       color: white;
-      background-color: #111423;
+      background-color: #181c31;
       text-shadow: none;
       box-shadow: none; }
       .titlebar button.suggested-action:hover,
@@ -2565,7 +2565,7 @@ headerbar {
       border-radius: 4px;
       font-weight: normal;
       color: white;
-      background-color: #111423;
+      background-color: #181c31;
       text-shadow: none;
       box-shadow: none; }
       .titlebar button.destructive-action:hover,
@@ -6608,7 +6608,7 @@ ConversationListView {
 #content_frame button {
   font-weight: normal;
   color: #BFC3CD;
-  background-color: #111423;
+  background-color: #181c31;
   text-shadow: none; }
   #content_frame button:hover {
     color: #fefefe;
