@@ -267,6 +267,7 @@ window.thunar statusbar {
 	border-radius: 0.4em;
 	button {
 		border-radius: 0.4em;
+		margin: 0.5em;
 		&:hover {
 		//background-color: lighten($panel_bg_color, 10%);
 		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end,0.4));
