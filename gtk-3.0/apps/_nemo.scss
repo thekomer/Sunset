@@ -8,7 +8,7 @@
 		iconview.cell { }
 	}
 
-	.sidebar, statusbar {
+	.sidebar, statusbar, .nemo-statusbar {
 		color: darken($fg_color, 2%);
 		background: $headerbar_color;
 		.view, .iconview, row {

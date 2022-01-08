@@ -58,7 +58,7 @@
 
     //elementary os file manager
     &.source-list{
-      background: $_sidebar_color;
+			background: $headerbar_color;
       padding: 4px 0px;
       &.view{
         transition: all .12s ease-in;
@@ -140,8 +140,7 @@ placessidebar{
 				&:hover{
 					transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 					color: rgba(0,0,0,0.76);
-					background-color: transparent; /*rgba(65,67,75,0.4); */
-					background-image:linear-gradient(to right, rgba(65,67,75,0) 40px, rgba(0,0,0,0.12) 40px,rgba(0,0,0,0.12) 97%);
+					background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95));
 				}
 
 				&:active{
@@ -158,7 +157,7 @@ placessidebar{
 																rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
 					&:hover{
 						color: #ffffff;
-						background-color: rgba(0,0,0,0.24);
+						background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95));
 						.sidebar-icon {
 							color: #ffffff;
 						}
