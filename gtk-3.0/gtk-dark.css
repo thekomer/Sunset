@@ -3104,7 +3104,8 @@ menuitem radio {
 .content-view {
   background-color: #020305; }
   .content-view:hover {
-    -gtk-icon-effect: highlight; }
+    -gtk-icon-effect: highlight;
+    color: #ff6a00; }
   .content-view:backdrop {
     background-color: #020305; }
 
