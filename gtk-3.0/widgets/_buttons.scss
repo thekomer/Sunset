@@ -127,8 +127,9 @@ button {
 
 
     &.text-button {
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 3em; // 16px;
+      padding-right: 3em; // 16px;
+      border-radius: 0.2em; //border-radius: 2px;
     }
 
     &.text-button.image-button {

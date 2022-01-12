@@ -8,7 +8,7 @@
 		iconview.cell { }
 	}
 
-	.sidebar, statusbar, .nemo-statusbar {
+	.sidebar, statusbar, box.toolbar {
 		color: darken($fg_color, 2%);
 		background: $headerbar_color;
 		.view, .iconview, row {
@@ -28,6 +28,27 @@
 				&:selected{
 					color: $backdrop_selected_fg_color;
 					background-color: $backdrop_selected_bg_color;
+				}
+			}
+		}
+		button {
+			@include button(normal-header);
+			color: darken($fg_color, 3%);
+			margin-top: 5px;
+			margin-bottom: 5px;
+			min-height: 24px;
+			&:hover {
+				color: $selected_bg_color;
+				background: transparent;
+			}
+			&:backdrop {
+				color: inherit;
+				background: transparent;
+			}
+			&:selected, &:active, &:checked {
+				@include button(active-header);
+				&:backdrop {
+					@include button(backdrop-active-header);
 				}
 			}
 		}
