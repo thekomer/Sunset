@@ -6691,7 +6691,7 @@ ConversationListView {
     color: #fefefe; }
 
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview, .nemo-window .nemo-inactive-pane iconview {
-  color: #bec2cc;
+  color: rgba(191, 195, 205, 0.85);
   background-color: #06070c; }
   .nemo-window .nemo-inactive-pane .view:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop {
     color: #676a75; }

@@ -76,7 +76,7 @@
 	}
 
 	.nemo-inactive-pane .view, .nemo-inactive-pane iconview {
-		color: darken($fg_color, 0.3);
+		color: transparentize($fg_color, 0.15);
 		background-color: $headerbar_color;
 		&:backdrop {
 			color: $backdrop_fg_color;
