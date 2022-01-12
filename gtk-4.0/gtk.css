@@ -6633,24 +6633,25 @@ ConversationListView {
   border-bottom-width: 0;
   font-weight: bold; }
 
-.nemo-window .sidebar, .nemo-window statusbar, .nemo-window box.toolbar {
+.nemo-window .sidebar, .nemo-window statusbar, .nemo-window box.toolbar, .nemo-window toolbar.primary-toolbar {
   color: #b9bec9;
-  background: #06070c; }
-  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row, .nemo-window statusbar .view, .nemo-window statusbar iconview, .nemo-window statusbar .iconview, .nemo-window statusbar row, .nemo-window box.toolbar .view, .nemo-window box.toolbar iconview, .nemo-window box.toolbar .iconview, .nemo-window box.toolbar row {
+  background: #06070c;
+  margin-bottom: -4px; }
+  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row, .nemo-window statusbar .view, .nemo-window statusbar iconview, .nemo-window statusbar .iconview, .nemo-window statusbar row, .nemo-window box.toolbar .view, .nemo-window box.toolbar iconview, .nemo-window box.toolbar .iconview, .nemo-window box.toolbar row, .nemo-window toolbar.primary-toolbar .view, .nemo-window toolbar.primary-toolbar iconview, .nemo-window toolbar.primary-toolbar .iconview, .nemo-window toolbar.primary-toolbar row {
     background-color: transparent; }
-    .nemo-window .sidebar .view:hover, .nemo-window .sidebar iconview:hover, .nemo-window .sidebar .iconview:hover, .nemo-window .sidebar row:hover, .nemo-window statusbar .view:hover, .nemo-window statusbar iconview:hover, .nemo-window statusbar .iconview:hover, .nemo-window statusbar row:hover, .nemo-window box.toolbar .view:hover, .nemo-window box.toolbar iconview:hover, .nemo-window box.toolbar .iconview:hover, .nemo-window box.toolbar row:hover {
+    .nemo-window .sidebar .view:hover, .nemo-window .sidebar iconview:hover, .nemo-window .sidebar .iconview:hover, .nemo-window .sidebar row:hover, .nemo-window statusbar .view:hover, .nemo-window statusbar iconview:hover, .nemo-window statusbar .iconview:hover, .nemo-window statusbar row:hover, .nemo-window box.toolbar .view:hover, .nemo-window box.toolbar iconview:hover, .nemo-window box.toolbar .iconview:hover, .nemo-window box.toolbar row:hover, .nemo-window toolbar.primary-toolbar .view:hover, .nemo-window toolbar.primary-toolbar iconview:hover, .nemo-window toolbar.primary-toolbar .iconview:hover, .nemo-window toolbar.primary-toolbar row:hover {
       color: #ff6a00;
       background-color: rgba(191, 195, 205, 0.05); }
-    .nemo-window .sidebar .view:selected, .nemo-window .sidebar iconview:selected, .nemo-window .sidebar .view:active, .nemo-window .sidebar iconview:active, .nemo-window .sidebar .view:checked, .nemo-window .sidebar iconview:checked, .nemo-window .sidebar .iconview:selected, .nemo-window .sidebar .iconview:active, .nemo-window .sidebar .iconview:checked, .nemo-window .sidebar row:selected, .nemo-window .sidebar row:active, .nemo-window .sidebar row:checked, .nemo-window statusbar .view:selected, .nemo-window statusbar iconview:selected, .nemo-window statusbar .view:active, .nemo-window statusbar iconview:active, .nemo-window statusbar .view:checked, .nemo-window statusbar iconview:checked, .nemo-window statusbar .iconview:selected, .nemo-window statusbar .iconview:active, .nemo-window statusbar .iconview:checked, .nemo-window statusbar row:selected, .nemo-window statusbar row:active, .nemo-window statusbar row:checked, .nemo-window box.toolbar .view:selected, .nemo-window box.toolbar iconview:selected, .nemo-window box.toolbar .view:active, .nemo-window box.toolbar iconview:active, .nemo-window box.toolbar .view:checked, .nemo-window box.toolbar iconview:checked, .nemo-window box.toolbar .iconview:selected, .nemo-window box.toolbar .iconview:active, .nemo-window box.toolbar .iconview:checked, .nemo-window box.toolbar row:selected, .nemo-window box.toolbar row:active, .nemo-window box.toolbar row:checked {
+    .nemo-window .sidebar .view:selected, .nemo-window .sidebar iconview:selected, .nemo-window .sidebar .view:active, .nemo-window .sidebar iconview:active, .nemo-window .sidebar .view:checked, .nemo-window .sidebar iconview:checked, .nemo-window .sidebar .iconview:selected, .nemo-window .sidebar .iconview:active, .nemo-window .sidebar .iconview:checked, .nemo-window .sidebar row:selected, .nemo-window .sidebar row:active, .nemo-window .sidebar row:checked, .nemo-window statusbar .view:selected, .nemo-window statusbar iconview:selected, .nemo-window statusbar .view:active, .nemo-window statusbar iconview:active, .nemo-window statusbar .view:checked, .nemo-window statusbar iconview:checked, .nemo-window statusbar .iconview:selected, .nemo-window statusbar .iconview:active, .nemo-window statusbar .iconview:checked, .nemo-window statusbar row:selected, .nemo-window statusbar row:active, .nemo-window statusbar row:checked, .nemo-window box.toolbar .view:selected, .nemo-window box.toolbar iconview:selected, .nemo-window box.toolbar .view:active, .nemo-window box.toolbar iconview:active, .nemo-window box.toolbar .view:checked, .nemo-window box.toolbar iconview:checked, .nemo-window box.toolbar .iconview:selected, .nemo-window box.toolbar .iconview:active, .nemo-window box.toolbar .iconview:checked, .nemo-window box.toolbar row:selected, .nemo-window box.toolbar row:active, .nemo-window box.toolbar row:checked, .nemo-window toolbar.primary-toolbar .view:selected, .nemo-window toolbar.primary-toolbar iconview:selected, .nemo-window toolbar.primary-toolbar .view:active, .nemo-window toolbar.primary-toolbar iconview:active, .nemo-window toolbar.primary-toolbar .view:checked, .nemo-window toolbar.primary-toolbar iconview:checked, .nemo-window toolbar.primary-toolbar .iconview:selected, .nemo-window toolbar.primary-toolbar .iconview:active, .nemo-window toolbar.primary-toolbar .iconview:checked, .nemo-window toolbar.primary-toolbar row:selected, .nemo-window toolbar.primary-toolbar row:active, .nemo-window toolbar.primary-toolbar row:checked {
       color: #fefefe;
       background: #ff6a00; }
-    .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .iconview:backdrop, .nemo-window .sidebar row:backdrop, .nemo-window statusbar .view:backdrop, .nemo-window statusbar iconview:backdrop, .nemo-window statusbar .iconview:backdrop, .nemo-window statusbar row:backdrop, .nemo-window box.toolbar .view:backdrop, .nemo-window box.toolbar iconview:backdrop, .nemo-window box.toolbar .iconview:backdrop, .nemo-window box.toolbar row:backdrop {
+    .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .iconview:backdrop, .nemo-window .sidebar row:backdrop, .nemo-window statusbar .view:backdrop, .nemo-window statusbar iconview:backdrop, .nemo-window statusbar .iconview:backdrop, .nemo-window statusbar row:backdrop, .nemo-window box.toolbar .view:backdrop, .nemo-window box.toolbar iconview:backdrop, .nemo-window box.toolbar .iconview:backdrop, .nemo-window box.toolbar row:backdrop, .nemo-window toolbar.primary-toolbar .view:backdrop, .nemo-window toolbar.primary-toolbar iconview:backdrop, .nemo-window toolbar.primary-toolbar .iconview:backdrop, .nemo-window toolbar.primary-toolbar row:backdrop {
       color: #676a75;
       background-color: inherit; }
-      .nemo-window .sidebar .view:backdrop:selected, .nemo-window .sidebar iconview:backdrop:selected, .nemo-window .sidebar .iconview:backdrop:selected, .nemo-window .sidebar row:backdrop:selected, .nemo-window statusbar .view:backdrop:selected, .nemo-window statusbar iconview:backdrop:selected, .nemo-window statusbar .iconview:backdrop:selected, .nemo-window statusbar row:backdrop:selected, .nemo-window box.toolbar .view:backdrop:selected, .nemo-window box.toolbar iconview:backdrop:selected, .nemo-window box.toolbar .iconview:backdrop:selected, .nemo-window box.toolbar row:backdrop:selected {
+      .nemo-window .sidebar .view:backdrop:selected, .nemo-window .sidebar iconview:backdrop:selected, .nemo-window .sidebar .iconview:backdrop:selected, .nemo-window .sidebar row:backdrop:selected, .nemo-window statusbar .view:backdrop:selected, .nemo-window statusbar iconview:backdrop:selected, .nemo-window statusbar .iconview:backdrop:selected, .nemo-window statusbar row:backdrop:selected, .nemo-window box.toolbar .view:backdrop:selected, .nemo-window box.toolbar iconview:backdrop:selected, .nemo-window box.toolbar .iconview:backdrop:selected, .nemo-window box.toolbar row:backdrop:selected, .nemo-window toolbar.primary-toolbar .view:backdrop:selected, .nemo-window toolbar.primary-toolbar iconview:backdrop:selected, .nemo-window toolbar.primary-toolbar .iconview:backdrop:selected, .nemo-window toolbar.primary-toolbar row:backdrop:selected {
         color: rgba(254, 254, 254, 0.5);
         background-color: rgba(255, 106, 0, 0.6); }
-  .nemo-window .sidebar button, .nemo-window statusbar button, .nemo-window box.toolbar button {
+  .nemo-window .sidebar button, .nemo-window statusbar button, .nemo-window box.toolbar button, .nemo-window toolbar.primary-toolbar button {
     color: #8b8b8b;
     text-shadow: none;
     box-shadow: none;
@@ -6660,18 +6661,18 @@ ConversationListView {
     margin-top: 5px;
     margin-bottom: 5px;
     min-height: 24px; }
-    .nemo-window .sidebar button:hover, .nemo-window statusbar button:hover, .nemo-window box.toolbar button:hover {
+    .nemo-window .sidebar button:hover, .nemo-window statusbar button:hover, .nemo-window box.toolbar button:hover, .nemo-window toolbar.primary-toolbar button:hover {
       color: #ff6a00;
       background: transparent; }
-    .nemo-window .sidebar button:backdrop, .nemo-window statusbar button:backdrop, .nemo-window box.toolbar button:backdrop {
+    .nemo-window .sidebar button:backdrop, .nemo-window statusbar button:backdrop, .nemo-window box.toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:backdrop {
       color: inherit;
       background: transparent; }
-    .nemo-window .sidebar button:selected, .nemo-window .sidebar button:active, .nemo-window .sidebar button:checked, .nemo-window statusbar button:selected, .nemo-window statusbar button:active, .nemo-window statusbar button:checked, .nemo-window box.toolbar button:selected, .nemo-window box.toolbar button:active, .nemo-window box.toolbar button:checked {
+    .nemo-window .sidebar button:selected, .nemo-window .sidebar button:active, .nemo-window .sidebar button:checked, .nemo-window statusbar button:selected, .nemo-window statusbar button:active, .nemo-window statusbar button:checked, .nemo-window box.toolbar button:selected, .nemo-window box.toolbar button:active, .nemo-window box.toolbar button:checked, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       border-radius: 23px;
       background: linear-gradient(to right, #ff3300, #ffa100);
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
       color: white; }
-      .nemo-window .sidebar button:selected:backdrop, .nemo-window .sidebar button:active:backdrop, .nemo-window .sidebar button:checked:backdrop, .nemo-window statusbar button:selected:backdrop, .nemo-window statusbar button:active:backdrop, .nemo-window statusbar button:checked:backdrop, .nemo-window box.toolbar button:selected:backdrop, .nemo-window box.toolbar button:active:backdrop, .nemo-window box.toolbar button:checked:backdrop {
+      .nemo-window .sidebar button:selected:backdrop, .nemo-window .sidebar button:active:backdrop, .nemo-window .sidebar button:checked:backdrop, .nemo-window statusbar button:selected:backdrop, .nemo-window statusbar button:active:backdrop, .nemo-window statusbar button:checked:backdrop, .nemo-window box.toolbar button:selected:backdrop, .nemo-window box.toolbar button:active:backdrop, .nemo-window box.toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
         border-radius: 23px;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
@@ -6694,36 +6695,6 @@ ConversationListView {
   background-color: #06070c; }
   .nemo-window .nemo-inactive-pane .view:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop {
     color: #676a75; }
-
-.nemo-window toolbar.primary-toolbar {
-  margin-bottom: -1px;
-  background: #06070c; }
-  .nemo-window toolbar.primary-toolbar button {
-    color: #8b8b8b;
-    text-shadow: none;
-    box-shadow: none;
-    background: transparent;
-    border: none;
-    color: #b6bbc6;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    min-height: 24px; }
-    .nemo-window toolbar.primary-toolbar button:hover {
-      color: #ff6a00;
-      background: transparent; }
-    .nemo-window toolbar.primary-toolbar button:backdrop {
-      color: inherit;
-      background: transparent; }
-    .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
-      border-radius: 23px;
-      background: linear-gradient(to right, #ff3300, #ffa100);
-      box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
-      color: white; }
-      .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        border-radius: 23px;
-        color: rgba(191, 195, 205, 0.4);
-        background: rgba(255, 106, 0, 0.6);
-        box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
 
 /* * * * * * * * * * *
  * Caja file manager *

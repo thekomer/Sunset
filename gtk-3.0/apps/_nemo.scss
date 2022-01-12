@@ -8,9 +8,10 @@
 		iconview.cell { }
 	}
 
-	.sidebar, statusbar, box.toolbar {
+	.sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actualy whole statusbar
 		color: darken($fg_color, 2%);
 		background: $headerbar_color;
+		margin-bottom: -4px;
 		.view, .iconview, row {
 			background-color: transparent;
 			&:hover {
@@ -79,32 +80,6 @@
 		background-color: $headerbar_color;
 		&:backdrop {
 			color: $backdrop_fg_color;
-		}
-	}
-
-	toolbar.primary-toolbar {
-		margin-bottom: -1px;
-		background: $headerbar_color;
-		button {
-			@include button(normal-header);
-			color: darken($fg_color, 3%);
-			margin-top: 5px;
-			margin-bottom: 5px;
-			min-height: 24px;
-			&:hover {
-				color: $selected_bg_color;
-				background: transparent;
-			}
-			&:backdrop {
-				color: inherit;
-				background: transparent;
-			}
-			&:selected, &:active, &:checked {
-				@include button(active-header);
-				&:backdrop {
-					@include button(backdrop-active-header);
-				}
-			}
 		}
 	}
 }
