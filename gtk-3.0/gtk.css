@@ -494,12 +494,12 @@ button {
   button.text-button {
     padding-left: 3em;
     padding-right: 3em;
-    border-radius: 0.2em; }
+    border-radius: 0.4em; }
   notebook > header > tabs > arrow.text-button.image-button,
   button.text-button.image-button {
     padding-left: 8px;
     padding-right: 8px;
-    border-radius: 0.2em; }
+    border-radius: 0.4em; }
     notebook > header > tabs > arrow.text-button.image-button label,
     button.text-button.image-button label {
       padding-left: 8px;
@@ -1236,7 +1236,7 @@ calendar {
   color: #BFC3CD;
   border: 1px solid rgba(255, 255, 255, 0.05); }
   calendar:selected {
-    border-radius: 23px;
+    border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white;
@@ -2638,7 +2638,7 @@ headerbar {
   .titlebar headerbar .linked > button:backdrop,
   headerbar .linked > button:hover,
   headerbar .linked > button:backdrop {
-    border-radius: 23px;
+    border-radius: 1em;
     border-right-style: none;
     border: none;
     box-shadow: none;
@@ -2657,7 +2657,7 @@ headerbar {
     color: snow; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
-    border-radius: 23px;
+    border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(197, 14, 210, 0.98);
     color: snow; }
@@ -5365,7 +5365,7 @@ button.raven-trigger {
         min-height: 20px;
         padding: 3px; }
         .raven .raven-header button.text-button.radio:active, .raven .raven-header button.text-button.radio:checked {
-          border-radius: 23px;
+          border-radius: 1em;
           background: linear-gradient(to right, #ff3300, #ffa100);
           box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
           color: white; }
@@ -5755,7 +5755,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:active,
 .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:checked,
 .nautilus-window .titlebar .path-bar-box button:active, .nautilus-window .titlebar .path-bar-box button:checked {
-  border-radius: 23px;
+  border-radius: 1em;
   background: linear-gradient(to right, #ff3300, #ffa100);
   box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
   color: white; }
@@ -5948,7 +5948,7 @@ wnck-pager {
     box-shadow: none;
     -gtk-icon-effect: highlight; }
   #whiskermenu-window button:checked {
-    border-radius: 23px;
+    border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white;
@@ -5985,16 +5985,16 @@ wnck-pager {
     .thunar toolbar button:hover {
       color: #ff6a00;
       background: transparent; }
+    .thunar toolbar button:backdrop {
+      color: inherit;
+      background: transparent; }
     .thunar toolbar button:selected, .thunar toolbar button:active, .thunar toolbar button:checked {
-      border-radius: 23px;
+      border-radius: 1em;
       background: linear-gradient(to right, #ff3300, #ffa100);
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
       color: white; }
-    .thunar toolbar button:backdrop {
-      color: inherit;
-      background: inherit; }
-      .thunar toolbar button:backdrop:selected, .thunar toolbar button:backdrop:active, .thunar toolbar button:backdrop:checked {
-        border-radius: 23px;
+      .thunar toolbar button:selected:backdrop, .thunar toolbar button:active:backdrop, .thunar toolbar button:checked:backdrop {
+        border-radius: 1em;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
@@ -6012,7 +6012,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover {
     color: #ff6a00; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked {
-    border-radius: 23px;
+    border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white; }
@@ -6035,7 +6035,7 @@ window.thunar paned > scrolledwindow treeview.view {
     border-radius: 0;
     box-shadow: none; }
   window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned > scrolledwindow treeview.view:active, window.thunar paned > scrolledwindow treeview.view:checked {
-    border-radius: 23px;
+    border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white;
@@ -6730,12 +6730,12 @@ ConversationListView {
       color: inherit;
       background: transparent; }
     .nemo-window .sidebar button:selected, .nemo-window .sidebar button:active, .nemo-window .sidebar button:checked, .nemo-window statusbar button:selected, .nemo-window statusbar button:active, .nemo-window statusbar button:checked, .nemo-window box.toolbar button:selected, .nemo-window box.toolbar button:active, .nemo-window box.toolbar button:checked, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
-      border-radius: 23px;
+      border-radius: 1em;
       background: linear-gradient(to right, #ff3300, #ffa100);
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
       color: white; }
       .nemo-window .sidebar button:selected:backdrop, .nemo-window .sidebar button:active:backdrop, .nemo-window .sidebar button:checked:backdrop, .nemo-window statusbar button:selected:backdrop, .nemo-window statusbar button:active:backdrop, .nemo-window statusbar button:checked:backdrop, .nemo-window box.toolbar button:selected:backdrop, .nemo-window box.toolbar button:active:backdrop, .nemo-window box.toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        border-radius: 23px;
+        border-radius: 1em;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
@@ -6849,7 +6849,7 @@ ConversationListView {
   .caja-pathbar button:hover {
     color: #ff6a00; }
   .caja-pathbar button:checked {
-    border-radius: 23px;
+    border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white; }

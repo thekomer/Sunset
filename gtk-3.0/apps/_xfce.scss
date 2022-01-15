@@ -174,13 +174,13 @@ wnck-pager {
 			color: $selected_bg_color;
 			background: transparent;
 		}
-		&:selected, &:active, &:checked {
-			@include button(active-header);
-		}
 		&:backdrop {
 			color: inherit;
-			background: inherit;
-			&:selected, &:active, &:checked {
+			background: transparent;
+		}
+		&:selected, &:active, &:checked {
+			@include button(active-header);
+			&:backdrop {
 				@include button(backdrop-active-header);
 			}
 		}
