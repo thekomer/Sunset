@@ -6,7 +6,7 @@
   background-color: $headerbar_color;
 }
 
-toolbar {
+toolbar, .primary-toolbar {
   @extend %toolbar;
 
   padding: 4px 3px 3px 4px;

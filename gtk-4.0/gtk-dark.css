@@ -4470,30 +4470,34 @@ switch {
 /************
  * Toolbars *
  ************/
-toolbar, .inline-toolbar, searchbar > revealer > box {
+toolbar, .primary-toolbar, .inline-toolbar, searchbar > revealer > box {
   padding: 4px;
   background-color: #06070c; }
 
-toolbar {
+toolbar, .primary-toolbar {
   padding: 4px 3px 3px 4px; }
-  .osd toolbar {
+  .osd toolbar, .osd .primary-toolbar {
     background-color: transparent; }
-  toolbar.osd {
+  toolbar.osd, .primary-toolbar.osd {
     padding: 13px;
     border: none;
     border-radius: 5px;
     background-color: rgba(20, 23, 26, 0.8); }
-    toolbar.osd.left, toolbar.osd.right, toolbar.osd.top, toolbar.osd.bottom {
+    toolbar.osd.left, toolbar.osd.right, toolbar.osd.top, toolbar.osd.bottom, .primary-toolbar.osd.left, .primary-toolbar.osd.right, .primary-toolbar.osd.top, .primary-toolbar.osd.bottom {
       border-radius: 0; }
-  toolbar.horizontal separator {
+  toolbar.horizontal separator, .primary-toolbar.horizontal separator {
     margin: 0 7px 1px 6px; }
-  toolbar.vertical separator {
+  toolbar.vertical separator, .primary-toolbar.vertical separator {
     margin: 6px 1px 7px 0; }
   toolbar:not(.inline-toolbar):not(.osd) switch,
   toolbar:not(.inline-toolbar):not(.osd) scale,
   toolbar:not(.inline-toolbar):not(.osd) entry,
   toolbar:not(.inline-toolbar):not(.osd) spinbutton,
-  toolbar:not(.inline-toolbar):not(.osd) button {
+  toolbar:not(.inline-toolbar):not(.osd) button, .primary-toolbar:not(.inline-toolbar):not(.osd) switch,
+  .primary-toolbar:not(.inline-toolbar):not(.osd) scale,
+  .primary-toolbar:not(.inline-toolbar):not(.osd) entry,
+  .primary-toolbar:not(.inline-toolbar):not(.osd) spinbutton,
+  .primary-toolbar:not(.inline-toolbar):not(.osd) button {
     margin-right: 1px;
     margin-bottom: 1px; }
 
