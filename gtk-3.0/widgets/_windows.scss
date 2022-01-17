@@ -115,6 +115,9 @@ button.titlebutton {
   &:backdrop {
     -gtk-icon-shadow: none;
     background-image: -gtk-scaled(url("../assets/close_unfocused.png"),url("../assets/close_unfocused@2.png"));
+    &:hover,&:active {
+      background-image: inherit;
+    }
   }
 }
 

@@ -4752,6 +4752,8 @@ windowcontrols button.minimize {
 windowcontrols button:backdrop {
   -gtk-icon-shadow: none;
   background-image: -gtk-scaled(url("../assets/close_unfocused.png"), url("../assets/close_unfocused@2.png")); }
+  windowcontrols button:backdrop:hover, windowcontrols button:backdrop:active {
+    background-image: inherit; }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {

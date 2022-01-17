@@ -4771,6 +4771,8 @@ button.titlebutton {
   button.titlebutton:backdrop {
     -gtk-icon-shadow: none;
     background-image: -gtk-scaled(url("../assets/close_unfocused.png"), url("../assets/close_unfocused@2.png")); }
+    button.titlebutton:backdrop:hover, button.titlebutton:backdrop:active {
+      background-image: inherit; }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
