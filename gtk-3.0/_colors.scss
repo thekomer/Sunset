@@ -86,6 +86,7 @@ $text_shadow_color: if($variant == 'dark', $shadow_color, transparentize(white, 
 $icon_shadow_color: $text_shadow_color;
 
 $drop_target_color: transparentize($blue, 0.5);
+//$drop_target_color: transparentize($red, 0.5);
 
 // Infobar colors
 $info_color: $orange;
