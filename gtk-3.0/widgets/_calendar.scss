@@ -10,18 +10,21 @@ calendar {
 		//@extend %selected_items;
 		@include button(active-header);
 		font-weight: bold;
-		border-radius: 3px;
+		&:backdrop {
+			@include button(backdrop-active-header);
+			color: inherit;
+		}
 	}
 
 	&.header {
 		border-bottom: 1px solid transparentize($borders_color, 0.9);
-		border-radius: 0;
+		border-radius: 1px;
 		&:backdrop { border-color: transparentize($borders_color, 0.9); }
 	}
 
 	&.button {
 		@extend %undecorated_button;
-			color: transparentize($fg_color, 0.55);
+		color: transparentize($fg_color, 0.55);
 		&:hover {
 			@extend %undecorated_button;
 			color: $fg_color;
