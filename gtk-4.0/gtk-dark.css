@@ -6553,10 +6553,10 @@ ConversationListView {
   color: #BFC3CD; }
 
 #content_frame {
-  padding-bottom: 10px;
+  padding-bottom: 0.6em;
   background-color: rgba(14, 17, 29, 0.8);
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 1px 1px 0 1px; }
 
@@ -6582,12 +6582,12 @@ ConversationListView {
     text-shadow: none; }
 
 #buttonbox_frame {
-  padding-top: 10px;
+  padding-top: 0em;
   padding-bottom: 0px;
   border-style: none;
   background-color: rgba(14, 17, 29, 0.8);
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px; }
 
@@ -6638,8 +6638,8 @@ ConversationListView {
     font-weight: normal; }
 
 #user_image {
-  padding: 3px;
-  border-radius: 7px; }
+  padding: 0.3em;
+  border-radius: 0.4em; }
 
 #greeter_infobar {
   border-bottom-width: 0;
