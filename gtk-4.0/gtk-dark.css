@@ -2644,6 +2644,7 @@ headerbar {
     color: snow; }
     .titlebar .linked > button:checked:backdrop,
     headerbar .linked > button:checked:backdrop {
+      background: rgba(255, 106, 0, 0.6);
       color: #ffe6e6; }
       .titlebar .linked > button:checked:backdrop label,
       headerbar .linked > button:checked:backdrop label {
