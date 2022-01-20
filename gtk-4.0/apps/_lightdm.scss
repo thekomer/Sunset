@@ -73,7 +73,7 @@
 #buttonbox_frame button{
   @include button(osd);
 
-  &:hover { @include button(osd-hover); }
+  &:hover { @include button(osd-hover, transparentize(white, 0.65)); }
   &:active, &:checked { @include button(osd-active, $selected_bg_color, $selected_fg_color); }
   &:disabled { @include button(osd-insensitive, $selected_bg_color, $selected_fg_color); }
   &:focus {

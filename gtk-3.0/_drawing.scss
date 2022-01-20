@@ -352,7 +352,7 @@
     outline-color: transparentize($osd_fg_color, 0.7);
   }	@else if $t==osd-hover {
 		//
-		// active osd button
+		// hover osd button
 		//
     $_bg: if($c!=$base_color, transparentize($c, 0.3),	lighten($osd_bg_color, 12%));
     color: white;
