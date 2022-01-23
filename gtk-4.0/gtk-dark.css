@@ -2635,20 +2635,21 @@ headerbar {
   .titlebar .linked > button:active,
   headerbar .linked > button:active {
     background: linear-gradient(to right, #ff3300, #ffa100);
-    color: snow; }
+    color: #fefefe; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
     border-radius: 1em;
     background: linear-gradient(to right, #ff3300, #ffa100);
-    box-shadow: 0px 0px 5px rgba(197, 14, 210, 0.98);
-    color: snow; }
+    box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
+    color: #fefefe; }
     .titlebar .linked > button:checked:backdrop,
     headerbar .linked > button:checked:backdrop {
+      box-shadow: none;
       background: rgba(255, 106, 0, 0.6);
-      color: #ffe6e6; }
+      color: rgba(254, 254, 254, 0.5); }
       .titlebar .linked > button:checked:backdrop label,
       headerbar .linked > button:checked:backdrop label {
-        color: #ffe6e6; }
+        color: rgba(254, 254, 254, 0.5); }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,
