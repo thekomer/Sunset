@@ -6,5 +6,5 @@ Sunset is a dark orange-accented Gtk3 & Gtk4 theme based on [Sweet theme](https:
 
 #### Installation:
 
-Extract the zip file to the themes directory i.e. `/usr/share/themes/` for system-wide use; or to `~/.themes/` (create it if necessary) for single user. Then change theme via distribution specific tool.
+Download latest release file and extract the zip file to the themes directory i.e. `/usr/share/themes/` for system-wide use; or to `~/.themes/` (create it if necessary) for single user. Then change theme via distribution specific tool.
 
