@@ -127,8 +127,9 @@ wnck-pager {
     padding: 2px;
     margin: 1px 0px;
     &:hover {
-        @include button(hover-header, $selected_bg_color, $selected_fg_color);
-        //background: transparentize($fg_color, 0.95);
+        //@include button(hover-header, $selected_bg_color, $selected_fg_color);
+        @include button(hover-header);
+        background: transparentize($fg_color, 0.90);
         border-radius: 0;
         box-shadow: none;
         -gtk-icon-effect: highlight;
@@ -136,8 +137,11 @@ wnck-pager {
     &:checked {
         // background-color: $selected_bg_color;
 				@include button(active-header);
-				border-radius: 0;
+				//border-radius: 0;
 				box-shadow: none;
+				&:hover{
+					color: white;
+				}
     }
 }
 
