@@ -114,14 +114,15 @@ button {
 
 
     &.text-button {
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 3em; // 16px;
+      padding-right: 3em; // 16px;
+      border-radius: 0.4em; //border-radius: 2px;
     }
 
     &.text-button.image-button {
       padding-left: 8px;
       padding-right: 8px;
-      border-radius: 0.2em; //border-radius: 2px;
+      border-radius: 0.4em; //border-radius: 2px;
       label {
         padding-left: 8px;
         padding-right: 8px;
@@ -461,18 +462,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_middle;
 
   &:first-child {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-top-left-radius: 0.4em; //3px;
+    border-bottom-left-radius: 0.4em; //3px;
   }
 
   &:last-child {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 0.4em; //3px;
+    border-bottom-right-radius: 0.4em; //3px;
     border-right-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
+    border-radius: 0.4em; //3px;
     border-style: solid;
   }
 }
@@ -486,18 +487,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_vertical_middle;
 
   &:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 0.4em; //3px;
+    border-top-right-radius: 0.4em; //3px;
   }
 
   &:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0.4em; //3px;
+    border-bottom-right-radius: 0.4em; //3px;
     border-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
+    border-radius: 0.4em; //3px;
     border-style: solid;
   }
 }

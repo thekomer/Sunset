@@ -484,18 +484,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_middle;
 
   &:first-child {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-top-left-radius: 0.4em; //3px;
+    border-bottom-left-radius: 0.4em; //3px;
   }
 
   &:last-child {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 0.4em; //3px;
+    border-bottom-right-radius: 0.4em; //3px;
     border-right-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
+    border-radius: 0.4em; //3px;
     border-style: solid;
   }
 }
@@ -509,18 +509,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_vertical_middle;
 
   &:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 0.4em; //3px;
+    border-top-right-radius: 0.4em; //3px;
   }
 
   &:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0.4em; //3px;
+    border-bottom-right-radius: 0.4em; //3px;
     border-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
+    border-radius: 0.4em; //3px;
     border-style: solid;
   }
 }
