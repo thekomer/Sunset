@@ -51,6 +51,8 @@ button {
       }
       &:backdrop {
 				&:hover{
+					transition: $button_transition;
+					transition-duration: 500ms;
 					color: inherit;
 					background: inherit;
 				}
@@ -58,6 +60,8 @@ button {
     }
 
     &:hover {
+			transition: $button_transition;
+			transition-duration: 500ms;
       //@include button(hover,$selected_bg_color,$selected_fg_color);
 			@include button(hover, $selected_bg_color, $selected_fg_color);
       -gtk-icon-effect: highlight;
@@ -66,7 +70,7 @@ button {
     &:active,
     &:checked {
       @include button(active,darken($selected_bg_color,5%),$selected_fg_color);
-
+			transition: $button_transition;
       transition-duration: 50ms;
     }
 
