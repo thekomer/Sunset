@@ -5919,7 +5919,14 @@ wnck-pager {
  ****************/
 #whiskermenu-window {
   color: #BFC3CD;
-  background-color: #0E111D; }
+  background-color: #0E111D;
+  border-radius: 0.5em;
+  box-shadow: 4px 4px 10px 3px rgba(255, 255, 255, 0.05); }
+
+#whiskermenu-window box widget {
+  color: transparent; }
+  #whiskermenu-window box widget:hover {
+    color: #BFC3CD; }
 
 #whiskermenu-window button {
   background-color: transparent;
@@ -5929,10 +5936,11 @@ wnck-pager {
   padding: 2px;
   margin: 1px 0px; }
   #whiskermenu-window button:hover {
-    color: #fefefe;
+    color: #ff6a00;
     border-radius: 0;
     text-shadow: none;
     border: none;
+    background: rgba(191, 195, 205, 0.1);
     border-radius: 0;
     box-shadow: none;
     -gtk-icon-effect: highlight; }
@@ -5941,8 +5949,10 @@ wnck-pager {
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: white;
-    border-radius: 0;
     box-shadow: none; }
+    #whiskermenu-window button:checked:hover {
+      color: white;
+      font-weight: bold; }
 
 #whiskermenu-window treeview {
   background-color: transparent;
@@ -5973,6 +5983,9 @@ wnck-pager {
     min-height: 24px; }
     .thunar toolbar button:hover {
       color: #ff6a00;
+      background: transparent; }
+    .thunar toolbar button:backdrop {
+      color: inherit;
       background: transparent; }
     .thunar toolbar button:selected, .thunar toolbar button:active, .thunar toolbar button:checked {
       border-radius: 1em;

@@ -5948,7 +5948,14 @@ wnck-pager {
  ****************/
 #whiskermenu-window {
   color: #BFC3CD;
-  background-color: #0E111D; }
+  background-color: #0E111D;
+  border-radius: 0.5em;
+  box-shadow: 4px 4px 10px 3px rgba(255, 255, 255, 0.05); }
+
+#whiskermenu-window box widget {
+  color: transparent; }
+  #whiskermenu-window box widget:hover {
+    color: #BFC3CD; }
 
 #whiskermenu-window button {
   background-color: transparent;
@@ -5973,7 +5980,8 @@ wnck-pager {
     color: white;
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
-      color: white; }
+      color: white;
+      font-weight: bold; }
 
 #whiskermenu-window treeview {
   background-color: transparent;

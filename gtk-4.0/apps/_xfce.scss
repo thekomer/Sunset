@@ -116,6 +116,16 @@ wnck-pager {
 #whiskermenu-window {
 	color: $fg_color;
 	background-color: $bg_color;
+	border-radius: 0.5em;
+	box-shadow: 4px 4px 10px 3px $borders_color;
+}
+
+// corner triangle
+#whiskermenu-window box widget {
+	color: transparent;
+	&:hover {
+		color: $fg_color;
+	}
 }
 
 // category button
@@ -127,8 +137,9 @@ wnck-pager {
     padding: 2px;
     margin: 1px 0px;
     &:hover {
-        @include button(hover-header, $selected_bg_color, $selected_fg_color);
-        //background: transparentize($fg_color, 0.95);
+        //@include button(hover-header, $selected_bg_color, $selected_fg_color);
+        @include button(hover-header);
+        background: transparentize($fg_color, 0.90);
         border-radius: 0;
         box-shadow: none;
         -gtk-icon-effect: highlight;
@@ -136,8 +147,13 @@ wnck-pager {
     &:checked {
         // background-color: $selected_bg_color;
 				@include button(active-header);
-				border-radius: 0;
+				//border-radius: 0;
+				//box-shadow: none;
 				box-shadow: none;
+				&:hover{
+					color: white;
+					font-weight: bold;
+				}
     }
 }
 
@@ -172,6 +188,10 @@ wnck-pager {
 		min-height: 24px;
 		&:hover {
 			color: $selected_bg_color;
+			background: transparent;
+		}
+		&:backdrop {
+			color: inherit;
 			background: transparent;
 		}
 		&:selected, &:active, &:checked {
