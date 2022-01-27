@@ -117,7 +117,7 @@ wnck-pager {
 	color: $fg_color;
 	background-color: $bg_color;
 	border-radius: 0.5em;
-	box-shadow: 4px 4px 10px 3px $borders_color;
+	box-shadow: 5px 10px 8px 10px $borders_color;
 }
 
 // corner triangle
@@ -130,31 +130,31 @@ wnck-pager {
 
 // category button
 #whiskermenu-window button {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    font-weight: normal;
-    padding: 2px;
-    margin: 1px 0px;
-    &:hover {
-        //@include button(hover-header, $selected_bg_color, $selected_fg_color);
-        @include button(hover-header);
-        background: transparentize($fg_color, 0.90);
-        border-radius: 0;
-        box-shadow: none;
-        -gtk-icon-effect: highlight;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	font-weight: normal;
+	padding: 2px;
+	margin: 1px 0px;
+	&:hover {
+		//@include button(hover-header, $selected_bg_color, $selected_fg_color);
+		@include button(hover-header);
+		background: transparentize($fg_color, 0.90);
+		border-radius: 0;
+		box-shadow: none;
+		-gtk-icon-effect: highlight;
     }
-    &:checked {
-        // background-color: $selected_bg_color;
-				@include button(active-header);
-				//border-radius: 0;
-				//box-shadow: none;
-				box-shadow: none;
-				&:hover{
-					color: white;
-					font-weight: bold;
-				}
-    }
+	&:checked {
+		// background-color: $selected_bg_color;
+		@include button(active-header);
+		//border-radius: 0;
+		//box-shadow: none;
+		box-shadow: none;
+		&:hover{
+			color: white;
+			font-weight: bold;
+		}
+	}
 }
 
 // tree list

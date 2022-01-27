@@ -5950,7 +5950,7 @@ wnck-pager {
   color: #BFC3CD;
   background-color: #0E111D;
   border-radius: 0.5em;
-  box-shadow: 4px 4px 10px 3px rgba(255, 255, 255, 0.05); }
+  box-shadow: 5px 10px 8px 10px rgba(255, 255, 255, 0.05); }
 
 #whiskermenu-window box widget {
   color: transparent; }
