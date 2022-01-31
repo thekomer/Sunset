@@ -35,7 +35,7 @@ decoration {
     transition: $backdrop_transition;
     // added for accessibility (window borders)
     border: 2px solid $window_border_backdrop_color;
-		background: $window_border_backdrop_color;
+		//background: $window_border_backdrop_color;
   }
 
   .maximized &,
@@ -45,7 +45,7 @@ decoration {
   .popup & {
 		box-shadow: none;
 		border: 0px solid $window_border_backdrop_color;
-		background: $window_border_backdrop_color;
+		//background: $window_border_backdrop_color;
   }
 
   // server-side decorations as used by mutter
@@ -61,7 +61,7 @@ decoration {
     border-radius: 5px;
     box-shadow: none;
     border: 0px solid $window_border_backdrop_color;
-		background: $window_border_backdrop_color;
+		//background: $window_border_backdrop_color;
   }
 
   messagedialog.csd & {
@@ -115,9 +115,9 @@ button.titlebutton {
   &:backdrop {
     -gtk-icon-shadow: none;
     background-image: -gtk-scaled(url("../assets/close_unfocused.png"),url("../assets/close_unfocused@2.png"));
-    &:hover,&:active {
-      background-image: inherit;
-    }
+    //&:hover,&:active {
+    //background-image: none;
+    //}
   }
 }
 
