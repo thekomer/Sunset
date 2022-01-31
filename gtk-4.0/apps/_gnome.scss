@@ -2,19 +2,19 @@
  * Nautilus *
  ************/
 .nautilus-window {
-  .frame{
-    *:selected, *:selected:backdrop {
-      background: transparent;
-      color: $selected_bg_color;
-      label {
-        color: $selected_bg_color;
-      }
+	.frame{
+		*:selected, *:selected:backdrop {
+			background: transparent;
+			color: $selected_bg_color;
+			label {
+				color: $selected_bg_color;
+			}
     }
   }
   paned {
     > separator { background-image: none; }
   }
-  .sidebar {
+	.sidebar {
     background-color: transparent;
     // background-image: none;
 
@@ -46,11 +46,11 @@
         }
       }
     }
-  }
+	}
   &.background {
-    background-color: transparentize(darken($base_color,3%),0.05);
+    background-color: $headerbar_color;
     &:backdrop {
-      background-color: transparentize(darken($base_color,3%),0.05);
+      background-color: $backdrop_headerbar_bg_color;
     }
   }
 
@@ -70,12 +70,12 @@
   }
 
   .titlebar {
-      .search {
+		.search {
       border: 1px solid transparent;
-      border-radius: 10px;
+      // border-radius: 1em; //10px;
       box-shadow: none;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 7px;
+      margin-bottom: 7px;
     }
     .path-bar-box {
       .dim-label {
@@ -87,8 +87,9 @@
       button:active, button:checked {
           @include button(active-header);
           &:backdrop{
+						@include button(backdrop-active-header);
             &, label{
-              color: darken(rgb(255, 255, 255), 4%);
+              color: $headerbar_fg_color;// darken(rgb(255, 255, 255), 4%);
             }
           }
       }
