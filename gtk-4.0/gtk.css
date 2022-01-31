@@ -427,17 +427,6 @@ button {
         outline-color: rgba(191, 195, 205, 0.3);
         background-color: rgba(255, 106, 0, 0.6);
         text-shadow: none; }
-  notebook > header > tabs > arrow:backdrop:backdrop,
-  button:backdrop:backdrop {
-    color: inherit; }
-    notebook > header > tabs > arrow:backdrop:backdrop:hover,
-    button:backdrop:backdrop:hover {
-      background: inherit; }
-    notebook > header > tabs > arrow:backdrop:backdrop:active, notebook > header > tabs > arrow:backdrop:backdrop:checked, notebook > header > tabs > arrow:backdrop:backdrop:selected,
-    button:backdrop:backdrop:active,
-    button:backdrop:backdrop:checked,
-    button:backdrop:backdrop:selected {
-      background: rgba(255, 106, 0, 0.6); }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:disabled, notebook > header > tabs > arrow:backdrop:disabled,
   button.flat:backdrop,
   button.flat:disabled,

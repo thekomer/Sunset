@@ -74,15 +74,15 @@ button {
           &:checked { @include button(backdrop-insensitive-active); }
         }
       }
-      &:backdrop {
-				color: inherit;
-				&:hover{
-					background: inherit;
-				}
-				&:active, &:checked, &:selected {
-					background: $backdrop_selected_bg_color;
-				}
-      }
+      //&:backdrop {	// BUGfix - backdrop titlebuttons prelight
+				//color: inherit;
+				//&:hover{
+					//background: inherit;
+				//}
+				//&:active, &:checked, &:selected {
+					//background: $backdrop_selected_bg_color;
+				//}
+      //}
     }
 
     &.flat { &:backdrop, &:disabled, &:backdrop:disabled { @include button(undecorated); }}
