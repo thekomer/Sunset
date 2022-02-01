@@ -503,6 +503,26 @@ toolbar.inline-toolbar toolbutton:backdrop {
   }
 }
 
+%linked_entry {
+  @extend %linked_middle;
+
+  &:first-child {
+    border-top-left-radius: 1em; //3px;
+    border-bottom-left-radius: 1em; //3px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 1em; //3px;
+    border-bottom-right-radius: 1em; //3px;
+    border-right-style: solid;
+  }
+
+  &:only-child {
+    border-radius: 1em; //3px;
+    border-style: solid;
+  }
+}
+
 %linked_vertical_middle {
   border-style: solid solid none solid;
   border-radius: 0;
@@ -524,6 +544,26 @@ toolbar.inline-toolbar toolbutton:backdrop {
 
   &:only-child {
     border-radius: 0.4em; //3px;
+    border-style: solid;
+  }
+}
+
+%linked_vertical_entry{
+  @extend %linked_vertical_middle;
+
+  &:first-child {
+    border-top-left-radius: 1em; //3px;
+    border-top-right-radius: 1em; //3px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 1em; //3px;
+    border-bottom-right-radius: 1em; //3px;
+    border-style: solid;
+  }
+
+  &:only-child {
+    border-radius: 1em; //3px;
     border-style: solid;
   }
 }

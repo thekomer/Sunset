@@ -1121,17 +1121,30 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
   border-right-style: none;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1); }
 
-.inline-toolbar button:first-child, .linked > button:first-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child {
+.inline-toolbar button:first-child, .linked > button:first-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo {
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em; }
 
-.inline-toolbar button:last-child, .linked > button:last-child, combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child {
+.inline-toolbar button:last-child, .linked > button:last-child, combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo {
   border-top-right-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
   border-right-style: solid; }
 
-.inline-toolbar button:only-child, .linked > button:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child {
+.inline-toolbar button:only-child, .linked > button:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo {
   border-radius: 0.4em;
+  border-style: solid; }
+
+.linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em; }
+
+.linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-right-style: solid; }
+
+.linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child {
+  border-radius: 1em;
   border-style: solid; }
 
 .linked.vertical > button,
@@ -1142,17 +1155,30 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
   border-style: solid solid none solid;
   border-radius: 0; }
 
-.linked.vertical > button:first-child, .linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child {
+.linked.vertical > button:first-child, .linked.vertical > combobox:first-child > box > button.combo {
   border-top-left-radius: 0.4em;
   border-top-right-radius: 0.4em; }
 
-.linked.vertical > button:last-child, .linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child {
+.linked.vertical > button:last-child, .linked.vertical > combobox:last-child > box > button.combo {
   border-bottom-left-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
   border-style: solid; }
 
-.linked.vertical > button:only-child, .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child {
+.linked.vertical > button:only-child, .linked.vertical > combobox:only-child > box > button.combo {
   border-radius: 0.4em;
+  border-style: solid; }
+
+.linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em; }
+
+.linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-style: solid; }
+
+.linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child {
+  border-radius: 1em;
   border-style: solid; }
 
 modelbutton.flat, popover.background checkbutton,
