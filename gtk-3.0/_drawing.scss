@@ -258,10 +258,18 @@
 		//background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end, 0.4));
 		border:none;
 	}	@else if $t==active-header {
-		border-radius: 1em; // 23px;
-		background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
-		box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
-		color: rgb(255, 255, 255);
+			color: rgb(255, 255, 255);
+			border-radius: 1em; // 23px;
+			background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
+			//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
+			&:hover{
+				box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
+			}
+			&:backdrop{
+				color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
+				background: $backdrop_selected_bg_color;
+				//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
+		}
 	}	@else if $t==backdrop-header {
 		//
 		// backdrop button headerbar look

@@ -59,9 +59,9 @@
 			&:selected, &:active, &:checked {
 				transition-duration: 50ms;
 				@include button(active-header);
-				&:backdrop {
-					@include button(backdrop-active-header);
-				}
+				//&:backdrop {
+					//@include button(backdrop-active-header);
+				//}
 			}
 		}
 	}
