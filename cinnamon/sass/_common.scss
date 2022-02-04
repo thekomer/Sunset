@@ -15,7 +15,9 @@ stage {
 %button {
   min-height: 20px;
   padding: 5px 32px;
-  transition-duration: 0;
+  transition-duration: 200ms;
+  background-clip: padding-box;
+
 
   &, &:focus, &:hover, &:hover:focus, &:active, &:active:focus, &:insensitive {
     border-radius: 0.5em;
@@ -61,9 +63,9 @@ stage {
   &:focus, &:hover { @include entry(focus); }
   &:insensitive { @include entry(insensitive); }
 
-  StIcon.capslock-warning {
-    icon-size: 16px;
-    warning-color: $warning_color;
+	StIcon.capslock-warning {
+    icon-size: 1em; // 16px;
+    color: $warning_color; //warning-color: $warning_color;
     padding: 0 4px;
   }
 }
@@ -1425,16 +1427,20 @@ StScrollBar {
     transition-duration: 300;
     background-color: $base_color;
     border: 1px solid $borders_color;
+    border-radius: 0.4em;
   }
 
   &-favorites-button {
     padding: .9em 1em;
-    border: 1px solid rgba(0,0,0,0);
-    border-radius: 9px;
+    border: 1px solid $borders_color;
+    border-radius: 0.5em; //9px;
     &:hover {
-      //background-color: transparentize($selected_bg_color, 0.3);
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.7);
+			background-clip: padding-box;
+      background-color: transparentize(white, 0.925);
+      border: 1px solid $borders_color;
+      //@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.7);
+      -gtk-icon-effect: highlight;
+      color: $selected_fg_color;
     }
   }
 
@@ -1454,19 +1460,24 @@ StScrollBar {
   &-applications-outer-box { padding: 10px 10px 0 10px; }
 
   &-application-button {
-    padding: 7px;
-    border: 1px solid rgba(0,0,0,0);
+    padding: 0.2em;
+    border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
+    border-radius: 0.5em;
 
     // This style is used in menu application buttons for applications which were newly installed
     &:highlighted { font-weight: bold; }
 
     &-selected {
       padding: 7px;
+      background-clip: padding-box;
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.7);
+      //@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.7);
+      background: transparentize(white, 0.925);
+      //border: 1px solid transparentize($selected_bg_color, 0.6);
       border: 1px solid $borders_color;
+      border-radius: 0.5em;
+      -gtk-icon-effect: highlight;
 
       &:highlighted { font-weight: bold; }
     }
@@ -1477,20 +1488,21 @@ StScrollBar {
 
   &-category-button {
     padding: 7px;
-    border: 1px solid rgba(0,0,0,0);
+    border-radius: 1em;
+    border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
 
+		&-hover {
+		//@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.5);
+      border-radius: 1em;
+    }
     &-selected {
       padding: 7px;
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 1);
+      //background: linear-gradient(red, yellow);
+      @include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 1);
       border: 1px solid $borders_color;
-      border-radius: 9px;
-    }
-    &-hover {
-      background-color: red;
-      border-radius: 2px;
+      border-radius: 1em; //9px;
     }
     &-greyed {
       padding: 7px;
@@ -1533,7 +1545,7 @@ StScrollBar {
 }
 
 .menu-search-entry-icon {
-  icon-size: 1em;
+  icon-size: 0.9em; //1em;
   color: $accent_color;
 }
 

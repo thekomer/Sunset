@@ -26,7 +26,8 @@ $accent_color: $orange;
 $selected_fg_color: #fefefe;
 $selected_bg_color: if($variant == 'light', #92b372, $orange);
 
-$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
+//$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
+$borders_color: if($variant =='light', darken($bg_color,20%), transparentize($fg_color, 0.95));
 $separator_color: if($variant == 'light', #cfcfcf, darken($bg_color, 6%));
 $link_color: if($variant == 'light', darken($selected_bg_color,10%),
                                      lighten($selected_bg_color,20%));
