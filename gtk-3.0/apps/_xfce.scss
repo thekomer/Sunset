@@ -179,19 +179,20 @@ wnck-pager {
 	iconview {
 		background-color: transparent;
 		color: $fg_color;
+		border-radius: 0.5em;
 		&:hover {
-			border-radius: 0.4em;
 			background-color: transparentize(white, 0.95);
 			border: 2px solid $borders_color;
 			-gtk-icon-effect: highlight;
 		}
 		&:selected {
+			background-clip: padding-box;
+			//border-radius: 0.4em;
 			background-color: transparentize(white, 0.95);
 			color: $selected_fg_color;
 			outline-color: $borders_color;
-			border-radius: 0.4em;
 			-gtk-icon-effect: highlight;
-			border: 3px solid transparentize($theme_color, 0.6); //$borders_color;
+			border: 3px solid transparentize($theme_color, 0.6);
 		}
 	}
 }
