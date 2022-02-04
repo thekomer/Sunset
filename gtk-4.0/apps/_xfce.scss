@@ -153,6 +153,7 @@ wnck-pager {
 				&:hover{
 					color: white;
 					font-weight: bold;
+			-gtk-icon-effect: highlight;
 				}
     }
 }
@@ -165,11 +166,32 @@ wnck-pager {
 		&:hover {
 			background-color: transparentize($selected_bg_color, 0.6);
 			color: $selected_fg_color;
+			border-radius: 0.4em;
+			-gtk-icon-effect: highlight;
 		}
 		&:selected {
+			-gtk-icon-effect: highlight;
 			background-color: $selected_bg_color;
 			color: $selected_fg_color;
 			outline-color: $borders_color;
+		}
+	}
+	iconview {
+		background-color: transparent;
+		color: $fg_color;
+		&:hover {
+			border-radius: 0.4em;
+			background-color: transparentize(white, 0.95);
+			border: 2px solid $borders_color;
+			-gtk-icon-effect: highlight;
+		}
+		&:selected {
+			background-color: transparentize(white, 0.95);
+			color: $selected_fg_color;
+			outline-color: $borders_color;
+			border-radius: 0.4em;
+			-gtk-icon-effect: highlight;
+			border: 3px solid transparentize($theme_color, 0.6); //$borders_color;
 		}
 	}
 }

@@ -5974,18 +5974,38 @@ wnck-pager {
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
       color: white;
-      font-weight: bold; }
+      font-weight: bold;
+      -gtk-icon-effect: highlight; }
 
 #whiskermenu-window treeview {
   background-color: transparent;
   color: #BFC3CD; }
   #whiskermenu-window treeview:hover {
     background-color: rgba(255, 106, 0, 0.4);
-    color: #fefefe; }
+    color: #fefefe;
+    border-radius: 0.4em;
+    -gtk-icon-effect: highlight; }
   #whiskermenu-window treeview:selected {
+    -gtk-icon-effect: highlight;
     background-color: #ff6a00;
     color: #fefefe;
     outline-color: rgba(255, 255, 255, 0.05); }
+
+#whiskermenu-window iconview {
+  background-color: transparent;
+  color: #BFC3CD; }
+  #whiskermenu-window iconview:hover {
+    border-radius: 0.4em;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    -gtk-icon-effect: highlight; }
+  #whiskermenu-window iconview:selected {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fefefe;
+    outline-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.4em;
+    -gtk-icon-effect: highlight;
+    border: 3px solid rgba(255, 106, 0, 0.4); }
 
 /**********
  * thunar *
