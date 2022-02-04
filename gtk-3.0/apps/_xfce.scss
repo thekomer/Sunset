@@ -191,7 +191,7 @@ wnck-pager {
 			outline-color: $borders_color;
 			border-radius: 0.4em;
 			-gtk-icon-effect: highlight;
-			border: 2px solid transparentize($theme_color, 0.6); //$borders_color;
+			border: 3px solid transparentize($theme_color, 0.6); //$borders_color;
 		}
 	}
 }

@@ -6051,7 +6051,7 @@ wnck-pager {
     outline-color: rgba(255, 255, 255, 0.05);
     border-radius: 0.4em;
     -gtk-icon-effect: highlight;
-    border: 2px solid rgba(255, 106, 0, 0.4); }
+    border: 3px solid rgba(255, 106, 0, 0.4); }
 
 /**********
  * thunar *
