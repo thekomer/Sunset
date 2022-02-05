@@ -5,12 +5,13 @@
 .app-notification.frame {
   @extend %osd;
 
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
+  padding: 1.5em;//10px;
+  border-radius: .5em;
   background-color: $osd_bg_color;
   background-image: linear-gradient(to bottom, transparentize(black, 0.8),
                                                transparent 2px);
   background-clip: padding-box;
+	border: 1px solid $borders_color;
 
   &:backdrop {
     background-image: none;
