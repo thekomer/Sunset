@@ -11,6 +11,7 @@ scrollbar {
   }
 
   background-color: $scrollbar_bg_color;
+  border-radius: 0.6em;
   transition: 300ms $ease-out-quad;
 
   // scrollbar border
