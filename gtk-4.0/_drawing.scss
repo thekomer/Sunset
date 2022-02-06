@@ -569,9 +569,9 @@
   box-shadow: none;
 }
 
-@mixin scale-highlight($dir) {
-//  background: linear-gradient(to $dir, #FF6A00, #00f7d2);
-	background: linear-gradient(to $dir, $theme-gradient-start, $theme-gradient-end);
+@mixin scale-highlight($dir, $state:normal) {
+	//background: linear-gradient(to $dir, $theme-gradient-start, $theme-gradient-end);
+	background: linear-gradient(to $dir, if($state==disabled, transparentize($theme-gradient-start, 0.5), $theme-gradient-start), if($state==disabled, transparentize($theme-gradient-end, 0.5),$theme-gradient-end));
 }
 
 @mixin selected-tab($dir) {
