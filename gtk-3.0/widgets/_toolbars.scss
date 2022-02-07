@@ -13,14 +13,14 @@ toolbar, .primary-toolbar {
   padding: 4px 3px 3px 4px;
 
   // on OSD
-  .osd & { background-color: $osd_bg_color; } // transparent; }
+  .osd & { background-color: darken($osd_bg_color, 3%); } // transparent; }
 
   // stand-alone OSD toolbars
   &.osd {
     padding: 13px;
     border: none;
-    border-radius: 5px;
-    background-color: $osd_bg_color;
+    border-radius: 0.5em;
+    background-color: darken($osd_bg_color, 3%);
 
     &.left,
     &.right,

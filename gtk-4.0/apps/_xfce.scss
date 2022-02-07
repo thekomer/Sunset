@@ -116,7 +116,8 @@ wnck-pager {
 #whiskermenu-window {
 	color: $fg_color;
 	background-color: $bg_color;
-	border-radius: 0.5em;
+	border-radius: 1em;
+	border: 1px solid $borders_color;
 	box-shadow: 5px 10px 8px 10px $borders_color;
 }
 
@@ -179,19 +180,19 @@ wnck-pager {
 	iconview {
 		background-color: transparent;
 		color: $fg_color;
+		border-radius: 0.5em;
 		&:hover {
-			border-radius: 0.4em;
 			background-color: transparentize(white, 0.95);
 			border: 2px solid $borders_color;
 			-gtk-icon-effect: highlight;
 		}
 		&:selected {
+			background-clip: padding-box;
 			background-color: transparentize(white, 0.95);
 			color: $selected_fg_color;
 			outline-color: $borders_color;
-			border-radius: 0.4em;
 			-gtk-icon-effect: highlight;
-			border: 3px solid transparentize($theme_color, 0.6); //$borders_color;
+			border: 3px solid transparentize($theme_color, 0.6);
 		}
 	}
 }
@@ -204,7 +205,7 @@ wnck-pager {
   background-color: $headerbar_color;
 	button {
 		@include button(normal-header);
-		color: darken($fg_color, 3%);
+		color: $sidebar_fg_color;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		min-height: 24px;
@@ -218,11 +219,7 @@ wnck-pager {
 		}
 		&:selected, &:active, &:checked {
 			@include button(active-header);
-		}
-		&:backdrop {
-			color: inherit;
-			background: inherit;
-			&:selected, &:active, &:checked {
+			&:backdrop {
 				@include button(backdrop-active-header);
 			}
 		}
@@ -236,7 +233,7 @@ wnck-pager {
   -gtk-icon-transform:scale(1); // it was 0.72
 }
 scrolledwindow.sidebar treeview.view {
-  background: darken($_sidebar_color, 2%);
+  background: darken($sidebar_bg_color, 2%);
   padding: 1.5px;
 }
 
@@ -256,8 +253,8 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 
 // thunar sidepane
 window.thunar paned > scrolledwindow treeview.view {
-	color: darken($fg_color, 2%);
-	background: $headerbar_color;
+	color: $sidebar_fg_color;
+	background: $sidebar_bg_color;
 	&:hover {
 		@include button(hover-header);
 		background-color: transparentize($fg_color, 0.95);
@@ -288,8 +285,8 @@ window.thunar paned > scrolledwindow treeview.view {
 
 // thunar statusbar
 window.thunar statusbar {
-	color: darken($fg_color, 2%);
-	background: $headerbar_color;
+	color: $sidebar_fg_color;
+	background: $sidebar_bg_color;
 }
 
 // thunar copy-paste highlight
@@ -317,5 +314,6 @@ window.thunar statusbar {
 		&:active, &:checked {
 		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.2), transparentize($theme-gradient-end,0.2));
 		label, image { color: inherit; }
-	}}
+		}
+	}
 }

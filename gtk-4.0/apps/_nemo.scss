@@ -1,6 +1,6 @@
 .nemo-window {
 	.places-treeview {
-		//-NemoPlacesTreeView-disk-full-bg-color: lighten($_sidebar_color, 25%);
+		//-NemoPlacesTreeView-disk-full-bg-color: lighten($sidebar_bg_color, 25%);
 		//-NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 15%);
 		//-NemoPlacesTreeView-disk-full-max-length: 100px;
 		//-GtkTreeView-vertical-separator: 7;
@@ -9,8 +9,8 @@
 	}
 
 	.sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actualy whole statusbar
-		color: darken($fg_color, 2%);
-		background: $headerbar_color;
+		color: $sidebar_fg_color;
+		background: $sidebar_bg_color;
 		margin-bottom: -4px;
 		.view, .iconview, row {
 			background-color: transparent;

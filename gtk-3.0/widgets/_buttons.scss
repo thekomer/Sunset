@@ -120,7 +120,7 @@ button {
         box-shadow: none;
        }
       &.sidebar-button {
-        background-color: lighten($_sidebar_color, 7.77%);
+        background-color: lighten($sidebar_bg_color, 7.77%);
         color: #fff;
         &:hover{
           background-color: $selected_bg_color;

@@ -468,7 +468,7 @@ button {
       box-shadow: none; }
     notebook > header > tabs > arrow.image-button.sidebar-button,
     button.image-button.sidebar-button {
-      background-color: #1b2138;
+      background-color: #131626;
       color: #fff; }
       notebook > header > tabs > arrow.image-button.sidebar-button:hover,
       button.image-button.sidebar-button:hover {
@@ -4173,9 +4173,9 @@ stacksidebar row {
 placessidebar.sidebar {
   background-color: transparent;
   /* background-image:linear-gradient(to right, #171e27 40px,
-												$_sidebar_color 35px,$_sidebar_color 36px,
-												$_sidebar_color 36px,$_sidebar_color 99%,
-												$_sidebar_color 100%);*/ }
+												$sidebar_bg_color 35px,$sidebar_bg_color 36px,
+												$sidebar_bg_color 36px,$sidebar_bg_color 99%,
+												$sidebar_bg_color 100%);*/ }
   placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon {
     margin-left: -14px;
     margin-right: 12px;
@@ -5944,7 +5944,8 @@ wnck-pager {
 #whiskermenu-window {
   color: #BFC3CD;
   background-color: #0E111D;
-  border-radius: 0.5em;
+  border-radius: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 5px 10px 8px 10px rgba(255, 255, 255, 0.05); }
 
 #whiskermenu-window box widget {
@@ -5995,17 +5996,17 @@ wnck-pager {
 
 #whiskermenu-window iconview {
   background-color: transparent;
-  color: #BFC3CD; }
+  color: #BFC3CD;
+  border-radius: 0.5em; }
   #whiskermenu-window iconview:hover {
-    border-radius: 0.4em;
     background-color: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.05);
     -gtk-icon-effect: highlight; }
   #whiskermenu-window iconview:selected {
+    background-clip: padding-box;
     background-color: rgba(255, 255, 255, 0.05);
     color: #fefefe;
     outline-color: rgba(255, 255, 255, 0.05);
-    border-radius: 0.4em;
     -gtk-icon-effect: highlight;
     border: 3px solid rgba(255, 106, 0, 0.4); }
 
@@ -6021,7 +6022,7 @@ wnck-pager {
     box-shadow: none;
     background: transparent;
     border: none;
-    color: #b6bbc6;
+    color: #b9bec9;
     margin-top: 5px;
     margin-bottom: 5px;
     min-height: 24px; }
@@ -6036,10 +6037,7 @@ wnck-pager {
       background: linear-gradient(to right, #ff3300, #ffa100);
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
       color: white; }
-    .thunar toolbar button:backdrop {
-      color: inherit;
-      background: inherit; }
-      .thunar toolbar button:backdrop:selected, .thunar toolbar button:backdrop:active, .thunar toolbar button:backdrop:checked {
+      .thunar toolbar button:selected:backdrop, .thunar toolbar button:active:backdrop, .thunar toolbar button:checked:backdrop {
         border-radius: 1em;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
@@ -6049,7 +6047,7 @@ wnck-pager {
   -gtk-icon-transform: scale(1); }
 
 scrolledwindow.sidebar treeview.view {
-  background: #0b0d16;
+  background: #030305;
   padding: 1.5px; }
 
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button {
@@ -6316,7 +6314,7 @@ LibraryWindow .the-button-in-the-combobox {
 * Level bar *
 *************/
 .source-list.view.level-bar, iconview.source-list.level-bar, .source-list.view.level-bar:selected, iconview.source-list.level-bar:selected, .source-list.view.level-bar:selected:focus, iconview.source-list.level-bar:selected:focus {
-  background: linear-gradient(#272f51, #272f51);
+  background: linear-gradient(#20253f, #20253f);
   border: 1px solid rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px; }

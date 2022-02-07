@@ -480,7 +480,7 @@ button {
       box-shadow: none; }
     notebook > header > tabs > arrow.image-button.sidebar-button,
     button.image-button.sidebar-button {
-      background-color: #1b2138;
+      background-color: #131626;
       color: #fff; }
       notebook > header > tabs > arrow.image-button.sidebar-button:hover,
       button.image-button.sidebar-button:hover {
@@ -4197,9 +4197,9 @@ stacksidebar row {
 placessidebar.sidebar {
   background-color: #06070c;
   /* background-image:linear-gradient(to right, #171e27 40px,
-												$_sidebar_color 35px,$_sidebar_color 36px,
-												$_sidebar_color 36px,$_sidebar_color 99%,
-												$_sidebar_color 100%);*/ }
+												$sidebar_bg_color 35px,$sidebar_bg_color 36px,
+												$sidebar_bg_color 36px,$sidebar_bg_color 99%,
+												$sidebar_bg_color 100%);*/ }
   placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon {
     margin-left: -14px;
     margin-right: 12px;
@@ -4528,12 +4528,12 @@ toolbar, .primary-toolbar, .inline-toolbar, searchbar,
 toolbar, .primary-toolbar {
   padding: 4px 3px 3px 4px; }
   .osd toolbar, .osd .primary-toolbar {
-    background-color: rgba(20, 23, 26, 0.8); }
+    background-color: rgba(13, 15, 17, 0.8); }
   toolbar.osd, .primary-toolbar.osd {
     padding: 13px;
     border: none;
-    border-radius: 5px;
-    background-color: rgba(20, 23, 26, 0.8); }
+    border-radius: 0.5em;
+    background-color: rgba(13, 15, 17, 0.8); }
     toolbar.osd.left, toolbar.osd.right, toolbar.osd.top, toolbar.osd.bottom, .primary-toolbar.osd.left, .primary-toolbar.osd.right, .primary-toolbar.osd.top, .primary-toolbar.osd.bottom {
       border-radius: 0; }
   toolbar.horizontal separator, .primary-toolbar.horizontal separator {
@@ -6079,7 +6079,7 @@ wnck-pager {
     box-shadow: none;
     background: transparent;
     border: none;
-    color: #b6bbc6;
+    color: #b9bec9;
     margin-top: 5px;
     margin-bottom: 5px;
     min-height: 24px; }
@@ -6108,7 +6108,7 @@ wnck-pager {
   -gtk-icon-transform: scale(1); }
 
 scrolledwindow.sidebar treeview.view {
-  background: #0b0d16;
+  background: #030305;
   padding: 1.5px; }
 
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button {
@@ -6383,7 +6383,7 @@ LibraryWindow .the-button-in-the-combobox {
 * Level bar *
 *************/
 .source-list.view.level-bar, iconview.source-list.level-bar, .source-list.view.level-bar:selected, iconview.source-list.level-bar:selected, .source-list.view.level-bar:selected:focus, iconview.source-list.level-bar:selected:focus {
-  background: linear-gradient(#272f51, #272f51);
+  background: linear-gradient(#20253f, #20253f);
   border: 1px solid rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px; }
@@ -6803,7 +6803,7 @@ ConversationListView {
   font-weight: bold; }
 
 .nemo-window .places-treeview {
-  -NemoPlacesTreeView-disk-full-bg-color: #384373;
+  -NemoPlacesTreeView-disk-full-bg-color: #313961;
   -NemoPlacesTreeView-disk-full-fg-color: #b34a00;
   -NemoPlacesTreeView-disk-full-max-length: 100px;
   -GtkTreeView-vertical-separator: 7; }

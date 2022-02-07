@@ -188,7 +188,6 @@ wnck-pager {
 		}
 		&:selected {
 			background-clip: padding-box;
-			//border-radius: 0.4em;
 			background-color: transparentize(white, 0.95);
 			color: $selected_fg_color;
 			outline-color: $borders_color;
@@ -206,7 +205,7 @@ wnck-pager {
   background-color: $headerbar_color;
 	button {
 		@include button(normal-header);
-		color: darken($fg_color, 3%);
+		color: $sidebar_fg_color;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		min-height: 24px;
@@ -234,7 +233,7 @@ wnck-pager {
   -gtk-icon-transform:scale(1); // it was 0.72
 }
 scrolledwindow.sidebar treeview.view {
-  background: darken($_sidebar_color, 2%);
+  background: darken($sidebar_bg_color, 2%);
   padding: 1.5px;
 }
 
@@ -254,8 +253,8 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 
 // thunar sidepane
 window.thunar paned > scrolledwindow treeview.view {
-	color: darken($fg_color, 2%);
-	background: $headerbar_color;
+	color: $sidebar_fg_color;
+	background: $sidebar_bg_color;
 	&:hover {
 		@include button(hover-header);
 		background-color: transparentize($fg_color, 0.95);
@@ -286,8 +285,8 @@ window.thunar paned > scrolledwindow treeview.view {
 
 // thunar statusbar
 window.thunar statusbar {
-	color: darken($fg_color, 2%);
-	background: $headerbar_color;
+	color: $sidebar_fg_color;
+	background: $sidebar_bg_color;
 }
 
 // thunar copy-paste highlight
