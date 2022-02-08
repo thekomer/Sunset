@@ -2500,7 +2500,7 @@ headerbar {
     min-height: 24px; }
   .titlebar:not(headerbar) button, .titlebar button,
   headerbar button {
-    color: #8b8b8b;
+    color: #BFC3CD;
     text-shadow: none;
     box-shadow: none;
     background: transparent;
@@ -4227,7 +4227,7 @@ stacksidebar row {
 /*******************************************************************/
 /*--*/
 placessidebar.sidebar {
-  background-color: #06070c;
+  background-color: transparent;
   /* background-image:linear-gradient(to right, #171e27 40px,
 												$sidebar_bg_color 35px,$sidebar_bg_color 36px,
 												$sidebar_bg_color 36px,$sidebar_bg_color 99%,
@@ -4237,7 +4237,7 @@ placessidebar.sidebar {
     margin-right: 12px;
     padding-left: 14px;
     padding-right: 12px;
-    color: rgba(255, 106, 0, 0.7); }
+    color: #b9bec9; }
   placessidebar.sidebar row.sidebar-row:hover {
     transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     color: rgba(0, 0, 0, 0.76);
@@ -5423,7 +5423,7 @@ button.raven-trigger {
     .raven .raven-header.bottom {
       border-bottom-style: none; }
     .raven .raven-header button {
-      color: #8b8b8b;
+      color: #BFC3CD;
       text-shadow: none;
       box-shadow: none;
       background: transparent;
@@ -6106,7 +6106,7 @@ wnck-pager {
   margin-bottom: -1px;
   background-color: #06070c; }
   .thunar toolbar button {
-    color: #8b8b8b;
+    color: #BFC3CD;
     text-shadow: none;
     box-shadow: none;
     background: transparent;
@@ -6865,7 +6865,7 @@ ConversationListView {
         color: rgba(254, 254, 254, 0.5);
         background-color: rgba(255, 106, 0, 0.6); }
   .nemo-window .sidebar button, .nemo-window statusbar button, .nemo-window box.toolbar button, .nemo-window toolbar.primary-toolbar button {
-    color: #8b8b8b;
+    color: #BFC3CD;
     text-shadow: none;
     box-shadow: none;
     background: transparent;
@@ -6994,7 +6994,7 @@ ConversationListView {
     color: #fefefe; }
 
 .caja-pathbar button {
-  color: #8b8b8b;
+  color: #BFC3CD;
   text-shadow: none;
   box-shadow: none;
   background: transparent;

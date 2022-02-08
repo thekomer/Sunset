@@ -243,10 +243,11 @@
 		//
 		// normal button headerbar look
 		//
-		color: if($tc==$text_color, #8b8b8b, $tc);
+		color: if($tc==$text_color, $headerbar_fg_color, $tc);
 		text-shadow: none;
 		box-shadow: none;
-		background: transparent;
+		//background: transparent;
+		background: if($c==$base_color, transparent, $base_color);
 		border: none;
 	}	@else if $t==hover-header {
 		//

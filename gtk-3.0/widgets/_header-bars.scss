@@ -55,10 +55,10 @@ headerbar {
           }
         }
 
-      }
+     }
 
-      &.appmenu{
-      background: transparent;
+		&.appmenu{
+			background: transparent;
       &:backdrop{background: transparent;}
     }
     &:hover,
@@ -138,6 +138,7 @@ headerbar {
       }
     }
   }
+
   %linked-header {
     border-radius: 1em; // 23px;
     border-right-style: none;
