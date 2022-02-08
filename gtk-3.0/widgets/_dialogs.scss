@@ -1,7 +1,7 @@
 /***********
  * Dialogs *
  ***********/
-messagedialog { // Message Dialog styling
+messagedialog { /* Message Dialog styling */
   .titlebar:not(headerbar) {
     background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
   }
@@ -68,3 +68,35 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent;
 }
+/*
+// file chooser dialog
+dialog {
+	#pathbarbox {
+		background: $headerbar_color;
+		.linked.path-bar {
+			background: $headerbar_color;
+			border-bottom: 1px solid $borders_color;
+			transition: $button_transition;
+			transition-duration: 50ms;
+			button, button.text-button, button.text-button.toggle, button > label {
+				@include button(normal-header);
+				color: $headerbar_fg_color;
+				&:hover{
+					@include button(hover-header, transparent, $text_color);
+					color: $selected_bg_color;
+				}
+				&:selected, &:active, &:checked {
+					@include button(active-header);
+					color: $selected_fg_color;
+				}
+				&:backdrop {
+					transition: $backdrop_transition;
+					transition-duration: 500ms;
+					color: inherit;
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+*/
