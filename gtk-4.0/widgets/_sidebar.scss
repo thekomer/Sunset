@@ -4,8 +4,9 @@
 .sidebar {
   border-style: none;
   border-width: 0;
-  //background-color: mix($bg_color, $base_color, 50%);
-	background-color: $headerbar_color;
+	background-color: $sidebar_bg_color;
+	color: $sidebar_fg_color;
+
   .frame{
     border: none;
   }
@@ -34,8 +35,7 @@
     padding: 8px 12px;
     transition: all .12s ease-in;
     label{
-      // color: #98abb2;
-      color: transparentize($fg_color, 0.2);
+      color: $sidebar_fg_color;
     }
     &:selected{
       color: $selected_fg_color;
@@ -133,7 +133,7 @@ placessidebar{
 						margin-right: 12px;
 						padding-left: 14px;
 						padding-right: 12px;
-						color: transparentize($selected_bg_color, 0.3);
+						color: $sidebar_fg_color;
 					}
 				}
 				&:hover{

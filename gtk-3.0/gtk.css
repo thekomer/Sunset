@@ -4167,7 +4167,8 @@ treeview ~ scrollbar.vertical {
 .sidebar {
   border-style: none;
   border-width: 0;
-  background-color: #06070c; }
+  background-color: #06070c;
+  color: #b9bec9; }
   .sidebar .frame {
     border: none; }
   stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
@@ -4183,7 +4184,7 @@ treeview ~ scrollbar.vertical {
     padding: 8px 12px;
     transition: all .12s ease-in; }
     .sidebar row label {
-      color: rgba(191, 195, 205, 0.8); }
+      color: #b9bec9; }
     .sidebar row:selected {
       color: #fefefe; }
       .sidebar row:selected:backdrop {
