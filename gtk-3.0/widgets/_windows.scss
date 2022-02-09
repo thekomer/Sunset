@@ -13,14 +13,14 @@ window.background {
 //}
 
 headerbar.titlebar {
-	border-radius: 0.6em 0.6em 0 0;
+	border-radius: 0.6em -1px 0.6em -1px 0 0;
 }
 
 /**********************
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
 
 
   // lamefun trick to get rounded borders regardless of CSD use
@@ -39,7 +39,7 @@ decoration {
 
 	// added for accessibility (window borders)
 	border: 2px solid $window_border_color;
-	background: $window_border_color;
+	background: transparent; //$window_border_color;
 
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't

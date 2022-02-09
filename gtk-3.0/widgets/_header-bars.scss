@@ -262,8 +262,8 @@ headerbar {
 }
 
 window {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 0.6em; //4px;
+  border-top-right-radius: 0.6em; //4px;
 }
 
 .titlebar:not(headerbar) {
