@@ -2797,8 +2797,8 @@ window:not(.tiled):not(.maximized) headerbar:last-child:backdrop, window:not(.ti
   border-top-right-radius: 4px; }
 
 window {
-  border-top-left-radius: 0.6em;
-  border-top-right-radius: 0.6em; }
+  border-top-left-radius: 0.7em -1px;
+  border-top-right-radius: 0.7em -1px; }
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
@@ -4778,7 +4778,7 @@ window.background {
   border-radius: 0 0 0.6em 0.6em; }
 
 headerbar.titlebar {
-  border-radius: 0.6em -1px 0.6em -1px 0 0; }
+  border-radius: 0.7em -2px 0.7em -2px 0 0; }
 
 /**********************
  * Window Decorations *
