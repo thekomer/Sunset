@@ -137,12 +137,16 @@ notebook {
       &:hover:not(:active):not(:backdrop) {
         background-clip: padding-box;
         background-image: none;
-        background-color: transparentize(white, 0.7);
+        background-color: transparentize(white, 0.9);
+        color: $selected_fg_color;
         border-color: transparent;
         box-shadow: none;
       }
 
-      &:disabled { @include button(undecorated); }
+      &:disabled {
+				@include button(undecorated);
+				color: $insensitive_fg_color;
+			}
     }
 
     tab {

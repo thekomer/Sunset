@@ -3229,7 +3229,8 @@ notebook > header {
     notebook > header > tabs > arrow:hover:not(:active):not(:backdrop) {
       background-clip: padding-box;
       background-image: none;
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fefefe;
       border-color: transparent;
       box-shadow: none; }
     notebook > header > tabs > arrow:disabled {
@@ -3238,7 +3239,8 @@ notebook > header {
       border-color: transparent;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
-      -gtk-icon-shadow: none; }
+      -gtk-icon-shadow: none;
+      color: #676a75; }
   notebook > header tab {
     min-height: 24px;
     min-width: 24px;
