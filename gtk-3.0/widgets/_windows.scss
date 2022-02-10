@@ -5,7 +5,7 @@
 // this is added for rounded borders. I still don't know what I'm doing :P
 
 window.background {
-	border-radius: 0 0 0.6em 0.6em;
+	border-radius: 0 0 8px 8px;
 }
 
 //decoration {
@@ -13,18 +13,17 @@ window.background {
 //}
 
 headerbar.titlebar {
-	border-radius: 0.7em -2px 0.7em -2px 0 0;
+	border-radius: 8px + 2px 8px + 2px 0 0;
 }
 
 /**********************
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 0.6em 0.6em 0.6em 0.6em;
-
+  border-radius: 8px + 2px;
 
   // lamefun trick to get rounded borders regardless of CSD use
-  border-width: 0px;
+  // border-width: 0px;
 
   // this needs to be transparent
   // see bug #722563

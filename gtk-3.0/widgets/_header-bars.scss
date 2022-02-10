@@ -3,11 +3,12 @@
  ***************/
 %titlebar,
 headerbar {
+	// margin-top: 2px; // FIXIT: added to get rounded borders. What's that light line on top of titlebar/header
   padding: 0px 13px;
   min-height: 34px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
-  border-radius: 0;
+  border-radius: 8px + 2px;
   &:backdrop {
     border-color: $backdrop_borders_color;
    // background-image: none;
@@ -181,8 +182,7 @@ headerbar {
       }
     }
   }
-  .linked > button:hover,
-  .linked > button:backdrop {
+  .linked > button:hover, .linked > button:backdrop {
     @extend %linked-header;
   }
   // End reset style
@@ -256,14 +256,14 @@ headerbar {
 
 headerbar {
   window:not(.tiled):not(.maximized) separator:first-child + &, // tackles the paned container case
-  window:not(.tiled):not(.maximized) &:first-child { &:backdrop, & { border-top-left-radius: 4px; }}
+  window:not(.tiled):not(.maximized) &:first-child { &:backdrop, & { border-top-left-radius: 8px + 2px; }}
 
-  window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 4px; }}
+  window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 8px + 2px; }}
 }
 
 window {
-  border-top-left-radius: 0.7em; //4px;
-  border-top-right-radius: 0.7em; //4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .titlebar:not(headerbar) {
@@ -288,4 +288,5 @@ window {
 
 .titlebar{
   @extend %titlebar;
+	border-radius: 8px + 2px 8px + 2px 0 0;
 }
