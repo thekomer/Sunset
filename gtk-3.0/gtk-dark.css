@@ -2797,8 +2797,8 @@ window:not(.tiled):not(.maximized) headerbar:last-child:backdrop, window:not(.ti
   border-top-right-radius: 4px; }
 
 window {
-  border-top-left-radius: 0.7em -1px;
-  border-top-right-radius: 0.7em -1px; }
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em; }
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
