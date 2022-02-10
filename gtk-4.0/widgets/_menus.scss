@@ -29,7 +29,7 @@ menu,
   font: initial;
   margin: 4px;
   padding: 2px 0px;
-  background: if( $variant == 'light',  linear-gradient(to bottom, #fff 20%, #fff), linear-gradient(to bottom, lighten($bg_color, 2%), darken($bg_color, 2%)));
+  background: if( $variant == 'light',  linear-gradient(to bottom, #fff 20%, #fff), linear-gradient(to bottom, lighten($headerbar_color, 2%), darken($headerbar_color, 2%)));
   border: 1px solid $borders_color; // adds borders in a non composited env
   border-radius: 5px;
 
