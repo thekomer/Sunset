@@ -9,13 +9,13 @@ gtk-color-scheme = "tooltip_fg_color:#ffffff\ntooltip_bg_color:#000000"
 # Window colors
 gtk-color-scheme = "wm_color:#31363d\nunfocused_wm_color:#31363d"
 # Panel colors
-gtk-color-scheme = "panel_bg_color:#06060a\npanel_fg_color:#ffffff"
+gtk-color-scheme = "panel_bg_color:#06070c\npanel_fg_color:#BFC3CD"
 # Dark Theme - Text/base colors
 gtk-color-scheme = "dark_text_color:#BFC3CD\ndark_base_color:#101320"
 # Dark Theme - Foreground/background colors
 gtk-color-scheme = "dark_fg_color:#BFC3CD\ndark_bg_color:#0c0e14"
-gtk-color-scheme = "sidebar_bg:#08111c"
-gtk-color-scheme = "sidebar_fg:#98abb2"
+gtk-color-scheme = "sidebar_bg:#06070c"
+gtk-color-scheme = "sidebar_fg:#b9bec9"
 gtk-auto-mnemonics = 1
 gtk-primary-button-warps-slider = 1
 
