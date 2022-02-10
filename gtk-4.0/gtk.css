@@ -6728,6 +6728,8 @@ ConversationListView {
       .nemo-window .sidebar .view:backdrop:selected, .nemo-window .sidebar iconview:backdrop:selected, .nemo-window .sidebar .iconview:backdrop:selected, .nemo-window .sidebar row:backdrop:selected, .nemo-window statusbar .view:backdrop:selected, .nemo-window statusbar iconview:backdrop:selected, .nemo-window statusbar .iconview:backdrop:selected, .nemo-window statusbar row:backdrop:selected, .nemo-window box.toolbar .view:backdrop:selected, .nemo-window box.toolbar iconview:backdrop:selected, .nemo-window box.toolbar .iconview:backdrop:selected, .nemo-window box.toolbar row:backdrop:selected, .nemo-window toolbar.primary-toolbar .view:backdrop:selected, .nemo-window toolbar.primary-toolbar iconview:backdrop:selected, .nemo-window toolbar.primary-toolbar .iconview:backdrop:selected, .nemo-window toolbar.primary-toolbar row:backdrop:selected {
         color: rgba(254, 254, 254, 0.5);
         background-color: rgba(255, 106, 0, 0.6); }
+    .nemo-window .sidebar .view:disabled, .nemo-window .sidebar iconview:disabled, .nemo-window .sidebar .iconview:disabled, .nemo-window .sidebar row:disabled, .nemo-window statusbar .view:disabled, .nemo-window statusbar iconview:disabled, .nemo-window statusbar .iconview:disabled, .nemo-window statusbar row:disabled, .nemo-window box.toolbar .view:disabled, .nemo-window box.toolbar iconview:disabled, .nemo-window box.toolbar .iconview:disabled, .nemo-window box.toolbar row:disabled, .nemo-window toolbar.primary-toolbar .view:disabled, .nemo-window toolbar.primary-toolbar iconview:disabled, .nemo-window toolbar.primary-toolbar .iconview:disabled, .nemo-window toolbar.primary-toolbar row:disabled {
+      color: #676a75; }
   .nemo-window .sidebar button, .nemo-window statusbar button, .nemo-window box.toolbar button, .nemo-window toolbar.primary-toolbar button {
     color: #8b8b8b;
     text-shadow: none;
@@ -6754,6 +6756,8 @@ ConversationListView {
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
+    .nemo-window .sidebar button:disabled, .nemo-window statusbar button:disabled, .nemo-window box.toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:disabled {
+      color: #676a75; }
 
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;

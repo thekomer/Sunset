@@ -31,6 +31,9 @@
 					background-color: $backdrop_selected_bg_color;
 				}
 			}
+			&:disabled {
+				color: $insensitive_fg_color;
+			}
 		}
 		button {
 			@include button(normal-header);
@@ -51,6 +54,9 @@
 				&:backdrop {
 					@include button(backdrop-active-header);
 				}
+			}
+			&:disabled {
+				color: $insensitive_fg_color;
 			}
 		}
 	}
