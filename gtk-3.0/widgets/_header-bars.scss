@@ -8,7 +8,7 @@ headerbar {
   min-height: 34px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
-  border-radius: 8px + 2px;
+  border-radius: 10px + 2px;
   &:backdrop {
     border-color: $backdrop_borders_color;
    // background-image: none;
@@ -256,9 +256,9 @@ headerbar {
 
 headerbar {
   window:not(.tiled):not(.maximized) separator:first-child + &, // tackles the paned container case
-  window:not(.tiled):not(.maximized) &:first-child { &:backdrop, & { border-top-left-radius: 8px + 2px; }}
+  window:not(.tiled):not(.maximized) &:first-child { &:backdrop, & { border-top-left-radius: 10px + 2px; }}
 
-  window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 8px + 2px; }}
+  window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 10px + 2px; }}
 }
 
 window {
@@ -288,5 +288,7 @@ window {
 
 .titlebar{
   @extend %titlebar;
-	border-radius: 8px + 2px 8px + 2px 0 0;
+	border-radius: 10px + 2px 10px + 2px 0 0;
+	box-shadow: none;
+	margin-top: 1px;
 }

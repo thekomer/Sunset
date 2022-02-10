@@ -2480,7 +2480,7 @@ headerbar {
   min-height: 34px;
   background: #06070c;
   color: #BFC3CD;
-  border-radius: 10px; }
+  border-radius: 12px; }
   .titlebar:backdrop,
   headerbar:backdrop {
     border-color: rgba(59, 62, 71, 0.145);
@@ -2790,10 +2790,10 @@ headerbar separator {
 window:not(.tiled):not(.maximized) separator:first-child + headerbar:backdrop, window:not(.tiled):not(.maximized) separator:first-child + headerbar,
 window:not(.tiled):not(.maximized) headerbar:first-child:backdrop,
 window:not(.tiled):not(.maximized) headerbar:first-child {
-  border-top-left-radius: 10px; }
+  border-top-left-radius: 12px; }
 
 window:not(.tiled):not(.maximized) headerbar:last-child:backdrop, window:not(.tiled):not(.maximized) headerbar:last-child {
-  border-top-right-radius: 10px; }
+  border-top-right-radius: 12px; }
 
 window {
   border-top-left-radius: 8px;
@@ -2811,7 +2811,9 @@ window.csd > .titlebar:not(headerbar) {
   background: #06070c; }
 
 .titlebar {
-  border-radius: 10px 10px 0 0; }
+  border-radius: 12px 12px 0 0;
+  box-shadow: none;
+  margin-top: 1px; }
 
 /**************
  * GtkInfoBar *
@@ -4777,10 +4779,14 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
  * Windows *
  * * * * * */
 window.background {
-  border-radius: 0 0 8px 8px; }
+  border-radius: 0 0 10px 10px; }
 
 headerbar.titlebar {
-  border-radius: 10px 10px 0 0; }
+  border-radius: 12px 12px 0 0;
+  box-shadow: none;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 1px; }
 
 /**********************
  * Window Decorations *
@@ -4790,7 +4796,7 @@ decoration {
   box-shadow: 0 4px 10px 2px rgba(255, 255, 255, 0);
   margin: 10px;
   border: 2px solid #512508;
-  background: transparent; }
+  background: #512508; }
   decoration:backdrop {
     box-shadow: 0 4px 10px 2px rgba(255, 255, 255, 0);
     transition: 200ms ease-out;
