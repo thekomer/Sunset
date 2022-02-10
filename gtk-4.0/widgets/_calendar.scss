@@ -2,12 +2,14 @@
 * Calendar *
 ***********/
 calendar {
-	//padding: 0.2rem;
+	padding-left: 4px;
+	padding-right: 4px;
 	color: $text_color;
 	border: 1px solid $borders_color;
 
+	&:disabled { color: $insensitive_fg_color; }
+
 	&:selected {
-		//@extend %selected_items;
 		@include button(active-header);
 		font-weight: bold;
 		&:backdrop {
@@ -17,30 +19,26 @@ calendar {
 	}
 
 	&.header {
-		border-bottom: 1px solid transparentize($borders_color, 0.9);
-		border-radius: 1px;
-		&:backdrop { border-color: transparentize($borders_color, 0.9); }
+		border-style: none none solid;
+    border-color: $borders_color;
 	}
 
 	&.button {
 		@extend %undecorated_button;
-			color: transparentize($fg_color, 0.55);
+		color: transparentize($fg_color, 0.3);
 		&:hover {
-			@extend %undecorated_button;
 			color: $fg_color;
 		}
 		&:backdrop {
-			@extend %undecorated_button;
-			color: transparentize($backdrop_fg_color,0.55);
+			color: transparentize($backdrop_fg_color,0.3);
 		}
 		&:disabled {
-			@extend %undecorated_button;
-			color:  transparentize($insensitive_fg_color,0.55);
+			color:  transparentize($insensitive_fg_color,0.3);
 		}
 	}
 
 	&:indeterminate,
-	&:indeterminate:backdrop { color: gtkalpha(currentColor, 0.55); }
+	&:indeterminate:backdrop { color: gtkalpha(currentColor, 0.7); }
 
 	&.highlight,
 	&.highlight:backdrop {

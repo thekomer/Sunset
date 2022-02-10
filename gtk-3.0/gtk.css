@@ -1188,7 +1188,7 @@ popover.background radiobutton,
 popover.background radiobutton:backdrop, modelbutton.flat:backdrop:hover, popover.background checkbutton:backdrop:hover,
 popover.background radiobutton:backdrop:hover,
 .menuitem.button.flat:backdrop,
-.menuitem.button.flat:backdrop:hover, calendar.button, calendar.button:hover, calendar.button:backdrop, calendar.button:disabled, button:link,
+.menuitem.button.flat:backdrop:hover, calendar.button, button:link,
 button:visited, button:link:hover, button:link:active, button:link:checked,
 button:visited:hover,
 button:visited:active,
@@ -1254,8 +1254,12 @@ notebook .linked > button, list .linked > button, .view .linked > button, iconvi
 * Calendar *
 ***********/
 calendar {
+  padding-left: 4px;
+  padding-right: 4px;
   color: #BFC3CD;
   border: 1px solid rgba(255, 255, 255, 0.05); }
+  calendar:disabled {
+    color: #676a75; }
   calendar:selected {
     color: white;
     border-radius: 1em;
@@ -1273,20 +1277,18 @@ calendar {
       box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98);
       color: inherit; }
   calendar.header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 1px; }
-    calendar.header:backdrop {
-      border-color: rgba(255, 255, 255, 0); }
+    border-style: none none solid;
+    border-color: rgba(255, 255, 255, 0.05); }
   calendar.button {
-    color: rgba(191, 195, 205, 0.45); }
+    color: rgba(191, 195, 205, 0.7); }
     calendar.button:hover {
       color: #BFC3CD; }
     calendar.button:backdrop {
-      color: rgba(103, 106, 117, 0.45); }
+      color: rgba(103, 106, 117, 0.7); }
     calendar.button:disabled {
-      color: rgba(103, 106, 117, 0.45); }
+      color: rgba(103, 106, 117, 0.7); }
   calendar:indeterminate, calendar:indeterminate:backdrop {
-    color: alpha(currentColor,0.55); }
+    color: alpha(currentColor,0.7); }
   calendar.highlight, calendar.highlight:backdrop {
     font-size: smaller;
     color: #BFC3CD; }
