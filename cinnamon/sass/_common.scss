@@ -1,5 +1,10 @@
 $asset_path: if($variant == 'dark', dark-assets, light-assets);
 
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$asset_suffix: if($variant=='dark', '-dark', '');
+$backdrop_transition: 200ms ease-out;
+$button_transition: all 200ms $ease-out-quad;
+
 stage {
   color: $fg_color;
 }
@@ -1424,13 +1429,13 @@ StScrollBar {
 .menu {
   &-favorites-box {
     padding: 10px;
-    transition-duration: 300;
     background-color: $base_color;
     border: 1px solid $borders_color;
     border-radius: 0.4em;
   }
 
   &-favorites-button {
+		transition: $button_transition;
     padding: .9em 1em;
     border: 1px solid $borders_color;
     border-radius: 0.5em; //9px;
@@ -1460,7 +1465,7 @@ StScrollBar {
   &-applications-outer-box { padding: 10px 10px 0 10px; }
 
   &-application-button {
-    padding: 0.2em;
+    //padding: 0.2em;
     border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
     border-radius: 0.5em;
 
@@ -1468,14 +1473,14 @@ StScrollBar {
     &:highlighted { font-weight: bold; }
 
     &-selected {
-      padding: 7px;
-      background-clip: padding-box;
+      //padding: 7px;
+      //background-clip: padding-box;
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
       //@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.7);
       background: transparentize(white, 0.925);
       //border: 1px solid transparentize($selected_bg_color, 0.6);
-      border: 1px solid $borders_color;
+      //border: 1px solid $borders_color;
       border-radius: 0.5em;
       -gtk-icon-effect: highlight;
 
