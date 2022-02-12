@@ -1,4 +1,4 @@
-/* * * * * * * * * * 
+/* * * * * * * * * *
  * DRAWING MIXINS  *
  * * * * * * * * * */
 /* * * * * * *
@@ -7,7 +7,7 @@
 /* * * * * *
  * Entries *
  * * * * * */
-/* * * * * * 
+/* * * * * *
  * Buttons *
  * * * * * */
 stage {
@@ -486,21 +486,21 @@ StScrollBar {
 .panel-top, .panel-bottom, .panel-left, .panel-right {
   color: #fefefe;
   border: none;
-  background-color: rgba(14, 17, 29, 0.99);
+  background-color: rgba(6, 8, 13, 0.99);
   font-size: 1em;
   padding: 0px; }
 
 .panel-top {
-  box-shadow: 0 1px #040508; }
+  box-shadow: 0 1px black; }
 
 .panel-bottom {
-  box-shadow: 0 -1px #040508; }
+  box-shadow: 0 -1px black; }
 
 .panel-left {
-  box-shadow: 1px 0 #040508; }
+  box-shadow: 1px 0 black; }
 
 .panel-right {
-  box-shadow: -1px 0 #040508; }
+  box-shadow: -1px 0 black; }
 
 .panel-dummy {
   background-color: rgba(230, 0, 0, 0.5); }
@@ -1238,6 +1238,8 @@ StScrollBar {
     background-gradient-end: #ffa100;
     border: 1px solid rgba(191, 195, 205, 0.05);
     border-radius: 1em; }
+  .menu-category-button-active {
+    background: blue; }
   .menu-category-button-greyed {
     padding: 7px;
     color: rgba(191, 195, 205, 0.45);
@@ -1680,15 +1682,15 @@ StScrollBar {
   border: 1px solid #ff6a00; }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: #272f51;
+  -active-window-background: #1e2841;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #272f51;
+  -inactive-window-background: #1e2841;
   -inactive-window-border: rgba(0, 0, 0, 0.8); }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: #384373;
+  -active-window-background: #2e3e64;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #161b2e;
+  -inactive-window-background: #0e131e;
   -inactive-window-border: rgba(0, 0, 0, 0.8); }
 
 /* * * * * * * * * * * * * * * * * * * * * * * *

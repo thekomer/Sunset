@@ -1,10 +1,10 @@
-/* * * * * * * * * * 
+/* * * * * * * * * *
  * DRAWING MIXINS  *
  * * * * * * * * * */
 
 /* * * * * * *
  * Gradients *
- * * * * * * */ 
+ * * * * * * */
 
 @mixin bg_gradient($direction, $start, $end, $alpha) {
 	background-gradient-direction: $direction;
@@ -16,7 +16,7 @@
   border: 1px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient($direction, rgba($start, $alpha), rgba($end, $alpha));  
+  border-image-source: linear-gradient($direction, rgba($start, $alpha), rgba($end, $alpha));
 }
 
 /* * * * * *
@@ -36,7 +36,7 @@
     color: $fg_color;
     background-color: $base_color;
     border: 1px solid $selected_bg_color;
-    //@include border_gradient(to right, $orange_gradient_start, $orange_gradient_end, 0);
+    //@include border_gradient(to right, $theme_gradient_start, $theme_gradient_end, 0);
     box-shadow: inset 0 2px 4px transparentize($entry_bg, 0.95);
   }
 
@@ -73,7 +73,7 @@
 
 
 
-/* * * * * * 
+/* * * * * *
  * Buttons *
  * * * * * */
 

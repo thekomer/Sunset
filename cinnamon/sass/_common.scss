@@ -1013,7 +1013,7 @@ StScrollBar {
 	&:selected {
 		color: $selected_bg_color;
 		font-weight: bold;
-		//@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 1);
+		//@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
   }
 }
 
@@ -1021,7 +1021,7 @@ StScrollBar {
 	color: $fg_color;
   &:selected {
 		color: $selected_fg_color;
-		//@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 1);
+		//@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
 		background-color: if($variant == 'light', transparentize($fg_color, 0.7), transparentize($fg_color, 0.6));
 		&:hover {
 			font-weight: bold;
@@ -1443,7 +1443,7 @@ StScrollBar {
 			background-clip: padding-box;
       background-color: transparentize(white, 0.925);
       border: 1px solid $borders_color;
-      //@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.7);
+      //@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.7);
       -gtk-icon-effect: highlight;
       color: $selected_fg_color;
     }
@@ -1477,7 +1477,7 @@ StScrollBar {
       //background-clip: padding-box;
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
-      //@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.7);
+      //@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.7);
       background: transparentize(white, 0.925);
       //border: 1px solid transparentize($selected_bg_color, 0.6);
       //border: 1px solid $borders_color;
@@ -1497,7 +1497,7 @@ StScrollBar {
     border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
 
 		&-hover {
-		//@include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 0.5);
+		//@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
       border-radius: 1em;
     }
     &-selected {
@@ -1505,9 +1505,12 @@ StScrollBar {
       color: $selected_fg_color;
       //background-color: $selected_bg_color;
       //background: linear-gradient(red, yellow);
-      @include bg_gradient(horizontal, $orange_gradient_start, $orange_gradient_end, 1);
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       border: 1px solid $borders_color;
       border-radius: 1em; //9px;
+    }
+    &-active{
+			background: blue;
     }
     &-greyed {
       padding: 7px;
@@ -1673,8 +1676,8 @@ StScrollBar {
     &:groupFocus {
       color: $selected_fg_color;
       border-radius: 7px;
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.5);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
     }
 
     &:active,
@@ -1682,11 +1685,11 @@ StScrollBar {
     &:focus,
     &:running {
       color: $selected_fg_color;
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.7);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.7);
       &:hover{
-      	@include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 1);
+      	@include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 1);
       }
     }
 
@@ -1761,8 +1764,8 @@ StScrollBar {
     &:hover{
     	border-radius: 7px;
       color: $selected_fg_color;
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.5);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
     }
     &:focus {
     	border-bottom-width: 0px;
@@ -1771,11 +1774,11 @@ StScrollBar {
     	border-right-width: 0px;
       color: $selected_fg_color;
       //background-color: transparentize($selected_bg_color, 0.3);
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.7);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.7);
       &:hover{
-      	@include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 1);
+      	@include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 1);
       }
     }
 
@@ -2033,16 +2036,16 @@ StScrollBar {
     color: $selected_bg_color;
 
     &:hover {
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.5);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
       color: $selected_fg_color;
       border-radius: 7px;
     }
   }
 
   &:hover {
-    @include bg_gradient(horizontal, $orange_gradient_start,
-    	$orange_gradient_end, 0.5);
+    @include bg_gradient(horizontal, $theme_gradient_start,
+    	$theme_gradient_end, 0.5);
     color: $selected_fg_color;
     border-radius: 7px;
   }
@@ -2092,8 +2095,8 @@ StScrollBar {
     transition-duration: 200;
 
     &:hover {
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.7);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.7);
       border-radius: 7px;
     }
   }
@@ -2167,8 +2170,8 @@ StScrollBar {
     &:checked { //komer
       color: $selected_fg_color;
       // background-color: $selected_bg_color;
-      @include bg_gradient(horizontal, $orange_gradient_start,
-      	$orange_gradient_end, 0.5);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
       border-radius: 7px;
 
       &-label { color: $selected_fg_color; }

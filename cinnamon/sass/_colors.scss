@@ -18,13 +18,14 @@ $slider: #7b7bbd;
 $teal: #00e8c6;
 
 // Main definitions
+$theme_color: $orange;
+$accent_color: $theme_color;
 $base_color: if($variant =='light', #ffffff, lighten(#0E111D, 3%));
 $text_color: if($variant == 'light', #202020, #BFC3CD);
 $bg_color: if($variant =='light', #F0F0F0, #0E111D);
 $fg_color: if($variant =='light', #202020, #BFC3CD);
-$accent_color: $orange;
 $selected_fg_color: #fefefe;
-$selected_bg_color: if($variant == 'light', #92b372, $orange);
+$selected_bg_color: if($variant == 'light', #92b372, $theme_color);
 
 //$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
 $borders_color: if($variant =='light', darken($bg_color,20%), transparentize($fg_color, 0.95));
@@ -33,13 +34,13 @@ $link_color: if($variant == 'light', darken($selected_bg_color,10%),
                                      lighten($selected_bg_color,20%));
 
 // main gradient
-$orange_gradient_start: #ff3300;
-$orange_gradient_end: #ffa100;
+$theme_gradient_start: #ff3300;
+$theme_gradient_end: #ffa100;
 
 
 
 // Attention
-$warning_color: if($variant == 'light', $orange, darken($orange,10%));
+$warning_color: if($variant == 'light', $theme_color, darken($theme_color,10%));
 $error_color: if($variant == 'light', $red, darken($red,5%));
 $success_color: if($variant == 'light', $cyan, darken($cyan,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
@@ -62,8 +63,12 @@ $osd_entry_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 
+// Headerbar
+$headerbar_color: mix($base_color, darken($bg_color, 8%), 30%);
+$headerbar_fg_color: $text_color;
+
 // Panel
-$panel_bg: rgba($bg_color, 1);
+$panel_bg: $headerbar_color;
 $panel_fg: $fg_color;
 
 // Entry
