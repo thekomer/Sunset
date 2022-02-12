@@ -1053,7 +1053,7 @@ StScrollBar {
 
 #notification {
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: 0.6em;//3px;
   background-color: $bg_color;
   padding: 13px;
   spacing-rows: 10px;
@@ -1122,7 +1122,7 @@ StScrollBar {
   color: $fg_color;
   border: 1px solid transparentize($selected_bg_color, 0.15);
   background-color: transparentize($bg_color, 0.15);
-  border-radius: 9px;
+  border-radius: 0.6em;
   padding: 20px;
 
   > StBoxLayout {
@@ -1133,7 +1133,7 @@ StScrollBar {
 
   .item-box {
     padding: 8px;
-    border-radius: 9px;
+    border-radius: 0.6em;
 
     &:outlined {
       padding: 8px;
@@ -1250,7 +1250,7 @@ StScrollBar {
 .run-dialog {
   padding: 10px 15px 10px 15px;
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: 0.6em;//3px;
   background-color: transparentize($bg_color, 0.25);
 
   > * { padding: 0; }
@@ -1286,7 +1286,7 @@ StScrollBar {
     width: 21em;
     height: 1.2em;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: 1.2em;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
     selection-background-color: $selected_bg_color;

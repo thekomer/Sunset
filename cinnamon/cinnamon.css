@@ -875,7 +875,7 @@ StScrollBar {
  * * * * * * * * */
 #notification {
   border: 1px solid rgba(191, 195, 205, 0.05);
-  border-radius: 3px;
+  border-radius: 0.6em;
   background-color: #0E111D;
   padding: 13px;
   spacing-rows: 10px;
@@ -925,7 +925,7 @@ StScrollBar {
   color: #BFC3CD;
   border: 1px solid rgba(255, 106, 0, 0.85);
   background-color: rgba(14, 17, 29, 0.85);
-  border-radius: 9px;
+  border-radius: 0.6em;
   padding: 20px; }
   .switcher-list > StBoxLayout {
     padding: 4px; }
@@ -933,7 +933,7 @@ StScrollBar {
     spacing: 8px; }
   .switcher-list .item-box {
     padding: 8px;
-    border-radius: 9px; }
+    border-radius: 0.6em; }
     .switcher-list .item-box:outlined {
       padding: 8px;
       border: 1px solid rgba(255, 106, 0, 0.85); }
@@ -1020,7 +1020,7 @@ StScrollBar {
 .run-dialog {
   padding: 10px 15px 10px 15px;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  border-radius: 3px;
+  border-radius: 0.6em;
   background-color: rgba(14, 17, 29, 0.75); }
   .run-dialog > * {
     padding: 0; }
@@ -1044,7 +1044,7 @@ StScrollBar {
     width: 21em;
     height: 1.2em;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: 1.2em;
     caret-color: #fefefe;
     selected-color: #fefefe;
     selection-background-color: #ff6a00;
@@ -1176,6 +1176,9 @@ StScrollBar {
 /* * * * * * * * * *
  * Menu (menu.js)  *
  * * * * * * * * * */
+.menu-decoration {
+  background: red; }
+
 .menu-favorites-box {
   padding: 10px;
   background-color: #131727;
