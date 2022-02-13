@@ -2684,7 +2684,8 @@ headerbar {
         box-shadow: none;
         background-color: transparent; }
   .titlebar .linked > button,
-  .titlebar headerbar .linked > button, .titlebar .linked > button:active, .titlebar .linked > button:checked, .titlebar .linked > button:hover, .titlebar .linked > button:backdrop,
+  .titlebar headerbar .linked > button, .titlebar .linked > button:active, .titlebar .linked > button:checked, .titlebar .linked > button:hover,
+  .titlebar .linked > button:backdrop,
   headerbar .titlebar .linked > button,
   .titlebar headerbar .linked > button,
   headerbar .linked > button,
