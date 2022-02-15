@@ -28,6 +28,7 @@ spinbutton {
       padding-top: 0;
       color: mix($fg_color, $base_color, 90%);
       background-image: none;
+      background-color: transparent;
       border-style: none none none solid;
       border-color: transparentize($borders_color, 0.7);
       border-radius: 0;

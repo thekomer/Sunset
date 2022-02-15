@@ -1176,9 +1176,6 @@ StScrollBar {
 /* * * * * * * * * *
  * Menu (menu.js)  *
  * * * * * * * * * */
-.menu-decoration {
-  background: red; }
-
 .menu-favorites-box {
   padding: 10px;
   background-color: #131727;
