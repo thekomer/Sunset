@@ -4574,7 +4574,7 @@ searchbar {
 tooltip {
   padding: 4px;
   /* not working */
-  border-radius: 5px;
+  border-radius: 0.6em;
   box-shadow: none;
   text-shadow: 0 1px black; }
   tooltip.background {

@@ -4634,13 +4634,13 @@ searchbar {
 tooltip {
   padding: 4px;
   /* not working */
-  border-radius: 5px;
+  border-radius: 0.6em;
   box-shadow: none;
   text-shadow: 0 1px black; }
   tooltip.background {
     background-color: rgba(0, 0, 0, 0.8);
     background-clip: padding-box;
-    border: 1px solid #15161b; }
+    border: 1px solid #27292f; }
   tooltip decoration {
     background-color: transparent; }
   tooltip * {

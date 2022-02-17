@@ -68,6 +68,7 @@ $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_b
 
 $window_border_color: mix($headerbar_color, $selected_bg_color, 70%);
 $window_border_backdrop_color: mix($headerbar_color, $fg_color, 92%);
+$tooltip_borders_color: mix($headerbar_color, $fg_color, 92%);
 
 $osd_fg_color: #fefefe;
 $osd_text_color: white;
@@ -78,8 +79,6 @@ $osd_borders_color: transparentize(black, 0.85);
 
 $base_hover_color: transparentize($fg_color, 0.95);
 
-//$tooltip_borders_color: transparentize(white, 0.95);
-$tooltip_borders_color: mix($headerbar_color, $fg_color, 92%);
 $shadow_color: transparentize(black, 0.9);
 $shadow_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.9));
 
