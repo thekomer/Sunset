@@ -1865,7 +1865,7 @@ dialog {
 			border-bottom: 1px solid $borders_color;
 			transition: $button_transition;
 			transition-duration: 50ms;
-			button, button.text-button, button.text-button.toggle, button > label {
+			button, label, button.text-button, button.text-button.toggle, button.slider-button, button.toggle, button > label {
 				@include button(normal-header);
 				color: $headerbar_fg_color;
 				&:hover{
