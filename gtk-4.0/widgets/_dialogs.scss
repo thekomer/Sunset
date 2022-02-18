@@ -68,3 +68,42 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent;
 }
+
+// file chooser dialog
+dialog {
+	#pathbarbox {
+		background: $headerbar_color;
+		.linked.path-bar {
+			background: $headerbar_color;
+			border-bottom: 1px solid $borders_color;
+			transition: $button_transition;
+			transition-duration: 50ms;
+			button {
+				@include button(normal-header);
+				color: $sidebar_fg_color;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				min-height: 24px;
+				&:hover {
+					color: $selected_bg_color;
+					background: transparent;
+				}
+				&:backdrop {
+					color: inherit;
+					background: transparent;
+				}
+				&:selected, &:active, &:checked {
+					@include button(active-header);
+					&:backdrop {
+						@include button(backdrop-active-header);
+					}
+				}
+				&:disabled {
+					color: $insensitive_fg_color;
+				}
+				//color: inherit;
+				//background-color: inherit;
+			}
+		}
+	}
+}

@@ -1831,6 +1831,42 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
 
+dialog #pathbarbox {
+  background: #06070c; }
+  dialog #pathbarbox .linked.path-bar {
+    background: #06070c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-duration: 50ms; }
+    dialog #pathbarbox .linked.path-bar button {
+      color: #8b8b8b;
+      text-shadow: none;
+      box-shadow: none;
+      background: transparent;
+      border: none;
+      color: #b9bec9;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      min-height: 24px; }
+      dialog #pathbarbox .linked.path-bar button:hover {
+        color: #ff6a00;
+        background: transparent; }
+      dialog #pathbarbox .linked.path-bar button:backdrop {
+        color: inherit;
+        background: transparent; }
+      dialog #pathbarbox .linked.path-bar button:selected, dialog #pathbarbox .linked.path-bar button:active, dialog #pathbarbox .linked.path-bar button:checked {
+        border-radius: 1em;
+        background: linear-gradient(to right, #ff3300, #ffa100);
+        box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
+        color: white; }
+        dialog #pathbarbox .linked.path-bar button:selected:backdrop, dialog #pathbarbox .linked.path-bar button:active:backdrop, dialog #pathbarbox .linked.path-bar button:checked:backdrop {
+          border-radius: 1em;
+          color: rgba(191, 195, 205, 0.4);
+          background: rgba(255, 106, 0, 0.6);
+          box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
+      dialog #pathbarbox .linked.path-bar button:disabled {
+        color: #676a75; }
+
 /****************
  * Text Entries *
  ****************/
@@ -5963,13 +5999,13 @@ wnck-pager {
  ****************/
 #whiskermenu-window {
   color: #BFC3CD;
-  background-color: #0E111D;
+  background-color: #06070c;
   border-radius: 1em;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 5px 10px 8px 10px rgba(255, 255, 255, 0.05); }
+  border-color: transparent; }
 
 #whiskermenu-window box widget {
-  color: transparent; }
+  color: transparent;
+  background: none; }
   #whiskermenu-window box widget:hover {
     color: #BFC3CD; }
 
@@ -6062,6 +6098,8 @@ wnck-pager {
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
+    .thunar toolbar button:disabled {
+      color: #676a75; }
 
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(1); }

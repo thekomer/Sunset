@@ -225,6 +225,9 @@ wnck-pager {
 				@include button(backdrop-active-header);
 			}
 		}
+		&:disabled {
+			color: $insensitive_fg_color;
+		}
 		//color: inherit;
 		//background-color: inherit;
 	}

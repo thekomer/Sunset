@@ -115,15 +115,17 @@ wnck-pager {
 // general
 #whiskermenu-window {
 	color: $fg_color;
-	background-color: $bg_color;
+	background-color: $headerbar_color;
 	border-radius: 1em;
-	border: 1px solid $borders_color;
-	box-shadow: 5px 10px 8px 10px $borders_color;
+	border-color: transparent;
+	//border: 1px solid $borders_color;
+	//box-shadow: 5px 10px 8px 10px $borders_color;
 }
 
 // corner triangle
 #whiskermenu-window box widget {
 	color: transparent;
+	background: none;
 	&:hover {
 		color: $fg_color;
 	}
@@ -222,6 +224,9 @@ wnck-pager {
 			&:backdrop {
 				@include button(backdrop-active-header);
 			}
+		}
+		&:disabled {
+			color: $insensitive_fg_color;
 		}
 		//color: inherit;
 		//background-color: inherit;

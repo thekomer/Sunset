@@ -1855,38 +1855,46 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
 
-/*
-// file chooser dialog
-dialog {
-	#pathbarbox {
-		background: $headerbar_color;
-		.linked.path-bar {
-			background: $headerbar_color;
-			border-bottom: 1px solid $borders_color;
-			transition: $button_transition;
-			transition-duration: 50ms;
-			button, label, button.text-button, button.text-button.toggle, button.slider-button, button.toggle, button > label {
-				@include button(normal-header);
-				color: $headerbar_fg_color;
-				&:hover{
-					@include button(hover-header, transparent, $text_color);
-					color: $selected_bg_color;
-				}
-				&:selected, &:active, &:checked {
-					@include button(active-header);
-					color: $selected_fg_color;
-				}
-				&:backdrop {
-					transition: $backdrop_transition;
-					transition-duration: 500ms;
-					color: inherit;
-					background: transparent;
-				}
-			}
-		}
-	}
-}
-*/
+dialog #pathbarbox {
+  background: #06070c; }
+  dialog #pathbarbox .linked.path-bar {
+    background: #06070c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-duration: 50ms; }
+    dialog #pathbarbox .linked.path-bar button {
+      color: #BFC3CD;
+      text-shadow: none;
+      box-shadow: none;
+      background: transparent;
+      border: none;
+      color: #b9bec9;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      min-height: 24px; }
+      dialog #pathbarbox .linked.path-bar button:hover {
+        color: #ff6a00;
+        background: transparent; }
+      dialog #pathbarbox .linked.path-bar button:backdrop {
+        color: inherit;
+        background: transparent; }
+      dialog #pathbarbox .linked.path-bar button:selected, dialog #pathbarbox .linked.path-bar button:active, dialog #pathbarbox .linked.path-bar button:checked {
+        color: white;
+        border-radius: 1em;
+        background: linear-gradient(to right, #ff3300, #ffa100); }
+        dialog #pathbarbox .linked.path-bar button:selected:hover, dialog #pathbarbox .linked.path-bar button:active:hover, dialog #pathbarbox .linked.path-bar button:checked:hover {
+          box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
+        dialog #pathbarbox .linked.path-bar button:selected:backdrop, dialog #pathbarbox .linked.path-bar button:active:backdrop, dialog #pathbarbox .linked.path-bar button:checked:backdrop {
+          color: rgba(191, 195, 205, 0.4);
+          background: rgba(255, 106, 0, 0.6); }
+        dialog #pathbarbox .linked.path-bar button:selected:backdrop, dialog #pathbarbox .linked.path-bar button:active:backdrop, dialog #pathbarbox .linked.path-bar button:checked:backdrop {
+          border-radius: 1em;
+          color: rgba(191, 195, 205, 0.4);
+          background: rgba(255, 106, 0, 0.6);
+          box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
+      dialog #pathbarbox .linked.path-bar button:disabled {
+        color: #676a75; }
+
 /****************
  * Text Entries *
  ****************/
@@ -4640,7 +4648,7 @@ tooltip {
   tooltip.background {
     background-color: rgba(0, 0, 0, 0.8);
     background-clip: padding-box;
-    border: 1px solid #27292f; }
+    border: 1px solid #15161b; }
   tooltip decoration {
     background-color: transparent; }
   tooltip * {
@@ -6157,6 +6165,8 @@ wnck-pager {
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
+    .thunar toolbar button:disabled {
+      color: #676a75; }
 
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(1); }
