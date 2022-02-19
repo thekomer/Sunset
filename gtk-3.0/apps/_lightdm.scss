@@ -51,11 +51,11 @@
 }
 
 #content_frame button {
-  @include button(normal);
+  @include button(osd);
 
-  &:hover { @include button(hover, $selected_bg_color, $selected_fg_color); }
-  &:active, &:checked { @include button(active, $selected_bg_color, $selected_fg_color); }
-  &:disabled { @include button(insensitive); }
+  &:hover { @include button(osd-hover, $selected_bg_color, $selected_fg_color); }
+  &:active, &:checked { @include button(osd-active, $selected_bg_color, $selected_fg_color); }
+  &:disabled { @include button(osd-insensitive, $selected_bg_color, $selected_fg_color); }
 }
 
 // the lower half of the login-window, in GtkDialog terms the buttonbox or action area

@@ -6782,25 +6782,40 @@ ConversationListView {
   border-width: 1px 1px 0 1px; }
 
 #content_frame button {
-  font-weight: normal;
-  color: #BFC3CD;
-  background-color: #181c31;
-  text-shadow: none; }
+  color: #fefefe;
+  border-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(20, 23, 26, 0.8);
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  -gtk-icon-shadow: 0 1px black;
+  outline-color: rgba(254, 254, 254, 0.3); }
   #content_frame button:hover {
-    color: #fefefe;
-    background: rgba(255, 106, 0, 0.5);
-    outline-color: rgba(254, 254, 254, 0.3);
-    text-shadow: none; }
+    color: white;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, rgba(255, 106, 0, 0.7), rgba(255, 106, 0, 0.7));
+    background-clip: padding-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+    outline-color: rgba(254, 254, 254, 0.3); }
   #content_frame button:active, #content_frame button:checked {
-    color: #fefefe;
-    outline-color: rgba(254, 254, 254, 0.3);
-    background-color: #ff6a00;
-    text-shadow: none; }
+    color: white;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to right, #ff3300, #ffa100);
+    background-clip: padding-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    outline-color: rgba(254, 254, 254, 0.3); }
   #content_frame button:disabled {
-    color: #9da1ad;
-    outline-color: rgba(191, 195, 205, 0.3);
-    background-color: #0f1320;
-    text-shadow: none; }
+    color: #898b8c;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, rgba(43, 46, 49, 0.5), rgba(43, 46, 49, 0.5));
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
 
 #buttonbox_frame {
   padding-top: 0em;
