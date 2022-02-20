@@ -44,8 +44,8 @@
 #content_frame {
   padding-bottom: 0.6em;
   background-color: transparentize($bg_color, 0.20);
-  border-top-left-radius: 0.4em;
-  border-top-right-radius: 0.4em;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
   border: solid transparentize(black, 0.9);
   border-width: 1px 1px 0 1px;
 }
@@ -64,8 +64,8 @@
   padding-bottom: 0px;
   border-style: none;
   background-color: transparentize($bg_color, 0.20);
-  border-bottom-left-radius: 0.4em;
-  border-bottom-right-radius: 0.4em;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
   border: solid transparentize(black, 0.9);
   border-width: 0 1px 1px 1px;
 }
