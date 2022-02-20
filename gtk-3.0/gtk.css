@@ -6776,8 +6776,8 @@ ConversationListView {
 #content_frame {
   padding-bottom: 0.6em;
   background-color: rgba(14, 17, 29, 0.8);
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 1px 1px 0 1px; }
 
@@ -6822,8 +6822,8 @@ ConversationListView {
   padding-bottom: 0px;
   border-style: none;
   background-color: rgba(14, 17, 29, 0.8);
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
   border: solid rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px 1px; }
 
