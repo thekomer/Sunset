@@ -71,11 +71,10 @@ $window_border_backdrop_color: mix($headerbar_color, $fg_color, 92%);
 $tooltip_borders_color: mix($headerbar_color, $fg_color, 92%);
 
 $osd_fg_color: #fefefe;
-$osd_text_color: white;
-$osd_bg_color:  transparentize(#14171a, 0.2);
+$osd_bg_color:  transparentize($headerbar_color, 0.2);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
-$osd_borders_color: transparentize(black, 0.85);
+$osd_borders_color: transparentize(white, 0.9);
 
 $base_hover_color: transparentize($fg_color, 0.95);
 
