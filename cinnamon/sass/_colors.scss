@@ -20,10 +20,10 @@ $teal: #00e8c6;
 // Main definitions
 $theme_color: $orange;
 $accent_color: $theme_color;
-$base_color: if($variant =='light', #ffffff, lighten(#0E111D, 3%));
-$text_color: if($variant == 'light', #202020, #BFC3CD);
 $bg_color: if($variant =='light', #F0F0F0, #0E111D);
+$base_color: if($variant =='light', #ffffff, lighten($bg_color, 3%));
 $fg_color: if($variant =='light', #202020, #BFC3CD);
+$text_color: $fg_color;
 $selected_fg_color: #fefefe;
 $selected_bg_color: if($variant == 'light', #92b372, $theme_color);
 

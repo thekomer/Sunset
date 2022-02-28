@@ -1428,22 +1428,20 @@ StScrollBar {
 
 .menu {
   &-favorites-box {
-    padding: 10px;
-    background-color: $base_color;
+    padding: .3em;
+    background-color: lighten($base_color, 1%);
     border: 1px solid $borders_color;
     border-radius: 0.4em;
   }
 
   &-favorites-button {
 		transition: $button_transition;
-    padding: .9em 1em;
+    padding: .4em .5em;
     border: 1px solid $borders_color;
     border-radius: 0.5em; //9px;
     &:hover {
 			background-clip: padding-box;
       background-color: transparentize(white, 0.925);
-      border: 1px solid $borders_color;
-      //@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.7);
       -gtk-icon-effect: highlight;
       color: $selected_fg_color;
     }
@@ -1497,14 +1495,11 @@ StScrollBar {
     border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
 
 		&-hover {
-		//@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
       border-radius: 1em;
     }
     &-selected {
       padding: 7px;
       color: $selected_fg_color;
-      //background-color: $selected_bg_color;
-      //background: linear-gradient(red, yellow);
       @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       border: 1px solid $borders_color;
       border-radius: 1em; //9px;
@@ -1544,12 +1539,13 @@ StScrollBar {
 }
 
 #menu-search-entry {
-  width: 250px;
-  min-height: 16px;
+  min-width: 250px;
+  min-height: 1.1em;
   font-weight: normal;
   caret-color: $accent_color;
 
   @extend %entry;
+  margin: 0em;
 }
 
 .menu-search-entry-icon {
