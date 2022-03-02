@@ -6102,7 +6102,6 @@ wnck-pager {
       background: rgba(255, 106, 0, 0.6); }
     #whiskermenu-window button:checked:hover {
       color: white;
-      font-weight: bold;
       -gtk-icon-effect: highlight; }
 
 #whiskermenu-window treeview {

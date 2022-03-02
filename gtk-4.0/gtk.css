@@ -6039,7 +6039,6 @@ wnck-pager {
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
       color: white;
-      font-weight: bold;
       -gtk-icon-effect: highlight; }
 
 #whiskermenu-window treeview {
