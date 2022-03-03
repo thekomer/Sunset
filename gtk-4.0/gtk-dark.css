@@ -4255,7 +4255,7 @@ placessidebar.sidebar {
     background-image: linear-gradient(to right, #ff6a00 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
     placessidebar.sidebar row.sidebar-row:selected:hover {
       color: #ffffff;
-      background-color: rgba(191, 195, 205, 0.05); }
+      background-color: rgba(191, 195, 205, 0.1); }
       placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon {
         color: #ffffff; }
     placessidebar.sidebar row.sidebar-row:selected:backdrop {

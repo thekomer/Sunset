@@ -157,7 +157,7 @@ placessidebar{
 																rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
 					&:hover{
 						color: #ffffff;
-						background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95));
+						background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.90));
 						.sidebar-icon {
 							color: #ffffff;
 						}
