@@ -131,6 +131,20 @@ wnck-pager {
 	}
 }
 
+// Menu search box
+#whiskermenu-window entry {
+	@include entry(osd);
+	color: $fg_color;
+	&:focus{
+		border-color: $selected_bg_color;
+	}
+}
+
+// Panel menu button
+#whiskermenu-button {
+	border-radius: 0.6em;
+}
+
 // category button
 #whiskermenu-window button {
 	background-color: transparent;

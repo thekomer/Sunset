@@ -98,7 +98,7 @@
   @if $t==osd {
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    background-color: transparentize(opacify($osd_borders_color, 1), 0.5);
+    background-color: transparentize(opacify($osd_bg_color, 1), 0.5);
     box-shadow: none;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
@@ -106,7 +106,7 @@
   @if $t==osd-focus {
     color: $osd_fg_color;
     border-color: $selected_bg_color;
-    background-color: transparentize(opacify($osd_borders_color, 1), 0.5);
+    background-color: transparentize(opacify($osd_bg_color, 1), 0.5);
     background-clip: padding-box;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
@@ -123,7 +123,7 @@
   @if $t==osd-backdrop {
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    background-color: transparentize(opacify($osd_borders_color, 1), 0.5);
+    background-color: transparentize(opacify($osd_bg_color, 1), 0.5);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
