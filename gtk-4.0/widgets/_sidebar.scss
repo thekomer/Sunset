@@ -120,7 +120,8 @@ stacksidebar {
 
 placessidebar{
 	&.sidebar{
-		background-color: transparent;
+		// background-color: transparent;
+		background-color: $sidebar_bg_color;
 		/* background-image:linear-gradient(to right, #171e27 40px,
 												$sidebar_bg_color 35px,$sidebar_bg_color 36px,
 												$sidebar_bg_color 36px,$sidebar_bg_color 99%,

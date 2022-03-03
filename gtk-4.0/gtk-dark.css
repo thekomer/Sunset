@@ -4231,7 +4231,7 @@ stacksidebar row {
 /*******************************************************************/
 /*--*/
 placessidebar.sidebar {
-  background-color: transparent;
+  background-color: #06070c;
   /* background-image:linear-gradient(to right, #171e27 40px,
 												$sidebar_bg_color 35px,$sidebar_bg_color 36px,
 												$sidebar_bg_color 36px,$sidebar_bg_color 99%,
@@ -6014,6 +6014,20 @@ wnck-pager {
   background: none; }
   #whiskermenu-window box widget:hover {
     color: #BFC3CD; }
+
+#whiskermenu-window entry {
+  color: #fefefe;
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  text-shadow: 0 1px black;
+  -gtk-icon-shadow: 0 1px black;
+  color: #BFC3CD; }
+  #whiskermenu-window entry:focus {
+    border-color: #ff6a00; }
+
+#whiskermenu-button {
+  border-radius: 0.6em; }
 
 #whiskermenu-window button {
   background-color: transparent;
