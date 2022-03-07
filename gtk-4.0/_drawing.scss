@@ -98,7 +98,7 @@
   @if $t==osd {
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    background-color: transparentize(opacify($osd_borders_color, 1), 0.5);
+    background-color: transparentize(opacify($osd_bg_color, 1), 0.5);
     box-shadow: none;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
@@ -106,7 +106,7 @@
   @if $t==osd-focus {
     color: $osd_fg_color;
     border-color: $selected_bg_color;
-    background-color: transparentize(opacify($osd_borders_color, 1), 0.5);
+    background-color: transparentize(opacify($osd_bg_color, 1), 0.5);
     background-clip: padding-box;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
@@ -123,7 +123,7 @@
   @if $t==osd-backdrop {
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    background-color: transparentize(opacify($osd_borders_color, 1), 0.5);
+    background-color: transparentize(opacify($osd_bg_color, 1), 0.5);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -259,10 +259,18 @@
 		//background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end, 0.4));
 		border:none;
 	}	@else if $t==active-header {
+			color: rgb(255, 255, 255);
 		border-radius: 1em; // 23px;
 		background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
+			//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
+			&:hover{
 		box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
-		color: rgb(255, 255, 255);
+			}
+			&:backdrop{
+				color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
+				background: $backdrop_selected_bg_color;
+				//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
+		}
 	}	@else if $t==backdrop-header {
 		//
 		// backdrop button headerbar look
@@ -345,7 +353,7 @@
     $_bg: if($c!=$base_color, transparentize($c, 0.5), $base_color);
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    border: 2px solid $osd_borders_color;
+    //border: 1px solid $osd_borders_color;
     background-color: $_bg;
     background-clip: padding-box;
     box-shadow: inset 0 1px transparentize(white, 0.9);
@@ -358,9 +366,9 @@
 		//
     $_bg: if($c!=$base_color, transparentize($c, 0.3),	lighten($osd_bg_color, 12%));
     color: white;
-    //border-color: $osd_borders_color;
-    border: 2px solid transparentize($theme_color, 0.6);
-    background-image: linear-gradient(to bottom, $_bg, $_bg);
+    border-color: transparentize($theme_color, 0.6); // $osd_borders_color;
+    //order: 1px solid transparentize($theme_color, 0.6);
+    background-image: linear-gradient(to right, transparentize($theme-gradient-start, 0.5), transparentize($theme-gradient-end, 0.5)); // linear-gradient(to bottom, $_bg, $_bg);
     background-clip: padding-box;
     box-shadow: inset 0 1px transparentize(white, 0.9);
     text-shadow: 0 1px black;
