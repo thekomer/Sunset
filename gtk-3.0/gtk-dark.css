@@ -5980,6 +5980,12 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #ff6a00; }
 
+/**********************
+ * Xfce4 Apps Heading *
+ **********************/
+.XfceHeading {
+  background-image: linear-gradient(to bottom, #06070c, #0E111D); }
+
 /**************
  * Xfce Panel *
  **************/

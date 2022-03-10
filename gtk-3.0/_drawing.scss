@@ -270,7 +270,7 @@
 				color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
 				background: $backdrop_selected_bg_color;
 				//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
-		}
+			}
 	}	@else if $t==backdrop-header {
 		//
 		// backdrop button headerbar look
