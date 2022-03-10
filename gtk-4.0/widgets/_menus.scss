@@ -32,6 +32,7 @@ menu,
   background: if( $variant == 'light',  linear-gradient(to bottom, #fff 20%, #fff), linear-gradient(to bottom, lighten($headerbar_color, 2%), darken($headerbar_color, 2%)));
   border: 1px solid $borders_color; // adds borders in a non composited env
   border-radius: 5px;
+  border-radius: 0.4em;
 
 
   .csd & { border: none; }  // axes borders in a composited env
@@ -43,6 +44,7 @@ menu,
     min-width: 40px;
     padding: 4px 6px;
     text-shadow: none;
+    border-radius: 0.4em;
 
     &:hover {
       color: $selected_fg_color;

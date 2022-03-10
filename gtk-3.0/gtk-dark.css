@@ -3071,7 +3071,7 @@ menu,
   padding: 2px 0px;
   background: linear-gradient(to bottom, #090b13, #030305);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 5px; }
+  border-radius: 0.4em; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
@@ -3086,7 +3086,8 @@ menu,
     min-height: 17px;
     min-width: 40px;
     padding: 4px 6px;
-    text-shadow: none; }
+    text-shadow: none;
+    border-radius: 0.4em; }
     menu menuitem:hover,
     .menu menuitem:hover,
     .context-menu menuitem:hover {
