@@ -8,22 +8,28 @@
 		iconview.cell { }
 	}
 
-	.sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actualy whole statusbar
+	.sidebar, .NemoSidebar, .nemo-places-sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actualy whole statusbar
 		color: $sidebar_fg_color;
 		background: $sidebar_bg_color;
 		margin-bottom: -4px;
 		.view, .iconview, row {
 			background-color: transparent;
 			&:hover {
+				transition: $button_transition;
+				transition-duration: 500ms;
 				color: $selected_bg_color;
 				background-color: transparentize($fg_color, 0.95);
 			}
 			&:selected, &:active, &:checked {
+			  transition: $button_transition;
+				transition-duration: 50ms;
 				color: $selected_fg_color;
 				// background: linear-gradient(to right, $theme-gradient-start 0%, $theme-gradient-end 100%);
 				background: $selected_bg_color;
 			}
 			&:backdrop {
+				transition: $backdrop_transition;
+				transition-duration: 500ms;
 				color: $backdrop_fg_color;
 				background-color: inherit;
 				&:selected{
@@ -41,19 +47,24 @@
 			margin-top: 5px;
 			margin-bottom: 5px;
 			min-height: 24px;
+			transition: $button_transition;
 			&:hover {
+				transition-duration: 500ms;
 				color: $selected_bg_color;
 				background: transparent;
 			}
 			&:backdrop {
+				transition: $backdrop_transition;
+				transition-duration: 500ms;
 				color: inherit;
 				background: transparent;
 			}
 			&:selected, &:active, &:checked {
+				transition-duration: 50ms;
 				@include button(active-header);
-				&:backdrop {
-					@include button(backdrop-active-header);
-				}
+				//&:backdrop {
+					//@include button(backdrop-active-header);
+				//}
 			}
 			&:disabled {
 				color: $insensitive_fg_color;
