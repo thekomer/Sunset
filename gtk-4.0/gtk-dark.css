@@ -1875,6 +1875,9 @@ dialog #pathbarbox {
       dialog #pathbarbox .linked.path-bar button:disabled {
         color: #676a75; }
 
+dialog.background {
+  border-radius: 0 0 10px 10px; }
+
 /****************
  * Text Entries *
  ****************/
