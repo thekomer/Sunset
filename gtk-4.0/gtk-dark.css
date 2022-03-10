@@ -3396,21 +3396,25 @@ paned > separator {
   min-height: 1px;
   -gtk-icon-source: none;
   border-style: none;
-  background-color: transparent;
+  background-color: inherit;
   background-image: image(rgba(255, 255, 255, 0.05));
   background-size: 1px 1px; }
+  paned > separator:hover {
+    background-image: image(rgba(255, 255, 255, 0.11)); }
   paned > separator:selected {
     background-image: image(#ff6a00); }
   paned > separator:backdrop {
     background-image: image(rgba(59, 62, 71, 0.145)); }
   paned > separator.wide {
-    min-width: 5px;
-    min-height: 5px;
-    background-color: #0E111D;
-    background-image: image(rgba(255, 255, 255, 0.05)), image(rgba(255, 255, 255, 0.05));
+    min-width: 8px;
+    min-height: 8px;
+    background-color: inherit;
+    background-image: inherit;
     background-size: 1px 1px, 1px 1px; }
+    paned > separator.wide:hover {
+      background-image: image(rgba(255, 255, 255, 0.05)), image(rgba(255, 255, 255, 0.05)); }
     paned > separator.wide:backdrop {
-      background-color: #0E111D;
+      background-color: inherit;
       background-image: image(rgba(59, 62, 71, 0.145)), image(rgba(59, 62, 71, 0.145)); }
 
 paned.horizontal > separator {
