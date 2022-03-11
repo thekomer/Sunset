@@ -24,7 +24,7 @@ $bg_color: if($variant =='light', #F0F0F0, #0E111D);
 $base_color: if($variant =='light', #ffffff, lighten($bg_color, 3%));
 $fg_color: if($variant =='light', #202020, #BFC3CD);
 $text_color: $fg_color;
-$selected_fg_color: #fefefe;
+$selected_fg_color: #ffffff;
 $selected_bg_color: if($variant == 'light', #92b372, $theme_color);
 
 //$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
