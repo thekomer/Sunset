@@ -89,7 +89,7 @@
           &:backdrop{
 						@include button(backdrop-active-header);
             &, label{
-              color: $headerbar_fg_color;// darken(rgb(255, 255, 255), 4%);
+              color: $headerbar_fg_color;
             }
           }
       }

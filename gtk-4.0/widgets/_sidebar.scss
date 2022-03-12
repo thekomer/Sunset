@@ -156,10 +156,10 @@ placessidebar{
 					background-image:linear-gradient(to right, $selected_bg_color 40px,
 																rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
 					&:hover{
-						color: #ffffff;
+						color: $selected_fg_color;
 						background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.90));
 						.sidebar-icon {
-							color: #ffffff;
+							color: $selected_fg_color;
 						}
           }
           &:backdrop{
