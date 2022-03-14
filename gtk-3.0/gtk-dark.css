@@ -3089,7 +3089,8 @@ menu,
     margin-left: 2px;
     margin-right: 2px;
     text-shadow: none;
-    border-radius: 0.4em; }
+    border-radius: 0.4em;
+    transition: all 100ms ease-in; }
     menu menuitem:hover,
     .menu menuitem:hover,
     .context-menu menuitem:hover {

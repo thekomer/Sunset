@@ -46,6 +46,7 @@ menu,
 		margin-right: 2px;
     text-shadow: none;
     border-radius: 0.4em;
+    transition: $menu_transition;
 
     &:hover {
       color: $selected_fg_color;
