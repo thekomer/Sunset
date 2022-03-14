@@ -33,7 +33,7 @@ menu,
   border: 1px solid $borders_color; // adds borders in a non composited env
   border-radius: 5px;
   border-radius: 0.4em;
-
+	transition: $menu_transition;
 
   .csd & { border: none; }  // axes borders in a composited env
 

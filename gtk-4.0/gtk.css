@@ -3043,7 +3043,8 @@ menu,
   background: linear-gradient(to bottom, #090b13, #030305);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 5px;
-  border-radius: 0.4em; }
+  border-radius: 0.4em;
+  transition: all 200ms ease-in; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
