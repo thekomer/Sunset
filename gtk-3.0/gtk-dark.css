@@ -3360,6 +3360,7 @@ notebook > header {
         border-color: rgba(59, 62, 71, 0.145);
         background-color: #15192b; }
     notebook > header tab button.flat {
+      color: rgba(191, 195, 205, 0.85);
       padding: 0;
       margin-top: 4px;
       margin-bottom: 4px;
@@ -3368,8 +3369,10 @@ notebook > header {
       notebook > header tab button.flat:hover {
         background: transparent;
         box-shadow: none;
-        color: #FF0000; }
-      notebook > header tab button.flat, notebook > header tab button.flat:backdrop {
+        color: #ffffff; }
+      notebook > header tab button.flat:active {
+        color: #ff6a00; }
+      notebook > header tab button.flat:backdrop {
         color: alpha(currentColor,0.3); }
   notebook > header.top tabs, notebook > header.bottom tabs {
     padding-left: 0px;
@@ -6779,8 +6782,8 @@ SheetStyleDialog.unity-force-quit {
  * App-Specific Styles *
  ***********************/
 .background.chromium {
-  color: #BFC3CD;
-  background-color: #181d32; }
+  color: rgba(191, 195, 205, 0.8);
+  background-color: #833906; }
 
 /*********
  * Geary *
