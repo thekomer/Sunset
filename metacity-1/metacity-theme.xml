@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <metacity_theme>
+
 <info>
 	<name>Sunset</name>
-	<author>thekomer &lt;thekomer@gmail&gt;</author>
-	<copyright>&#194;thekomer, 2020</copyright>
+	<author>thekomer, thekomer@gmail</author>
+	<copyright>thekomer, 2021</copyright>
 	<date>2019</date>
 	<description>Sunset window Theme</description>
 </info>
 
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#06060A" />
+<constant name="C_titlebar_focused" value="#06060A" />
 <constant name="C_titlebar_unfocused" value="#06060A" />
-<constant name="C_border_focused" value="#06060A" />
-<constant name="C_border_unfocused" value="#06060A" />
+<constant name="C_border_focused" value="#512508" />
+<constant name="C_border_unfocused" value="#15161b" />
 <constant name="C_title_focused" value="#d8dee9" />
 <constant name="C_title_unfocused" value="#93979f" />
 
@@ -28,12 +29,12 @@
 <!-- GEOMETRY -->
 
 <!-- Focused window -->
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="8" rounded_top_right="8" rounded_bottom_left="8" rounded_bottom_right="8">
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
-	<distance name="bottom_height" value="3" />
-	<distance name="left_titlebar_edge" value="5" />
-	<distance name="right_titlebar_edge" value="5" />
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="true" rounded_bottom_right="true">
+	<distance name="left_width" value="2" />
+	<distance name="right_width" value="2" />
+	<distance name="bottom_height" value="2" />
+	<distance name="left_titlebar_edge" value="2" />
+	<distance name="right_titlebar_edge" value="2" />
 	<distance name="title_vertical_pad" value="4" />
 	<aspect_ratio name="button" value="1.0" />
 	<border name="title_border" left="4" right="4" top="4" bottom="4" />
@@ -41,59 +42,40 @@
 </frame_geometry>
 
 <!-- Unfocused window -->
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="8" rounded_top_right="8" rounded_bottom_left="8" rounded_bottom_right="8" parent="normal" >
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
-	<distance name="left_titlebar_edge" value="5"/>
-	<distance name="right_titlebar_edge" value="5"/>
-	<distance name="title_vertical_pad" value="4" />
-	<border name="title_border" left="4" right="4" top="4" bottom="4" />
-	<border name="button_border" left="0" right="0" top="4" bottom="4" />
-</frame_geometry>
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="true" rounded_bottom_right="true" parent="normal" />
 
 <!-- Maximized window -->
-<frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
-	<distance name="title_vertical_pad" value="4" />
-	<border name="title_border" left="4" right="4" top="4" bottom="4" />
-	<border name="button_border" left="0" right="0" top="4" bottom="4" />
+<frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
+	<distance name="left_width" value="2" />
+	<distance name="right_width" value="2" />
+	<distance name="bottom_height" value="2" />
 </frame_geometry>
 
 <!-- Left tiled window -->
-<frame_geometry name="tiled_left" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="max">
-	<distance name="right_width" value="0" />
-</frame_geometry>
+<frame_geometry name="tiled_left" parent="max" title_scale="medium" rounded_top_left="false" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="true" />
 
 <!-- Right tiled window -->
-<frame_geometry name="tiled_right" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="max">
-	<distance name="left_width" value="0" />
-</frame_geometry>
+<frame_geometry name="tiled_right" parent="max" title_scale="medium" rounded_top_left="true" rounded_bottom_left="true" rounded_top_right="false" rounded_bottom_right="false" />
 
 <!-- Small window -->
 <frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
-	<distance name="title_vertical_pad" value="4" />
+	<distance name="title_vertical_pad" value="2" />
 	<border name="title_border" left="4" right="4" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"  />
 </frame_geometry>
 
 <!-- Small unfocused window -->
-<frame_geometry name="small_unfocused" parent="small">
-	<distance name="left_titlebar_edge" value="5"/>
-	<distance name="right_titlebar_edge" value="5"/>
-</frame_geometry>
+<frame_geometry name="small_unfocused" parent="small" />
 
 <!-- No buttons -->
 <frame_geometry name="nobuttons" hide_buttons="true" parent="normal">
 </frame_geometry>
 
 <!-- Border -->
-<frame_geometry name="border" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal" >
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
-	<distance name="bottom_height" value="1" />
+<frame_geometry name="border" has_title="false" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" parent="normal" >
+	<distance name="left_width" value="2" />
+	<distance name="right_width" value="2" />
+	<distance name="bottom_height" value="2" />
 	<distance name="title_vertical_pad" value="1" />
 	<border name="title_border" left="10" right="10" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
@@ -110,11 +92,11 @@
 </frame_geometry>
 
 <!-- Modal -->
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
-<frame_geometry name="attached" title_scale="medium" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="normal">
+<frame_geometry name="attached" title_scale="medium" hide_buttons="true" rounded_top_left="false" rounded_bottom_right="false" rounded_bottom_left="false" rounded_top_right="false" parent="normal">
 	<distance name="title_vertical_pad" value="8"/>
 	<distance name="bottom_height" value="1"/>
 	<distance name="left_width" value="1"/>
@@ -139,7 +121,7 @@
 
 <!-- WINDOW DECORATIONS -->
 <draw_ops name="entire_background_focused">
-	<rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_titlebar_focused" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -147,7 +129,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
-	<rectangle color="C_titlebar" x="4" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_titlebar_focused" x="4" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_attached_focused">
