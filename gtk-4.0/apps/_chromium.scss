@@ -1,4 +1,4 @@
 .background.chromium {
-	color: $fg_color;
-	background-color: lighten($bg_color, 6%);
+	color: transparentize($fg_color, 0.2);
+	background-color: lighten(mix($bg_color, $base_color, 15%), 8%);
 }

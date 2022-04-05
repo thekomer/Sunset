@@ -6,7 +6,7 @@
 // Main definitions
 $fg_color: if($variant == 'light', #31363d, #BFC3CD);
 $bg_color: if($variant == 'light', darken( #EEEEEE, 3%), #0E111D);
-$base_color: if($variant == 'light', #ebf0f5, lighten($bg_color, 2%));
+$base_color: if($variant == 'light', #ebf0f5, lighten($bg_color, 3%));
 $text_color: if($variant == 'light', #31363D, #BFC3CD);
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
