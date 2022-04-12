@@ -1,6 +1,0 @@
-#! /bin/bash
-
-pushd ~/.themes/Sunset/cinnamon
-sassc ./sass/cinnamon.scss cinnamon.css
-# sassc ./sass/cinnamon-dark.scss cinnamon-dark.css
-popd
