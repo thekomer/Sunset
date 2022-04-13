@@ -24,6 +24,17 @@ messagedialog, dialog { /* Message Dialog styling */
       border-bottom-right-radius: 10px; //5px;
     }
 
+		.titlebar {
+    min-height: 20px;
+    background-image: none;
+    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    border-style: none;
+    border-top-left-radius: 10px; //4px;
+    border-top-right-radius: 10px; //4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+		}
+
     .dialog-action-area button {
       padding: 10px 14px; // labels are not vertically centered on message dialog, this is a workaround
       border-radius: 0;
