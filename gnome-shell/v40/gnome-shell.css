@@ -932,7 +932,8 @@ StScrollBar {
     background-gradient-start: #ff3300 !important;
     background-gradient-end: #ffa100 !important;
     background-gradient-direction: horizontal;
-    border-color: black; }
+    border-color: black;
+    box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
     color: #a2a8b7;
     margin-top: 1em;
