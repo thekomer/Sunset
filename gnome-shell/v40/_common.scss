@@ -1595,6 +1595,27 @@ StScrollBar {
     box-shadow: none;
   }
 
+ /* App Folders */
+	.app-well-app.app-folder {
+		background-color: lighten($bg_color, 7%);
+		border-radius: 12px;
+	}
+	// expanded folder
+	.app-folder-dialog { //style like the dash
+		background-color:  $_dash_bg;
+		border: none;
+		.edit-folder-button {
+			@extend %button;
+
+			padding: 0;
+			width: 36px;
+			height: 36px;
+			border-radius: 18px;
+			& > StIcon { icon-size: 16px }
+		}
+	}
+
+
   .app-well-app.app-folder > .overview-icon {
     background-color: transparentize($osd_bg_color,.6);
   }
