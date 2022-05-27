@@ -95,14 +95,14 @@
 
   @else if $t==focus-hover {  // focused hovered button
     color: $fg_color;
-    background-color: lighten($button_bg, 5%);
+    background-color: transparentize($selected_bg_color, 0.5);// lighten($button_bg, 5%);
     border: 1px solid $selected_bg_color;
     box-shadow: inset 0 2px 4px transparentize($button_bg, 0.95);
   }
 
   @else if $t==hover {  // hovered button
     color: $fg_color;
-    background-color: lighten($button_bg, 5%);
+    background-color: transparentize($selected_bg_color, 0.5);// lighten($button_bg, 5%);
     border: 1px solid $borders_color;
     box-shadow: inset 0 2px 4px transparentize(lighten($button_bg, 5%), 0.95);
   }
