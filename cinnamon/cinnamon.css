@@ -1207,7 +1207,7 @@ StScrollBar {
   padding: 10px 30px 10px 30px; }
 
 .menu-applications-inner-box, .menu-applications-outer-box {
-  padding: 10px 10px 0 10px; }
+  margin: 10px 10px 0 10px; }
 
 .menu-application-button {
   border: 1px solid rgba(191, 195, 205, 0);
