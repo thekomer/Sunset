@@ -143,6 +143,16 @@ StScrollBar {
   height: 1em; }
 
 /* * * * * *
+ * Ripples *
+ * * * * * */
+.ripple-pointer-location {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(255, 106, 0, 0.3);
+  box-shadow: 0 0 2px 2px #ff6a00; }
+
+/* * * * * *
  * Slider  *
  * * * * * */
 .popup-slider-menu-item,
