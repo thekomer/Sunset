@@ -19,9 +19,9 @@ stage {
 /* Buttons */
 .button {
   @include button(normal);
-  border-radius: 4px;
-  border-width: 0;
-  padding: 4px 32px;
+  border-radius: 0.5em;
+  border-width: 1px;
+  padding: 0.4em 2em; //4px 32px;
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
@@ -31,10 +31,10 @@ stage {
 }
 
 .modal-dialog-linked-button {
-  padding: 10px;
+  padding: 10px; margin: 3px;
   border: 1px solid $borders_color;
   color: $fg_color;
-  background: $main_dark;
+  background: $base_color;
   text-shadow: none;
   icon-shadow: none;
   box-shadow: none;
@@ -46,23 +46,24 @@ stage {
     @include button(focus);
     &:hover {
       @include button(focus);
+      color: white;
     }
   }
   &:hover {
     @include button(hover);
   }
 
-  &:first-child { border-radius: 0px 0px 0px 2px; }
-  &:last-child { border-radius: 0px 0px 2px 0px; }
-  &:first-child:last-child { border-radius: 0px 0px 2px 2px; }
+  &:first-child { border-radius: 0.5em 0px 0px 0.5em; }
+  &:last-child { border-radius: 0px 0.5em 0.5em 0px; }
+  &:first-child:last-child { border-radius: 0.5em; }
 }
 
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 2px;
+  border-radius: 1em;
   padding: 4px;
-  border-width: 0;
+  border-width: 1px;
   color: $fg_color;
   //&:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
