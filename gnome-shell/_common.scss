@@ -11,7 +11,8 @@ $_bubble_transparent: transparentize($osd_bg_color, 0.17);
 $topbar_bg_color: transparentize($dracula,0.05);
 
 stage {
-  @include fontsize($font-size);
+  //@include fontsize($font-size);
+	font-size: 1em;
   color: $fg_color;
 }
 
@@ -1501,7 +1502,7 @@ StScrollBar {
   /* DASHBOARD */
 
   #dash {
-    font-size: 11pt;
+    font-size: 120%;
     color: $topbar_color;
     background-color: $topbar_bg_color;
     padding: 6px 0;
@@ -1726,7 +1727,7 @@ StScrollBar {
 
   // Banners
   .notification-banner {
-    font-size: 12pt;
+    font-size: 120%;
     width: 34em;
     margin: 5px;
     border-radius: 3px;
@@ -1757,7 +1758,7 @@ StScrollBar {
     }
   }
   .summary-source-counter {
-    font-size: 12pt;
+    font-size: 120%;
     font-weight: bold;
     height: 1.6em; width: 1.6em;
     -shell-counter-overlap-x: 3px;

@@ -3,7 +3,7 @@
 *****************/
 /* GLOBALS */
 stage {
-  font-size: 14pt;
+  font-size: 1em;
   color: #bfc3cd; }
 
 /* WIDGETS */
@@ -1364,7 +1364,7 @@ StScrollBar {
 
 /* DASHBOARD */
 #dash {
-  font-size: 11pt;
+  font-size: 120%;
   color: white;
   background-color: rgba(22, 25, 37, 0.95);
   padding: 6px 0;
@@ -1558,7 +1558,7 @@ StScrollBar {
   link-color: #ff8833; }
 
 .notification-banner {
-  font-size: 12pt;
+  font-size: 120%;
   width: 34em;
   margin: 5px;
   border-radius: 3px;
@@ -1597,7 +1597,7 @@ StScrollBar {
       color: #ff6a00; }
 
 .summary-source-counter {
-  font-size: 12pt;
+  font-size: 120%;
   font-weight: bold;
   height: 1.6em;
   width: 1.6em;
