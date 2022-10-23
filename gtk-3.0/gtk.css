@@ -329,7 +329,7 @@ assistant .sidebar label.highlight {
 .csd popover.background.osd, popover.background.osd, .csd popover.background.touch-selection, .csd popover.background.magnifier, popover.background.touch-selection, popover.background.magnifier, .osd .scale-popup, .app-notification,
 .app-notification.frame, .osd {
   color: #fefefe;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(6, 8, 13, 0.8);
   background-clip: padding-box;
   outline-color: rgba(254, 254, 254, 0.3);
@@ -2514,7 +2514,14 @@ headerbar {
   min-height: 34px;
   background: #06080d;
   color: #BFC3CD;
-  border-radius: 12px; }
+  border-top: 1px solid #512509;
+  border-left: 1px solid #512509;
+  border-right: 1px solid #512509;
+  border-radius: 12px 12px 0 0; }
+  .titlebar headerbar, .titlebar:not(headerbar) headerbar,
+  headerbar headerbar {
+    border-left: none;
+    border-right: none; }
   .titlebar:backdrop, progressbar:backdrop progress.titlebar, progressbar:backdrop trough.titlebar, label:backdrop selection.titlebar,
   headerbar:backdrop {
     border-color: rgba(59, 62, 71, 0.145);

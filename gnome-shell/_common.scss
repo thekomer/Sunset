@@ -3,6 +3,7 @@ $corner-radius: 2px;
 
 /* GLOBALS */
 $font-size: 14;
+$base_radius: 0.5em;
 $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
@@ -19,7 +20,7 @@ stage {
 /* Buttons */
 .button {
   @include button(normal);
-  border-radius: 0.5em;
+  border-radius: $base_radius;
   border-width: 1px;
   padding: 0.4em 2em; //4px 32px;
   &:focus { @include button(focus); }
@@ -179,8 +180,8 @@ StScrollBar {
 .flashspot { background-color: white; }
 
 .modal-dialog {
-  border: none;
-  border-radius: 2px;
+  border: 1px solid $osd_borders_color;
+  border-radius: $base_radius;
   color: $osd_fg_color;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
@@ -245,6 +246,8 @@ StScrollBar {
     &:hover, &:focus {
       background: darken($error_color, 3%);
       color: #fff;
+      font-weight: bold;
+      border: 1px solid $destructive_color;
     }
   }
 }

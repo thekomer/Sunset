@@ -8,7 +8,15 @@ headerbar {
   min-height: 34px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
-  border-radius: 10px + 2px;
+  border-top: 1px solid $window_border_color;
+  border-left: 1px solid $window_border_color;
+  border-right: 1px solid $window_border_color;
+  border-radius: 10px + 2px 10px + 2px 0 0;
+
+  headerbar { // fix: headerbar splited with border when there are headerbars inside headerbar
+		border-left: none;
+		border-right: none;
+  }
   &:backdrop {
     border-color: $backdrop_borders_color;
    // background-image: none;
