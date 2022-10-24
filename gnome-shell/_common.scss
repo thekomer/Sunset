@@ -241,12 +241,12 @@ StScrollBar {
 .end-session-dialog {
   spacing: 42px;
   border: 1px solid $osd_borders_color;
+  color: $osd_fg_color;
   & .modal-dialog-linked-button:last-child {
-    @include gradient();
-    color: #fff;
     &:hover, &:focus {
-      background: darken($error_color, 3%);
-      color: #fff;
+			@include gradient();
+      //background: darken($error_color, 3%);
+      color: $selected_fg_color;
       font-weight: bold;
       border: 1px solid $destructive_color;
     }
@@ -904,86 +904,86 @@ StScrollBar {
   }
 }
 
-  // calendar popover
-  #calendarArea {
-    padding: 0.75em 1.0em;
-  }
+// calendar popover
+#calendarArea {
+  padding: 0.75em 1.0em;
+}
 
-  .calendar {
-    margin-bottom: 1em;
-  }
+.calendar {
+  margin-bottom: 1em;
+}
 
-  .calendar, .world-clocks-button, .weather-button, .events-button {
-    background: transparent;
-    border: none;
-  }
+ .calendar, .world-clocks-button, .weather-button, .events-button {
+   background: transparent;
+   border: none;
+ }
 
-    .calendar,
-    .datemenu-today-button,
-    .datemenu-displays-box,
-    .message-list-sections {
-      margin: 0 1.5em;
-    }
+.calendar,
+.datemenu-today-button,
+.datemenu-displays-box,
+.message-list-sections {
+	margin: 0 1.5em;
+}
 
-    .datemenu-calendar-column { spacing: 0.5em; }
-    .datemenu-displays-section { padding-bottom: 3em; }
-    .datemenu-displays-box { spacing: 1em; }
+.datemenu-calendar-column { spacing: 0.5em; }
+.datemenu-displays-section { padding-bottom: 3em; }
+.datemenu-displays-box { spacing: 1em; }
 
-    .datemenu-calendar-column {
-      border: 0 solid transparent;
-      &:ltr { border-left-width: 1px; }
-      &:rtl { border-right-width: 1px; }
-      background: darken($bg_color, 0.7%);
-     //@include gradient();
-    }
+.datemenu-calendar-column {
+  border: 0 solid transparent;
+  &:ltr { border-left-width: 1px; }
+  &:rtl { border-right-width: 1px; }
+  background: darken($bg_color, 0.7%);
+  //@include gradient();
+}
 
-    .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
-    .events-section-title,
-    .message-list-section-title,
-    .events-button {
-      border-radius: 4px;
-      color: $fg_color;
-      padding: .4em;
-    }
+.datemenu-today-button,
+.world-clocks-button,
+.weather-button,
+.events-section-title,
+.message-list-section-title,
+.events-button {
+	border-radius: 4px;
+	color: $fg_color;
+	padding: .4em;
+}
 
-    .message-list-section-list:ltr {
-      padding-left: .4em;
-    }
+.message-list-section-list:ltr {
+	padding-left: .4em;
+}
 
-    .message-list-section-list:rtl {
-      padding-right: .4em;
-    }
+.message-list-section-list:rtl {
+	padding-right: .4em;
+}
 
-    .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
-    .events-section-title,
-    .message-list-section-title,
-    .events-button {
-      &:hover,&:focus { background-color: lighten($bg_color,5%); }
-      &:active {
-        color: lighten($selected_fg_color,5%);
-        background-color: $selected_bg_color;
-      }
-    }
+.datemenu-today-button,
+.world-clocks-button,
+.weather-button,
+.events-section-title,
+.message-list-section-title,
+.events-button {
+	&:hover,&:focus { background-color: lighten($bg_color,5%); }
+	&:active {
+		color: lighten($selected_fg_color,5%);
+		background-color: $selected_bg_color;
+	}
+}
 
-    .datemenu-today-button .day-label {
-    }
+.datemenu-today-button .day-label {
+}
 
-    .datemenu-today-button .date-label {
-      font-size: 1.5em;
-    }
+.datemenu-today-button .date-label {
+	font-size: 1.5em;
+}
 
-    .world-clocks-header,
-    .weather-header,
-    .events-section-title,
-    .message-list-section-title,
-    .events-title {
-      color: darken($fg_color, 10%);
-      font-weight: bold;
-    }
+.world-clocks-header,
+.weather-header,
+.events-section-title,
+.message-list-section-title,
+.events-title {
+	color: darken($fg_color, 10%);
+	font-weight: bold;
+}
 
     .events-button .event-time {
       color: darken($fg_color, 4%);
@@ -1727,7 +1727,7 @@ StScrollBar {
 
   // Banners
   .notification-banner {
-    font-size: 120%;
+    font-size: 100%;
     width: 34em;
     margin: 5px;
     border-radius: 3px;

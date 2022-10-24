@@ -5016,7 +5016,7 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
  * Windows *
  * * * * * */
 window.background {
-  border-radius: 0 0 10px 10px; }
+  border-radius: 10px 10px 10px 10px; }
 
 headerbar.titlebar {
   border-radius: 12px 12px 0 0;

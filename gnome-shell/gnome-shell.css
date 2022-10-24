@@ -268,17 +268,15 @@ StScrollBar {
 /* End Session Dialog */
 .end-session-dialog {
   spacing: 42px;
-  border: 1px solid rgba(255, 255, 255, 0.1); }
-  .end-session-dialog .modal-dialog-linked-button:last-child {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fefefe; }
+  .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus {
     background-gradient-start: #ff3300 !important;
     background-gradient-end: #ffa100 !important;
     background-gradient-direction: horizontal;
-    color: #fff; }
-    .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus {
-      background: #d60000;
-      color: #fff;
-      font-weight: bold;
-      border: 1px solid #9b1b32; }
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #9b1b32; }
 
 .end-session-dialog-list {
   padding-top: 20px; }
@@ -1558,7 +1556,7 @@ StScrollBar {
   link-color: #ff8833; }
 
 .notification-banner {
-  font-size: 120%;
+  font-size: 100%;
   width: 34em;
   margin: 5px;
   border-radius: 3px;
