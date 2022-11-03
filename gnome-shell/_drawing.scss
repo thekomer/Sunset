@@ -13,6 +13,14 @@
 
 // generic drawing of more complex things
 
+// gradient
+
+@mixin gradient($c1: $g1, $c2: $g2, $dir: horizontal) {
+	background-gradient-start: $c1 !important;
+	background-gradient-end: $c2 !important;
+	background-gradient-direction: $dir;
+}
+
 @function _widget_edge($c:$borders_edge) {
 // outer highlight "used" on most widgets
   @return 0 1px $c;
@@ -34,7 +42,9 @@
   @else { box-shadow: $shadow1; }
 }
 
-// entries
+/* * * * * *
+ * entries *
+ * * * * * */
 
 @mixin entry($t, $fc:$selected_bg_color, $edge: $borders_edge) {
 //
@@ -64,7 +74,9 @@
   }
 }
 
-// buttons
+/* * * * * *
+ * buttons *
+ * * * * * */
 
 @function _border_color ($c) { @return darken($c,25%); } // colored buttons want
                                                          // the border form the
@@ -155,7 +167,7 @@
   //
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
                           $osd_bg_color);
-		background-color: lighten(mix($bg_color, $base_color, 15%), 8%);
+		background-color: lighten(mix($selected_bg_color, $base_color, 15%), 8%);
     color: $selected_fg_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
@@ -170,7 +182,7 @@
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
                             lighten($main_dark, 2%));
 
-		background-color: lighten(mix($bg_color, $base_color, 15%), 7%);
+		background-color: lighten(mix($selected_bg_color, $base_color, 15%), 6%);
     color: $selected_fg_color;
     border: 1px solid $borders_color;
     text-shadow: 0 1px black;
@@ -219,10 +231,4 @@
     text-shadow: none;
     icon-shadow: none;
   }
-}
-
-@mixin gradient($c1: $g1, $c2: $g2, $dir: horizontal) {
-	background-gradient-start: $c1 !important;
-	background-gradient-end: $c2 !important;
-	background-gradient-direction: $dir;
 }
