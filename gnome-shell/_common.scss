@@ -1459,7 +1459,9 @@ StScrollBar {
 	&:focus,
 	&:hover,
 	&:selected {
-		background-color: transparentize($osd_fg_color, .9);
+//		background-color: transparentize($osd_fg_color, .9);
+    background-color: transparentize($selected_bg_color, .5);
+    color: $selected_fg_color;
 		transition-duration: 200ms;
 	}
 	&:active,
@@ -1606,10 +1608,13 @@ StScrollBar {
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: transparentize($bg_color,.5);
+      color: $selected_fg_color;
+      // background-color: transparentize($bg_color,.5);
+      background-color: transparentize($selected_bg_color,.5);
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
+      border-radius: o.5em 0.5em 0.5em 0.5em;
     }
 
   }
@@ -2215,4 +2220,3 @@ StScrollBar {
     border-radius: 4px;
     padding: 6px;
   }
-
