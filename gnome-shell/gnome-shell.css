@@ -1467,7 +1467,7 @@ StScrollBar {
     border-radius: o 0.5em 0.5em 0.5em 0.5em; }
 
 .app-well-app-running-dot {
-  width: 4px;
+  width: 12px;
   height: 4px;
   background-color: #ff6a00;
   border-radius: 10px !important;
