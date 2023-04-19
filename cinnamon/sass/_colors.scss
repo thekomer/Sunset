@@ -53,7 +53,6 @@ $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), 
 $tooltip_bg_color: darken($bg_color, 5%);
 $tooltip_fg_color: $fg_color;
 $tooltip_border_color: transparentize(white, 0.9);
-
 // OSD
 $osd_fg_color: #fefefe;
 $osd_bg_color:  transparentize(#14171a, 0.2);
@@ -78,3 +77,11 @@ $entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
 // Buttons
 $button_bg: if($variant == 'light', lighten($bg_color, 2%), lighten($base_color, 2%));
 $button_border: $entry_border;
+
+// Colors used for highlights in places where we don't want to use accents
+$noaccent_light_bg_color: #c0c0c0;
+$noaccent_light_fg_color: $text_color;
+$noaccent_dark_bg_color: #525352;
+$noaccent_dark_fg_color: #ffffff;
+$noaccent_selected_bg_color: if($variant=='light', $noaccent_light_bg_color, $noaccent_dark_bg_color);
+$noaccent_selected_fg_color: if($variant=='light', $noaccent_light_fg_color, $noaccent_dark_fg_color);

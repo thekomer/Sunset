@@ -1597,7 +1597,7 @@ StScrollBar {
 
 .sound-player-overlay {
   width: 290px;
-  height: 70px;
+  height: 5.4em;
   padding: 15px;
   spacing: 0.5em;
   background: rgba(14, 17, 29, 0.9);

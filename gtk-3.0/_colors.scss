@@ -1,10 +1,10 @@
 //@use "sass:color";
 
-// When color definition differs for dark and light variant
-// it gets @if ed depending on $variant
+/* When color definition differs for dark and light variant
+ it gets @if ed depending on $variant */
 
 // Main definitions
-$fg_color: if($variant == 'light', #31363d, #BFC3CD);
+$fg_color: if($variant == 'light', #31363d, #bfc3cd);
 $bg_color: if($variant == 'light', darken( #EEEEEE, 3%), #0E111D);
 $base_color: if($variant == 'light', #ebf0f5, lighten($bg_color, 3%));
 $text_color: $fg_color;
