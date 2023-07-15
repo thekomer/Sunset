@@ -1,7 +1,7 @@
 #### Depreciation notice:
 
 Due to the lack of resources, this repo is deprecated.
-I will rebuild this theme later on with different base because - in my opinion - one of current base sources do not comply with GPL guidelines.
+I will rebuild this theme later on with different base because - in my opinion - one of current base sources does not comply with GPL guidelines.
 'Till then, fill free to use it on old-stable linux releases. It works just fine for me on debian 11.
 
 # Sunset GTK theme
