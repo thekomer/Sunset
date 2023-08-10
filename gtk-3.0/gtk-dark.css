@@ -6992,69 +6992,6 @@ SheetStyleDialog.unity-force-quit {
   color: rgba(191, 195, 205, 0.8);
   background-color: #1f2642; }
 
-.menu.chromium {
-  background-color: #090c14;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 0.4em;
-  min-height: 17px;
-  min-width: 40px;
-  padding: 4px 6px;
-  margin-left: 2px;
-  margin-right: 2px;
-  text-shadow: none;
-  border-radius: 0.4em;
-  transition: all 100ms ease-in; }
-  .menu.chromium:hover {
-    color: #ffffff;
-    background-color: #ff6a00; }
-  .menu.chromium:disabled, label:disabled selection.chromium {
-    color: #676a75; }
-    .menu.chromium:disabled:backdrop {
-      color: #272f51; }
-  .menu.chromium:backdrop, label:backdrop selection.chromium, progressbar:backdrop trough.chromium, progressbar:backdrop progress.chromium, .menu.chromium:backdrop:hover {
-    color: #676a75;
-    background-color: transparent; }
-  .menu.chromium arrow {
-    min-height: 16px;
-    min-width: 16px; }
-    .menu.chromium arrow:dir(ltr) {
-      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-      margin-left: 10px; }
-    .menu.chromium arrow:dir(rtl) {
-      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
-      margin-right: 10px; }
-  .menu.chromium label:dir(rtl), .menu.chromium label:dir(ltr) {
-    color: inherit; }
-
-> arrow {
-  background-color: transparent;
-  background-image: none;
-  border-color: transparent;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  min-height: 16px;
-  min-width: 16px;
-  padding: 4px;
-  background-color: #121625;
-  border-radius: 0; }
-  > arrow.top {
-    margin-top: -6px;
-    border-bottom: 1px solid #242838;
-    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
-  > arrow.bottom {
-    margin-bottom: -6px;
-    border-top: 1px solid #242838;
-    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-  > arrow:hover {
-    background-color: #242838; }
-  > arrow:backdrop {
-    background-color: #15192b; }
-  > arrow:disabled {
-    color: transparent;
-    background-color: transparent;
-    border-color: transparent; }
-
 /*********
  * Geary *
  *********/

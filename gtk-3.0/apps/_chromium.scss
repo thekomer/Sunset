@@ -2,85 +2,85 @@
 	color: transparentize($fg_color, 0.2);
 	background-color: lighten(mix($bg_color, $base_color, 15%), 8%);
 }
-.menu.chromium {
-	background-color: lighten($headerbar_color, 2%);
-	border: 1px solid $borders_color; // adds borders in a non composited env
-  border-radius: 0.4em;// 5px;
+// .menu.chromium {
+// 	background-color: lighten($headerbar_color, 2%);
+// 	border: 1px solid $borders_color; // adds borders in a non composited env
+//   border-radius: 0.4em;// 5px;
 
-	min-height: 17px;
-	min-width: 40px;
-	padding: 4px 6px;
-	margin-left: 2px;
-	margin-right: 2px;
-	text-shadow: none;
-	border-radius: 0.4em;
-	transition: $menu_transition;
+// 	min-height: 17px;
+// 	min-width: 40px;
+// 	padding: 4px 6px;
+// 	margin-left: 2px;
+// 	margin-right: 2px;
+// 	text-shadow: none;
+// 	border-radius: 0.4em;
+// 	transition: $menu_transition;
 
-	&:hover {
-		color: $selected_fg_color;
-		background-color: $selected_bg_color;
-	}
+// 	&:hover {
+// 		color: $selected_fg_color;
+// 		background-color: $selected_bg_color;
+// 	}
 
-	&:disabled {
-		color: $insensitive_fg_color;
-		&:backdrop { color: $backdrop_insensitive_color; }
-	}
+// 	&:disabled {
+// 		color: $insensitive_fg_color;
+// 		&:backdrop { color: $backdrop_insensitive_color; }
+// 	}
 
-	&:backdrop,
-	&:backdrop:hover {
-		color: $backdrop_fg_color;
-		background-color: transparent;
-	}
+// 	&:backdrop,
+// 	&:backdrop:hover {
+// 		color: $backdrop_fg_color;
+// 		background-color: transparent;
+// 	}
 
-	// submenu indicators
-	arrow {
-		min-height: 16px;
-		min-width: 16px;
+// 	// submenu indicators
+// 	arrow {
+// 		min-height: 16px;
+// 		min-width: 16px;
 
-		&:dir(ltr) {
-			-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
-			margin-left: 10px;
-		}
+// 		&:dir(ltr) {
+// 			-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+// 			margin-left: 10px;
+// 		}
 
-		&:dir(rtl) {
-			-gtk-icon-source:-gtk-icontheme('pan-end-symbolic-rtl');
-			margin-right: 10px;
-		}
-	}
+// 		&:dir(rtl) {
+// 			-gtk-icon-source:-gtk-icontheme('pan-end-symbolic-rtl');
+// 			margin-right: 10px;
+// 		}
+// 	}
 
-	// avoids labels color being overridden, see
-	// https://bugzilla.gnome.org/show_bug.cgi?id=767058
-	label { &:dir(rtl), &:dir(ltr) { color: inherit; }}
-	// overflow arrows
-	> arrow {
-		@include button(undecorated);
+// 	// avoids labels color being overridden, see
+// 	// https://bugzilla.gnome.org/show_bug.cgi?id=767058
+// 	label { &:dir(rtl), &:dir(ltr) { color: inherit; }}
+// 	// overflow arrows
+// 	> arrow {
+// 		@include button(undecorated);
 
-		min-height: 16px;
-		min-width: 16px;
-		padding: 4px;
-		background-color: $menu_color;
-		border-radius: 0;
+// 		min-height: 16px;
+// 		min-width: 16px;
+// 		padding: 4px;
+// 		background-color: $menu_color;
+// 		border-radius: 0;
 
-		&.top {
-			margin-top: -6px;
-			border-bottom: 1px solid mix($fg_color, $base_color, 10%);
-			-gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
-		}
+// 		&.top {
+// 			margin-top: -6px;
+// 			border-bottom: 1px solid mix($fg_color, $base_color, 10%);
+// 			-gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+// 		}
 
-		&.bottom {
-			margin-bottom: -6px;
-			border-top: 1px solid mix($fg_color, $base_color, 10%);
-			-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
-		}
+// 		&.bottom {
+// 			margin-bottom: -6px;
+// 			border-top: 1px solid mix($fg_color, $base_color, 10%);
+// 			-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+// 		}
 
-		&:hover { background-color: mix($fg_color, $base_color, 10%); }
+// 		&:hover { background-color: mix($fg_color, $base_color, 10%); }
 
-		&:backdrop { background-color: $backdrop_menu_color; }
+// 		&:backdrop { background-color: $backdrop_menu_color; }
 
-		&:disabled {
-			color: transparent;
-			background-color: transparent;
-			border-color: transparent ;
-		}
-	}
-}
+// 		&:disabled {
+// 			color: transparent;
+// 			background-color: transparent;
+// 			border-color: transparent ;
+// 		}
+// 	}
+// }
