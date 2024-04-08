@@ -5109,7 +5109,7 @@ textview text:selected:focus,
 .view text:selected,
 textview text:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
-textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, label:disabled selection, label:backdrop selection, modelbutton.flat:selected,
+textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected, label:disabled selection, label:backdrop selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected,
 entry selection:focus,
 entry selection, row:selected,
@@ -5125,7 +5125,7 @@ popover.background radiobutton.button:selected, spinbutton:not(.vertical) select
   .view text:selected,
   textview text:selected, .view text selection:focus, .view text selection,
   textview text selection:focus,
-  textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, label:disabled selection, label:backdrop selection, modelbutton.flat:selected,
+  textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected, label:disabled selection, label:backdrop selection, modelbutton.flat:selected,
   .menuitem.button.flat:selected,
   entry selection:focus,
   entry selection, row:selected,
@@ -7229,6 +7229,7 @@ menubar,
   min-height: 28px;
   padding: 5px;
   color: #bfc3cd;
+  background-color: #0E111D;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 3px;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
