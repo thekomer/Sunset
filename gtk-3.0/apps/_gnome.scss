@@ -183,12 +183,16 @@
  * Gedit *
  *********/
 .gedit-search-slider {
-     padding: 4px;
-     border-radius: 0 0 3px 3px;
-     border: 0;
-     background-color: $bg_color;
+  padding: 4px;
+  border-radius: 0 0 3px 3px;
+  border: 0;
+  background-color: $bg_color;
  }
 
+.gedit-document-panel {
+  background-color: $sidebar_bg_color;
+	color: $sidebar_fg_color;
+}
 
  /*********
  * Gnucash *

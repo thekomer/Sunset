@@ -6197,6 +6197,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border: 0;
   background-color: #0E111D; }
 
+.gedit-document-panel {
+  background-color: #06080d;
+  color: #b9bec9; }
+
 /*********
  * Gnucash *
  *********/
