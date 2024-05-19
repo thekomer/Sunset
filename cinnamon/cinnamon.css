@@ -573,7 +573,7 @@ StScrollBar {
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
   height: 1.5em;
-  border-radius: 2px;
+  border-radius: 1em;
   font-size: 1em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
@@ -588,8 +588,8 @@ StScrollBar {
     color: #ffffff;
     font-style: italic;
     transition-duration: 300;
-    selection-background-color: #ffffff;
-    selected-color: #ff6a00; }
+    selection-background-color: #ff6a00;
+    selection-color: #ffffff; }
 
 .expo-workspace-thumbnail-frame {
   border: 2px solid rgba(255, 255, 255, 0);
