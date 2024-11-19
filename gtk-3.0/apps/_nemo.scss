@@ -5,11 +5,11 @@
 		-NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 15%);
 		-NemoPlacesTreeView-disk-full-max-length: 100px;
 		-GtkTreeView-vertical-separator: 7;
-		.view.cell,
-		iconview.cell { }
+		// .view.cell,
+		// iconview.cell { }
 	}
 
-	.sidebar, .NemoSidebar, .nemo-places-sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actualy whole statusbar
+	.sidebar, .NemoSidebar, .nemo-places-sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actually whole statusbar
 		color: $sidebar_fg_color;
 		background: $sidebar_bg_color;
 		margin-bottom: -4px;
