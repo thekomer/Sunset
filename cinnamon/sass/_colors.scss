@@ -18,20 +18,20 @@ $slider: #7b7bbd;
 $teal: #00e8c6;
 
 // Main definitions
-$theme_color: $orange;
-$accent_color: $theme_color;
+$accent_color: $orange;
+$theme_color: $accent_color;
 $bg_color: if($variant =='light', #F0F0F0, #0E111D);
 $base_color: if($variant =='light', #ffffff, lighten($bg_color, 3%));
 $fg_color: if($variant =='light', #202020, #BFC3CD);
 $text_color: $fg_color;
 $selected_fg_color: #ffffff;
-$selected_bg_color: if($variant == 'light', #92b372, $theme_color);
+$selected_bg_color: if($variant == 'light', #92b372, $accent_color);
 
 //$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
 $borders_color: if($variant =='light', darken($bg_color,20%), transparentize($fg_color, 0.95));
 $separator_color: if($variant == 'light', #cfcfcf, darken($bg_color, 6%));
-$link_color: if($variant == 'light', darken($selected_bg_color,10%),
-                                     lighten($selected_bg_color,20%));
+$link_color: if($variant == 'light', darken($accent_color,10%),
+                                     lighten($accent_color,20%));
 
 // main gradient
 $theme_gradient_start: #ff3300;
@@ -44,7 +44,7 @@ $warning_color: if($variant == 'light', $theme_color, darken($theme_color,10%));
 $error_color: if($variant == 'light', $red, darken($red,5%));
 $success_color: if($variant == 'light', $cyan, darken($cyan,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
-$suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_bg_color,10%));
+$suggested_color: if($variant == 'light', $accent_color, darken($accent_color,10%));
 
 // Insensitive
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
