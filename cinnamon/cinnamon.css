@@ -94,7 +94,7 @@ stage {
   transition-duration: 300ms;
   border-radius: 1em;
   color: #fefefe;
-  background-color: rgba(69, 79, 89, 0.2);
+  background-color: rgba(41, 55, 90, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .notification StEntry:focus {
@@ -104,7 +104,7 @@ stage {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .notification StEntry:insensitive {
     color: rgba(254, 254, 254, 0.55);
-    background-color: rgba(69, 79, 89, 0.05);
+    background-color: rgba(41, 55, 90, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
 
@@ -316,54 +316,6 @@ StScrollBar {
   .popup-inactive-menu-item:insensitive {
     color: rgba(191, 195, 205, 0.45); }
 
-/* This is for popup menus in Cinnamon versions < 3.2 */
-.popup-menu {
-  color: white;
-  color: #BFC3CD; }
-  .popup-menu-arrow {
-    icon-size: 16px; }
-  .popup-menu .popup-sub-menu {
-    background-color: #131727;
-    box-shadow: none; }
-    .popup-menu .popup-sub-menu .popup-menu-item:ltr {
-      padding-right: 1.75em; }
-    .popup-menu .popup-sub-menu .popup-menu-item:rtl {
-      padding-left: 1.75em; }
-    .popup-menu .popup-sub-menu StScrollBar {
-      padding: 4px; }
-      .popup-menu .popup-sub-menu StScrollBar StBin#trough, .popup-menu .popup-sub-menu StScrollBar StBin#vhandle {
-        border-width: 0; }
-  .popup-menu .popup-menu-content {
-    padding: 1em 0em 1em 0em; }
-  .popup-menu .popup-menu-item {
-    padding: .4em 1.75em;
-    spacing: 1em;
-    border: 1px solid transparent;
-    border-left-width: 0;
-    border-right-width: 0; }
-    .popup-menu .popup-menu-item:active {
-      color: #BFC3CD;
-      border-color: rgba(191, 195, 205, 0.11);
-      background-color: rgba(191, 195, 205, 0.08); }
-    .popup-menu .popup-menu-item:insensitive {
-      color: rgba(191, 195, 205, 0.5);
-      background: none; }
-  .popup-menu .popup-inactive-menu-item {
-    color: #BFC3CD; }
-    .popup-menu .popup-inactive-menu-item:insensitive {
-      color: rgba(191, 195, 205, 0.45); }
-  .popup-menu-icon {
-    icon-size: 16px; }
-
-.popup-menu-boxpointer {
-  -arrow-border-radius: 3px;
-  -arrow-background-color: #0E111D;
-  -arrow-border-width: 1px;
-  -arrow-border-color: rgba(191, 195, 205, 0.05);
-  -arrow-base: 21px;
-  -arrow-rise: 9px;
-  -boxpointer-gap: 2px; }
-
 /*Don't know what this does*/
 .popup-combo-menu {
   background-color: rgba(0, 0, 0, 0.4);
@@ -546,8 +498,8 @@ StScrollBar {
   spacing: 12px; }
 
 .window-caption {
-  background-color: rgba(20, 23, 26, 0.3);
-  border: 1px solid rgba(20, 23, 26, 0.8);
+  background-color: rgba(6, 8, 13, 0.3);
+  border: 1px solid rgba(6, 8, 13, 0.8);
   color: #fefefe;
   spacing: 8px;
   border-radius: 2px;
@@ -578,14 +530,14 @@ StScrollBar {
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   color: #fefefe;
-  background-color: rgba(69, 79, 89, 0.2);
+  background-color: rgba(41, 55, 90, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .expo-workspaces-name-entry:focus,
   .expo-workspaces-name-entry#selected:focus {
     border: 1px solid #ff6a00;
     background-color: inherit;
-    color: #ffffff;
+    color: #ff6a00;
     font-style: italic;
     transition-duration: 300;
     selection-background-color: #ff6a00;
@@ -601,7 +553,7 @@ StScrollBar {
     border-radius: 2px; }
 
 .expo-background {
-  background-color: #14171a; }
+  background-color: #06080d; }
 
 .workspace-thumbnails {
   spacing: 26px; }
@@ -1062,7 +1014,7 @@ StScrollBar {
     selected-color: #ffffff;
     selection-background-color: #ff6a00;
     color: #fefefe;
-    background-color: rgba(69, 79, 89, 0.2);
+    background-color: rgba(41, 55, 90, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
     .run-dialog-entry:focus {
@@ -1108,7 +1060,7 @@ StScrollBar {
     selected-color: #ffffff;
     selection-background-color: #ff6a00;
     color: #fefefe;
-    background-color: rgba(69, 79, 89, 0.2);
+    background-color: rgba(41, 55, 90, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
     .polkit-dialog-password-entry:focus {
@@ -1189,7 +1141,7 @@ StScrollBar {
  * On-Screen Keyboard  *
  * * * * * * * * * * * */
 #keyboard {
-  background-color: rgba(20, 23, 26, 0.8);
+  background-color: rgba(6, 8, 13, 0.8);
   border-width: 0;
   border-top-width: 1px;
   border-color: rgba(0, 0, 0, 0.4); }
@@ -1210,25 +1162,25 @@ StScrollBar {
   box-shadow: none;
   color: #fefefe;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  background-color: rgba(69, 79, 89, 0.2); }
+  background-color: rgba(41, 55, 90, 0.2); }
   .keyboard-key:hover {
     color: #fefefe;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: rgba(84, 97, 110, 0.3); }
+    background-color: rgba(53, 70, 114, 0.3); }
   .keyboard-key:active, .keyboard-key:checked {
     color: #ffffff;
     border: 1px solid #ff6a00;
     background-color: #ff6a00; }
   .keyboard-key:grayed {
-    color: #5a5c5e;
+    color: #505255;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: rgba(69, 79, 89, 0.05); }
+    background-color: rgba(41, 55, 90, 0.05); }
 
 .keyboard-subkeys {
   color: #fefefe;
   padding: 5px;
   -arrow-border-radius: 2px;
-  -arrow-background-color: rgba(20, 23, 26, 0.8);
+  -arrow-background-color: rgba(6, 8, 13, 0.8);
   -arrow-border-width: 1px;
   -arrow-border-color: rgba(0, 0, 0, 0.4);
   -arrow-base: 20px;

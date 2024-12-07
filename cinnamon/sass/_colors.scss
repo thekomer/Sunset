@@ -53,18 +53,20 @@ $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), 
 $tooltip_bg_color: darken($bg_color, 5%);
 $tooltip_fg_color: $fg_color;
 $tooltip_border_color: transparentize(white, 0.9);
+
+// Headerbar
+$headerbar_color: mix($base_color, darken($bg_color, 8%), 30%);
+$headerbar_fg_color: $text_color;
+
 // OSD
 $osd_fg_color: #fefefe;
-$osd_bg_color:  transparentize(#14171a, 0.2);
+// $osd_bg_color:  transparentize(#14171a, 0.2);
+$osd_bg_color:  transparentize($headerbar_color, 0.2);
 $osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_button_border: transparentize(darken($osd_bg_color, 20%), 0.6);
 $osd_entry_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
-
-// Headerbar
-$headerbar_color: mix($base_color, darken($bg_color, 8%), 30%);
-$headerbar_fg_color: $text_color;
 
 // Panel
 $panel_bg: $headerbar_color;
