@@ -619,7 +619,7 @@ StScrollBar {
 }
 
 .expo-background {
-  background-color: opacify($osd_bg_color, 1);
+  background-color: opacify($bg_color, 1);
 }
 
 .workspace {
