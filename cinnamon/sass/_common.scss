@@ -1013,13 +1013,13 @@ StScrollBar {
 #notification {
   border: 1px solid $borders_color;
   border-radius: 0.6em;//3px;
-  background-color: $bg_color;
+  background-color: $osd_bg_color;
   padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
-  color: $fg_color;
+  color: $osd_fg_color;
 
   .popup-menu & {
     color: $fg_color;

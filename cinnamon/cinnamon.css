@@ -841,13 +841,13 @@ StScrollBar {
 #notification {
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em;
-  background-color: #0E111D;
+  background-color: rgba(6, 8, 13, 0.8);
   padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
-  color: #BFC3CD; }
+  color: #fefefe; }
   .popup-menu #notification {
     color: #BFC3CD;
     border-image: url("dark-assets/misc/message.svg") 9 9 9 9; }
