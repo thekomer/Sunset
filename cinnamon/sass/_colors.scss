@@ -61,7 +61,7 @@ $headerbar_fg_color: $text_color;
 // OSD
 $osd_fg_color: #fefefe;
 // $osd_bg_color:  transparentize(#14171a, 0.2);
-$osd_bg_color:  transparentize($headerbar_color, 0.2);
+$osd_bg_color:  transparentize($headerbar_color, 0.15);
 $osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_button_border: transparentize(darken($osd_bg_color, 20%), 0.6);
 $osd_entry_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
