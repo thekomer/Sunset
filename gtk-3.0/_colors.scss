@@ -77,6 +77,9 @@ $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_col
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: transparentize(white, 0.9);
 
+$terminal_bg_color: $headerbar_color;
+$terminal_fg_color: $headerbar_fg_color;
+
 $base_hover_color: transparentize($fg_color, 0.95);
 
 $shadow_color: transparentize(black, 0.9);

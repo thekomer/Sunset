@@ -7413,3 +7413,28 @@ MsdOsdWindow.background.osd {
     background-color: #ffffff;
     border: none;
     border-radius: 5px; }
+
+vte-terminal.terminal-screen {
+  -TerminalScreen-background-darkness: 1.0;
+  background-color: #06080d;
+  color: #bfc3cd; }
+
+vte-terminal {
+  -TerminalScreen-background-darkness: 1.0;
+  background-color: #06080d;
+  color: #bfc3cd; }
+
+.terminator-terminal-window > paned {
+  background-color: #06080d;
+  color: #bfc3cd; }
+  .terminator-terminal-window > paned.wide {
+    background-color: #06080d;
+    color: #bfc3cd; }
+
+PantheonTerminalPantheonTerminalWindow.background {
+  background-color: #06080d;
+  color: #bfc3cd; }
+
+.tilix-background, .tilix-background vte-terminal {
+  background-color: #06080d;
+  color: #bfc3cd; }

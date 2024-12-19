@@ -1,0 +1,46 @@
+//
+// GNOME Terminal
+//
+vte-terminal.terminal-screen {
+  -TerminalScreen-background-darkness: 1.0;
+  background-color: $terminal_bg_color;
+  color: $terminal_fg_color;
+}
+
+//
+// MATE Terminal
+//
+vte-terminal {
+  -TerminalScreen-background-darkness: 1.0;
+  background-color: $terminal_bg_color;
+  color: $terminal_fg_color;
+}
+
+//
+// Terminator
+//
+.terminator-terminal-window > paned {
+  background-color: $terminal_bg_color;
+  color: $terminal_fg_color;
+
+  &.wide {
+    background-color: $terminal_bg_color;
+    color: $terminal_fg_color;
+  }
+}
+
+//
+// Pantheon Terminal
+//
+PantheonTerminalPantheonTerminalWindow.background {
+   background-color: $terminal_bg_color;
+   color: $terminal_fg_color;
+}
+
+// Tilix
+.tilix-background {
+  &, vte-terminal {
+    background-color: $terminal_bg_color;
+    color: $terminal_fg_color;
+  }
+}
