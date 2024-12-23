@@ -268,21 +268,21 @@ StScrollBar {
   padding: 8px; }
 
 /* * * * * * * * *
- * Popvers/Menus *
+ * Popovers/Menus *
  * * * * * * * * */
 .menu {
   color: #BFC3CD;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  border-radius: 3px;
+  border-radius: 0.4em;
   background-color: rgba(14, 17, 29, 0.99); }
   .menu.top {
-    border-radius: 0 0 3px 3px; }
+    border-radius: 0 0 0.4em 0.4em; }
   .menu.bottom {
-    border-radius: 3px 3px 0 0; }
+    border-radius: 0.4em 0.4em 0 0; }
   .menu.left {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 0.4em 0.4em 0; }
   .menu.right {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 0.4em 0 0 0.4em; }
 
 .popup-sub-menu {
   background-color: #131727;
@@ -322,7 +322,7 @@ StScrollBar {
   padding: 1em 0em;
   color: red;
   border: 1px solid rgba(0, 0, 0, 0.6);
-  border-radius: 3px; }
+  border-radius: 0.4em; }
 
 .popup-combobox-item {
   spacing: 1em; }
