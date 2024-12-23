@@ -303,7 +303,8 @@ StScrollBar {
   padding: .4em 1.75em;
   spacing: 1em;
   border-left-width: 0;
-  border-right-width: 0; }
+  border-right-width: 0;
+  border-radius: 0.4em; }
   .popup-menu-item:active {
     color: #ffffff;
     background-color: #ff6a00; }

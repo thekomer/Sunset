@@ -329,6 +329,7 @@ StScrollBar {
   // border: 1px solid transparent;
   border-left-width: 0;
   border-right-width: 0;
+  border-radius: 0.4em;
 
   &:active {
     color: $selected_fg_color;
