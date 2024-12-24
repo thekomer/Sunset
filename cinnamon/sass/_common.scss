@@ -2098,8 +2098,8 @@ StScrollBar {
 }
 
 .workspace-graph .workspace {
-  border: 1px solid transparentize(black, 0.6);
-  background-color: transparentize(black, 0.8);
+  border: 1px solid $borders_color;// transparentize(black, 0.6);
+  background-color: transparentize($bg_color, 0.5);
 }
 
 .workspace-graph .workspace:active {
@@ -2107,17 +2107,17 @@ StScrollBar {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: lighten($panel_bg, 15%);
-  -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: lighten($panel_bg, 15%);
-  -inactive-window-border: rgba(0, 0, 0, 0.8);
+  -active-window-background: lighten($panel_bg, 25%);
+  -active-window-border: rgba(255, 255, 255, 0.4);
+  //-inactive-window-background: transparent;
+  -inactive-window-border: rgba(255, 255, 255, 0.2);
 }
 
 .workspace-graph .workspace:active .windows {
   -active-window-background: lighten($panel_bg, 25%);
-  -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: lighten($panel_bg, 5%);
-  -inactive-window-border: rgba(0, 0, 0, 0.8);
+  -active-window-border: rgba(255, 255, 255, 0.4);
+  //-inactive-window-background: transparent;
+  -inactive-window-border: rgba(255, 255, 255, 0.2);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * *

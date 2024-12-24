@@ -1706,23 +1706,21 @@ StScrollBar {
   spacing: 6px; }
 
 .workspace-graph .workspace {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  background-color: rgba(0, 0, 0, 0.2); }
+  border: 1px solid rgba(191, 195, 205, 0.05);
+  background-color: rgba(14, 17, 29, 0.5); }
 
 .workspace-graph .workspace:active {
   border: 1px solid #ff6a00; }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: #1e2841;
-  -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #1e2841;
-  -inactive-window-border: rgba(0, 0, 0, 0.8); }
+  -active-window-background: #2e3e64;
+  -active-window-border: rgba(255, 255, 255, 0.4);
+  -inactive-window-border: rgba(255, 255, 255, 0.2); }
 
 .workspace-graph .workspace:active .windows {
   -active-window-background: #2e3e64;
-  -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: #0e131e;
-  -inactive-window-border: rgba(0, 0, 0, 0.8); }
+  -active-window-border: rgba(255, 106, 0, 0.6);
+  -inactive-window-border: rgba(255, 255, 255, 0.2); }
 
 /* * * * * * * * * * * * * * * * * * * * * * * *
  * Panel Launchers Applet (panelLaunchers.js)  *
