@@ -628,7 +628,8 @@ StScrollBar {
   padding: .5em;
   min-width: 350px;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  background-color: #131727; }
+  background-color: #131727;
+  border-radius: 0.4em; }
 
 .calendar-events-no-events-button {
   margin: 6px 0 6px 0;
