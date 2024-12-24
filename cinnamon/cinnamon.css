@@ -342,7 +342,15 @@ StScrollBar {
   font-weight: normal; }
 
 .popup-device-menu-item {
-  spacing: .5em; }
+  spacing: .5em;
+  font-weight: bold;
+  color: #BFC3CD; }
+  .popup-device-menu-item:insensitive {
+    color: #BFC3CD;
+    spacing: 1em; }
+  .popup-device-menu-item .popup-inactive-menu-item {
+    font-weight: normal;
+    color: #BFC3CD; }
 
 .popup-subtitle-menu-item {
   font-weight: normal; }
