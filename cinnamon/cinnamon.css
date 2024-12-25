@@ -816,32 +816,37 @@ StScrollBar {
   font-weight: bold; }
 
 .calendar-today {
-  color: #ffffff;
-  background-color: rgba(255, 106, 0, 0.4);
+  color: #ff6a00;
+  font-weight: bold;
   border: 1px solid #ff6a00; }
   .calendar-today:selected {
-    color: #ff6a00;
-    font-weight: bold; }
+    background-color: rgba(255, 106, 0, 0.4); }
     .calendar-today:selected:hover {
       color: #ffffff;
-      border-color: rgba(255, 255, 255, 0.4); }
+      background: #ff6a00; }
 
 .calendar-not-today {
   color: #BFC3CD; }
-  .calendar-not-today:selected {
+  .calendar-not-today:hover {
+    font-weight: bold;
     color: #ffffff;
-    background-color: rgba(191, 195, 205, 0.4); }
+    background: rgba(255, 255, 255, 0.075); }
+  .calendar-not-today:selected {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(255, 106, 0, 0.4); }
     .calendar-not-today:selected:hover {
       font-weight: bold;
-      color: #ffffff; }
+      color: #ffffff;
+      background: #ff6a00; }
 
 .calendar-other-month-day {
   color: rgba(191, 195, 205, 0.3);
-  opacity: 1; }
-
-.calendar-other-month-day:hover {
-  color: #ffffff;
-  opacity: 1; }
+  font-weight: 200; }
+  .calendar-other-month-day:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    color: #BFC3CD;
+    font-weight: 200; }
 
 .calendar-week-number {
   color: rgba(191, 195, 205, 0.6);
@@ -1719,7 +1724,7 @@ StScrollBar {
 
 .workspace-graph .workspace:active .windows {
   -active-window-background: #2e3e64;
-  -active-window-border: rgba(255, 106, 0, 0.6);
+  -active-window-border: rgba(255, 255, 255, 0.4);
   -inactive-window-border: rgba(255, 255, 255, 0.2); }
 
 /* * * * * * * * * * * * * * * * * * * * * * * *
