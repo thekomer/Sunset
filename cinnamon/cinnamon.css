@@ -274,7 +274,8 @@ StScrollBar {
   color: #BFC3CD;
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.4em;
-  background-color: rgba(14, 17, 29, 0.99); }
+  background-color: rgba(14, 17, 29, 0.99);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1); }
   .menu.top {
     border-radius: 0 0 0.4em 0.4em; }
   .menu.bottom {
@@ -1226,7 +1227,8 @@ StScrollBar {
     background-clip: padding-box;
     background-color: rgba(255, 255, 255, 0.075);
     -gtk-icon-effect: highlight;
-    color: #ffffff; }
+    color: #ffffff;
+    border: 1px solid rgba(191, 195, 205, 0.05); }
 
 .menu-places-box {
   padding: 10px;

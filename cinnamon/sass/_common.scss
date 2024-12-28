@@ -291,6 +291,7 @@ StScrollBar {
   border: 1px solid $borders_color;
   border-radius: $radius; // 3px;
 	background-color: transparentize($bg_color, 0.01);
+  box-shadow: 0 0 6px $shadow_color;
 
   &.top {
     border-radius: 0 0 $radius $radius; // 0 0 3px 3px;
@@ -1491,6 +1492,7 @@ StScrollBar {
       background-color: transparentize(white, 0.925);
       -gtk-icon-effect: highlight;
       color: $selected_fg_color;
+      border: 1px solid $borders_color;
     }
   }
 
