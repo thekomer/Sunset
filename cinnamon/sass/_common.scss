@@ -715,13 +715,13 @@ StScrollBar {
 }
 
 .calendar-main-box {
-	margin: 0 .8em .5em .8em;
+	margin: .5em .8em 0 .8em;
 }
 
 .calendar-events-main-box {
   height: 300px;
 	margin-right: .5em;
-  margin-top: .5em;
+  //margin-top: .5em;
 	padding: .5em;
 	min-width: 350px;
 	border: 1px solid $borders_color;
