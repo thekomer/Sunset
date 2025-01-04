@@ -1104,7 +1104,7 @@ StScrollBar {
 .switcher-list {
   color: $fg_color;
   border: 1px solid transparentize($accent_color, 0.15);
-  background-color: osd_bg_color;
+  background-color: $osd_bg_color;
   border-radius: $radius;
   padding: 20px;
 
@@ -1125,10 +1125,10 @@ StScrollBar {
 
     &:selected {
       color: $selected_fg_color;
+      font-weight: bold;
       background-color: transparentize($accent_color, 0.50);
       //border: 0px solid $accent_color;
       border: 1px solid transparentize($accent_color, 0.35);
-
     }
   }
 

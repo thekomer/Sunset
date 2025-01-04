@@ -908,7 +908,7 @@ StScrollBar {
 .switcher-list {
   color: #BFC3CD;
   border: 1px solid rgba(255, 106, 0, 0.85);
-  background-color: osd_bg_color;
+  background-color: rgba(6, 8, 13, 0.85);
   border-radius: 0.5em;
   padding: 20px; }
   .switcher-list > StBoxLayout {
@@ -923,6 +923,7 @@ StScrollBar {
       border: 1px solid rgba(255, 106, 0, 0.85); }
     .switcher-list .item-box:selected {
       color: #ffffff;
+      font-weight: bold;
       background-color: rgba(255, 106, 0, 0.5);
       border: 1px solid rgba(255, 106, 0, 0.65); }
   .switcher-list .thumbnail {
