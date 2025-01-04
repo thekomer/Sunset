@@ -1104,8 +1104,8 @@ StScrollBar {
 .switcher-list {
   color: $fg_color;
   border: 1px solid transparentize($accent_color, 0.15);
-  background-color: transparentize($bg_color, 0.15);
-  border-radius: 0.6em;
+  background-color: osd_bg_color;
+  border-radius: $radius;
   padding: 20px;
 
   > StBoxLayout {
@@ -1116,7 +1116,7 @@ StScrollBar {
 
   .item-box {
     padding: 8px;
-    border-radius: 0.6em;
+    border-radius: $radius;
 
     &:outlined {
       padding: 8px;
