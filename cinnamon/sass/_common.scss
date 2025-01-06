@@ -1036,7 +1036,7 @@ StScrollBar {
 
 #notification {
   border: 1px solid $borders_color;
-  border-radius: 0.6em;//3px;
+  border-radius: $radius;
   background-color: $osd_bg_color;
   padding: 13px;
   spacing-rows: 10px;

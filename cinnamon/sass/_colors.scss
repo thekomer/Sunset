@@ -28,7 +28,7 @@ $selected_fg_color: #ffffff;
 $selected_bg_color: if($variant == 'light', #92b372, $accent_color);
 
 //$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
-$borders_color: if($variant =='light', darken($bg_color,20%), transparentize($fg_color, 0.95));
+$borders_color: if($variant =='light', darken($bg_color,20%), transparentize($fg_color, 0.90));
 $borders_color_active: transparentize(mix($fg_color,$accent_color,70%), 0.75);
 $separator_color: if($variant == 'light', #cfcfcf, darken($bg_color, 6%));
 $link_color: if($variant == 'light', darken($accent_color,10%),
