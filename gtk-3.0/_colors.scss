@@ -16,6 +16,9 @@ $headerbar_fg_color: $text_color;
 $sidebar_bg_color: if($variant == 'light', #222e39, $headerbar_color);
 $sidebar_fg_color: darken($fg_color, 2%);
 
+//main variable
+$radius: 0.5em;
+
 // Primary colors
 $lime: #71f79f;
 $red: #FF0000;
@@ -72,7 +75,7 @@ $window_border_backdrop_color: mix($headerbar_color, $fg_color, 92%);
 $tooltip_borders_color: mix($headerbar_color, $fg_color, 92%);
 
 $osd_fg_color: #fefefe;
-$osd_bg_color:  transparentize($headerbar_color, 0.2);
+$osd_bg_color:  transparentize($headerbar_color, 0.15);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: transparentize(white, 0.9);

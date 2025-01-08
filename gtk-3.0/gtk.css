@@ -200,7 +200,7 @@ button:focus:visited {
 .app-notification.frame {
   padding: 1.5em;
   border-radius: .5em;
-  background-color: rgba(6, 8, 13, 0.8);
+  background-color: rgba(6, 8, 13, 0.85);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 2px);
   background-clip: padding-box;
   border: 1px solid rgba(255, 255, 255, 0.05); }
@@ -332,7 +332,7 @@ assistant .sidebar label.highlight {
 .app-notification.frame, .osd {
   color: #fefefe;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(6, 8, 13, 0.8);
+  background-color: rgba(6, 8, 13, 0.85);
   background-clip: padding-box;
   outline-color: rgba(254, 254, 254, 0.3);
   text-shadow: 0 1px black;
@@ -600,7 +600,7 @@ button.osd {
   button.osd:backdrop {
     color: #fefefe;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.8), rgba(6, 8, 13, 0.8));
+    background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.85), rgba(6, 8, 13, 0.85));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -646,7 +646,7 @@ button.osd {
   popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop, .osd button:backdrop {
     color: #fefefe;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.8), rgba(6, 8, 13, 0.8));
+    background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.85), rgba(6, 8, 13, 0.85));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -3912,7 +3912,7 @@ scale {
       .osd scale slider:backdrop {
         color: #fefefe;
         border-color: rgba(255, 255, 255, 0.1);
-        background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.8), rgba(6, 8, 13, 0.8));
+        background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.85), rgba(6, 8, 13, 0.85));
         background-clip: padding-box;
         box-shadow: none;
         text-shadow: none;
@@ -4711,7 +4711,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:backdrop {
     color: #fefefe;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.8), rgba(6, 8, 13, 0.8));
+    background-image: linear-gradient(to bottom, rgba(6, 8, 13, 0.85), rgba(6, 8, 13, 0.85));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -4819,12 +4819,12 @@ searchbar,
 toolbar, .primary-toolbar {
   padding: 4px 3px 3px 4px; }
   .osd toolbar, .osd .primary-toolbar {
-    background-color: rgba(1, 2, 3, 0.8); }
+    background-color: rgba(1, 2, 3, 0.85); }
   toolbar.osd, .primary-toolbar.osd {
     padding: 13px;
     border: none;
     border-radius: 0.5em;
-    background-color: rgba(1, 2, 3, 0.8); }
+    background-color: rgba(1, 2, 3, 0.85); }
     toolbar.osd.left, toolbar.osd.right, toolbar.osd.top, toolbar.osd.bottom, .primary-toolbar.osd.left, .primary-toolbar.osd.right, .primary-toolbar.osd.top, .primary-toolbar.osd.bottom {
       border-radius: 0; }
   toolbar.horizontal separator, .primary-toolbar.horizontal separator {
@@ -4868,11 +4868,11 @@ searchbar {
 tooltip {
   padding: 4px;
   /* not working */
-  border-radius: 0.6em;
+  border-radius: 0.5em;
   box-shadow: none;
   text-shadow: 0 1px black; }
   tooltip.background {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(6, 8, 13, 0.85);
     background-clip: padding-box;
     border: 1px solid #15171c; }
   tooltip decoration {
@@ -4881,7 +4881,7 @@ tooltip {
   tooltip button:visited {
     padding: 4px;
     background-color: transparent;
-    color: white; }
+    color: #bfc3cd; }
 
 /**************
 * Tree Views *
@@ -6516,7 +6516,7 @@ combobox:drop(active) button.combo:not(window) {
  * Log out menu *
  * **************/
 .xfsm-logout-dialog {
-  background-color: rgba(6, 8, 13, 0.8);
+  background-color: rgba(6, 8, 13, 0.85);
   color: #fefefe;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.4em; }
@@ -7402,7 +7402,7 @@ MsdOsdWindow.background.osd {
   color: #fefefe;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 9px;
-  background-color: rgba(6, 8, 13, 0.8);
+  background-color: rgba(6, 8, 13, 0.85);
   background-clip: padding-box;
   box-shadow: none; }
   MsdOsdWindow.background.osd .progressbar {
