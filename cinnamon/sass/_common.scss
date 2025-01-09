@@ -1202,7 +1202,7 @@ StScrollBar {
     margin: 0px;
     padding: 10px;
     border: none;
-    background-color: $osd_bg_color; //$bg_color;
+    background-color: transparent;
 
     .modal-dialog-button {
       padding-top: 0;
