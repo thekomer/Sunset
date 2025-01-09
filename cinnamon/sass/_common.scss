@@ -46,7 +46,8 @@ stage {
   @include button(osd);
 
   &:hover { @include button(osd-hover); }
-  &:focus { color: $accent_color; }
+  &:focus { @include button(osd-focus); }
+  &:focus:hover { @include button(osd-focus-hover); }
   &:active { @include button(osd-active); }
   &:insensitive { @include button(osd-insensitive); }
 }
@@ -1193,10 +1194,10 @@ StScrollBar {
 .flashspot { background-color: white; }
 
 .modal-dialog {
-  background-color: $bg_color;
+  background-color: $osd_bg_color; //$bg_color;
   border: 1px solid $borders_color;
-  border-radius: 3px;
-  padding: 5px 10px;
+  border-radius: $radius;
+  padding: .2em .4em; //5px 10px;
 
   > StBoxLayout:first-child {
     padding: 10px;
@@ -1207,14 +1208,14 @@ StScrollBar {
     margin: 0px;
     padding: 10px;
     border: none;
-    background-color: $bg_color;
+    background-color: $osd_bg_color; //$bg_color;
 
     .modal-dialog-button {
       padding-top: 0;
       padding-bottom: 0;
       height: 30px;
 
-      @extend %button;
+      @extend %osd_button;
     }
   }
 

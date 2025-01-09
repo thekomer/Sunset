@@ -127,10 +127,22 @@
     background-color: $osd_button_bg;
   }
 
+  @else if $t==osd-focus {  // focused osd button
+    color: $osd_fg_color;
+    border: 1px solid mix($accent_color, $borders_color, 50%); //$accent_color;
+    background-color: $osd_button_bg;
+  }
+
   @else if $t==osd-hover {  // active osd button
     color: $osd_fg_color;
     border: 1px solid $osd_button_border;
-    background-color: opacify(lighten($osd_button_bg, 7%), 0.1);
+    background-color: transparentize($accent_color, 0.5); //opacify(lighten($osd_button_bg, 7%), 0.1);
+  }
+
+  @else if $t==osd-focus-hover {  // focused osd button
+    color: $osd_fg_color;
+    border: 1px solid mix($accent_color, $borders_color, 50%); //$accent_color;
+    background-color: transparentize($accent_color, 0.5); //opacify(lighten($osd_button_bg, 7%), 0.1);
   }
 
   @else if $t==osd-active {  // active osd button
