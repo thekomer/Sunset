@@ -1481,7 +1481,7 @@ StScrollBar {
 		transition: $button_transition;
     padding: .4em .5em;
     border: 1px solid $borders_color;
-    border-radius: 0.5em; //9px;
+    border-radius: $radius;
     &:hover {
 			background-clip: padding-box;
       background-color: transparentize(white, 0.925);
@@ -1509,7 +1509,7 @@ StScrollBar {
   &-application-button {
     //padding: 0.2em;
     border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
-    border-radius: 0.5em;
+    border-radius: $radius;
 
     // This style is used in menu application buttons for applications which were newly installed
     &:highlighted { font-weight: bold; }
@@ -1523,7 +1523,7 @@ StScrollBar {
       background: transparentize(white, 0.925);
       //border: 1px solid transparentize($accent_color, 0.6);
       //border: 1px solid $borders_color;
-      border-radius: 0.5em;
+      border-radius: $radius;
       -gtk-icon-effect: highlight;
 
       &:highlighted { font-weight: bold; }
@@ -1535,18 +1535,19 @@ StScrollBar {
 
   &-category-button {
     padding: 7px;
-    border-radius: 1em;
+    border-radius: $radius;
     border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
 
 		&-hover {
-      border-radius: 1em;
+      border-radius: $radius;
     }
     &-selected {
       padding: 7px;
       color: $selected_fg_color;
+      font-weight: bold;
       @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       border: 1px solid $borders_color;
-      border-radius: 1em; //9px;
+      border-radius: $radius;
     }
     &-active{
 			background: blue;
@@ -1583,13 +1584,14 @@ StScrollBar {
 }
 
 #menu-search-entry {
-  min-width: 250px;
+  border-radius: $radius;
+  min-width: 25em;
   min-height: 1.1em;
   font-weight: normal;
   caret-color: $accent_color;
 
   @extend %entry;
-  margin: 0em;
+  margin-bottom: .1em;
 }
 
 .menu-search-entry-icon {

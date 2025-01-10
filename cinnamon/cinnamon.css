@@ -1301,18 +1301,19 @@ StScrollBar {
 
 .menu-category-button {
   padding: 7px;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border: 1px solid rgba(191, 195, 205, 0); }
   .menu-category-button-hover {
-    border-radius: 1em; }
+    border-radius: 0.5em; }
   .menu-category-button-selected {
     padding: 7px;
     color: #ffffff;
+    font-weight: bold;
     background-gradient-direction: horizontal;
     background-gradient-start: #ff3300;
     background-gradient-end: #ffa100;
     border: 1px solid rgba(191, 195, 205, 0.1);
-    border-radius: 1em; }
+    border-radius: 0.5em; }
   .menu-category-button-active {
     background: blue; }
   .menu-category-button-greyed {
@@ -1346,11 +1347,12 @@ StScrollBar {
   padding-right: 30px; }
 
 #menu-search-entry {
-  min-width: 250px;
+  border-radius: 0.5em;
+  min-width: 25em;
   min-height: 1.1em;
   font-weight: normal;
   caret-color: #ff6a00;
-  margin: 0em; }
+  margin-bottom: .1em; }
 
 .menu-search-entry-icon {
   icon-size: 0.9em;
