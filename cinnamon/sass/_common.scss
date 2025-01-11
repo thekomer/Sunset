@@ -957,7 +957,7 @@ StScrollBar {
 .calendar-day {
   border-width: 0;
   color: transparentize($fg_color, 0.1);
-  border-radius: 0.5em;
+  border-radius: $radius; // 0.5em;
 }
 
 .calendar-day-top {
@@ -1228,8 +1228,8 @@ StScrollBar {
 .run-dialog {
   padding: 10px 15px 10px 15px;
   border: 1px solid $borders_color;
-  border-radius: 0.6em;//3px;
-  background-color: transparentize($bg_color, 0.25);
+  border-radius: $radius;//3px;
+  background-color: $osd_bg_color;
 
   > * { padding: 0; }
 
@@ -1237,13 +1237,13 @@ StScrollBar {
     font-size: 1.3em;
     font-weight: bold;
     color: $fg_color;
-    padding-bottom: 15px;
+    padding-bottom: 1em; //15px;
     text-align: center;
   }
 
   &-description {
     color: $fg_color;
-    padding-top: 15px;
+    padding-top: 1em; //15px;
     text-align: center;
 
     &.error { color: $error_color; }
@@ -1263,8 +1263,8 @@ StScrollBar {
   &-entry {
     width: 21em;
     height: 1.2em;
-    padding: 7px;
-    border-radius: 1.2em;
+    padding: 0.5em; //7px;
+    border-radius: $radius; //1.2em;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
     selection-background-color: $accent_color;
@@ -1319,7 +1319,7 @@ StScrollBar {
     width: 21em;
     height: 1.2em;
     padding: 7px;
-    border-radius: 1em;
+    border-radius: $radius; // 1em;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
     selection-background-color: $accent_color;
@@ -1438,7 +1438,7 @@ StScrollBar {
   min-width: 2em;
   font-size: 1.4em;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: $radius;
   box-shadow: none;
 
   @include button(osd);
@@ -1614,7 +1614,7 @@ StScrollBar {
   padding: 16px;
   color: $fg_color;
   border: 1px solid $borders_color;
-  border-radius: 5px;
+  border-radius: $radius; // 5px;
   background-color: $bg_color;
 }
 
@@ -1635,19 +1635,19 @@ StScrollBar {
   color: $fg_color;
   background-color: $bg_color;
   border: 1px solid $borders_color;
-  border-radius: 5px;
+  border-radius: $radius; //5px;
 
   .osd-monitor-label { font-size: 3em; }
 
   .level {
     padding: 0;
-    height: 0.7em;
+    height: 0.8em;
     background-color: transparentize(black, 0.5);
-    border-radius: 2px;
+    border-radius: 0.4em;
   }
 
   .level-bar {
-    border-radius: 2px;
+    border-radius: 0.4em;// 2px;
     background-color: $accent_color;
   }
 }
@@ -1750,7 +1750,7 @@ StScrollBar {
     color: $fg_color;
     border: 1px solid $borders_color;
     background-color: $bg_color;
-    border-radius: 3px;
+    border-radius: $radius; // 3px;
     padding: 6px 12px 12px 12px;
     font-size: 1em;
   }
@@ -1873,7 +1873,7 @@ StScrollBar {
     color: $fg_color;
     border: 1px solid $borders_color;
     background-color: $bg_color;
-    border-radius: 3px;
+    border-radius: $radius; // 3px;
     padding: 0px;
 
     > StBoxLayout {
@@ -1882,7 +1882,7 @@ StScrollBar {
 
     .item-box {
       padding: 10px;
-      border-radius: 2px;
+      border-radius: $radius; //2px;
       spacing: 4px;
 
       &:outlined {
@@ -1999,6 +1999,8 @@ StScrollBar {
     // border-bottom: 1px ;
     color: $fg_color;
 
+//FIXME SLIDERS- return pixels
+
     StButton {
       width: 22px;
       height: 13px;
@@ -2082,7 +2084,7 @@ StScrollBar {
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
       color: $selected_fg_color;
-      border-radius: 7px;
+      border-radius: $radius;// 7px;
     }
   }
 
@@ -2090,7 +2092,7 @@ StScrollBar {
     @include bg_gradient(horizontal, $theme_gradient_start,
     	$theme_gradient_end, 0.5);
     color: $selected_fg_color;
-    border-radius: 7px;
+    border-radius: $radius;// 7px;
   }
 }
 
@@ -2140,7 +2142,7 @@ StScrollBar {
     &:hover {
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.7);
-      border-radius: 7px;
+      border-radius: $radius; // 7px;
     }
   }
 
@@ -2215,7 +2217,7 @@ StScrollBar {
       // background-color: $accent_color;
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
-      border-radius: 7px;
+      border-radius: $radius; // 7px;
 
       &-label { color: $selected_fg_color; }
     }
@@ -2261,7 +2263,7 @@ StScrollBar {
 
 .user-icon {
     border: 1px solid transparentize($fg_color, 0.5);
-    border-radius: 1em;
+    border-radius: $radius; // 1em;
 }
 
 .user-label {
@@ -2284,7 +2286,7 @@ StScrollBar {
 
   &-with-borders {
     border: 1px solid $borders_color;
-    border-radius: 5px;
+    border-radius: $radius; // 5px;
     background-color: $bg_color;
     color: $fg_color;
     padding: 12px;
@@ -2298,7 +2300,7 @@ StScrollBar {
   &-with-borders-and-header {
     border: 1px solid $borders_color;
     border-top-width: 0;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 $radius $radius; // 0 0 5px 5px;
     background-color: $bg_color;
     color: $fg_color;
     border-radius: 0;
@@ -2314,7 +2316,7 @@ StScrollBar {
 
   &-header {
     border: 1px solid $borders_color;
-    border-radius: 5px 5px 0 0;
+    border-radius: $radius $radius 0 0; // 5px 5px 0 0;
     background-color: darken($bg_color, 3%);
     color: $fg_color;
     font-size: 1em;
@@ -2330,7 +2332,7 @@ StScrollBar {
 
 .photoframe-box {
   border: 1px solid $borders_color;
-  border-radius: 5px;
+  border-radius: $radius; // 5px;
   background-color: $bg_color;
   color: $fg_color;
   padding: 12px;
