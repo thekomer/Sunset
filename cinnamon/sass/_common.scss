@@ -19,7 +19,7 @@ stage {
 
 
   &, &:focus, &:hover, &:hover:focus, &:active, &:active:focus, &:insensitive {
-    border-radius: 0.5em;
+    border-radius: $radius;
   }
 
   @include button(normal);
@@ -35,7 +35,7 @@ stage {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
-  border-radius: 0.5em;
+  border-radius: $radius;
 
   @include button(osd);
 
@@ -56,7 +56,7 @@ stage {
   selection-background-color: $accent_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 1em;
+  border-radius: $radius;
 
   @include entry(normal);
 
@@ -77,7 +77,7 @@ stage {
   selection-background-color: $accent_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 1em;
+  border-radius: $radius;
 
   @include entry(osd);
 
@@ -255,7 +255,7 @@ StScrollBar {
 
 #Tooltip {
   border: 1px solid $tooltip_border_color;
-  border-radius: 3px;
+  border-radius: $radius;
   padding: 5px 12px;
   background-color: $tooltip_bg_color;
   color: $tooltip_fg_color;
@@ -271,7 +271,7 @@ StScrollBar {
 #LookingGlassDialog {
     color: $fg_color;
     border: 1px solid $borders_color;
-    border-radius: 3px;
+    border-radius: $radius;
     background-color: $bg_color;
     spacing: 4px;
     padding: 8px;
@@ -573,7 +573,7 @@ StScrollBar {
   border: 1px solid $osd_bg_color;
   color: $osd_fg_color;
   spacing: 8px;
-  border-radius: 2px;
+  border-radius: $radius;
   font-size: 0.9em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 8px;
@@ -587,7 +587,7 @@ StScrollBar {
 
 .window-border {
   border: 1px $accent_color;
-  border-radius: 2px;
+  border-radius: $radius;
   background-color: rgba(255,255,255,.05);
   /* Cover rounded corners and some bad adjustment gaps */
   box-shadow: 0 0 0 1px $accent_color inset;
@@ -601,7 +601,7 @@ StScrollBar {
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
   height: 1.5em;
-  border-radius: 1em; // 2px;
+  border-radius: $radius; // 2px;
   font-size: 1em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
@@ -623,12 +623,12 @@ StScrollBar {
 .expo-workspace-thumbnail-frame {
   border: 2px solid rgba(255,255,255,0.0);
   background-color: rgba(255,255,255,0.0);
-  border-radius: 2px;
+  border-radius: $radius; //2px;
 
   &#active {
     border: 2px solid $accent_color;
     background-color: black;
-    border-radius: 2px;
+    border-radius: $radius; //2px;
   }
 }
 
@@ -929,9 +929,9 @@ StScrollBar {
 
 .calendar-day-event-dot {
 	margin: 1px;
-  border-radius: 2px;
-	width: 4px;
-	height: 4px;
+  border-radius: 0.1em; //2px;
+	width: 0.2em; //4px;
+	height: 0.2em; //4px;
 }
 
 .calendar-day-base {

@@ -103,7 +103,7 @@ stage {
   selection-background-color: #ff6a00;
   selected-color: #ffffff;
   transition-duration: 300ms;
-  border-radius: 1em;
+  border-radius: 0.5em;
   color: #BFC3CD;
   background-color: #131727;
   border: 1px solid rgba(191, 195, 205, 0.1);
@@ -130,7 +130,7 @@ stage {
   selection-background-color: #ff6a00;
   selected-color: #ffffff;
   transition-duration: 300ms;
-  border-radius: 1em;
+  border-radius: 0.5em;
   color: #fefefe;
   background-color: rgba(41, 55, 90, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -286,7 +286,7 @@ StScrollBar {
  * * * * * */
 #Tooltip {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
+  border-radius: 0.5em;
   padding: 5px 12px;
   background-color: #06070c;
   color: #BFC3CD;
@@ -300,7 +300,7 @@ StScrollBar {
 #LookingGlassDialog {
   color: #BFC3CD;
   border: 1px solid rgba(191, 195, 205, 0.1);
-  border-radius: 3px;
+  border-radius: 0.5em;
   background-color: #0E111D;
   spacing: 4px;
   padding: 8px; }
@@ -553,7 +553,7 @@ StScrollBar {
   border: 1px solid rgba(6, 8, 13, 0.85);
   color: #fefefe;
   spacing: 8px;
-  border-radius: 2px;
+  border-radius: 0.5em;
   font-size: 0.9em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 8px; }
@@ -564,7 +564,7 @@ StScrollBar {
 
 .window-border {
   border: 1px #ff6a00;
-  border-radius: 2px;
+  border-radius: 0.5em;
   background-color: rgba(255, 255, 255, 0.05);
   /* Cover rounded corners and some bad adjustment gaps */
   box-shadow: 0 0 0 1px #ff6a00 inset; }
@@ -576,7 +576,7 @@ StScrollBar {
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
   height: 1.5em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   font-size: 1em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
@@ -597,11 +597,11 @@ StScrollBar {
 .expo-workspace-thumbnail-frame {
   border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 2px; }
+  border-radius: 0.5em; }
   .expo-workspace-thumbnail-frame#active {
     border: 2px solid #ff6a00;
     background-color: black;
-    border-radius: 2px; }
+    border-radius: 0.5em; }
 
 .expo-background {
   background-color: #0e111d; }
@@ -818,9 +818,9 @@ StScrollBar {
 
 .calendar-day-event-dot {
   margin: 1px;
-  border-radius: 2px;
-  width: 4px;
-  height: 4px; }
+  border-radius: 0.1em;
+  width: 0.2em;
+  height: 0.2em; }
 
 .calendar-day-base {
   font-size: 1em;
