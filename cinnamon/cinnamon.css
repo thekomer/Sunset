@@ -1370,7 +1370,7 @@ StScrollBar {
   color: #BFC3CD;
   border: 1px solid rgba(191, 195, 205, 0.1);
   border-radius: 0.5em;
-  background-color: #0E111D; }
+  background-color: rgba(6, 8, 13, 0.85); }
 
 .restart-osd {
   font-size: 1.6em; }
@@ -1381,10 +1381,10 @@ StScrollBar {
 .osd-window {
   text-align: center;
   font-weight: bold;
-  spacing: 1em;
-  padding: 20px;
-  color: #BFC3CD;
-  background-color: #0E111D;
+  spacing: 0.5em;
+  padding: 0.5em;
+  color: #fefefe;
+  background-color: rgba(6, 8, 13, 0.85);
   border: 1px solid rgba(191, 195, 205, 0.1);
   border-radius: 0.5em; }
   .osd-window .osd-monitor-label {
@@ -1393,7 +1393,8 @@ StScrollBar {
     padding: 0;
     height: 0.8em;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 0.4em; }
+    border-radius: 0.4em;
+    border: 1px solid rgba(191, 195, 205, 0.1); }
   .osd-window .level-bar {
     border-radius: 0.4em;
     background-color: #ff6a00; }
@@ -1601,20 +1602,20 @@ StScrollBar {
     icon-size: 1.4em; }
 
 .sound-track-infos {
-  padding: 5px; }
+  padding: 0.5em; }
 
 .sound-track-info {
-  padding-top: 2px;
-  padding-bottom: 2px; }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
   .sound-track-info StIcon {
-    icon-size: 16px; }
+    icon-size: 1em; }
   .sound-track-info StLabel {
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
 
 .sound-track-box {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
   max-width: 220px; }
 
 .sound-seek-box {
@@ -1694,7 +1695,7 @@ StScrollBar {
 
 .sound-player .slider {
   height: 0.5em;
-  padding: 0;
+  padding: 0em 0.5em;
   border: none;
   -slider-height: 0.5em;
   -slider-background-color: #1f253f;

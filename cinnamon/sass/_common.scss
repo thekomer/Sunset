@@ -1615,7 +1615,7 @@ StScrollBar {
   color: $fg_color;
   border: 1px solid $borders_color;
   border-radius: $radius; // 5px;
-  background-color: $bg_color;
+  background-color: $osd_bg_color;
 }
 
 .restart-osd {
@@ -1629,11 +1629,11 @@ StScrollBar {
 .osd-window {
   text-align: center;
   font-weight: bold;
-  spacing: 1em;
-  padding: 20px;
+  spacing: 0.5em;
+  padding: 0.5em;// 20px
 
-  color: $fg_color;
-  background-color: $bg_color;
+  color: $osd_fg_color;
+  background-color: $osd_bg_color;
   border: 1px solid $borders_color;
   border-radius: $radius; //5px;
 
@@ -1644,6 +1644,7 @@ StScrollBar {
     height: 0.8em;
     background-color: transparentize(black, 0.5);
     border-radius: 0.4em;
+    border: 1px solid $borders_color;
   }
 
   .level-bar {
@@ -1923,21 +1924,21 @@ StScrollBar {
 }
 
 .sound-track {
-  &-infos { padding: 5px; }
+  &-infos { padding: 0.5em; }
   &-info {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 
-    StIcon { icon-size: 16px; }
+    StIcon { icon-size: 1em; }
 
     StLabel {
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
     }
   }
   &-box {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
     max-width: 220px;
   }
 }
@@ -2026,7 +2027,7 @@ StScrollBar {
 
   .slider {
     height: 0.5em;
-    padding: 0;
+    padding: 0em 0.5em;
     border: none;
     -slider-height: 0.5em;
     -slider-background-color: if($variant == 'light', $button_border, lighten($bg_color, 10%));
