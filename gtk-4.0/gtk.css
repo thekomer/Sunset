@@ -1215,7 +1215,7 @@ calendar {
     color: #676a75; }
   calendar:selected {
     color: #ffffff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     font-weight: bold; }
     calendar:selected:hover {
@@ -1224,7 +1224,7 @@ calendar {
       color: rgba(191, 195, 205, 0.4);
       background: rgba(255, 106, 0, 0.6); }
     calendar:selected:backdrop, progressbar:backdrop progress:selected, progressbar:backdrop trough:selected, label:backdrop selection:selected {
-      border-radius: 1em;
+      border-radius: 0.5em;
       color: rgba(191, 195, 205, 0.4);
       background: rgba(255, 106, 0, 0.6);
       box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98);
@@ -1853,7 +1853,7 @@ dialog #pathbarbox {
         background: transparent; }
       dialog #pathbarbox .linked.path-bar button:selected, dialog #pathbarbox .linked.path-bar button:active, dialog #pathbarbox .linked.path-bar button:checked {
         color: #ffffff;
-        border-radius: 1em;
+        border-radius: 0.5em;
         background: linear-gradient(to right, #ff3300, #ffa100); }
         dialog #pathbarbox .linked.path-bar button:selected:hover, dialog #pathbarbox .linked.path-bar button:active:hover, dialog #pathbarbox .linked.path-bar button:checked:hover {
           box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -1861,7 +1861,7 @@ dialog #pathbarbox {
           color: rgba(191, 195, 205, 0.4);
           background: rgba(255, 106, 0, 0.6); }
         dialog #pathbarbox .linked.path-bar button:selected:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:selected, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:selected, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:selected, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:selected, dialog #pathbarbox .linked.path-bar label:backdrop selection:selected, label:backdrop dialog #pathbarbox .linked.path-bar selection:selected, dialog #pathbarbox .linked.path-bar button:active:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:active, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:active, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:active, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:active, dialog #pathbarbox .linked.path-bar label:backdrop selection:active, label:backdrop dialog #pathbarbox .linked.path-bar selection:active, dialog #pathbarbox .linked.path-bar button:checked:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:checked, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:checked, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:checked, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:checked, dialog #pathbarbox .linked.path-bar label:backdrop selection:checked, label:backdrop dialog #pathbarbox .linked.path-bar selection:checked {
-          border-radius: 1em;
+          border-radius: 0.5em;
           color: rgba(191, 195, 205, 0.4);
           background: rgba(255, 106, 0, 0.6);
           box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
@@ -2771,7 +2771,7 @@ headerbar {
   headerbar .linked > button:checked,
   headerbar .linked > button:active,
   headerbar .linked > button {
-    border-radius: 1em;
+    border-radius: 0.5em;
     border-right-style: none;
     border: none;
     box-shadow: none;
@@ -2798,7 +2798,7 @@ headerbar {
     color: #ffffff; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: #ffffff; }
@@ -5574,7 +5574,7 @@ button.raven-trigger {
         padding: 3px; }
         .raven .raven-header button.text-button.radio:active, .raven .raven-header button.text-button.radio:checked {
           color: #ffffff;
-          border-radius: 1em;
+          border-radius: 0.5em;
           background: linear-gradient(to right, #ff3300, #ffa100); }
           .raven .raven-header button.text-button.radio:active:hover, .raven .raven-header button.text-button.radio:checked:hover {
             box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -5955,7 +5955,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:checked,
 .nautilus-window .titlebar .path-bar-box button:active, .nautilus-window .titlebar .path-bar-box button:checked {
   color: #ffffff;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background: linear-gradient(to right, #ff3300, #ffa100); }
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:hover, .nautilus-window .titlebar .path-bar-box combobox.linked widget > button.text-button:hover:nth-child(2):dir(ltr), combobox.linked .nautilus-window .titlebar .path-bar-box widget > button.text-button:hover:nth-child(2):dir(ltr),
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:active:hover,
@@ -5984,7 +5984,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   progressbar:backdrop .nautilus-window .titlebar .path-bar-box trough:active,
   .nautilus-window .titlebar .path-bar-box progressbar:backdrop progress:active,
   progressbar:backdrop .nautilus-window .titlebar .path-bar-box progress:active, .nautilus-window .titlebar .path-bar-box button:checked:backdrop, .nautilus-window .titlebar .path-bar-box label:backdrop selection:checked, label:backdrop .nautilus-window .titlebar .path-bar-box selection:checked, .nautilus-window .titlebar .path-bar-box progressbar:backdrop trough:checked, progressbar:backdrop .nautilus-window .titlebar .path-bar-box trough:checked, .nautilus-window .titlebar .path-bar-box progressbar:backdrop progress:checked, progressbar:backdrop .nautilus-window .titlebar .path-bar-box progress:checked {
-    border-radius: 1em;
+    border-radius: 0.5em;
     color: rgba(191, 195, 205, 0.4);
     background: rgba(255, 106, 0, 0.6);
     box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
@@ -6183,7 +6183,7 @@ wnck-pager {
 #whiskermenu-window {
   color: #bfc3cd;
   background-color: #06080d;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border-color: transparent; }
 
 #whiskermenu-window box widget {
@@ -6224,7 +6224,7 @@ wnck-pager {
     -gtk-icon-effect: highlight; }
   #whiskermenu-window button:checked {
     color: #ffffff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
@@ -6290,7 +6290,7 @@ wnck-pager {
       background: transparent; }
     .thunar toolbar button:selected, .thunar toolbar button:active, .thunar toolbar button:checked {
       color: #ffffff;
-      border-radius: 1em;
+      border-radius: 0.5em;
       background: linear-gradient(to right, #ff3300, #ffa100); }
       .thunar toolbar button:selected:hover, .thunar toolbar button:active:hover, .thunar toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -6298,7 +6298,7 @@ wnck-pager {
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6); }
       .thunar toolbar button:selected:backdrop, .thunar toolbar label:backdrop selection:selected, label:backdrop .thunar toolbar selection:selected, .thunar toolbar progressbar:backdrop trough:selected, progressbar:backdrop .thunar toolbar trough:selected, .thunar toolbar progressbar:backdrop progress:selected, progressbar:backdrop .thunar toolbar progress:selected, .thunar toolbar button:active:backdrop, .thunar toolbar label:backdrop selection:active, label:backdrop .thunar toolbar selection:active, .thunar toolbar progressbar:backdrop trough:active, progressbar:backdrop .thunar toolbar trough:active, .thunar toolbar progressbar:backdrop progress:active, progressbar:backdrop .thunar toolbar progress:active, .thunar toolbar button:checked:backdrop, .thunar toolbar label:backdrop selection:checked, label:backdrop .thunar toolbar selection:checked, .thunar toolbar progressbar:backdrop trough:checked, progressbar:backdrop .thunar toolbar trough:checked, .thunar toolbar progressbar:backdrop progress:checked, progressbar:backdrop .thunar toolbar progress:checked {
-        border-radius: 1em;
+        border-radius: 0.5em;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(255, 106, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(255, 106, 0, 0.98); }
@@ -6319,7 +6319,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     color: #ff6a00; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked {
     color: #ffffff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100); }
     window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:hover {
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -6346,7 +6346,7 @@ window.thunar paned > scrolledwindow treeview.view {
     box-shadow: none; }
   window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned > scrolledwindow treeview.view:active, window.thunar paned > scrolledwindow treeview.view:checked {
     color: #ffffff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     border-radius: 0;
     box-shadow: none; }
@@ -7053,7 +7053,7 @@ menubar,
     .nemo-window .sidebar button:selected, .nemo-window .sidebar button:active, .nemo-window .sidebar button:checked, .nemo-window .NemoSidebar button:selected, .nemo-window .NemoSidebar button:active, .nemo-window .NemoSidebar button:checked, .nemo-window .nemo-places-sidebar button:selected, .nemo-window .nemo-places-sidebar button:active, .nemo-window .nemo-places-sidebar button:checked, .nemo-window statusbar button:selected, .nemo-window statusbar button:active, .nemo-window statusbar button:checked, .nemo-window box.toolbar button:selected, .nemo-window box.toolbar button:active, .nemo-window box.toolbar button:checked, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       transition-duration: 50ms;
       color: #ffffff;
-      border-radius: 1em;
+      border-radius: 0.5em;
       background: linear-gradient(to right, #ff3300, #ffa100); }
       .nemo-window .sidebar button:selected:hover, .nemo-window .sidebar button:active:hover, .nemo-window .sidebar button:checked:hover, .nemo-window .NemoSidebar button:selected:hover, .nemo-window .NemoSidebar button:active:hover, .nemo-window .NemoSidebar button:checked:hover, .nemo-window .nemo-places-sidebar button:selected:hover, .nemo-window .nemo-places-sidebar button:active:hover, .nemo-window .nemo-places-sidebar button:checked:hover, .nemo-window statusbar button:selected:hover, .nemo-window statusbar button:active:hover, .nemo-window statusbar button:checked:hover, .nemo-window box.toolbar button:selected:hover, .nemo-window box.toolbar button:active:hover, .nemo-window box.toolbar button:checked:hover, .nemo-window toolbar.primary-toolbar button:selected:hover, .nemo-window toolbar.primary-toolbar button:active:hover, .nemo-window toolbar.primary-toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -7215,7 +7215,7 @@ progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button
     color: #ff6a00; }
   .caja-pathbar button:checked {
     color: #ffffff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100); }
     .caja-pathbar button:checked:hover {
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }

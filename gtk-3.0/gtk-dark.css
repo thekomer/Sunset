@@ -1298,7 +1298,7 @@ calendar {
   calendar:selected {
     color: #ffffff;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     font-weight: bold; }
     calendar:selected:hover {
@@ -1937,7 +1937,7 @@ dialog #pathbarbox {
       dialog #pathbarbox .linked.path-bar button:selected, dialog #pathbarbox .linked.path-bar button:active, dialog #pathbarbox .linked.path-bar button:checked {
         color: #ffffff;
         font-weight: bold;
-        border-radius: 1em;
+        border-radius: 0.5em;
         background: linear-gradient(to right, #ff3300, #ffa100); }
         dialog #pathbarbox .linked.path-bar button:selected:hover, dialog #pathbarbox .linked.path-bar button:active:hover, dialog #pathbarbox .linked.path-bar button:checked:hover {
           box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -2871,7 +2871,7 @@ headerbar {
   headerbar .linked > button:checked,
   headerbar .linked > button:active,
   headerbar .linked > button {
-    border-radius: 1em;
+    border-radius: 0.5em;
     border-right-style: none;
     border: none;
     box-shadow: none;
@@ -2898,7 +2898,7 @@ headerbar {
     color: #ffffff; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98);
     color: #ffffff; }
@@ -5704,7 +5704,7 @@ button.raven-trigger {
         .raven .raven-header button.text-button.radio:active, .raven .raven-header button.text-button.radio:checked {
           color: #ffffff;
           font-weight: bold;
-          border-radius: 1em;
+          border-radius: 0.5em;
           background: linear-gradient(to right, #ff3300, #ffa100); }
           .raven .raven-header button.text-button.radio:active:hover, .raven .raven-header button.text-button.radio:checked:hover {
             box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -6086,7 +6086,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .titlebar .path-bar-box button:active, .nautilus-window .titlebar .path-bar-box button:checked {
   color: #ffffff;
   font-weight: bold;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background: linear-gradient(to right, #ff3300, #ffa100); }
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:hover, .nautilus-window .titlebar .path-bar-box combobox.linked widget > button.text-button:hover:nth-child(2):dir(ltr), combobox.linked .nautilus-window .titlebar .path-bar-box widget > button.text-button:hover:nth-child(2):dir(ltr),
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:active:hover,
@@ -6315,7 +6315,7 @@ wnck-pager {
 #whiskermenu-window {
   color: #bfc3cd;
   background-color: #06080d;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border-color: transparent; }
 
 #whiskermenu-window box widget {
@@ -6357,7 +6357,7 @@ wnck-pager {
   #whiskermenu-window button:checked {
     color: #ffffff;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
@@ -6424,7 +6424,7 @@ wnck-pager {
     .thunar toolbar button:selected, .thunar toolbar button:active, .thunar toolbar button:checked {
       color: #ffffff;
       font-weight: bold;
-      border-radius: 1em;
+      border-radius: 0.5em;
       background: linear-gradient(to right, #ff3300, #ffa100); }
       .thunar toolbar button:selected:hover, .thunar toolbar button:active:hover, .thunar toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -6454,7 +6454,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked {
     color: #ffffff;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100); }
     window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:hover {
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -6482,7 +6482,7 @@ window.thunar paned > scrolledwindow treeview.view {
   window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned > scrolledwindow treeview.view:active, window.thunar paned > scrolledwindow treeview.view:checked {
     color: #ffffff;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100);
     border-radius: 0;
     box-shadow: none; }
@@ -7227,7 +7227,7 @@ menubar,
       transition-duration: 50ms;
       color: #ffffff;
       font-weight: bold;
-      border-radius: 1em;
+      border-radius: 0.5em;
       background: linear-gradient(to right, #ff3300, #ffa100); }
       .nemo-window .sidebar button:selected:hover, .nemo-window .sidebar button:active:hover, .nemo-window .sidebar button:checked:hover, .nemo-window .NemoSidebar button:selected:hover, .nemo-window .NemoSidebar button:active:hover, .nemo-window .NemoSidebar button:checked:hover, .nemo-window .nemo-places-sidebar button:selected:hover, .nemo-window .nemo-places-sidebar button:active:hover, .nemo-window .nemo-places-sidebar button:checked:hover, .nemo-window statusbar button:selected:hover, .nemo-window statusbar button:active:hover, .nemo-window statusbar button:checked:hover, .nemo-window box.toolbar button:selected:hover, .nemo-window box.toolbar button:active:hover, .nemo-window box.toolbar button:checked:hover, .nemo-window toolbar.primary-toolbar button:selected:hover, .nemo-window toolbar.primary-toolbar button:active:hover, .nemo-window toolbar.primary-toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }
@@ -7391,7 +7391,7 @@ progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button
   .caja-pathbar button:checked {
     color: #ffffff;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: linear-gradient(to right, #ff3300, #ffa100); }
     .caja-pathbar button:checked:hover {
       box-shadow: 0px 0px 5px rgba(255, 106, 0, 0.98); }

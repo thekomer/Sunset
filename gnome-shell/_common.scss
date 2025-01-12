@@ -63,7 +63,7 @@ stage {
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 1em;
+  border-radius: $radius;
   padding: 4px;
   border-width: 1px;
   color: $fg_color;

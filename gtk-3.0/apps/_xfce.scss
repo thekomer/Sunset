@@ -123,7 +123,7 @@ wnck-pager {
 #whiskermenu-window {
 	color: $fg_color;
 	background-color: $headerbar_color;
-	border-radius: 1em;
+	border-radius: $radius;
 	border-color: transparent;
 	//border: 1px solid $borders_color;
 	//box-shadow: 5px 10px 8px 10px $borders_color;
