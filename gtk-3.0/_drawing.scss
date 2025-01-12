@@ -260,6 +260,7 @@
 		border:none;
 	}	@else if $t==active-header {
 			color: $selected_fg_color;
+      font-weight: bold;
 			border-radius: 1em; // 23px;
 			background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
 			//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
