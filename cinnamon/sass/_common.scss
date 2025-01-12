@@ -1642,7 +1642,7 @@ StScrollBar {
   .level {
     padding: 0;
     height: 0.8em;
-    background-color: transparentize(black, 0.5);
+    background-color: transparentize(white, 0.95);
     border-radius: 0.4em;
     border: 1px solid $borders_color;
   }
@@ -2000,7 +2000,6 @@ StScrollBar {
     // border-bottom: 1px ;
     color: $fg_color;
 
-//FIXME SLIDERS- return pixels
 
     StButton {
       width: 22px;
