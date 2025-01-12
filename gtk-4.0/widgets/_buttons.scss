@@ -16,7 +16,7 @@ button {
     min-width: 16px;
     padding: 2px 6px;
     border: 1px solid $borders_color;
-    border-radius: 0.4em; //border-radius: 4px;
+    border-radius: $radius; //border-radius: 4px;
     transition: $button_transition;
 
     @include button(normal);
@@ -116,13 +116,13 @@ button {
     &.text-button {
       padding-left: 3em; // 16px;
       padding-right: 3em; // 16px;
-      border-radius: 0.4em; //border-radius: 2px;
+      border-radius: $radius; //border-radius: 2px;
     }
 
     &.text-button.image-button {
       padding-left: 8px;
       padding-right: 8px;
-      border-radius: 0.4em; //border-radius: 2px;
+      border-radius: $radius; //border-radius: 2px;
       label {
         padding-left: 8px;
         padding-right: 8px;
@@ -462,18 +462,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_middle;
 
   &:first-child {
-    border-top-left-radius: 0.4em; //3px;
-    border-bottom-left-radius: 0.4em; //3px;
+    border-top-left-radius: $radius; //3px;
+    border-bottom-left-radius: $radius; //3px;
   }
 
   &:last-child {
-    border-top-right-radius: 0.4em; //3px;
-    border-bottom-right-radius: 0.4em; //3px;
+    border-top-right-radius: $radius; //3px;
+    border-bottom-right-radius: $radius; //3px;
     border-right-style: solid;
   }
 
   &:only-child {
-    border-radius: 0.4em; //3px;
+    border-radius: $radius; //3px;
     border-style: solid;
   }
 }
@@ -482,18 +482,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_middle;
 
   &:first-child {
-    border-top-left-radius: 1em; //3px;
-    border-bottom-left-radius: 1em; //3px;
+    border-top-left-radius: $radius; //3px;
+    border-bottom-left-radius: $radius; //3px;
   }
 
   &:last-child {
-    border-top-right-radius: 1em; //3px;
-    border-bottom-right-radius: 1em; //3px;
+    border-top-right-radius: $radius; //3px;
+    border-bottom-right-radius: $radius; //3px;
     border-right-style: solid;
   }
 
   &:only-child {
-    border-radius: 1em; //3px;
+    border-radius: $radius; //3px;
     border-style: solid;
   }
 }
@@ -507,18 +507,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_vertical_middle;
 
   &:first-child {
-    border-top-left-radius: 0.4em; //3px;
-    border-top-right-radius: 0.4em; //3px;
+    border-top-left-radius: $radius; //3px;
+    border-top-right-radius: $radius; //3px;
   }
 
   &:last-child {
-    border-bottom-left-radius: 0.4em; //3px;
-    border-bottom-right-radius: 0.4em; //3px;
+    border-bottom-left-radius: $radius; //3px;
+    border-bottom-right-radius: $radius; //3px;
     border-style: solid;
   }
 
   &:only-child {
-    border-radius: 0.4em; //3px;
+    border-radius: $radius; //3px;
     border-style: solid;
   }
 }
@@ -527,18 +527,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_vertical_middle;
 
   &:first-child {
-    border-top-left-radius: 1em; //3px;
-    border-top-right-radius: 1em; //3px;
+    border-top-left-radius: $radius; //3px;
+    border-top-right-radius: $radius; //3px;
   }
 
   &:last-child {
-    border-bottom-left-radius: 1em; //3px;
-    border-bottom-right-radius: 1em; //3px;
+    border-bottom-left-radius: $radius; //3px;
+    border-bottom-right-radius: $radius; //3px;
     border-style: solid;
   }
 
   &:only-child {
-    border-radius: 1em; //3px;
+    border-radius: $radius; //3px;
     border-style: solid;
   }
 }
