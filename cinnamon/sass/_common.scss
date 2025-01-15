@@ -285,7 +285,7 @@ StScrollBar {
   color: $fg_color;
   border: 1px solid $borders_color;
   border-radius: $radius; // 3px;
-	background-color: transparentize($bg_color, 0.01);
+	background-color: transparentize($bg_color, 0.08);
   box-shadow: 0 0 6px $shadow_color;
 
   &.top {
@@ -306,11 +306,17 @@ StScrollBar {
 }
 
 .popup-sub-menu {
-  background-color: $base_color;
+  background-color: transparentize($fg_color, 0.97); //$base_color;
   box-shadow: none;
 
-  .popup-menu-item:ltr { padding-right: 1.75em; }
-  .popup-menu-item:rtl { padding-left: 1.75em; }
+  .popup-menu-item:ltr {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .popup-menu-item:rtl {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 
   StScrollBar {
     padding: 4px;
