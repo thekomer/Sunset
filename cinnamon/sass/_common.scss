@@ -725,7 +725,7 @@ StScrollBar {
 	padding: .5em;
 	min-width: 350px;
 	border: 1px solid $borders_color;
-	background-color: $base_color;
+	background-color: transparentize($fg_color, 0.97); //$base_color;
   border-radius: $radius;
 }
 
