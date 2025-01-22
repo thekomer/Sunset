@@ -1,0 +1,23 @@
+/* * * * * *
+ * Slider  *
+ * * * * * */
+
+ .popup-slider-menu-item,
+ .slider {
+   -slider-height: 0.3em;
+     //background of the trough
+   -slider-background-color: transparentize($fg_color, 0.5);
+     //trough border color
+   -slider-border-color: transparentize($bg_color, 0.7);
+     //active trough fill
+   -slider-active-background-color: $accent_color;
+     //active trough border
+   -slider-active-border-color: transparentize($bg_color, 0.7);
+   -slider-border-width: 2px;
+   -slider-handle-radius: 0.5em;
+   height: 1em;
+   min-width: 15em;
+   border: 0 solid transparent;
+   border-right-width: 1px;
+   border-left-width: 5px;
+ }

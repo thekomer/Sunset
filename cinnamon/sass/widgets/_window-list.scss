@@ -1,0 +1,250 @@
+/* * * * * * * * * * * * * * * *
+ * Window list (windowList.js) *
+ * * * * * * * * * * * * * * * */
+
+ .window-list {
+
+  &-box {
+    spacing: 6px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    &.vertical {
+      spacing: 2px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &:highlight {
+      background-color: transparentize($error_color, 0.5);
+    }
+  }
+
+  &-item-label {
+    font-weight: normal;
+    width: 15em;
+    min-width: 5px;
+  }
+
+  &-item-box {
+    font-weight: normal;
+    background-image: none;
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition-duration: 100;
+    color: transparentize($selected_fg_color, 0.4);
+
+    &.top,
+    &.bottom {
+      border-bottom-width: 2px;
+
+      & StLabel { padding-left: 2px; }
+    }
+
+    &.right {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-right-width: 2px;
+
+      & StBin { padding-right: 0; }
+    }
+
+    &.left {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-left-width: 2px;
+
+      & StBin { padding-left: 1px; }
+    }
+
+    &:hover,
+    &:groupFocus {
+      color: $selected_fg_color;
+      border-radius: 7px;
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
+    }
+
+    &:active,
+    &:checked,
+    &:focus,
+    &:running {
+      color: $selected_fg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.7);
+      &:hover{
+      	@include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 1);
+      }
+    }
+
+    & .progress {
+      background-color: transparentize($accent_color, 0.2);
+    }
+  }
+
+  &-item-demands-attention {
+    @include bg_gradient(horizontal, $destructive_color,
+      	$destructive_color, 1);
+  }
+
+  &-preview {
+    spacing: 6px;
+    color: $fg_color;
+    border: 1px solid $borders_color;
+    background-color: $bg_color;
+    border-radius: $radius; // 3px;
+    padding: 6px 12px 12px 12px;
+    font-size: 1em;
+  }
+}
+/* * * * * * * * * * * *
+ * Grouped window list *
+ * * * * * * * * * * * */
+
+ .grouped-window-list {
+
+  &-item-label {
+    font-weight: normal;
+    color: fg_color;
+    width: 15em;
+    min-width: 5px;
+  }
+
+  &-item-box {
+    text-align: left;
+    font-weight: normal;
+    background-image: none;
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 7px;
+    transition-duration: 100;
+    color: transparentize($selected_fg_color, 0.4);
+
+    &.top,
+    &.bottom {
+      border-bottom-width: 2px;
+
+      & StLabel { padding-left: 2px; }
+    }
+
+    &.right {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-right-width: 2px;
+
+      & StBin { padding-right: 0; }
+    }
+
+    &.left {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-left-width: 2px;
+
+      & StBin { padding-left: 1px; }
+    }
+
+    &:hover{
+    	border-radius: 7px;
+      color: $selected_fg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
+    }
+    &:focus {
+    	border-bottom-width: 0px;
+    	border-top-width: 0px;
+    	border-left-width: 0px;
+    	border-right-width: 0px;
+      color: $selected_fg_color;
+      //background-color: transparentize($accent_color, 0.3);
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.7);
+      &:hover{
+      	@include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 1);
+      }
+    }
+
+    &:active,
+    &:checked {
+      color: $selected_fg_color;
+      border-color: $accent_color;
+    }
+
+    & .progress {
+      background-color: transparentize($accent_color, 0.2);
+    }
+  }
+
+  &-item-demands-attention {
+    @include bg_gradient(horizontal, $destructive_color,
+      	$destructive_color, 1);
+  }
+
+  &-thumbnail-label {
+    padding-left: 4px;
+  }
+
+  &-number-label {
+    z-index: 99;
+    color: $black;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-shadow: none;
+    margin: 0;
+  }
+
+  &-badge {
+    border-width: 0px;
+    border-color: $accent_color;
+    border-radius: 9999px;
+    background-color: $white;
+    color: $panel_fg;
+  }
+
+  &-button-label {
+    padding-left: 4px;
+  }
+
+  &-thumbnail-alert {
+    background: rgba(255,52,52,0.3);
+  }
+
+  &-thumbnail-menu {
+    color: $fg_color;
+    border: 1px solid $borders_color;
+    background-color: $bg_color;
+    border-radius: $radius; // 3px;
+    padding: 0px;
+
+    > StBoxLayout {
+      padding: 4px;
+    }
+
+    .item-box {
+      padding: 10px;
+      border-radius: $radius; //2px;
+      spacing: 4px;
+
+      &:outlined {
+        padding: 8px;
+        border: 1px solid $accent_color;
+      }
+
+      &:selected {
+        border: 1px solid $accent_color;
+      }
+    }
+
+    .thumbnail { width: 256px; }
+
+    .separator {
+      width: 1px;
+      background: rgba(255,255,255,0.2);
+    }
+  }
+}

@@ -1,0 +1,137 @@
+/* * * * * * * * * *
+ * Menu (menu.js)  *
+ * * * * * * * * * */
+
+ .menu {
+  &-favorites-box {
+    padding: .3em;
+    background-color: lighten($base_color, 1%);
+    border: 1px solid $borders_color;
+    border-radius: $radius;
+  }
+
+  &-favorites-button {
+		transition: $button_transition;
+    padding: .4em .5em;
+    border: 1px solid $borders_color;
+    border-radius: $radius;
+    &:hover {
+			background-clip: padding-box;
+      background-color: transparentize(white, 0.925);
+      -gtk-icon-effect: highlight;
+      color: $selected_fg_color;
+      border: 1px solid $borders_color;
+    }
+  }
+
+  &-places {
+
+    &-box {
+      padding: 10px;
+      border: 0px solid red;
+    }
+
+    &-button { padding: 10px; }
+  }
+
+  &-categories-box { padding: 10px 30px 10px 30px; }
+
+  &-applications-inner-box,
+  &-applications-outer-box { margin: 10px 10px 0 10px; }
+
+  &-application-button {
+    //padding: 0.2em;
+    border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
+    border-radius: $radius;
+
+    // This style is used in menu application buttons for applications which were newly installed
+    &:highlighted { font-weight: bold; }
+
+    &-selected {
+      //padding: 7px;
+      //background-clip: padding-box;
+      color: $selected_fg_color;
+      //background-color: $accent_color;
+      //@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.7);
+      background: transparentize(white, 0.925);
+      //border: 1px solid transparentize($accent_color, 0.6);
+      //border: 1px solid $borders_color;
+      border-radius: $radius;
+      -gtk-icon-effect: highlight;
+
+      &:highlighted { font-weight: bold; }
+    }
+
+    &-label:ltr { padding-left: 5px; }
+    &-label:rtl { padding-right: 5px; }
+  }
+
+  &-category-button {
+    padding: 7px;
+    border-radius: $radius;
+    border: 1px solid transparentize($borders_color, 0.5); //rgba(0,0,0,0);
+
+		&-hover {
+      border-radius: $radius;
+    }
+    &-selected {
+      padding: 7px;
+      color: $selected_fg_color;
+      font-weight: bold;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      border: 1px solid $borders_color;
+      border-radius: $radius;
+    }
+    &-active{
+			background: blue;
+    }
+    &-greyed {
+      padding: 7px;
+      color: $insensitive_fg_color;
+      border: 1px solid rgba(0,0,0,0);
+    }
+
+    &-label:ltr { padding-left: 5px; }
+    &-label:rtl { padding-right: 5px; }
+  }
+
+  // Name and description of the currently hovered item in the menu
+  // This appears on the bottom right hand corner of the menu
+  &-selected-app-box {
+    padding-right: 30px;
+    padding-left: 28px;
+    text-align: right;
+    height: 2.2em;
+
+    &:rtl {
+      padding-top: 10px;
+      height: 2.2em;
+    }
+  }
+
+  &-selected-app-title { font-weight: bold; }
+
+  &-selected-app-description { max-width: 150px; }
+  &-search-box:ltr { padding-left: 30px; }
+  &-search-box-rtl { padding-right: 30px; }
+}
+
+#menu-search-entry {
+  border-radius: $radius;
+  min-width: 25em;
+  min-height: 1.1em;
+  font-weight: normal;
+  caret-color: $accent_color;
+
+  @extend %entry;
+  margin-bottom: .1em;
+}
+
+.menu-search-entry-icon {
+  icon-size: 0.9em; //1em;
+  color: $accent_color;
+}
+
+/* Context menu (at the moment only for favorites) */
+.menu-context-menu {
+}

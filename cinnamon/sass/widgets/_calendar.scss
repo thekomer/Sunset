@@ -1,0 +1,324 @@
+/* * * * * * *
+ * Calendar  *
+ * * * * * * */
+
+ .calendar {
+	spacing-rows: 0;
+	spacing-columns: 0;
+}
+
+.calendar-main-box {
+	margin: .3em .5em 0 .5em;
+}
+
+.calendar-events-main-box {
+  height: 300px;
+	margin-right: .5em;
+	padding: .5em;
+	min-width: 350px;
+	border: 1px solid transparentize($borders_color, 0.05);
+	background-color: transparentize($base_color, 0.40); //$base_color;
+  border-radius: $radius;
+}
+
+
+.calendar-events-no-events-box {
+}
+
+.calendar-events-no-events-button {
+	margin: 6px 0 6px 0;
+	padding: 6px;
+
+	&:hover {
+		background-color: $accent_color;
+
+		.calendar-events-no-events-icon,
+		.calendar-events-no-events-label {
+			color: $selected_fg_color;
+		}
+	}
+}
+
+.calendar-events-no-events-icon,
+.calendar-events-no-events-label {
+	font-weight: bold;
+	color: $fg_color;
+	text-align: center;
+}
+
+.calendar-events-date-label {
+	padding: .1em .1em .5em .1em;
+	color: $fg_color;
+	font-weight: bold;
+	text-align: center;
+}
+
+.calendar-events-event-container {
+	padding: 0;
+}
+
+.calendar-event-button {
+	border: 1px solid rgba(0,0,0,0);
+
+	.calendar-event-time-past {
+		color: transparentize($fg_color, 0.6);
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: .2em;
+	}
+	.calendar-event-time-present {
+		color: $fg_color;
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: .2em;
+
+		&:all-day {
+			color: $accent_color;
+		}
+	}
+	.calendar-event-time-future {
+		color: $fg_color;
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: .2em;
+	}
+
+	.calendar-event-summary {
+		color: $fg_color;
+		text-align: left;
+		width: 200px;
+	}
+
+	.calendar-event-countdown {
+		text-align: right;
+		margin-bottom: .6em;
+		color: $fg_color;
+		&:soon {
+			font-weight: bold;
+		}
+		&:imminent {
+			font-weight: bold;
+			color: $warning_color;
+		}
+		&:current {
+			font-weight: bold;
+			color: $accent_color;
+		}
+	}
+
+	&:hover {
+		background-color: $accent_color;
+		border: 1px solid $borders_color;
+		.calendar-event-time-past,
+		.calendar-event-time-present,
+		.calendar-event-time-future,
+		.calendar-event-summary {
+			color: $selected_fg_color;
+		}
+
+		.calendar-event-countdown {
+			text-align: right;
+			margin-bottom: .6em;
+			color: $selected_fg_color;
+			&:soon {
+				font-weight: bold;
+			}
+			&:imminent {
+				font-weight: bold;
+			}
+			&:current {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.calendar-event-row-content {
+}
+
+.calendar-event-color-strip {
+	width: 2px;
+}
+
+.calendar-today-home-button {
+	padding: 6px;
+}
+
+.calendar-today-day-label {
+	font-size: 1.75em;
+	color: $fg_color;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: .1em;
+}
+
+.calendar-today-date-label {
+	font-size: 1.1em;
+	color: $fg_color;
+	font-weight: bold;
+	text-align: center;
+}
+
+.calendar-today-home-button-enabled {
+	padding: 6px;
+
+	&:hover {
+		background-color: $accent_color;
+
+		.calendar-today-day-label {
+			color: $selected_fg_color;
+		}
+		.calendar-today-date-label {
+			color: $selected_fg_color;
+		}
+	}
+}
+
+.calendar-month-label {
+  color: $fg_color;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.calendar-change-month-back,
+.calendar-change-month-forward {
+  width: 16px;
+  height: 16px;
+}
+
+//arrow back
+.calendar-change-month-back {
+  background-image: url("common-assets/misc/calendar-arrow-left.svg");
+
+  &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-left-hover.svg"); }
+
+  &:active { background-image: url("common-assets/misc/calendar-arrow-left.svg"); }
+
+  &:rtl {
+    background-image: url("common-assets/misc/calendar-arrow-right.svg");
+
+    &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-right-hover.svg"); }
+
+    &:active { background-image: url("common-assets/misc/calendar-arrow-right.svg"); }
+  }
+}
+
+//arrow forward
+.calendar-change-month-forward {
+  background-image: url("common-assets/misc/calendar-arrow-right.svg");
+
+  &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-right-hover.svg"); }
+
+  &:active { background-image: url("common-assets/misc/calendar-arrow-right.svg"); }
+
+  &:rtl {
+    background-image: url("common-assets/misc/calendar-arrow-left.svg");
+
+    &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-left-hover.svg"); }
+
+    &:active { background-image: url("common-assets/misc/calendar-arrow-left.svg"); }
+  }
+}
+
+.calendar-day-event-dot-box {
+	margin-top: 1.7em;
+	max-rows: 1;
+}
+
+.calendar-day-event-dot {
+	margin: 1px;
+  border-radius: 0.1em; //2px;
+	width: 0.2em; //4px;
+	height: 0.2em; //4px;
+}
+
+.calendar-day-base {
+  font-size: 1em;
+  text-align: center;
+  width: 2.2em;
+  height: 2.2em;
+  padding: 0.1em;
+
+	&:hover {
+		font-weight: bold;
+		color: $selected_fg_color;
+		background-color: $accent_color;
+	}
+}
+
+.calendar-day-heading {
+  color: transparentize($fg_color, 0.15);
+  margin-top: 1em;
+  font-size: 1.05em;
+}
+
+.calendar-day {
+  border-width: 0;
+  color: transparentize($fg_color, 0.1);
+  border-radius: $radius; // 0.5em;
+}
+
+.calendar-day-top {
+  border-top-width: 0;
+}
+
+.calendar-day-left {
+  border-left-width: 0;
+}
+
+.calendar-nonwork-day {
+  color: $fg_color;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.calendar-today {
+	color: $accent_color;
+  font-weight: bold;
+	border: 1px solid $accent_color;
+	&:selected {
+		background-color: if($variant == 'light', transparentize($accent_color, 0.6), transparentize($accent_color, 0.6));
+		&:hover{
+			color: $selected_fg_color;
+      background: $accent_color;
+		}
+  }
+}
+
+.calendar-not-today {
+	color: $fg_color;
+  &:hover {
+    font-weight: bold;
+    color: $selected_fg_color;
+    background: transparentize(white, 0.925);
+  }
+  &:selected {
+		font-weight: bold;
+		color: $selected_fg_color;
+		//@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+		background-color: transparentize($accent_color, 0.6);
+		&:hover {
+			font-weight: bold;
+			color: $selected_fg_color;
+      background: $accent_color;
+    }
+
+  }
+}
+
+.calendar-other-month-day {
+  color: transparentize($fg_color, 0.7);
+  font-weight: 200;
+  //opacity: 1;
+  &:hover {
+    background-color: transparentize(white, 0.925);
+    color: $fg_color;
+    font-weight: 200;
+  }
+}
+
+.calendar-week-number {
+  color: transparentize($fg_color, 0.4);
+  font-size: 0.7em;
+  margin-top: 1.1em;
+}

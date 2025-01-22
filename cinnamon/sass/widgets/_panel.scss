@@ -1,0 +1,170 @@
+/* * * * *
+ * Panel *
+ * * * * */
+
+ #panel {
+  font-weight: normal;
+  color: $selected_fg_color;
+  height: 40px;		// sets the height of horizontal panels
+  width: 32px;		// sets the width of vertical panels */
+
+  &Left {
+    spacing: 4px;
+
+    &:dnd {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(255,0,0,0.05);
+      background-gradient-end: rgba(255,0,0,0.2);
+    }
+    &:ltr { padding-right: 4px; }
+    &:rtl { padding-left: 4px; }
+    &.vertical {
+      padding: 0px;
+      &:ltr { padding-right: 0px; }
+      &:rtl { padding-left: 0px; }
+    }
+  }
+
+  &Right {
+
+    &:dnd {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(0,0,255,0.05);
+      background-gradient-end: rgba(0,0,255,0.2);
+    }
+    &:ltr { padding-left: 4px; spacing: 0px; }
+    &:rtl { padding-right: 4px; spacing: 0px; }
+    &.vertical {
+      padding: 0px;
+      &:ltr { padding-right: 0px; }
+      &:rtl { padding-left: 0px; }
+    }
+  }
+
+  &Center {
+    spacing: 4px;
+
+    &:dnd {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(0,255,0,0.05);
+      background-gradient-end: rgba(0,255,0,0.2);
+    }
+  }
+
+  &:highlight {
+    border-image: none;
+    background-color: transparentize($error_color, 0.5);
+  }
+}
+
+.panel {
+
+  &Left {
+    spacing: 4px;
+
+    &:dnd {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(255,0,0,0.05);
+      background-gradient-end: rgba(255,0,0,0.2);
+    }
+    &:ltr { padding-right: 4px; }
+    &:rtl { padding-left: 4px; }
+
+    &.vertical {
+      padding: 0px;
+      &:ltr { padding-right: 0px; }
+      &:rtl { padding-left: 0px; }
+    }
+  }
+
+  &Right {
+
+    &:dnd {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(0,0,255,0.05);
+      background-gradient-end: rgba(0,0,255,0.2);
+    }
+    &:ltr { padding-left: 4px; spacing: 0px; }
+    &:rtl { padding-right: 4px; spacing: 0px; }
+
+    &.vertical {
+      padding: 0px;
+      &:ltr { padding-left: 0px; spacing: 0px; }
+      &:rtl { padding-right: 0px; spacing: 0px; }
+    }
+  }
+
+  &Center {
+    spacing: 4px;
+
+    &.vertical {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    &:dnd {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(0,255,0,0.05);
+      background-gradient-end: rgba(0,255,0,0.2);
+    }
+  }
+
+
+  &-top, &-bottom, &-left, &-right {
+    color: $selected_fg_color;
+    border: none;
+    background-color: transparentize($panel_bg, 0.01);
+    font-size: 1em;
+    padding: 0px;
+  }
+
+  &-top {
+    box-shadow: 0 1px darken($panel_bg, 6%);
+  }
+
+  &-bottom {
+    box-shadow: 0 -1px darken($panel_bg, 6%);
+  }
+
+  &-left {
+    box-shadow: 1px 0 darken($panel_bg, 6%);
+  }
+
+  &-right {
+    box-shadow: -1px 0 darken($panel_bg, 6%);
+  }
+
+  &-dummy {
+    background-color: transparentize($error_color, 0.5);
+
+    &:entered { background-color: transparentize($error_color, 0.4); }
+  }
+
+  &-status-button {
+    border-width: 0;
+    -natural-hpadding: 3px;
+    -minimum-hpadding: 3px;
+    font-weight: bold;
+    color: white;
+
+    &:hover {}
+  }
+
+  &-button {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 2px;
+    font-weight: bold;
+    color: green;
+    transition-duration: 100;
+
+    &:hover {}
+  }
+}
+
+.system-status-icon {
+  icon-size: 16px;
+  padding: 0 1px;
+
+  &.warning { color: $warning_color; }
+  &.error { color: $error_color; }
+}

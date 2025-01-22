@@ -1,0 +1,72 @@
+/* * * * * * * * * * * * *
+ * Desklets (desklet.js) *
+ * * * * * * * * * * * * */
+
+ .desklet {
+  color: $fg_color;
+
+  &:highlight {
+    background-color: transparentize($error_color, 0.5);
+  }
+
+  &-with-borders {
+    border: 1px solid $borders_color;
+    border-radius: $radius; // 5px;
+    background-color: $bg_color;
+    color: $fg_color;
+    padding: 12px;
+    padding-bottom: 16px;
+
+    &:highlight {
+      background-color: transparentize($error_color, 0.5);
+    }
+  }
+
+  &-with-borders-and-header {
+    border: 1px solid $borders_color;
+    border-top-width: 0;
+    border-radius: 0 0 $radius $radius; // 0 0 5px 5px;
+    background-color: $bg_color;
+    color: $fg_color;
+    border-radius: 0;
+    border-radius-topleft: 0;
+    border-radius-topright: 0;
+    padding: 12px;
+    padding-bottom: 17px;
+
+    &:highlight {
+      background-color: transparentize($error_color, 0.5);
+    }
+  }
+
+  &-header {
+    border: 1px solid $borders_color;
+    border-radius: $radius $radius 0 0; // 5px 5px 0 0;
+    background-color: darken($bg_color, 3%);
+    color: $fg_color;
+    font-size: 1em;
+    padding: 12px;
+    padding-bottom: 6px;
+  }
+
+  &-drag-placeholder {
+    border: 2px solid $accent_color;
+    background-color: transparentize($accent_color, 0.7);
+  }
+}
+
+.photoframe-box {
+  border: 1px solid $borders_color;
+  border-radius: $radius; // 5px;
+  background-color: $bg_color;
+  color: $fg_color;
+  padding: $radius;
+  //padding-bottom: 16px;
+}
+
+.xkcd-box {
+  padding: 6px;
+  border: 0px;
+  background-color: rgba(0,0,0,1);
+  border-radius: 0px;
+}

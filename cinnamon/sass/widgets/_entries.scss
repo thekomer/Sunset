@@ -1,0 +1,38 @@
+/* * * * * *
+ * Entries *
+ * * * * * */
+
+ %entry {
+  padding: 7px;
+  caret-size: 1px;
+  selection-background-color: $accent_color;
+  selected-color: $selected_fg_color;
+  transition-duration: 300ms;
+  border-radius: $radius;
+
+  @include entry(normal);
+
+  &:focus, &:hover { @include entry(focus); }
+  &:insensitive { @include entry(insensitive); }
+
+	StIcon.capslock-warning {
+    icon-size: 1em; // 16px;
+    color: $warning_color; //warning-color: $warning_color;
+    padding: 0 4px;
+  }
+}
+
+%osd_entry {
+  padding: 7px;
+  caret-size: 1px;
+  caret-color: $osd_fg_color;
+  selection-background-color: $accent_color;
+  selected-color: $selected_fg_color;
+  transition-duration: 300ms;
+  border-radius: $radius;
+
+  @include entry(osd);
+
+  &:focus { @include entry(osd-focus); }
+  &:insensitive { @include entry(osd-insensitive); }
+}

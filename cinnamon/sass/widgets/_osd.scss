@@ -1,0 +1,49 @@
+/* * * *
+ * OSD *
+ * * * */
+
+ .info-osd {
+  text-align: center;
+  font-weight: bold;
+  spacing: 1em;
+  padding: 16px;
+  color: $fg_color;
+  border: 1px solid $borders_color;
+  border-radius: $radius; // 5px;
+  background-color: $osd_bg_color;
+}
+
+.restart-osd {
+  font-size: 1.6em;
+}
+
+.workspace-osd {
+  font-size: 4em;
+}
+
+.osd-window {
+  text-align: center;
+  font-weight: bold;
+  spacing: 0.5em;
+  padding: 0.5em;// 20px
+
+  color: $osd_fg_color;
+  background-color: $osd_bg_color;
+  border: 1px solid $borders_color;
+  border-radius: $radius; //5px;
+
+  .osd-monitor-label { font-size: 3em; }
+
+  .level {
+    padding: 0;
+    height: 0.8em;
+    background-color: transparentize(white, 0.95);
+    border-radius: 0.4em;
+    border: 1px solid $borders_color;
+  }
+
+  .level-bar {
+    border-radius: 0.4em;// 2px;
+    background-color: $accent_color;
+  }
+}

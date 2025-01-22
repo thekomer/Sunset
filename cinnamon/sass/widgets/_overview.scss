@@ -1,0 +1,137 @@
+/* * * * * * *
+ * Overview  *
+ * * * * * * */
+
+ #overview { spacing: 12px; }
+
+ .window-caption {
+   background-color: transparentize($osd_bg_color, 0.5);
+   border: 1px solid $osd_bg_color;
+   color: $osd_fg_color;
+   spacing: 8px;
+   border-radius: $radius;
+   font-size: 0.9em;
+   padding: 5px 8px;
+   -cinnamon-caption-spacing: 8px;
+
+   &:focus {
+     background-color: transparentize($accent_color, 0.5);
+     color: $selected_fg_color;
+     border: 1px solid $accent_color;
+   }
+ }
+
+ .window-border {
+   border: 1px $accent_color;
+   border-radius: $radius;
+   background-color: rgba(255,255,255,.05);
+   /* Cover rounded corners and some bad adjustment gaps */
+   box-shadow: 0 0 0 1px $accent_color inset;
+ }
+
+ .overview-empty-placeholder {
+   color: #ffffff;
+   font-size: 2em;
+ }
+
+ .expo-workspaces-name-entry,
+ .expo-workspaces-name-entry#selected {
+   height: 1.5em;
+   border-radius: $radius; // 2px;
+   font-size: 1em;
+   padding: 5px 8px;
+   -cinnamon-caption-spacing: 4px;
+   @include entry(osd);
+
+   &:focus {
+     border: 1px solid $accent_color;
+     background-color: inherit;
+     //$accent_color;
+     color: $accent_color;
+     font-style: italic;
+     transition-duration: 300;
+     selection-background-color: $accent_color;
+     //selected-color: $accent_color;
+     selection-color: $selected_fg_color;
+   }
+ }
+
+ .expo-workspace-thumbnail-frame {
+   border: 2px solid rgba(255,255,255,0.0);
+   background-color: rgba(255,255,255,0.0);
+   border-radius: $radius; //2px;
+
+   &#active {
+     border: 2px solid $accent_color;
+     background-color: black;
+     border-radius: $radius; //2px;
+   }
+ }
+
+ .expo-background {
+   background-color: opacify($bg_color, 1);
+ }
+
+ .workspace {
+   //&-controls { visible-height: 32px; }
+
+   &-thumbnails {
+     spacing: 26px;
+
+     &-background, &-background:rtl { padding: 8px; }
+   }
+
+   &-add-button {
+     background-image: url("common-assets/misc/add-workspace.svg");
+     height: 200px;
+     width: 35px;
+     transition-duration: 100;
+
+     &:hover {
+       background-image: url("common-assets/misc/add-workspace-hover.svg");
+       transition-duration: 100;
+     }
+     &:active {
+       background-image: url("common-assets/misc/add-workspace-active.svg");
+       transition-duration: 100;
+     }
+   }
+   &-overview-background-shade { background-color: rgba(0,0,0,0.5); }
+ }
+
+ .workspace-close-button,
+ .window-close {
+   background-image: url("common-assets/misc/close.svg");
+   background-size: 26px;
+   height: 26px;
+   width: 26px;
+   -cinnamon-close-overlap: 12px;
+
+   &:hover {
+     background-image: url("common-assets/misc/close-hover.svg");
+     background-size: 26px;
+     height: 26px;
+     width: 26px;
+   }
+   &:active {
+     background-image: url("common-assets/misc/close-active.svg");
+     background-size: 26px;
+     height: 26px;
+     width: 26px;
+   }
+ }
+
+ //.workspace-thumbnail-indicator {
+ //  outline: 2px solid red;
+ //  border: 1px solid green;
+ //}
+ //
+ //.window-close:rtl {
+ //  -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+ //}
+
+ .window-close-area {
+   background-image: url("common-assets/misc/trash-icon.svg");
+   height: 120px;
+   width: 400px;
+ }

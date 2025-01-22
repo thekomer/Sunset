@@ -1,0 +1,34 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *
+ * Panel Launchers Applet (panelLaunchers.js)  *
+ * * * * * * * * * * * * * * * * * * * * * * * */
+ .panel-launchers {
+  padding-left: 7px;
+  spacing: 2px;
+
+  & .launcher {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    // border-bottom-width: 1px;
+    transition-duration: 200;
+
+    &:hover {
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.7);
+      border-radius: $radius; // 7px;
+    }
+  }
+
+  &.vertical {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left:0px;
+    padding-right: 0px;
+    spacing: 1px;
+
+    & .launcher {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* * * * * * * * *
+ * Tile Preview  *
+ * * * * * * * * */
+
+ .tile-preview {
+  background-color: transparentize($accent_color, 0.7);
+  border: 1px solid $accent_color;
+
+  &.snap { background-color: transparentize($accent_color, 0.4); }
+}
+
+.tile-hud {
+  background-color: transparentize($accent_color, 0.7);
+  border: 1px solid $accent_color;
+
+  &.snap { background-color: transparentize($accent_color, 0.4); }
+
+  &:top { border-top-width: 0px; }
+  &:bottom { border-bottom-width: 0px; }
+  &:left { border-left-width: 0px; }
+  &:right { border-right-width: 0px; }
+  &:top-left {
+    border-top-width: 0px;
+    border-left-width: 0px;
+  }
+  &:top-right {
+    border-top-width: 0px;
+    border-right-width: 0px;
+  }
+  &:bottom-left {
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+  }
+  &:bottom-right {
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+  }
+}

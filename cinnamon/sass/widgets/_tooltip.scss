@@ -1,0 +1,14 @@
+/* * * * * *
+ * Tooltip *
+ * * * * * */
+
+ #Tooltip {
+  border: 1px solid $tooltip_border_color;
+  border-radius: $radius;
+  padding: 5px 12px;
+  background-color: $tooltip_bg_color;
+  color: $tooltip_fg_color;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+}

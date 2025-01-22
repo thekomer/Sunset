@@ -1,0 +1,9 @@
+/* * * * * * * * * *
+ * Overview corner *
+ * * * * * * * * * */
+#overview-corner {
+  background-image: url("common-assets/misc/overview.png");
+}
+#overview-corner:hover {
+  background-image: url("common-assets/misc/overview-hover.png");
+}

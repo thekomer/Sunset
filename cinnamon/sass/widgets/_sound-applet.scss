@@ -1,0 +1,132 @@
+/* * * * * * * * * * * * * * * * * *
+ * Sound Applet (status/volume.js) *
+ * * * * * * * * * * * * * * * * * */
+
+ .sound-button {
+  width: 22px;
+  height: 13px;
+  padding: 8px;
+
+  @extend %button;
+
+  &-container {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  StIcon { icon-size: 1.4em; }
+}
+
+.sound-track {
+  &-infos { padding: 0.5em; }
+  &-info {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    StIcon { icon-size: 1em; }
+
+    StLabel {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+  }
+  &-box {
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 220px;
+  }
+}
+
+.sound-seek-box {
+  padding-left: 15px;
+
+  StLabel { padding-top: 2px; }
+  StIcon { icon-size: 16px; }
+}
+
+.sound-seek-slider { width: 140px; }
+
+.sound-volume-menu-item {
+  padding: .4em 1.75em;
+
+  StIcon {
+    icon-size: 1.14em;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.sound-playback-control { padding: 5px 10px 10px 10px; }
+
+// 2.8
+.sound-player {
+  // padding: 0 4px;
+
+  > StBoxLayout:first-child {
+    padding: 5px 10px 12px 10px;
+    spacing: 0.5em;
+
+    StButton:small {
+      width: 20px;
+      height: 20px;
+      border: 1px solid transparent;
+
+      StIcon { icon-size: 12px; }
+
+      &:hover { @include button(hover); }
+      &:active { @include button(active); }
+    }
+  }
+
+  &-generic-coverart {
+    background: rgba(0,0,0,0.2);
+  }
+
+  &-overlay {
+    width: 290px;
+    height: 5.4em;
+    padding: 15px;
+    spacing: 0.5em;
+    background: transparentize($bg_color, 0.1);
+    border-top: 1px solid $borders_color;
+    // background: transparentize(darken($osd_bg_color, 5%), 0.1);
+    // border: 0px solid darken($osd_bg_color, 10%);
+    // border-bottom: 1px ;
+    color: $fg_color;
+
+
+    StButton {
+      width: 22px;
+      height: 13px;
+      padding: 5px;
+      color: $fg_color;
+      border-radius: 2px;
+      border: 1px solid transparent;
+
+      StIcon { icon-size: 16px; }
+
+      &:hover{ @include button(hover); }
+      &:active { @include button(active); }
+    }
+
+    StBoxLayout {
+      padding-top: 2px;
+    }
+
+    > StBoxLayout {
+      spacing: 5px;
+    }
+  }
+
+  .slider {
+    height: 0.5em;
+    padding: 0em 0.5em;
+    border: none;
+    -slider-height: 0.5em;
+    -slider-background-color: if($variant == 'light', $button_border, lighten($bg_color, 10%));
+    -slider-border-color: rgba(0,0,0,0);
+    -slider-active-background-color: $accent_color;
+	  -slider-active-border-color: rgba(0,0,0,0);
+    -slider-border-width: 1px;
+    -slider-handle-radius: 0px;
+  }
+}

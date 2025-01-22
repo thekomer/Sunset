@@ -1,6 +1,4 @@
-$variant: 'dark';
-
-@import "_colors"; //use gtk colors
 @import "_variables";
+@import "_colors"; //use gtk colors
 @import "_drawing";
 @import "_common";

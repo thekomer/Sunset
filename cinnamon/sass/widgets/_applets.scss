@@ -1,0 +1,110 @@
+/* * * * * * * * * * * *
+ * Applets (applet.js) *
+ * * * * * * * * * * * */
+
+ .applet {
+  &-separator {
+    padding: 1px 4px;
+
+    &.vertical { padding: 4px 1px; }
+  }
+
+  &-separator-line {
+    width: 1px;
+    background: rgba(255,255,255, 0.12);
+
+    &-vertical {
+      height: 1px;
+      background: rgba(255,255,255, 0.12);
+    }
+  }
+
+  &-box {
+    padding-left: 4px;
+    padding-right: 4px;
+    spacing: 4px;
+    color: $panel_fg;
+    text-shadow: none;
+    transition-duration: 100;
+    text-align: center;
+
+    & StLabel { padding-top: 2px; }
+
+    &.vertical {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      & StLabel { padding-top: 0; }
+    }
+
+    &:hover,
+    &:checked { //komer
+      color: $selected_fg_color;
+      // background-color: $accent_color;
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 0.5);
+      border-radius: $radius; // 7px;
+
+      &-label { color: $selected_fg_color; }
+    }
+
+    &:highlight {
+      background-image: none;
+      border-image: none;
+      background-color: transparentize($error_color, 0.5);
+    }
+  }
+
+  &-label {
+    font-weight: bold;
+    color: $panel_fg;
+
+    &:hover,
+    &:checked,
+    .applet-box:hover > &,
+    .applet-box:checked > & {
+      color: $selected_fg_color;
+      text-shadow: none;
+    }
+  }
+
+  &-icon {
+    color: $panel_fg;
+    icon-size: 22px;
+
+    &:hover,
+    &:checked,
+    .applet-box:hover > &,
+    .applet-box:checked > & {
+      color: $selected_fg_color;
+      text-shadow: none;
+    }
+  }
+
+}
+
+/* * * * * * * *
+ * User Applet *
+ * * * * * * * */
+
+.user-icon {
+    border: 1px solid transparentize($fg_color, 0.5);
+    border-radius: $radius; // 1em;
+}
+
+.user-label {
+    color: $fg_color;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* * * * * * * * * * * *
+ * Notification Applet *
+ * * * * * * * * * * * */
+
+ .notification-applet-padding { padding: .5em 1em; }
+
+ .notification-applet-container { max-height: 100px; }
