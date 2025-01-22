@@ -1932,9 +1932,10 @@ StScrollBar {
 .photoframe-box {
   border: 1px solid rgba(191, 195, 205, 0.1);
   border-radius: 0.6em;
-  background-color: #0E111D;
+  background-color: rgba(6, 8, 13, 0.85);
   color: #BFC3CD;
-  padding: 0; }
+  padding: 0.6em;
+  margin: 5px; }
 
 .xkcd-box {
   padding: 6px;
@@ -1976,44 +1977,3 @@ StScrollBar {
   .tile-hud:bottom-right {
     border-bottom-width: 0px;
     border-right-width: 0px; }
-
-/* * * * * * * * *
- * Tile Preview  *
- * * * * * * * * */
-.tile-preview {
-  background-color: rgba(255, 106, 0, 0.3);
-  border: 1px solid #ff6a00; }
-  .tile-preview.snap {
-    background-color: rgba(255, 106, 0, 0.6); }
-
-.tile-hud {
-  background-color: rgba(255, 106, 0, 0.3);
-  border: 1px solid #ff6a00; }
-  .tile-hud.snap {
-    background-color: rgba(255, 106, 0, 0.6); }
-  .tile-hud:top {
-    border-top-width: 0px; }
-  .tile-hud:bottom {
-    border-bottom-width: 0px; }
-  .tile-hud:left {
-    border-left-width: 0px; }
-  .tile-hud:right {
-    border-right-width: 0px; }
-  .tile-hud:top-left {
-    border-top-width: 0px;
-    border-left-width: 0px; }
-  .tile-hud:top-right {
-    border-top-width: 0px;
-    border-right-width: 0px; }
-  .tile-hud:bottom-left {
-    border-bottom-width: 0px;
-    border-left-width: 0px; }
-  .tile-hud:bottom-right {
-    border-bottom-width: 0px;
-    border-right-width: 0px; }
-
-.xkcd-box {
-  padding: 6px;
-  border: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0px; }
