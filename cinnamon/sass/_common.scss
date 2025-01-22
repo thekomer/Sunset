@@ -14,7 +14,8 @@ stage {
 %button {
   min-height: 20px;
   padding: 5px 32px;
-  transition-duration: 200ms;
+  transition: $button_transition;
+  //transition-duration: 200ms;
   background-clip: padding-box;
 
 

@@ -31,7 +31,7 @@ stage {
 .sound-button, .notification-button, .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
   min-height: 20px;
   padding: 5px 32px;
-  transition-duration: 200ms;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background-clip: padding-box;
   color: #BFC3CD;
   background-color: #161b2e;
