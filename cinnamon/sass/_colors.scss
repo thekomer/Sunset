@@ -70,7 +70,7 @@ $osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 
 // Shadow
-$shadow_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.9));
+$shadow_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.95));
 
 // Panel
 $panel_bg: $headerbar_color;

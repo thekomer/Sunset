@@ -12,7 +12,7 @@
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
   color: $osd_fg_color;
-
+  box-shadow: 3px 2px 3px $shadow_color;
   .popup-menu & {
     color: $fg_color;
     border-image: url("#{$asset_path}/misc/message.svg") 9 9 9 9;
@@ -46,7 +46,7 @@
 .notification {
 
   &-with-image {
-    min-height: 159px;
+    min-height: 10em; //159px;
     color: $fg_color;
   }
 
