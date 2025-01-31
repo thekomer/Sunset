@@ -5,6 +5,7 @@ list {
   color: $text_color;
   background-color: $base_color;
   border-color: $borders_color;
+  border-radius: $radius;
 
   &:backdrop {
     background-color: $backdrop_base_color;
@@ -15,6 +16,7 @@ list {
 row {
   padding: 5px 11px;
   transition: all 150ms $ease-out-quad;
+  border-radius: $radius;
 
   label {
     padding-left: 8px;
