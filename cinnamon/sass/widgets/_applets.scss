@@ -1,65 +1,34 @@
-/* * * * * * * * * * * *
- * Applets (applet.js) *
- * * * * * * * * * * * */
-
- .applet {
-  &-separator {
-    padding: 1px 4px;
-
-    &.vertical { padding: 4px 1px; }
-  }
-
-  &-separator-line {
-    width: 1px;
-    background: rgba(255,255,255, 0.12);
-
-    &-vertical {
-      height: 1px;
-      background: rgba(255,255,255, 0.12);
-    }
-  }
+.applet {
 
   &-box {
-    padding-left: 4px;
-    padding-right: 4px;
-    spacing: 4px;
-    color: $panel_fg;
-    text-shadow: none;
-    transition-duration: 100;
+    padding: 0 $applet_padding_horizontal;
+    spacing: $applet_padding_horizontal;
     text-align: center;
-
-    & StLabel { padding-top: 2px; }
+    transition-duration: 200;
+    color: $panel_fg_color;
 
     &.vertical {
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-top: 3px;
-      padding-bottom: 3px;
-
+      padding: $applet_padding_vertical 0;
       & StLabel { padding-top: 0; }
-    }
+     }
 
     &:hover,
-    &:checked { //komer
+    &:checked {
       color: $selected_fg_color;
-      // background-color: $accent_color;
+      // background-color: $hover_bg_color;
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
-      border-radius: $radius; // 7px;
+      border-radius: ($border_radius/2);
 
       &-label { color: $selected_fg_color; }
     }
 
-    &:highlight {
-      background-image: none;
-      border-image: none;
-      background-color: transparentize($error_color, 0.5);
-    }
+    &:highlight { background-color: transparentize($error_bg_color, 0.5); }
   }
 
   &-label {
     font-weight: bold;
-    color: $panel_fg;
+    color: $panel_fg_color;
 
     &:hover,
     &:checked,
@@ -69,42 +38,242 @@
       text-shadow: none;
     }
   }
+}
+/* Separator applet */
 
-  &-icon {
-    color: $panel_fg;
-    icon-size: 22px;
+.applet-separator {
+  padding: 1px 4px;
 
-    &:hover,
-    &:checked,
-    .applet-box:hover > &,
-    .applet-box:checked > & {
-      color: $selected_fg_color;
-      text-shadow: none;
+  &.vertical {
+    padding: 4px 1px;
+  }
+
+  &-line {
+    width: 1px;
+    background: $applet_separator_color;
+
+    &-vertical {
+      height: 1px;
+      background: $applet_separator_color;
+    }
+  }
+}
+
+/* cornerbar applet */
+
+.applet-cornerbar {
+  width: $base_margin * 2;
+  background-color: $lighter_bg_color;
+  border: 1px solid $borders_color;
+
+  &.vertical { height: $base_margin * 2; }
+
+  &-box {
+    background: none;
+  }
+}
+
+.applet-cornerbar-box:hover > .applet-cornerbar {
+  // background-color: $lightest_bg_color;
+  @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
+}
+
+/* notification applet */
+
+.notification-applet-padding {
+  padding: $base_margin 0 $base_margin $base_margin;
+}
+
+/* panel launchers */
+
+.panel-launchers {
+  // padding-left: $base_padding;
+  spacing: 2px;
+
+  .launcher {
+    padding: 0 2px;
+
+    &:hover {
+      //background-color: $lighter_bg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
     }
   }
 
+  &.vertical {
+    padding: 2px 0;
+
+    .launcher { padding: 2px 0; }
+  }
 }
 
-/* * * * * * * *
- * User Applet *
- * * * * * * * */
+/* power applet */
 
-.user-icon {
-    border: 1px solid transparentize($fg_color, 0.5);
-    border-radius: $radius; // 1em;
-}
+.device-box {
 
-.user-label {
+  .device-icon {
+    icon-size: to_em(24px);
     color: $fg_color;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 0px;
+  }
+
+  .device-labels {
+    margin-left: $base_margin * 2;
+    spacing: $base_margin;
+
+    .primary-label {
+      @extend %heading;
+
+      color: $fg_color;
+    }
+
+    .status-label { color: $light_text_color; }
+  }
 }
 
-/* * * * * * * * * * * *
- * Notification Applet *
- * * * * * * * * * * * */
+/* sound applet */
 
- .notification-applet-padding { padding: .5em 1em; }
+.sound-player {
 
- .notification-applet-container { max-height: 100px; }
+  > StBoxLayout:first-child {
+    spacing: $base_margin;
+    padding: 0 $base_padding;
+  }
+
+  StButton {
+    @extend %button;
+
+    width: 1.2em; //18px;
+    height: 1.2em; //18px;
+    padding: $base_padding;
+
+
+    StIcon { icon-size: 1em; }
+
+    &:small {
+      @extend %flat_button;
+      width: 1em; //16px;
+      height: 1em; //16px;
+
+      StIcon { icon-size: 1.2em;}
+    }
+  }
+
+  &-generic-coverart { background-color: transparentize(black, 0.8); }
+
+  &-overlay {
+    width: 290px;
+    padding: $base_padding * 2;
+    spacing: $base_margin;
+    background-color: transparentize($bg_color, 0.1);
+
+    StBoxLayout { padding-top: 2px; }
+    > StBoxLayout { spacing: $base_padding; }
+    StBin > StBoxLayout { spacing: $base_padding; }
+  }
+
+  .slider { // this actually does not change slider colors - colors are changed in %slider placeholder definition inside _common.scss (probably because _menu.scss is loaded after this one)
+    height: $base_padding;
+    -slider-height: $base_padding;
+    -slider-background-color: $base_color;
+    -slider-active-background-color: $accent_color;
+    -slider-border-color: transparent;
+    -slider-active-border-color: transparent;
+    -slider-border-width: 1px;
+    -slider-handle-radius: 0;
+  }
+}
+
+/* spacer applet */
+
+.spacer-box {
+  border: 1px solid transparent;
+
+  &:highlight { background-color: $error_color; }
+
+  &.edit-mode { border: 1px symbolic; }
+}
+
+/* systray */
+
+.systray {
+  padding: 0;
+}
+
+/* workspace switcher applet */
+
+.panel-top,
+.panel-bottom {
+
+  .workspace-switcher { padding: 0 $base_margin;}
+}
+
+.workspace-button {
+  color: $panel_fg_color;
+  //background-color: transparentize($fg_color, 0.95);
+  background-color: inherit;
+  border: 1px solid $borders_color;
+  border-radius: $border_radius;
+  width: 1.3em;
+  height: 1.1em;
+  &.vertical {
+    height: 1.2em;
+    width: 1em;
+    padding-top: 1px;
+    padding-bottom: 3px;
+  }
+
+  &:outlined {
+    color: $accent_color;
+
+    &:hover {
+      // background-color: $lighter_bg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
+      color: $selected_fg_color;
+      transition-duration: 200;
+    }
+  }
+
+  &:hover {
+    //background-color: $light_bg_color;
+    @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
+    color: $selected_fg_color;
+    transition-duration: 200;
+  }
+
+  &:shaded { // this is a workspace with no open windows
+    color: transparentize($panel_fg_color, 0.4);
+    &:outlined {
+      color: transparentize($accent_color, 0.4);
+    }
+  }
+}
+
+.workspace-graph {
+  padding: $base_margin;
+  spacing: $base_margin;
+
+  .workspace {
+    border: 1px solid transparentize($fg_color, 0.75);
+    background-color: darken($panel_bg_color, 5%);
+
+    .windows {
+      -active-window-background: transparentize(white, 0.8);
+      -active-window-border: transparentize($accent_color, 0.65);
+      -inactive-window-background: transparent; //transparentize(white, 0.9);
+      -inactive-window-border: transparentize(white, 0.85);
+    }
+
+    &:active {
+      border-color: transparentize($accent_color, 0.4);
+      background-color: darken($panel_bg_color, 5%);
+
+      .windows {
+        -active-window-background: transparentize($accent_color, 0.8);
+        -active-window-border: transparentize($accent_color, 0.35);
+        -inactive-window-background: transparentize(white, 0.9);
+        -inactive-window-border: transparentize(white, 0.85);
+      }
+    }
+  }
+}
+
+.system-status-icon { icon-size: $scalable_icon-size; }

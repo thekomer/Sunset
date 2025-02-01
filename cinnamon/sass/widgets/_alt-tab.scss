@@ -1,48 +1,43 @@
-/* * * * * *
- * Alt Tab *
- * * * * * */
-
- #altTabPopup {
-  padding: 8px;
-  spacing: 16px;
+#altTabPopup {
+  padding: 0.5em; // 8px;
+  spacing: 0.5em; // 16px;
 }
 
 .switcher-list {
   color: $fg_color;
-  border: 1px solid transparentize($accent_color, 0.15);
+  border: 1px solid transparentize($accent_color, 0.25);
   background-color: $osd_bg_color;
-  border-radius: $radius;
-  padding: 20px;
+  border-radius: $border_radius;
+  padding: 0.5em; //20px;
 
   > StBoxLayout {
-    padding: 4px;
+    padding: 0.25em; //4px;
   }
 
-  &-item-container { spacing: 8px; }
+  &-item-container { spacing: 0.25em; } // 8px;
 
   .item-box {
-    padding: 8px;
-    border-radius: $radius;
+    padding: 0.5em; //8px;
+    border-radius: $border_radius;
+    border: 1px solid transparent;
 
     &:outlined {
-      padding: 8px;
-      border: 1px solid transparentize($accent_color, 0.15);
+      border-color: transparentize($accent_color, 0.25);
     }
 
     &:selected {
       color: $selected_fg_color;
       font-weight: bold;
       background-color: transparentize($accent_color, 0.50);
-      //border: 0px solid $accent_color;
-      border: 1px solid transparentize($accent_color, 0.35);
+      border-color: transparentize($accent_color, 0.15);
     }
   }
 
-  .thumbnail { width: 256px; }
+  .thumbnail { width: 16em; } // 256px
 
   .thumbnail-box {
-    padding: 2px;
-    spacing: 4px;
+    padding: 0.125em; //2px;
+    spacing: 0.25em; //4px;
   }
   .separator {
     width: 1px;
@@ -64,16 +59,100 @@
 
 .thumbnail-scroll-gradient-left {
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 24px;
+  border-radius: $border_radius; // 24px;
   border-radius-topright: 0px;
   border-radius-bottomright: 0px;
-  width: 60px;
+  width: 3.75em; //60px;
 }
 
 .thumbnail-scroll-gradient-right {
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 24px;
+  border-radius: $border_radius; // 24px;
   border-radius-topleft: 0px;
   border-radius-bottomleft: 0px;
-  width: 60px;
+  width: 3.75em; //60px;
 }
+
+/*
+#altTabPopup {
+  padding: 0.25em;//  $base_margin * 2;
+  spacing: 0.5em; // $base_margin * 4;
+}
+
+.switcher-list {
+  color: $fg_color;
+  background-color: $osd_bg_color;
+  border: 1px solid transparentize($accent_color, 0.25);
+  border-radius: $border_radius; // $base_border_radius * 2;
+  box-shadow: 0 0 6px 0 $shadow_color;
+  padding: 1.4em; //$base_padding * 3;
+
+  &-item-container { spacing: $base_margin * 3; }
+
+  .item-box {
+    padding: $base_margin * 2;
+    border: 1px solid transparent;
+    border-radius: $border_radius; // $base_border_radius;
+    background-color: transparent;
+
+    // this doesn't ever seem to get used
+    &:outlined { border-color: red; }
+    &:selected {
+      color: $selected_fg_color;
+      font-weight: bold;
+      background-color: transparentize($accent_color, 0.60);
+      //border: 0px solid $accent_color;
+      border: 1px solid transparentize($accent_color, 0.40);
+    }
+  }
+
+  .thumbnail-box {
+    padding: 0;
+    spacing: $base_margin;
+  }
+
+  .thumbnail { width: 256px; }
+
+  .separator {
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+  }
+}
+
+.switcher-preview-backdrop { background-color: transparentize(black, 0.5); }
+
+.switcher-arrow {
+  background-color: transparent;
+  border-color: transparent;
+  color: $fg_color;
+
+  &:highlighted {
+    border-color: transparent;
+    color: $selected_fg_color;
+  }
+}
+
+.thumbnail-scroll-gradient {
+
+  &-left {
+    background-gradient-direction: horizontal;
+    background-gradient-start: transparentize($panel_bg_color, 0.0);
+    background-gradient-end: transparentize($panel_bg_color, 1.0);
+    border-radius:  $border_radius; // $base_border_radius * 2;
+    border-radius-topright: 0px;
+    border-radius-bottomright: 0px;
+    width: 60px;
+  }
+
+  &-right {
+    background-gradient-direction: horizontal;
+    background-gradient-start: transparentize($panel_bg_color, 1.0);
+    background-gradient-end: transparentize($panel_bg_color, 0.0);
+    border-radius: $border_radius; // $base_border_radius * 2;
+    border-radius-topleft: 0px;
+    border-radius-bottomleft: 0px;
+    width: 60px;
+  }
+}
+
+*/

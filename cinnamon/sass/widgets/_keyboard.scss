@@ -1,0 +1,38 @@
+// on screen keyboard
+
+#keyboard {
+  background-color: $bg_color;
+  padding-bottom: 0.1em;
+}
+
+.keyboard {
+  &-layout {
+    padding: 0.2em;//$base_padding;
+    spacing: 0.2em;//$base_padding;
+  }
+
+  &-row { spacing: 0.2em; } //$base_padding;
+
+  &-key {
+    @extend %button;
+
+    min-height: 2em;
+    min-width: 2em;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+
+    &:grayed { @include button(insensitive); }
+  }
+
+  &-subkeys { // long press key pop-up
+    padding: $base_padding;
+    -arrow-background-color: $bg_color;
+    -arrow-border-width: 1px;
+    -arrow-border-radius: $border_radius;
+    -arrow-border-color: $lightest_bg_color;
+    -arrow-base: 1.2em;
+    -arrow-rise: 0.7em;
+    -boxpointer-gap: 0;
+  }
+}

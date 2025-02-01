@@ -1,0 +1,18 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Mixins for gradient background color for elements *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Entry colors for different type of states       *
+ * Entry drawing function                          *
+ *    $type:   normal, focus, hover, insensitive   *
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Button colors for different type of states                      *
+ * Button drawing function                                         *
+ *   $type:                                                        *
+ *       normal, focus, hover, active, checked,                    *
+ *       insensitive, default, undecorated                         *
+ *   $c:       button bg color, derived from bg_color             *
+ *   $tc:       button text color, derived from fg_color           *
+ *   $style:    button style, possible values: flat, default       *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */

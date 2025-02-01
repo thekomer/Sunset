@@ -1,324 +1,281 @@
-/* * * * * * *
- * Calendar  *
- * * * * * * */
+.calendar {
+  margin-top: $base_margin * 5;
+  spacing-rows: 2px;
+  spacing-columns: 2px;
 
- .calendar {
-	spacing-rows: 0;
-	spacing-columns: 0;
-}
+  // can be used to set the entire bg color
+  &-background { background-color: inherit;}
 
-.calendar-main-box {
-	margin: .3em .5em 0 .5em;
-}
+  &-main-box { margin: $base_margin * 2; }
 
-.calendar-events-main-box {
-  height: 300px;
-	margin-right: .5em;
-	padding: .5em;
-	min-width: 350px;
-	border: 1px solid transparentize($borders_color, 0.05);
-	background-color: transparentize($base_color, 0.40); //$base_color;
-  border-radius: $radius;
-}
-
-
-.calendar-events-no-events-box {
-}
-
-.calendar-events-no-events-button {
-	margin: 6px 0 6px 0;
-	padding: 6px;
-
-	&:hover {
-		background-color: $accent_color;
-
-		.calendar-events-no-events-icon,
-		.calendar-events-no-events-label {
-			color: $selected_fg_color;
-		}
-	}
-}
-
-.calendar-events-no-events-icon,
-.calendar-events-no-events-label {
-	font-weight: bold;
-	color: $fg_color;
-	text-align: center;
-}
-
-.calendar-events-date-label {
-	padding: .1em .1em .5em .1em;
-	color: $fg_color;
-	font-weight: bold;
-	text-align: center;
-}
-
-.calendar-events-event-container {
-	padding: 0;
-}
-
-.calendar-event-button {
-	border: 1px solid rgba(0,0,0,0);
-
-	.calendar-event-time-past {
-		color: transparentize($fg_color, 0.6);
-		font-weight: bold;
-		text-align: left;
-		margin-bottom: .2em;
-	}
-	.calendar-event-time-present {
-		color: $fg_color;
-		font-weight: bold;
-		text-align: left;
-		margin-bottom: .2em;
-
-		&:all-day {
-			color: $accent_color;
-		}
-	}
-	.calendar-event-time-future {
-		color: $fg_color;
-		font-weight: bold;
-		text-align: left;
-		margin-bottom: .2em;
-	}
-
-	.calendar-event-summary {
-		color: $fg_color;
-		text-align: left;
-		width: 200px;
-	}
-
-	.calendar-event-countdown {
-		text-align: right;
-		margin-bottom: .6em;
-		color: $fg_color;
-		&:soon {
-			font-weight: bold;
-		}
-		&:imminent {
-			font-weight: bold;
-			color: $warning_color;
-		}
-		&:current {
-			font-weight: bold;
-			color: $accent_color;
-		}
-	}
-
-	&:hover {
-		background-color: $accent_color;
-		border: 1px solid $borders_color;
-		.calendar-event-time-past,
-		.calendar-event-time-present,
-		.calendar-event-time-future,
-		.calendar-event-summary {
-			color: $selected_fg_color;
-		}
-
-		.calendar-event-countdown {
-			text-align: right;
-			margin-bottom: .6em;
-			color: $selected_fg_color;
-			&:soon {
-				font-weight: bold;
-			}
-			&:imminent {
-				font-weight: bold;
-			}
-			&:current {
-				font-weight: bold;
-			}
-		}
-	}
-}
-
-.calendar-event-row-content {
-}
-
-.calendar-event-color-strip {
-	width: 2px;
-}
-
-.calendar-today-home-button {
-	padding: 6px;
-}
-
-.calendar-today-day-label {
-	font-size: 1.75em;
-	color: $fg_color;
-	font-weight: bold;
-	text-align: center;
-	padding-bottom: .1em;
-}
-
-.calendar-today-date-label {
-	font-size: 1.1em;
-	color: $fg_color;
-	font-weight: bold;
-	text-align: center;
-}
-
-.calendar-today-home-button-enabled {
-	padding: 6px;
-
-	&:hover {
-		background-color: $accent_color;
-
-		.calendar-today-day-label {
-			color: $selected_fg_color;
-		}
-		.calendar-today-date-label {
-			color: $selected_fg_color;
-		}
-	}
-}
-
-.calendar-month-label {
-  color: $fg_color;
-  font-weight: bold;
-  padding: 8px 0;
-}
-
-.calendar-change-month-back,
-.calendar-change-month-forward {
-  width: 16px;
-  height: 16px;
-}
-
-//arrow back
-.calendar-change-month-back {
-  background-image: url("common-assets/misc/calendar-arrow-left.svg");
-
-  &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-left-hover.svg"); }
-
-  &:active { background-image: url("common-assets/misc/calendar-arrow-left.svg"); }
-
-  &:rtl {
-    background-image: url("common-assets/misc/calendar-arrow-right.svg");
-
-    &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-right-hover.svg"); }
-
-    &:active { background-image: url("common-assets/misc/calendar-arrow-right.svg"); }
+  &-events-main-box {
+    height: 300px;
+    margin: $base_margin * 4;
+    padding-top: $base_padding * 2;
+    min-width: 350px;
+    border: 1px solid $borders_color;     //border-right-width: 1px;
+    background-color: transparentize($base_color, 0.75); //$base_color;
+    border-radius: $border_radius;
   }
-}
 
-//arrow forward
-.calendar-change-month-forward {
-  background-image: url("common-assets/misc/calendar-arrow-right.svg");
+  &-today-home-button,
+  &-today-home-button-enabled {
+    margin-left: $base_padding * 2;
+    border-radius: $border_radius;
 
-  &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-right-hover.svg"); }
+    &:hover {
+      transition-duration: 150ms;
+      background-color: $hover_bg_color;
 
-  &:active { background-image: url("common-assets/misc/calendar-arrow-right.svg"); }
-
-  &:rtl {
-    background-image: url("common-assets/misc/calendar-arrow-left.svg");
-
-    &:focus, &:hover { background-image: url("common-assets/misc/calendar-arrow-left-hover.svg"); }
-
-    &:active { background-image: url("common-assets/misc/calendar-arrow-left.svg"); }
+      .calendar-today-day-label {
+        color: $selected_fg_color;
+      }
+      .calendar-today-date-label {
+        color: $selected_fg_color;
+      }
+    }
   }
-}
 
-.calendar-day-event-dot-box {
-	margin-top: 1.7em;
-	max-rows: 1;
-}
-
-.calendar-day-event-dot {
-	margin: 1px;
-  border-radius: 0.1em; //2px;
-	width: 0.2em; //4px;
-	height: 0.2em; //4px;
-}
-
-.calendar-day-base {
-  font-size: 1em;
-  text-align: center;
-  width: 2.2em;
-  height: 2.2em;
-  padding: 0.1em;
-
-	&:hover {
-		font-weight: bold;
-		color: $selected_fg_color;
-		background-color: $accent_color;
-	}
-}
-
-.calendar-day-heading {
-  color: transparentize($fg_color, 0.15);
-  margin-top: 1em;
-  font-size: 1.05em;
-}
-
-.calendar-day {
-  border-width: 0;
-  color: transparentize($fg_color, 0.1);
-  border-radius: $radius; // 0.5em;
-}
-
-.calendar-day-top {
-  border-top-width: 0;
-}
-
-.calendar-day-left {
-  border-left-width: 0;
-}
-
-.calendar-nonwork-day {
-  color: $fg_color;
-  background-color: transparent;
-  font-weight: bold;
-}
-
-.calendar-today {
-	color: $accent_color;
-  font-weight: bold;
-	border: 1px solid $accent_color;
-	&:selected {
-		background-color: if($variant == 'light', transparentize($accent_color, 0.6), transparentize($accent_color, 0.6));
-		&:hover{
-			color: $selected_fg_color;
-      background: $accent_color;
-		}
+  // the large date labels at the top
+  &-today-day-label {
+    @extend %title_4;
+    text-align: center;
   }
-}
 
-.calendar-not-today {
-	color: $fg_color;
-  &:hover {
-    font-weight: bold;
-    color: $selected_fg_color;
-    background: transparentize(white, 0.925);
+  &-today-date-label {
+    @extend %title_3;
   }
-  &:selected {
-		font-weight: bold;
-		color: $selected_fg_color;
-		//@include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
-		background-color: transparentize($accent_color, 0.6);
-		&:hover {
-			font-weight: bold;
-			color: $selected_fg_color;
-      background: $accent_color;
+
+  &-month-label {
+    @extend %heading;
+  }
+
+  &-change-month-back,
+  &-change-month-forward:rtl {
+    width: 16px;
+    height: 16px;
+    color: $fg_color;
+    background-image: url("#{$assets_path}/calendar-arrow-left.svg");
+
+    &:hover {
+      transition-duration: 150ms;
+      background-image: url("#{$assets_path}/calendar-arrow-left-hover.svg");
+    }
+  }
+
+  &-change-month-forward,
+  &-change-month-back:rtl {
+    width: 16px;
+    height: 16px;
+    color: $fg_color;
+    background-image: url("#{$assets_path}/calendar-arrow-right.svg");
+
+    &:hover {
+      transition-duration: 150ms;
+      background-image: url("#{$assets_path}/calendar-arrow-right-hover.svg");
+    }
+  }
+
+  &-day-event-dot-box {
+    margin-top: 1.7em;
+    max-rows: 1;
+  }
+
+  &-day-event-dot {
+    margin: 1px;
+    border-radius: $border_radius;
+    width: 0.25em; //4px
+    height: 0.25em; //4px;
+  }
+
+  &-day-base {
+    text-align: center;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: $border_radius;
+    color: $insensitive_fg_color;
+
+    &:hover {
+      transition-duration: 150ms;
+      background-color: $hover_bg_color;
+      color: $hover_fg_color;
+      font-weight: bold;
+      box-shadow: inset 0 0 0.2em $borders_color;
+    }
+    // &:selected { }
+  }
+
+  &-not-today {
+    color: $fg_color;
+    &:selected {
+      font-weight: bold;
+      color: $selected_fg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      //background-color: $accent_color;
+      &:hover {
+        transition-duration: 150ms;
+        font-weight: bold;
+        color: lighten($selected_fg_color, 10%);
+        background: $accent_color;
+      }
     }
 
-  }
-}
+//TODO: HOVER STATE FOR SELECTED DAY (not TODAY) IS WRONG
 
-.calendar-other-month-day {
-  color: transparentize($fg_color, 0.7);
-  font-weight: 200;
-  //opacity: 1;
-  &:hover {
-    background-color: transparentize(white, 0.925);
+  }
+
+  &-day-heading {
     color: $fg_color;
-    font-weight: 200;
+    margin-top: $base_margin * 3;
+    // using this to move the weekday row closer to the dates
+    height: 1.6em;
   }
-}
 
-.calendar-week-number {
-  color: transparentize($fg_color, 0.4);
-  font-size: 0.7em;
-  margin-top: 1.1em;
+  &-week-number {
+    color: transparentize($fg_color, 0.4);
+    font-size: 0.7em;
+    margin-top: 1.1em;
+  }
+
+  &-work-day { color: $fg_color; }
+  &-nonwork-day {
+    color: $fg_color;
+    font-weight: 600;
+  }
+
+  &-today {
+    border: 1px solid $accent_bg_color;
+    background-color: inherit;
+    color: $accent_color;
+    font-weight: bold;
+    &:hover {
+      color: $accent_color;
+      transition-duration: 150ms;
+      background-color: transparentize($accent_color, 0.6);
+    }
+
+    &:selected {
+      color: $selected_fg_color;
+      // background-color: $accent_color;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      &:hover {
+        transition-duration: 150ms;
+        background-color: lighten($accent_color, 10%);
+      }
+    }
+  }
+
+  &-other-month-day {
+    color: transparentize($fg_color, 0.7);
+    font-weight: 200;
+    //opacity: 1;
+    &:hover {
+      transition-duration: 150ms;
+      background-color: transparentize(white, 0.925);
+      color: $fg_color;
+      font-weight: 200;
+    }
+  }
+
+  // the calendar events area
+  &-events-date-label {
+    @extend %title_4;
+    text-align: center;
+  }
+
+  &-events-no-events-box { // was empty selector
+    background: inherit;
+    border: 1px solid $borders_color;
+    border-radius: $border_radius;
+    &:hover {
+      transition-duration: 200ms;
+    }
+  }
+
+  &-events-no-events-button {
+    margin: 0.38em 0;// 6px 0;
+    padding: 0.38em; //6px;
+    border-radius: $border_radius; // $base_border_radius;
+    color: $light_text_color;
+
+    &:hover {
+      transition-duration: 200ms;
+      color: $fg_color; }
+  }
+
+  &-events-no-events-icon {
+    color: $large_icon_color;
+    icon-size: 8em; // 128px;
+  }
+
+  &-events-no-events-label {
+    @extend %title_3;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  &-events-event-container { background: transparent; } // was empty selector
+  &-events-scrollbox { margin-top: $base_margin * 2;}
+
+  &-events-main-box {
+    .separator {
+      -margin-horizontal: 1em;
+      -gradient-height: 1px;
+      -gradient-start: transparent;
+      -gradient-end: transparent;
+    }
+  }
+
+  &-event-button {
+    margin: 0.2em;// 3px 0;
+    border-radius: $border_radius; // $base_border_radius;
+    border: 1px solid $osd_borders_color;
+
+    &:hover {
+      transition-duration: 150ms;
+      background-color: $hover_bg_color; // lighten($bg_color, 15%);
+      border-color: $borders_color;
+    }
+  }
+
+  &-event-color-strip {
+    width: 0.1em; // 3px;
+    border-radius: $border_radius;
+  }
+
+  &-event-row-content { margin: 0.45em; }
+
+  &-event-time-past {
+    @extend %heading;
+    color: $insensitive_fg_color;
+  }
+
+  &-event-time-present {
+    @extend %heading;
+    color: $fg_color;
+  }
+
+  &-event-time-present:all-day {
+    @extend %heading;
+    color: $accent_color;
+  }
+
+  &-event-countdown {
+    @extend %caption;
+
+    color: $light_text_color;
+
+    &:soon { color: $warning_color; }
+    &:imminent { color: $error_color; }
+    &:current { color: $success_color; }
+  }
+
+  &-event-time-future {
+    @extend %heading;
+    color: $fg_color;
+  }
+
+  &-event-summary {
+    color: $light_text_color;
+  }
 }

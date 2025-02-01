@@ -1,24 +1,35 @@
 
-$variant: 'dark';
+@function to_em($input, $base: 16px) { // convert px to em
+  $em_value: ($input / $base) * 1.091 * 1000;
+      // multiplied and divided by 1000 to make up for round() shortcoming
+  @return round($em_value) / 1000 * 1em;
+}
 
-/**************
- * Shapes     *
- **************/
+@mixin fontsize($size, $base: 16px, $unit: pt) { // convert font size in pt to em
+  // if pt, convert into unitless value with the assumption: 1pt = 1.091px
+  $adjusted_size: if($unit == pt, $size * 1.091, $size) * 1000;
+  $rounded_size: round($adjusted_size / $base) / 1000;
+  font-size: $rounded_size * 1em;
+  // font-size: round($size) + pt;
+}
 
-$radius: 0.6em;
+/* paddings and margins */
+$base_padding: 4px;
+$base_margin: 2px;
 
-/**************
- * Assets     *
- **************/
+/* border radius */
+$base_border_radius: 8px;
+$border_radius: 0.6em;
+$modal_dialog_radius: $border_radius;
 
-$asset_path: if($variant == 'dark', '/dark-assets', '/light-assets');
+$scalable_icon_size: to_em(16px);
 
-$asset_suffix: if($variant=='dark', '-dark', '');
 
-/*************?
- * Animations *
- **************/
+$assets_path: "assets";
 
-$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-$backdrop_transition: 200ms ease-out;
-$button_transition: all 200ms $ease-out-quad;
+$insensitive_factor: 3%;
+  // the % a color is lightened or darkened for button and entries states
+
+//padding and spacing for applets
+$applet_padding_horizontal: 0.3em;// 6px;
+$applet_padding_vertical: 0.2em; // 4px;

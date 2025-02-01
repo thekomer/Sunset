@@ -2,19 +2,16 @@
  * Window list (windowList.js) *
  * * * * * * * * * * * * * * * */
 
- .window-list {
+.window-list {
 
   &-box {
-    spacing: 6px;
-    padding-left: 10px;
-    padding-top: 10px;
+    spacing: 0.375em; //$base_padding;
+    padding-left: 0.625em; //$base_padding;
+    padding-top: 1px;
 
     &.vertical {
-      spacing: 2px;
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      spacing: 0.125em; //$base_margin;
+      padding: 0.625em 0; //$base_padding 0;
     }
 
     &:highlight {
@@ -25,45 +22,46 @@
   &-item-label {
     font-weight: normal;
     width: 15em;
-    min-width: 5px;
+    min-width: 0.32em;//5px;
+    color: $panel_fg_color;
   }
 
   &-item-box {
     font-weight: normal;
     background-image: none;
-    padding-top: 0;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0.2em;
     transition-duration: 100;
-    color: transparentize($selected_fg_color, 0.4);
 
     &.top,
     &.bottom {
-      border-bottom-width: 2px;
-
-      & StLabel { padding-left: 2px; }
+      padding-top: 0;
+      border-bottom-width: 0.13em;//2px;
+      StLabel { padding-left: 0.13em; } //2px;
     }
 
     &.right {
-      padding-left: 0px;
-      padding-right: 0px;
-      border-right-width: 2px;
+      padding-left: 0;
+      border-right-width: 0.13em;//2px;
 
-      & StBin { padding-right: 0; }
+      StBin {
+        padding-right: 0;
+        // padding-left: 0.3125em; // 5px;
+      }
     }
 
     &.left {
-      padding-left: 0px;
-      padding-right: 0px;
-      border-left-width: 2px;
+      padding-right: 0;
+      border-left-width: 0.13em; //3px;
 
-      & StBin { padding-left: 1px; }
+      StBin {
+        padding-left: 1px; //0;
+        //padding-right: 5px;
+      }
     }
 
     &:hover,
     &:groupFocus {
       color: $selected_fg_color;
-      border-radius: 7px;
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
     }
@@ -71,8 +69,9 @@
     &:active,
     &:checked,
     &:focus,
-    &:running {
+    &:running  {
       color: $selected_fg_color;
+      font-weight: bold;
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.7);
       &:hover{
@@ -81,113 +80,109 @@
       }
     }
 
-    & .progress {
-      background-color: transparentize($accent_color, 0.2);
-    }
+    & .progress { background-color: transparentize($success_color, 0.2); }
   }
 
-  &-item-demands-attention {
-    @include bg_gradient(horizontal, $destructive_color,
-      	$destructive_color, 1);
-  }
+  &-item-demands-attention { background-color: $destructive_color; }
 
   &-preview {
-    spacing: 6px;
-    color: $fg_color;
-    border: 1px solid $borders_color;
-    background-color: $bg_color;
-    border-radius: $radius; // 3px;
-    padding: 6px 12px 12px 12px;
+    margin: 0.4em;
     font-size: 1em;
+    spacing: 0.4em;//$base_margin;
+    padding: 0.3em;;
+    border: 1px solid $borders_color;
+    background-color: $osd_bg_color;
+    border-radius: $border_radius; // $base_border_radius;
+    // box-shadow: 0 0 6px 0 $shadow_color;
   }
 }
+
+
 /* * * * * * * * * * * *
  * Grouped window list *
  * * * * * * * * * * * */
 
- .grouped-window-list {
+.grouped-window-list {
+  &-box { background-color: transparent }
 
   &-item-label {
+    color: $panel_fg_color; // $fg_color;
     font-weight: normal;
-    color: fg_color;
+    text-align: left;
+    background-image: none;
     width: 15em;
     min-width: 5px;
   }
 
   &-item-box {
     text-align: left;
-    font-weight: normal;
+    font-weight: bold;
+    color: inherit;
     background-image: none;
-    padding-top: 0;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 7px;
+    border-radius: 0.2em; //7px;
     transition-duration: 100;
-    color: transparentize($selected_fg_color, 0.4);
+    padding: 0.1em; //padding: 0 0.4em; //$base_padding;
+
 
     &.top,
     &.bottom {
-      border-bottom-width: 2px;
-
+      padding-bottom: 0.27em; //padding: 0 0.4em; //$base_padding;
+      border-bottom-width: 0.18em;//2px;
       & StLabel { padding-left: 2px; }
     }
 
     &.right {
-      padding-left: 0px;
-      padding-right: 0px;
-      border-right-width: 2px;
-
+      padding-left: 0;
+      padding-right: 0;
+      border-right-width: 0.18em;//2px;
+      padding-right: 0.27em; //padding: 0 0.4em; //$base_padding;
       & StBin { padding-right: 0; }
     }
 
     &.left {
-      padding-left: 0px;
-      padding-right: 0px;
-      border-left-width: 2px;
+      padding-left: 0;
+      padding-right: 0;
+      border-left-width: 0.18em;//2px;
+      padding-left: 0.27em; //padding: 0 0.4em; //$base_padding;
 
       & StBin { padding-left: 1px; }
     }
 
     &:hover{
-    	border-radius: 7px;
-      color: $selected_fg_color;
+      color: $fg_color;
       @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
     }
     &:focus {
-    	border-bottom-width: 0px;
-    	border-top-width: 0px;
-    	border-left-width: 0px;
-    	border-right-width: 0px;
+      border-width: 0;
       color: $selected_fg_color;
+      //border-color: lighten($accent_bg_color, 10%);
       //background-color: transparentize($accent_color, 0.3);
       @include bg_gradient(horizontal, $theme_gradient_start,
-      	$theme_gradient_end, 0.7);
-      &:hover{
-      	@include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 1);
+      &:hover{
+      	@include bg_gradient(horizontal, lighten($theme_gradient_start, 10%),
+      	lighten($theme_gradient_end, 10%), 1);
       }
     }
-
     &:active,
     &:checked {
-      color: $selected_fg_color;
-      border-color: $accent_color;
-    }
+      border-color: lighten($accent_bg_color, 10%); }
 
-    & .progress {
-      background-color: transparentize($accent_color, 0.2);
-    }
+    & .progress { background-color: transparentize($accent_color, 0.2); }
   }
 
   &-item-demands-attention {
-    @include bg_gradient(horizontal, $destructive_color,
-      	$destructive_color, 1);
+    @include bg_gradient(vertical, $destructive_gradient_start,
+    	$destructive_gradient_end, 0.7);
+    //background-gradient-direction: vertical;
+    //background-gradient-start: $destructive_bg_color;
+    //background-gradient-end: $destructive_bg_color;
   }
 
-  &-thumbnail-label {
-    padding-left: 4px;
-  }
+  &-thumbnail-label { padding-left: 4px; }
+  &-thumbnail-alert { background: transparentize($destructive_color, 0.7); }
+  &-button-label { padding-left: 4px;}
 
   &-number-label {
     z-index: 99;
@@ -199,52 +194,54 @@
   }
 
   &-badge {
-    border-width: 0px;
-    border-color: $accent_color;
     border-radius: 9999px;
+    border-width: 0px;
     background-color: $white;
-    color: $panel_fg;
-  }
-
-  &-button-label {
-    padding-left: 4px;
-  }
-
-  &-thumbnail-alert {
-    background: rgba(255,52,52,0.3);
   }
 
   &-thumbnail-menu {
-    color: $fg_color;
+    color: $osd_fg_color;
     border: 1px solid $borders_color;
-    background-color: $bg_color;
-    border-radius: $radius; // 3px;
-    padding: 0px;
+    background-color: $osd_bg_color;
+    margin: 0.4em;//6px;
+    border-radius: $border_radius; //$base_border_radius;
+    box-shadow: 0 0 6px 0 $shadow_color;
+    padding: 0;
 
-    > StBoxLayout {
-      padding: 4px;
-    }
+    > StBoxLayout { padding: 4px; }
 
     .item-box {
-      padding: 10px;
-      border-radius: $radius; //2px;
-      spacing: 4px;
+      padding: 0.6em;//10px;
+      spacing: 0.2em;//4px;
+      border-radius: $border_radius; // 0;
+
+      // &:first-child {
+      //   border-radius: $border_radius 0 0 $border_radius;
+      // }
+      // &:last-child {
+      //   border-radius: 0 $border_radius $border_radius 0;
+      // }
 
       &:outlined {
-        padding: 8px;
         border: 1px solid $accent_color;
+        padding: 0.6em; //(0.6em - 1px);
+        // &:first-child {  border-radius: $border_radius 0 0 $border_radius; }
+        // &:last-child { border-radius: 0 $border_radius $border_radius 0; }
       }
 
       &:selected {
         border: 1px solid $accent_color;
+
+        // &:first-child {
+        //   border-radius: $border_radius 0 0 $border_radius; }
+        // &:last-child { border-radius: 0 $border_radius $border_radius 0; }
       }
     }
 
-    .thumbnail { width: 256px; }
-
+    .thumbnail { width: 16em; } //256px;
     .separator {
       width: 1px;
-      background: rgba(255,255,255,0.2);
+      background-color: $borders_color;
     }
   }
 }

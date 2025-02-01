@@ -1,46 +1,204 @@
-
+// stage
 stage {
   color: $fg_color;
 }
 
-.label-shadow {
-  color: rgba(0, 0, 0, 0);
+/* * * * * * * * * * * * * * * * * * * * * * *
+ * Reusable placeholders for common elements *
+ * * * * * * * * * * * * * * * * * * * * * * */
+
+/* entries */
+
+%entry_common {
+  min-height: 1.2em;
+  border-radius: $border_radius; // $base_border_radius;
+  padding: 0.5em 1.5em; //$base_padding * 1.5;
+  border: 1px solid $borders_color;
+  caret-color: $accent_color;
+  selected-color: white;
+  selection-background-color: $accent_bg_color;
+  caret-size: 2px;
 }
 
-@import 'widgets/buttons';
-@import 'widgets/entries';
-@import 'widgets/scrollbars';
-@import 'widgets/ripples';
-@import 'widgets/slider';
-@import 'widgets/checkboxes';
-@import 'widgets/radiobuttons';
-@import 'widgets/switches';
-@import 'widgets/links';
-@import 'widgets/tooltip';
-@import 'widgets/lookingglass';
-@import 'widgets/popovers-menus';
-@import 'widgets/panel';
-@import 'widgets/overview';
-@import 'widgets/calendar';
-@import 'widgets/notifications';
-@import 'widgets/alt-tab';
-@import 'widgets/activities-ripples';
-@import 'widgets/dialogs';
-@import 'widgets/run-dialog';
-@import 'widgets/magnifier';
-@import 'widgets/on-screen-keyboard';
+%entry {
+  @extend %entry_common;
+  @include entry(normal);
+  &:focus { @include entry(focus); }
+  &:insensitive { @include entry(insensitive); }
 
-/* * * * * * * * * * * * * * *
- * Cinnamon Specific Section *
- * * * * * * * * * * * * * * */
+  StLabel.hint-text { color: transparentize($fg_color, 0.7); }
 
-@import 'widgets/menu';
-@import 'widgets/osd';
-@import 'widgets/window-list';
-@import 'widgets/sound-applet';
-@import 'widgets/workspace-switcher';
-@import 'widgets/panelLaunchers';
-@import 'widgets/overview-corner';
-@import 'widgets/applets';
-@import 'widgets/desklets';
-@import 'widgets/previews';
+  .capslock-warning { icon-size: $scalable_icon_size; }
+
+  StIcon.peek-password {
+    icon-size: 1em; // 16px;
+    color: $fg_color;
+  }
+}
+
+%entry_osd {
+  @extend %entry_common;
+  selected-color: white;
+  selection-background-color: transparentize($accent_bg_color, 0.3);
+  @include entry(normal, $style: 'osd');
+  &:focus { @include entry(focus, $style: 'osd'); }
+  &:insensitive { @include entry(insensitive, $style: 'osd'); }
+
+  StLabel.hint-text { color: transparentize($fg_color, 0.7); }
+
+  .capslock-warning { icon-size: $scalable_icon_size; }
+
+  StIcon.peek-password {
+    icon-size: 1em; // 16px;
+    color: $fg_color;
+  }
+}
+
+/* buttons */
+
+%button_common {
+  border-radius: $border_radius; // $base_border_radius;
+  padding: $base_padding $base_padding * 6;
+  font-weight: bold;
+}
+
+%button {
+  @extend %button_common;
+  @include button(normal);
+  &:focus { @include button(focus); }
+  &:hover { @include button(hover); }
+  &:active { @include button(active); }
+  &:insensitive { @include button(insensitive); }
+}
+
+%flat_button {
+  @include button(normal, $style: flat);
+  &:focus { @include button(focus, $style: flat); }
+  &:hover { @include button(hover, $style: flat); }
+  &:insensitive { @include button(insensitive, $style: flat); }
+  &:selected,
+  &:active { @include button(active, $style: flat); }
+  &:checked { @include button(checked, $style: flat); }
+}
+
+/* buttons in dialogs */
+
+%dialog_button {
+  font-weight: bold;
+  padding: $base_padding * 2;
+  border-radius: $border_radius; // $base_border_radius * 1.5;
+
+  @include button(normal);
+  &:focus { @include button(focus); }
+  &:hover { @include button(hover); }
+  &:active { @include button(active); }
+  &:checked { @include button(checked); }
+  &:insensitive { @include button(insensitive); }
+}
+
+%dialog_button_default {
+  @extend %dialog_button;
+
+  @include button(normal, $c: $accent_bg_color, $style: default);
+  &:hover { @include button(hover, $c: $accent_bg_color, $style: default); }
+  &:active { @include button(active, $c: $accent_bg_color, $style: default); }
+  &:checked { @include button(checked, $c: $accent_bg_color, $style: default); }
+  &:insensitive {
+    border-color: $borders_color;
+
+    @include button(insensitive);
+  }
+}
+
+%dialog_button_destructive {
+  @extend %dialog_button;
+
+  @include button(normal, $c: $error_bg_color, $style: default);
+  &:hover { @include button(hover, $c: $error_bg_color, $style: default); }
+  &:active { @include button(active, $c: $error_bg_color, $style: default); }
+  &:checked { @include button(checked, $c: $error_bg_color, $style: default); }
+  &:insensitive {
+    border-color: $borders_color;
+
+    @include button(insensitive);
+  }
+}
+
+/* items in menus */
+
+%menuitem {
+  font-weight: normal;
+  spacing: $base_padding;
+  transition-duration: 100ms;
+  padding: $base_padding + 2 $base_padding * 2;
+  margin: 0 $base_margin;
+  border-radius: $border_radius; // $base_border_radius;
+}
+
+/* General Typography */
+
+%large_title {
+  font-weight: 300;
+  @include fontsize(24pt);
+}
+
+%title_1 {
+  font-weight: 800;
+  @include fontsize(20pt);
+}
+
+%title_2 {
+  font-weight: 800;
+  @include fontsize(15pt);
+}
+
+%title_3 {
+  font-weight: 700;
+  @include fontsize(15pt);
+}
+
+%title_4 {
+  font-weight: 700;
+  @include fontsize(13pt);
+}
+
+%heading {
+  font-weight: 700;
+  @include fontsize(11pt);
+}
+
+%caption_heading {
+  font-weight: 700;
+  @include fontsize(9pt);
+}
+
+%caption {
+  font-weight: 400;
+  @include fontsize(9pt);
+}
+
+%smaller {
+  font-weight: 400;
+  @include fontsize(8pt);
+}
+
+%slider {
+  height: 1em;
+  min-width: 15em;
+  -slider-height: 0.3em;
+  -slider-background-color: $base_color;
+  -slider-active-background-color: $accent_color;
+  -slider-border-color: $borders_color;//transparent;
+  -slider-active-border-color: transparent;
+  -slider-border-width: 1px;
+  -slider-handle-radius: 0.4em;
+}
+
+%osd_base {
+  color: $osd_fg_color;
+  background-color: $osd_bg_color;
+  border: 1px solid $osd_borders_color;
+  border-radius:  $border_radius; // $base_border_radius;
+  text-align: center;
+  padding: 1em 0.5em;
+}

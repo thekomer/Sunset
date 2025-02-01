@@ -1,49 +1,98 @@
-/* * * *
- * OSD *
- * * * */
+// various on screen popups
 
- .info-osd {
-  text-align: center;
+$barlevel_height: 6px;
+
+$ws_indicator_height: 2em; //32px;
+$ws_dot_active: ($ws_indicator_height / 3);
+$ws_dot_inactive: ($ws_indicator_height / 6);
+
+// media keys osd
+
+.media-keys-osd {
+  @extend %osd_base;
+  @extend %title_4;
+
+  margin-bottom: 3em;
+  border-radius: 1em;
   font-weight: bold;
-  spacing: 1em;
-  padding: 16px;
-  color: $fg_color;
-  border: 1px solid $borders_color;
-  border-radius: $radius; // 5px;
-  background-color: $osd_bg_color;
-}
+  spacing: .5em; // $base_padding * 2;
+  padding: 0.5em 1em; // $base_padding * 2 $base_padding * 4;
+  & > * { spacing: .5em; } // $base_padding * 2; }
 
-.restart-osd {
-  font-size: 1.6em;
-}
+  StIcon {
+    icon-size: 2em; //32px;
+  }
 
-.workspace-osd {
-  font-size: 4em;
-}
-
-.osd-window {
-  text-align: center;
-  font-weight: bold;
-  spacing: 0.5em;
-  padding: 0.5em;// 20px
-
-  color: $osd_fg_color;
-  background-color: $osd_bg_color;
-  border: 1px solid $borders_color;
-  border-radius: $radius; //5px;
-
-  .osd-monitor-label { font-size: 3em; }
+  StLabel {
+    &:ltr { margin-right: $base_padding; }
+    &:rtl { margin-left: $base_padding; }
+  }
 
   .level {
-    padding: 0;
-    height: 0.8em;
-    background-color: transparentize(white, 0.95);
-    border-radius: 0.4em;
-    border: 1px solid $borders_color;
+    min-width: 10em; //160px;
+    -barlevel-height: $barlevel_height;
+    -barlevel-background-color: $base_color;
+    -barlevel-active-background-color: $osd_fg_color;
+    -barlevel-amplify-color: $warning_color;
+    -barlevel-amplify-separator-width: $base_padding * 0.5;
+
+    &:ltr { margin-right: $base_padding; }
+    &:rtl { margin-left: $base_padding; }
   }
 
   .level-bar {
-    border-radius: 0.4em;// 2px;
-    background-color: $accent_color;
+    border-radius: $border_radius; // $base_border_radius;
+    background-color: $osd_fg_color;
   }
+}
+
+.info-osd {
+  @extend %osd_base;
+
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.workspace-switch-osd {
+
+  @extend %osd_base;
+  @extend %title_4;
+
+  min-width: 10em; // 140px;
+  margin-bottom: 3em;
+  border-radius: $border_radius; // 9999px;
+  font-weight: bold;
+
+  padding: (($ws_indicator_height - $ws_dot_active) / 2) 1em 0 1em;
+
+  &-indicator-box { spacing: 0.25em; } // $base_padding * 2; }
+
+  &-indicator {
+    background-color: transparentize($fg_color, 0.5);
+    padding: $ws_dot_inactive / 2;
+    margin: ($ws_indicator_height - $ws_dot_inactive) / 2;
+    border-radius: $ws_indicator_height;
+
+    &:active {
+      background-color: $accent_color;
+      padding: $ws_dot_active / 2;
+      margin: ($ws_indicator_height - $ws_dot_active) / 2;
+    }
+  }
+}
+
+.monitor-label {
+  border-radius: 0;
+  color: black;
+  padding: 0.25em; //$base_padding * 2;
+  text-align: center;
+}
+
+//  resize popup
+
+.resize-popup {
+  @extend %osd_base;
+
+  padding: 0.25em; // $base_padding * 2;
 }

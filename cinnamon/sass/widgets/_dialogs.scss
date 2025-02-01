@@ -1,222 +1,196 @@
-/* * * * * * * * *
- * Modal dialogs *
- * * * * * * * * */
+// Modal dialogs
 
- .lightbox { background-color: rgba(0, 0, 0, 0.4); }
- .flashspot { background-color: white; }
-
- .modal-dialog {
-   background-color: $osd_bg_color; //$bg_color;
-   border: 1px solid $borders_color;
-   border-radius: $radius;
-   padding: .2em .4em; //5px 10px;
-
-   > StBoxLayout:first-child {
-     padding: 10px;
-   }
-
-   &-button-box {
-     spacing: 0;
-     margin: 0px;
-     padding: 10px;
-     border: none;
-     background-color: transparent;
-
-     .modal-dialog-button {
-       padding-top: 0;
-       padding-bottom: 0;
-       height: 30px;
-
-       @extend %osd_button;
-     }
-   }
-
-   .confirm-dialog-title {
-     text-align: center;
-     font-weight: bold;
-     font-size: 1.3em;
-     padding-bottom: 12px;
-   }
- }
-
- /* * * * * * * *
- * Run dialog  *
- * * * * * * * */
-
-.run-dialog {
-  padding: 10px 15px 10px 15px;
+.dialog {
+  background-color: $bg_color;
+  color: $fg_color;
+  border-radius: $modal_dialog_radius;
   border: 1px solid $borders_color;
-  border-radius: $radius;//3px;
-  background-color: $osd_bg_color;
+  padding: $base_padding * 3;
 
-  > * { padding: 0; }
+  .dialog-content-box {
+    margin-top: $base_margin * 2;
+    margin-bottom: $base_margin * 4;
+    spacing: $base_margin * 8;
+    max-width: 28em;
+  }
 
-  &-label {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: $fg_color;
-    padding-bottom: 1em; //15px;
+  .dialog-button {
+    @extend %dialog_button;
+
+    &:default { @extend %dialog_button_default; }
+    &:destructive-action {  @extend %dialog_button_destructive; }
+  }
+
+  .confirm-dialog-title {
+    @extend %title_2;
+    text-align: center;
+  }
+}
+
+// Lists in dialogs
+
+.dialog-list {
+  spacing: $base_padding * 3;
+
+  .dialog-list-title {
+    @extend %heading;
     text-align: center;
   }
 
-  &-description {
-    color: $fg_color;
-    padding-top: 1em; //15px;
+  .dialog-list-scrollview { max-height: 200px; }
+  .dialog-list-box {
+    spacing: 1em;
+
+    .dialog-list-item {
+      spacing: 1em;
+
+      .dialog-list-item-title { font-weight: bold; }
+      .dialog-list-item-description {
+        @extend %caption;
+        color: darken($fg_color, 5%);
+      }
+    }
+  }
+}
+
+// End session dialog
+
+.end-session-dialog {
+  min-width: 40em;
+
+  .dialog-content-box { spacing: 0; }
+
+  .dialog-list {
+    spacing: 0;
+
+    .dialog-list-title {
+      color: $warning_color;
+      background-color: transparentize($warning_color, 0.9);
+      padding: $base_padding * 1.5;
+      border-radius: $border_radius; // $base_border_radius;
+      margin: $base_margin 0;
+    }
+  }
+}
+
+// message dialog
+
+.message-dialog-content {
+  spacing: $base_padding * 3;
+
+  .message-dialog-title {
     text-align: center;
+    @extend %title_2;
+
+    &.lightweight { @extend %title_4; }
+  }
+
+  .message-dialog-description { text-align: center; }
+
+  .message-dialog-caption {
+    @extend %caption;
+    text-align: center;
+  }
+}
+
+// run dialog
+
+.run-dialog {
+
+  .dialog-content-box {
+    margin: $base_margin;
+  }
+
+  &-description {
+    @extend %caption;
+
+    text-align: center;
+    color: darken($fg_color, 20%);
 
     &.error { color: $error_color; }
   }
 
-  // &-error-label { color: $error_color; }
-
-  // &-error-box {
-  //   padding-top: 15px;
-  //   spacing: 5px;
-  // }
   &-completion-box {
-    padding-top: 5px;
-    padding-left: 15px;
-    font-size: 1em;
+    padding-top: $base_padding;
+    padding-left: $base_padding * 2;
   }
+
   &-entry {
-    width: 21em;
+    @extend %entry;
+
+    width: 20em;
     height: 1.2em;
-    padding: 0.5em; //7px;
-    border-radius: $radius; //1.2em;
-    caret-color: $osd_fg_color;
-    selected-color: $selected_fg_color;
-    selection-background-color: $accent_color;
-
-    @include entry(osd);
-
-    &:focus { @include entry(focus); }
-  }
-  .modal-dialog-button-box {
-    border: none;
-    box-shadow: none;
-    background: none;
   }
 }
 
-//
-// Polkit Dialog
-//
-.polkit-dialog {
-  width: 500px;
+// password or authentication dialog
 
-  &-main-layout { spacing: 10px; }
+.prompt-dialog {
+  width: 26em;
 
-  &-headline {
-    color: $fg_color;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-
-  &-description {
-    color: $fg_color;
-    text-align: center;
-    font-size: 1em;
-  }
-
-  &-user-layout { spacing: 10px; }
-  &-user-layout:rtl { padding-right: 10px; }
-
-  &-user-root-label { color: $error_color; }
-
-  &-password-label:ltr {
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-  }
-
-  &-password-label:rtl {
-    padding-left: 0.5em;
+  .dialog-content-box {
+    spacing: $base_margin * 4;
+    margin-bottom: $base_margin * 3;
   }
 
   &-password-entry {
-    width: 21em;
-    height: 1.2em;
-    padding: 7px;
-    border-radius: $radius; // 1em;
-    caret-color: $osd_fg_color;
-    selected-color: $selected_fg_color;
-    selection-background-color: $accent_color;
-
-    @include entry(osd);
-
-    &:focus { @include entry(osd-focus); }
-
-    .caplocks-warning {
-      icon-size: 16px;
-      warning-color: $warning_color;
-      padding: 0 4px;
-    }
+    @extend %entry;
+    width: 20em;
   }
 
-  &-error-label {
-    color: $error_color;
+  &-password-layout { spacing: $base_margin * 2;}
+
+  &-error-label,
+  &-info-label,
+  &-null-label {
     text-align: center;
-    font-size: 1em;
+    @extend %caption;
   }
 
-  &-info-label { font-size: 1em; }
+  &-error-label { color: $error_color; }
 }
 
+// polkit dialog
 
-/* CinnamonMountOperation Dialogs */
+.polkit-dialog {
 
-.cinnamon-mount-operation-icon {
-  icon-size: 48px;
+  &-user-layout {
+    text-align: center;
+    spacing: 2px;
+  }
+
+  &-user-combo {
+    @extend %flat_button;
+    @extend %heading;
+
+    border-radius: $border_radius; // $base_border_radius;
+    padding: $base_padding $base_padding * 6;
+
+    // special case the :insensitive button sinc we want
+    // the label to be the normal color when there are
+    // not multiple users
+    &:insensitive { color: $fg_color; }
+  }
 }
 
-.mount-password-reask {
-  color: $warning_color;
-}
+// Audio selection dialog
 
-.show-processes-dialog,
-.mount-question-dialog {
-  spacing: 24px;
+.audio-device-selection-dialog {
+  min-width: 24em;
 
-  &-subject {
-    padding-top: 10px;
-    padding-left: 17px;
-    padding-bottom: 6px;
+  .audio-selection-box {
+    spacing: $base_padding *2;
 
-    &:rtl {
-      padding-left: 0px;
-      padding-right: 17px;
+    .audio-selection-device {
+      @extend %flat_button;
+      border-radius: $border_radius; // $base_border_radius;
+
+      .audio-selection-device-box {
+        padding: $base_padding * 2;
+        spacing: $base_padding * 2;
+      }
+
+      .audio-selection-device-icon { icon-size: 64px;}
     }
-  }
-  &-description {
-    padding-left: 17px;
-    width: 28em;
-
-    &:rtl { padding-right: 17px; }
-  }
-}
-
-.show-processes-dialog-app-list {
-  max-height: 200px;
-  padding-top: 24px;
-  padding-left: 49px;
-  padding-right: 32px;
-
-  &:rtl {
-    padding-right: 49px;
-    padding-left: 32px;
-  }
-
-  &-item {
-    color: #ccc;
-
-    &:hover { color: white }
-
-    &:ltr { padding-right: 1em; }
-    &:rtl { padding-left: 1em; }
-
-    &-icon:ltr { padding-right: 17px; }
-    &-icon:rtl { padding-left: 17px; }
-
-    &-name { font-size: 1.1em; }
   }
 }

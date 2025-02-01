@@ -1,0 +1,122 @@
+$menu_outer_padding: 9px;
+$menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
+
+%start_menu_button {
+  padding: $base_padding;
+  spacing: $base_margin;
+  border-radius: $border_radius; // $base_border_radius;
+}
+
+.menu {
+
+  &-background { background: inherit; }
+    // this can be used to color the entire menu background
+    // but we aren't using it here (we use it in .popup-menu-content selector
+    // in _menu.scss)
+
+  &-favorites-box {
+    min-height: 1.4em;
+    min-width: 1.4em;
+    padding: 0.625em;
+    transition-duration: 200;
+    background-color: red;
+    border: 1px solid transparent;
+    border-radius: $border_radius; //$base_border_radius;
+  }
+
+  &-favorites-button {
+    padding: .1em .5em;
+    border-radius: $border_radius; // $base_border_radius;
+    color: $osd_fg_color;
+
+    &:hover {
+      background-color: $hover_bg_color; // $lightest_bg_color;
+      transition-duration: 200;
+      color: $selected_fg_color;
+    }
+  }
+
+  &-categories-box { padding: $menu_outer_padding $base_padding * 4; }
+  &-applications-box { padding: $menu_outer_padding; }
+  &-applications-inner-box {
+    &:ltr { padding-left: $base_padding * 4; }
+    &:rtl { padding-right: $base_padding * 4; }
+  }
+
+  &-application-button {
+    @extend %start_menu_button;
+    transition-duration: 200;
+
+    &-label { padding: 0; }
+
+    &:highlighted { font-weight: bold; }
+
+    &-selected {
+      @extend %start_menu_button;
+
+      background-color: $hover_bg_color;
+      color: $selected_fg_color;
+      transition-duration: 200;
+
+      &:highlighted { font-weight: bold; }
+    }
+  }
+
+  &-category-button {
+    @extend %start_menu_button;
+    transition-duration: 200;
+    border-radius: $menu_outer_border_radius;
+
+    &-label { padding: 0; }
+
+    &:hover {
+      background-color: $hover_bg_color;
+      color: $selected_fg_color;
+      transition-duration: 200;
+    }
+
+    &-selected {
+      @extend %start_menu_button;
+      // background-color: $accent_color;  // $light_bg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      color: white;
+      font-weight: bold;
+
+      transition-duration: 200;
+        //TODO: Improve so this is some kind of button colors, not explicitly selected
+    }
+
+    &-greyed {
+      @extend %start_menu_button;
+      color: $insensitive_fg_color;
+      font-style: italic;
+      transition-duration: 200;
+
+      StIcon { opacity: 0.5; }
+    }
+  }
+
+  &-context-menu {}
+
+  &-selected-app-box {
+    padding-right: $base_padding * 4;
+    padding-left: $base_padding * 4;
+    text-align: right;
+  }
+
+  &-selected-app-title { @extend %heading; }
+  &-selected-app-description { color: $insensitive_fg_color; }
+
+  &-search-box {
+    padding: 0  0 $base_padding $menu_outer_padding;
+  }
+}
+
+#menu-search-entry {
+  @extend %entry_osd;
+}
+
+.menu-search-entry-icon {
+  icon-size: $scalable_icon_size;
+  color: $accent_color;
+}

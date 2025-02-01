@@ -1,0 +1,48 @@
+// desklet
+
+.desklet {
+  &:highlight {
+    border: 2px solid $accent_color;
+    border-radius: $border_radius; // $base_border_radius;
+  }
+
+  &-with-borders {
+    border: 1px solid $borders_color;
+    border-radius: $border_radius; // $base_border_radius;
+    background-color: $osd_bg_color;
+    padding: 0.1em;
+  }
+
+  &-with-borders-and-header {
+    border: 1px solid $borders_color;
+    border-radius: 0 0 $border_radius $border_radius; // 0 0 $base_border_radius $base_border_radius;
+    border-top-width: 0;
+    background-color: $osd_bg_color;
+    padding: $base_padding * 2;
+  }
+
+  &-header {
+    border: 1px solid $borders_color;
+    border-radius: $border_radius $border_radius 0 0; // $base_border_radius $base_border_radius 0 0;
+    background-color: $osd_bg_color;
+    padding: $base_padding;
+  }
+
+  &-drag-placeholder {
+    padding: 12px;
+    border: 1px solid red;
+  }
+}
+
+// digital photo frame
+
+.photoframe-box {
+  border: 1px solid $borders_color;
+  border-radius: $border_radius; // $base_border_radius;
+  background-color: transparentize($bg_color, 0.2);
+  padding: $base_padding;
+}
+
+// clock
+
+.clock-desklet-label {}

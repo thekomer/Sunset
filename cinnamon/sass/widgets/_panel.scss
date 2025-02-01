@@ -1,77 +1,22 @@
-/* * * * *
- * Panel *
- * * * * */
 
- #panel {
-  font-weight: normal;
-  color: $selected_fg_color;
-  height: 40px;		// sets the height of horizontal panels
-  width: 32px;		// sets the width of vertical panels */
-
-  &Left {
-    spacing: 4px;
-
-    &:dnd {
-      background-gradient-direction: vertical;
-      background-gradient-start: rgba(255,0,0,0.05);
-      background-gradient-end: rgba(255,0,0,0.2);
-    }
-    &:ltr { padding-right: 4px; }
-    &:rtl { padding-left: 4px; }
-    &.vertical {
-      padding: 0px;
-      &:ltr { padding-right: 0px; }
-      &:rtl { padding-left: 0px; }
-    }
-  }
-
-  &Right {
-
-    &:dnd {
-      background-gradient-direction: vertical;
-      background-gradient-start: rgba(0,0,255,0.05);
-      background-gradient-end: rgba(0,0,255,0.2);
-    }
-    &:ltr { padding-left: 4px; spacing: 0px; }
-    &:rtl { padding-right: 4px; spacing: 0px; }
-    &.vertical {
-      padding: 0px;
-      &:ltr { padding-right: 0px; }
-      &:rtl { padding-left: 0px; }
-    }
-  }
-
-  &Center {
-    spacing: 4px;
-
-    &:dnd {
-      background-gradient-direction: vertical;
-      background-gradient-start: rgba(0,255,0,0.05);
-      background-gradient-end: rgba(0,255,0,0.2);
-    }
-  }
-
-  &:highlight {
-    border-image: none;
-    background-color: transparentize($error_color, 0.5);
-  }
-}
 
 .panel {
 
+  &-top, &-bottom, &-left, &-right{
+    font-weight: bold;
+    color: $panel_fg_color;
+    background-color: $panel_bg_color;
+  }
+
   &Left {
     spacing: 4px;
 
-    &:dnd {
-      background-gradient-direction: vertical;
-      background-gradient-start: rgba(255,0,0,0.05);
-      background-gradient-end: rgba(255,0,0,0.2);
-    }
+    &:dnd { background-color: transparentize(red, 0.75); } // panel edit mode
     &:ltr { padding-right: 4px; }
     &:rtl { padding-left: 4px; }
 
     &.vertical {
-      padding: 0px;
+      padding: 0;
       &:ltr { padding-right: 0px; }
       &:rtl { padding-left: 0px; }
     }
@@ -79,65 +24,52 @@
 
   &Right {
 
-    &:dnd {
-      background-gradient-direction: vertical;
-      background-gradient-start: rgba(0,0,255,0.05);
-      background-gradient-end: rgba(0,0,255,0.2);
+    &:dnd { background-color: transparentize(blue, 0.75); } // panel edit mode
+
+    &:ltr {
+      padding-left: 4px;
+      spacing: 0;
     }
-    &:ltr { padding-left: 4px; spacing: 0px; }
-    &:rtl { padding-right: 4px; spacing: 0px; }
+    &:rtl {
+      padding-right: 4px;
+      spacing: 0;
+    }
 
     &.vertical {
-      padding: 0px;
-      &:ltr { padding-left: 0px; spacing: 0px; }
-      &:rtl { padding-right: 0px; spacing: 0px; }
+      padding: 0;
+
+      &:ltr {
+        padding-left: 0;
+        spacing: 0;
+      }
+      &:rtl {
+        padding-right: 0;
+        spacing: 0;
+      }
     }
   }
 
   &Center {
     spacing: 4px;
 
+    &:dnd { background-color: transparentize(green, 0.75); } // panel edit mode
+
     &.vertical {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    &:dnd {
-      background-gradient-direction: vertical;
-      background-gradient-start: rgba(0,255,0,0.05);
-      background-gradient-end: rgba(0,255,0,0.2);
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
+  // create a border on the side we want for each location
+  &-top { box-shadow: inset 0 -1px $borders_color; }
+  &-bottom { box-shadow: inset 0 1px $borders_color; }
+  &-left { box-shadow: inset -1px 0 $borders_color; }
+  &-right { box-shadow: inset 1px 0 $borders_color; }
 
-  &-top, &-bottom, &-left, &-right {
-    color: $selected_fg_color;
-    border: none;
-    background-color: transparentize($panel_bg, 0.01);
-    font-size: 1em;
-    padding: 0px;
-  }
+  &-dummy {   // used when adding a new panel
+    background-color: transparentize($accent_color, 0.5);
 
-  &-top {
-    box-shadow: 0 1px darken($panel_bg, 6%);
-  }
-
-  &-bottom {
-    box-shadow: 0 -1px darken($panel_bg, 6%);
-  }
-
-  &-left {
-    box-shadow: 1px 0 darken($panel_bg, 6%);
-  }
-
-  &-right {
-    box-shadow: -1px 0 darken($panel_bg, 6%);
-  }
-
-  &-dummy {
-    background-color: transparentize($error_color, 0.5);
-
-    &:entered { background-color: transparentize($error_color, 0.4); }
+    &:entered { background-color: transparentize($accent_color, 0.4); }
   }
 
   &-status-button {
@@ -145,26 +77,38 @@
     -natural-hpadding: 3px;
     -minimum-hpadding: 3px;
     font-weight: bold;
-    color: white;
+    color: $panel_fg_color;
 
-    &:hover {}
+    &:hover { color: $fg_color; }
   }
 
   &-button {
     -natural-hpadding: 6px;
     -minimum-hpadding: 2px;
-    font-weight: bold;
-    color: green;
+    font-weight: normal; // bold;
+    color: $panel_fg_color;
     transition-duration: 100;
 
-    &:hover {}
+    &:hover { color: $accent_color;}
   }
 }
 
-.system-status-icon {
-  icon-size: 16px;
-  padding: 0 1px;
+.panel-corner { // I dont know what this is
+  -panel-corner-radius: 0px;
+  -panel-corner-background-color: rgba(0, 0, 0, 0.2);
+  -panel-corner-border-width: 2px;
+  -panel-corner-border-color: transparent;
 
-  &.warning { color: $warning_color; }
-  &.error { color: $error_color; }
+  &:active, &:overview, &:focus {
+    -panel-corner-border-color: lighten($accent_color,5%);
+  }
+
+  &.lock-screen, &.login-screen, &.unlock-screen {
+    -panel-corner-radius: 0;
+    -panel-corner-background-color: transparent;
+    -panel-corner-border-color: transparent;
+  }
 }
+
+// highlight a specific panel when using the panel settings
+#panel:highlight { background-color: mix($panel_bg_color, $accent_color, 75%); }

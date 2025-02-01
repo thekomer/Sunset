@@ -1,0 +1,118 @@
+.workspace {
+
+  &-thumbnails { spacing: 1.6em; } // 26px
+  &-thumbnails-background { padding: 0.5em; } // 8px
+
+  // this controls both the darkness of thumbnails in expo and
+  // the darkness of the overiew backgroound
+  &-overview-background-shade { background-color: transparentize($panel_bg_color, 0.8); }
+
+  &-add-button {
+    background-image: url("#{$assets_path}/add-workspace.svg");
+    height: 12.5em; // 200px;
+    width: 2.2em; //35px;
+    transition-duration: 200;
+
+    &:hover {
+      background-image: url("#{$assets_path}/add-workspace-hover.svg");
+      transition-duration: 200;
+    }
+    &:active {
+      background-image: url("#{$assets_path}/add-workspace-active.svg");
+      transition-duration: 200;
+    }
+
+  }
+
+  &-close-button {
+    background-image: url("#{$assets_path}/close.svg");
+    height: 1.6em;//26px;
+    width: 1.6em;//26px;
+    -cinnamon-close-overlap: 0.8em; //13px;
+
+    &:hover {
+      background-image: url("#{$assets_path}/close-hover.svg");
+      transition-duration: 200;
+    }
+    &:active {
+      background-image: url("#{$assets_path}/close-active.svg");
+      transition-duration: 200;
+    }
+  }
+}
+
+.expo {
+
+  &-background { background-color: $bg_color; }
+
+  &-workspace-thumbnail-frame {
+    border: 1px solid $borders_color;
+
+    &#active {
+      border-color: $accent_color;
+      border-width: 0.2em;
+    }
+  }
+
+  &-workspaces-name-entry {
+    @extend %entry;
+
+    height: 1.5em;
+
+    &#selected{ }
+    &:focus { color: $fg_color; } // BugFix: cinnamon crashes if this is empty { }
+  }
+}
+
+.window {
+
+  &-close-area {
+    background-image: url("#{$assets_path}/trash-icon.svg");
+    height: 7.5em; // 120px;
+    width: 25em; // 400px;
+  }
+
+  &-close {
+    background-image: url("#{$assets_path}/close.svg");
+    height: 1.6em; // 26px;
+    width: 1.6em; // 26px;
+    -cinnamon-close-overlap: 13px;
+
+    &:hover {
+      background-image: url("#{$assets_path}/close-hover.svg");
+      transition-duration: 200;
+    }
+    &:active {
+      background-image: url("#{$assets_path}/close-active.svg");
+      transition-duration: 200;
+    }
+
+  }
+
+  &-border {
+    border: 3px solid $accent_color;// $accent_bg_color;
+    border-radius: $border_radius; // $base_border_radius;
+  }
+
+  &-caption {
+    min-height: 22px;
+    height: 1.3em;
+    font-size: 1em;
+    padding: 0.2em 0.4em; //$base_padding $base_padding * 1.5;
+    spacing: $base_margin;
+    border-radius: $border_radius; // $base_border_radius;
+    border: 1px solid $borders_color;
+    background-color: $osd_bg_color;
+    -cinnamon-caption-spacing: $base_padding;
+
+    &:focus {
+      background-color: $accent_bg_color;
+      border: 1px solid $accent_bg_color;
+      color: $selected_fg_color;
+    }
+  }
+}
+
+#overview { spacing: 0.8em; } // 12px
+
+.overview-empty-placeholder { @extend %large_title; }

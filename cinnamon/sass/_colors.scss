@@ -1,6 +1,3 @@
-// When color definition differs for dark and light variant,
-// it gets @if ed depending on $variant
-
 // Primary colors
 $black: #000000;
 $white: #ffffff;
@@ -17,77 +14,79 @@ $cyan: #00c1e4;
 $slider: #7b7bbd;
 $teal: #00e8c6;
 
-// Main definitions
-$accent_color: $orange;
-$theme_color: $accent_color;
-$bg_color: if($variant =='light', #F0F0F0, #0E111D);
-$base_color: if($variant =='light', #ffffff, lighten($bg_color, 3%));
-$fg_color: if($variant =='light', #202020, #BFC3CD);
-$text_color: $fg_color;
+// Theme colors
+$theme_color: #cc3700;
+$accent_color: $theme_color;
+$accent_bg_color: darken($theme_color, 10%);
+
+// global colors
+$bg_color: #0E111D;
+$fg_color: #BFC3CD;
 $selected_fg_color: #ffffff;
-$selected_bg_color: if($variant == 'light', #92b372, $accent_color);
+$hover_fg_color: #ffffff;
 
-//$borders_color: if($variant =='light', darken($bg_color,20%), darken($bg_color,6%));
-$borders_color: if($variant =='light', darken($bg_color,20%), transparentize($fg_color, 0.90));
-$borders_color_active: transparentize(mix($fg_color,$accent_color,70%), 0.75);
-$separator_color: if($variant == 'light', #cfcfcf, darken($bg_color, 6%));
-$link_color: if($variant == 'light', darken($accent_color,10%),
-                                     lighten($accent_color,20%));
+$base_color: lighten($bg_color, 5%);// #131727;
+$base_fg_color: lighten($fg_color, 5%);// #ced1d9;
 
-// main gradient
-$theme_gradient_start: #ff3300;
-$theme_gradient_end: #ffa100;
+$panel_bg_color: darken($bg_color, 5%);//#06080d;
+$panel_fg_color: darken($fg_color, 5%);//$fg_color;
 
+// used for button, entries and highlighted items
+$light_bg_color: lighten($bg_color, 8%);
+$lighter_bg_color: lighten($bg_color, 12%);
+$lightest_bg_color: lighten($bg_color, 24%);
 
+$light_base_color: lighten($base_color, 8%);
 
-// Attention
-$warning_color: if($variant == 'light', $theme_color, darken($theme_color,10%));
-$error_color: if($variant == 'light', $red, darken($red,5%));
-$success_color: if($variant == 'light', $cyan, darken($cyan,10%));
-$destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
-$suggested_color: if($variant == 'light', $accent_color, darken($accent_color,10%));
+// colored elements
+$error_color: #e4705b;
+$error_bg_color: #c01c28;
 
-// Insensitive
-$insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
+$success_color: #8ff0a4;
+$success_bg_color: #26a269;
 
-// Tooltip
-$tooltip_bg_color: darken($bg_color, 5%);
-$tooltip_fg_color: $fg_color;
-$tooltip_border_color: transparentize(white, 0.9);
+$destructive_bg_color: #c01c28;
+$destructive_color: #ff7b63;
 
-// Headerbar
-$headerbar_color: mix($base_color, darken($bg_color, 8%), 30%);
-$headerbar_fg_color: $text_color;
+$warning_color: #f8e45c;
+$warning_bg_color: #cd9309;
 
-// OSD
-$osd_fg_color: #fefefe;
-// $osd_bg_color:  transparentize(#14171a, 0.2);
-$osd_bg_color:  transparentize($headerbar_color, 0.15);
-$osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
-$osd_button_border: transparentize(darken($osd_bg_color, 20%), 0.6);
-$osd_entry_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
-$osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
-$osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
+$large_icon_color: transparentize($fg_color, 0.6);
+$light_text_color: mix($fg_color, $bg_color, 65%);
 
-// Shadow
-$shadow_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.95));
+// link colors
+$link_color: #1c71d8;
 
-// Panel
-$panel_bg: $headerbar_color;
-$panel_fg: $fg_color;
+// borders
+$borders_color:transparentize($fg_color, 0.95);
+$applet_separator_color: transparentize($fg_color, 0.90);
 
-// Entry
-$entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
-$entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
+// shadows
+$shadow_color: rgba(1, 1, 1, 0.05);
 
-// Buttons
-$button_bg: if($variant == 'light', lighten($bg_color, 2%), lighten($base_color, 2%));
-$button_border: $entry_border;
+// insensitive state
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
 
-// Colors used for highlights in places where we don't want to use accents
-$noaccent_light_bg_color: #c0c0c0;
-$noaccent_light_fg_color: $text_color;
-$noaccent_dark_bg_color: #525352;
-$noaccent_dark_fg_color: #ffffff;
-$noaccent_selected_bg_color: if($variant=='light', $noaccent_light_bg_color, $noaccent_dark_bg_color);
-$noaccent_selected_fg_color: if($variant=='light', $noaccent_light_fg_color, $noaccent_dark_fg_color);
+// entries
+$entry_fg_color: $base_fg_color;// $fg_color;
+$entry_bg_color: $base_color;// $light_bg_color;
+$insensitive_entry_bg_color: darken($entry_bg_color, $insensitive_factor);
+
+// buttons base colors
+$button_bg_color: $light_bg_color;   // mix input colors to get button background color
+
+// gradient colors
+$theme_gradient_start: adjust-hue($accent_color, -15deg);
+$theme_gradient_end: adjust-hue($accent_color, 15deg);
+$destructive_gradient_start: adjust-hue($destructive_bg_color, -15deg);
+$destructive_gradient_end: adjust-hue($destructive_bg_color, 15deg);
+
+// hover
+$hover_bg_color: transparentize($lightest_bg_color, 0.75); // $lighter_bg_color;
+
+// osd
+$osd_bg_color:  transparentize(mix($bg_color, $panel_bg_color, 50%), 0.10); // transparentize($panel_bg_color, 0.10);
+$osd_borders_color: transparentize($fg_color, 0.95);
+$osd_fg_color: $fg_color;
+$osd_entry_bg_color: transparentize($entry_bg_color, 0.30); //$entry_bg_color;
+$osd_entry_fg_color: $osd_fg_color;
