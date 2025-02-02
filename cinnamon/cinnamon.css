@@ -1280,7 +1280,7 @@ StScrollBar StButton#hhandle {
 
 .media-keys-osd {
   margin-bottom: 3em;
-  border-radius: 1em;
+  border-radius: 0.6em;
   font-weight: bold;
   spacing: .5em;
   padding: 0.5em 1em; }
