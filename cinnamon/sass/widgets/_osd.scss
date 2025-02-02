@@ -13,7 +13,7 @@ $ws_dot_inactive: ($ws_indicator_height / 6);
   @extend %title_4;
 
   margin-bottom: 3em;
-  border-radius: 1em;
+  border-radius: $border_radius;
   font-weight: bold;
   spacing: .5em; // $base_padding * 2;
   padding: 0.5em 1em; // $base_padding * 2 $base_padding * 4;
