@@ -65,7 +65,7 @@
   $button_bg_color: $light_bg_color;
 
   // background color mix override for flat style; the button bg color is the background color input
-  @if $style == 'flat' { $button_bg_color: $c;}
+  @if $style == 'flat' { $button_bg_color: $c; }
   // background color mix override for default button style
   @if $style == 'default' { $button_bg_color: $c;}
 
@@ -77,8 +77,17 @@
   $hover_button_bg_color: $lighter_bg_color;
   $active_button_bg_color: $lightest_bg_color;
   $checked_button_bg_color: $lightest_bg_color;
+  $checked_button_fg_color: $tc;
   $insensitive_button_bg_color: darken($button_bg_color, $insensitive_factor);
   $focus_shadow_color: transparentize($fg_color, 0.6);
+
+  // background color mix override for flat button style
+  @if $style == 'flat' {
+    $hover_button_bg_color: $light_bg_color;
+    $active_button_bg_color: $c;
+    $checked_button_bg_color: $c;
+    $checked_button_fg_color: lighten($accent_color, 10%);
+   }
 
   // background color mix override for default button style
   @if $style == 'default' {
@@ -115,7 +124,7 @@
 
     // checked button
     @else if $type == 'checked' {
-      color: $tc;
+      color: $checked_button_fg_color;
       //background-color: $checked_button_bg_color;
       @include bg_gradient(vertical, darken(adjust-hue($button_bg_color, -15deg),5%), darken(adjust-hue($button_bg_color, 15deg),5%), 1);
     }
@@ -171,7 +180,7 @@
 
     // checked button
     @else if $type == 'checked' {
-      color: $tc;
+      color: $checked_button_fg_color;
       background-color: $checked_button_bg_color;
     }
 

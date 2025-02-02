@@ -150,7 +150,7 @@
   }
 
   StButton {
-    @extend %button;
+    @extend %flat_button;
 
     width: 1.2em; //18px;
     height: 1.2em; //18px;
@@ -165,6 +165,13 @@
       height: 1em; //16px;
 
       StIcon { icon-size: 1.2em;}
+    }
+
+    &:hover {
+      background-color: transparentize($accent_bg_color, 0.5);
+    }
+    &:active {
+      color: $accent_bg_color;
     }
   }
 
