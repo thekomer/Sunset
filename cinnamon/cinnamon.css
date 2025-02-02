@@ -391,14 +391,26 @@ stage {
     padding: 0.2em 0; }
     .applet-box.vertical StLabel {
       padding-top: 0; }
-  .applet-box:hover, .applet-box:checked {
+  .applet-box:hover {
     color: #ffffff;
     background-gradient-direction: horizontal;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5);
     border-radius: 0.3em; }
-    .applet-box:hover-label, .applet-box:checked-label {
+    .applet-box:hover-label {
       color: #ffffff; }
+  .applet-box:checked {
+    color: #ffffff;
+    background-gradient-direction: horizontal;
+    background-gradient-start: #cc0400;
+    background-gradient-end: #cc6a00;
+    border-radius: 0.3em; }
+    .applet-box:checked-label {
+      color: #ffffff; }
+    .applet-box:checked:hover {
+      background-gradient-direction: horizontal;
+      background-gradient-start: #ff0500;
+      background-gradient-end: #ff8500; }
   .applet-box:highlight {
     background-color: rgba(192, 28, 40, 0.5); }
 

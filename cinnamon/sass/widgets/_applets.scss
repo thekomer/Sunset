@@ -12,8 +12,7 @@
       & StLabel { padding-top: 0; }
      }
 
-    &:hover,
-    &:checked {
+    &:hover{
       color: $selected_fg_color;
       // background-color: $hover_bg_color;
       @include bg_gradient(horizontal, $theme_gradient_start,
@@ -21,6 +20,18 @@
       border-radius: ($border_radius/2);
 
       &-label { color: $selected_fg_color; }
+    }
+    &:checked {
+      color: $selected_fg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start,
+      	$theme_gradient_end, 1);
+      border-radius: ($border_radius/2);
+
+      &-label { color: $selected_fg_color; }
+
+      &:hover {
+        @include bg_gradient(horizontal, lighten($theme_gradient_start, 10%), lighten($theme_gradient_end, 10%), 1);
+      }
     }
 
     &:highlight { background-color: transparentize($error_bg_color, 0.5); }
