@@ -14,7 +14,7 @@ gtk-color-scheme = "panel_bg_color:#06070c\npanel_fg_color:#BFC3CD"
 gtk-color-scheme = "dark_text_color:#BFC3CD\ndark_base_color:#101320"
 # Dark Theme - Foreground/background colors
 gtk-color-scheme = "dark_fg_color:#BFC3CD\ndark_bg_color:#0E111D"
-gtk-color-scheme = "sidebar_bg:#06080D\nsidebar_fg:#B8BDC8"
+gtk-color-scheme = "sidebar_bg_color:#06080D\nsidebar_fg_color:#B8BDC8"
 gtk-auto-mnemonics = 1
 gtk-primary-button-warps-slider = 1
 
