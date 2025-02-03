@@ -1493,13 +1493,12 @@ style "default" {
 style "menubar" {
 
   # Needed to fix Firefox's menubar text
-  bg[NORMAL]      = @dark_bg_color
-  text[NORMAL]    = @dark_fg_color
-  fg[NORMAL]      = @dark_fg_color
-  fg[PRELIGHT]    = @dark_fg_color
-  bg[SELECTED]    = @dark_bg_color
-  fg[SELECTED]    = shade(0.9, @dark_fg_color)
-
+  bg[NORMAL]      = @sidebar_bg
+  text[NORMAL]    = @sidebar_fg
+  fg[NORMAL]      = @sidebar_fg
+  fg[PRELIGHT]    = @sidebar_fg
+  bg[SELECTED]    = @sidebar_bg
+  fg[SELECTED]    = shade(0.9, @sidebar_fg)
 }
 
 style "menubar_item" {
@@ -1507,9 +1506,9 @@ style "menubar_item" {
   xthickness = 3
   ythickness = 4
 
-  fg[NORMAL]      = @dark_fg_color
-  fg[PRELIGHT]    = @dark_fg_color
-  text[NORMAL]    = @dark_fg_color
+  fg[NORMAL]      = @sidebar_fg
+  fg[PRELIGHT]    = @sidebar_fg
+  text[NORMAL]    = @sidebar_fg
 
   engine "pixmap" {
     image {
@@ -1527,9 +1526,9 @@ style "menu" {
   xthickness = 0
   ythickness = 0
 
-  bg[NORMAL]      = @base_color
-  bg[INSENSITIVE] = @base_color
-  bg[PRELIGHT]    = @base_color
+  bg[NORMAL]      = @sidebar_bg
+  bg[INSENSITIVE] = @sidebar_bg
+  bg[PRELIGHT]    = @sidebar_bg
   bg[SELECTED]    = @selected_bg_color
 
 }
