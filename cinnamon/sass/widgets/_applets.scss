@@ -189,14 +189,16 @@
   }
 
   .slider { // this actually does not change slider colors - colors are changed in %slider placeholder definition inside _common.scss (probably because _menu.scss is loaded after this one)
-    height: $base_padding;
-    -slider-height: $base_padding;
+    margin: 0.1em 0;
+    height: 0.3em; //$base_padding;
+    -slider-height: 0.3em; //$base_padding;
     -slider-background-color: $base_color;
     -slider-active-background-color: $accent_color;
     -slider-border-color: transparent;
     -slider-active-border-color: transparent;
     -slider-border-width: 1px;
     -slider-handle-radius: 0;
+    -slider-handle-radius: 0.15em;
   }
 }
 

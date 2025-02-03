@@ -24,7 +24,7 @@ inactive_color_1=#06070c
 inactive_color_2=#15161b
 
 # selected_bg_color in gtk-3
-active_hilight_2=#ff6a00
+active_hilight_2=#cc3700
 inactive_hilight_2=#9b4205
 
 shadow_delta_height=2

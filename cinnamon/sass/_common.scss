@@ -183,15 +183,16 @@ stage {
 }
 
 %slider {
-  height: 1em;
+  padding: 0.1em 0;
+  height: 1em + 0.2em;
   min-width: 15em;
   -slider-height: 0.3em;
   -slider-background-color: $base_color;
   -slider-active-background-color: $accent_color;
-  -slider-border-color: $borders_color;//transparent;
+  -slider-border-color: transparent;
   -slider-active-border-color: transparent;
   -slider-border-width: 1px;
-  -slider-handle-radius: 0.4em;
+  -slider-handle-radius: 0.3em;
 }
 
 %osd_base {

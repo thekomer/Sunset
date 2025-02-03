@@ -225,15 +225,16 @@ stage {
   font-size: 0.818em; }
 
 .popup-slider-menu-item, .slider {
-  height: 1em;
+  padding: 0.1em 0;
+  height: 1.2em;
   min-width: 15em;
   -slider-height: 0.3em;
   -slider-background-color: #161b2e;
   -slider-active-background-color: #cc3700;
-  -slider-border-color: rgba(191, 195, 205, 0.05);
+  -slider-border-color: transparent;
   -slider-active-border-color: transparent;
   -slider-border-width: 1px;
-  -slider-handle-radius: 0.4em; }
+  -slider-handle-radius: 0.3em; }
 
 .resize-popup, .workspace-switch-osd, .info-osd, .media-keys-osd, #Tooltip, #LookingGlassDialog {
   color: #BFC3CD;
@@ -516,14 +517,16 @@ stage {
     spacing: 4px; }
 
 .sound-player .slider {
-  height: 4px;
-  -slider-height: 4px;
+  margin: 0.1em 0;
+  height: 0.3em;
+  -slider-height: 0.3em;
   -slider-background-color: #161b2e;
   -slider-active-background-color: #cc3700;
   -slider-border-color: transparent;
   -slider-active-border-color: transparent;
   -slider-border-width: 1px;
-  -slider-handle-radius: 0; }
+  -slider-handle-radius: 0;
+  -slider-handle-radius: 0.15em; }
 
 /* spacer applet */
 .spacer-box {
@@ -1178,13 +1181,15 @@ StScrollBar StButton#hhandle {
   border: 1px solid rgba(191, 195, 205, 0.05);
   box-shadow: 3px 3px 6px rgba(1, 1, 1, 0.05); }
 
-.popup-menu-item:active {
-  background-color: rgba(54, 65, 112, 0.25);
-  transition-duration: 200; }
-
-.popup-menu-item:insensitive {
-  color: #555863;
-  background: none; }
+.popup-menu-item {
+  padding: 0.1em 0 0.1em 1.5em;
+  spacing: 1em; }
+  .popup-menu-item:active {
+    background-color: rgba(54, 65, 112, 0.25);
+    transition-duration: 200; }
+  .popup-menu-item:insensitive {
+    color: #555863;
+    background: none; }
 
 .popup-menu-arrow,
 .popup-menu-icon {
@@ -1199,7 +1204,7 @@ StScrollBar StButton#hhandle {
     border-radius: 0;
     background-color: rgba(22, 27, 46, 0.25);
     margin: 0;
-    padding: 6px 0 6px 8px; }
+    padding: 0.1em 0 0.1em 1.5em; }
     .popup-sub-menu .popup-menu-item:active {
       background-color: rgba(54, 65, 112, 0.25);
       transition-duration: 200; }
@@ -1235,7 +1240,7 @@ StScrollBar StButton#hhandle {
   font-weight: normal; }
 
 .popup-device-menu-item {
-  spacing: .5em;
+  padding: 0.1em 0 0.1em 1.5em;
   color: #BFC3CD; }
   .popup-device-menu-item:insensitive {
     color: #BFC3CD; }
