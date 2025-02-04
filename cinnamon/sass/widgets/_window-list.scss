@@ -167,7 +167,7 @@
     }
     &:active,
     &:checked {
-      border-color: lighten($accent_bg_color, 10%); }
+      border-color: $accent_fg_color; }
 
     & .progress { background-color: transparentize($accent_color, 0.2); }
   }
