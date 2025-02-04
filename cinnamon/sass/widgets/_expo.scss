@@ -1,4 +1,5 @@
 .workspace {
+//TODO: fix entry size
 
   &-thumbnails { spacing: 1.6em; } // 26px
   &-thumbnails-background { padding: 0.5em; } // 8px
@@ -43,7 +44,7 @@
 
 .expo {
 
-  &-background { background-color: $bg_color; }
+  &-background { background-color: $osd_bg_color; } // $bg_color
 
   &-workspace-thumbnail-frame {
     border: 1px solid $borders_color;
@@ -55,9 +56,9 @@
   }
 
   &-workspaces-name-entry {
-    @extend %entry;
+    @extend %entry_osd;
 
-    height: 1.5em;
+    height: 1.2em;
 
     &#selected{ }
     &:focus { color: $fg_color; } // BugFix: cinnamon crashes if this is empty { }

@@ -35,41 +35,41 @@ stage {
   selection-background-color: #cc3700;
   caret-size: 2px; }
 
-.expo-workspaces-name-entry, .prompt-dialog-password-entry, .run-dialog-entry {
+.prompt-dialog-password-entry, .run-dialog-entry {
   background-color: #161b2e;
   color: #cdd0d8; }
-  .expo-workspaces-name-entry:focus, .prompt-dialog-password-entry:focus, .run-dialog-entry:focus {
+  .prompt-dialog-password-entry:focus, .run-dialog-entry:focus {
     background-color: #161b2e;
     color: #cdd0d8;
     border-color: orangered; }
-  .expo-workspaces-name-entry:insensitive, .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive {
+  .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive {
     background-color: #111524;
     color: rgba(205, 208, 216, 0.5); }
-  .expo-workspaces-name-entry StLabel.hint-text, .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text {
+  .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text {
     color: rgba(191, 195, 205, 0.3); }
-  .expo-workspaces-name-entry .capslock-warning, .prompt-dialog-password-entry .capslock-warning, .run-dialog-entry .capslock-warning {
+  .prompt-dialog-password-entry .capslock-warning, .run-dialog-entry .capslock-warning {
     icon-size: 1.091em; }
-  .expo-workspaces-name-entry StIcon.peek-password, .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password {
+  .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password {
     icon-size: 1em;
     color: #BFC3CD; }
 
-#menu-search-entry {
+#menu-search-entry, .expo-workspaces-name-entry {
   selected-color: white;
   selection-background-color: rgba(204, 55, 0, 0.7);
   background-color: rgba(22, 27, 46, 0.7);
   color: #BFC3CD; }
-  #menu-search-entry:focus {
+  #menu-search-entry:focus, .expo-workspaces-name-entry:focus {
     background-color: rgba(22, 27, 46, 0.7);
     color: #BFC3CD;
     border-color: orangered; }
-  #menu-search-entry:insensitive {
+  #menu-search-entry:insensitive, .expo-workspaces-name-entry:insensitive {
     background-color: #111524;
     color: rgba(191, 195, 205, 0.5); }
-  #menu-search-entry StLabel.hint-text {
+  #menu-search-entry StLabel.hint-text, .expo-workspaces-name-entry StLabel.hint-text {
     color: rgba(191, 195, 205, 0.3); }
-  #menu-search-entry .capslock-warning {
+  #menu-search-entry .capslock-warning, .expo-workspaces-name-entry .capslock-warning {
     icon-size: 1.091em; }
-  #menu-search-entry StIcon.peek-password {
+  #menu-search-entry StIcon.peek-password, .expo-workspaces-name-entry StIcon.peek-password {
     icon-size: 1em;
     color: #BFC3CD; }
 
@@ -238,7 +238,7 @@ stage {
 
 .resize-popup, .workspace-switch-osd, .info-osd, .media-keys-osd, #Tooltip, #LookingGlassDialog {
   color: #BFC3CD;
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em;
   text-align: center;
@@ -251,7 +251,7 @@ stage {
 .switcher-list {
   color: #BFC3CD;
   border: 1px solid rgba(204, 55, 0, 0.75);
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   border-radius: 0.6em;
   padding: 0.5em; }
   .switcher-list > StBoxLayout {
@@ -930,20 +930,20 @@ StScrollBar StButton#hhandle {
 .desklet-with-borders {
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em;
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   padding: 0.1em; }
 
 .desklet-with-borders-and-header {
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0 0 0.6em 0.6em;
   border-top-width: 0;
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   padding: 8px; }
 
 .desklet-header {
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em 0.6em 0 0;
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   padding: 4px; }
 
 .desklet-drag-placeholder {
@@ -1094,7 +1094,7 @@ StScrollBar StButton#hhandle {
     transition-duration: 200; }
 
 .expo-background {
-  background-color: #0E111D; }
+  background-color: rgba(10, 12, 20, 0.95); }
 
 .expo-workspace-thumbnail-frame {
   border: 1px solid rgba(191, 195, 205, 0.05); }
@@ -1103,7 +1103,7 @@ StScrollBar StButton#hhandle {
     border-width: 0.2em; }
 
 .expo-workspaces-name-entry {
-  height: 1.5em; }
+  height: 1.2em; }
   .expo-workspaces-name-entry:focus {
     color: #BFC3CD; }
 
@@ -1136,7 +1136,7 @@ StScrollBar StButton#hhandle {
   spacing: 2px;
   border-radius: 0.6em;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   -cinnamon-caption-spacing: 4px; }
   .window-caption:focus {
     background-color: #cc3700;
@@ -1184,7 +1184,7 @@ StScrollBar StButton#hhandle {
 
 .popup-menu-content {
   padding: 4px;
-  background-color: rgba(14, 17, 29, 0.95);
+  background-color: rgba(10, 12, 20, 0.95);
   border-radius: 0.6em;
   border: 1px solid rgba(191, 195, 205, 0.05);
   box-shadow: 3px 3px 6px rgba(1, 1, 1, 0.05); }
@@ -1270,7 +1270,7 @@ StScrollBar StButton#hhandle {
   border-radius: 0.6em;
   border: 1px solid rgba(191, 195, 205, 0.05);
   box-shadow: inset 0 0 0.2em rgba(191, 195, 205, 0.05);
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   padding: 8px;
   margin-from-right-edge-of-screen: 1.5em;
   spacing-rows: 0.6em;
@@ -1668,7 +1668,7 @@ StScrollBar StButton#hhandle {
   spacing: 0.4em;
   padding: 0.3em;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   border-radius: 0.6em; }
 
 /* * * * * * * * * * * *
@@ -1762,7 +1762,7 @@ StScrollBar StButton#hhandle {
 .grouped-window-list-thumbnail-menu {
   color: #BFC3CD;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  background-color: rgba(10, 12, 20, 0.9);
+  background-color: rgba(10, 12, 20, 0.95);
   margin: 0.4em;
   border-radius: 0.6em;
   box-shadow: 0 0 6px 0 rgba(1, 1, 1, 0.05);

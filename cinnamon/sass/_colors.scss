@@ -86,7 +86,7 @@ $destructive_gradient_end: adjust-hue($destructive_bg_color, 15deg);
 $hover_bg_color: transparentize($lightest_bg_color, 0.75); // $lighter_bg_color;
 
 // osd
-$osd_bg_color:  transparentize(mix($bg_color, $panel_bg_color, 50%), 0.10); // transparentize($panel_bg_color, 0.10);
+$osd_bg_color:  transparentize(mix($bg_color, $panel_bg_color, 50%), 0.05); // transparentize($panel_bg_color, 0.10);
 $osd_borders_color: transparentize($fg_color, 0.95);
 $osd_fg_color: $fg_color;
 $osd_entry_bg_color: transparentize($entry_bg_color, 0.30); //$entry_bg_color;
