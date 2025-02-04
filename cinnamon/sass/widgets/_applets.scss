@@ -151,6 +151,8 @@
 
   StButton {
     @extend %flat_button;
+    background-color: transparent;
+    border: 1px solid borders_color;
 
     width: 1.2em; //18px;
     height: 1.2em; //18px;
@@ -161,19 +163,30 @@
 
     &:small {
       @extend %flat_button;
+      background-color: transparent;
+      border: 1px solid borders_color;
+
       width: 1em; //16px;
       height: 1em; //16px;
 
-      StIcon { icon-size: 1.2em;}
+      StIcon { icon-size: 0.8em;}
     }
 
     &:hover {
-      background-color: transparentize($accent_bg_color, 0.5);
+      background-color: transparent;
+      color: $accent_color;
     }
     &:active {
-      color: $accent_bg_color;
+      color: $accent_fg_color;
     }
   }
+
+/*TODO: modify flat buttons so they are:
+  color: fg_color; background-color: transparent; border: 1px solid borders_color;
+  &:hover { color: accent_color;}
+  &:active &selected { color: accent_fg_color; }
+  then i can modify this
+*/
 
   &-generic-coverart { background-color: transparentize(black, 0.8); }
 
@@ -242,7 +255,7 @@
   }
 
   &:outlined {
-    color: $accent_color;
+    color: $accent_fg_color;
 
     &:hover {
       // background-color: $lighter_bg_color;
