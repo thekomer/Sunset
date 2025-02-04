@@ -15,7 +15,7 @@
 
 // gradient
 
-@mixin gradient($c1: $g1, $c2: $g2, $dir: horizontal) {
+@mixin gradient($c1: $g1, $c2: $g2, $dir: vertical) {
 	background-gradient-start: $c1 !important;
 	background-gradient-end: $c2 !important;
 	background-gradient-direction: $dir;

@@ -39,7 +39,7 @@
   @if $type == 'focus' {
     background-color: $e_bg_color;
     color: $e_fg_color;
-    border-color: $accent_bg_color;
+    border-color: $accent_fg_color;
   }
 
   @if $type == 'insensitive' {

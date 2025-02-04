@@ -564,7 +564,7 @@ button.osd {
   button.osd:hover {
     color: white;
     border-color: rgba(204, 55, 0, 0.4);
-    background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -577,7 +577,7 @@ button.osd {
   button.osd:checked {
     color: white;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to right, #cc0b00, #cc6300);
+    background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: none;
@@ -620,7 +620,7 @@ button.osd {
   popover.background.touch-selection button:hover, popover.background.magnifier button:hover, .app-notification button:hover, .osd button:hover {
     color: white;
     border-color: rgba(204, 55, 0, 0.4);
-    background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -629,7 +629,7 @@ button.osd {
   progressbar:backdrop progress:active, progressbar:backdrop trough:active, popover.background.touch-selection button:active, popover.background.magnifier button:active, .app-notification button:active, progressbar:backdrop progress:checked, progressbar:backdrop trough:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked, .app-notification button:checked, .osd label:backdrop selection:active, label:backdrop .osd selection:active, .osd label:backdrop selection:checked, label:backdrop .osd selection:checked, .osd button:active:backdrop, .osd button:active, .osd button:checked:backdrop, .osd button:checked {
     color: white;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to right, #cc0b00, #cc6300);
+    background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: none;
@@ -664,7 +664,7 @@ button.osd {
     popover.background.touch-selection button.flat:hover, popover.background.touch-selection .selection-mode button.titlebutton:hover, .selection-mode popover.background.touch-selection button.titlebutton:hover, popover.background.magnifier button.flat:hover, popover.background.magnifier .selection-mode button.titlebutton:hover, .selection-mode popover.background.magnifier button.titlebutton:hover, .app-notification button.flat:hover, .app-notification .selection-mode button.titlebutton:hover, .selection-mode .app-notification button.titlebutton:hover, .osd button.flat:hover, .osd .selection-mode button.titlebutton:hover, .selection-mode .osd button.titlebutton:hover {
       color: white;
       border-color: rgba(204, 55, 0, 0.4);
-      background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+      background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -691,7 +691,7 @@ button.osd {
     popover.background.touch-selection button.flat:active, popover.background.touch-selection .selection-mode button.titlebutton:active, .selection-mode popover.background.touch-selection button.titlebutton:active, popover.background.magnifier button.flat:active, popover.background.magnifier .selection-mode button.titlebutton:active, .selection-mode popover.background.magnifier button.titlebutton:active, .app-notification button.flat:active, .app-notification .selection-mode button.titlebutton:active, .selection-mode .app-notification button.titlebutton:active, popover.background.touch-selection button.flat:checked, popover.background.touch-selection .selection-mode button.titlebutton:checked, .selection-mode popover.background.touch-selection button.titlebutton:checked, popover.background.magnifier button.flat:checked, popover.background.magnifier .selection-mode button.titlebutton:checked, .selection-mode popover.background.magnifier button.titlebutton:checked, .app-notification button.flat:checked, .app-notification .selection-mode button.titlebutton:checked, .selection-mode .app-notification button.titlebutton:checked, .osd button.flat:active, .osd .selection-mode button.titlebutton:active, .selection-mode .osd button.titlebutton:active, .osd button.flat:checked, .osd .selection-mode button.titlebutton:checked, .selection-mode .osd button.titlebutton:checked {
       color: white;
       border-color: rgba(255, 255, 255, 0.1);
-      background-image: linear-gradient(to right, #cc0b00, #cc6300);
+      background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: none;
@@ -704,7 +704,7 @@ button.suggested-action {
   box-shadow: none;
   color: white;
   border-radius: 100px;
-  background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+  background: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
   .selection-mode button.titlebutton, popover.background checkbutton.suggested-action,
   popover.background radiobutton.suggested-action, notebook > header > tabs > arrow.suggested-action,
   button.suggested-action.flat,
@@ -713,7 +713,7 @@ button.suggested-action {
     box-shadow: none;
     color: white;
     border-radius: 100px;
-    background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+    background: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
   
   button.suggested-action:hover,
   .selection-mode button.titlebutton:hover {
@@ -843,7 +843,7 @@ button.suggested-action {
     .osd button.suggested-action:hover, .osd .selection-mode button.titlebutton:hover, .selection-mode .osd button.titlebutton:hover {
       color: white;
       border-color: rgba(204, 55, 0, 0.4);
-      background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+      background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -852,7 +852,7 @@ button.suggested-action {
     .osd progressbar:backdrop progress:active, progressbar:backdrop .osd progress:active, .osd progressbar:backdrop trough:active, progressbar:backdrop .osd trough:active, .osd label:backdrop selection:active, label:backdrop .osd selection:active, .osd progressbar:backdrop progress:checked, progressbar:backdrop .osd progress:checked, .osd progressbar:backdrop trough:checked, progressbar:backdrop .osd trough:checked, .osd label:backdrop selection:checked, label:backdrop .osd selection:checked, .osd button.suggested-action:active:backdrop, .osd button.suggested-action:active, .osd .selection-mode button.titlebutton:active, .selection-mode .osd button.titlebutton:active, .osd button.suggested-action:checked:backdrop, .osd button.suggested-action:checked, .osd .selection-mode button.titlebutton:checked, .selection-mode .osd button.titlebutton:checked {
       color: white;
       border-color: rgba(255, 255, 255, 0.1);
-      background-image: linear-gradient(to right, #cc0b00, #cc6300);
+      background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: none;
@@ -881,7 +881,7 @@ button.destructive-action {
   box-shadow: none;
   color: white;
   border-radius: 100px;
-  background: linear-gradient(to right, #FF416C, #FF4B2B); }
+  background: linear-gradient(to bottom, #FF416C, #FF4B2B); }
   .selection-mode button.destructive-action.titlebutton, popover.background checkbutton.destructive-action,
   popover.background radiobutton.destructive-action, notebook > header > tabs > arrow.destructive-action,
   button.destructive-action.flat,
@@ -890,7 +890,7 @@ button.destructive-action {
     box-shadow: none;
     color: white;
     border-radius: 100px;
-    background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+    background: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
   
   button.destructive-action:hover {
     color: white;
@@ -1002,7 +1002,7 @@ button.destructive-action {
     .osd button.destructive-action:hover {
       color: white;
       border-color: rgba(204, 55, 0, 0.4);
-      background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+      background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -1011,7 +1011,7 @@ button.destructive-action {
     .osd progressbar:backdrop progress:active, progressbar:backdrop .osd progress:active, .osd progressbar:backdrop trough:active, progressbar:backdrop .osd trough:active, .osd label:backdrop selection:active, label:backdrop .osd selection:active, .osd progressbar:backdrop progress:checked, progressbar:backdrop .osd progress:checked, .osd progressbar:backdrop trough:checked, progressbar:backdrop .osd trough:checked, .osd label:backdrop selection:checked, label:backdrop .osd selection:checked, .osd button.destructive-action:active:backdrop, .osd button.destructive-action:active, .osd button.destructive-action:checked:backdrop, .osd button.destructive-action:checked {
       color: white;
       border-color: rgba(255, 255, 255, 0.1);
-      background-image: linear-gradient(to right, #cc0b00, #cc6300);
+      background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: none;
@@ -1299,7 +1299,7 @@ calendar {
     color: #ffffff;
     font-weight: bold;
     border-radius: 0.5em;
-    background: linear-gradient(to right, #cc0b00, #cc6300);
+    background: linear-gradient(to bottom, #cc0b00, #cc6300);
     font-weight: bold; }
     calendar:selected:hover {
       box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -1938,7 +1938,7 @@ dialog #pathbarbox {
         color: #ffffff;
         font-weight: bold;
         border-radius: 0.5em;
-        background: linear-gradient(to right, #cc0b00, #cc6300); }
+        background: linear-gradient(to bottom, #cc0b00, #cc6300); }
         dialog #pathbarbox .linked.path-bar button:selected:hover, dialog #pathbarbox .linked.path-bar button:active:hover, dialog #pathbarbox .linked.path-bar button:checked:hover {
           box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
         dialog #pathbarbox .linked.path-bar button:selected:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:selected, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:selected, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:selected, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:selected, dialog #pathbarbox .linked.path-bar label:backdrop selection:selected, label:backdrop dialog #pathbarbox .linked.path-bar selection:selected, dialog #pathbarbox .linked.path-bar button:active:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:active, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:active, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:active, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:active, dialog #pathbarbox .linked.path-bar label:backdrop selection:active, label:backdrop dialog #pathbarbox .linked.path-bar selection:active, dialog #pathbarbox .linked.path-bar button:checked:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:checked, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:checked, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:checked, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:checked, dialog #pathbarbox .linked.path-bar label:backdrop selection:checked, label:backdrop dialog #pathbarbox .linked.path-bar selection:checked {
@@ -2563,7 +2563,7 @@ headerbar {
     .selection-mode headerbar button.titlebutton {
       box-shadow: none;
       border: none;
-      background-image: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+      background-image: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
       .titlebar button.suggested-action:disabled, .titlebar .selection-mode button.titlebutton:disabled, .selection-mode .titlebar button.titlebutton:disabled, .titlebar label:disabled selection.suggested-action, label:disabled .titlebar selection.suggested-action, .titlebar button.suggested-action:backdrop, .titlebar .selection-mode button.titlebutton:backdrop, .selection-mode .titlebar button.titlebutton:backdrop, .titlebar progressbar:backdrop progress.suggested-action, progressbar:backdrop .titlebar progress.suggested-action, .titlebar progressbar:backdrop trough.suggested-action, progressbar:backdrop .titlebar trough.suggested-action, .titlebar label:backdrop selection.suggested-action, label:backdrop .titlebar selection.suggested-action,
       headerbar button.suggested-action:disabled,
       headerbar .selection-mode button.titlebutton:disabled,
@@ -2580,7 +2580,7 @@ headerbar {
       headerbar label:backdrop selection.suggested-action,
       label:backdrop headerbar selection.suggested-action {
         border: none;
-        background-image: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+        background-image: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
         .titlebar button.suggested-action:disabled:hover, .titlebar .selection-mode button.titlebutton:disabled:hover, .selection-mode .titlebar button.titlebutton:disabled:hover, .titlebar label:disabled selection.suggested-action:hover, label:disabled .titlebar selection.suggested-action:hover, .titlebar button.suggested-action:disabled:active, .titlebar .selection-mode button.titlebutton:disabled:active, .selection-mode .titlebar button.titlebutton:disabled:active, .titlebar label:disabled selection.suggested-action:active, label:disabled .titlebar selection.suggested-action:active, .titlebar button.suggested-action:disabled:checked, .titlebar .selection-mode button.titlebutton:disabled:checked, .selection-mode .titlebar button.titlebutton:disabled:checked, .titlebar label:disabled selection.suggested-action:checked, label:disabled .titlebar selection.suggested-action:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar .selection-mode button.titlebutton:backdrop:hover, .selection-mode .titlebar button.titlebutton:backdrop:hover, .titlebar progressbar:backdrop progress.suggested-action:hover, progressbar:backdrop .titlebar progress.suggested-action:hover, .titlebar progressbar:backdrop trough.suggested-action:hover, progressbar:backdrop .titlebar trough.suggested-action:hover, .titlebar label:backdrop selection.suggested-action:hover, label:backdrop .titlebar selection.suggested-action:hover, .titlebar button.suggested-action:backdrop:active, .titlebar .selection-mode button.titlebutton:backdrop:active, .selection-mode .titlebar button.titlebutton:backdrop:active, .titlebar progressbar:backdrop progress.suggested-action:active, progressbar:backdrop .titlebar progress.suggested-action:active, .titlebar progressbar:backdrop trough.suggested-action:active, progressbar:backdrop .titlebar trough.suggested-action:active, .titlebar label:backdrop selection.suggested-action:active, label:backdrop .titlebar selection.suggested-action:active, .titlebar button.suggested-action:backdrop:checked, .titlebar .selection-mode button.titlebutton:backdrop:checked, .selection-mode .titlebar button.titlebutton:backdrop:checked, .titlebar progressbar:backdrop progress.suggested-action:checked, progressbar:backdrop .titlebar progress.suggested-action:checked, .titlebar progressbar:backdrop trough.suggested-action:checked, progressbar:backdrop .titlebar trough.suggested-action:checked, .titlebar label:backdrop selection.suggested-action:checked, label:backdrop .titlebar selection.suggested-action:checked,
         headerbar button.suggested-action:disabled:hover,
         headerbar .selection-mode button.titlebutton:disabled:hover,
@@ -2625,7 +2625,7 @@ headerbar {
         headerbar label:backdrop selection.suggested-action:checked,
         label:backdrop headerbar selection.suggested-action:checked {
           border: none;
-          background-image: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+          background-image: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
     .titlebar button.appmenu,
     headerbar button.appmenu {
       background: transparent; }
@@ -2894,12 +2894,12 @@ headerbar {
       border-style: none; }
   .titlebar .linked > button:active,
   headerbar .linked > button:active {
-    background: linear-gradient(to right, #cc0b00, #cc6300);
+    background: linear-gradient(to bottom, #cc0b00, #cc6300);
     color: #ffffff; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
     border-radius: 0.5em;
-    background: linear-gradient(to right, #cc0b00, #cc6300);
+    background: linear-gradient(to bottom, #cc0b00, #cc6300);
     box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98);
     color: #ffffff; }
     .titlebar .linked > button:checked:backdrop, .titlebar progressbar:backdrop .linked > progress:checked, progressbar:backdrop .titlebar .linked > progress:checked, .titlebar progressbar:backdrop .linked > trough:checked, progressbar:backdrop .titlebar .linked > trough:checked, .titlebar label:backdrop .linked > selection:checked, label:backdrop .titlebar .linked > selection:checked,
@@ -3887,7 +3887,7 @@ scale {
       .osd scale slider:hover {
         color: white;
         border-color: rgba(204, 55, 0, 0.4);
-        background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+        background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
         background-clip: padding-box;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
         text-shadow: 0 1px black;
@@ -3897,7 +3897,7 @@ scale {
       .osd scale slider:active {
         color: white;
         border-color: rgba(255, 255, 255, 0.1);
-        background-image: linear-gradient(to right, #cc0b00, #cc6300);
+        background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
         background-clip: padding-box;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
         text-shadow: none;
@@ -4499,7 +4499,7 @@ placessidebar.sidebar {
   placessidebar.sidebar row.sidebar-row:selected {
     color: rgba(255, 255, 255, 0.938);
     background-color: transparent;
-    background-image: linear-gradient(to right, #cc3700 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+    background-image: linear-gradient(to bottom, #cc3700 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
     placessidebar.sidebar row.sidebar-row:selected:hover {
       color: #ffffff;
       background-color: rgba(191, 195, 205, 0.1); }
@@ -4508,7 +4508,7 @@ placessidebar.sidebar {
     placessidebar.sidebar row.sidebar-row:selected:backdrop, placessidebar.sidebar label:backdrop selection:selected, label:backdrop placessidebar.sidebar selection:selected, placessidebar.sidebar progressbar:backdrop trough:selected, progressbar:backdrop placessidebar.sidebar trough:selected, placessidebar.sidebar progressbar:backdrop progress:selected, progressbar:backdrop placessidebar.sidebar progress:selected {
       color: rgba(0, 0, 0, 0.54);
       background-color: transparent;
-      background-image: linear-gradient(to right, rgba(204, 55, 0, 0.6) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+      background-image: linear-gradient(to bottom, rgba(204, 55, 0, 0.6) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
       placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon, placessidebar.sidebar label:backdrop selection:selected .sidebar-icon, label:backdrop placessidebar.sidebar selection:selected .sidebar-icon, placessidebar.sidebar progressbar:backdrop trough:selected .sidebar-icon, progressbar:backdrop placessidebar.sidebar trough:selected .sidebar-icon, placessidebar.sidebar progressbar:backdrop progress:selected .sidebar-icon, progressbar:backdrop placessidebar.sidebar progress:selected .sidebar-icon {
         color: rgba(255, 255, 255, 0.5);
         -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.3); }
@@ -4689,7 +4689,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:hover, .osd spinbutton.vertical combobox.linked button:hover:nth-child(2):dir(rtl), combobox.linked .osd spinbutton.vertical button:hover:nth-child(2):dir(rtl), .osd spinbutton.vertical .linked:not(.vertical) > combobox:first-child > box > button.combo:hover, .osd spinbutton.vertical .linked.vertical > combobox:first-child > box > button.combo:hover {
     color: white;
     border-color: rgba(204, 55, 0, 0.4);
-    background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -4698,7 +4698,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:active, .osd spinbutton.vertical combobox.linked button:active:nth-child(2):dir(rtl), combobox.linked .osd spinbutton.vertical button:active:nth-child(2):dir(rtl), .osd spinbutton.vertical .linked:not(.vertical) > combobox:first-child > box > button.combo:active, .osd spinbutton.vertical .linked.vertical > combobox:first-child > box > button.combo:active {
     color: white;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to right, #cc0b00, #cc6300);
+    background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: none;
@@ -4775,7 +4775,7 @@ switch {
   border-radius: 14px;
   color: transparent;
   padding: 2.3px 0px;
-  background: linear-gradient(to right, #1E2233, #1E2233);
+  background: linear-gradient(to bottom, #1E2233, #1E2233);
   border: 0.25px solid rgba(170, 170, 170, 0.4); }
   switch:disabled {
     background-color: #101321; }
@@ -4785,11 +4785,11 @@ switch {
     switch:backdrop:disabled {
       background-color: #101321; }
   switch:active, switch:checked {
-    background: linear-gradient(to right, #cc0b00, #cc6300); }
+    background: linear-gradient(to bottom, #cc0b00, #cc6300); }
     switch:active slider, switch:checked slider {
       background: #fff; }
     switch:active:backdrop, label:backdrop selection:active, progressbar:backdrop trough:active, progressbar:backdrop progress:active, switch:checked:backdrop, label:backdrop selection:checked, progressbar:backdrop trough:checked, progressbar:backdrop progress:checked {
-      background: linear-gradient(to right, #b30900, #b35700); }
+      background: linear-gradient(to bottom, #b30900, #b35700); }
       switch:active:backdrop slider:backdrop, label:backdrop selection:active slider:backdrop, progressbar:backdrop trough:active slider:backdrop, progressbar:backdrop progress:active slider:backdrop, switch:checked:backdrop slider:backdrop, label:backdrop selection:checked slider:backdrop, progressbar:backdrop trough:checked slider:backdrop, progressbar:backdrop progress:checked slider:backdrop {
         box-shadow: none;
         background-color: rgba(19, 23, 39, 0.9);
@@ -5244,7 +5244,7 @@ popover.background radiobutton.button:selected, spinbutton:not(.vertical) select
       box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
     .budgie-menu .category-button:checked {
       color: #ffffff;
-      background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+      background: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
       .budgie-menu .category-button:checked:hover {
         color: rgba(255, 255, 255, 0.9); }
     .budgie-menu .category-button:checked:disabled, .budgie-menu label:disabled selection:checked, label:disabled .budgie-menu selection:checked {
@@ -5707,7 +5707,7 @@ button.raven-trigger {
           color: #ffffff;
           font-weight: bold;
           border-radius: 0.5em;
-          background: linear-gradient(to right, #cc0b00, #cc6300); }
+          background: linear-gradient(to bottom, #cc0b00, #cc6300); }
           .raven .raven-header button.text-button.radio:active:hover, .raven .raven-header button.text-button.radio:checked:hover {
             box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
           .raven .raven-header button.text-button.radio:active:backdrop, .raven .raven-header label:backdrop selection:active, label:backdrop .raven .raven-header selection:active, .raven .raven-header progressbar:backdrop trough:active, progressbar:backdrop .raven .raven-header trough:active, .raven .raven-header progressbar:backdrop progress:active, progressbar:backdrop .raven .raven-header progress:active, .raven .raven-header button.text-button.radio:checked:backdrop, .raven .raven-header label:backdrop selection:checked, label:backdrop .raven .raven-header selection:checked, .raven .raven-header progressbar:backdrop trough:checked, progressbar:backdrop .raven .raven-header trough:checked, .raven .raven-header progressbar:backdrop progress:checked, progressbar:backdrop .raven .raven-header progress:checked {
@@ -5754,13 +5754,13 @@ button.raven-trigger {
       background: #c74ded;
       color: #ffffff; }
     .raven .powerstrip button.image-button:first-child, .raven .powerstrip combobox.linked button.image-button:nth-child(2):dir(rtl), combobox.linked .raven .powerstrip button.image-button:nth-child(2):dir(rtl), .raven .powerstrip .linked:not(.vertical) > combobox:first-child > box > button.image-button.combo, .raven .powerstrip .linked.vertical > combobox:first-child > box > button.image-button.combo {
-      background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+      background: linear-gradient(to bottom, #e87e33 0%, #ff6a00 100%); }
       .raven .powerstrip button.image-button:first-child:hover, .raven .powerstrip combobox.linked button.image-button:hover:nth-child(2):dir(rtl), combobox.linked .raven .powerstrip button.image-button:hover:nth-child(2):dir(rtl), .raven .powerstrip .linked:not(.vertical) > combobox:first-child > box > button.image-button.combo:hover, .raven .powerstrip .linked.vertical > combobox:first-child > box > button.image-button.combo:hover {
         background: rgba(204, 55, 0, 0.85); }
       .raven .powerstrip button.image-button:first-child:active, .raven .powerstrip combobox.linked button.image-button:active:nth-child(2):dir(rtl), combobox.linked .raven .powerstrip button.image-button:active:nth-child(2):dir(rtl), .raven .powerstrip .linked:not(.vertical) > combobox:first-child > box > button.image-button.combo:active, .raven .powerstrip .linked.vertical > combobox:first-child > box > button.image-button.combo:active {
         background: #cc3700; }
     .raven .powerstrip button.image-button:last-child, .raven .powerstrip combobox.linked button.image-button:nth-child(2):dir(ltr), combobox.linked .raven .powerstrip button.image-button:nth-child(2):dir(ltr), .raven .powerstrip .linked:not(.vertical) > combobox:last-child > box > button.image-button.combo, .raven .powerstrip .linked.vertical > combobox:last-child > box > button.image-button.combo {
-      background: linear-gradient(to right, #FF416C, #FF4B2B); }
+      background: linear-gradient(to bottom, #FF416C, #FF4B2B); }
       .raven .powerstrip button.image-button:last-child:hover, .raven .powerstrip combobox.linked button.image-button:hover:nth-child(2):dir(ltr), combobox.linked .raven .powerstrip button.image-button:hover:nth-child(2):dir(ltr), .raven .powerstrip .linked:not(.vertical) > combobox:last-child > box > button.image-button.combo:hover, .raven .powerstrip .linked.vertical > combobox:last-child > box > button.image-button.combo:hover {
         background: rgba(255, 0, 0, 0.85); }
       .raven .powerstrip button.image-button:last-child:active, .raven .powerstrip combobox.linked button.image-button:active:nth-child(2):dir(ltr), combobox.linked .raven .powerstrip button.image-button:active:nth-child(2):dir(ltr), .raven .powerstrip .linked:not(.vertical) > combobox:last-child > box > button.image-button.combo:active, .raven .powerstrip .linked.vertical > combobox:last-child > box > button.image-button.combo:active {
@@ -6089,7 +6089,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: #ffffff;
   font-weight: bold;
   border-radius: 0.5em;
-  background: linear-gradient(to right, #cc0b00, #cc6300); }
+  background: linear-gradient(to bottom, #cc0b00, #cc6300); }
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:hover, .nautilus-window .titlebar .path-bar-box combobox.linked widget > button.text-button:hover:nth-child(2):dir(ltr), combobox.linked .nautilus-window .titlebar .path-bar-box widget > button.text-button:hover:nth-child(2):dir(ltr),
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:active:hover,
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:checked:hover,
@@ -6263,7 +6263,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     font-weight: bold;
     /* to underline button */
     /* to gradient transparent panel buttons */
-    background: linear-gradient(to right, rgba(204, 11, 0, 0.6), rgba(204, 99, 0, 0.6));
+    background: linear-gradient(to bottom, rgba(204, 11, 0, 0.6), rgba(204, 99, 0, 0.6));
     border-radius: 7px; }
     .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active image, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
       color: inherit; }
@@ -6282,7 +6282,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     color: #ffffff;
     font-weight: bold;
     /* to underline button */
-    background: linear-gradient(to right, rgba(204, 11, 0, 0.6), rgba(204, 99, 0, 0.6));
+    background: linear-gradient(to bottom, rgba(204, 11, 0, 0.6), rgba(204, 99, 0, 0.6));
     border-radius: 0px; }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
@@ -6360,7 +6360,7 @@ wnck-pager {
     color: #ffffff;
     font-weight: bold;
     border-radius: 0.5em;
-    background: linear-gradient(to right, #cc0b00, #cc6300);
+    background: linear-gradient(to bottom, #cc0b00, #cc6300);
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
       box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -6427,7 +6427,7 @@ wnck-pager {
       color: #ffffff;
       font-weight: bold;
       border-radius: 0.5em;
-      background: linear-gradient(to right, #cc0b00, #cc6300); }
+      background: linear-gradient(to bottom, #cc0b00, #cc6300); }
       .thunar toolbar button:selected:hover, .thunar toolbar button:active:hover, .thunar toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
       .thunar toolbar button:selected:backdrop, .thunar toolbar label:backdrop selection:selected, label:backdrop .thunar toolbar selection:selected, .thunar toolbar progressbar:backdrop trough:selected, progressbar:backdrop .thunar toolbar trough:selected, .thunar toolbar progressbar:backdrop progress:selected, progressbar:backdrop .thunar toolbar progress:selected, .thunar toolbar button:active:backdrop, .thunar toolbar label:backdrop selection:active, label:backdrop .thunar toolbar selection:active, .thunar toolbar progressbar:backdrop trough:active, progressbar:backdrop .thunar toolbar trough:active, .thunar toolbar progressbar:backdrop progress:active, progressbar:backdrop .thunar toolbar progress:active, .thunar toolbar button:checked:backdrop, .thunar toolbar label:backdrop selection:checked, label:backdrop .thunar toolbar selection:checked, .thunar toolbar progressbar:backdrop trough:checked, progressbar:backdrop .thunar toolbar trough:checked, .thunar toolbar progressbar:backdrop progress:checked, progressbar:backdrop .thunar toolbar progress:checked {
@@ -6457,7 +6457,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     color: #ffffff;
     font-weight: bold;
     border-radius: 0.5em;
-    background: linear-gradient(to right, #cc0b00, #cc6300); }
+    background: linear-gradient(to bottom, #cc0b00, #cc6300); }
     window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:hover {
       box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
     window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop, window.thunar label:backdrop toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > selection:checked, label:backdrop window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > selection:checked, window.thunar progressbar:backdrop toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > trough:checked, progressbar:backdrop window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > trough:checked, window.thunar progressbar:backdrop toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > progress:checked, progressbar:backdrop window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > progress:checked {
@@ -6485,7 +6485,7 @@ window.thunar paned > scrolledwindow treeview.view {
     color: #ffffff;
     font-weight: bold;
     border-radius: 0.5em;
-    background: linear-gradient(to right, #cc0b00, #cc6300);
+    background: linear-gradient(to bottom, #cc0b00, #cc6300);
     border-radius: 0;
     box-shadow: none; }
     window.thunar paned > scrolledwindow treeview.view:selected:hover, window.thunar paned > scrolledwindow treeview.view:active:hover, window.thunar paned > scrolledwindow treeview.view:checked:hover {
@@ -6544,7 +6544,7 @@ combobox:drop(active) button.combo:not(window) {
     .xfsm-logout-dialog button:hover {
       color: white;
       border-color: rgba(204, 55, 0, 0.4);
-      background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+      background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -6553,7 +6553,7 @@ combobox:drop(active) button.combo:not(window) {
     .xfsm-logout-dialog button:active, .xfsm-logout-dialog button:checked {
       color: white;
       border-color: rgba(255, 255, 255, 0.1);
-      background-image: linear-gradient(to right, #cc0b00, #cc6300);
+      background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: none;
@@ -7085,7 +7085,7 @@ menubar,
   #content_frame button:hover {
     color: white;
     border-color: rgba(204, 55, 0, 0.4);
-    background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -7094,7 +7094,7 @@ menubar,
   #content_frame button:active, #content_frame button:checked {
     color: white;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to right, #cc0b00, #cc6300);
+    background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: none;
@@ -7131,7 +7131,7 @@ menubar,
   #buttonbox_frame button:hover {
     color: white;
     border-color: rgba(204, 55, 0, 0.4);
-    background-image: linear-gradient(to right, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(204, 11, 0, 0.5), rgba(204, 99, 0, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -7140,7 +7140,7 @@ menubar,
   #buttonbox_frame button:active, #buttonbox_frame button:checked {
     color: white;
     border-color: rgba(255, 255, 255, 0.1);
-    background-image: linear-gradient(to right, #cc0b00, #cc6300);
+    background-image: linear-gradient(to bottom, #cc0b00, #cc6300);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: none;
@@ -7230,7 +7230,7 @@ menubar,
       color: #ffffff;
       font-weight: bold;
       border-radius: 0.5em;
-      background: linear-gradient(to right, #cc0b00, #cc6300); }
+      background: linear-gradient(to bottom, #cc0b00, #cc6300); }
       .nemo-window .sidebar button:selected:hover, .nemo-window .sidebar button:active:hover, .nemo-window .sidebar button:checked:hover, .nemo-window .NemoSidebar button:selected:hover, .nemo-window .NemoSidebar button:active:hover, .nemo-window .NemoSidebar button:checked:hover, .nemo-window .nemo-places-sidebar button:selected:hover, .nemo-window .nemo-places-sidebar button:active:hover, .nemo-window .nemo-places-sidebar button:checked:hover, .nemo-window statusbar button:selected:hover, .nemo-window statusbar button:active:hover, .nemo-window statusbar button:checked:hover, .nemo-window box.toolbar button:selected:hover, .nemo-window box.toolbar button:active:hover, .nemo-window box.toolbar button:checked:hover, .nemo-window toolbar.primary-toolbar button:selected:hover, .nemo-window toolbar.primary-toolbar button:active:hover, .nemo-window toolbar.primary-toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
       .nemo-window .sidebar button:selected:backdrop, .nemo-window .sidebar label:backdrop selection:selected, label:backdrop .nemo-window .sidebar selection:selected, .nemo-window .sidebar progressbar:backdrop trough:selected, progressbar:backdrop .nemo-window .sidebar trough:selected, .nemo-window .sidebar progressbar:backdrop progress:selected, progressbar:backdrop .nemo-window .sidebar progress:selected, .nemo-window .sidebar button:active:backdrop, .nemo-window .sidebar label:backdrop selection:active, label:backdrop .nemo-window .sidebar selection:active, .nemo-window .sidebar progressbar:backdrop trough:active, progressbar:backdrop .nemo-window .sidebar trough:active, .nemo-window .sidebar progressbar:backdrop progress:active, progressbar:backdrop .nemo-window .sidebar progress:active, .nemo-window .sidebar button:checked:backdrop, .nemo-window .sidebar label:backdrop selection:checked, label:backdrop .nemo-window .sidebar selection:checked, .nemo-window .sidebar progressbar:backdrop trough:checked, progressbar:backdrop .nemo-window .sidebar trough:checked, .nemo-window .sidebar progressbar:backdrop progress:checked, progressbar:backdrop .nemo-window .sidebar progress:checked, .nemo-window .NemoSidebar button:selected:backdrop, .nemo-window .NemoSidebar label:backdrop selection:selected, label:backdrop .nemo-window .NemoSidebar selection:selected, .nemo-window .NemoSidebar progressbar:backdrop trough:selected, progressbar:backdrop .nemo-window .NemoSidebar trough:selected, .nemo-window .NemoSidebar progressbar:backdrop progress:selected, progressbar:backdrop .nemo-window .NemoSidebar progress:selected, .nemo-window .NemoSidebar button:active:backdrop, .nemo-window .NemoSidebar label:backdrop selection:active, label:backdrop .nemo-window .NemoSidebar selection:active, .nemo-window .NemoSidebar progressbar:backdrop trough:active, progressbar:backdrop .nemo-window .NemoSidebar trough:active, .nemo-window .NemoSidebar progressbar:backdrop progress:active, progressbar:backdrop .nemo-window .NemoSidebar progress:active, .nemo-window .NemoSidebar button:checked:backdrop, .nemo-window .NemoSidebar label:backdrop selection:checked, label:backdrop .nemo-window .NemoSidebar selection:checked, .nemo-window .NemoSidebar progressbar:backdrop trough:checked, progressbar:backdrop .nemo-window .NemoSidebar trough:checked, .nemo-window .NemoSidebar progressbar:backdrop progress:checked, progressbar:backdrop .nemo-window .NemoSidebar progress:checked, .nemo-window .nemo-places-sidebar button:selected:backdrop, .nemo-window .nemo-places-sidebar label:backdrop selection:selected, label:backdrop .nemo-window .nemo-places-sidebar selection:selected, .nemo-window .nemo-places-sidebar progressbar:backdrop trough:selected, progressbar:backdrop .nemo-window .nemo-places-sidebar trough:selected, .nemo-window .nemo-places-sidebar progressbar:backdrop progress:selected, progressbar:backdrop .nemo-window .nemo-places-sidebar progress:selected, .nemo-window .nemo-places-sidebar button:active:backdrop, .nemo-window .nemo-places-sidebar label:backdrop selection:active, label:backdrop .nemo-window .nemo-places-sidebar selection:active, .nemo-window .nemo-places-sidebar progressbar:backdrop trough:active, progressbar:backdrop .nemo-window .nemo-places-sidebar trough:active, .nemo-window .nemo-places-sidebar progressbar:backdrop progress:active, progressbar:backdrop .nemo-window .nemo-places-sidebar progress:active, .nemo-window .nemo-places-sidebar button:checked:backdrop, .nemo-window .nemo-places-sidebar label:backdrop selection:checked, label:backdrop .nemo-window .nemo-places-sidebar selection:checked, .nemo-window .nemo-places-sidebar progressbar:backdrop trough:checked, progressbar:backdrop .nemo-window .nemo-places-sidebar trough:checked, .nemo-window .nemo-places-sidebar progressbar:backdrop progress:checked, progressbar:backdrop .nemo-window .nemo-places-sidebar progress:checked, .nemo-window statusbar button:selected:backdrop, .nemo-window statusbar label:backdrop selection:selected, label:backdrop .nemo-window statusbar selection:selected, .nemo-window statusbar progressbar:backdrop trough:selected, progressbar:backdrop .nemo-window statusbar trough:selected, .nemo-window statusbar progressbar:backdrop progress:selected, progressbar:backdrop .nemo-window statusbar progress:selected, .nemo-window statusbar button:active:backdrop, .nemo-window statusbar label:backdrop selection:active, label:backdrop .nemo-window statusbar selection:active, .nemo-window statusbar progressbar:backdrop trough:active, progressbar:backdrop .nemo-window statusbar trough:active, .nemo-window statusbar progressbar:backdrop progress:active, progressbar:backdrop .nemo-window statusbar progress:active, .nemo-window statusbar button:checked:backdrop, .nemo-window statusbar label:backdrop selection:checked, label:backdrop .nemo-window statusbar selection:checked, .nemo-window statusbar progressbar:backdrop trough:checked, progressbar:backdrop .nemo-window statusbar trough:checked, .nemo-window statusbar progressbar:backdrop progress:checked, progressbar:backdrop .nemo-window statusbar progress:checked, .nemo-window box.toolbar button:selected:backdrop, .nemo-window box.toolbar label:backdrop selection:selected, label:backdrop .nemo-window box.toolbar selection:selected, .nemo-window box.toolbar progressbar:backdrop trough:selected, progressbar:backdrop .nemo-window box.toolbar trough:selected, .nemo-window box.toolbar progressbar:backdrop progress:selected, progressbar:backdrop .nemo-window box.toolbar progress:selected, .nemo-window box.toolbar button:active:backdrop, .nemo-window box.toolbar label:backdrop selection:active, label:backdrop .nemo-window box.toolbar selection:active, .nemo-window box.toolbar progressbar:backdrop trough:active, progressbar:backdrop .nemo-window box.toolbar trough:active, .nemo-window box.toolbar progressbar:backdrop progress:active, progressbar:backdrop .nemo-window box.toolbar progress:active, .nemo-window box.toolbar button:checked:backdrop, .nemo-window box.toolbar label:backdrop selection:checked, label:backdrop .nemo-window box.toolbar selection:checked, .nemo-window box.toolbar progressbar:backdrop trough:checked, progressbar:backdrop .nemo-window box.toolbar trough:checked, .nemo-window box.toolbar progressbar:backdrop progress:checked, progressbar:backdrop .nemo-window box.toolbar progress:checked, .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar label:backdrop selection:selected, label:backdrop .nemo-window toolbar.primary-toolbar selection:selected, .nemo-window toolbar.primary-toolbar progressbar:backdrop trough:selected, progressbar:backdrop .nemo-window toolbar.primary-toolbar trough:selected, .nemo-window toolbar.primary-toolbar progressbar:backdrop progress:selected, progressbar:backdrop .nemo-window toolbar.primary-toolbar progress:selected, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar label:backdrop selection:active, label:backdrop .nemo-window toolbar.primary-toolbar selection:active, .nemo-window toolbar.primary-toolbar progressbar:backdrop trough:active, progressbar:backdrop .nemo-window toolbar.primary-toolbar trough:active, .nemo-window toolbar.primary-toolbar progressbar:backdrop progress:active, progressbar:backdrop .nemo-window toolbar.primary-toolbar progress:active, .nemo-window toolbar.primary-toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar label:backdrop selection:checked, label:backdrop .nemo-window toolbar.primary-toolbar selection:checked, .nemo-window toolbar.primary-toolbar progressbar:backdrop trough:checked, progressbar:backdrop .nemo-window toolbar.primary-toolbar trough:checked, .nemo-window toolbar.primary-toolbar progressbar:backdrop progress:checked, progressbar:backdrop .nemo-window toolbar.primary-toolbar progress:checked {
@@ -7288,7 +7288,7 @@ menubar,
     .caja-side-pane widget .vertical:active,
     .caja-side-pane widget .vertical:checked {
       color: #ffffff;
-      background: linear-gradient(to right, #cc0b00 0%, #cc6300 100%); }
+      background: linear-gradient(to bottom, #cc0b00 0%, #cc6300 100%); }
 
 .caja-notebook .frame {
   border-width: 0 0 1px; }
@@ -7322,7 +7322,7 @@ progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button
 
 .caja-navigation-window .primary-toolbar button:hover,
 .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):hover {
-  background: linear-gradient(to right, rgba(204, 11, 0, 0.4) 0%, rgba(204, 99, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(204, 11, 0, 0.4) 0%, rgba(204, 99, 0, 0.4) 100%);
   box-shadow: none; }
   .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label,
   .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):hover,
@@ -7345,7 +7345,7 @@ label:backdrop .caja-navigation-window .vertical selection:not(.text-button):che
 progressbar:backdrop .caja-navigation-window .vertical trough:not(.text-button):checked,
 .caja-navigation-window .vertical progressbar:backdrop progress:not(.text-button):checked,
 progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button):checked {
-  background: linear-gradient(to right, #cc0b00 0%, #cc6300 100%);
+  background: linear-gradient(to bottom, #cc0b00 0%, #cc6300 100%);
   box-shadow: none; }
   .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label,
   .caja-navigation-window .vertical button.image-button.toggle:not(.text-button):active,
@@ -7394,7 +7394,7 @@ progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button
     color: #ffffff;
     font-weight: bold;
     border-radius: 0.5em;
-    background: linear-gradient(to right, #cc0b00, #cc6300); }
+    background: linear-gradient(to bottom, #cc0b00, #cc6300); }
     .caja-pathbar button:checked:hover {
       box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
     .caja-pathbar button:checked:backdrop, .caja-pathbar label:backdrop selection:checked, label:backdrop .caja-pathbar selection:checked, .caja-pathbar progressbar:backdrop trough:checked, progressbar:backdrop .caja-pathbar trough:checked, .caja-pathbar progressbar:backdrop progress:checked, progressbar:backdrop .caja-pathbar progress:checked {

@@ -110,7 +110,7 @@
     &:selected {
       font-weight: bold;
       color: $selected_fg_color;
-      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 1);
       //background-color: $accent_color;
       &:hover {
         transition-duration: 150ms;
@@ -144,12 +144,12 @@
   }
 
   &-today {
-    border: 1px solid $accent_bg_color;
+    border: 1px solid $accent_fg_color;
     background-color: inherit;
-    color: $accent_color;
+    color: $accent_fg_color;
     font-weight: bold;
     &:hover {
-      color: $accent_color;
+      color: $accent_fg_color;
       transition-duration: 150ms;
       background-color: transparentize($accent_color, 0.6);
     }
@@ -157,10 +157,10 @@
     &:selected {
       color: $selected_fg_color;
       // background-color: $accent_color;
-      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 1);
       &:hover {
         transition-duration: 150ms;
-        background-color: lighten($accent_color, 10%);
+        background-color: lighten($accent_bg_color, 10%);
       }
     }
   }
@@ -257,7 +257,7 @@
 
   &-event-time-present:all-day {
     @extend %heading;
-    color: $accent_color;
+    color: $accent_fg_color;
   }
 
   &-event-countdown {

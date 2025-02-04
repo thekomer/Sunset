@@ -30,7 +30,7 @@ stage {
   border-radius: 0.6em;
   padding: 0.5em 1.5em;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  caret-color: #cc3700;
+  caret-color: orangered;
   selected-color: white;
   selection-background-color: #cc3700;
   caret-size: 2px; }
@@ -41,7 +41,7 @@ stage {
   .expo-workspaces-name-entry:focus, .prompt-dialog-password-entry:focus, .run-dialog-entry:focus {
     background-color: #161b2e;
     color: #cdd0d8;
-    border-color: #cc3700; }
+    border-color: orangered; }
   .expo-workspaces-name-entry:insensitive, .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive {
     background-color: #111524;
     color: rgba(205, 208, 216, 0.5); }
@@ -61,7 +61,7 @@ stage {
   #menu-search-entry:focus {
     background-color: rgba(22, 27, 46, 0.7);
     color: #BFC3CD;
-    border-color: #cc3700; }
+    border-color: orangered; }
   #menu-search-entry:insensitive {
     background-color: #111524;
     color: rgba(191, 195, 205, 0.5); }
@@ -394,7 +394,7 @@ stage {
       padding-top: 0; }
   .applet-box:hover {
     color: #ffffff;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5);
     border-radius: 0.3em; }
@@ -402,14 +402,14 @@ stage {
       color: #ffffff; }
   .applet-box:checked {
     color: #ffffff;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00;
     border-radius: 0.3em; }
     .applet-box:checked-label {
       color: #ffffff; }
     .applet-box:checked:hover {
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: #ff0500;
       background-gradient-end: #ff8500; }
   .applet-box:highlight {
@@ -445,7 +445,7 @@ stage {
     background: none; }
 
 .applet-cornerbar-box:hover > .applet-cornerbar {
-  background-gradient-direction: horizontal;
+  background-gradient-direction: vertical;
   background-gradient-start: rgba(204, 4, 0, 0.5);
   background-gradient-end: rgba(204, 106, 0, 0.5); }
 
@@ -459,7 +459,7 @@ stage {
   .panel-launchers .launcher {
     padding: 0 2px; }
     .panel-launchers .launcher:hover {
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: rgba(204, 4, 0, 0.5);
       background-gradient-end: rgba(204, 106, 0, 0.5); }
   .panel-launchers.vertical {
@@ -568,13 +568,13 @@ stage {
   .workspace-button:outlined {
     color: orangered; }
     .workspace-button:outlined:hover {
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: rgba(204, 4, 0, 0.5);
       background-gradient-end: rgba(204, 106, 0, 0.5);
       color: #ffffff;
       transition-duration: 200; }
   .workspace-button:hover {
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5);
     color: #ffffff;
@@ -735,7 +735,7 @@ StScrollBar StButton#hhandle {
   color: inherit; }
 
 .user-label {
-  color: #cc3700; }
+  color: orangered; }
 
 .user-widget.horizontal {
   spacing: 4px; }
@@ -814,7 +814,7 @@ StScrollBar StButton#hhandle {
     .calendar-not-today:selected {
       font-weight: bold;
       color: #ffffff;
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
       .calendar-not-today:selected:hover {
@@ -836,17 +836,17 @@ StScrollBar StButton#hhandle {
     color: #BFC3CD;
     font-weight: 600; }
   .calendar-today {
-    border: 1px solid #cc3700;
+    border: 1px solid orangered;
     background-color: inherit;
-    color: #cc3700;
+    color: orangered;
     font-weight: bold; }
     .calendar-today:hover {
-      color: #cc3700;
+      color: orangered;
       transition-duration: 150ms;
       background-color: rgba(204, 55, 0, 0.4); }
     .calendar-today:selected {
       color: #ffffff;
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
       .calendar-today:selected:hover {
@@ -909,7 +909,7 @@ StScrollBar StButton#hhandle {
   .calendar-event-time-present {
     color: #BFC3CD; }
   .calendar-event-time-present:all-day {
-    color: #cc3700; }
+    color: orangered; }
   .calendar-event-countdown {
     color: #81858f; }
     .calendar-event-countdown:soon {
@@ -1099,7 +1099,7 @@ StScrollBar StButton#hhandle {
 .expo-workspace-thumbnail-frame {
   border: 1px solid rgba(191, 195, 205, 0.05); }
   .expo-workspace-thumbnail-frame#active {
-    border-color: #cc3700;
+    border-color: orangered;
     border-width: 0.2em; }
 
 .expo-workspaces-name-entry {
@@ -1437,7 +1437,7 @@ StScrollBar StButton#hhandle {
   color: #b1b6c2;
   transition-duration: 100; }
   .panel-button:hover {
-    color: #cc3700; }
+    color: orangered; }
 
 .panel-corner {
   -panel-corner-radius: 0px;
@@ -1515,7 +1515,7 @@ StScrollBar StButton#hhandle {
     color: #ffffff;
     transition-duration: 200; }
   .menu-category-button-selected {
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00;
     color: white;
@@ -1541,7 +1541,7 @@ StScrollBar StButton#hhandle {
 
 .menu-search-entry-icon {
   icon-size: 1.091em;
-  color: #cc3700; }
+  color: orangered; }
 
 .toggle-switch {
   height: 1.625em;
@@ -1643,17 +1643,17 @@ StScrollBar StButton#hhandle {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
     color: #ffffff;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
     color: #ffffff;
     font-weight: bold;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: rgba(204, 4, 0, 0.7);
     background-gradient-end: rgba(204, 106, 0, 0.7); }
     .window-list-item-box:active:hover, .window-list-item-box:checked:hover, .window-list-item-box:focus:hover, .window-list-item-box:running:hover {
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
   .window-list-item-box .progress {
@@ -1714,17 +1714,17 @@ StScrollBar StButton#hhandle {
       padding-left: 1px; }
   .grouped-window-list-item-box:hover {
     color: #BFC3CD;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5); }
   .grouped-window-list-item-box:focus {
     border-width: 0;
     color: #ffffff;
-    background-gradient-direction: horizontal;
+    background-gradient-direction: vertical;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00; }
     .grouped-window-list-item-box:focus:hover {
-      background-gradient-direction: horizontal;
+      background-gradient-direction: vertical;
       background-gradient-start: #ff0500;
       background-gradient-end: #ff8500; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {

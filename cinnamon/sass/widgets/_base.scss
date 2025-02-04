@@ -183,7 +183,7 @@ StScrollBar {
 
 .user-label {
   @extend %heading;
-  color: $accent_color;
+  color: $accent_fg_color;
 }
 
 .user-widget.horizontal { spacing: $base_padding; }

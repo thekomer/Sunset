@@ -14,7 +14,7 @@ stage {
   border-radius: $border_radius; // $base_border_radius;
   padding: 0.5em 1.5em; //$base_padding * 1.5;
   border: 1px solid $borders_color;
-  caret-color: $accent_color;
+  caret-color: $accent_fg_color;
   selected-color: white;
   selection-background-color: $accent_bg_color;
   caret-size: 2px;
@@ -188,7 +188,7 @@ stage {
   min-width: 15em;
   -slider-height: 0.3em;
   -slider-background-color: $base_color;
-  -slider-active-background-color: $accent_color;
+  -slider-active-background-color: $accent_bg_color;
   -slider-border-color: transparent;
   -slider-active-border-color: transparent;
   -slider-border-width: 1px;

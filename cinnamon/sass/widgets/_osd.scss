@@ -75,7 +75,7 @@ $ws_dot_inactive: ($ws_indicator_height / 6);
     border-radius: $ws_indicator_height;
 
     &:active {
-      background-color: $accent_color;
+      background-color: $accent_bg_color;
       padding: $ws_dot_active / 2;
       margin: ($ws_indicator_height - $ws_dot_active) / 2;
     }
