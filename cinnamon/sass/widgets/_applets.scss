@@ -183,13 +183,6 @@
     }
   }
 
-/*TODO: modify flat buttons so they are:
-  color: fg_color; background-color: transparent; border: 1px solid borders_color;
-  &:hover { color: accent_color;}
-  &:active &selected { color: accent_fg_color; }
-  then i can modify this
-*/
-
   &-generic-coverart { background-color: transparentize(black, 0.8); }
 
   &-overlay {

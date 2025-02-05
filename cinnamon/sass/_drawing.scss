@@ -59,6 +59,15 @@
  *   $style:    button style, possible values: flat, default       *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+//TODO: modify this mixin to simplify the code.
+
+/*TODO: modify flat buttons so they are:
+  color: fg_color; background-color: transparent; border: 1px solid borders_color;
+  &:hover { color: accent_color;}
+  &:active &selected { color: accent_fg_color; }
+  then i can modify sound-player applet to include flat buttons
+*/
+
 @mixin button($type, $tc:$fg_color, $c:$bg_color, $style: null) {
 
   // background color adjustment factors
