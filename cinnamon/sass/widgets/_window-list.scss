@@ -62,7 +62,7 @@
     &:hover,
     &:groupFocus {
       color: $selected_fg_color;
-      @include bg_gradient(vertical, $theme_gradient_start,
+      @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
     }
 
@@ -72,10 +72,10 @@
     &:running  {
       color: $selected_fg_color;
       font-weight: bold;
-      @include bg_gradient(vertical, $theme_gradient_start,
+      @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.7);
       &:hover{
-      	@include bg_gradient(vertical, $theme_gradient_start,
+      	@include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 1);
       }
     }
@@ -150,7 +150,7 @@
 
     &:hover{
       color: $fg_color;
-      @include bg_gradient(vertical, $theme_gradient_start,
+      @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
     }
     &:focus {
@@ -158,10 +158,10 @@
       color: $selected_fg_color;
       //border-color: lighten($accent_bg_color, 10%);
       //background-color: transparentize($accent_color, 0.3);
-      @include bg_gradient(vertical, $theme_gradient_start,
+      @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 1);
       &:hover{
-      	@include bg_gradient(vertical, lighten($theme_gradient_start, 10%),
+      	@include bg_gradient(horizontal, lighten($theme_gradient_start, 10%),
       	lighten($theme_gradient_end, 10%), 1);
       }
     }
@@ -173,7 +173,7 @@
   }
 
   &-item-demands-attention {
-    @include bg_gradient(vertical, $destructive_gradient_start,
+    @include bg_gradient(horizontal, $destructive_gradient_start,
     	$destructive_gradient_end, 0.7);
     //background-gradient-direction: vertical;
     //background-gradient-start: $destructive_bg_color;

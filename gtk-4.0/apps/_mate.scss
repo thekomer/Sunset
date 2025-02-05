@@ -22,7 +22,7 @@
       }
       &:selected, &:active, &:checked {
 				color: $selected_fg_color;
-				background: linear-gradient(to bottom,
+				background: linear-gradient(to right,
 				$theme-gradient-start 0%, $theme-gradient-end 100%);
 			}
     }
@@ -57,7 +57,7 @@
     .vertical button.image-button.toggle:not(.text-button) {
         &, &:backdrop { @include button(undecorated); }
         &:hover {
-        	background: linear-gradient(to bottom,
+        	background: linear-gradient(to right,
 					transparentize($theme-gradient-start, 0.6) 0%,
 					transparentize($theme-gradient-end, 0.6) 100%);
 					box-shadow: none;
@@ -68,7 +68,7 @@
         &:active,
         &:backdrop:active,
         &:backdrop:checked {
-        	background: linear-gradient(to bottom,
+        	background: linear-gradient(to right,
 					$theme-gradient-start 0%, $theme-gradient-end 100%);
           //background: $selected_bg_color;
           box-shadow: none;

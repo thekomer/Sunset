@@ -11,7 +11,7 @@ switch {
   border-radius: 14px;
   color: transparent;
   padding: 2.3px 0px;
-  background:  linear-gradient(to bottom, #1E2233, #1E2233);
+  background:  linear-gradient(to right, #1E2233, #1E2233);
   border: 0.25px solid rgba(170, 170, 170, 0.4);
   &:disabled {
     background-color: $insensitive_bg_color;
@@ -27,12 +27,12 @@ switch {
 
   &:active,
   &:checked {
-   background:  linear-gradient(to bottom, $theme-gradient-start, $theme-gradient-end);
+   background:  linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
     slider{
       background: #fff;
     }
     &:backdrop {
-      background:  linear-gradient(to bottom, darken($theme-gradient-start, 5%), darken($theme-gradient-end, 5%));
+      background:  linear-gradient(to right, darken($theme-gradient-start, 5%), darken($theme-gradient-end, 5%));
       slider {
         &:backdrop {
           box-shadow:none;

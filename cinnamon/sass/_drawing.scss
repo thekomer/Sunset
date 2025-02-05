@@ -99,7 +99,7 @@
     @if $type == 'normal' {
       color: $tc;
       // background-color: $button_bg_color;
-      @include bg_gradient(vertical, adjust-hue($button_bg_color, -15deg), adjust-hue($button_bg_color, 15deg), 1);
+      @include bg_gradient(horizontal, adjust-hue($button_bg_color, -15deg), adjust-hue($button_bg_color, 15deg), 1);
     }
 
     @if $type == 'focus' {
@@ -112,21 +112,21 @@
     @else if $type == 'hover' {
       color: $tc;
       //background-color: $hover_button_bg_color;
-      @include bg_gradient(vertical, lighten(adjust-hue($button_bg_color, -15deg),12%), lighten(adjust-hue($button_bg_color, 15deg),12%), 1);
+      @include bg_gradient(horizontal, lighten(adjust-hue($button_bg_color, -15deg),12%), lighten(adjust-hue($button_bg_color, 15deg),12%), 1);
     }
 
     // active button
     @else if $type == 'active' {
       color: $tc;
       //background-color: $active_button_bg_color;
-      @include bg_gradient(vertical, darken(adjust-hue($button_bg_color, -15deg),5%), darken(adjust-hue($button_bg_color, 15deg),5%), 1);
+      @include bg_gradient(horizontal, darken(adjust-hue($button_bg_color, -15deg),5%), darken(adjust-hue($button_bg_color, 15deg),5%), 1);
     }
 
     // checked button
     @else if $type == 'checked' {
       color: $checked_button_fg_color;
       //background-color: $checked_button_bg_color;
-      @include bg_gradient(vertical, darken(adjust-hue($button_bg_color, -15deg),5%), darken(adjust-hue($button_bg_color, 15deg),5%), 1);
+      @include bg_gradient(horizontal, darken(adjust-hue($button_bg_color, -15deg),5%), darken(adjust-hue($button_bg_color, 15deg),5%), 1);
     }
 
 

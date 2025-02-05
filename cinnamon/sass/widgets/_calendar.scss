@@ -110,7 +110,7 @@
     &:selected {
       font-weight: bold;
       color: $selected_fg_color;
-      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 1);
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       //background-color: $accent_color;
       &:hover {
         transition-duration: 150ms;
@@ -157,7 +157,7 @@
     &:selected {
       color: $selected_fg_color;
       // background-color: $accent_color;
-      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 1);
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       &:hover {
         transition-duration: 150ms;
         background-color: lighten($accent_bg_color, 10%);

@@ -15,7 +15,7 @@
     &:hover{
       color: $selected_fg_color;
       // background-color: $hover_bg_color;
-      @include bg_gradient(vertical, $theme_gradient_start,
+      @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 0.5);
       border-radius: ($border_radius/2);
 
@@ -23,14 +23,14 @@
     }
     &:checked {
       color: $selected_fg_color;
-      @include bg_gradient(vertical, $theme_gradient_start,
+      @include bg_gradient(horizontal, $theme_gradient_start,
       	$theme_gradient_end, 1);
       border-radius: ($border_radius/2);
 
       &-label { color: $selected_fg_color; }
 
       &:hover {
-        @include bg_gradient(vertical, lighten($theme_gradient_start, 10%), lighten($theme_gradient_end, 10%), 1);
+        @include bg_gradient(horizontal, lighten($theme_gradient_start, 10%), lighten($theme_gradient_end, 10%), 1);
       }
     }
 
@@ -86,7 +86,7 @@
 
 .applet-cornerbar-box:hover > .applet-cornerbar {
   // background-color: $lightest_bg_color;
-  @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 0.5);
+  @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
 }
 
 /* notification applet */
@@ -106,7 +106,7 @@
 
     &:hover {
       //background-color: $lighter_bg_color;
-      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 0.5);
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
     }
   }
 
@@ -261,7 +261,7 @@
 
     &:hover {
       // background-color: $lighter_bg_color;
-      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 0.5);
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
       color: $selected_fg_color;
       transition-duration: 200;
     }
@@ -269,7 +269,7 @@
 
   &:hover {
     //background-color: $light_bg_color;
-    @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 0.5);
+    @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
     color: $selected_fg_color;
     transition-duration: 200;
   }

@@ -142,22 +142,22 @@ stage {
 
 .dialog .dialog-button:default {
   color: #BFC3CD;
-  background-gradient-direction: vertical;
+  background-gradient-direction: horizontal;
   background-gradient-start: #cc0400;
   background-gradient-end: #cc6a00; }
   .dialog .dialog-button:hover:default {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #ff0f0a;
     background-gradient-end: #ff890a; }
   .dialog .dialog-button:active:default {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #b30400;
     background-gradient-end: #b35d00; }
   .dialog .dialog-button:checked:default {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #b30400;
     background-gradient-end: #b35d00; }
   .dialog .dialog-button:insensitive:default {
@@ -167,22 +167,22 @@ stage {
 
 .dialog .dialog-button:destructive-action {
   color: #BFC3CD;
-  background-gradient-direction: vertical;
+  background-gradient-direction: horizontal;
   background-gradient-start: #c01c51;
   background-gradient-end: #c0391c; }
   .dialog .dialog-button:hover:destructive-action {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #e2376e;
     background-gradient-end: #e25537; }
   .dialog .dialog-button:active:destructive-action {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #aa1948;
     background-gradient-end: #aa3219; }
   .dialog .dialog-button:checked:destructive-action {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #aa1948;
     background-gradient-end: #aa3219; }
   .dialog .dialog-button:insensitive:destructive-action {
@@ -394,7 +394,7 @@ stage {
       padding-top: 0; }
   .applet-box:hover {
     color: #ffffff;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5);
     border-radius: 0.3em; }
@@ -402,14 +402,14 @@ stage {
       color: #ffffff; }
   .applet-box:checked {
     color: #ffffff;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00;
     border-radius: 0.3em; }
     .applet-box:checked-label {
       color: #ffffff; }
     .applet-box:checked:hover {
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: #ff0500;
       background-gradient-end: #ff8500; }
   .applet-box:highlight {
@@ -445,7 +445,7 @@ stage {
     background: none; }
 
 .applet-cornerbar-box:hover > .applet-cornerbar {
-  background-gradient-direction: vertical;
+  background-gradient-direction: horizontal;
   background-gradient-start: rgba(204, 4, 0, 0.5);
   background-gradient-end: rgba(204, 106, 0, 0.5); }
 
@@ -459,7 +459,7 @@ stage {
   .panel-launchers .launcher {
     padding: 0 2px; }
     .panel-launchers .launcher:hover {
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: rgba(204, 4, 0, 0.5);
       background-gradient-end: rgba(204, 106, 0, 0.5); }
   .panel-launchers.vertical {
@@ -568,13 +568,13 @@ stage {
   .workspace-button:outlined {
     color: orangered; }
     .workspace-button:outlined:hover {
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: rgba(204, 4, 0, 0.5);
       background-gradient-end: rgba(204, 106, 0, 0.5);
       color: #ffffff;
       transition-duration: 200; }
   .workspace-button:hover {
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5);
     color: #ffffff;
@@ -814,7 +814,7 @@ StScrollBar StButton#hhandle {
     .calendar-not-today:selected {
       font-weight: bold;
       color: #ffffff;
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
       .calendar-not-today:selected:hover {
@@ -846,7 +846,7 @@ StScrollBar StButton#hhandle {
       background-color: rgba(204, 55, 0, 0.4); }
     .calendar-today:selected {
       color: #ffffff;
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
       .calendar-today:selected:hover {
@@ -1515,7 +1515,7 @@ StScrollBar StButton#hhandle {
     color: #ffffff;
     transition-duration: 200; }
   .menu-category-button-selected {
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00;
     color: white;
@@ -1643,17 +1643,17 @@ StScrollBar StButton#hhandle {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
     color: #ffffff;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
     color: #ffffff;
     font-weight: bold;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: rgba(204, 4, 0, 0.7);
     background-gradient-end: rgba(204, 106, 0, 0.7); }
     .window-list-item-box:active:hover, .window-list-item-box:checked:hover, .window-list-item-box:focus:hover, .window-list-item-box:running:hover {
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
   .window-list-item-box .progress {
@@ -1714,17 +1714,17 @@ StScrollBar StButton#hhandle {
       padding-left: 1px; }
   .grouped-window-list-item-box:hover {
     color: #BFC3CD;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: rgba(204, 4, 0, 0.5);
     background-gradient-end: rgba(204, 106, 0, 0.5); }
   .grouped-window-list-item-box:focus {
     border-width: 0;
     color: #ffffff;
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00; }
     .grouped-window-list-item-box:focus:hover {
-      background-gradient-direction: vertical;
+      background-gradient-direction: horizontal;
       background-gradient-start: #ff0500;
       background-gradient-end: #ff8500; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
@@ -1733,7 +1733,7 @@ StScrollBar StButton#hhandle {
     background-color: rgba(204, 55, 0, 0.8); }
 
 .grouped-window-list-item-demands-attention {
-  background-gradient-direction: vertical;
+  background-gradient-direction: horizontal;
   background-gradient-start: rgba(192, 28, 81, 0.7);
   background-gradient-end: rgba(192, 57, 28, 0.7); }
 

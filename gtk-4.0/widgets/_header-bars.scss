@@ -164,13 +164,13 @@ headerbar {
   }
   .linked > button:active{
     @extend %linked-header;
-    background: linear-gradient(to bottom, $theme-gradient-start, $theme-gradient-end) ;
+    background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end) ;
     color: $selected_fg_color;
   }
   .linked > button:checked{
     @extend %linked-header;
     border-radius: $radius; // 23px;
-    background: linear-gradient(to bottom, $theme-gradient-start, $theme-gradient-end);
+    background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
     box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
     color: $selected_fg_color;
     &:backdrop{

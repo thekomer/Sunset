@@ -65,7 +65,7 @@ UnityDecoration.right {
   background-color: darken($unity_color, 0.6);
   background-size: 1px 120px;
   background-clip: border-box;
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to right,
                                     $unity_color,
                                     darken($unity_color, 0.6)
                                     );

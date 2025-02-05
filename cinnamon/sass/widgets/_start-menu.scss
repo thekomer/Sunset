@@ -78,7 +78,7 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
     &-selected {
       @extend %start_menu_button;
       // background-color: $accent_color;  // $light_bg_color;
-      @include bg_gradient(vertical, $theme_gradient_start, $theme_gradient_end, 1);
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       color: white;
       font-weight: bold;
 

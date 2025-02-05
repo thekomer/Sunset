@@ -44,10 +44,10 @@
 
 
 @function entry_gradient($c) {
-  @if $variant=='light' { @return linear-gradient(to bottom, mix($borders_color, $c, 45%),
+  @if $variant=='light' { @return linear-gradient(to right, mix($borders_color, $c, 45%),
                                                              mix($borders_color, $c, 3%) 2px,
                                                              $c 90%); }
-  @else { @return linear-gradient(to bottom, mix($borders_color, $c, 95%),
+  @else { @return linear-gradient(to right, mix($borders_color, $c, 95%),
                                              mix($borders_color, $c, 40%) 3px,
                                              $c 90%); }
 }
@@ -261,7 +261,7 @@
 	}	@else if $t==active-header {
 			color: $selected_fg_color;
 		border-radius: $radius; // 23px;
-		background: linear-gradient(to bottom, $theme-gradient-start, $theme-gradient-end);
+		background: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
 			//box-shadow: 0px 0px 0px transparentize($selected_bg_color, 0.02);
 			&:hover{
 		box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
@@ -368,7 +368,7 @@
     color: white;
     border-color: transparentize($theme_color, 0.6); // $osd_borders_color;
     //order: 1px solid transparentize($theme_color, 0.6);
-    background-image: linear-gradient(to bottom, transparentize($theme-gradient-start, 0.5), transparentize($theme-gradient-end, 0.5)); // linear-gradient(to bottom, $_bg, $_bg);
+    background-image: linear-gradient(to right, transparentize($theme-gradient-start, 0.5), transparentize($theme-gradient-end, 0.5)); // linear-gradient(to right, $_bg, $_bg);
     background-clip: padding-box;
     box-shadow: inset 0 1px transparentize(white, 0.9);
     text-shadow: 0 1px black;
@@ -381,8 +381,8 @@
     $_bg: if($c!=$base_color, $c, lighten($osd_bg_color, 6%));
     color: white;
     border-color: $osd_borders_color;
-    //background-image: linear-gradient(to bottom, $_bg, $_bg);
-		background-image: linear-gradient(to bottom, $theme-gradient-start, $theme-gradient-end);
+    //background-image: linear-gradient(to right, $_bg, $_bg);
+		background-image: linear-gradient(to right, $theme-gradient-start, $theme-gradient-end);
     background-clip: padding-box;
     box-shadow: inset 0 1px transparentize(white, 0.9);
     text-shadow: none;
@@ -394,7 +394,7 @@
 		//
     color: $osd_insensitive_fg_color;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color, $osd_insensitive_bg_color);
+    background-image: linear-gradient(to right, $osd_insensitive_bg_color, $osd_insensitive_bg_color);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -406,7 +406,7 @@
     $_bg: if($c!=$base_color, transparentize($c, 0.5), $osd_bg_color);
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, $_bg, $_bg);
+    background-image: linear-gradient(to right, $_bg, $_bg);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -427,9 +427,9 @@
 
 @mixin trough($flat:false, $c:$bg_color, $tc:$fg_color, $noedge:true) {
   color: mix($tc, $bg_color, 80%);
-  @if $flat { background-image: linear-gradient(to bottom, $c, $c); }
+  @if $flat { background-image: linear-gradient(to right, $c, $c); }
   @else {
-    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(to right,
                                       mix(black,$c,15%) 5%,
                                       mix(black,$c,10%) 20%,
                                       mix(black,$c,10%) 90%,
