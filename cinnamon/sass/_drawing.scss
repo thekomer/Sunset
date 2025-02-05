@@ -61,19 +61,12 @@
 
 @mixin button($type, $tc:$fg_color, $c:$bg_color, $style: null) {
 
-  // mix input colors to get button background color
-  $button_bg_color: $light_bg_color;
-
-  // background color mix override for flat style; the button bg color is the background color input
-  @if $style == 'flat' { $button_bg_color: $c; }
-  // background color mix override for default button style
-  @if $style == 'default' { $button_bg_color: $c;}
-
   // background color adjustment factors
   // the % a color is lightened or darkened for button states
   $insensitive_factor: 3%;
 
   // button base state background colors
+  $button_bg_color: $light_bg_color;
   $hover_button_bg_color: $lighter_bg_color;
   $active_button_bg_color: $lightest_bg_color;
   $checked_button_bg_color: $lightest_bg_color;
@@ -83,6 +76,7 @@
 
   // background color mix override for flat button style
   @if $style == 'flat' {
+    $button_bg_color: $c; // mix input colors to get button background color
     $hover_button_bg_color: $light_bg_color;
     $active_button_bg_color: $c;
     $checked_button_bg_color: $c;
@@ -91,6 +85,7 @@
 
   // background color mix override for default button style
   @if $style == 'default' {
+    $button_bg_color: $c; // mix input colors to get button background color
     $hover_button_bg_color: lighten($button_bg_color, 10%);
     $active_button_bg_color: darken($button_bg_color, 5%);
     $checked_button_bg_color: darken($button_bg_color, 5%);

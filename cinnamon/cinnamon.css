@@ -957,10 +957,10 @@ StScrollBar StButton#hhandle {
   padding: 4px; }
 
 .dialog {
-  background-color: #0E111D;
+  background-color: rgba(10, 12, 20, 0.95);
   color: #BFC3CD;
   border-radius: 0.6em;
-  border: 1px solid rgba(191, 195, 205, 0.05);
+  border: 1px solid rgba(204, 55, 0, 0.5);
   padding: 12px; }
   .dialog .dialog-content-box {
     margin-top: 4px;
@@ -1183,7 +1183,7 @@ StScrollBar StButton#hhandle {
   margin: 0.5em; }
 
 .popup-menu-content {
-  padding: 4px;
+  padding: 0.3em;
   background-color: rgba(10, 12, 20, 0.95);
   border-radius: 0.6em;
   border: 1px solid rgba(191, 195, 205, 0.05);
