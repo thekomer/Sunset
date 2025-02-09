@@ -329,3 +329,21 @@
   }
 
 }
+
+/* radio applet */
+.radio-applet-media-control-toolbar {
+  padding: 10px;
+  background-color: inherit;
+  border: 1px solid $borders_color;
+  border-radius: $border_radius;
+
+  StButton {
+    background-color: transparent;
+    &:hover {
+      color: $selected_fg_color;
+    }
+    &:active {
+      color: $accent_fg_color;
+    }
+  }
+}

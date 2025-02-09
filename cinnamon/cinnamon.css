@@ -627,6 +627,19 @@ stage {
 .timer-stopped .applet-label {
   color: #b1b6c2; }
 
+/* radio applet */
+.radio-applet-media-control-toolbar {
+  padding: 10px;
+  background-color: inherit;
+  border: 1px solid rgba(191, 195, 205, 0.05);
+  border-radius: 0.6em; }
+  .radio-applet-media-control-toolbar StButton {
+    background-color: transparent; }
+    .radio-applet-media-control-toolbar StButton:hover {
+      color: #ffffff; }
+    .radio-applet-media-control-toolbar StButton:active .radio-applet-media-control-toolbar StButton:selected {
+      color: orangered; }
+
 .flashspot {
   background-color: white; }
 
