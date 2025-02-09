@@ -1,4 +1,4 @@
-$menu_outer_padding: 9px;
+$menu_outer_padding: 0.5em;
 $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
 
 %start_menu_button {
@@ -73,6 +73,8 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       background-color: $hover_bg_color;
       color: $selected_fg_color;
       transition-duration: 200;
+      border-radius: $menu_outer_border_radius;
+      border-image: none;
     }
 
     &-selected {

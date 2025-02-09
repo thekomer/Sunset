@@ -610,7 +610,7 @@ stage {
 .system-status-icon {
   icon-size: 1.091em; }
 
-/* timer-notifications timer CSS */
+/* timer applet & notification */
 .timer-dialog-label {
   text-align: center;
   font-weight: bold; }
@@ -1500,10 +1500,10 @@ StScrollBar StButton#hhandle {
     color: #ffffff; }
 
 .menu-categories-box {
-  padding: 9px 16px; }
+  padding: 0.5em 16px; }
 
 .menu-applications-box {
-  padding: 9px; }
+  padding: 0.5em; }
 
 .menu-applications-inner-box:ltr {
   padding-left: 16px; }
@@ -1532,7 +1532,9 @@ StScrollBar StButton#hhandle {
   .menu-category-button:hover {
     background-color: rgba(54, 65, 112, 0.25);
     color: #ffffff;
-    transition-duration: 200; }
+    transition-duration: 200;
+    border-radius: 0.6em;
+    border-image: none; }
   .menu-category-button-selected {
     background-gradient-direction: horizontal;
     background-gradient-start: #cc0400;
@@ -1556,7 +1558,7 @@ StScrollBar StButton#hhandle {
   color: #555863; }
 
 .menu-search-box {
-  padding: 0 0 4px 9px; }
+  padding: 0 0 4px 0.5em; }
 
 .menu-search-entry-icon {
   icon-size: 1.091em;
