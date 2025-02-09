@@ -610,6 +610,23 @@ stage {
 .system-status-icon {
   icon-size: 1.091em; }
 
+/* timer-notifications timer CSS */
+.timer-dialog-label {
+  text-align: center;
+  font-weight: bold; }
+
+.timer-expired .system-status-icon {
+  color: #e4705b; }
+
+.timer-running .system-status-icon {
+  color: #f8e45c; }
+
+.timer-stopped .system-status-icon {
+  color: #b1b6c2; }
+
+.timer-stopped .applet-label {
+  color: #b1b6c2; }
+
 .flashspot {
   background-color: white; }
 
