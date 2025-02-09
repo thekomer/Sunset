@@ -18,6 +18,12 @@
  *   $tc:       button text color, derived from fg_color           *
  *   $style:    button style, possible values: flat, default       *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*TODO: modify flat buttons so they are:
+  color: fg_color; background-color: transparent; border: 1px solid borders_color;
+  &:hover { color: accent_color;}
+  &:active &selected { color: accent_fg_color; }
+  then i can modify sound-player applet to include flat buttons
+*/
 stage {
   color: #BFC3CD; }
 
@@ -481,60 +487,57 @@ stage {
     color: #81858f; }
 
 /* sound applet */
-.sound-player {
-  /*TODO: modify flat buttons so they are:
-  color: fg_color; background-color: transparent; border: 1px solid borders_color;
-  &:hover { color: accent_color;}
-  &:active &selected { color: accent_fg_color; }
-  then i can modify this
-*/ }
-  .sound-player > StBoxLayout:first-child {
-    spacing: 2px;
-    padding: 0 4px; }
-  .sound-player StButton {
+.sound-player > StBoxLayout:first-child {
+  spacing: 2px;
+  padding: 0 4px; }
+
+.sound-player StButton {
+  background-color: transparent;
+  border: 1px solid borders_color;
+  width: 1.2em;
+  height: 1.2em;
+  padding: 4px; }
+  .sound-player StButton StIcon {
+    icon-size: 1em; }
+  .sound-player StButton:small {
     background-color: transparent;
     border: 1px solid borders_color;
-    width: 1.2em;
-    height: 1.2em;
-    padding: 4px; }
-    .sound-player StButton StIcon {
-      icon-size: 1em; }
-    .sound-player StButton:small {
-      background-color: transparent;
-      border: 1px solid borders_color;
-      width: 1em;
-      height: 1em; }
-      .sound-player StButton:small StIcon {
-        icon-size: 0.8em; }
-    .sound-player StButton:hover {
-      background-color: transparent;
-      color: #cc3700; }
-    .sound-player StButton:active {
-      color: orangered; }
-  .sound-player-generic-coverart {
-    background-color: rgba(0, 0, 0, 0.2); }
-  .sound-player-overlay {
-    width: 290px;
-    padding: 8px;
-    spacing: 2px;
-    background-color: rgba(14, 17, 29, 0.9); }
-    .sound-player-overlay StBoxLayout {
-      padding-top: 2px; }
-    .sound-player-overlay > StBoxLayout {
-      spacing: 4px; }
-    .sound-player-overlay StBin > StBoxLayout {
-      spacing: 4px; }
-  .sound-player .slider {
-    margin: 0.1em 0;
-    height: 0.3em;
-    -slider-height: 0.3em;
-    -slider-background-color: #161b2e;
-    -slider-active-background-color: #cc3700;
-    -slider-border-color: transparent;
-    -slider-active-border-color: transparent;
-    -slider-border-width: 1px;
-    -slider-handle-radius: 0;
-    -slider-handle-radius: 0.15em; }
+    width: 1em;
+    height: 1em; }
+    .sound-player StButton:small StIcon {
+      icon-size: 0.8em; }
+  .sound-player StButton:hover {
+    background-color: transparent;
+    color: #cc3700; }
+  .sound-player StButton:active {
+    color: orangered; }
+
+.sound-player-generic-coverart {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.sound-player-overlay {
+  width: 290px;
+  padding: 8px;
+  spacing: 2px;
+  background-color: rgba(14, 17, 29, 0.9); }
+  .sound-player-overlay StBoxLayout {
+    padding-top: 2px; }
+  .sound-player-overlay > StBoxLayout {
+    spacing: 4px; }
+  .sound-player-overlay StBin > StBoxLayout {
+    spacing: 4px; }
+
+.sound-player .slider {
+  margin: 0.1em 0;
+  height: 0.3em;
+  -slider-height: 0.3em;
+  -slider-background-color: #161b2e;
+  -slider-active-background-color: #cc3700;
+  -slider-border-color: transparent;
+  -slider-active-border-color: transparent;
+  -slider-border-width: 1px;
+  -slider-handle-radius: 0;
+  -slider-handle-radius: 0.15em; }
 
 /* spacer applet */
 .spacer-box {
@@ -1467,7 +1470,6 @@ StScrollBar StButton#hhandle {
   min-width: 1.4em;
   padding: 0.625em;
   transition-duration: 200;
-  background-color: red;
   border: 1px solid transparent;
   border-radius: 0.6em; }
 
