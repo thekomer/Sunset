@@ -331,8 +331,9 @@
 }
 
 /* radio applet */
+
 .radio-applet-media-control-toolbar {
-  padding: 10px;
+  padding: 0.625em;
   background-color: inherit;
   border: 1px solid $borders_color;
   border-radius: $border_radius;
@@ -372,10 +373,10 @@
 }
 
 .weather-current-databox {
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 15px;
+  padding-top: 0.938em;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  padding-bottom: 0.938em;
 }
 
 .weather-hidden {
@@ -387,29 +388,29 @@
 }
 
 .weather-current-icon {
-  padding: 0 30px;
+  padding: 0 1.875em;
 }
 
 .weather-current-iconbox {
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .weather-icon {
-  padding-right: 5px;
+  padding-right: 0.313em;
 }
 
 .weather-icon-rtl {
-  padding-left: 5px;
+  padding-left: 0.313em;
 }
 
 .weather-current-databox-captions {
   text-align: right;
-  padding-right: 5px;
+  padding-right: 0.313em;
   color: transparentize($panel_fg_color, 0.3);
 }
 
 .weather-current-astronomy {
-padding-top: 5px;
+padding-top: 0.313em;
   color:$panel_fg_color;
 }
 
@@ -419,15 +420,15 @@ padding-top: 5px;
 
 .weather-forecast-icon {
   color: $panel_fg_color;
-  padding: 0 10px 10px 15px;
+  padding: 0 0.625em 0.625em 0.938em;
 }
 
 .weather-forecast-databox {
-  padding: 0 20px 10px 0;
+  padding: 0 1.25em 0.625em 0;
 }
 
 .weather-forecast-container {
-  margin: 10px 10px 0px 10px;
+  margin: 0.625em 0.625em 0em 0.625em;
 }
 
 .weather-forecast-day {
@@ -436,37 +437,39 @@ padding-top: 5px;
 }
 
 .weather-config {
-  padding-right: 10px;
+  padding-right: 0.625em;
 }
 
 .bottombar {
-  padding: 7px 10px 7px 10px;
+  padding: 0.438em 0.625em 0.438em 0.625em;
 }
 
 .hourly-time {
   color: transparentize($panel_fg_color, 0.5);
   font-size: 90%;
   text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.313em;
+  padding-right: 0.313em;
 }
 
 .hourly-data {
 text-align: center;
-/* padding: 0px 5px; */
+/* padding: 0px 0.313em; */
 }
 
 .hourly-box {
-  margin: 10px 10px 5px 10px;
+  //margin: 0.625em 0.625em 0.313em 0.625em;
+  margin: 0;
+  background-color: transparentize($base_color, 0.75);
 }
 
 .hourly-icon {
-  padding: 5px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 0.313em;
+  padding-bottom: 0.625em;
+  padding-top: 0.625em;
 }
 
 .location-selector {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 0.313em;
+  margin-left: 0.313em;
 }

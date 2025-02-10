@@ -633,7 +633,7 @@ stage {
 
 /* radio applet */
 .radio-applet-media-control-toolbar {
-  padding: 10px;
+  padding: 0.625em;
   background-color: inherit;
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em; }
@@ -658,10 +658,10 @@ stage {
   padding-bottom: 0.5em; }
 
 .weather-current-databox {
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 15px; }
+  padding-top: 0.938em;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  padding-bottom: 0.938em; }
 
 .weather-hidden {
   height: 0;
@@ -671,24 +671,24 @@ stage {
   padding: 0; }
 
 .weather-current-icon {
-  padding: 0 30px; }
+  padding: 0 1.875em; }
 
 .weather-current-iconbox {
-  padding: 10px; }
+  padding: 0.625em; }
 
 .weather-icon {
-  padding-right: 5px; }
+  padding-right: 0.313em; }
 
 .weather-icon-rtl {
-  padding-left: 5px; }
+  padding-left: 0.313em; }
 
 .weather-current-databox-captions {
   text-align: right;
-  padding-right: 5px;
+  padding-right: 0.313em;
   color: rgba(177, 182, 194, 0.7); }
 
 .weather-current-astronomy {
-  padding-top: 5px;
+  padding-top: 0.313em;
   color: #b1b6c2; }
 
 .weather-immediate-precipitation {
@@ -696,46 +696,47 @@ stage {
 
 .weather-forecast-icon {
   color: #b1b6c2;
-  padding: 0 10px 10px 15px; }
+  padding: 0 0.625em 0.625em 0.938em; }
 
 .weather-forecast-databox {
-  padding: 0 20px 10px 0; }
+  padding: 0 1.25em 0.625em 0; }
 
 .weather-forecast-container {
-  margin: 10px 10px 0px 10px; }
+  margin: 0.625em 0.625em 0em 0.625em; }
 
 .weather-forecast-day {
   color: rgba(177, 182, 194, 0.5);
   font-size: 90%; }
 
 .weather-config {
-  padding-right: 10px; }
+  padding-right: 0.625em; }
 
 .bottombar {
-  padding: 7px 10px 7px 10px; }
+  padding: 0.438em 0.625em 0.438em 0.625em; }
 
 .hourly-time {
   color: rgba(177, 182, 194, 0.5);
   font-size: 90%;
   text-align: center;
-  padding-left: 5px;
-  padding-right: 5px; }
+  padding-left: 0.313em;
+  padding-right: 0.313em; }
 
 .hourly-data {
   text-align: center;
-  /* padding: 0px 5px; */ }
+  /* padding: 0px 0.313em; */ }
 
 .hourly-box {
-  margin: 10px 10px 5px 10px; }
+  margin: 0;
+  background-color: rgba(22, 27, 46, 0.25); }
 
 .hourly-icon {
-  padding: 5px;
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  padding: 0.313em;
+  padding-bottom: 0.625em;
+  padding-top: 0.625em; }
 
 .location-selector {
-  margin-right: 5px;
-  margin-left: 5px; }
+  margin-right: 0.313em;
+  margin-left: 0.313em; }
 
 .flashspot {
   background-color: white; }
@@ -1313,7 +1314,7 @@ StScrollBar StButton#hhandle {
   margin: 0.5em; }
 
 .popup-menu-content {
-  padding: 0.3em;
+  padding: 0.1em;
   background-color: rgba(10, 12, 20, 0.95);
   border-radius: 0.6em;
   border: 1px solid rgba(191, 195, 205, 0.05);
