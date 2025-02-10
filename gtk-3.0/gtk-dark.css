@@ -7173,6 +7173,33 @@ menubar,
   border-bottom-width: 0;
   font-weight: bold; }
 
+window.background.lightdm entry {
+  background-image: none;
+  border-image: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 69, 0, 0.6);
+  border-radius: 0.5em;
+  padding: 0.45em;
+  color: #bfc3cd;
+  text-shadow: none;
+  caret-color: orangered; }
+  window.background.lightdm entry:focus {
+    border-color: rgba(255, 69, 0, 0.9);
+    border-width: 1px;
+    border-style: solid;
+    color: #bfc3cd; }
+  window.background.lightdm entry:selected {
+    background-color: rgba(255, 255, 255, 0.2); }
+  window.background.lightdm entry:active {
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+    animation: dashentry_spinner 1s infinite linear; }
+  window.background.lightdm entry image {
+    color: white; }
+
+window.background.lightdm .lightdm-combo {
+  border-radius: 0;
+  background-color: transparent; }
+
 .nemo-window .places-treeview {
   -NemoPlacesTreeView-disk-full-bg-color: #2e3e64;
   -NemoPlacesTreeView-disk-full-fg-color: #802200;

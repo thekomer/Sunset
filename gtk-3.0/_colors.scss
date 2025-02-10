@@ -33,6 +33,7 @@ $teal: #00e8c6;
 
 $theme_color: $orange;
 $accent_color: $theme_color;
+$accent_fg_color: lighten($accent_color, 10%); //$fg_color;
 $gradient_degree: 13;
 $selected_fg_color: #ffffff;
 $selected_bg_color: $theme_color;
