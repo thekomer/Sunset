@@ -353,7 +353,7 @@ button {
   min-width: 16px;
   padding: 2px 6px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
   color: #bfc3cd;
@@ -492,12 +492,12 @@ button {
   button.text-button {
     padding-left: 3em;
     padding-right: 3em;
-    border-radius: 0.5em; }
+    border-radius: 0.6em; }
   notebook > header > tabs > arrow.text-button.image-button, combobox:drop(active) button.text-button.image-button.combo,
   button.text-button.image-button {
     padding-left: 8px;
     padding-right: 8px;
-    border-radius: 0.5em; }
+    border-radius: 0.6em; }
     notebook > header > tabs > arrow.text-button.image-button label, combobox:drop(active) button.text-button.image-button.combo label,
     button.text-button.image-button label {
       padding-left: 8px;
@@ -1076,29 +1076,29 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1); }
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo:first-child, .linked:not(.vertical) > combobox:last-child > box > button.combo:first-child, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), combobox.linked button:first-child:nth-child(2):dir(ltr), combobox.linked .linked.vertical > combobox:first-child > box > button.combo:nth-child(2):dir(ltr), .inline-toolbar progressbar:backdrop progress:first-child, progressbar:backdrop .inline-toolbar progress:first-child, .inline-toolbar progressbar:backdrop trough:first-child, progressbar:backdrop .inline-toolbar trough:first-child, .inline-toolbar button:first-child, .inline-toolbar .linked.vertical > combobox:first-child > box > button.combo, .inline-toolbar button:first-child:backdrop, .selection-mode windowcontrols .linked > button:first-child, progressbar:backdrop .linked > progress:first-child, progressbar:backdrop .linked > trough:first-child, .linked > button:first-child, .linked.vertical > combobox:first-child > box.linked > button.combo, .linked > button:first-child:hover, .linked > button:first-child:active, .linked > button:first-child:checked, .linked > button:first-child:backdrop {
-  border-top-left-radius: 0.5em;
-  border-bottom-left-radius: 0.5em; }
+  border-top-left-radius: 0.6em;
+  border-bottom-left-radius: 0.6em; }
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo, .linked:not(.vertical) > combobox:first-child > box > button.combo:last-child, combobox.linked button:last-child:nth-child(2):dir(rtl), combobox.linked .linked.vertical > combobox:last-child > box > button.combo:nth-child(2):dir(rtl), combobox.linked button:nth-child(2):dir(ltr), .inline-toolbar progressbar:backdrop progress:last-child, progressbar:backdrop .inline-toolbar progress:last-child, .inline-toolbar progressbar:backdrop trough:last-child, progressbar:backdrop .inline-toolbar trough:last-child, .inline-toolbar button:last-child, .inline-toolbar .linked.vertical > combobox:last-child > box > button.combo, .inline-toolbar button:last-child:backdrop, .selection-mode windowcontrols .linked > button:last-child, progressbar:backdrop .linked > progress:last-child, progressbar:backdrop .linked > trough:last-child, .linked > button:last-child, .linked.vertical > combobox:last-child > box.linked > button.combo, .linked > button:last-child:hover, .linked > button:last-child:active, .linked > button:last-child:checked, .linked > button:last-child:backdrop {
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
   border-right-style: solid; }
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo, .linked:not(.vertical) > combobox:last-child > box > button.combo:only-child, .linked:not(.vertical) > combobox:first-child > box > button.combo:only-child, combobox.linked button:only-child:nth-child(2):dir(rtl), combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(rtl), combobox.linked button:only-child:nth-child(2):dir(ltr), combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(ltr), .inline-toolbar progressbar:backdrop progress:only-child, progressbar:backdrop .inline-toolbar progress:only-child, .inline-toolbar progressbar:backdrop trough:only-child, progressbar:backdrop .inline-toolbar trough:only-child, .inline-toolbar button:only-child, .inline-toolbar .linked.vertical > combobox:only-child > box > button.combo, .inline-toolbar button:only-child:backdrop, .selection-mode windowcontrols .linked > button:only-child, progressbar:backdrop .linked > progress:only-child, progressbar:backdrop .linked > trough:only-child, .linked > button:only-child, .linked.vertical > combobox:only-child > box.linked > button.combo, .linked > button:only-child:hover, .linked > button:only-child:active, .linked > button:only-child:checked, .linked > button:only-child:backdrop {
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   border-style: solid; }
 
 .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child {
-  border-top-left-radius: 0.5em;
-  border-bottom-left-radius: 0.5em; }
+  border-top-left-radius: 0.6em;
+  border-bottom-left-radius: 0.6em; }
 
 .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child {
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
   border-right-style: solid; }
 
 .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child {
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   border-style: solid; }
 
 .linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > combobox:first-child > box > button.combo, .selection-mode windowcontrols .linked.vertical > button, .selection-mode windowcontrols .linked.vertical > button:hover, .selection-mode windowcontrols .linked.vertical > button:active, .selection-mode windowcontrols .linked.vertical > button:checked, .selection-mode windowcontrols .linked.vertical > button:backdrop, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, .linked.vertical > button:backdrop {
@@ -1106,29 +1106,29 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
   border-radius: 0; }
 
 .linked.vertical > combobox:only-child > box > button.combo:first-child, .linked.vertical > combobox:last-child > box > button.combo:first-child, .linked.vertical > combobox:first-child > box > button.combo, combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(rtl), combobox.linked .linked.vertical > combobox:last-child > box > button.combo:nth-child(2):dir(rtl), .selection-mode windowcontrols .linked.vertical > button:first-child, combobox.linked label:backdrop .selection-mode windowcontrols .linked.vertical > button:nth-child(2):dir(rtl), .selection-mode windowcontrols combobox.linked label:backdrop .linked.vertical > button:nth-child(2):dir(rtl), .linked.vertical > button:first-child, .linked:not(.vertical) > combobox:first-child > box.linked.vertical > button.combo, combobox.linked .linked.vertical > button:nth-child(2):dir(rtl), .linked.vertical > button:first-child:hover, .linked.vertical > button:first-child:active, .linked.vertical > button:first-child:checked, .linked.vertical > button:first-child:backdrop, progressbar:backdrop .linked.vertical > progress:first-child, progressbar:backdrop .linked.vertical > trough:first-child {
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em; }
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em; }
 
 .linked.vertical > combobox:only-child > box > button.combo:last-child, .linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > combobox:first-child > box > button.combo:last-child, combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(ltr), combobox.linked .linked.vertical > combobox:first-child > box > button.combo:nth-child(2):dir(ltr), .selection-mode windowcontrols .linked.vertical > button:last-child, combobox.linked label:backdrop .selection-mode windowcontrols .linked.vertical > button:nth-child(2):dir(ltr), .selection-mode windowcontrols combobox.linked label:backdrop .linked.vertical > button:nth-child(2):dir(ltr), .linked.vertical > button:last-child, .linked:not(.vertical) > combobox:last-child > box.linked.vertical > button.combo, combobox.linked .linked.vertical > button:nth-child(2):dir(ltr), .linked.vertical > button:last-child:hover, .linked.vertical > button:last-child:active, .linked.vertical > button:last-child:checked, .linked.vertical > button:last-child:backdrop, progressbar:backdrop .linked.vertical > progress:last-child, progressbar:backdrop .linked.vertical > trough:last-child {
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
   border-style: solid; }
 
 .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > combobox:last-child > box > button.combo:only-child, .linked.vertical > combobox:first-child > box > button.combo:only-child, .selection-mode windowcontrols .linked.vertical > button:only-child, .linked.vertical > button:only-child, .linked:not(.vertical) > combobox:only-child > box.linked.vertical > button.combo, .linked.vertical > button:only-child:hover, .linked.vertical > button:only-child:active, .linked.vertical > button:only-child:checked, .linked.vertical > button:only-child:backdrop, progressbar:backdrop .linked.vertical > progress:only-child, progressbar:backdrop .linked.vertical > trough:only-child {
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   border-style: solid; }
 
 .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child {
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em; }
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em; }
 
 .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child {
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
   border-style: solid; }
 
 .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child {
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   border-style: solid; }
 
 .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, .scale-popup button:hover, button:link:hover, button:link:active, button:link:checked,
@@ -1215,7 +1215,7 @@ calendar {
     color: #676a75; }
   calendar:selected {
     color: #ffffff;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background: linear-gradient(to right, #cc0b00, #cc6300);
     font-weight: bold; }
     calendar:selected:hover {
@@ -1224,7 +1224,7 @@ calendar {
       color: rgba(191, 195, 205, 0.4);
       background: rgba(204, 55, 0, 0.6); }
     calendar:selected:backdrop, progressbar:backdrop progress:selected, progressbar:backdrop trough:selected, label:backdrop selection:selected {
-      border-radius: 0.5em;
+      border-radius: 0.6em;
       color: rgba(191, 195, 205, 0.4);
       background: rgba(204, 55, 0, 0.6);
       box-shadow: 0px 0px 0px rgba(204, 55, 0, 0.98);
@@ -1853,7 +1853,7 @@ dialog #pathbarbox {
         background: transparent; }
       dialog #pathbarbox .linked.path-bar button:selected, dialog #pathbarbox .linked.path-bar button:active, dialog #pathbarbox .linked.path-bar button:checked {
         color: #ffffff;
-        border-radius: 0.5em;
+        border-radius: 0.6em;
         background: linear-gradient(to right, #cc0b00, #cc6300); }
         dialog #pathbarbox .linked.path-bar button:selected:hover, dialog #pathbarbox .linked.path-bar button:active:hover, dialog #pathbarbox .linked.path-bar button:checked:hover {
           box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -1861,7 +1861,7 @@ dialog #pathbarbox {
           color: rgba(191, 195, 205, 0.4);
           background: rgba(204, 55, 0, 0.6); }
         dialog #pathbarbox .linked.path-bar button:selected:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:selected, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:selected, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:selected, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:selected, dialog #pathbarbox .linked.path-bar label:backdrop selection:selected, label:backdrop dialog #pathbarbox .linked.path-bar selection:selected, dialog #pathbarbox .linked.path-bar button:active:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:active, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:active, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:active, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:active, dialog #pathbarbox .linked.path-bar label:backdrop selection:active, label:backdrop dialog #pathbarbox .linked.path-bar selection:active, dialog #pathbarbox .linked.path-bar button:checked:backdrop, dialog #pathbarbox .linked.path-bar progressbar:backdrop progress:checked, progressbar:backdrop dialog #pathbarbox .linked.path-bar progress:checked, dialog #pathbarbox .linked.path-bar progressbar:backdrop trough:checked, progressbar:backdrop dialog #pathbarbox .linked.path-bar trough:checked, dialog #pathbarbox .linked.path-bar label:backdrop selection:checked, label:backdrop dialog #pathbarbox .linked.path-bar selection:checked {
-          border-radius: 0.5em;
+          border-radius: 0.6em;
           color: rgba(191, 195, 205, 0.4);
           background: rgba(204, 55, 0, 0.6);
           box-shadow: 0px 0px 0px rgba(204, 55, 0, 0.98); }
@@ -1877,7 +1877,7 @@ entry {
   padding-left: 8px;
   padding-right: 8px;
   border: 1px solid;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #bfc3cd;
   border-color: rgba(255, 255, 255, 0.05);
@@ -2771,7 +2771,7 @@ headerbar {
   headerbar .linked > button:checked,
   headerbar .linked > button:active,
   headerbar .linked > button {
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     border-right-style: none;
     border: none;
     box-shadow: none;
@@ -2798,7 +2798,7 @@ headerbar {
     color: #ffffff; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background: linear-gradient(to right, #cc0b00, #cc6300);
     box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98);
     color: #ffffff; }
@@ -4753,7 +4753,7 @@ searchbar {
 tooltip {
   padding: 4px;
   /* not working */
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   box-shadow: none;
   text-shadow: 0 1px black; }
   tooltip.background {
@@ -5574,7 +5574,7 @@ button.raven-trigger {
         padding: 3px; }
         .raven .raven-header button.text-button.radio:active, .raven .raven-header button.text-button.radio:checked {
           color: #ffffff;
-          border-radius: 0.5em;
+          border-radius: 0.6em;
           background: linear-gradient(to right, #cc0b00, #cc6300); }
           .raven .raven-header button.text-button.radio:active:hover, .raven .raven-header button.text-button.radio:checked:hover {
             box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -5955,7 +5955,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:checked,
 .nautilus-window .titlebar .path-bar-box button:active, .nautilus-window .titlebar .path-bar-box button:checked {
   color: #ffffff;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   background: linear-gradient(to right, #cc0b00, #cc6300); }
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:hover, .nautilus-window .titlebar .path-bar-box combobox.linked widget > button.text-button:hover:nth-child(2):dir(ltr), combobox.linked .nautilus-window .titlebar .path-bar-box widget > button.text-button:hover:nth-child(2):dir(ltr),
   .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child:active:hover,
@@ -5984,7 +5984,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   progressbar:backdrop .nautilus-window .titlebar .path-bar-box trough:active,
   .nautilus-window .titlebar .path-bar-box progressbar:backdrop progress:active,
   progressbar:backdrop .nautilus-window .titlebar .path-bar-box progress:active, .nautilus-window .titlebar .path-bar-box button:checked:backdrop, .nautilus-window .titlebar .path-bar-box label:backdrop selection:checked, label:backdrop .nautilus-window .titlebar .path-bar-box selection:checked, .nautilus-window .titlebar .path-bar-box progressbar:backdrop trough:checked, progressbar:backdrop .nautilus-window .titlebar .path-bar-box trough:checked, .nautilus-window .titlebar .path-bar-box progressbar:backdrop progress:checked, progressbar:backdrop .nautilus-window .titlebar .path-bar-box progress:checked {
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     color: rgba(191, 195, 205, 0.4);
     background: rgba(204, 55, 0, 0.6);
     box-shadow: 0px 0px 0px rgba(204, 55, 0, 0.98); }
@@ -6183,7 +6183,7 @@ wnck-pager {
 #whiskermenu-window {
   color: #bfc3cd;
   background-color: #06080d;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   border-color: transparent; }
 
 #whiskermenu-window box widget {
@@ -6224,7 +6224,7 @@ wnck-pager {
     -gtk-icon-effect: highlight; }
   #whiskermenu-window button:checked {
     color: #ffffff;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background: linear-gradient(to right, #cc0b00, #cc6300);
     box-shadow: none; }
     #whiskermenu-window button:checked:hover {
@@ -6290,7 +6290,7 @@ wnck-pager {
       background: transparent; }
     .thunar toolbar button:selected, .thunar toolbar button:active, .thunar toolbar button:checked {
       color: #ffffff;
-      border-radius: 0.5em;
+      border-radius: 0.6em;
       background: linear-gradient(to right, #cc0b00, #cc6300); }
       .thunar toolbar button:selected:hover, .thunar toolbar button:active:hover, .thunar toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -6298,7 +6298,7 @@ wnck-pager {
         color: rgba(191, 195, 205, 0.4);
         background: rgba(204, 55, 0, 0.6); }
       .thunar toolbar button:selected:backdrop, .thunar toolbar label:backdrop selection:selected, label:backdrop .thunar toolbar selection:selected, .thunar toolbar progressbar:backdrop trough:selected, progressbar:backdrop .thunar toolbar trough:selected, .thunar toolbar progressbar:backdrop progress:selected, progressbar:backdrop .thunar toolbar progress:selected, .thunar toolbar button:active:backdrop, .thunar toolbar label:backdrop selection:active, label:backdrop .thunar toolbar selection:active, .thunar toolbar progressbar:backdrop trough:active, progressbar:backdrop .thunar toolbar trough:active, .thunar toolbar progressbar:backdrop progress:active, progressbar:backdrop .thunar toolbar progress:active, .thunar toolbar button:checked:backdrop, .thunar toolbar label:backdrop selection:checked, label:backdrop .thunar toolbar selection:checked, .thunar toolbar progressbar:backdrop trough:checked, progressbar:backdrop .thunar toolbar trough:checked, .thunar toolbar progressbar:backdrop progress:checked, progressbar:backdrop .thunar toolbar progress:checked {
-        border-radius: 0.5em;
+        border-radius: 0.6em;
         color: rgba(191, 195, 205, 0.4);
         background: rgba(204, 55, 0, 0.6);
         box-shadow: 0px 0px 0px rgba(204, 55, 0, 0.98); }
@@ -6319,7 +6319,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     color: #cc3700; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked {
     color: #ffffff;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background: linear-gradient(to right, #cc0b00, #cc6300); }
     window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:hover {
       box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -6346,7 +6346,7 @@ window.thunar paned > scrolledwindow treeview.view {
     box-shadow: none; }
   window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned > scrolledwindow treeview.view:active, window.thunar paned > scrolledwindow treeview.view:checked {
     color: #ffffff;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background: linear-gradient(to right, #cc0b00, #cc6300);
     border-radius: 0;
     box-shadow: none; }
@@ -7053,7 +7053,7 @@ menubar,
     .nemo-window .sidebar button:selected, .nemo-window .sidebar button:active, .nemo-window .sidebar button:checked, .nemo-window .NemoSidebar button:selected, .nemo-window .NemoSidebar button:active, .nemo-window .NemoSidebar button:checked, .nemo-window .nemo-places-sidebar button:selected, .nemo-window .nemo-places-sidebar button:active, .nemo-window .nemo-places-sidebar button:checked, .nemo-window statusbar button:selected, .nemo-window statusbar button:active, .nemo-window statusbar button:checked, .nemo-window box.toolbar button:selected, .nemo-window box.toolbar button:active, .nemo-window box.toolbar button:checked, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       transition-duration: 50ms;
       color: #ffffff;
-      border-radius: 0.5em;
+      border-radius: 0.6em;
       background: linear-gradient(to right, #cc0b00, #cc6300); }
       .nemo-window .sidebar button:selected:hover, .nemo-window .sidebar button:active:hover, .nemo-window .sidebar button:checked:hover, .nemo-window .NemoSidebar button:selected:hover, .nemo-window .NemoSidebar button:active:hover, .nemo-window .NemoSidebar button:checked:hover, .nemo-window .nemo-places-sidebar button:selected:hover, .nemo-window .nemo-places-sidebar button:active:hover, .nemo-window .nemo-places-sidebar button:checked:hover, .nemo-window statusbar button:selected:hover, .nemo-window statusbar button:active:hover, .nemo-window statusbar button:checked:hover, .nemo-window box.toolbar button:selected:hover, .nemo-window box.toolbar button:active:hover, .nemo-window box.toolbar button:checked:hover, .nemo-window toolbar.primary-toolbar button:selected:hover, .nemo-window toolbar.primary-toolbar button:active:hover, .nemo-window toolbar.primary-toolbar button:checked:hover {
         box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
@@ -7215,7 +7215,7 @@ progressbar:backdrop .caja-navigation-window .vertical progress:not(.text-button
     color: #cc3700; }
   .caja-pathbar button:checked {
     color: #ffffff;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background: linear-gradient(to right, #cc0b00, #cc6300); }
     .caja-pathbar button:checked:hover {
       box-shadow: 0px 0px 5px rgba(204, 55, 0, 0.98); }
