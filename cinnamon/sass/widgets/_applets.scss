@@ -440,10 +440,6 @@ padding-top: 0.313em;
   padding-right: 0.625em;
 }
 
-.bottombar {
-  padding: 0.438em 0.625em 0.438em 0.625em;
-}
-
 .hourly-time {
   color: transparentize($panel_fg_color, 0.5);
   font-size: 90%;
@@ -472,4 +468,28 @@ text-align: center;
 .location-selector {
   margin-right: 0.313em;
   margin-left: 0.313em;
+}
+
+.bottombar {
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  color: transparentize($panel_fg_color, 0.3);
+  font-weight: 300;
+
+  StButton {
+    @extend %flat_button;
+    color: transparentize($panel_fg_color, 0.3);
+    background-color: transparent;
+    border-radius: $border_radius;
+    font-weight: 200;
+
+    StIcon { icon-size: 0.8em; }
+
+    &:hover {
+      background-color: transparent;
+      color: $panel_fg_color;
+    }
+    &:active {
+      color: $panel_fg_color;
+    }
+  }
 }
