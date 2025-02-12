@@ -356,113 +356,117 @@
 //   padding-top: 0em;
 // }
 
-.weather-current-location-link {
-  color: transparentize($panel_fg_color, 0.3);
+.weather {
+  &-current-location-link {
+    color: transparentize($panel_fg_color, 0.3);
+    text-align: center;
+  }
+
+  &-current-summarybox {
+    padding-top: 0.3em;
+  }
+
+  &-current-summary {
+    color: $accent_fg_color;
+    @extend %title_1;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  &-current-databox {
+    padding-top: 0.938em;
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+    padding-bottom: 0.938em;
+  }
+
+  &-hidden {
+    height: 0;
+    width: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-current-icon {
+    padding: 0 1.875em;
+  }
+
+  &-current-iconbox {
+    padding: 0.625em;
+  }
+
+  &-icon {
+    padding-right: 0.313em;
+  }
+
+  &-icon-rtl {
+    padding-left: 0.313em;
+  }
+
+  &-current-databox-captions {
+    text-align: right;
+    padding-right: 0.313em;
+    color: transparentize($panel_fg_color, 0.3);
+  }
+
+  &-current-astronomy {
+  padding-top: 0.313em;
+    color:$panel_fg_color;
+  }
+
+  &-immediate-precipitation {
+    color: $accent_fg_color;
+  }
+
+  &-forecast-icon {
+    color: $panel_fg_color;
+    padding: 0 0.625em 0.625em 0.938em;
+  }
+
+  &-forecast-databox {
+    padding: 0 1.25em 0.625em 0;
+  }
+
+  &-forecast-container {
+    margin: 0.625em 0.625em 0em 0.625em;
+  }
+
+  &-forecast-day {
+    color: transparentize($panel_fg_color, 0.5);
+    font-size: 90%;
+  }
+
+  &-config {
+    padding-right: 0.625em;
+  }
+}
+
+.hourly {
+  &-time {
+    color: transparentize($panel_fg_color, 0.5);
+    font-size: 90%;
+    text-align: center;
+    padding-left: 0.313em;
+    padding-right: 0.313em;
+  }
+
+  &-data {
   text-align: center;
-}
+  /* padding: 0px 0.313em; */
+  }
 
-.weather-current-summarybox {
-  padding-top: 0.3em;
-}
+  &-box {
+    //margin: 0.625em 0.625em 0.313em 0.625em;
+    margin: 0;
+    background-color: transparentize($base_color, 0.75);
+  }
 
-.weather-current-summary {
-  color: $accent_fg_color;
-  @extend %title_1;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.weather-current-databox {
-  padding-top: 0.938em;
-  padding-left: 1.875em;
-  padding-right: 1.875em;
-  padding-bottom: 0.938em;
-}
-
-.weather-hidden {
-  height: 0;
-  width: 0;
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-
-.weather-current-icon {
-  padding: 0 1.875em;
-}
-
-.weather-current-iconbox {
-  padding: 0.625em;
-}
-
-.weather-icon {
-  padding-right: 0.313em;
-}
-
-.weather-icon-rtl {
-  padding-left: 0.313em;
-}
-
-.weather-current-databox-captions {
-  text-align: right;
-  padding-right: 0.313em;
-  color: transparentize($panel_fg_color, 0.3);
-}
-
-.weather-current-astronomy {
-padding-top: 0.313em;
-  color:$panel_fg_color;
-}
-
-.weather-immediate-precipitation {
-  color: $accent_fg_color;
-}
-
-.weather-forecast-icon {
-  color: $panel_fg_color;
-  padding: 0 0.625em 0.625em 0.938em;
-}
-
-.weather-forecast-databox {
-  padding: 0 1.25em 0.625em 0;
-}
-
-.weather-forecast-container {
-  margin: 0.625em 0.625em 0em 0.625em;
-}
-
-.weather-forecast-day {
-  color: transparentize($panel_fg_color, 0.5);
-  font-size: 90%;
-}
-
-.weather-config {
-  padding-right: 0.625em;
-}
-
-.hourly-time {
-  color: transparentize($panel_fg_color, 0.5);
-  font-size: 90%;
-  text-align: center;
-  padding-left: 0.313em;
-  padding-right: 0.313em;
-}
-
-.hourly-data {
-text-align: center;
-/* padding: 0px 0.313em; */
-}
-
-.hourly-box {
-  //margin: 0.625em 0.625em 0.313em 0.625em;
-  margin: 0;
-  background-color: transparentize($base_color, 0.75);
-}
-
-.hourly-icon {
-  padding: 0.313em;
-  padding-bottom: 0.625em;
-  padding-top: 0.625em;
+  &-icon {
+    padding: 0.313em;
+    padding-bottom: 0.625em;
+    padding-top: 0.625em;
+  }
 }
 
 .location-selector {
