@@ -743,7 +743,7 @@ stage {
     color: rgba(177, 182, 194, 0.7);
     background-color: transparent;
     border-radius: 0.6em;
-    font-weight: 300; }
+    font-weight: 200; }
     .bottombar StButton StIcon {
       icon-size: 0.8em; }
     .bottombar StButton:hover {
