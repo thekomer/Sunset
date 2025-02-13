@@ -7,6 +7,20 @@
   background-color: $headerbar_color;
 }
 
+%darkbar {
+  border-style: solid;
+  border-color: $borders_color;
+  $_bg: mix($bg_color, $borders_color, 70%);
+  background-color: $_bg;
+
+  &:backdrop {
+    border-color: $backdrop_borders_color;
+    background-color: $backdrop_dark_fill;
+    box-shadow: none;
+    transition: $backdrop_transition;
+  }
+}
+
 toolbar, .primary-toolbar {
   @extend %toolbar;
 
@@ -63,20 +77,6 @@ searchbar,
 
   border-width: 0 0 1px;
   padding: 3px;
-}
-
-%darkbar {
-  border-style: solid;
-  border-color: $borders_color;
-  $_bg: mix($bg_color, $borders_color, 70%);
-  background-color: $_bg;
-
-  &:backdrop {
-    border-color: $backdrop_borders_color;
-    background-color: $backdrop_dark_fill;
-    box-shadow: none;
-    transition: $backdrop_transition;
-  }
 }
 
 searchbar{

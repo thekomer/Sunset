@@ -4820,6 +4820,18 @@ searchbar,
   padding: 4px;
   background-color: #06080d; }
 
+searchbar,
+.location-bar, .inline-toolbar {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(17, 20, 31, 0.715); }
+  searchbar:backdrop,
+  .location-bar:backdrop, .inline-toolbar:backdrop, label:backdrop selection.inline-toolbar, progressbar:backdrop trough.inline-toolbar, progressbar:backdrop progress.inline-toolbar {
+    border-color: rgba(59, 62, 71, 0.145);
+    background-color: rgba(16, 19, 31, 0.70075);
+    box-shadow: none;
+    transition: 200ms ease-out; }
+
 toolbar, .primary-toolbar {
   padding: 4px 3px 3px 4px; }
   .osd toolbar, .osd .primary-toolbar {
@@ -4856,12 +4868,6 @@ searchbar,
 .location-bar {
   border-width: 0 0 1px;
   padding: 3px; }
-
-.inline-toolbar, searchbar,
-.location-bar {
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.05);
-  background-color: rgba(17, 20, 31, 0.715); }
 
 searchbar {
   background: #131727; }
