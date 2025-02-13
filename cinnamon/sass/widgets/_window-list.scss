@@ -205,7 +205,7 @@
     background-color: $osd_bg_color;
     margin: 0.4em;//6px;
     border-radius: $border_radius; //$base_border_radius;
-    box-shadow: 0 0 6px 0 $shadow_color;
+    box-shadow: 0 0 6px 0 $osd_shadow_color;
     padding: 0;
 
     > StBoxLayout { padding: 4px; }

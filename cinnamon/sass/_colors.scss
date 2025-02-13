@@ -23,8 +23,6 @@ $accent_bg_color: $accent_color;
 // global colors
 $bg_color: #0E111D;
 $fg_color: #BFC3CD;
-$selected_fg_color: #ffffff;
-$hover_fg_color: #ffffff;
 
 $base_color: lighten($bg_color, 5%);// #131727;
 $base_fg_color: lighten($fg_color, 5%);// #ced1d9;
@@ -38,6 +36,12 @@ $lighter_bg_color: lighten($bg_color, 12%);
 $lightest_bg_color: lighten($bg_color, 24%);
 
 $light_base_color: lighten($base_color, 8%);
+
+// selected and hover colors
+$selected_fg_color: #ffffff;
+$selected_bg_color: $accent_bg_color;
+$hover_fg_color: #ffffff;
+$hover_bg_color: transparentize($lightest_bg_color, 0.75); // $lighter_bg_color;
 
 // colored elements
 $error_color: #e4705b;
@@ -63,7 +67,7 @@ $borders_color:transparentize($fg_color, 0.95);
 $applet_separator_color: transparentize($fg_color, 0.90);
 
 // shadows
-$shadow_color: rgba(1, 1, 1, 0.05);
+$shadow_color: rgba(1, 1, 1, 0.1);
 
 // insensitive state
 $insensitive_fg_color: mix($fg_color, $bg_color, 40%);
@@ -82,12 +86,10 @@ $theme_gradient_end: adjust-hue($accent_color, 15deg);
 $destructive_gradient_start: adjust-hue($destructive_bg_color, -15deg);
 $destructive_gradient_end: adjust-hue($destructive_bg_color, 15deg);
 
-// hover
-$hover_bg_color: transparentize($lightest_bg_color, 0.75); // $lighter_bg_color;
-
 // osd
 $osd_bg_color:  transparentize(mix($bg_color, $panel_bg_color, 50%), 0.05); // transparentize($panel_bg_color, 0.10);
 $osd_borders_color: transparentize($fg_color, 0.95);
 $osd_fg_color: $fg_color;
 $osd_entry_bg_color: transparentize($entry_bg_color, 0.30); //$entry_bg_color;
 $osd_entry_fg_color: $osd_fg_color;
+$osd_shadow_color: rgba(1, 1, 1, 0.05);

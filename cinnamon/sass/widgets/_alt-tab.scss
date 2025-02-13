@@ -8,6 +8,7 @@
   border: 1px solid transparentize($accent_color, 0.25);
   background-color: $osd_bg_color;
   border-radius: $border_radius;
+  box-shadow: 0 0 0.2em 0.2em $osd_shadow_color;
   padding: 0.7em; //20px;
 
   > StBoxLayout {

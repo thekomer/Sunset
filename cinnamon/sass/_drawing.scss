@@ -8,8 +8,8 @@
   background-gradient-end: rgba($end, $alpha);
 }
 
-@mixin border_gradient($direction, $start, $end, $alpha) {
-  border: 1px solid;
+@mixin border_gradient($direction, $start, $end, $alpha, $thickness:1px) {
+  border: $thickness solid;
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient($direction, rgba($start, $alpha), rgba($end, $alpha));

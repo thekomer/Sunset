@@ -4,14 +4,14 @@ $notification_width: 34em;
   width: $notification_width;
   border-radius: $border_radius; // $base_border_radius;
   border: 1px solid $borders_color;
-  box-shadow: inset 0 0 0.2em $borders_color;
-  //box-shadow: 0 2px 4px 2px $shadow_color;
+  box-shadow: inset 0.1em 0em $accent_color;
   //background-color: transparentize(darken($bg_color, 2%), 0.05);//$bg_color;
   background-color: $osd_bg_color;
   padding: $base_padding * 2;
   margin-from-right-edge-of-screen: 1.5em; //20px;
   spacing-rows: 0.6em;//10px;
   spacing-columns: 0.6em; //10px;
+  margin-bottom: 0.3em;
 
   &.multi-line-notification {
     padding-bottom: $base_padding * 2;
