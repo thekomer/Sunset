@@ -704,7 +704,7 @@ button.suggested-action {
   box-shadow: none;
   color: white;
   border-radius: 100px;
-  background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+  background: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
   .selection-mode button.titlebutton, popover.background checkbutton.suggested-action,
   popover.background radiobutton.suggested-action, notebook > header > tabs > arrow.suggested-action,
   button.suggested-action.flat,
@@ -713,7 +713,7 @@ button.suggested-action {
     box-shadow: none;
     color: white;
     border-radius: 100px;
-    background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+    background: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
   
   button.suggested-action:hover,
   .selection-mode button.titlebutton:hover {
@@ -881,7 +881,7 @@ button.destructive-action {
   box-shadow: none;
   color: white;
   border-radius: 100px;
-  background: linear-gradient(to right, #FF416C, #FF4B2B); }
+  background: linear-gradient(to right, #cc002c 0%, #cc2c00 100%); }
   .selection-mode button.destructive-action.titlebutton, popover.background checkbutton.destructive-action,
   popover.background radiobutton.destructive-action, notebook > header > tabs > arrow.destructive-action,
   button.destructive-action.flat,
@@ -890,7 +890,7 @@ button.destructive-action {
     box-shadow: none;
     color: white;
     border-radius: 100px;
-    background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+    background: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
   
   button.destructive-action:hover {
     color: white;
@@ -2563,7 +2563,7 @@ headerbar {
     .selection-mode headerbar button.titlebutton {
       box-shadow: none;
       border: none;
-      background-image: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+      background-image: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
       .titlebar button.suggested-action:disabled, .titlebar .selection-mode button.titlebutton:disabled, .selection-mode .titlebar button.titlebutton:disabled, .titlebar label:disabled selection.suggested-action, label:disabled .titlebar selection.suggested-action, .titlebar button.suggested-action:backdrop, .titlebar .selection-mode button.titlebutton:backdrop, .selection-mode .titlebar button.titlebutton:backdrop, .titlebar progressbar:backdrop progress.suggested-action, progressbar:backdrop .titlebar progress.suggested-action, .titlebar progressbar:backdrop trough.suggested-action, progressbar:backdrop .titlebar trough.suggested-action, .titlebar label:backdrop selection.suggested-action, label:backdrop .titlebar selection.suggested-action,
       headerbar button.suggested-action:disabled,
       headerbar .selection-mode button.titlebutton:disabled,
@@ -2580,7 +2580,7 @@ headerbar {
       headerbar label:backdrop selection.suggested-action,
       label:backdrop headerbar selection.suggested-action {
         border: none;
-        background-image: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+        background-image: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
         .titlebar button.suggested-action:disabled:hover, .titlebar .selection-mode button.titlebutton:disabled:hover, .selection-mode .titlebar button.titlebutton:disabled:hover, .titlebar label:disabled selection.suggested-action:hover, label:disabled .titlebar selection.suggested-action:hover, .titlebar button.suggested-action:disabled:active, .titlebar .selection-mode button.titlebutton:disabled:active, .selection-mode .titlebar button.titlebutton:disabled:active, .titlebar label:disabled selection.suggested-action:active, label:disabled .titlebar selection.suggested-action:active, .titlebar button.suggested-action:disabled:checked, .titlebar .selection-mode button.titlebutton:disabled:checked, .selection-mode .titlebar button.titlebutton:disabled:checked, .titlebar label:disabled selection.suggested-action:checked, label:disabled .titlebar selection.suggested-action:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar .selection-mode button.titlebutton:backdrop:hover, .selection-mode .titlebar button.titlebutton:backdrop:hover, .titlebar progressbar:backdrop progress.suggested-action:hover, progressbar:backdrop .titlebar progress.suggested-action:hover, .titlebar progressbar:backdrop trough.suggested-action:hover, progressbar:backdrop .titlebar trough.suggested-action:hover, .titlebar label:backdrop selection.suggested-action:hover, label:backdrop .titlebar selection.suggested-action:hover, .titlebar button.suggested-action:backdrop:active, .titlebar .selection-mode button.titlebutton:backdrop:active, .selection-mode .titlebar button.titlebutton:backdrop:active, .titlebar progressbar:backdrop progress.suggested-action:active, progressbar:backdrop .titlebar progress.suggested-action:active, .titlebar progressbar:backdrop trough.suggested-action:active, progressbar:backdrop .titlebar trough.suggested-action:active, .titlebar label:backdrop selection.suggested-action:active, label:backdrop .titlebar selection.suggested-action:active, .titlebar button.suggested-action:backdrop:checked, .titlebar .selection-mode button.titlebutton:backdrop:checked, .selection-mode .titlebar button.titlebutton:backdrop:checked, .titlebar progressbar:backdrop progress.suggested-action:checked, progressbar:backdrop .titlebar progress.suggested-action:checked, .titlebar progressbar:backdrop trough.suggested-action:checked, progressbar:backdrop .titlebar trough.suggested-action:checked, .titlebar label:backdrop selection.suggested-action:checked, label:backdrop .titlebar selection.suggested-action:checked,
         headerbar button.suggested-action:disabled:hover,
         headerbar .selection-mode button.titlebutton:disabled:hover,
@@ -2625,7 +2625,7 @@ headerbar {
         headerbar label:backdrop selection.suggested-action:checked,
         label:backdrop headerbar selection.suggested-action:checked {
           border: none;
-          background-image: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+          background-image: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
     .titlebar button.appmenu,
     headerbar button.appmenu {
       background: transparent; }
@@ -5250,7 +5250,7 @@ popover.background radiobutton.button:selected, spinbutton:not(.vertical) select
       box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
     .budgie-menu .category-button:checked {
       color: #ffffff;
-      background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+      background: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
       .budgie-menu .category-button:checked:hover {
         color: rgba(255, 255, 255, 0.9); }
     .budgie-menu .category-button:checked:disabled, .budgie-menu label:disabled selection:checked, label:disabled .budgie-menu selection:checked {
@@ -5760,13 +5760,13 @@ button.raven-trigger {
       background: #c74ded;
       color: #ffffff; }
     .raven .powerstrip button.image-button:first-child, .raven .powerstrip combobox.linked button.image-button:nth-child(2):dir(rtl), combobox.linked .raven .powerstrip button.image-button:nth-child(2):dir(rtl), .raven .powerstrip .linked:not(.vertical) > combobox:first-child > box > button.image-button.combo, .raven .powerstrip .linked.vertical > combobox:first-child > box > button.image-button.combo {
-      background: linear-gradient(to right, #e87e33 0%, #ff6a00 100%); }
+      background: linear-gradient(to right, #cc0b00 0%, #cc0b00 100%); }
       .raven .powerstrip button.image-button:first-child:hover, .raven .powerstrip combobox.linked button.image-button:hover:nth-child(2):dir(rtl), combobox.linked .raven .powerstrip button.image-button:hover:nth-child(2):dir(rtl), .raven .powerstrip .linked:not(.vertical) > combobox:first-child > box > button.image-button.combo:hover, .raven .powerstrip .linked.vertical > combobox:first-child > box > button.image-button.combo:hover {
         background: rgba(204, 55, 0, 0.85); }
       .raven .powerstrip button.image-button:first-child:active, .raven .powerstrip combobox.linked button.image-button:active:nth-child(2):dir(rtl), combobox.linked .raven .powerstrip button.image-button:active:nth-child(2):dir(rtl), .raven .powerstrip .linked:not(.vertical) > combobox:first-child > box > button.image-button.combo:active, .raven .powerstrip .linked.vertical > combobox:first-child > box > button.image-button.combo:active {
         background: #cc3700; }
     .raven .powerstrip button.image-button:last-child, .raven .powerstrip combobox.linked button.image-button:nth-child(2):dir(ltr), combobox.linked .raven .powerstrip button.image-button:nth-child(2):dir(ltr), .raven .powerstrip .linked:not(.vertical) > combobox:last-child > box > button.image-button.combo, .raven .powerstrip .linked.vertical > combobox:last-child > box > button.image-button.combo {
-      background: linear-gradient(to right, #FF416C, #FF4B2B); }
+      background: linear-gradient(to right, #cc002c 0%, #cc2c00 100%); }
       .raven .powerstrip button.image-button:last-child:hover, .raven .powerstrip combobox.linked button.image-button:hover:nth-child(2):dir(ltr), combobox.linked .raven .powerstrip button.image-button:hover:nth-child(2):dir(ltr), .raven .powerstrip .linked:not(.vertical) > combobox:last-child > box > button.image-button.combo:hover, .raven .powerstrip .linked.vertical > combobox:last-child > box > button.image-button.combo:hover {
         background: rgba(255, 0, 0, 0.85); }
       .raven .powerstrip button.image-button:last-child:active, .raven .powerstrip combobox.linked button.image-button:active:nth-child(2):dir(ltr), combobox.linked .raven .powerstrip button.image-button:active:nth-child(2):dir(ltr), .raven .powerstrip .linked:not(.vertical) > combobox:last-child > box > button.image-button.combo:active, .raven .powerstrip .linked.vertical > combobox:last-child > box > button.image-button.combo:active {
