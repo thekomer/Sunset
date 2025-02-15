@@ -7,7 +7,7 @@ $notification_width: 34em;
   box-shadow: inset 0.1em 0em $accent_color;
   //background-color: transparentize(darken($bg_color, 2%), 0.05);//$bg_color;
   background-color: $osd_bg_color;
-  padding: $base_padding * 2;
+  padding: 0.7em 0.7em 0.7em 0.8em;
   margin-from-right-edge-of-screen: 1.5em; //20px;
   spacing-rows: 0.6em;//10px;
   spacing-columns: 0.6em; //10px;

@@ -89,6 +89,9 @@ $terminal_bg_color: $headerbar_color;
 $terminal_fg_color: $headerbar_fg_color;
 
 $base_hover_color: transparentize($fg_color, 0.95);
+$lightest_bg_color: lighten($bg_color, 24%);
+$hover_bg_color: transparentize($lightest_bg_color, 0.75); // $lighter_bg_color;
+
 
 $shadow_color: transparentize(black, 0.9);
 $shadow_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.9));

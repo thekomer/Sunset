@@ -92,8 +92,8 @@ $menuitem_border_radius: $base_border_radius * 1;
 
 // This is the first submenu item that contains the arrow
 .popup-submenu-menu-item {
-  &:open {}
-  &:active {}
+  &:open { font-weight: bold; }
+  &:active { font-weight: inherit; }
 }
 
 // separator
