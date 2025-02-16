@@ -69,8 +69,8 @@ $warning_color: if($variant == 'light', $orange, darken($orange,10%));
 $error_color: if($variant == 'light', $red, darken($red,5%));
 $success_color: if($variant == 'light', $cyan, darken($cyan,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
-$destructive-gradient-start: adjust-hue($destructive_color, -$gradient_degree);
-$destructive-gradient-end: adjust-hue($destructive_color, $gradient_degree);
+$destructive_gradient_start: adjust-hue($destructive_color, -$gradient_degree);
+$destructive_gradient_end: adjust-hue($destructive_color, $gradient_degree);
 
 
 $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_bg_color,10%));
@@ -139,8 +139,7 @@ $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdro
 
 $scale_bg: if($variant == 'light', transparentize(black,0.86) ,transparentize(white,0.86));
 $scale_disabled_bg: if($variant == 'light', transparentize(black, 0.94) ,transparentize(white, 0.94));
-//$suggested_bg_color: linear-gradient(to right, #e87e33 0%, #ff6a00 100%);
-//$destructive_bg_color: linear-gradient(to right, #FF416C, #FF4B2B);
-$suggested_bg_color: linear-gradient(to right, $theme-gradient-start 0%, $theme-gradient-start 100%);
-$destructive_bg_color: linear-gradient(to right, $destructive_gradient_start 0%, $destructive_gradient_end 100%);
+$suggested_bg_color: linear-gradient(to right, #cc0b00 0%, #cc6300 100%);
+$destructive_bg_color: linear-gradient(to right, #cc2c00 0%, #cc002c 100%);
+//komer: don't know why apsolute values instead of variables
 $menu_shadow_color: $borders_color;
