@@ -77,6 +77,7 @@
   // button base state background colors
   $button_bg_color: $light_bg_color;
   $hover_button_bg_color: $lighter_bg_color;
+  $hover_button_fg_color: $tc;
   $active_button_bg_color: $lightest_bg_color;
   $checked_button_bg_color: $lightest_bg_color;
   $checked_button_fg_color: $tc;
@@ -85,10 +86,11 @@
 
   // background color mix override for flat button style
   @if $style == 'flat' {
-    $button_bg_color: $c; // mix input colors to get button background color
+    $button_bg_color: inherit; //$c; // mix input colors to get button background color
     $hover_button_bg_color: $light_bg_color;
-    $active_button_bg_color: $c;
-    $checked_button_bg_color: $c;
+    $hover_button_fg_color: transparentize($accent_fg_color, 0.4);
+    $active_button_bg_color: inherit; // $c;
+    $checked_button_bg_color: inherit; //$c;
     $checked_button_fg_color: $accent_fg_color;
    }
 
@@ -114,7 +116,7 @@
 
     // hover button
     @else if $type == 'hover' {
-      color: $tc;
+      color: $hover_button_fg_color;
       //background-color: $hover_button_bg_color;
       @include bg_gradient(horizontal, lighten(adjust-hue($button_bg_color, -15deg),12%), lighten(adjust-hue($button_bg_color, 15deg),12%), 1);
     }
@@ -172,7 +174,7 @@
 
     // hover button
     @else if $type == 'hover' {
-      color: $tc;
+      color: $hover_button_fg_color;
       background-color: $hover_button_bg_color;
     }
 

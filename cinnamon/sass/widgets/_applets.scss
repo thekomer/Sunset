@@ -153,7 +153,7 @@
 
   StButton {
     @extend %flat_button;
-    background-color: transparent;
+    // background-color: transparent;
     border: 1px solid borders_color;
 
     width: 1.2em; //18px;
@@ -165,7 +165,7 @@
 
     &:small {
       @extend %flat_button;
-      background-color: transparent;
+      //background-color: transparent;
       border: 1px solid borders_color;
 
       width: 1em; //16px;
@@ -482,7 +482,7 @@
   StButton {
     @extend %flat_button;
     color: transparentize($panel_fg_color, 0.3);
-    background-color: transparent;
+    //background-color: transparent;
     border-radius: $border_radius;
     font-weight: 200;
 

@@ -104,23 +104,23 @@ stage {
 
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device, .polkit-dialog-user-combo, .bottombar StButton, .sound-player StButton:small, .sound-player StButton {
   color: #BFC3CD;
-  background-color: #0E111D; }
+  background-color: inherit; }
   .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus, .polkit-dialog-user-combo:focus, .bottombar StButton:focus, .sound-player StButton:focus {
     color: #BFC3CD;
-    background-color: #0E111D;
+    background-color: inherit;
     box-shadow: inset 0 0 1px 1px rgba(191, 195, 205, 0.4); }
   .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover, .polkit-dialog-user-combo:hover, .bottombar StButton:hover, .sound-player StButton:hover {
-    color: #BFC3CD;
+    color: rgba(255, 69, 0, 0.6);
     background-color: #1b2139; }
   .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive, .bottombar StButton:insensitive, .sound-player StButton:insensitive {
     color: rgba(191, 195, 205, 0.5);
-    background-color: #0E111D; }
+    background-color: inherit; }
   .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:selected, .bottombar StButton:selected, .sound-player StButton:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active, .polkit-dialog-user-combo:active, .bottombar StButton:active, .sound-player StButton:active {
     color: #BFC3CD;
-    background-color: #0E111D; }
+    background-color: inherit; }
   .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked, .polkit-dialog-user-combo:checked, .bottombar StButton:checked, .sound-player StButton:checked {
     color: orangered;
-    background-color: #0E111D; }
+    background-color: inherit; }
 
 /* buttons in dialogs */
 .dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
@@ -497,7 +497,6 @@ stage {
   padding: 0 4px; }
 
 .sound-player StButton {
-  background-color: transparent;
   border: 1px solid borders_color;
   width: 1.2em;
   height: 1.2em;
@@ -505,7 +504,6 @@ stage {
   .sound-player StButton StIcon {
     icon-size: 1em; }
   .sound-player StButton:small {
-    background-color: transparent;
     border: 1px solid borders_color;
     width: 1em;
     height: 1em; }
@@ -742,7 +740,6 @@ stage {
   font-weight: 300; }
   .bottombar StButton {
     color: rgba(177, 182, 194, 0.7);
-    background-color: transparent;
     border-radius: 0.6em;
     font-weight: 200; }
     .bottombar StButton StIcon {
