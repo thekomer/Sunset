@@ -89,7 +89,7 @@
     $hover_button_bg_color: $light_bg_color;
     $active_button_bg_color: $c;
     $checked_button_bg_color: $c;
-    $checked_button_fg_color: lighten($accent_color, 10%);
+    $checked_button_fg_color: $accent_fg_color;
    }
 
   // background color mix override for default button style
