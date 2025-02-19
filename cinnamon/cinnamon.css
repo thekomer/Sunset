@@ -174,23 +174,23 @@ stage {
 .dialog .dialog-button:destructive-action {
   color: #BFC3CD;
   background-gradient-direction: horizontal;
-  background-gradient-start: #c01c51;
-  background-gradient-end: #c0391c; }
+  background-gradient-start: #87092f;
+  background-gradient-end: #872309; }
   .dialog .dialog-button:hover:destructive-action {
     color: #BFC3CD;
     background-gradient-direction: horizontal;
-    background-gradient-start: #e2376e;
-    background-gradient-end: #e25537; }
+    background-gradient-start: #c00d42;
+    background-gradient-end: #c0310d; }
   .dialog .dialog-button:active:destructive-action {
     color: #BFC3CD;
     background-gradient-direction: horizontal;
-    background-gradient-start: #aa1948;
-    background-gradient-end: #aa3219; }
+    background-gradient-start: #6f0726;
+    background-gradient-end: #6f1c07; }
   .dialog .dialog-button:checked:destructive-action {
     color: #BFC3CD;
     background-gradient-direction: horizontal;
-    background-gradient-start: #aa1948;
-    background-gradient-end: #aa3219; }
+    background-gradient-start: #6f0726;
+    background-gradient-end: #6f1c07; }
   .dialog .dialog-button:insensitive:destructive-action {
     border-color: rgba(191, 195, 205, 0.05);
     color: rgba(191, 195, 205, 0.5);
@@ -424,7 +424,7 @@ stage {
       background-gradient-start: #ff0500;
       background-gradient-end: #ff8500; }
   .applet-box:highlight {
-    background-color: rgba(192, 28, 40, 0.5); }
+    background-color: rgba(135, 9, 15, 0.5); }
 
 .applet-label {
   font-weight: bold;
@@ -546,7 +546,7 @@ stage {
 .spacer-box {
   border: 1px solid transparent; }
   .spacer-box:highlight {
-    background-color: #e4705b; }
+    background-color: #df6267; }
   .spacer-box.edit-mode {
     border: 1px symbolic; }
 
@@ -619,10 +619,10 @@ stage {
   font-weight: bold; }
 
 .timer-expired .system-status-icon {
-  color: #e4705b; }
+  color: #df6267; }
 
 .timer-running .system-status-icon {
-  color: #f8e45c; }
+  color: #60e167; }
 
 .timer-stopped .system-status-icon {
   color: #b1b6c2; }
@@ -770,7 +770,7 @@ stage {
   spacing: 2px; }
 
 .magnifier-zoom-region {
-  border: 2px solid #e4705b; }
+  border: 2px solid #df6267; }
   .magnifier-zoom-region.full-screen {
     border-width: 0; }
 
@@ -1058,9 +1058,9 @@ StScrollBar StButton#hhandle {
     .calendar-event-countdown:soon {
       color: #f8e45c; }
     .calendar-event-countdown:imminent {
-      color: #e4705b; }
+      color: #df6267; }
     .calendar-event-countdown:current {
-      color: #8ff0a4; }
+      color: #60e167; }
   .calendar-event-time-future {
     color: #BFC3CD; }
   .calendar-event-summary {
@@ -1157,7 +1157,7 @@ StScrollBar StButton#hhandle {
   text-align: center;
   color: #868da0; }
   .run-dialog-description.error {
-    color: #e4705b; }
+    color: #df6267; }
 
 .run-dialog-completion-box {
   padding-top: 4px;
@@ -1179,7 +1179,7 @@ StScrollBar StButton#hhandle {
   .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
     text-align: center; }
   .prompt-dialog-error-label {
-    color: #e4705b; }
+    color: #df6267; }
 
 .polkit-dialog-user-layout {
   text-align: center;
@@ -1764,7 +1764,7 @@ StScrollBar StButton#hhandle {
     spacing: 0.125em;
     padding: 0.625em 0; }
   .window-list-box:highlight {
-    background-color: rgba(228, 112, 91, 0.5); }
+    background-color: rgba(223, 98, 103, 0.5); }
 
 .window-list-item-label {
   font-weight: normal;
@@ -1808,7 +1808,7 @@ StScrollBar StButton#hhandle {
       background-gradient-start: #cc0400;
       background-gradient-end: #cc6a00; }
   .window-list-item-box .progress {
-    background-color: rgba(143, 240, 164, 0.8); }
+    background-color: rgba(96, 225, 103, 0.8); }
 
 .window-list-item-demands-attention {
   background-color: #ff7b63; }

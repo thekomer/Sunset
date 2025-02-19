@@ -309,25 +309,16 @@
 /* timer applet & notification */
 
 .timer {
-
   &-dialog-label {
     text-align: center;
     font-weight: bold;
   }
-
-  &-expired {
-    .system-status-icon { color: $error_color; }
-  }
-
-  &-running {
-    .system-status-icon { color: $warning_color; }
-  }
-
+  &-expired { .system-status-icon { color: $error_color; } }
+  &-running { .system-status-icon { color: $running_color; } }
   &-stopped {
     .system-status-icon { color: $panel_fg_color; }
     .applet-label { color: $panel_fg_color; }
   }
-
 }
 
 /* radio applet */
