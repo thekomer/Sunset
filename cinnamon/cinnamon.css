@@ -31,7 +31,7 @@ stage {
  * Reusable placeholders for common elements *
  * * * * * * * * * * * * * * * * * * * * * * */
 /* entries */
-#menu-search-entry, .expo-workspaces-name-entry, .prompt-dialog-password-entry, .run-dialog-entry {
+#menu-search-entry, .expo-workspaces-name-entry, #notification StEntry, .prompt-dialog-password-entry, .run-dialog-entry {
   min-height: 1.2em;
   border-radius: 0.6em;
   padding: 0.5em 1.5em;
@@ -41,21 +41,21 @@ stage {
   selection-background-color: #cc3700;
   caret-size: 2px; }
 
-.prompt-dialog-password-entry, .run-dialog-entry {
+#notification StEntry, .prompt-dialog-password-entry, .run-dialog-entry {
   background-color: #161b2e;
   color: #cdd0d8; }
-  .prompt-dialog-password-entry:focus, .run-dialog-entry:focus, .prompt-dialog-password-entry:hover, .run-dialog-entry:hover {
+  #notification StEntry:focus, .prompt-dialog-password-entry:focus, .run-dialog-entry:focus, #notification StEntry:hover, .prompt-dialog-password-entry:hover, .run-dialog-entry:hover {
     background-color: #161b2e;
     color: #cdd0d8;
     border-color: orangered; }
-  .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive {
+  #notification StEntry:insensitive, .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive {
     background-color: #111524;
     color: rgba(205, 208, 216, 0.5); }
-  .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text {
+  #notification StEntry StLabel.hint-text, .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text {
     color: rgba(191, 195, 205, 0.3); }
-  .prompt-dialog-password-entry .capslock-warning, .run-dialog-entry .capslock-warning {
+  #notification StEntry .capslock-warning, .prompt-dialog-password-entry .capslock-warning, .run-dialog-entry .capslock-warning {
     icon-size: 1.091em; }
-  .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password {
+  #notification StEntry StIcon.peek-password, .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password {
     icon-size: 1em;
     color: #BFC3CD; }
 
@@ -445,7 +445,7 @@ stage {
       height: 1px;
       background: rgba(191, 195, 205, 0.1); }
 
-/* corner-bar applet */
+/* cornerbar applet */
 .applet-cornerbar {
   width: 4px;
   background-color: #222946;
@@ -1430,6 +1430,14 @@ StScrollBar StButton#hhandle {
     spacing: 4px; }
   #notification-actions {
     spacing: 8px; }
+  #notification-scrollview {
+    max-height: 7em; }
+    #notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
+      height: 1em; }
+    #notification-scrollview:ltr > StScrollBar {
+      padding-left: 0.3em; }
+    #notification-scrollview:rtl > StScrollBar {
+      padding-right: 0.3em; }
 
 .notification {
   /* We use row-span = 2 for the image cell, which prevents its height preferences to be

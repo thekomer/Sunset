@@ -21,9 +21,16 @@ $notification_width: 34em;
   &-body { spacing: $base_padding; }
   &-actions { spacing: $base_padding * 2; }
 
-  &-scrollview {}
+  &-scrollview {
+    max-height: 10em;
 
-  StEntry {}
+    > .top-shadow, > .bottom-shadow { height: 1em; }
+
+    &:ltr > StScrollBar { padding-left: 0.3em; }
+    &:rtl > StScrollBar { padding-right: 0.3em; }
+  }
+
+  StEntry { @extend %entry; }
 }
 
 .notification {
