@@ -1811,7 +1811,7 @@ StScrollBar StButton#hhandle {
     background-color: rgba(96, 225, 103, 0.8); }
 
 .window-list-item-demands-attention {
-  background-color: #ff7b63; }
+  background-color: #df6267; }
 
 .window-list-preview {
   margin: 0.4em;
@@ -1885,14 +1885,14 @@ StScrollBar StButton#hhandle {
 
 .grouped-window-list-item-demands-attention {
   background-gradient-direction: horizontal;
-  background-gradient-start: rgba(192, 28, 81, 0.7);
-  background-gradient-end: rgba(192, 57, 28, 0.7); }
+  background-gradient-start: rgba(135, 9, 47, 0.7);
+  background-gradient-end: rgba(135, 35, 9, 0.7); }
 
 .grouped-window-list-thumbnail-label {
   padding-left: 4px; }
 
 .grouped-window-list-thumbnail-alert {
-  background: rgba(255, 123, 99, 0.3); }
+  background: rgba(223, 98, 103, 0.3); }
 
 .grouped-window-list-button-label {
   padding-left: 4px; }
