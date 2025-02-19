@@ -330,7 +330,7 @@
   border-radius: $border_radius;
 
   StButton {
-    background-color: transparent;
+    @extend %flat_button;
     &:hover {
       color: $selected_fg_color;
     }

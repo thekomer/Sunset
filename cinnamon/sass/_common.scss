@@ -23,12 +23,15 @@ stage {
 %entry {
   @extend %entry_common;
   @include entry(normal);
-  &:focus { @include entry(focus); }
+  &:focus, &:hover { @include entry(focus); }
   &:insensitive { @include entry(insensitive); }
 
   StLabel.hint-text { color: transparentize($fg_color, 0.7); }
 
-  .capslock-warning { icon-size: $scalable_icon_size; }
+  .capslock-warning {
+    icon-size: $scalable_icon_size;
+    // warning-color: $warning_color;
+  }
 
   StIcon.peek-password {
     icon-size: 1em; // 16px;
