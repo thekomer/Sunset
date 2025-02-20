@@ -1431,7 +1431,7 @@ StScrollBar StButton#hhandle {
   #notification-actions {
     spacing: 8px; }
   #notification-scrollview {
-    max-height: 7em; }
+    max-height: 10em; }
     #notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
       height: 1em; }
     #notification-scrollview:ltr > StScrollBar {
@@ -1450,6 +1450,8 @@ StScrollBar StButton#hhandle {
     padding: 4px 8px; }
   .notification-icon-button {
     padding: 4px; }
+  .notification-icon-button > StIcon {
+    icon-size: 2em; }
 
 .media-keys-osd {
   margin-bottom: 3em;

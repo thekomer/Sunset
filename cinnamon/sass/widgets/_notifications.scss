@@ -53,5 +53,5 @@ $notification_width: 34em;
     padding: $base_padding;
   }
 
-  &-icon-button > StIcon {}
+  &-icon-button > StIcon { icon-size: 2em; }
 }
