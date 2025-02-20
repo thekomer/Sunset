@@ -37,9 +37,9 @@ $panel_bg_color: darken($bg_color, 5%);//#06080d;
 $panel_fg_color: darken($fg_color, 5%);//$fg_color;
 
 // used for button, entries and highlighted items
-$light_bg_color: lighten($bg_color, 8%);
-$lighter_bg_color: lighten($bg_color, 12%);
-$lightest_bg_color: lighten($bg_color, 24%);
+$light_bg_color: lighten($bg_color, 8%); // used only for $buttons_bg_color
+$lighter_bg_color: lighten($bg_color, 12%); // $hover_button_bg_color, applet corner bar background,
+$lightest_bg_color: lighten($bg_color, 24%); // hover bg color, active button bg, checked button bg, keyboard arrow borders,
 
 $light_base_color: lighten($base_color, 8%);
 
@@ -83,7 +83,7 @@ $insensitive_fg_color: mix($fg_color, $bg_color, 40%);
 
 // entries
 $entry_fg_color: $base_fg_color;// $fg_color;
-$entry_bg_color: $base_color;// $light_bg_color;
+$entry_bg_color: $base_color;
 $insensitive_entry_bg_color: darken($entry_bg_color, $insensitive_factor);
 
 // buttons base colors
