@@ -1416,13 +1416,14 @@ StScrollBar StButton#hhandle {
   width: 34em;
   border-radius: 0.6em;
   border: 1px solid rgba(191, 195, 205, 0.05);
-  box-shadow: inset 0.1em 0em #cc3700;
+  box-shadow: inset 0.2em 0em #cc3700;
   background-color: rgba(10, 12, 20, 0.95);
   padding: 0.7em 0.7em 0.7em 0.8em;
   margin-from-right-edge-of-screen: 1.5em;
   spacing-rows: 0.6em;
   spacing-columns: 0.6em;
-  margin-bottom: 0.3em; }
+  margin-bottom: 0.3em;
+  margin-left: 0.3em; }
   #notification.multi-line-notification {
     padding-bottom: 8px;
     color: #BFC3CD; }
