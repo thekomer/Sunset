@@ -32,6 +32,10 @@
 
 .caja-notebook {
 	.frame { border-width: 0 0 1px; }
+  .view {
+    background: $bg_color;
+    &:backdrop { background: lighten($base_color, 2%); }
+  }
 	.entry {
     background: $bg_color;
     color: $fg_color;

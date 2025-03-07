@@ -2111,11 +2111,11 @@ expander arrow {
  * Floating Bar *
  ****************/
 .floating-bar {
-  background-color: #0E111D;
+  background-color: #06080d;
   border-width: 1px;
   border-style: solid solid none;
   border-color: rgba(255, 255, 255, 0.05);
-  border-radius: 3px 3px 0 0;
+  border-radius: 0.6em 0.6em 0 0;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
   .floating-bar.bottom.left {
     border-left-style: none;
@@ -7115,6 +7115,11 @@ menubar,
 
 .caja-notebook .frame {
   border-width: 0 0 1px; }
+
+.caja-notebook .view, .caja-notebook iconview {
+  background: #0E111D; }
+  .caja-notebook .view:backdrop {
+    background: #161b2e; }
 
 .caja-notebook .entry {
   background: #0E111D;

@@ -632,7 +632,6 @@ stage {
 
 /* radio applet */
 .radio-applet-media-control-toolbar {
-  padding: 0.625em;
   background-color: inherit;
   border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em; }
@@ -1321,7 +1320,9 @@ StScrollBar StButton#hhandle {
 .menu {
   min-width: 15em;
   color: #BFC3CD;
-  margin: 0.5em; }
+  margin: 0.5em;
+  margin-from-bottom-edge-of-screen: 0.5em;
+  margin-from-top-edge-of-screen: 0.5em; }
 
 .popup-menu-content {
   padding: 0.1em;

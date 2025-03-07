@@ -2,11 +2,11 @@
  * Floating Bar *
  ****************/
 .floating-bar {
-  background-color: $bg_color;
+  background-color: $headerbar_color;
   border-width: 1px;
   border-style: solid solid none;
   border-color: $borders_color;
-  border-radius: 3px 3px 0 0;
+  border-radius: $radius $radius 0 0;
   box-shadow: inset 0 1px $top_highlight;
 
   &.bottom {
