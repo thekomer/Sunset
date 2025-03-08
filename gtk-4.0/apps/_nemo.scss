@@ -97,6 +97,16 @@
 		background-color: $headerbar_color;
 		&:backdrop {
 			color: $backdrop_fg_color;
+			background-color: $backdrop_headerbar_bg_color;
+		}
+	}
+}
+
+.nemo-window-pane {
+	.view {
+		background: $bg_color;
+		&:backdrop {
+			background-color: darken($bg_color, 2%);
 		}
 	}
 }

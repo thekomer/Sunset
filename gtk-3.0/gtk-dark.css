@@ -7289,7 +7289,13 @@ window.background.lightdm .lightdm-combo {
   color: rgba(191, 195, 205, 0.85);
   background-color: #06080d; }
   .nemo-window .nemo-inactive-pane .view:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop {
-    color: #676a75; }
+    color: #676a75;
+    background-color: #06080d; }
+
+.nemo-window-pane .view, .nemo-window-pane iconview {
+  background: #0E111D; }
+  .nemo-window-pane .view:backdrop {
+    background-color: #0b0d16; }
 
 /* * * * * * * * * * *
  * Caja file manager *
@@ -7329,7 +7335,7 @@ window.background.lightdm .lightdm-combo {
 .caja-notebook .view, .caja-notebook iconview {
   background: #0E111D; }
   .caja-notebook .view:backdrop {
-    background: #0E111D; }
+    background: #161b2e; }
 
 .caja-notebook .entry {
   background: #0E111D;
