@@ -23,11 +23,11 @@
 /* disabled text widgets and the like base background color */
 @define-color insensitive_base_color #131727;
 /* widget text/foreground color on backdrop windows */
-@define-color theme_unfocused_fg_color #676a75;
+@define-color theme_unfocused_fg_color #656872;
 /* text color for entries, views and content in general on backdrop windows */
 @define-color theme_unfocused_text_color #bfc3cd;
 /* widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color #0E111D;
+@define-color theme_unfocused_bg_color #0b0d16;
 /* text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color #161b2e;
 /* base background color of selections on backdrop windows */
@@ -48,16 +48,16 @@
 @define-color base_color #131727;
 @define-color selected_bg_color #cc3700;
 @define-color selected_fg_color #ffffff;
-@define-color unfocused_fg_color #676a75;
+@define-color unfocused_fg_color #656872;
 @define-color unfocused_text_color #bfc3cd;
-@define-color unfocused_bg_color #0E111D;
+@define-color unfocused_bg_color #0b0d16;
 @define-color unfocused_base_color #161b2e;
 @define-color unfocused_selected_bg_color #cc3700;
 @define-color unfocused_selected_fg_color #ffffff;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title shade(#bfc3cd, 1.8);
-@define-color wm_unfocused_title #676a75;
+@define-color wm_unfocused_title #656872;
 @define-color wm_highlight rgba(0, 0, 0, 0);
 @define-color wm_borders_edge rgba(255, 255, 255, 0.5);
 @define-color wm_bg_a shade(#0E111D, 1.2);
@@ -222,8 +222,8 @@ button:focus:visited {
   color: #bfc3cd;
   background-color: #0E111D; }
   .background:backdrop, progressbar:backdrop progress.background, progressbar:backdrop trough.background, label:backdrop selection.background {
-    color: #676a75;
-    background-color: #0E111D;
+    color: #656872;
+    background-color: #0b0d16;
     text-shadow: none;
     -gtk-icon-shadow: none; }
 
@@ -296,16 +296,16 @@ label {
   label.separator {
     color: #bfc3cd; }
     label.separator:backdrop, progressbar:backdrop progress.separator, progressbar:backdrop trough.separator, label:backdrop selection.separator {
-      color: #676a75; }
+      color: #656872; }
   label selection {
     background-color: #cc3700;
     color: #ffffff; }
   label:disabled {
     color: #676a75; }
     label:disabled:backdrop, progressbar:backdrop progress:disabled, progressbar:backdrop trough:disabled, label:backdrop selection:disabled {
-      color: #272f51; }
+      color: #242b4a; }
   label:backdrop {
-    color: #676a75; }
+    color: #656872; }
 
 .dim-label, .titlebar .subtitle,
 headerbar .subtitle, label.separator {
@@ -537,7 +537,7 @@ row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled), r
   color: #ffffff;
   border-color: transparent; }
   row:selected progressbar:backdrop progress:not(disabled), progressbar:backdrop row:selected progress:not(disabled), row:selected progressbar:backdrop trough:not(disabled), progressbar:backdrop row:selected trough:not(disabled), row:selected label:backdrop selection:not(disabled), label:backdrop row:selected selection:not(disabled), row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop, row:selected .selection-mode button.titlebutton:not(:active):not(:checked):not(:hover):not(disabled):backdrop, .selection-mode row:selected button.titlebutton:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
-    color: #676a75;
+    color: #656872;
     background: #161b2e; }
 
 .selection-mode button.osd.titlebutton,
@@ -1320,7 +1320,7 @@ calendar {
     calendar.button:hover {
       color: #bfc3cd; }
     calendar.button:backdrop, progressbar:backdrop progress.button, progressbar:backdrop trough.button, label:backdrop selection.button {
-      color: rgba(103, 106, 117, 0.7); }
+      color: rgba(101, 104, 114, 0.7); }
     calendar.button:disabled, label:disabled selection.button {
       color: rgba(103, 106, 117, 0.7); }
   calendar:indeterminate, calendar:indeterminate:backdrop, progressbar:backdrop progress:indeterminate, progressbar:backdrop trough:indeterminate, label:backdrop selection:indeterminate {
@@ -1904,6 +1904,11 @@ filechooser .dialog-action-box {
   filechooser .dialog-action-box:backdrop, filechooser progressbar:backdrop progress.dialog-action-box, progressbar:backdrop filechooser progress.dialog-action-box, filechooser progressbar:backdrop trough.dialog-action-box, progressbar:backdrop filechooser trough.dialog-action-box, filechooser label:backdrop selection.dialog-action-box, label:backdrop filechooser selection.dialog-action-box {
     border-top-color: rgba(59, 62, 71, 0.145); }
 
+filechooser treeview .view, filechooser treeview iconview {
+  background: #0E111D; }
+  filechooser treeview .view:backdrop, filechooser treeview progressbar:backdrop progress.view, progressbar:backdrop filechooser treeview progress.view, filechooser treeview progressbar:backdrop trough.view, progressbar:backdrop filechooser treeview trough.view {
+    background: #0b0d16; }
+
 filechooser #pathbarbox {
   border-bottom: 1px solid #0E111D; }
 
@@ -2023,7 +2028,7 @@ entry {
     transition: 200ms ease-out; }
   spinbutton:backdrop:disabled:not(.vertical),
   entry:backdrop:disabled {
-    color: #272f51;
+    color: #242b4a;
     border-color: rgba(59, 62, 71, 0.145);
     background-color: #101321;
     box-shadow: none; }
@@ -2066,7 +2071,7 @@ entry {
       color: #cc3700; }
     spinbutton:not(.vertical) image:backdrop,
     entry image:backdrop {
-      color: #575a67; }
+      color: #555964; }
   spinbutton:drop(active):not(.vertical),
   entry:drop(active):focus,
   entry:drop(active) {
@@ -2210,7 +2215,7 @@ expander arrow {
   .floating-bar > button {
     padding: 4px; }
   .floating-bar:backdrop, progressbar:backdrop progress.floating-bar, progressbar:backdrop trough.floating-bar, label:backdrop selection.floating-bar {
-    background-color: #0E111D;
+    background-color: #0b0d16;
     border-color: rgba(59, 62, 71, 0.145); }
 
 /**********
@@ -2366,7 +2371,7 @@ scrolledwindow junction {
     border-image-slice: 0 1 0 0; }
   scrolledwindow junction:backdrop {
     border-image-source: linear-gradient(to right, rgba(59, 62, 71, 0.145) 1px, transparent 1px);
-    background-color: #090b13;
+    background-color: #06070c;
     transition: 200ms ease-out; }
 
 separator {
@@ -3284,7 +3289,7 @@ menu,
   progressbar:backdrop progress.context-menu,
   progressbar:backdrop trough.context-menu,
   label:backdrop selection.context-menu {
-    background-color: #15192b; }
+    background-color: #141829; }
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {
@@ -3316,13 +3321,13 @@ menu,
       progressbar:backdrop .context-menu progress:disabled,
       .context-menu progressbar:backdrop trough:disabled,
       progressbar:backdrop .context-menu trough:disabled {
-        color: #272f51; }
+        color: #242b4a; }
     menu menuitem:backdrop, menu menuitem:backdrop:hover,
     .menu menuitem:backdrop,
     .menu menuitem:backdrop:hover,
     .context-menu menuitem:backdrop,
     .context-menu menuitem:backdrop:hover {
-      color: #676a75;
+      color: #656872;
       background-color: transparent; }
     menu menuitem arrow,
     .menu menuitem arrow,
@@ -3378,7 +3383,7 @@ menu,
     menu > arrow:backdrop,
     .menu > arrow:backdrop,
     .context-menu > arrow:backdrop {
-      background-color: #15192b; }
+      background-color: #141829; }
     menu > arrow:disabled,
     .menu > arrow:disabled,
     .context-menu > arrow:disabled {
@@ -3453,7 +3458,7 @@ notebook > header {
   background-color: #0a0d15; }
   notebook > header:backdrop {
     border-color: rgba(59, 62, 71, 0.145);
-    background-color: #0E111D; }
+    background-color: #0b0d16; }
   notebook > header tabs {
     margin: 0px; }
   notebook > header.top {
@@ -3556,7 +3561,7 @@ notebook > header {
         border-color: rgba(255, 255, 255, 0);
         background-color: rgba(14, 17, 29, 0.2); }
     notebook > header tab:backdrop {
-      color: #434652; }
+      color: #41444d; }
       notebook > header tab:backdrop.reorderable-page {
         border-color: transparent;
         background-color: transparent; }
@@ -3568,7 +3573,7 @@ notebook > header {
         notebook > header tab:checked.reorderable-page:hover {
           background-color: rgba(14, 17, 29, 0.7); }
     notebook > header tab:backdrop:checked {
-      color: #676a75; }
+      color: #656872; }
       notebook > header tab:backdrop:checked.reorderable-page {
         border-color: rgba(59, 62, 71, 0.145);
         background-color: #161b2e; }
@@ -3723,7 +3728,7 @@ popover.background {
   .csd popover.background, popover.background {
     border: 1px solid rgba(255, 255, 255, 0.05); }
   popover.background:backdrop, progressbar:backdrop progress.background, progressbar:backdrop trough.background, label:backdrop selection.background {
-    background-color: #0E111D;
+    background-color: #0b0d16;
     box-shadow: none; }
   popover.background > list,
   popover.background > .view,
@@ -4283,7 +4288,7 @@ scrollbar {
   scrollbar.right {
     border-left: 1px solid rgba(255, 255, 255, 0.05); }
   scrollbar:backdrop {
-    background-color: #090b13;
+    background-color: #06070c;
     border-color: rgba(59, 62, 71, 0.145);
     transition: 200ms ease-out; }
   scrollbar slider {
@@ -4299,7 +4304,7 @@ scrollbar {
     scrollbar slider:hover:active {
       background-color: orangered; }
     scrollbar slider:backdrop {
-      background-color: #323540; }
+      background-color: #2f313b; }
     scrollbar slider:disabled {
       background-color: transparent; }
   scrollbar.fine-tune slider {
@@ -4390,7 +4395,7 @@ scrollbar {
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
-      color: #323540; }
+      color: #2f313b; }
       scrollbar button:backdrop:disabled {
         background-color: transparent;
         background-image: none;
@@ -4398,7 +4403,7 @@ scrollbar {
         box-shadow: inset 0 1px rgba(255, 255, 255, 0);
         text-shadow: none;
         -gtk-icon-shadow: none;
-        color: rgba(50, 53, 64, 0.2); }
+        color: rgba(47, 49, 59, 0.2); }
   scrollbar.vertical button.down {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
   scrollbar.vertical button.up {
@@ -4429,7 +4434,7 @@ treeview ~ scrollbar.vertical {
     border-left: 1px solid rgba(255, 255, 255, 0.05);
     border-right-style: none; }
   .sidebar:backdrop, label:backdrop selection.sidebar, progressbar:backdrop trough.sidebar, progressbar:backdrop progress.sidebar {
-    background-color: #121626;
+    background-color: #101422;
     border-color: rgba(59, 62, 71, 0.145); }
   .sidebar row {
     padding: 8px 12px;
@@ -4568,12 +4573,12 @@ spinbutton:not(.vertical) {
       background-color: rgba(0, 0, 0, 0.1);
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
     spinbutton:not(.vertical) button:backdrop {
-      color: #5f626e;
+      color: #5d606b;
       background-color: transparent;
       border-color: rgba(59, 62, 71, 0);
       transition: 200ms ease-out; }
     spinbutton:not(.vertical) button:backdrop:disabled {
-      color: rgba(39, 47, 81, 0.3);
+      color: rgba(36, 43, 74, 0.3);
       background-image: none;
       border-style: none none none solid;
       box-shadow: inset 1px 0px 0px 0px rgba(0, 0, 0, 0.07); }
@@ -4641,7 +4646,7 @@ spinbutton.vertical:disabled, label:disabled selection.vertical {
   color: #676a75; }
 
 spinbutton.vertical:backdrop:disabled {
-  color: #272f51; }
+  color: #242b4a; }
 
 spinbutton.vertical:drop(active), combobox:drop(active) button.vertical.combo {
   border-color: transparent;
@@ -4780,7 +4785,7 @@ switch {
   switch:disabled {
     background-color: #101321; }
   switch:backdrop {
-    background-color: #0E111D;
+    background-color: #0b0d16;
     transition: 200ms ease-out; }
     switch:backdrop:disabled {
       background-color: #101321; }
@@ -4828,7 +4833,7 @@ searchbar,
   searchbar:backdrop,
   .location-bar:backdrop, .inline-toolbar:backdrop, label:backdrop selection.inline-toolbar, progressbar:backdrop trough.inline-toolbar, progressbar:backdrop progress.inline-toolbar {
     border-color: rgba(59, 62, 71, 0.145);
-    background-color: rgba(16, 19, 31, 0.70075);
+    background-color: rgba(13, 15, 24, 0.70075);
     box-shadow: none;
     transition: 200ms ease-out; }
 
@@ -4924,15 +4929,15 @@ treeview.view {
       treeview.view:disabled:selected:backdrop {
         color: rgba(210, 80, 32, 0.85); }
     treeview.view:disabled:backdrop {
-      color: #272f51; }
+      color: #242b4a; }
   treeview.view.separator {
     min-height: 2px;
     color: #0E111D; }
     treeview.view.separator:backdrop {
       color: rgba(14, 17, 29, 0.1); }
   treeview.view:backdrop {
-    border-left-color: #3b3e49;
-    border-top: #0E111D; }
+    border-left-color: #383a44;
+    border-top: #0b0d16; }
     treeview.view:backdrop:hover {
       color: inherit;
       background-color: inherit; }
@@ -4963,7 +4968,7 @@ treeview.view {
     treeview.view.expander:checked {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
     treeview.view.expander:backdrop {
-      color: #4f5260; }
+      color: #4d515e; }
   treeview.view.progressbar {
     border: 1px solid #992900;
     border-radius: 4px;
@@ -5073,7 +5078,7 @@ decoration {
   .solid-csd decoration {
     border-radius: 0;
     margin: 0px;
-    background-color: #0E111D;
+    background-color: #0b0d16;
     border: solid 1px rgba(59, 62, 71, 0.145);
     box-shadow: none; }
 
@@ -6069,9 +6074,9 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     background-color: #06080d; }
 
 .nautilus-window notebook > stack:only-child {
-  background-color: #131727; }
+  background-color: #0E111D; }
   .nautilus-window notebook > stack:only-child:backdrop {
-    background-color: #161b2e; }
+    background-color: #0b0d16; }
 
 .nautilus-window searchbar {
   border-top: 1px solid rgba(0, 0, 0, 0.12); }
@@ -6500,8 +6505,8 @@ window.thunar paned > scrolledwindow treeview.view {
       color: rgba(191, 195, 205, 0.4);
       background: rgba(204, 55, 0, 0.6); }
   window.thunar paned > scrolledwindow treeview.view:backdrop {
-    color: #676a75;
-    background: #0b0d16; }
+    color: #656872;
+    background: #07090f; }
     window.thunar paned > scrolledwindow treeview.view:backdrop:hover {
       background-color: inherit;
       color: inherit;
@@ -6973,7 +6978,7 @@ progressbar:backdrop progress.unity-panel {
 
 .unity-panel.menubar:backdrop, label:backdrop selection.menubar, progressbar:backdrop trough.menubar, progressbar:backdrop progress.menubar,
 .unity-panel .menubar *:backdrop {
-  color: #676a75; }
+  color: #656872; }
 
 .unity-panel.menubar.menuitem,
 .unity-panel.menubar .menuitem {
@@ -7241,7 +7246,7 @@ window.background.lightdm .lightdm-combo {
     .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar .iconview:backdrop, .nemo-window .sidebar label:backdrop selection.iconview, label:backdrop .nemo-window .sidebar selection.iconview, .nemo-window .sidebar progressbar:backdrop trough.iconview, progressbar:backdrop .nemo-window .sidebar trough.iconview, .nemo-window .sidebar progressbar:backdrop progress.iconview, progressbar:backdrop .nemo-window .sidebar progress.iconview, .nemo-window .sidebar row:backdrop, .nemo-window .NemoSidebar .view:backdrop, .nemo-window .NemoSidebar .iconview:backdrop, .nemo-window .NemoSidebar label:backdrop selection.iconview, label:backdrop .nemo-window .NemoSidebar selection.iconview, .nemo-window .NemoSidebar progressbar:backdrop trough.iconview, progressbar:backdrop .nemo-window .NemoSidebar trough.iconview, .nemo-window .NemoSidebar progressbar:backdrop progress.iconview, progressbar:backdrop .nemo-window .NemoSidebar progress.iconview, .nemo-window .NemoSidebar row:backdrop, .nemo-window .nemo-places-sidebar .view:backdrop, .nemo-window .nemo-places-sidebar .iconview:backdrop, .nemo-window .nemo-places-sidebar label:backdrop selection.iconview, label:backdrop .nemo-window .nemo-places-sidebar selection.iconview, .nemo-window .nemo-places-sidebar progressbar:backdrop trough.iconview, progressbar:backdrop .nemo-window .nemo-places-sidebar trough.iconview, .nemo-window .nemo-places-sidebar progressbar:backdrop progress.iconview, progressbar:backdrop .nemo-window .nemo-places-sidebar progress.iconview, .nemo-window .nemo-places-sidebar row:backdrop, .nemo-window statusbar .view:backdrop, .nemo-window statusbar .iconview:backdrop, .nemo-window statusbar label:backdrop selection.iconview, label:backdrop .nemo-window statusbar selection.iconview, .nemo-window statusbar progressbar:backdrop trough.iconview, progressbar:backdrop .nemo-window statusbar trough.iconview, .nemo-window statusbar progressbar:backdrop progress.iconview, progressbar:backdrop .nemo-window statusbar progress.iconview, .nemo-window statusbar row:backdrop, .nemo-window box.toolbar .view:backdrop, .nemo-window box.toolbar .iconview:backdrop, .nemo-window box.toolbar label:backdrop selection.iconview, label:backdrop .nemo-window box.toolbar selection.iconview, .nemo-window box.toolbar progressbar:backdrop trough.iconview, progressbar:backdrop .nemo-window box.toolbar trough.iconview, .nemo-window box.toolbar progressbar:backdrop progress.iconview, progressbar:backdrop .nemo-window box.toolbar progress.iconview, .nemo-window box.toolbar row:backdrop, .nemo-window toolbar.primary-toolbar .view:backdrop, .nemo-window toolbar.primary-toolbar .iconview:backdrop, .nemo-window toolbar.primary-toolbar label:backdrop selection.iconview, label:backdrop .nemo-window toolbar.primary-toolbar selection.iconview, .nemo-window toolbar.primary-toolbar progressbar:backdrop trough.iconview, progressbar:backdrop .nemo-window toolbar.primary-toolbar trough.iconview, .nemo-window toolbar.primary-toolbar progressbar:backdrop progress.iconview, progressbar:backdrop .nemo-window toolbar.primary-toolbar progress.iconview, .nemo-window toolbar.primary-toolbar row:backdrop {
       transition: 200ms ease-out;
       transition-duration: 500ms;
-      color: #676a75;
+      color: #656872;
       background-color: inherit; }
       .nemo-window .sidebar .view:backdrop:selected, .nemo-window .sidebar .iconview:backdrop:selected, .nemo-window .sidebar label:backdrop selection.iconview:selected, label:backdrop .nemo-window .sidebar selection.iconview:selected, .nemo-window .sidebar progressbar:backdrop trough.iconview:selected, progressbar:backdrop .nemo-window .sidebar trough.iconview:selected, .nemo-window .sidebar progressbar:backdrop progress.iconview:selected, progressbar:backdrop .nemo-window .sidebar progress.iconview:selected, .nemo-window .sidebar row:backdrop:selected, .nemo-window .NemoSidebar .view:backdrop:selected, .nemo-window .NemoSidebar .iconview:backdrop:selected, .nemo-window .NemoSidebar label:backdrop selection.iconview:selected, label:backdrop .nemo-window .NemoSidebar selection.iconview:selected, .nemo-window .NemoSidebar progressbar:backdrop trough.iconview:selected, progressbar:backdrop .nemo-window .NemoSidebar trough.iconview:selected, .nemo-window .NemoSidebar progressbar:backdrop progress.iconview:selected, progressbar:backdrop .nemo-window .NemoSidebar progress.iconview:selected, .nemo-window .NemoSidebar row:backdrop:selected, .nemo-window .nemo-places-sidebar .view:backdrop:selected, .nemo-window .nemo-places-sidebar .iconview:backdrop:selected, .nemo-window .nemo-places-sidebar label:backdrop selection.iconview:selected, label:backdrop .nemo-window .nemo-places-sidebar selection.iconview:selected, .nemo-window .nemo-places-sidebar progressbar:backdrop trough.iconview:selected, progressbar:backdrop .nemo-window .nemo-places-sidebar trough.iconview:selected, .nemo-window .nemo-places-sidebar progressbar:backdrop progress.iconview:selected, progressbar:backdrop .nemo-window .nemo-places-sidebar progress.iconview:selected, .nemo-window .nemo-places-sidebar row:backdrop:selected, .nemo-window statusbar .view:backdrop:selected, .nemo-window statusbar .iconview:backdrop:selected, .nemo-window statusbar label:backdrop selection.iconview:selected, label:backdrop .nemo-window statusbar selection.iconview:selected, .nemo-window statusbar progressbar:backdrop trough.iconview:selected, progressbar:backdrop .nemo-window statusbar trough.iconview:selected, .nemo-window statusbar progressbar:backdrop progress.iconview:selected, progressbar:backdrop .nemo-window statusbar progress.iconview:selected, .nemo-window statusbar row:backdrop:selected, .nemo-window box.toolbar .view:backdrop:selected, .nemo-window box.toolbar .iconview:backdrop:selected, .nemo-window box.toolbar label:backdrop selection.iconview:selected, label:backdrop .nemo-window box.toolbar selection.iconview:selected, .nemo-window box.toolbar progressbar:backdrop trough.iconview:selected, progressbar:backdrop .nemo-window box.toolbar trough.iconview:selected, .nemo-window box.toolbar progressbar:backdrop progress.iconview:selected, progressbar:backdrop .nemo-window box.toolbar progress.iconview:selected, .nemo-window box.toolbar row:backdrop:selected, .nemo-window toolbar.primary-toolbar .view:backdrop:selected, .nemo-window toolbar.primary-toolbar .iconview:backdrop:selected, .nemo-window toolbar.primary-toolbar label:backdrop selection.iconview:selected, label:backdrop .nemo-window toolbar.primary-toolbar selection.iconview:selected, .nemo-window toolbar.primary-toolbar progressbar:backdrop trough.iconview:selected, progressbar:backdrop .nemo-window toolbar.primary-toolbar trough.iconview:selected, .nemo-window toolbar.primary-toolbar progressbar:backdrop progress.iconview:selected, progressbar:backdrop .nemo-window toolbar.primary-toolbar progress.iconview:selected, .nemo-window toolbar.primary-toolbar row:backdrop:selected {
         color: rgba(255, 255, 255, 0.5);
@@ -7299,7 +7304,7 @@ window.background.lightdm .lightdm-combo {
   color: rgba(191, 195, 205, 0.85);
   background-color: #06080d; }
   .nemo-window .nemo-inactive-pane .view:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop {
-    color: #676a75;
+    color: #656872;
     background-color: #06080d; }
 
 .nemo-window-pane .view, .nemo-window-pane iconview {
