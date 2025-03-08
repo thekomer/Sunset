@@ -1852,6 +1852,12 @@ messagedialog, dialog {
     border-style: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; }
+  messagedialog .dialog-vbox, dialog .dialog-vbox {
+    background: #06080d;
+    color: #bfc3cd; }
+    messagedialog .dialog-vbox:backdrop, messagedialog progressbar:backdrop progress.dialog-vbox, progressbar:backdrop messagedialog progress.dialog-vbox, messagedialog progressbar:backdrop trough.dialog-vbox, progressbar:backdrop messagedialog trough.dialog-vbox, messagedialog label:backdrop selection.dialog-vbox, label:backdrop messagedialog selection.dialog-vbox, dialog .dialog-vbox:backdrop, dialog progressbar:backdrop progress.dialog-vbox, progressbar:backdrop dialog progress.dialog-vbox, dialog progressbar:backdrop trough.dialog-vbox, progressbar:backdrop dialog trough.dialog-vbox, dialog label:backdrop selection.dialog-vbox, label:backdrop dialog selection.dialog-vbox {
+      background: #06080d;
+      color: rgba(191, 195, 205, 0.8); }
   messagedialog.csd.background, dialog.csd.background {
     background-color: rgba(14, 17, 29, 0.95);
     color: #bfc3cd;

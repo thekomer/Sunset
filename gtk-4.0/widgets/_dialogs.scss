@@ -13,7 +13,14 @@ messagedialog, dialog { /* Message Dialog styling */
     border-top-left-radius: 10px; //4px;
     border-top-right-radius: 10px; //4px;
   }
-
+  .dialog-vbox {
+    background: $headerbar_color;
+    color: $headerbar_fg_color;
+    &:backdrop {
+      background: $backdrop_headerbar_bg_color;
+      color: $backdrop_headerbar_fg_color;
+    }
+  }
   &.csd { // rounded bottom border styling for csd version
     &.background {
       background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
