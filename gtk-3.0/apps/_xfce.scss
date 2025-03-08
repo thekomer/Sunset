@@ -322,6 +322,29 @@ window.thunar statusbar {
   caret-color: $drop_target_color;
 }
 
+.thunar {
+	notebook:not(.frame) .standard-view {
+		.view {
+			background: $bg_color;
+			&:backdrop {
+				background: darken($bg_color, 2%);
+			}
+		}
+	}
+
+	.standard-view .view {
+		background: $headerbar_color;
+		&:backdrop {
+			background: $backdrop_headerbar_bg_color;
+		}
+	}
+}
+
+//FIXME: try to reverse background color so unfocused pane is darker than focused pane
+
+// window.thunar paned > scrolledwindow treeview.view {
+
+// }
 
 /****************
  * Log out menu *
