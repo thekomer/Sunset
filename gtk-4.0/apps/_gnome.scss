@@ -56,8 +56,8 @@
 
   notebook {
     > stack:only-child { // the :not(:only-child) is for "hidden" notebooks
-        background-color: $base_color;
-        &:backdrop { background-color: $backdrop_base_color; }
+        background-color: $bg_color;
+        &:backdrop { background-color: $backdrop_bg_color; }
     }
   }
 
