@@ -231,7 +231,7 @@ button:focus:visited {
    These wildcard seems unavoidable, need to investigate.
    Wildcards are bad and troublesome, use them with care,
    or better, just don't.
-   Everytime a wildcard is used a kitten dies, painfully.
+   Every time a wildcard is used a kitten dies, painfully.
 */
 *:disabled, button:disabled:link,
 button:disabled:visited, label:disabled selection {
@@ -2436,6 +2436,8 @@ GraniteWidgetsWelcome {
   border: solid rgba(255, 255, 255, 0.05);
   color: #bfc3cd;
   border-right-width: 1px; }
+  .source-list:backdrop, progressbar:backdrop progress.source-list, progressbar:backdrop trough.source-list, label:backdrop selection.source-list {
+    background-color: inherit; }
   .source-list .category-expander {
     color: transparent; }
   .source-list .badge {
@@ -2889,6 +2891,36 @@ headerbar {
     margin: 10px 0px;
     min-height: 20px;
     transition: all .1s ease-in; }
+    .titlebar .linked > button:first-child, .titlebar combobox.linked .linked > button:nth-child(2):dir(rtl), combobox.linked .titlebar .linked > button:nth-child(2):dir(rtl), .titlebar .linked:not(.vertical) > combobox:first-child > box.linked > button.combo, .titlebar .linked.vertical > combobox:first-child > box.linked > button.combo,
+    headerbar .linked > button:first-child:hover,
+    headerbar .linked > button:first-child:backdrop,
+    headerbar progressbar:backdrop .linked > progress:first-child,
+    progressbar:backdrop headerbar .linked > progress:first-child,
+    headerbar progressbar:backdrop .linked > trough:first-child,
+    progressbar:backdrop headerbar .linked > trough:first-child,
+    headerbar .linked > button:first-child:checked,
+    headerbar .linked > button:first-child:active,
+    headerbar .linked > button:first-child,
+    headerbar combobox.linked .linked > button:nth-child(2):dir(rtl),
+    combobox.linked headerbar .linked > button:nth-child(2):dir(rtl),
+    headerbar .linked:not(.vertical) > combobox:first-child > box.linked > button.combo,
+    headerbar .linked.vertical > combobox:first-child > box.linked > button.combo {
+      background-color: inherit; }
+    .titlebar .linked > button:last-child, .titlebar combobox.linked .linked > button:nth-child(2):dir(ltr), combobox.linked .titlebar .linked > button:nth-child(2):dir(ltr), .titlebar .linked:not(.vertical) > combobox:last-child > box.linked > button.combo, .titlebar .linked.vertical > combobox:last-child > box.linked > button.combo,
+    headerbar .linked > button:last-child:hover,
+    headerbar .linked > button:last-child:backdrop,
+    headerbar progressbar:backdrop .linked > progress:last-child,
+    progressbar:backdrop headerbar .linked > progress:last-child,
+    headerbar progressbar:backdrop .linked > trough:last-child,
+    progressbar:backdrop headerbar .linked > trough:last-child,
+    headerbar .linked > button:last-child:checked,
+    headerbar .linked > button:last-child:active,
+    headerbar .linked > button:last-child,
+    headerbar combobox.linked .linked > button:nth-child(2):dir(ltr),
+    combobox.linked headerbar .linked > button:nth-child(2):dir(ltr),
+    headerbar .linked:not(.vertical) > combobox:last-child > box.linked > button.combo,
+    headerbar .linked.vertical > combobox:last-child > box.linked > button.combo {
+      background-color: inherit; }
     .titlebar .linked > button:only-child, .titlebar .linked:not(.vertical) > combobox:only-child > box.linked > button.combo, .titlebar .linked.vertical > combobox:only-child > box.linked > button.combo,
     headerbar .linked > button:only-child:hover,
     headerbar .linked > button:only-child:backdrop,
@@ -4454,6 +4486,8 @@ treeview ~ scrollbar.vertical {
         background: rgba(204, 55, 0, 0.6); }
         .sidebar row:selected:backdrop label, .sidebar label:backdrop selection:selected label, label:backdrop .sidebar selection:selected label, .sidebar progressbar:backdrop trough:selected label, progressbar:backdrop .sidebar trough:selected label, .sidebar progressbar:backdrop progress:selected label, progressbar:backdrop .sidebar progress:selected label {
           color: #ffffff; }
+      .sidebar row:selected:hover {
+        background-color: inherit; }
       .sidebar row:selected label {
         color: #ffffff; }
   .sidebar.source-list {
@@ -4817,6 +4851,10 @@ switch {
       padding: 2px;
       box-shadow: none;
       background-color: #131727; }
+  switch:checked slider {
+    background-color: inherit; }
+  switch:backdrop {
+    background-color: inherit; }
   switch trough:active, switch trough:checked {
     background-color: #cc3700; }
     switch trough:active:backdrop, switch label:backdrop selection:active, label:backdrop switch selection:active, switch progressbar:backdrop trough:active, progressbar:backdrop switch trough:active, switch progressbar:backdrop progress:active, progressbar:backdrop switch progress:active, switch trough:checked:backdrop, switch label:backdrop selection:checked, label:backdrop switch selection:checked, switch progressbar:backdrop trough:checked, progressbar:backdrop switch trough:checked, switch progressbar:backdrop progress:checked, progressbar:backdrop switch progress:checked {
@@ -6619,6 +6657,10 @@ combobox:drop(active) button.combo:not(window) {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.7);
   background-color: rgba(19, 23, 39, 0.05); }
+  .notify .low {
+    background: inherit; }
+  .notify .critical {
+    background: inherit; }
 
 /***************
  * SwitchBoard *
@@ -6641,7 +6683,8 @@ combobox:drop(active) button.combo:not(window) {
     background-color: rgba(204, 55, 0, 0.3);
     color: white; }
   .button.app .app:focus {
-    /*background-color: transparentize(black, 0.20);*/ }
+    /*background-color: transparentize(black, 0.20);*/
+    background: inherit; }
 
 .search-item {
   border-radius: 0;

@@ -61,9 +61,14 @@ switch {
     }
   }
 
-  &:checked slider { }
+  &:checked slider {
+    background-color: inherit;
+    // was empty - had to put something
+   }
 
   &:backdrop {
+    background-color: inherit;
+    // was empty - had to put something
   }
 
   row:selected & {

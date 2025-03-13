@@ -49,6 +49,8 @@
       }
       &:hover{
         // background-color: transparentize($selected_bg_color, 0.8);
+        background-color: inherit;
+        // was empty - had to put something
       }
       label{
         color: $selected_fg_color;

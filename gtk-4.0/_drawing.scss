@@ -150,7 +150,7 @@
   @else { @return transparentize(black, $_lbg*0.8); }
 }
 
-@function _button_hilight_color($c) {
+@function _button_highlight_color($c) {
 //
 // calculate the right top hilight color for buttons
 //
@@ -201,7 +201,7 @@
 // osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
 //
 
-  $_hilight_color: _button_hilight_color($c);
+  $_highlight_color: _button_highlight_color($c);
   $_button_edge: if($edge == none, none, _widget_edge($edge));
   $_blank_edge: if($edge == none, none, _widget_edge(transparentize($edge,1)));
 

@@ -4,7 +4,15 @@
 $_placesidebar_icons_opacity: 0.7;
 
 placessidebar {
-  > viewport.frame { border-style: none; }
+
+  > viewport.frame {
+    border-style: none;
+    list { background: $headerbar_color;
+      &:backdrop {
+      background: $backdrop_headerbar_bg_color;
+      }
+    }
+  }
 
   row {
     // Needs overriding of the GtkListBoxRow padding

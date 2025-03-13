@@ -3,7 +3,7 @@
  ***************/
 %titlebar,
 headerbar {
-	// margin-top: 2px; // FIXIT: added to get rounded borders. What's that light line on top of titlebar/header
+	// margin-top: 2px; //FIXME: added to get rounded borders. What's that light line on top of titlebar/header
   padding: 0px 13px;
   min-height: 34px;
   background: $headerbar_color;
@@ -13,7 +13,7 @@ headerbar {
   border-right: 1px solid $window_border_color;
   border-radius: 10px + 2px 10px + 2px 0 0;
 
-  headerbar { // fix: headerbar splited with border when there are headerbars inside headerbar
+  headerbar { // fix: headerbar splitted with border when there are headerbars inside headerbar
 		border-left: none;
 		border-right: none;
   }
@@ -156,9 +156,13 @@ headerbar {
     margin: 10px 0px;
     min-height: 20px;
     &:first-child {
+      background-color: inherit;
+      // was empty - had to put something
     }
 
     &:last-child {
+      background-color: inherit;
+      // was empty - had to put something
     }
 
     &:only-child {

@@ -45,8 +45,14 @@
 
   background-color: transparentize($base_color, 0.95);
 
-  .low {}
-  .critical {}
+  .low {
+    background: inherit;
+    // was empty - had to do something about it
+  }
+  .critical {
+    background: inherit;
+    // was empty - had to do something about it
+  }
 }
 
 
@@ -79,6 +85,8 @@
     }
     &:focus{
       /*background-color: transparentize(black, 0.20);*/
+      background: inherit;
+      // was empty - had to do something about it
     }
   }
 }
