@@ -7101,17 +7101,17 @@ menubar,
     background-color: #cc3700;
     color: #ffffff; }
 
+.nemo-window .nemo-window-pane .view:not(.nemo-desktop), .nemo-window .nemo-window-pane iconview:not(.nemo-desktop) {
+  background: #0E111D; }
+  .nemo-window .nemo-window-pane .view:not(.nemo-desktop):backdrop {
+    background-color: #0b0d16; }
+
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
   color: rgba(191, 195, 205, 0.85);
   background-color: #06080d; }
   .nemo-window .nemo-inactive-pane .view:backdrop, .nemo-window .nemo-inactive-pane iconview:backdrop {
     color: #656872;
     background-color: #06080d; }
-
-.nemo-window-pane .view, .nemo-window-pane iconview {
-  background: #0E111D; }
-  .nemo-window-pane .view:backdrop {
-    background-color: #0b0d16; }
 
 /* * * * * * * * * * *
  * Caja file manager *
