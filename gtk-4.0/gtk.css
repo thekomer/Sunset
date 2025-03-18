@@ -29,7 +29,7 @@
 /* widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #0b0d16;
 /* text widgets and the like base background color on backdrop windows */
-@define-color theme_unfocused_base_color #161b2e;
+@define-color theme_unfocused_base_color #101320;
 /* base background color of selections on backdrop windows */
 @define-color theme_unfocused_selected_bg_color #cc3700;
 /* text/foreground color of selections on backdrop windows */
@@ -51,7 +51,7 @@
 @define-color unfocused_fg_color #656872;
 @define-color unfocused_text_color #bfc3cd;
 @define-color unfocused_bg_color #0b0d16;
-@define-color unfocused_base_color #161b2e;
+@define-color unfocused_base_color #101320;
 @define-color unfocused_selected_bg_color #cc3700;
 @define-color unfocused_selected_fg_color #ffffff;
 /* these colors are exported for the window manager and shouldn't be used in applications,
@@ -73,7 +73,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color text_view_bg #131727;
 @define-color budgie_tasklist_indicator_color #cc3700;
 @define-color budgie_tasklist_indicator_color_active #cc3700;
-@define-color placeholder_text_color #9da1ad;
+@define-color placeholder_text_color #9ca0aa;
 @define-color STRAWBERRY_100 #ff8c82;
 @define-color STRAWBERRY_300 #ed5353;
 @define-color STRAWBERRY_500 #c6262e;
@@ -249,8 +249,8 @@ textview text {
   .view text:backdrop,
   iconview text:backdrop,
   textview text:backdrop {
-    color: #9da1ad;
-    background-color: #161b2e; }
+    color: #9ca0aa;
+    background-color: #101320; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
@@ -302,7 +302,7 @@ assistant .sidebar {
   background-color: #131727;
   border-top: 1px solid rgba(255, 255, 255, 0.05); }
   assistant .sidebar:backdrop, assistant progressbar:backdrop progress.sidebar, progressbar:backdrop assistant progress.sidebar, assistant progressbar:backdrop trough.sidebar, progressbar:backdrop assistant trough.sidebar, assistant label:backdrop selection.sidebar, label:backdrop assistant selection.sidebar {
-    background-color: #161b2e;
+    background-color: #101320;
     border-color: rgba(59, 62, 71, 0.145); }
 
 assistant.csd .sidebar {
@@ -404,9 +404,9 @@ button {
   .selection-mode windowcontrols button:backdrop, notebook > header > tabs > arrow:backdrop, combobox:drop(active) button.combo:backdrop, combobox:drop(active) progressbar:backdrop progress.combo, progressbar:backdrop combobox:drop(active) progress.combo, combobox:drop(active) progressbar:backdrop trough.combo, progressbar:backdrop combobox:drop(active) trough.combo,
   button:backdrop.flat,
   button:backdrop {
-    color: #9da1ad;
+    color: #9ca0aa;
     outline-color: rgba(191, 195, 205, 0.3);
-    background-color: #161b2e;
+    background-color: #101320;
     text-shadow: none;
     transition: 200ms ease-out;
     -gtk-icon-filter: none; }
@@ -428,7 +428,7 @@ button {
     notebook > header > tabs > arrow:backdrop:disabled, combobox:drop(active) button.combo:backdrop:disabled, combobox:drop(active) progressbar:backdrop progress.combo:disabled, progressbar:backdrop combobox:drop(active) progress.combo:disabled, combobox:drop(active) progressbar:backdrop trough.combo:disabled, progressbar:backdrop combobox:drop(active) trough.combo:disabled,
     button:backdrop.flat:disabled,
     button:backdrop:disabled {
-      color: #9da1ad;
+      color: #9ca0aa;
       outline-color: rgba(191, 195, 205, 0.3);
       background-color: #101321;
       text-shadow: none; }
@@ -455,7 +455,7 @@ button {
     -gtk-icon-shadow: none; }
   notebook > header > tabs > arrow:disabled, combobox:drop(active) button.combo:disabled, .selection-mode windowcontrols button:disabled,
   button:disabled {
-    color: #9da1ad;
+    color: #9ca0aa;
     outline-color: rgba(191, 195, 205, 0.3);
     background-color: #101321;
     text-shadow: none; }
@@ -514,7 +514,7 @@ row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled), r
   border-color: transparent; }
   row:selected progressbar:backdrop progress:not(disabled), progressbar:backdrop row:selected progress:not(disabled), row:selected progressbar:backdrop trough:not(disabled), progressbar:backdrop row:selected trough:not(disabled), row:selected label:backdrop selection:not(disabled), label:backdrop row:selected selection:not(disabled), row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop, row:selected .selection-mode windowcontrols button:not(:active):not(:checked):not(:hover):not(disabled):backdrop, .selection-mode windowcontrols row:selected button:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
     color: #656872;
-    background: #161b2e; }
+    background: #101320; }
 
 .selection-mode windowcontrols button.osd,
 button.osd {
@@ -1052,15 +1052,15 @@ toolbar button:active {
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #b33000; }
   .inline-toolbar toolbutton > button:disabled {
-    color: #9da1ad; }
+    color: #9ca0aa; }
     .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
       color: rgba(179, 48, 0, 0.3); }
   .inline-toolbar toolbutton > button:backdrop {
-    color: #9da1ad; }
+    color: #9ca0aa; }
     .inline-toolbar toolbutton > button:backdrop:active, .inline-toolbar toolbutton > button:backdrop:checked {
       color: #b33000; }
     .inline-toolbar toolbutton > button:backdrop:disabled {
-      color: #9da1ad; }
+      color: #9ca0aa; }
       .inline-toolbar toolbutton > button:backdrop:disabled:active, .inline-toolbar toolbutton > button:backdrop:disabled:checked {
         color: rgba(179, 48, 0, 0.3); }
 
@@ -1246,7 +1246,7 @@ calendar {
     font-size: smaller;
     color: #bfc3cd; }
   calendar:backdrop {
-    color: #9da1ad;
+    color: #9ca0aa;
     border-color: rgba(59, 62, 71, 0.145); }
 
 /*************************
@@ -1687,7 +1687,7 @@ colorswatch.light overlay {
   colorswatch.light overlay:hover {
     border-color: rgba(255, 255, 255, 0.05); }
   colorswatch.light overlay:backdrop {
-    color: #9da1ad; }
+    color: #9ca0aa; }
 
 colorswatch:drop(active) {
   box-shadow: none; }
@@ -1722,9 +1722,9 @@ colorswatch#add-color-button {
       outline-color: rgba(191, 195, 205, 0.3);
       text-shadow: none; }
     colorswatch#add-color-button overlay:backdrop {
-      color: #9da1ad;
+      color: #9ca0aa;
       outline-color: rgba(191, 195, 205, 0.3);
-      background-color: #161b2e;
+      background-color: #101320;
       text-shadow: none; }
 
 colorswatch:disabled {
@@ -1943,9 +1943,9 @@ entry {
     box-shadow: none; }
   spinbutton:backdrop:not(.vertical),
   entry:backdrop {
-    color: #9da1ad;
+    color: #9ca0aa;
     border-color: rgba(59, 62, 71, 0.145);
-    background-color: #161b2e;
+    background-color: #101320;
     box-shadow: none;
     transition: 200ms ease-out; }
   spinbutton:backdrop:disabled:not(.vertical),
@@ -1993,7 +1993,7 @@ entry {
       color: #cc3700; }
     spinbutton:not(.vertical) image:backdrop,
     entry image:backdrop {
-      color: #555964; }
+      color: #545762; }
   spinbutton:drop(active):not(.vertical),
   entry:drop(active):focus-within,
   entry:drop(active) {
@@ -2059,8 +2059,8 @@ entry progress {
   border-top-color: rgba(22, 26, 42, 0.715);
   background-image: linear-gradient(to right, #131727, #131727); }
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled):backdrop, progressbar:backdrop .linked.vertical > spinbutton:not(:disabled):not(.vertical) + progress:not(:disabled), progressbar:backdrop .linked.vertical > spinbutton:not(:disabled):not(.vertical) + trough:not(:disabled), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):backdrop:not(.vertical), .linked.vertical > entry:not(:disabled) + entry:not(:disabled):backdrop, progressbar:backdrop .linked.vertical > entry:not(:disabled) + progress:not(:disabled), progressbar:backdrop .linked.vertical > entry:not(:disabled) + trough:not(:disabled), .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical) {
-    border-top-color: rgba(23, 28, 47, 0.7435);
-    background-image: linear-gradient(to right, #161b2e, #161b2e); }
+    border-top-color: rgba(17, 20, 34, 0.7435);
+    background-image: linear-gradient(to right, #101320, #101320); }
 
 .linked.vertical > spinbutton:disabled:not(.vertical) + spinbutton:disabled:not(.vertical), .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, .linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical), .linked.vertical > entry:disabled + entry:disabled {
   border-top-color: rgba(22, 26, 42, 0.715); }
@@ -3100,7 +3100,7 @@ list, listview {
   background-color: #131727;
   border-color: rgba(255, 255, 255, 0.05); }
   list:backdrop, listview:backdrop {
-    background-color: #161b2e;
+    background-color: #101320;
     border-color: rgba(59, 62, 71, 0.145); }
   list.horizontal row.separator, list.separators.horizontal > row:not(.separator), listview.horizontal row.separator, listview.separators.horizontal > row:not(.separator) {
     border-left: 1px solid rgba(255, 255, 255, 0.05); }
@@ -3174,7 +3174,7 @@ menu,
   progressbar:backdrop progress.context-menu,
   progressbar:backdrop trough.context-menu,
   label:backdrop selection.context-menu {
-    background-color: #141829; }
+    background-color: #0f121e; }
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {
@@ -3267,7 +3267,7 @@ menu,
     menu > arrow:backdrop,
     .menu > arrow:backdrop,
     .context-menu > arrow:backdrop {
-      background-color: #141829; }
+      background-color: #0f121e; }
     menu > arrow:disabled,
     .menu > arrow:disabled,
     .context-menu > arrow:disabled {
@@ -3321,7 +3321,7 @@ assistant {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom-left-radius: 4px; }
     assistant .sidebar:backdrop, assistant progressbar:backdrop progress.sidebar, progressbar:backdrop assistant progress.sidebar, assistant progressbar:backdrop trough.sidebar, progressbar:backdrop assistant trough.sidebar, assistant label:backdrop selection.sidebar, label:backdrop assistant selection.sidebar {
-      background-color: #161b2e;
+      background-color: #101320;
       border-color: rgba(59, 62, 71, 0.145); }
   assistant.csd .sidebar {
     border-top-style: none; }
@@ -3460,7 +3460,7 @@ notebook > header {
       color: #656872; }
       notebook > header tab:backdrop:checked.reorderable-page {
         border-color: rgba(59, 62, 71, 0.145);
-        background-color: #161b2e; }
+        background-color: #101320; }
     notebook > header tab button.flat, notebook > header tab .selection-mode windowcontrols button, .selection-mode windowcontrols notebook > header tab button {
       color: rgba(191, 195, 205, 0.85);
       padding: 0;
@@ -3518,7 +3518,7 @@ notebook > header {
 notebook > stack:not(:only-child) {
   background-color: #131727; }
   notebook > stack:not(:only-child):backdrop, progressbar:backdrop notebook > progress:not(:only-child), progressbar:backdrop notebook > trough:not(:only-child) {
-    background-color: #161b2e; }
+    background-color: #101320; }
 
 /*********
  * Paned *
@@ -4326,7 +4326,7 @@ treeview ~ scrollbar.vertical {
     border-left: 1px solid rgba(255, 255, 255, 0.05);
     border-right-style: none; }
   .sidebar:backdrop, label:backdrop selection.sidebar, progressbar:backdrop trough.sidebar, progressbar:backdrop progress.sidebar {
-    background-color: #101422;
+    background-color: #0d101b;
     border-color: rgba(59, 62, 71, 0.145); }
   .sidebar row {
     padding: 8px 12px;
@@ -4465,7 +4465,7 @@ spinbutton:not(.vertical) {
       background-color: rgba(0, 0, 0, 0.1);
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
     spinbutton:not(.vertical) button:backdrop {
-      color: #5d606b;
+      color: #5c606a;
       background-color: transparent;
       border-color: rgba(59, 62, 71, 0);
       transition: 200ms ease-out; }
@@ -4841,7 +4841,7 @@ treeview.view {
     treeview.view.expander:checked {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
     treeview.view.expander:backdrop {
-      color: #4d515e; }
+      color: #4b4f5a; }
   treeview.view.progressbar {
     border: 1px solid #992900;
     border-radius: 4px;
@@ -4853,10 +4853,10 @@ treeview.view {
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
       background-image: linear-gradient(to right, #131727, #020305); }
       treeview.view.progressbar:selected:focus:backdrop, treeview.view.progressbar:selected:backdrop {
-        border-color: #161b2e;
-        background-color: #161b2e; }
+        border-color: #101320;
+        background-color: #101320; }
     treeview.view.progressbar:backdrop {
-      border-color: #161b2e;
+      border-color: #101320;
       background-image: none;
       box-shadow: none; }
   treeview.view.trough {
