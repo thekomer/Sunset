@@ -8,7 +8,7 @@
 		iconview.cell { }
 	}
 
-	.sidebar, .NemoSidebar, .nemo-places-sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actualy whole statusbar
+	.sidebar, .NemoSidebar, .nemo-places-sidebar, statusbar, box.toolbar, toolbar.primary-toolbar { //box.toolbar is actually whole statusbar
 		color: $sidebar_fg_color;
 		background: $sidebar_bg_color;
 		margin-bottom: -4px;

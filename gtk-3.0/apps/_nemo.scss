@@ -92,12 +92,12 @@
 				color: $selected_fg_color;
 			}
 		}
-		.view:not(.nemo-desktop) {
-			background: $bg_color;
-			&:backdrop {
-				background-color: $backdrop_bg_color;
-			}
-		}
+		// .view:not(.nemo-desktop) {
+		// 	background: $bg_color;
+		// 	&:backdrop {
+		// 		background-color: $backdrop_bg_color;
+		// 	}
+		// }
 	}
 
 	.nemo-inactive-pane .view, .nemo-inactive-pane iconview {
