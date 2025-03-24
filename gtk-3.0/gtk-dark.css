@@ -4852,9 +4852,9 @@ switch {
       box-shadow: none;
       background-color: #131727; }
   switch:checked slider {
-    background-color: inherit; }
+    background-color: #bfc3cd; }
   switch:backdrop {
-    background-color: inherit; }
+    background-color: #656872; }
   switch trough:active, switch trough:checked {
     background-color: #cc3700; }
     switch trough:active:backdrop, switch label:backdrop selection:active, label:backdrop switch selection:active, switch progressbar:backdrop trough:active, progressbar:backdrop switch trough:active, switch progressbar:backdrop progress:active, progressbar:backdrop switch progress:active, switch trough:checked:backdrop, switch label:backdrop selection:checked, label:backdrop switch selection:checked, switch progressbar:backdrop trough:checked, progressbar:backdrop switch trough:checked, switch progressbar:backdrop progress:checked, progressbar:backdrop switch progress:checked {

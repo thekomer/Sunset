@@ -62,12 +62,12 @@ switch {
   }
 
   &:checked slider {
-    background-color: inherit;
+    background-color: $fg_color;
     // was empty - had to put something
    }
 
   &:backdrop {
-    background-color: inherit;
+    background-color: $backdrop_fg_color;
     // was empty - had to put something
   }
 
