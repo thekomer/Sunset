@@ -207,7 +207,7 @@ notebook {
           color: $selected_fg_color;
         }
         &:active {
-					color: $theme_color;
+					color: $accent_color;
         }
 				&:backdrop { color: gtkalpha(currentColor, 0.3); }
 

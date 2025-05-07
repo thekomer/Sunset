@@ -6,6 +6,9 @@
 // Sass thinks we're using the colors in the variables as strings and may shoot
 // warning, it's innocuous and can be defeated by using "" + $var
 
+/* theme accent color */
+@define-color accent_color #{"" + $accent_color};
+
 /* widget text/foreground color */
 @define-color theme_fg_color #{"" +$fg_color};
 

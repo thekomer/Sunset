@@ -1441,10 +1441,10 @@ StScrollBar {
 
     &:focus {
       border-width: 1px;
-      border-color: transparentize($theme_color, 0.5);
+      border-color: transparentize($accent_color, 0.5);
       color: $fg_color;
       background-color: transparentize($bg_color, 0.2);
-      .search-entry-icon { color: $theme_color; }
+      .search-entry-icon { color: $accent_color; }
       box-shadow: $depth2;
     }
     &:hover {

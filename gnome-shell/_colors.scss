@@ -16,10 +16,10 @@ $yellow: #FFD400;
 $orange: #ff6a00;
 $g1: #ff3300;
 $g2: #ffa100;
-$theme_color: $orange;
+$accent_color: $orange;
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: $theme_color;
+$selected_bg_color: $accent_color;
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: transparentize(white, 0.95);
 $borders_edge: transparentize(white, 0.9);
