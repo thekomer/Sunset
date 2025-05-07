@@ -4,6 +4,8 @@
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
+/* theme accent color */
+@define-color accent_color #cc3700;
 /* widget text/foreground color */
 @define-color theme_fg_color #bfc3cd;
 /* text color for entries, views and content in general */
