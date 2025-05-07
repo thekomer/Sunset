@@ -1,3 +1,6 @@
+//main variable
+$radius: 0.6em;
+
 $bg_color: #0e111d;
 $base_color: lighten($bg_color, 3%);
 $main_dark: mix($base_color, darken($bg_color, 8%), 30%);
