@@ -747,6 +747,75 @@ stage {
     .bottombar StButton:active {
       color: #b1b6c2; }
 
+/* gTile@shuairan applet */
+.grid-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #BFC3CD;
+  padding: .5em;
+  text-align: center;
+  max-width: 10em; }
+
+.grid-panel {
+  background-color: rgba(10, 12, 20, 0.95);
+  border-radius: 0.6em; }
+
+.table {
+  margin-left: 0.6em;
+  margin-right: 0.6em; }
+
+.table-element {
+  background-color: rgba(191, 195, 205, 0.3);
+  border-radius: 0.6em; }
+
+.table-element:hover, .table-element:activate {
+  background-color: rgba(191, 195, 205, 0.6); }
+
+.top-box {
+  padding: 0.6em; }
+
+.settings-button {
+  background-color: rgba(204, 55, 0, 0.4);
+  color: rgba(191, 195, 205, 0.4);
+  min-width: 2em;
+  border-radius: 0.6em;
+  padding: 0.1em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  border: 1px rgba(255, 69, 0, 0.6);
+  max-height: 2em;
+  min-height: 2em; }
+
+.settings-button:activate {
+  background-color: rgba(204, 55, 0, 0.7);
+  color: #BFC3CD;
+  border: 1px rgba(255, 69, 0, 0.7); }
+
+.settings-button:activate:hover {
+  background-color: rgba(255, 69, 0, 0.7);
+  color: #BFC3CD;
+  border: 1px rgba(255, 69, 0, 0.8); }
+
+.settings-button:hover {
+  background-color: rgba(204, 55, 0, 0.7);
+  color: #BFC3CD;
+  border: 1px rgba(255, 69, 0, 0.7); }
+
+.grid-preview {
+  background-color: transparent;
+  border: transparent; }
+
+.grid-preview:activate {
+  background-color: rgba(204, 55, 0, 0.4);
+  border: 1px solid rgba(255, 69, 0, 0.8); }
+
+.bottom-box {
+  padding-top: 0.6em;
+  display: block; }
+
+.very-bottom-box {
+  padding-bottom: 0.6em; }
+
 .flashspot {
   background-color: white; }
 
