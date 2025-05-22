@@ -140,7 +140,7 @@
   }
 }
 
-/* sound applet */
+/* sound@cinnamon.org applet */
 
 //TODO: FIX BUTTONS COLORS
 
@@ -210,7 +210,7 @@
   }
 }
 
-/* spacer applet */
+/* spacer@cinnamon.org applet */
 
 .spacer-box {
   border: 1px solid transparent;
@@ -226,7 +226,7 @@
   padding: 0;
 }
 
-/* workspace switcher applet */
+/* workspace-switcher@cinnamon.org applet */
 
 .panel-top,
 .panel-bottom {
@@ -306,7 +306,7 @@
 
 .system-status-icon { icon-size: $scalable_icon-size; }
 
-/* timer applet & notification */
+/* cinnamon-timer@jake1164 applet */
 
 .timer {
   &-dialog-label {
@@ -321,7 +321,7 @@
   }
 }
 
-/* radio applet */
+/* radio@driglu4it applet */
 
 .radio-applet-media-control-toolbar {
   //padding: 0.625em;
@@ -340,7 +340,7 @@
   }
 }
 
-/* weather applet */
+/* weather@mockturtl applet */
 
 // .popup-menu-content.weather-menu {
 //   padding-bottom: 0em;
@@ -569,9 +569,9 @@
 .grid-preview:activate
 {
     //background-color: rgba(241,122,73,0.4);
-    background-color: transparentize($accent_bg_color, 0.6);  //rgba(73,122,241,0.4);
+    background-color: transparentize($accent_bg_color, 0.75);  //rgba(73,122,241,0.4);
     //border: 1px solid rgba(217,108,59,0.8);
-    border: 1px solid transparentize($accent_fg_color, 0.2);  // rgba(59,108,217,0.8);
+    border: 1px solid transparentize($accent_fg_color, 0.5);  // rgba(59,108,217,0.8);
 }
 
 .bottom-box

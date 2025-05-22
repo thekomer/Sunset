@@ -491,7 +491,7 @@ stage {
   .device-box .device-labels .status-label {
     color: #81858f; }
 
-/* sound applet */
+/* sound@cinnamon.org applet */
 .sound-player > StBoxLayout:first-child {
   spacing: 2px;
   padding: 0 4px; }
@@ -542,7 +542,7 @@ stage {
   -slider-handle-radius: 0;
   -slider-handle-radius: 0.15em; }
 
-/* spacer applet */
+/* spacer@cinnamon.org applet */
 .spacer-box {
   border: 1px solid transparent; }
   .spacer-box:highlight {
@@ -554,7 +554,7 @@ stage {
 .systray {
   padding: 0; }
 
-/* workspace switcher applet */
+/* workspace-switcher@cinnamon.org applet */
 .panel-top .workspace-switcher,
 .panel-bottom .workspace-switcher {
   padding: 0 2px; }
@@ -613,7 +613,7 @@ stage {
 .system-status-icon {
   icon-size: 1.091em; }
 
-/* timer applet & notification */
+/* cinnamon-timer@jake1164 applet */
 .timer-dialog-label {
   text-align: center;
   font-weight: bold; }
@@ -630,7 +630,7 @@ stage {
 .timer-stopped .applet-label {
   color: #b1b6c2; }
 
-/* radio applet */
+/* radio@driglu4it applet */
 .radio-applet-media-control-toolbar {
   background-color: inherit;
   border: 1px solid rgba(191, 195, 205, 0.05);
@@ -640,7 +640,7 @@ stage {
   .radio-applet-media-control-toolbar StButton:active {
     color: orangered; }
 
-/* weather applet */
+/* weather@mockturtl applet */
 .weather-current-location-link {
   color: rgba(177, 182, 194, 0.7);
   text-align: center; }
@@ -806,8 +806,8 @@ stage {
   border: transparent; }
 
 .grid-preview:activate {
-  background-color: rgba(204, 55, 0, 0.4);
-  border: 1px solid rgba(255, 69, 0, 0.8); }
+  background-color: rgba(204, 55, 0, 0.25);
+  border: 1px solid rgba(255, 69, 0, 0.5); }
 
 .bottom-box {
   padding-top: 0.6em;
