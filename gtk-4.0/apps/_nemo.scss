@@ -16,13 +16,13 @@
 			background-color: transparent;
 			&:hover {
 				transition: $button_transition;
-				transition-duration: 500ms;
-				color: $selected_bg_color;
-				background-color: transparentize($fg_color, 0.95);
+				transition-duration: 250ms;
+				color: $accent_fg_color;
+				background-color: $hover_bg_color;
 			}
 			&:selected, &:active, &:checked {
 			  transition: $button_transition;
-				transition-duration: 50ms;
+				transition-duration: 150ms;
 				color: $selected_fg_color;
 				// background: linear-gradient(to right, $theme-gradient-start 0%, $theme-gradient-end 100%);
 				background: $selected_bg_color;
@@ -50,7 +50,7 @@
 			transition: $button_transition;
 			&:hover {
 				transition-duration: 500ms;
-				color: $selected_bg_color;
+				color: $accent_fg_color;
 				background: transparent;
 			}
 			&:backdrop {
