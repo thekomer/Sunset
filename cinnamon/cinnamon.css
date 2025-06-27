@@ -1130,7 +1130,9 @@ StScrollBar StButton#hhandle {
   .calendar-event-time-future {
     color: #BFC3CD; }
   .calendar-event-summary {
-    color: #81858f; }
+    color: #81858f;
+    text-align: left;
+    width: 13em; }
 
 .desklet:highlight {
   border: 2px solid #cc3700;

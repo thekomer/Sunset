@@ -277,5 +277,7 @@
 
   &-event-summary {
     color: $light_text_color;
+    text-align: left;
+    width: 13em;  // 200px;
   }
 }
