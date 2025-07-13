@@ -1737,7 +1737,9 @@ StScrollBar StButton#hhandle {
 
 .menu-category-button {
   transition-duration: 200;
-  border-radius: 0.6em; }
+  border-radius: 0.6em;
+  border: 1px solid transparent;
+  min-width: 9em; }
   .menu-category-button-label {
     padding: 0; }
   .menu-category-button:hover {
@@ -1745,13 +1747,15 @@ StScrollBar StButton#hhandle {
     color: #ffffff;
     transition-duration: 200;
     border-radius: 0.6em;
-    border-image: none; }
+    border-image: none;
+    border: 1px solid rgba(191, 195, 205, 0.05); }
   .menu-category-button-selected {
     background-gradient-direction: horizontal;
     background-gradient-start: #cc0400;
     background-gradient-end: #cc6a00;
     color: white;
     font-weight: bold;
+    border: 1px solid rgba(191, 195, 205, 0.05);
     transition-duration: 200; }
   .menu-category-button-greyed {
     color: #555863;

@@ -66,6 +66,8 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
     @extend %start_menu_button;
     transition-duration: 200;
     border-radius: $menu_outer_border_radius;
+    border: 1px solid transparent;
+    min-width: 9em;
 
     &-label { padding: 0; }
 
@@ -75,6 +77,7 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       transition-duration: 200;
       border-radius: $menu_outer_border_radius;
       border-image: none;
+      border: 1px solid $borders_color;
     }
 
     &-selected {
@@ -83,6 +86,7 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
       color: white;
       font-weight: bold;
+      border: 1px solid $borders_color;
 
       transition-duration: 200;
         //TODO: Improve so this is some kind of button colors, not explicitly selected
