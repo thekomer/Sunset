@@ -1723,7 +1723,8 @@ StScrollBar StButton#hhandle {
   padding-right: 16px; }
 
 .menu-application-button {
-  transition-duration: 200; }
+  transition-duration: 200;
+  border: 1px solid transparent; }
   .menu-application-button-label {
     padding: 0; }
   .menu-application-button:highlighted {
@@ -1731,7 +1732,8 @@ StScrollBar StButton#hhandle {
   .menu-application-button-selected {
     background-color: rgba(54, 65, 112, 0.25);
     color: #ffffff;
-    transition-duration: 200; }
+    transition-duration: 200;
+    border: 1px solid rgba(191, 195, 205, 0.05); }
     .menu-application-button-selected:highlighted {
       font-weight: bold; }
 

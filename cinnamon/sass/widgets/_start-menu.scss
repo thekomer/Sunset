@@ -46,6 +46,8 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
   &-application-button {
     @extend %start_menu_button;
     transition-duration: 200;
+    border: 1px solid transparent;
+
 
     &-label { padding: 0; }
 
@@ -57,6 +59,7 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       background-color: $hover_bg_color;
       color: $selected_fg_color;
       transition-duration: 200;
+      border: 1px solid $borders_color;
 
       &:highlighted { font-weight: bold; }
     }
