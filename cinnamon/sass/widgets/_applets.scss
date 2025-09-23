@@ -618,46 +618,54 @@
  * * * * * * * * * * * * */
 
 .fish-menu {
+  //FIXME: background color not transparent
+  background-color: transparent;
 
   //
   // common styles
   //
-  .fish-popup-container {
+  .fish-popup-container  {
+    background-color: transparent;
     max-width: 50em;
     max-height: 25em;
     margin: 0 0.5em;
     spacing: 0.5em;
+    padding-top: $base_padding * 2;
+    padding-bottom: $base_padding * 2;
+    border-radius: $border_radius;
 
     .header-label {
       font-weight: bold;
-      font-size: large;
+      font-size: 1em;
+      text-align: center;
     }
+
     .button-container {
       spacing: 2em;
     }
-
   }
 
   //
   // message popup specific styles
   //
   .fish-message-popup {
+    background-color: $osd_bg_color;
 
     .message-scroll-container {
       padding: 0.5em;
-      /* taken from calendar ("calendar@cinnamon.org", "calendar-events-main-box") */
-      border: 1px solid #999;
-      border-radius: 8px;
+      border: 1px solid $borders_color;
+      border-radius: $border_radius;
       background-gradient-direction: vertical;
-      background-gradient-start: rgba(255, 255, 255, 0.8);
-      background-gradient-end: rgba(255, 255, 255, 0.2);
+      background-gradient-start: transparentize($base_color, 0.4); //rgba(255, 255, 255, 0.8);
+      background-gradient-end: transparentize($base_color, 0.65); //rgba(255, 255, 255, 0.2);
 
       .message-box {
       }
 
       .message-label {
+        color: $base_fg_color;
         font-family: "monospace";
-        font-size: medium;
+        font-size: 1em; //medium;
       }
 
     }
@@ -666,9 +674,10 @@
 //
 // Error Popup specific
 //
-
   .fish-error-popup {
     spacing: 1em;
+    padding-top: $base_padding * 2;
+    padding-bottom: $base_padding * 2;
 
     .main-container {
       spacing: 1em;
@@ -680,12 +689,11 @@
 
     .error-messages-scroll-container {
       padding: 0.5em;
-      /* taken from calendar but adjusted colors ("calendar@cinnamon.org", "calendar-events-main-box") */
-      border: 1px solid #999;
-      border-radius: 8px;
+      border: 1px solid $borders_color;
+      border-radius: $border_radius;
       background-gradient-direction: vertical;
-      background-gradient-start: rgba(240, 165, 165, 0.8);
-      background-gradient-end: rgba(240, 165, 165, 0.2);
+      background-gradient-start: transparentize($error_bg_color, 0.4);//rgba(155, 104, 104, 0.8);
+      background-gradient-end: transparentize($error_bg_color, 0.65); //rgba(155, 104, 104, 0.2);
     }
 
     .error-messages-box {
@@ -693,7 +701,7 @@
 
     .error-messages-label {
       font-family: "monospace";
-      font-size: medium;
+      font-size: 1em;
     }
 
   }
@@ -701,7 +709,6 @@
   //
   // Fools Day Popup specific
   //
-
   .fish-fools-day-popup {
 
     .main-container {
@@ -714,11 +721,11 @@
 
     .message-label {
       font-weight: bold;
-      font-size: large;
+      font-size: 1.5em;
     }
 
     .secondary-message-label {
-      font-size: medium;
+      font-size: 1em;
     }
 
   }
@@ -729,31 +736,32 @@
 // for dark mode
 //
 .fish-menu.dark {
-
+  background-color: transparent;
   // message in dark mode
   .fish-message-popup {
+    background-color: $osd_bg_color;
     .message-scroll-container {
-      border: 1px solid #666;
-      background-gradient-start: rgba(85,85,85,0.8);
-      background-gradient-end: rgba(85,85,85,0.2);
+      border: 1px solid $borders_color;
+      background-gradient-start: transparentize($base_color, 0.4); // rgba(85,85,85,0.8);
+      background-gradient-end: transparentize($base_color, 0.65); // rgba(85,85,85,0.2);
     }
   }
 
   // error in dark mode
   .fish-error-popup {
     .error-messages-scroll-container  {
-      border: 1px solid #666;
+      border: 1px solid $borders_color;
       background-gradient-direction: vertical;
-      background-gradient-start: rgba(155, 104, 104, 0.8);
-      background-gradient-end: rgba(155, 104, 104, 0.2);
+      background-gradient-start: transparentize($error_bg_color, 0.4);//rgba(155, 104, 104, 0.8);
+      background-gradient-end: transparentize($error_bg_color, 0.65); //rgba(155, 104, 104, 0.2);
     }
   }
 }
 
 //
 // Animation (image frame in panel)
+// not used right now in this theme (empty selectors)
 //
-
 .fish-applet { // Applet's actor container (St.Widget)
 
   .fish-applet.dark { // dark mode adjustments

@@ -845,70 +845,77 @@ stage {
 /* * * * * * * * * * * * *
  * fish@kriegcc applet   *
  * * * * * * * * * * * * */
-.fish-menu .fish-popup-container {
-  max-width: 50em;
-  max-height: 25em;
-  margin: 0 0.5em;
-  spacing: 0.5em; }
-  .fish-menu .fish-popup-container .header-label {
+.fish-menu {
+  background-color: transparent; }
+  .fish-menu .fish-popup-container {
+    background-color: transparent;
+    max-width: 50em;
+    max-height: 25em;
+    margin: 0 0.5em;
+    spacing: 0.5em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0.6em; }
+    .fish-menu .fish-popup-container .header-label {
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center; }
+    .fish-menu .fish-popup-container .button-container {
+      spacing: 2em; }
+  .fish-menu .fish-message-popup {
+    background-color: rgba(10, 12, 20, 0.95); }
+    .fish-menu .fish-message-popup .message-scroll-container {
+      padding: 0.5em;
+      border: 1px solid rgba(191, 195, 205, 0.05);
+      border-radius: 0.6em;
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(22, 27, 46, 0.6);
+      background-gradient-end: rgba(22, 27, 46, 0.35); }
+      .fish-menu .fish-message-popup .message-scroll-container .message-label {
+        color: #cdd0d8;
+        font-family: "monospace";
+        font-size: 1em; }
+  .fish-menu .fish-error-popup {
+    spacing: 1em;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+    .fish-menu .fish-error-popup .main-container {
+      spacing: 1em; }
+    .fish-menu .fish-error-popup .message-container {
+      spacing: 1em; }
+    .fish-menu .fish-error-popup .error-messages-scroll-container {
+      padding: 0.5em;
+      border: 1px solid rgba(191, 195, 205, 0.05);
+      border-radius: 0.6em;
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(135, 9, 15, 0.6);
+      background-gradient-end: rgba(135, 9, 15, 0.35); }
+    .fish-menu .fish-error-popup .error-messages-label {
+      font-family: "monospace";
+      font-size: 1em; }
+  .fish-menu .fish-fools-day-popup .main-container {
+    spacing: 1em; }
+  .fish-menu .fish-fools-day-popup .message-container {
+    spacing: 1em; }
+  .fish-menu .fish-fools-day-popup .message-label {
     font-weight: bold;
-    font-size: large; }
-  .fish-menu .fish-popup-container .button-container {
-    spacing: 2em; }
+    font-size: 1.5em; }
+  .fish-menu .fish-fools-day-popup .secondary-message-label {
+    font-size: 1em; }
 
-.fish-menu .fish-message-popup .message-scroll-container {
-  padding: 0.5em;
-  /* taken from calendar ("calendar@cinnamon.org", "calendar-events-main-box") */
-  border: 1px solid #999;
-  border-radius: 8px;
-  background-gradient-direction: vertical;
-  background-gradient-start: rgba(255, 255, 255, 0.8);
-  background-gradient-end: rgba(255, 255, 255, 0.2); }
-  .fish-menu .fish-message-popup .message-scroll-container .message-label {
-    font-family: "monospace";
-    font-size: medium; }
-
-.fish-menu .fish-error-popup {
-  spacing: 1em; }
-  .fish-menu .fish-error-popup .main-container {
-    spacing: 1em; }
-  .fish-menu .fish-error-popup .message-container {
-    spacing: 1em; }
-  .fish-menu .fish-error-popup .error-messages-scroll-container {
-    padding: 0.5em;
-    /* taken from calendar but adjusted colors ("calendar@cinnamon.org", "calendar-events-main-box") */
-    border: 1px solid #999;
-    border-radius: 8px;
+.fish-menu.dark {
+  background-color: transparent; }
+  .fish-menu.dark .fish-message-popup {
+    background-color: rgba(10, 12, 20, 0.95); }
+    .fish-menu.dark .fish-message-popup .message-scroll-container {
+      border: 1px solid rgba(191, 195, 205, 0.05);
+      background-gradient-start: rgba(22, 27, 46, 0.6);
+      background-gradient-end: rgba(22, 27, 46, 0.35); }
+  .fish-menu.dark .fish-error-popup .error-messages-scroll-container {
+    border: 1px solid rgba(191, 195, 205, 0.05);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(240, 165, 165, 0.8);
-    background-gradient-end: rgba(240, 165, 165, 0.2); }
-  .fish-menu .fish-error-popup .error-messages-label {
-    font-family: "monospace";
-    font-size: medium; }
-
-.fish-menu .fish-fools-day-popup .main-container {
-  spacing: 1em; }
-
-.fish-menu .fish-fools-day-popup .message-container {
-  spacing: 1em; }
-
-.fish-menu .fish-fools-day-popup .message-label {
-  font-weight: bold;
-  font-size: large; }
-
-.fish-menu .fish-fools-day-popup .secondary-message-label {
-  font-size: medium; }
-
-.fish-menu.dark .fish-message-popup .message-scroll-container {
-  border: 1px solid #666;
-  background-gradient-start: rgba(85, 85, 85, 0.8);
-  background-gradient-end: rgba(85, 85, 85, 0.2); }
-
-.fish-menu.dark .fish-error-popup .error-messages-scroll-container {
-  border: 1px solid #666;
-  background-gradient-direction: vertical;
-  background-gradient-start: rgba(155, 104, 104, 0.8);
-  background-gradient-end: rgba(155, 104, 104, 0.2); }
+    background-gradient-start: rgba(135, 9, 15, 0.6);
+    background-gradient-end: rgba(135, 9, 15, 0.35); }
 
 .flashspot {
   background-color: white; }
