@@ -50,7 +50,10 @@
     }
   }
 }
-/* Separator applet */
+
+/* * * * * * * * * * * * * * * * *
+ * Separator@cinnamon.org applet *
+ * * * * * * * * * * * * * * * * */
 
 .applet-separator {
   padding: 1px 4px;
@@ -70,7 +73,9 @@
   }
 }
 
-/* cornerbar applet */
+/* * * * * * * * * * * * * * * * *
+ * cornerbar@cinnamon.org applet *
+ * * * * * * * * * * * * * * * * */
 
 .applet-cornerbar {
   width: $base_margin * 2;
@@ -89,13 +94,17 @@
   @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 0.5);
 }
 
-/* notification applet */
+/* * * * * * * * * * * * * * * * * * *
+ * notification@cinnamon.org applet  *
+ * * * * * * * * * * * * * * * * * * */
 
 .notification-applet-padding {
   padding: $base_margin 0 $base_margin $base_margin;
 }
 
-/* panel launchers */
+/* * * * * * * * * * * * * * * * * * * *
+ * panel-launchers@cinnamon.org applet *
+ * * * * * * * * * * * * * * * * * * * */
 
 .panel-launchers {
   // padding-left: $base_padding;
@@ -117,7 +126,9 @@
   }
 }
 
-/* power applet */
+/* * * * * * * * * * * * * * *
+ * power@cinnamon.org applet *
+ * * * * * * * * * * * * * * */
 
 .device-box {
 
@@ -140,7 +151,9 @@
   }
 }
 
-/* sound@cinnamon.org applet */
+/* * * * * * * * * * * * * * *
+ * sound@cinnamon.org applet *
+ * * * * * * * * * * * * * * */
 
 //TODO: FIX BUTTONS COLORS
 
@@ -210,7 +223,9 @@
   }
 }
 
-/* spacer@cinnamon.org applet */
+/* * * * * * * * * * * * * * * *
+ * spacer@cinnamon.org applet  *
+ * * * * * * * * * * * * * * * */
 
 .spacer-box {
   border: 1px solid transparent;
@@ -220,13 +235,18 @@
   &.edit-mode { border: 1px symbolic; }
 }
 
-/* systray */
+/* * * * * * * * * * * * * * * *
+ * systray@cinnamon.org applet *
+ * * * * * * * * * * * * * * * */
 
 .systray {
   padding: 0;
 }
 
-/* workspace-switcher@cinnamon.org applet */
+
+/* * * * * * * * * * * * * * * * * * * * * *
+ * workspace-switcher@cinnamon.org applet  *
+ * * * * * * * * * * * * * * * * * * * * * */
 
 .panel-top,
 .panel-bottom {
@@ -306,7 +326,9 @@
 
 .system-status-icon { icon-size: $scalable_icon-size; }
 
-/* cinnamon-timer@jake1164 applet */
+/* * * * * * * * * * * * * * * * *
+ *cinnamon-timer@jake1164 applet *
+ * * * * * * * * * * * * * * * * */
 
 .timer {
   &-dialog-label {
@@ -321,7 +343,9 @@
   }
 }
 
-/* radio@driglu4it applet */
+/* * * * * * * * * * * * * *
+ * radio@driglu4it applet  *
+ * * * * * * * * * * * * * */
 
 .radio-applet-media-control-toolbar {
   //padding: 0.625em;
@@ -340,7 +364,9 @@
   }
 }
 
-/* weather@mockturtl applet */
+/* * * * * * * * * * * * * * *
+ * weather@mockturtl applet  *
+ * * * * * * * * * * * * * * */
 
 //  .popup-menu-content.weather-menu {
 //    padding-bottom: 0em;
@@ -489,7 +515,10 @@
   }
 }
 
-/* gTile@shuairan applet */
+
+/* * * * * * * * * * * * *
+ * gTile@shuairan applet *
+ * * * * * * * * * * * * */
 
 .grid-title{
 	font-size: 1em;
@@ -582,4 +611,158 @@
 
 .very-bottom-box {
     padding-bottom:0.6em;
+}
+
+/* * * * * * * * * * * * *
+ * fish@kriegcc applet   *
+ * * * * * * * * * * * * */
+
+.fish-menu {
+
+  //
+  // common styles
+  //
+  .fish-popup-container {
+    max-width: 50em;
+    max-height: 25em;
+    margin: 0 0.5em;
+    spacing: 0.5em;
+
+    .header-label {
+      font-weight: bold;
+      font-size: large;
+    }
+    .button-container {
+      spacing: 2em;
+    }
+
+  }
+
+  //
+  // message popup specific styles
+  //
+  .fish-message-popup {
+
+    .message-scroll-container {
+      padding: 0.5em;
+      /* taken from calendar ("calendar@cinnamon.org", "calendar-events-main-box") */
+      border: 1px solid #999;
+      border-radius: 8px;
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(255, 255, 255, 0.8);
+      background-gradient-end: rgba(255, 255, 255, 0.2);
+
+      .message-box {
+      }
+
+      .message-label {
+        font-family: "monospace";
+        font-size: medium;
+      }
+
+    }
+  }
+
+//
+// Error Popup specific
+//
+
+  .fish-error-popup {
+    spacing: 1em;
+
+    .main-container {
+      spacing: 1em;
+    }
+
+    .message-container {
+      spacing: 1em;
+    }
+
+    .error-messages-scroll-container {
+      padding: 0.5em;
+      /* taken from calendar but adjusted colors ("calendar@cinnamon.org", "calendar-events-main-box") */
+      border: 1px solid #999;
+      border-radius: 8px;
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(240, 165, 165, 0.8);
+      background-gradient-end: rgba(240, 165, 165, 0.2);
+    }
+
+    .error-messages-box {
+    }
+
+    .error-messages-label {
+      font-family: "monospace";
+      font-size: medium;
+    }
+
+  }
+
+  //
+  // Fools Day Popup specific
+  //
+
+  .fish-fools-day-popup {
+
+    .main-container {
+      spacing: 1em;
+    }
+
+    .message-container {
+      spacing: 1em
+    }
+
+    .message-label {
+      font-weight: bold;
+      font-size: large;
+    }
+
+    .secondary-message-label {
+      font-size: medium;
+    }
+
+  }
+
+}
+
+//
+// for dark mode
+//
+.fish-menu.dark {
+
+  // message in dark mode
+  .fish-message-popup {
+    .message-scroll-container {
+      border: 1px solid #666;
+      background-gradient-start: rgba(85,85,85,0.8);
+      background-gradient-end: rgba(85,85,85,0.2);
+    }
+  }
+
+  // error in dark mode
+  .fish-error-popup {
+    .error-messages-scroll-container  {
+      border: 1px solid #666;
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(155, 104, 104, 0.8);
+      background-gradient-end: rgba(155, 104, 104, 0.2);
+    }
+  }
+}
+
+//
+// Animation (image frame in panel)
+//
+
+.fish-applet { // Applet's actor container (St.Widget)
+
+  .fish-applet.dark { // dark mode adjustments
+  }
+
+  .animated-fish { // Animated fish object container (St.Bin)
+  }
+
+  .animation { // Actual animated fish (St.Bin)
+  }
+
 }

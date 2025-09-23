@@ -433,7 +433,9 @@ stage {
     color: #ffffff;
     text-shadow: none; }
 
-/* Separator applet */
+/* * * * * * * * * * * * * * * * *
+ * Separator@cinnamon.org applet *
+ * * * * * * * * * * * * * * * * */
 .applet-separator {
   padding: 1px 4px; }
   .applet-separator.vertical {
@@ -445,7 +447,9 @@ stage {
       height: 1px;
       background: rgba(191, 195, 205, 0.1); }
 
-/* cornerbar applet */
+/* * * * * * * * * * * * * * * * *
+ * cornerbar@cinnamon.org applet *
+ * * * * * * * * * * * * * * * * */
 .applet-cornerbar {
   width: 4px;
   background-color: #222946;
@@ -460,11 +464,15 @@ stage {
   background-gradient-start: rgba(204, 4, 0, 0.5);
   background-gradient-end: rgba(204, 106, 0, 0.5); }
 
-/* notification applet */
+/* * * * * * * * * * * * * * * * * * *
+ * notification@cinnamon.org applet  *
+ * * * * * * * * * * * * * * * * * * */
 .notification-applet-padding {
   padding: 2px 0 2px 2px; }
 
-/* panel launchers */
+/* * * * * * * * * * * * * * * * * * * *
+ * panel-launchers@cinnamon.org applet *
+ * * * * * * * * * * * * * * * * * * * */
 .panel-launchers {
   spacing: 2px; }
   .panel-launchers .launcher {
@@ -478,7 +486,9 @@ stage {
     .panel-launchers.vertical .launcher {
       padding: 2px 0; }
 
-/* power applet */
+/* * * * * * * * * * * * * * *
+ * power@cinnamon.org applet *
+ * * * * * * * * * * * * * * */
 .device-box .device-icon {
   icon-size: 1.637em;
   color: #BFC3CD; }
@@ -491,7 +501,9 @@ stage {
   .device-box .device-labels .status-label {
     color: #81858f; }
 
-/* sound@cinnamon.org applet */
+/* * * * * * * * * * * * * * *
+ * sound@cinnamon.org applet *
+ * * * * * * * * * * * * * * */
 .sound-player > StBoxLayout:first-child {
   spacing: 2px;
   padding: 0 4px; }
@@ -542,7 +554,9 @@ stage {
   -slider-handle-radius: 0;
   -slider-handle-radius: 0.15em; }
 
-/* spacer@cinnamon.org applet */
+/* * * * * * * * * * * * * * * *
+ * spacer@cinnamon.org applet  *
+ * * * * * * * * * * * * * * * */
 .spacer-box {
   border: 1px solid transparent; }
   .spacer-box:highlight {
@@ -550,11 +564,15 @@ stage {
   .spacer-box.edit-mode {
     border: 1px symbolic; }
 
-/* systray */
+/* * * * * * * * * * * * * * * *
+ * systray@cinnamon.org applet *
+ * * * * * * * * * * * * * * * */
 .systray {
   padding: 0; }
 
-/* workspace-switcher@cinnamon.org applet */
+/* * * * * * * * * * * * * * * * * * * * * *
+ * workspace-switcher@cinnamon.org applet  *
+ * * * * * * * * * * * * * * * * * * * * * */
 .panel-top .workspace-switcher,
 .panel-bottom .workspace-switcher {
   padding: 0 2px; }
@@ -613,7 +631,9 @@ stage {
 .system-status-icon {
   icon-size: 1.091em; }
 
-/* cinnamon-timer@jake1164 applet */
+/* * * * * * * * * * * * * * * * *
+ *cinnamon-timer@jake1164 applet *
+ * * * * * * * * * * * * * * * * */
 .timer-dialog-label {
   text-align: center;
   font-weight: bold; }
@@ -630,7 +650,9 @@ stage {
 .timer-stopped .applet-label {
   color: #b1b6c2; }
 
-/* radio@driglu4it applet */
+/* * * * * * * * * * * * * *
+ * radio@driglu4it applet  *
+ * * * * * * * * * * * * * */
 .radio-applet-media-control-toolbar {
   background-color: inherit;
   border: 1px solid rgba(191, 195, 205, 0.05);
@@ -640,7 +662,9 @@ stage {
   .radio-applet-media-control-toolbar StButton:active {
     color: orangered; }
 
-/* weather@mockturtl applet */
+/* * * * * * * * * * * * * * *
+ * weather@mockturtl applet  *
+ * * * * * * * * * * * * * * */
 .weather-current-location-link {
   color: rgba(177, 182, 194, 0.7);
   text-align: center; }
@@ -747,7 +771,9 @@ stage {
     .bottombar StButton:active {
       color: #b1b6c2; }
 
-/* gTile@shuairan applet */
+/* * * * * * * * * * * * *
+ * gTile@shuairan applet *
+ * * * * * * * * * * * * */
 .grid-title {
   font-size: 1em;
   font-weight: bold;
@@ -815,6 +841,74 @@ stage {
 
 .very-bottom-box {
   padding-bottom: 0.6em; }
+
+/* * * * * * * * * * * * *
+ * fish@kriegcc applet   *
+ * * * * * * * * * * * * */
+.fish-menu .fish-popup-container {
+  max-width: 50em;
+  max-height: 25em;
+  margin: 0 0.5em;
+  spacing: 0.5em; }
+  .fish-menu .fish-popup-container .header-label {
+    font-weight: bold;
+    font-size: large; }
+  .fish-menu .fish-popup-container .button-container {
+    spacing: 2em; }
+
+.fish-menu .fish-message-popup .message-scroll-container {
+  padding: 0.5em;
+  /* taken from calendar ("calendar@cinnamon.org", "calendar-events-main-box") */
+  border: 1px solid #999;
+  border-radius: 8px;
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(255, 255, 255, 0.8);
+  background-gradient-end: rgba(255, 255, 255, 0.2); }
+  .fish-menu .fish-message-popup .message-scroll-container .message-label {
+    font-family: "monospace";
+    font-size: medium; }
+
+.fish-menu .fish-error-popup {
+  spacing: 1em; }
+  .fish-menu .fish-error-popup .main-container {
+    spacing: 1em; }
+  .fish-menu .fish-error-popup .message-container {
+    spacing: 1em; }
+  .fish-menu .fish-error-popup .error-messages-scroll-container {
+    padding: 0.5em;
+    /* taken from calendar but adjusted colors ("calendar@cinnamon.org", "calendar-events-main-box") */
+    border: 1px solid #999;
+    border-radius: 8px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(240, 165, 165, 0.8);
+    background-gradient-end: rgba(240, 165, 165, 0.2); }
+  .fish-menu .fish-error-popup .error-messages-label {
+    font-family: "monospace";
+    font-size: medium; }
+
+.fish-menu .fish-fools-day-popup .main-container {
+  spacing: 1em; }
+
+.fish-menu .fish-fools-day-popup .message-container {
+  spacing: 1em; }
+
+.fish-menu .fish-fools-day-popup .message-label {
+  font-weight: bold;
+  font-size: large; }
+
+.fish-menu .fish-fools-day-popup .secondary-message-label {
+  font-size: medium; }
+
+.fish-menu.dark .fish-message-popup .message-scroll-container {
+  border: 1px solid #666;
+  background-gradient-start: rgba(85, 85, 85, 0.8);
+  background-gradient-end: rgba(85, 85, 85, 0.2); }
+
+.fish-menu.dark .fish-error-popup .error-messages-scroll-container {
+  border: 1px solid #666;
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(155, 104, 104, 0.8);
+  background-gradient-end: rgba(155, 104, 104, 0.2); }
 
 .flashspot {
   background-color: white; }
