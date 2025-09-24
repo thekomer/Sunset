@@ -846,7 +846,8 @@ stage {
  * fish@kriegcc applet   *
  * * * * * * * * * * * * */
 .fish-menu {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #BFC3CD; }
   .fish-menu .fish-popup-container {
     background-color: transparent;
     max-width: 50em;
@@ -863,7 +864,7 @@ stage {
     .fish-menu .fish-popup-container .button-container {
       spacing: 2em; }
   .fish-menu .fish-message-popup {
-    background-color: rgba(10, 12, 20, 0.95); }
+    background-color: transparent; }
     .fish-menu .fish-message-popup .message-scroll-container {
       padding: 0.5em;
       border: 1px solid rgba(191, 195, 205, 0.05);
@@ -904,13 +905,15 @@ stage {
     font-size: 1em; }
 
 .fish-menu.dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #BFC3CD; }
   .fish-menu.dark .fish-message-popup {
-    background-color: rgba(10, 12, 20, 0.95); }
+    background-color: transparent; }
     .fish-menu.dark .fish-message-popup .message-scroll-container {
       border: 1px solid rgba(191, 195, 205, 0.05);
-      background-gradient-start: rgba(22, 27, 46, 0.6);
-      background-gradient-end: rgba(22, 27, 46, 0.35); }
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(22, 27, 46, 0.35);
+      background-gradient-end: rgba(22, 27, 46, 0.15); }
   .fish-menu.dark .fish-error-popup .error-messages-scroll-container {
     border: 1px solid rgba(191, 195, 205, 0.05);
     background-gradient-direction: vertical;

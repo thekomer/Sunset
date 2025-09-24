@@ -620,8 +620,8 @@
  * * * * * * * * * * * * */
 
 .fish-menu {
-  //FIXME: background color not transparent
   background-color: transparent;
+  color: $osd_fg_color;
 
   //
   // common styles
@@ -651,7 +651,7 @@
   // message popup specific styles
   //
   .fish-message-popup {
-    background-color: $osd_bg_color;
+    background-color: transparent; //$osd_bg_color;
 
     .message-scroll-container {
       padding: 0.5em;
@@ -739,14 +739,17 @@
 //
 .fish-menu.dark {
   background-color: transparent;
+  color: $osd_fg_color;
 
   // message in dark mode
   .fish-message-popup {
-    background-color: $osd_bg_color;
+    background-color: transparent; // $osd_bg_color;
+
     .message-scroll-container {
       border: 1px solid $borders_color;
-      background-gradient-start: transparentize($base_color, 0.4);
-      background-gradient-end: transparentize($base_color, 0.65);
+      background-gradient-direction: vertical;
+      background-gradient-start: transparentize($base_color, 0.65);
+      background-gradient-end: transparentize($base_color, 0.85);
     }
   }
 
