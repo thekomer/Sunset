@@ -1,3 +1,5 @@
+// Applets' styles are mostly based on upstream applet sources respective css files.
+
 .applet {
 
   &-box {
@@ -656,8 +658,8 @@
       border: 1px solid $borders_color;
       border-radius: $border_radius;
       background-gradient-direction: vertical;
-      background-gradient-start: transparentize($base_color, 0.4); //rgba(255, 255, 255, 0.8);
-      background-gradient-end: transparentize($base_color, 0.65); //rgba(255, 255, 255, 0.2);
+      background-gradient-start: transparentize($base_color, 0.4);
+      background-gradient-end: transparentize($base_color, 0.65);
 
       .message-box {
       }
@@ -665,7 +667,7 @@
       .message-label {
         color: $fg_color;
         font-family: "monospace";
-        font-size: 1em; //medium;
+        font-size: 1em;
       }
 
     }
@@ -692,8 +694,8 @@
       border: 1px solid $borders_color;
       border-radius: $border_radius;
       background-gradient-direction: vertical;
-      background-gradient-start: transparentize($error_bg_color, 0.4);//rgba(155, 104, 104, 0.8);
-      background-gradient-end: transparentize($error_bg_color, 0.65); //rgba(155, 104, 104, 0.2);
+      background-gradient-start: transparentize($error_bg_color, 0.4);
+      background-gradient-end: transparentize($error_bg_color, 0.65);
     }
 
     .error-messages-box {
@@ -737,13 +739,14 @@
 //
 .fish-menu.dark {
   background-color: transparent;
+
   // message in dark mode
   .fish-message-popup {
     background-color: $osd_bg_color;
     .message-scroll-container {
       border: 1px solid $borders_color;
-      background-gradient-start: transparentize($base_color, 0.4); // rgba(85,85,85,0.8);
-      background-gradient-end: transparentize($base_color, 0.65); // rgba(85,85,85,0.2);
+      background-gradient-start: transparentize($base_color, 0.4);
+      background-gradient-end: transparentize($base_color, 0.65);
     }
   }
 
@@ -752,8 +755,8 @@
     .error-messages-scroll-container  {
       border: 1px solid $borders_color;
       background-gradient-direction: vertical;
-      background-gradient-start: transparentize($error_bg_color, 0.4);//rgba(155, 104, 104, 0.8);
-      background-gradient-end: transparentize($error_bg_color, 0.65); //rgba(155, 104, 104, 0.2);
+      background-gradient-start: transparentize($error_bg_color, 0.4);
+      background-gradient-end: transparentize($error_bg_color, 0.65);
     }
   }
 }
