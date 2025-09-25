@@ -4,7 +4,7 @@ $menuitem_border_radius: $base_border_radius * 1;
 .menu {
   min-width: 15em;
   color: $fg_color;
-  margin: 0.5em; // margin from panel
+  padding: 0.5em; // margin: 0.5em; // margin from panel .... // upsream fix margin -> padding; fix "size changes of popup menu's when clicking some elements". I don't see any difference
   margin-from-bottom-edge-of-screen: 0.5em;
   margin-from-top-edge-of-screen: 0.5em;
 }

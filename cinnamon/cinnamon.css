@@ -1495,7 +1495,7 @@ StScrollBar StButton#hhandle {
 .menu {
   min-width: 15em;
   color: #BFC3CD;
-  margin: 0.5em;
+  padding: 0.5em;
   margin-from-bottom-edge-of-screen: 0.5em;
   margin-from-top-edge-of-screen: 0.5em; }
 
