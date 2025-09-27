@@ -1682,12 +1682,6 @@ StScrollBar StButton#hhandle {
       padding: 0.3333333333em;
       margin: 0.6666666667em; }
 
-.monitor-label {
-  border-radius: 0;
-  color: black;
-  padding: 0.25em;
-  text-align: center; }
-
 .resize-popup {
   padding: 0.25em; }
 

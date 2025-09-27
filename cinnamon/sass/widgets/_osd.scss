@@ -82,12 +82,14 @@ $ws_dot_inactive: ($ws_indicator_height / 6);
   }
 }
 
-.monitor-label {
-  border-radius: 0;
-  color: black;
-  padding: 0.25em; //$base_padding * 2;
-  text-align: center;
-}
+// Cinnamon upstream removal from theme -> hardcoded into cinnamon
+//
+// .monitor-label {
+//   border-radius: 0;
+//   color: black;
+//   padding: 0.25em; //$base_padding * 2;
+//   text-align: center;
+// }
 
 //  resize popup
 
