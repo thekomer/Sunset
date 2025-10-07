@@ -1509,7 +1509,9 @@ StScrollBar StButton#hhandle {
 
 .vkeyboard-key-container {
   padding: 0.2em;
-  spacing: 0.2em; }
+  spacing: 0.2em;
+  padding-left: 4em;
+  padding-right: 4em; }
 
 .vkeyboard-key {
   font-size: 1.364em;
