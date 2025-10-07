@@ -1469,11 +1469,12 @@ StScrollBar StButton#hhandle {
  * on screen keyboard (up to Cinnamon < 6.6) *
  * * * * * * * * * * * * * * * * * * * * * * */
 #keyboard {
-  background-color: rgba(10, 12, 20, 0.95);
-  padding-bottom: 0.2em; }
+  background-color: rgba(10, 12, 20, 0.95); }
 
 .keyboard-layout {
   padding: 0.2em;
+  padding-left: 4em;
+  padding-right: 4em;
   spacing: 0.2em; }
 
 .keyboard-row {
@@ -1483,7 +1484,7 @@ StScrollBar StButton#hhandle {
   min-height: 2em;
   min-width: 2em;
   padding: 0;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: bold;
   text-transform: uppercase; }
   .keyboard-key:grayed {

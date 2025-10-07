@@ -8,12 +8,17 @@
 
 #keyboard {
   background-color: $osd_bg_color;
-  padding-bottom: 0.2em;
+  //padding: 2em;
 }
 
 .keyboard {
   &-layout {
     padding: 0.2em;//$base_padding;
+    padding-left: 4em;
+    padding-right: 4em;
+      // when panel is in vertical mode and keyboard set o take 1/2 od the screen,
+      // keyboard goes under panel. (cinnamon bug?)
+      // that's why I introduced larger padding on left and right side.
     spacing: 0.2em;//$base_padding;
   }
 
@@ -25,7 +30,7 @@
     min-height: 2em;
     min-width: 2em;
     padding: 0;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bold;
     text-transform: uppercase;
 
