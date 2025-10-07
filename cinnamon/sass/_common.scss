@@ -69,7 +69,8 @@ stage {
   @extend %button_common;
   @include button(normal);
   &:focus { @include button(focus); }
-  &:hover, &:checked { @include button(hover); }
+  &:hover { @include button(hover); }
+  &:checked { @include button(checked); }
   &:active { @include button(active); }
   &:insensitive { @include button(insensitive); }
 }
