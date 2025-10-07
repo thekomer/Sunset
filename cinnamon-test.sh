@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Parse cinammon sass
-pushd cinammon
+pushd cinnamon
 ./parse-sass.sh
 popd
 
