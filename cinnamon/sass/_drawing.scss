@@ -79,8 +79,8 @@
   $hover_button_bg_color: $lighter_bg_color;
   $hover_button_fg_color: $tc;
   $active_button_bg_color: $lightest_bg_color;
-  $checked_button_bg_color: $lightest_bg_color;
-  $checked_button_fg_color: $tc;
+  $checked_button_bg_color: $selected_bg_color; // $lightest_bg_color;
+  $checked_button_fg_color: $selected_fg_color; //$tc;
   $insensitive_button_bg_color: darken($button_bg_color, $insensitive_factor);
   $focus_shadow_color: transparentize($fg_color, 0.6);
 
