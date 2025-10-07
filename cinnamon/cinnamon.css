@@ -140,7 +140,7 @@ stage {
     color: #BFC3CD;
     background-color: #364170; }
   .dialog .dialog-button:checked {
-    color: #BFC3CD;
+    color: orangered;
     background-color: #364170; }
   .dialog .dialog-button:insensitive {
     color: rgba(191, 195, 205, 0.5);
@@ -162,7 +162,7 @@ stage {
     background-gradient-start: #b30400;
     background-gradient-end: #b35d00; }
   .dialog .dialog-button:checked:default {
-    color: #BFC3CD;
+    color: orangered;
     background-gradient-direction: horizontal;
     background-gradient-start: #b30400;
     background-gradient-end: #b35d00; }
@@ -187,7 +187,7 @@ stage {
     background-gradient-start: #6f0726;
     background-gradient-end: #6f1c07; }
   .dialog .dialog-button:checked:destructive-action {
-    color: #BFC3CD;
+    color: orangered;
     background-gradient-direction: horizontal;
     background-gradient-start: #6f0726;
     background-gradient-end: #6f1c07; }
@@ -1461,9 +1461,12 @@ StScrollBar StButton#hhandle {
 #overview {
   spacing: 0.8em; }
 
+/* * * * * * * * * * * *
+ * on screen keyboard  *
+ * * * * * * * * * * * */
 #keyboard {
-  background-color: #0E111D;
-  padding-bottom: 0.1em; }
+  background-color: rgba(10, 12, 20, 0.95);
+  padding-bottom: 0.2em; }
 
 .keyboard-layout {
   padding: 0.2em;
