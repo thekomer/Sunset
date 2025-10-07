@@ -48,6 +48,8 @@
  * On screen keyboard in Cinnamon v6.6+  *
 * * * * * * * * * * * * * * * * * * * * */
 
+//TODO: test after cinnamon v6.6 release
+
 $non_alpha_key_color: $lightest_bg_color;
 $shifted_key_color: $accent_bg_color;
 
@@ -81,8 +83,8 @@ $shifted_key_color: $accent_bg_color;
 
   }
 
-  &.shift-key-uppercase { background-color: $shifted_key_color }
-  &.enter-key { background-color: $accent_bg_color }
+  &.shift-key-uppercase { background-color: $shifted_key_color; }
+  &.enter-key { background-color: $shifted_key_color; }
 
   StIcon { icon-size: 1.125em; }
 }
