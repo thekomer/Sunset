@@ -943,7 +943,8 @@ stage {
   spacing: 2px; }
 
 .magnifier-zoom-region {
-  border: 2px solid #df6267; }
+  border-width: 0.3em;
+  border-color: rgba(204, 55, 0, 0.67); }
   .magnifier-zoom-region.full-screen {
     border-width: 0; }
 
