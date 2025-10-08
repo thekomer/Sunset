@@ -167,13 +167,22 @@ StScrollBar {
   border-radius: $border_radius;
   color: $fg_color;
   border-color: transparent;
-  background-color: transparentize($fg_color, 0.95);
+  // background-color: transparentize($fg_color, 0.95);
 
-  & StIcon { padding: $base_padding * 2; }
+  & StIcon {
+    padding: $base_padding * 2;
+    border: 1px solid transparent;
+    border-radius: $border_radius;
+  }
 
   &.user-avatar {
-    border: 1px solid transparentize($fg_color, 0.5);
+    border: transparent; //1px solid transparentize($fg_color, 0.5);
     border-radius: $border_radius;
+  }
+
+  StIcon.highlighted {
+    border: 1px solid transparentize($fg_color, 0.5);
+    border-radius: 100%;
   }
 }
 
