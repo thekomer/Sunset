@@ -1048,7 +1048,7 @@ StScrollBar StButton#hhandle {
     border: transparent;
     border-radius: 0.6em; }
   .user-icon StIcon.highlighted {
-    border: 1px solid #BFC3CD;
+    border: 1px solid rgba(191, 195, 205, 0.5);
     border-radius: 100%; }
 
 .user-widget-label {
@@ -1847,6 +1847,10 @@ StScrollBar StButton#hhandle {
 #panel:highlight {
   background-color: #371309; }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * start menu in Cinnamon < v6.6 (will get deprecated)               *
+ * - also used by some applets (i.e. Cinnamenu@json) and menu spices *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .menu-category-button-greyed, .menu-category-button-selected, .menu-category-button, .menu-application-button-selected, .menu-application-button {
   padding: 4px;
   spacing: 2px;
