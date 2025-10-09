@@ -92,8 +92,11 @@
 // the user's avatar box
 #user_image {
   padding: 0.3em;
-  border-radius: 0.4em;
+  border-radius: $radius;
 }
+
+// the border around the user's avatar box (not used here)
+#user_image_border {}
 
 // the shutdown button
 #shutdown_button.button {
