@@ -1,0 +1,299 @@
+/* * * * * * * * * * * * *
+ * Cinnamon screensaver  *
+ * * * * * * * * * * * * */
+
+//FIXME: transform pt to em
+//FIXME: this theme introduced bug, somehow it changes keyboard layout?!?! Only logout and login helps. What? How?!?!? (don't use OSD on login screen for now)
+.csstage {
+
+  font-size: 16pt;
+
+  .unlockbox {
+    color: $fg_color;
+    font-size: 20px;
+    text-shadow: 1px 1px transparentize($black, 0.2);
+  }
+
+  .clock {
+    color: $fg_color;
+    text-shadow: 1px 1px transparentize($black, 0.2);
+  }
+
+  .toppanel {
+    border-color: transparentize($white, .8);
+    border-style: solid;
+    color: $fg_color;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+  }
+
+  .audiopanel {
+    border-width: 0 1px 1px 0;
+    border-radius: 0 0 $radius 0;
+    background-color: transparentize($panel_bg_color, 0.75);
+  }
+
+  .infopanel {
+    border-width: 0 0 1px 1px;
+    border-radius: 0 0 0 $radius;
+    background-color: transparentize($panel_bg_color, 0.75);
+  }
+
+  .notificationwidget, .powerwidget {
+    font-size: 16pt;
+    font-weight: bold;
+    color: $fg_color;
+    background-color: transparent;
+    background-image: none;
+    text-shadow: 1px 1px transparentize($black, 0.2);
+    padding: 8pt;
+  }
+
+  .auth-message {
+    font-size: 16pt;
+    color: lighten($red, 10%);
+  }
+
+  .caps-message {
+    font-size: 15px;
+    color: $yellow;
+  }
+
+  .framedimage {
+    padding: 1em;
+    border-radius: $radius;
+    border: .25em solid $accent_bg_color;
+    background-color: $osd_bg_color;
+    background-clip: border-box;
+    box-shadow: .1em .1em $shadow_color;
+  }
+
+  .passwordentry {
+    //font-size: 15px;
+    box-shadow: none;
+    border-color: transparentize($white, .8);
+    border-style: solid;
+    color: $fg_color;
+    background-image: none;
+    background-color: transparent;
+    border-image: none;
+    border-width: 1px;
+    box-shadow: none;
+
+    progress {
+      margin: 2px;
+      padding: 0;
+      border-radius: 0;
+      border-width: 0 0 2px;
+      border-color: transparentize($accent_fg_color, 0.3);
+      &:focus {
+        background-color: transparent;
+      }
+    }
+
+    image.left {
+      padding-right: 10pt;
+    }
+
+    // Use :backdrop for alt-text keyboard layout
+    &:backdrop {
+      font-family: monospace;
+      font-size: 15px;
+      color: $accent_fg_color;
+    }
+
+    &:focus {
+      background-color: $osd_bg_color;
+      border-color: $accent_fg_color;
+      box-shadow: 1px 1px $shadow_color;
+    }
+
+    //FIXME: everything braes if I modify hover and active. I don't know why.
+    &:hover {
+      border-color: transparentize($gray, 0.8);
+      background-color: transparentize($gray, 0.8);
+      box-shadow: 1px 1px $shadow_color;
+
+      &:focus {
+        border-color: $accent_fg_color;
+        background-color: transparentize($gray, 0.6);
+        box-shadow: 1px 1px $shadow_color;
+      }
+
+    }
+
+    &:active {
+      border-color: $accent_fg_color;
+      background-color: transparentize($gray, 0.4);
+      box-shadow: 1px 1px transparentize($white, 0.9);
+
+      &:focus {
+        border-color: $accent_fg_color;
+        background-color: transparentize($gray, 0.1);
+        box-shadow: 1px 1px transparentize($white, 0.1);
+      }
+
+    }
+
+  }
+
+  .transparentbutton {
+    -gtk-icon-style: requested;
+    border-color: transparentize($fg_color, .8); //transparentize($white, .8);
+    border-image: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 100%; //  20px;
+    -gtk-outline-radius: 100%; //20px;
+    outline-color: transparent;
+    color: transparentize($fg_color, .3); // transparentize($white, .3);
+    border-width: 1px;
+    padding: 4px;
+
+    image {
+      color: transparentize($fg_color, .3); // transparentize($white, .3);
+    }
+
+    &:disabled image {
+      color: transparentize($fg_color, .7); // #333333;
+    }
+
+    &:focus {
+      background-color: transparentize($gray, 0.7);
+      border-color: $accent_fg_color;
+      box-shadow: 1px 1px $shadow_color;
+    }
+
+    &:hover {
+      border-color: transparentize($gray, 0.8);
+      background-color: transparentize($gray, 0.8);
+      box-shadow: 1px 1px $shadow_color;
+
+      &:focus {
+        border-color: $accent_fg_color;
+        background-color: transparentize($gray, 0.6);
+        box-shadow: 1px 1px $shadow_color;
+      }
+
+    }
+
+    &:active {
+      border-color: $accent_fg_color;
+      background-color: transparentize($gray, 0.4);
+      box-shadow: 1px 1px transparentize($white, 0.9);
+
+      &:focus {
+        border-color: $accent_fg_color;
+        background-color: transparentize($gray, 0.1);
+        box-shadow: 1px 1px transparentize($white, 0.1);
+      }
+
+    }
+
+  }
+
+  .volumeslider {
+    min-height: 1.5em;
+    min-width: 6.25em;
+    background-color: transparentize($fg_color, 0.9);
+    color: $accent_color;
+    padding: 0.2em 0;
+
+    &:disabled {
+      background-color: transparentize($fg_color, 0.5);
+    }
+  }
+
+  scale.volumeslider slider {
+    min-height: 1.5em; //24px;
+    min-width: 0.24em; //4px;
+    margin: -9px;
+  }
+
+  .trackname {
+    font-style: italic;
+    font-size: 0.88em;
+    text-shadow: 1px 1px transparentize($black, 0.2);
+    color: $fg_color;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .albumartist {
+    // font-family: ubuntu;
+    font-style: italic;
+    font-size: 0.68em;
+    text-shadow: 1px 1px transparentize($black, 0.2);
+    color: transparentize($fg_color, 0.2);
+    background-image: none;
+    background-color: transparent;
+  }
+
+  GtkViewport {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .osk-button {
+    -gtk-icon-style: requested;
+    border-color: transparentize($fg_color, 0.75);
+    border-image: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border-radius: $radius; //0.25em;
+    -gtk-outline-radius: $radius; // 0.25em;
+    outline-color: transparent;
+    color: transparentize($fg_color, 0.3);
+    border-width: 1px;
+    padding: 0.25em;
+
+    image {
+      color: transparentize($fg_color, 0.3);
+    }
+
+    &:disabled image {
+      color: #333333;
+    }
+
+    &:focus {
+      background-color: transparentize($gray, 0.7);
+      border-color: $accent_fg_color;
+      box-shadow: 1px 1px $shadow_color;
+    }
+
+    &:hover {
+      border-color: transparentize($gray, 0.8);
+      background-color: transparentize($gray, 0.8);
+      box-shadow: 1px 1px $shadow_color;
+
+      &:focus {
+        border-color: $accent_fg_color;
+        background-color: transparentize($gray, 0.6);
+        box-shadow: 1px 1px $shadow_color;
+      }
+
+    }
+
+    &:active {
+      border-color: $accent_fg_color;
+      background-color: transparentize($gray, 0.5);
+      box-shadow: 1px 1px $shadow_color;
+
+      &:focus {
+        border-color: $accent_fg_color;
+        background-color: transparentize($gray, 0.45);
+        box-shadow: 1px 1px $shadow_color;
+      }
+
+
+    }
+
+  }
+
+  .osk-popover {
+    background-color: $black;
+  }
+
+}

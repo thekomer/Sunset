@@ -30,8 +30,12 @@ $blue: #7cb7ff;
 $cyan: #00c1e4;
 $slider: #7b7bbd;
 $teal: #00e8c6;
+$white: #ffffff;
+$black: #000000;
+$gray: #555555;
 
 $accent_color: $orange;
+$accent_bg_color: $accent_color;
 $accent_fg_color: lighten($accent_color, 10%); //$fg_color;
 $gradient_degree: 13;
 $selected_fg_color: #ffffff;

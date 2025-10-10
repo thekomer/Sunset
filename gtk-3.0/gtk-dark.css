@@ -7078,6 +7078,203 @@ SheetStyleDialog.unity-force-quit {
   color: rgba(191, 195, 205, 0.8);
   background-color: #131727; }
 
+/* * * * * * * * * * * * *
+ * Cinnamon screensaver  *
+ * * * * * * * * * * * * */
+.csstage {
+  font-size: 16pt; }
+  .csstage .unlockbox {
+    color: #bfc3cd;
+    font-size: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8); }
+  .csstage .clock {
+    color: #bfc3cd;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8); }
+  .csstage .toppanel {
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    color: #bfc3cd;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); }
+  .csstage .audiopanel {
+    border-width: 0 1px 1px 0;
+    border-radius: 0 0 0.6em 0;
+    background-color: rgba(6, 8, 13, 0.25); }
+  .csstage .infopanel {
+    border-width: 0 0 1px 1px;
+    border-radius: 0 0 0 0.6em;
+    background-color: rgba(6, 8, 13, 0.25); }
+  .csstage .notificationwidget, .csstage .powerwidget {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #bfc3cd;
+    background-color: transparent;
+    background-image: none;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+    padding: 8pt; }
+  .csstage .auth-message {
+    font-size: 16pt;
+    color: #ff3333; }
+  .csstage .caps-message {
+    font-size: 15px;
+    color: #FFD400; }
+  .csstage .framedimage {
+    padding: 1em;
+    border-radius: 0.6em;
+    border: 0.25em solid #cc3700;
+    background-color: rgba(6, 8, 13, 0.85);
+    background-clip: border-box;
+    box-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.1); }
+  .csstage .passwordentry {
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    color: #bfc3cd;
+    background-image: none;
+    background-color: transparent;
+    border-image: none;
+    border-width: 1px;
+    box-shadow: none; }
+    .csstage .passwordentry progress {
+      margin: 2px;
+      padding: 0;
+      border-radius: 0;
+      border-width: 0 0 2px;
+      border-color: rgba(255, 69, 0, 0.7); }
+      .csstage .passwordentry progress:focus {
+        background-color: transparent; }
+    .csstage .passwordentry image.left {
+      padding-right: 10pt; }
+    .csstage .passwordentry:backdrop, .csstage label:backdrop selection.passwordentry, label:backdrop .csstage selection.passwordentry, .csstage progressbar:backdrop trough.passwordentry, progressbar:backdrop .csstage trough.passwordentry, .csstage progressbar:backdrop progress.passwordentry, progressbar:backdrop .csstage progress.passwordentry {
+      font-family: monospace;
+      font-size: 15px;
+      color: orangered; }
+    .csstage .passwordentry:focus {
+      background-color: rgba(6, 8, 13, 0.85);
+      border-color: orangered;
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+    .csstage .passwordentry:hover {
+      border-color: rgba(85, 85, 85, 0.2);
+      background-color: rgba(85, 85, 85, 0.2);
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+      .csstage .passwordentry:hover:focus {
+        border-color: orangered;
+        background-color: rgba(85, 85, 85, 0.4);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+    .csstage .passwordentry:active {
+      border-color: orangered;
+      background-color: rgba(85, 85, 85, 0.6);
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+      .csstage .passwordentry:active:focus {
+        border-color: orangered;
+        background-color: rgba(85, 85, 85, 0.9);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.9); }
+  .csstage .transparentbutton {
+    -gtk-icon-style: requested;
+    border-color: rgba(191, 195, 205, 0.2);
+    border-image: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 100%;
+    -gtk-outline-radius: 100%;
+    outline-color: transparent;
+    color: rgba(191, 195, 205, 0.7);
+    border-width: 1px;
+    padding: 4px; }
+    .csstage .transparentbutton image {
+      color: rgba(191, 195, 205, 0.7); }
+    .csstage .transparentbutton:disabled image, .csstage label:disabled selection.transparentbutton image, label:disabled .csstage selection.transparentbutton image {
+      color: rgba(191, 195, 205, 0.3); }
+    .csstage .transparentbutton:focus {
+      background-color: rgba(85, 85, 85, 0.3);
+      border-color: orangered;
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+    .csstage .transparentbutton:hover {
+      border-color: rgba(85, 85, 85, 0.2);
+      background-color: rgba(85, 85, 85, 0.2);
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+      .csstage .transparentbutton:hover:focus {
+        border-color: orangered;
+        background-color: rgba(85, 85, 85, 0.4);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+    .csstage .transparentbutton:active {
+      border-color: orangered;
+      background-color: rgba(85, 85, 85, 0.6);
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+      .csstage .transparentbutton:active:focus {
+        border-color: orangered;
+        background-color: rgba(85, 85, 85, 0.9);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.9); }
+  .csstage .volumeslider {
+    min-height: 1.5em;
+    min-width: 6.25em;
+    background-color: rgba(191, 195, 205, 0.1);
+    color: #cc3700;
+    padding: 0.2em 0; }
+    .csstage .volumeslider:disabled, .csstage label:disabled selection.volumeslider, label:disabled .csstage selection.volumeslider {
+      background-color: rgba(191, 195, 205, 0.5); }
+  .csstage scale.volumeslider slider {
+    min-height: 1.5em;
+    min-width: 0.24em;
+    margin: -9px; }
+  .csstage .trackname {
+    font-style: italic;
+    font-size: 0.88em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+    color: #bfc3cd;
+    background-image: none;
+    background-color: transparent; }
+  .csstage .albumartist {
+    font-style: italic;
+    font-size: 0.68em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+    color: rgba(191, 195, 205, 0.8);
+    background-image: none;
+    background-color: transparent; }
+  .csstage GtkViewport {
+    background-color: transparent;
+    background-image: none; }
+  .csstage .osk-button {
+    -gtk-icon-style: requested;
+    border-color: rgba(191, 195, 205, 0.25);
+    border-image: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    -gtk-outline-radius: 0.6em;
+    outline-color: transparent;
+    color: rgba(191, 195, 205, 0.7);
+    border-width: 1px;
+    padding: 0.25em; }
+    .csstage .osk-button image {
+      color: rgba(191, 195, 205, 0.7); }
+    .csstage .osk-button:disabled image, .csstage label:disabled selection.osk-button image, label:disabled .csstage selection.osk-button image {
+      color: #333333; }
+    .csstage .osk-button:focus {
+      background-color: rgba(85, 85, 85, 0.3);
+      border-color: orangered;
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+    .csstage .osk-button:hover {
+      border-color: rgba(85, 85, 85, 0.2);
+      background-color: rgba(85, 85, 85, 0.2);
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+      .csstage .osk-button:hover:focus {
+        border-color: orangered;
+        background-color: rgba(85, 85, 85, 0.4);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+    .csstage .osk-button:active {
+      border-color: orangered;
+      background-color: rgba(85, 85, 85, 0.5);
+      box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+      .csstage .osk-button:active:focus {
+        border-color: orangered;
+        background-color: rgba(85, 85, 85, 0.55);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.1); }
+  .csstage .osk-popover {
+    background-color: #000000; }
+
 /*********
  * Geary *
  *********/
