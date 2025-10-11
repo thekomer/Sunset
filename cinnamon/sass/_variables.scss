@@ -5,7 +5,8 @@
   @return round($em_value) / 1000 * 1em;
 }
 
-@mixin fontsize($size, $base: 16px, $unit: pt) { // convert font size in pt to em
+@mixin fontsize($size, $base: 16px, $unit: pt) {
+  // convert font size in pt to em
   // if pt, convert into unitless value with the assumption: 1pt = 1.091px
   $adjusted_size: if($unit == pt, $size * 1.091, $size) * 1000;
   $rounded_size: round($adjusted_size / $base) / 1000;

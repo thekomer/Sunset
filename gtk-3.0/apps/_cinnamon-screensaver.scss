@@ -2,17 +2,15 @@
  * Cinnamon screensaver  *
  * * * * * * * * * * * * */
 
-//FIXME: transform pt to em
-//FIXME: this theme introduced bug, somehow it changes keyboard layout?!?! Only logout and login helps. Is this really theme bug or screensaver bug? What? How?!?!? (don't use OSD on login screen for now)
+//FIXME: this theme introduced a bug to OSK? It messes up keyboard layout and only killing session helps. Is this really theme bug or screensaver bug? What? How?!?!? Iz happens if I insanely click OSK. So, use OSK wisely. (In normal use I cant reproduce the bug)
 
 .csstage {
 
-  font-size: 16pt;
-
   .unlockbox {
     color: $fg_color;
-    font-size: 20px;
+    font-size: 1.2em; // 20px;
     text-shadow: 1px 1px transparentize($black, 0.2);
+    margin-bottom: 1.2em;
   }
 
   .clock {
@@ -41,27 +39,27 @@
   }
 
   .notificationwidget, .powerwidget {
-    font-size: 16pt;
+    font-size: 1em; // 16pt;
     font-weight: bold;
     color: $fg_color;
     background-color: transparent;
     background-image: none;
     text-shadow: 1px 1px transparentize($black, 0.2);
-    padding: 8pt;
+    padding: 0.5em; //8pt;
   }
 
   .auth-message {
-    font-size: 16pt;
+    font-size: 0.9em; // 16pt;
     color: lighten($red, 10%);
   }
 
   .caps-message {
-    font-size: 15px;
+    font-size: 0.8em; // 15px;
     color: $yellow;
   }
 
   .framedimage {
-    padding: 1em;
+    padding: 0.5em;
     border-radius: $radius;
     border: .25em solid $accent_bg_color;
     background-color: $osd_bg_color;
@@ -71,6 +69,8 @@
 
   .passwordentry {
     //font-size: 15px;
+    font-size: 0.8em;
+    padding: 0.2em 0.4em;
     box-shadow: none;
     border-color: transparentize($white, .8);
     border-style: solid;
@@ -93,13 +93,13 @@
     }
 
     image.left {
-      padding-right: 10pt;
+      padding-right: 0.7em; // 10pt;
     }
 
     // Use :backdrop for alt-text keyboard layout
     &:backdrop {
       font-family: monospace;
-      font-size: 15px;
+      font-size: 0.7em; //15px;
       color: $accent_fg_color;
     }
 
@@ -109,10 +109,10 @@
       box-shadow: 1px 1px $shadow_color;
     }
 
-    //FIXME: everything braes if I modify hover and active. I don't know why.
+    //FIXME: everything brakes if I modify hover and active. I don't know why.
     &:hover {
-      border-color: transparentize($gray, 0.8);
-      background-color: transparentize($gray, 0.8);
+      border-color: transparentize($gray, 0.7);
+      background-color: transparentize($gray, 0.7);
       box-shadow: 1px 1px $shadow_color;
 
       &:focus {
@@ -150,7 +150,7 @@
     outline-color: transparent;
     color: transparentize($fg_color, .3); // transparentize($white, .3);
     border-width: 1px;
-    padding: 4px;
+    padding: 0.25em; // 4px;
 
     image {
       color: transparentize($fg_color, .3); // transparentize($white, .3);
@@ -167,6 +167,12 @@
     }
 
     &:hover {
+      color: $fg_color;
+
+      image {
+        color: $fg_color;
+      }
+
       border-color: transparentize($gray, 0.8);
       background-color: transparentize($gray, 0.8);
       box-shadow: 1px 1px $shadow_color;
@@ -209,12 +215,12 @@
   scale.volumeslider slider {
     min-height: 1.5em; //24px;
     min-width: 0.24em; //4px;
-    margin: -9px;
+    margin: -0.64em; // -9px;
   }
 
   .trackname {
     font-style: italic;
-    font-size: 0.88em;
+    font-size: 1em;
     text-shadow: 1px 1px transparentize($black, 0.2);
     color: $fg_color;
     background-image: none;
@@ -224,7 +230,7 @@
   .albumartist {
     // font-family: ubuntu;
     font-style: italic;
-    font-size: 0.68em;
+    font-size: 0.8em;
     text-shadow: 1px 1px transparentize($black, 0.2);
     color: transparentize($fg_color, 0.2);
     background-image: none;
@@ -248,7 +254,9 @@
     outline-color: transparent;
     color: transparentize($fg_color, 0.3);
     border-width: 1px;
-    padding: 0.25em;
+    padding: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
 
     image {
       color: transparentize($fg_color, 0.3);
@@ -268,6 +276,7 @@
       border-color: transparentize($gray, 0.8);
       background-color: transparentize($gray, 0.8);
       box-shadow: 1px 1px $shadow_color;
+      color: $fg_color;
 
       &:focus {
         border-color: $accent_fg_color;
@@ -281,6 +290,7 @@
       border-color: $accent_fg_color;
       background-color: transparentize($gray, 0.5);
       box-shadow: 1px 1px $shadow_color;
+      color: $fg_color;
 
       &:focus {
         border-color: $accent_fg_color;
@@ -294,7 +304,7 @@
   }
 
   .osk-popover {
-    background-color: $black;
+    background-color: $osd_bg_color;
   }
 
 }
