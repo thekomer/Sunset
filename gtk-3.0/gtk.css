@@ -7129,7 +7129,7 @@ SheetStyleDialog.unity-force-quit {
   padding: 0.5em;
   border-radius: 0.6em;
   border: 0.25em solid #cc3700;
-  background-color: #ffffff;
+  background-color: rgba(6, 8, 13, 0.85);
   background-clip: border-box;
   box-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.1); }
 
