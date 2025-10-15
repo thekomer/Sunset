@@ -1485,6 +1485,7 @@ StScrollBar StButton#hhandle {
   spacing: 0.2em; }
 
 .keyboard-key {
+  background-color: rgba(27, 33, 57, 0.8);
   min-height: 2em;
   min-width: 2em;
   padding: 0;
