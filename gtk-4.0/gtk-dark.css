@@ -4904,6 +4904,14 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
   border-style: none solid solid none;
   border-color: #0E111D; }
 
+/* * * * * * * * * * *
+ * Leaflet treeview  *
+ * * * * * * * * * * */
+leaflet.unfolded treeview {
+  background-color: #06080d; }
+  leaflet.unfolded treeview:backdrop {
+    background-color: #06080d; }
+
 /**********************
  * Window Decorations *
  *********************/

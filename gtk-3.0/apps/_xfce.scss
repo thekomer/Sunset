@@ -38,14 +38,14 @@
 	color: $panel_fg_color;
 	border-radius: 0;
 	border: none;
-	background-color: transparentize($panel_bg_color, 1);
+	background-color: transparentize($panel_bg_color, 0); // 1 -> 0
 
 	&:hover {
 		color: $selected_fg_color;
 		border: none;
 		//background-color: lighten($panel_bg_color, 10%);
 		background-color: transparentize($selected_bg_color, 0.7);
-		border-radius: 7px;
+		border-radius: 0; // 7px;
 	}
 	&:active, &:checked {
 		color: $selected_fg_color;
@@ -56,7 +56,7 @@
 		/* to gradient transparent panel buttons */
 		background: linear-gradient(to right, transparentize($theme-gradient-start, 0.4), transparentize($theme-gradient-end,0.4));
 		// box-shadow: 0px 0px 5px transparentize($selected_bg_color, 0.02);
-		border-radius: 7px;
+		border-radius: 0; // 7px;
 		label, image { color: inherit; }
 	}
 }
@@ -65,7 +65,7 @@
 	color: $panel_fg_color;
 	border-radius: 0;
 	border: none;
-	background-color: transparentize($panel_bg_color, 1);
+	background-color: transparentize($panel_bg_color, 0); // 1 -> 0
 
 	&:hover {
 		color: $selected_fg_color;
@@ -149,7 +149,7 @@ wnck-pager {
 
 // Panel menu button
 #whiskermenu-button {
-	border-radius: 0.6em;
+	border-radius: 0; //0.6em;
 }
 
 // category button

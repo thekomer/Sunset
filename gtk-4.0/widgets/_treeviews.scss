@@ -245,3 +245,14 @@ button.dnd, header.button.dnd {
 		}
 	}
 }
+
+/* * * * * * * * * * *
+ * Leaflet treeview  *
+ * * * * * * * * * * */
+
+ leaflet.unfolded treeview {
+	background-color: $headerbar_color;
+  &:backdrop {
+    background-color: $backdrop_headerbar_bg_color;
+  }
+}

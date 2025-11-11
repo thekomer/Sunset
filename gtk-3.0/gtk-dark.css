@@ -5075,6 +5075,14 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
   border-style: none solid solid none;
   border-color: #0E111D; }
 
+/* * * * * * * * * * *
+ * Leaflet treeview  *
+ * * * * * * * * * * */
+leaflet.unfolded treeview {
+  background-color: #06080d; }
+  leaflet.unfolded treeview:backdrop {
+    background-color: #06080d; }
+
 /* * * * * *
  * Windows *
  * * * * * */
@@ -6309,19 +6317,19 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: white;
   border-radius: 0;
   border: none;
-  background-color: rgba(6, 8, 13, 0); }
+  background-color: #06080d; }
   .xfce4-panel.panel button:hover {
     color: #ffffff;
     border: none;
     background-color: rgba(204, 55, 0, 0.3);
-    border-radius: 7px; }
+    border-radius: 0; }
   .xfce4-panel.panel button:active, .xfce4-panel.panel button:checked {
     color: #ffffff;
     font-weight: bold;
     /* to underline button */
     /* to gradient transparent panel buttons */
     background: linear-gradient(to right, rgba(204, 11, 0, 0.6), rgba(204, 99, 0, 0.6));
-    border-radius: 7px; }
+    border-radius: 0; }
     .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active image, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
       color: inherit; }
 
@@ -6329,7 +6337,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: white;
   border-radius: 0;
   border: none;
-  background-color: rgba(6, 8, 13, 0); }
+  background-color: #06080d; }
   .xfce4-panel.panel button.flat:hover {
     color: #ffffff;
     border: none;
@@ -6395,7 +6403,7 @@ wnck-pager {
     border-color: #cc3700; }
 
 #whiskermenu-button {
-  border-radius: 0.6em; }
+  border-radius: 0; }
 
 #whiskermenu-window button {
   background-color: transparent;
