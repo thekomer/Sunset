@@ -40,13 +40,13 @@
      inkscape:window-height="1041"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="18.666667"
-     inkscape:cx="106.5"
-     inkscape:cy="219"
+     inkscape:zoom="2.7657701"
+     inkscape:cx="190.00133"
+     inkscape:cy="317.45227"
      inkscape:window-x="26"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g729"
+     inkscape:current-layer="g528"
      inkscape:document-rotation="0"
      inkscape:showpageshadow="0"
      inkscape:pagecheckerboard="1"
@@ -2808,7 +2808,7 @@
        y="290"
        width="10"
        height="10"
-       style="fill:#6e6e70" />
+       style="fill:#ff6a00;fill-opacity:1" />
     <rect
        id="menubaritem-toggled-bottom"
        x="285"
@@ -2836,7 +2836,7 @@
        y="290"
        width="10"
        height="10"
-       style="fill:#6e6e70" />
+       style="fill:#ff6a00;fill-opacity:1" />
     <rect
        id="menubaritem-pressed-right"
        x="330"
@@ -2850,7 +2850,7 @@
        y="290"
        width="10"
        height="10"
-       style="fill:#6e6e70" />
+       style="fill:#ff6a00;fill-opacity:1" />
     <rect
        id="menubaritem-pressed-top"
        x="320"
