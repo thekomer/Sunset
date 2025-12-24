@@ -1131,7 +1131,8 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 0;
   border-right-style: none;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1); }
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo:first-child, .linked:not(.vertical) > combobox:last-child > box > button.combo:first-child, .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), combobox.linked button:first-child:nth-child(2):dir(ltr), combobox.linked .linked.vertical > combobox:first-child > box > button.combo:nth-child(2):dir(ltr), .inline-toolbar progressbar:backdrop progress:first-child, progressbar:backdrop .inline-toolbar progress:first-child, .inline-toolbar progressbar:backdrop trough:first-child, progressbar:backdrop .inline-toolbar trough:first-child, .inline-toolbar button:first-child, .inline-toolbar .linked.vertical > combobox:first-child > box > button.combo, .inline-toolbar button:first-child:backdrop, .selection-mode .linked > button.titlebutton:first-child, progressbar:backdrop .linked > progress:first-child, progressbar:backdrop .linked > trough:first-child, .linked > button:first-child, .linked.vertical > combobox:first-child > box.linked > button.combo, .linked > button:first-child:hover, .linked > button:first-child:active, .linked > button:first-child:checked, .linked > button:first-child:backdrop {
@@ -1147,7 +1148,8 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
 
 .linked:not(.vertical) > combobox:only-child > box > button.combo, .linked:not(.vertical) > combobox:last-child > box > button.combo:only-child, .linked:not(.vertical) > combobox:first-child > box > button.combo:only-child, combobox.linked button:only-child:nth-child(2):dir(rtl), combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(rtl), combobox.linked button:only-child:nth-child(2):dir(ltr), combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(ltr), .inline-toolbar progressbar:backdrop progress:only-child, progressbar:backdrop .inline-toolbar progress:only-child, .inline-toolbar progressbar:backdrop trough:only-child, progressbar:backdrop .inline-toolbar trough:only-child, .inline-toolbar button:only-child, .inline-toolbar .linked.vertical > combobox:only-child > box > button.combo, .inline-toolbar button:only-child:backdrop, .selection-mode .linked > button.titlebutton:only-child, progressbar:backdrop .linked > progress:only-child, progressbar:backdrop .linked > trough:only-child, .linked > button:only-child, .linked.vertical > combobox:only-child > box.linked > button.combo, .linked > button:only-child:hover, .linked > button:only-child:active, .linked > button:only-child:checked, .linked > button:only-child:backdrop {
   border-radius: 0.6em;
-  margin: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
   border-style: solid; }
 
 .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child {
@@ -1163,13 +1165,15 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
 
 .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child {
   border-radius: 0.6em;
-  margin: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
   border-style: solid; }
 
 .linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > combobox:first-child > box > button.combo, .selection-mode .linked.vertical > button.titlebutton, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, .linked.vertical > button:backdrop {
   border-style: solid solid none solid;
   border-radius: 0;
-  margin: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .linked.vertical > combobox:only-child > box > button.combo:first-child, .linked.vertical > combobox:last-child > box > button.combo:first-child, .linked.vertical > combobox:first-child > box > button.combo, combobox.linked .linked.vertical > combobox:only-child > box > button.combo:nth-child(2):dir(rtl), combobox.linked .linked.vertical > combobox:last-child > box > button.combo:nth-child(2):dir(rtl), .selection-mode .linked.vertical > button.titlebutton:first-child, combobox.linked label:backdrop .selection-mode .linked.vertical > button.titlebutton:nth-child(2):dir(rtl), .selection-mode combobox.linked label:backdrop .linked.vertical > button.titlebutton:nth-child(2):dir(rtl), .linked.vertical > button:first-child, .linked:not(.vertical) > combobox:first-child > box.linked.vertical > button.combo, combobox.linked .linked.vertical > button:nth-child(2):dir(rtl), .linked.vertical > button:first-child:hover, .linked.vertical > button:first-child:active, .linked.vertical > button:first-child:checked, .linked.vertical > button:first-child:backdrop, progressbar:backdrop .linked.vertical > progress:first-child, progressbar:backdrop .linked.vertical > trough:first-child {
   border-top-left-radius: 0.6em;
@@ -1184,7 +1188,8 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
 
 .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > combobox:last-child > box > button.combo:only-child, .linked.vertical > combobox:first-child > box > button.combo:only-child, .selection-mode .linked.vertical > button.titlebutton:only-child, .linked.vertical > button:only-child, .linked:not(.vertical) > combobox:only-child > box.linked.vertical > button.combo, .linked.vertical > button:only-child:hover, .linked.vertical > button:only-child:active, .linked.vertical > button:only-child:checked, .linked.vertical > button:only-child:backdrop, progressbar:backdrop .linked.vertical > progress:only-child, progressbar:backdrop .linked.vertical > trough:only-child {
   border-radius: 0.6em;
-  margin: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   border-style: solid; }
 
 .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child {
@@ -1200,7 +1205,8 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
 
 .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child {
   border-radius: 0.6em;
-  margin: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   border-style: solid; }
 
 .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, .scale-popup button:hover, button:link:hover, button:link:active, button:link:checked,
@@ -2571,9 +2577,6 @@ headerbar {
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px; }
-  .titlebar entry, .titlebar:not(headerbar) entry,
-  headerbar entry {
-    min-height: 24px; }
   .titlebar button, .titlebar:not(headerbar) button,
   headerbar button {
     color: #bfc3cd;

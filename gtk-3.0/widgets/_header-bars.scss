@@ -38,7 +38,7 @@ headerbar {
     @extend .dim-label;
   }
 
-  entry { min-height: 24px;}
+//  entry { min-height: 24px;}
 
   button {
     @include button(normal-header);
