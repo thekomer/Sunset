@@ -28,6 +28,7 @@ button {
     min-height: 20px;
     min-width: 16px;
     padding: 2px 6px;
+    margin: 2px;
     border: 1px solid $borders_color;
     border-radius: $radius; //border-radius: 4px;
     transition: $button_transition;
@@ -171,6 +172,7 @@ button {
 
   // big standalone buttons like in Documents pager
   &.osd {
+    margin: 2px;
     min-width: 24px;
     min-height: 20px;
 
@@ -480,6 +482,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   border: 1px solid $borders_color;
   border-radius: 0;
   border-right-style: none;
+  margin: 0px;
   box-shadow: inset 0px 1px 0px 0px $top_highlight;
 }
 
@@ -489,16 +492,19 @@ toolbar.inline-toolbar toolbutton:backdrop {
   &:first-child {
     border-top-left-radius: $radius; //3px;
     border-bottom-left-radius: $radius; //3px;
+    margin-left: 2px;
   }
 
   &:last-child {
     border-top-right-radius: $radius; //3px;
     border-bottom-right-radius: $radius; //3px;
+    margin-right: 2px;
     border-right-style: solid;
   }
 
   &:only-child {
     border-radius: $radius; //3px;
+    margin: 2px;
     border-style: solid;
   }
 }
@@ -509,16 +515,19 @@ toolbar.inline-toolbar toolbutton:backdrop {
   &:first-child {
     border-top-left-radius: $radius; //3px;
     border-bottom-left-radius: $radius; //3px;
+    margin-left: 2px;
   }
 
   &:last-child {
     border-top-right-radius: $radius; //3px;
     border-bottom-right-radius: $radius; //3px;
+    margin-right: 2px;
     border-right-style: solid;
   }
 
   &:only-child {
     border-radius: $radius; //3px;
+    margin: 2px;
     border-style: solid;
   }
 }
@@ -526,6 +535,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
 %linked_vertical_middle {
   border-style: solid solid none solid;
   border-radius: 0;
+  margin: 0;
 }
 
 %linked_vertical{
@@ -534,16 +544,19 @@ toolbar.inline-toolbar toolbutton:backdrop {
   &:first-child {
     border-top-left-radius: $radius; //3px;
     border-top-right-radius: $radius; //3px;
+    margin-top: 2px;
   }
 
   &:last-child {
     border-bottom-left-radius: $radius;  //3px;
     border-bottom-right-radius: $radius; //3px;
+    margin-bottom: 2px;
     border-style: solid;
   }
 
   &:only-child {
     border-radius: $radius; //3px;
+    margin: 2px;
     border-style: solid;
   }
 }
@@ -554,16 +567,19 @@ toolbar.inline-toolbar toolbutton:backdrop {
   &:first-child {
     border-top-left-radius: $radius; //3px;
     border-top-right-radius: $radius; //3px;
+    margin-top: 2px;
   }
 
   &:last-child {
     border-bottom-left-radius: $radius; //3px;
     border-bottom-right-radius: $radius; //3px;
+    margin-bottom: 2px;
     border-style: solid;
   }
 
   &:only-child {
     border-radius: $radius; //3px;
+    margin: 2px;
     border-style: solid;
   }
 }
