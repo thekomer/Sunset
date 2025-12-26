@@ -51,3 +51,9 @@ calendar {
 		border-color: $backdrop_borders_color;
 	}
 }
+
+/* dirty fix for gnome-calendar */
+
+datechooser {
+	background: $bg_color;
+}

@@ -1273,6 +1273,10 @@ calendar {
     color: #9ca0aa;
     border-color: rgba(59, 62, 71, 0.145); }
 
+/* dirty fix for gnome-calendar */
+datechooser {
+  background: #0E111D; }
+
 /*************************
  * Check and Radio Items *
  *************************/
