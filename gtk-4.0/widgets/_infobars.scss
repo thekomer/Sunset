@@ -53,7 +53,11 @@ infobar {
 
     &:hover,
     &:focus {
-      box-shadow: 0 1px 2px 0 transparentize(black, 0.6);
+      box-shadow: 0 1px 2px 0 transparentize(white, 0.6);
+      color: $selected_fg_color;
+      &:active {
+        color: $destructive_fg_color;
+      }
     }
 
     &:disabled {

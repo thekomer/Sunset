@@ -2982,7 +2982,10 @@ infobar {
         color: rgba(191, 195, 205, 0.5);
         box-shadow: none; }
     .error button:hover, .question button:hover, .warning button:hover, .info button:hover, .error button:focus, .question button:focus, .warning button:focus, .info button:focus {
-      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); }
+      box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.4);
+      color: #ffffff; }
+      .error button:hover:active, .question button:hover:active, .warning button:hover:active, .info button:hover:active, .error button:focus:active, .question button:focus:active, .warning button:focus:active, .info button:focus:active {
+        color: #ff3333; }
     .error button:disabled, .question button:disabled, .warning button:disabled, .info button:disabled {
       background: rgba(19, 23, 39, 0.6);
       color: rgba(191, 195, 205, 0.5);

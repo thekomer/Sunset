@@ -72,6 +72,7 @@ $warning_color: if($variant == 'light', $orange, darken($orange,10%));
 $error_color: if($variant == 'light', $red, darken($red,5%));
 $success_color: if($variant == 'light', $cyan, darken($cyan,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
+$destructive_fg_color: if($variant == 'light', lighten($red,5%), lighten($red,10%));
 $destructive_gradient_start: adjust-hue($destructive_color, -$gradient_degree);
 $destructive_gradient_end: adjust-hue($destructive_color, $gradient_degree);
 
