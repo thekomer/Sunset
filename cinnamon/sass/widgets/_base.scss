@@ -199,6 +199,8 @@ StScrollBar {
 
 .user-widget.horizontal { spacing: $base_padding; }
 
+.user-widget.vertical { spacing: $base_padding; }
+
 .user-widget.vertical .user-widget-label {
   @extend %title_4;
   color: $fg_color;

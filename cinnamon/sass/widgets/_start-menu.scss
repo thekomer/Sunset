@@ -78,7 +78,9 @@ $appmenu_large_padding: 0.8em; // 15px;
     border-right-width: 1px;
     border-color: $borders_color;
 
-    &-user-box {}
+    &-user-box {
+      margin-bottom: 0.4em;
+    }
 
     .appmenu-system-button {
     margin-top: 0.5em;
