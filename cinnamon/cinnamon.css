@@ -1080,7 +1080,7 @@ StScrollBar StButton#hhandle {
     padding-top: 8px;
     min-width: 350px;
     border: 1px solid rgba(191, 195, 205, 0.05);
-    background-color: rgba(22, 27, 46, 0.25);
+    background-color: rgba(22, 27, 46, 0.3);
     border-radius: 0.6em; }
   .calendar-today-home-button, .calendar-today-home-button-enabled {
     margin-left: 8px;
@@ -1880,10 +1880,10 @@ StScrollBar StButton#hhandle {
 
 .appmenu-sidebar {
   padding: 0.6em 0px;
-  background-color: rgba(14, 17, 29, 0.25);
+  background-color: rgba(22, 27, 46, 0.3);
   border-radius: 0.6em 0 0 0.6em;
   border-right-width: 1px;
-  border-color: rgba(10, 12, 20, 0.95); }
+  border-color: rgba(191, 195, 205, 0.05); }
   .appmenu-sidebar .appmenu-system-button {
     margin-top: 0.5em;
     padding: 5.6px;

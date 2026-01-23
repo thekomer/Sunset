@@ -73,10 +73,10 @@ $appmenu_large_padding: 0.8em; // 15px;
 
   &-sidebar {
     padding: $appmenu_padding 0px;
-    background-color: transparentize($bg_color, 0.75); //$base_color;
+    background-color: transparentize($base_color, 0.70); //$base_color;
     border-radius: $border_radius 0 0 $border_radius;
     border-right-width: 1px;
-    border-color: $osd_bg_color; //$borders_color;
+    border-color: $borders_color;
 
     &-user-box {}
 
