@@ -2286,7 +2286,7 @@ StScrollBar StButton#hhandle {
 .grouped-window-list-number-label {
   z-index: 99;
   color: #000000;
-  font-size: 0.7em;
+  font-size: 0.5em;
   font-weight: 700;
   text-shadow: none;
   margin: 0; }
@@ -2295,6 +2295,19 @@ StScrollBar StButton#hhandle {
   border-radius: 9999px;
   border-width: 0px;
   background-color: #ffffff; }
+
+.grouped-window-list-notifications-badge-label {
+  z-index: 99;
+  color: #ffffff;
+  font-size: 0.4em;
+  font-weight: 700;
+  text-shadow: none;
+  margin: 0; }
+
+.grouped-window-list-notifications-badge {
+  border-radius: 100%;
+  background-color: #cc3700;
+  color: #ffffff; }
 
 .grouped-window-list-thumbnail-menu {
   color: #BFC3CD;

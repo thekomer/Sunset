@@ -187,7 +187,7 @@
   &-number-label {
     z-index: 99;
     color: $black;
-    font-size: 0.7em;
+    font-size: 0.5em;
     font-weight: 700;
     text-shadow: none;
     margin: 0;
@@ -197,6 +197,22 @@
     border-radius: 9999px;
     border-width: 0px;
     background-color: $white;
+  }
+
+  &-notifications-badge-label {
+    z-index: 99;
+    color: $white;
+    font-size: 0.4em;
+    font-weight: 700;
+    text-shadow: none;
+    margin: 0;
+  }
+
+  &-notifications-badge {
+    border-radius: 100%;
+    background-color: $accent_bg_color;
+    color: $white;
+    //font-size: 13px;
   }
 
   &-thumbnail-menu {
