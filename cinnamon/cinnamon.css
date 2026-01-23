@@ -31,7 +31,7 @@ stage {
  * Reusable placeholders for common elements *
  * * * * * * * * * * * * * * * * * * * * * * */
 /* entries */
-#menu-search-entry, .expo-workspaces-name-entry, #notification StEntry, .prompt-dialog-password-entry, .run-dialog-entry {
+#menu-search-entry, #appmenu-search-entry, .expo-workspaces-name-entry, #notification StEntry, .prompt-dialog-password-entry, .run-dialog-entry {
   min-height: 1.2em;
   border-radius: 0.6em;
   padding: 0.5em 1.5em;
@@ -59,23 +59,23 @@ stage {
     icon-size: 1em;
     color: #BFC3CD; }
 
-#menu-search-entry, .expo-workspaces-name-entry {
+#menu-search-entry, #appmenu-search-entry, .expo-workspaces-name-entry {
   selected-color: white;
   selection-background-color: rgba(204, 55, 0, 0.7);
   background-color: rgba(22, 27, 46, 0.7);
   color: #BFC3CD; }
-  #menu-search-entry:focus, .expo-workspaces-name-entry:focus {
+  #menu-search-entry:focus, #appmenu-search-entry:focus, .expo-workspaces-name-entry:focus {
     background-color: rgba(22, 27, 46, 0.7);
     color: #BFC3CD;
     border-color: orangered; }
-  #menu-search-entry:insensitive, .expo-workspaces-name-entry:insensitive {
+  #menu-search-entry:insensitive, #appmenu-search-entry:insensitive, .expo-workspaces-name-entry:insensitive {
     background-color: #111524;
     color: rgba(191, 195, 205, 0.5); }
-  #menu-search-entry StLabel.hint-text, .expo-workspaces-name-entry StLabel.hint-text {
+  #menu-search-entry StLabel.hint-text, #appmenu-search-entry StLabel.hint-text, .expo-workspaces-name-entry StLabel.hint-text {
     color: rgba(191, 195, 205, 0.3); }
-  #menu-search-entry .capslock-warning, .expo-workspaces-name-entry .capslock-warning {
+  #menu-search-entry .capslock-warning, #appmenu-search-entry .capslock-warning, .expo-workspaces-name-entry .capslock-warning {
     icon-size: 1.091em; }
-  #menu-search-entry StIcon.peek-password, .expo-workspaces-name-entry StIcon.peek-password {
+  #menu-search-entry StIcon.peek-password, #appmenu-search-entry StIcon.peek-password, .expo-workspaces-name-entry StIcon.peek-password {
     icon-size: 1em;
     color: #BFC3CD; }
 
@@ -233,7 +233,7 @@ stage {
   font-weight: 700;
   font-size: 1em; }
 
-.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .calendar-event-countdown, .caps-lock-warning-label {
+.appmenu-application-button-description, .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .calendar-event-countdown, .caps-lock-warning-label {
   font-weight: 400;
   font-size: 0.818em; }
 
@@ -1848,6 +1848,132 @@ StScrollBar StButton#hhandle {
 
 #panel:highlight {
   background-color: #371309; }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * start menu in Cinnamon >= v6.6 (with new class names)             *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.appmenu-category-button-greyed, .appmenu-category-button-selected, .appmenu-category-button, .appmenu-application-button-selected, .appmenu-application-button, .appmenu-sidebar-button {
+  padding: 4px;
+  spacing: 2px;
+  border-radius: 0.6em; }
+
+.appmenu-background .popup-menu-content {
+  padding: 0; }
+
+.appmenu-main-box {
+  spacing: 0.6em; }
+
+.appmenu-right-box {
+  spacing: 0.3em;
+  padding: 0.6em 0.6em; }
+
+.appmenu-categories-applications-box {
+  spacing: 0.8em; }
+  .appmenu-categories-applications-box:top {
+    padding-top: 0.3em; }
+
+.appmenu-applications-box {
+  padding-right: 0.3em; }
+
+.appmenu-search-box {
+  spacing: 0.6em; }
+
+.appmenu-sidebar {
+  padding: 0.6em 0px;
+  background-color: rgba(14, 17, 29, 0.25);
+  border-radius: 0.6em 0 0 0.6em;
+  border-right-width: 1px;
+  border-color: rgba(10, 12, 20, 0.95); }
+  .appmenu-sidebar .appmenu-system-button {
+    margin-top: 0.5em;
+    padding: 5.6px;
+    border: 1px solid rgba(191, 195, 205, 0.05);
+    border-radius: 9999px; }
+    .appmenu-sidebar .appmenu-system-button-shutdown {
+      background-color: #87090f; }
+      .appmenu-sidebar .appmenu-system-button-shutdown:hover {
+        color: #ffffff;
+        background-color: #87090f; }
+    .appmenu-sidebar .appmenu-system-button-lock:hover, .appmenu-sidebar .appmenu-system-button-logout:hover {
+      color: #ffffff;
+      background-color: rgba(54, 65, 112, 0.25); }
+
+.appmenu-system-box {
+  spacing: 0.6em; }
+
+.appmenu-sidebar-button {
+  transition-duration: 200;
+  border: 1px solid transparent;
+  min-width: 9em;
+  padding: 3px 4px 3px 4px;
+  margin: 0 0.6em 0 0.6em; }
+  .appmenu-sidebar-button:hover {
+    background-color: rgba(54, 65, 112, 0.25);
+    color: #ffffff;
+    transition-duration: 200;
+    border: 1px solid rgba(191, 195, 205, 0.05); }
+
+.appmenu-system-button {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding: 5.6px;
+  border: 1px solid rgba(191, 195, 205, 0.05);
+  border-radius: 9999px; }
+  .appmenu-system-button-shutdown {
+    background-color: #87090f; }
+    .appmenu-system-button-shutdown:hover {
+      color: #ffffff;
+      background-color: #87090f; }
+  .appmenu-system-button-lock:hover, .appmenu-system-button-logout:hover {
+    color: #ffffff;
+    background-color: rgba(54, 65, 112, 0.25); }
+
+.appmenu-application-button {
+  transition-duration: 200;
+  border: 1px solid transparent; }
+  .appmenu-application-button-label {
+    padding: 0; }
+  .appmenu-application-button-description {
+    color: #81858f; }
+  .appmenu-application-button:highlighted {
+    font-weight: bold; }
+  .appmenu-application-button-selected {
+    background-color: rgba(54, 65, 112, 0.25);
+    color: #ffffff;
+    transition-duration: 200;
+    border: 1px solid rgba(191, 195, 205, 0.05); }
+    .appmenu-application-button-selected:highlighted {
+      font-weight: bold; }
+
+.appmenu-category-button {
+  transition-duration: 200;
+  border: 1px solid transparent;
+  min-width: 9em; }
+  .appmenu-category-button-label {
+    padding: 0; }
+  .appmenu-category-button:hover {
+    background-color: rgba(54, 65, 112, 0.25);
+    color: #ffffff;
+    transition-duration: 200;
+    border: 1px solid rgba(191, 195, 205, 0.05); }
+  .appmenu-category-button-selected {
+    background-gradient-direction: horizontal;
+    background-gradient-start: #cc0400;
+    background-gradient-end: #cc6a00;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid rgba(191, 195, 205, 0.05);
+    transition-duration: 200; }
+  .appmenu-category-button-greyed {
+    color: #555863;
+    font-style: italic;
+    transition-duration: 200; }
+    .appmenu-category-button-greyed StIcon {
+      opacity: 0.5; }
+
+.appmenu-search-entry-icon {
+  icon-size: 1.091em;
+  color: orangered; }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * start menu in Cinnamon < v6.6 (will get deprecated)               *

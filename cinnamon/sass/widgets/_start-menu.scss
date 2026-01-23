@@ -24,24 +24,22 @@
 //    |     └─ appmenu-favs-box
 //    └─ appmenu-system-box
 
-$appmenu_small_padding: 5px;
-$appmenu_padding: 10px;
-$appmenu_large_padding: 15px;
+$appmenu_small_padding: 0.3em; // 5px;
+$appmenu_padding: 0.6em; // 10px;
+$appmenu_large_padding: 0.8em; // 15px;
 
 %appmenu_button {
   padding: $base_padding;
   spacing: $base_margin;
-  border-radius: $base_border_radius;
+  border-radius: $border_radius; // $base_border_radius;
 }
 
 .appmenu {
 
   // this can be used to color the entire menu background but we aren't using it here
   &-background {
-    // using this to override the default padding on menus so widgets can span edge
-    // to edge. The side effect is that some of our internal container widgets
-    // will need to have a border-radius added to them or the corners will poke out
-    // the edges of the menu.
+    // using this to override the default padding on menus so widgets can span
+    // the edge to edge.
     .popup-menu-content { padding: 0; }
   }
 
@@ -75,19 +73,29 @@ $appmenu_large_padding: 15px;
 
   &-sidebar {
     padding: $appmenu_padding 0px;
-    background-color: $base_color;
-    border-radius: $larger_border_radius 0 0 $larger_border_radius;
+    background-color: transparentize($bg_color, 0.75); //$base_color;
+    border-radius: $border_radius 0 0 $border_radius;
     border-right-width: 1px;
-    border-color: $borders_color;
+    border-color: $osd_bg_color; //$borders_color;
 
     &-user-box {}
 
     .appmenu-system-button {
-      background-color: lighten($base_color, 10%);
-      &-lock:hover { background-color: lighten($base_color, 15%); }
-      &-logout:hover { background-color: lighten($base_color, 15%); }
-      &-shutdown { background-color: $destructive_bg_color; }
-      &-shutdown:hover { background-color: lighten($destructive_bg_color, 5%); }
+    margin-top: 0.5em;
+    padding: $base_padding * 1.4;
+    border: 1px solid $osd_borders_color;
+    border-radius: 9999px;
+    &-shutdown {
+      background-color: $destructive_bg_color;
+        &:hover {
+          color: $selected_fg_color;
+          background-color: $destructive_bg_color;
+        }
+    }
+    &-lock:hover, &-logout:hover {
+      color: $selected_fg_color;
+      background-color: $hover_bg_color;
+    }
     }
   }
 
@@ -97,31 +105,51 @@ $appmenu_large_padding: 15px;
 
   &-sidebar-button {
     @extend %appmenu_button;
+    transition-duration: 200;
+    border: 1px solid transparent;
+    min-width: 9em;
+
 
     padding: 3px $base_padding 3px $base_padding;
     margin: 0 $appmenu_padding 0 $appmenu_padding;
 
     &:hover {
-      background-color: $lighter_bg_color;
-      border-color: $borders_color;
+      background-color: $hover_bg_color; // $lighter_bg_color;
+      color: $selected_fg_color;
+      transition-duration: 200;
+
+      // border-color: $osd_border_color; // $borders_color;
+      border: 1px solid $osd_borders_color;
+
     }
   }
 
   &-system-button {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     padding: $base_padding * 1.4;
-    border: 1px solid $borders_color;
+    border: 1px solid $osd_borders_color;
     border-radius: 9999px;
-    background-color: lighten($bg_color, 10%);
-    &-shutdown { background-color: $destructive_bg_color; }
-    &-lock:hover { background-color: lighten($bg_color, 15%); }
-    &-logout:hover { background-color: lighten($bg_color, 15%); }
-    &-shutdown:hover { background-color: $destructive_bg_color; }
+    &-shutdown {
+      background-color: $destructive_bg_color;
+        &:hover {
+          color: $selected_fg_color;
+          background-color: $destructive_bg_color;
+        }
+    }
+    &-lock:hover, &-logout:hover {
+      color: $selected_fg_color;
+      background-color: $hover_bg_color;
+    }
   }
 
   &-application-button {
     @extend %appmenu_button;
+    transition-duration: 200;
+    border: 1px solid transparent;
 
     &-label { padding: 0; }
+
     &-description {
       @extend %caption;
       color: $light_text_color;
@@ -131,7 +159,11 @@ $appmenu_large_padding: 15px;
 
     &-selected {
       @extend %appmenu_button;
-      background-color: $light_bg_color;
+
+      background-color: $hover_bg_color;
+      color: $selected_fg_color;
+      transition-duration: 200;
+      border: 1px solid $osd_borders_color;
 
       &:highlighted { font-weight: bold; }
     }
@@ -139,21 +171,34 @@ $appmenu_large_padding: 15px;
 
   &-category-button {
     @extend %appmenu_button;
+    transition-duration: 200;
+    border: 1px solid transparent;
+    min-width: 9em;
 
     &-label { padding: 0; }
 
-    &:hover { background-color: $lighter_bg_color; }
+    &:hover {
+      background-color: $hover_bg_color;
+      color: $selected_fg_color;
+      transition-duration: 200;
+      border: 1px solid $osd_borders_color;
+    }
 
     &-selected {
       @extend %appmenu_button;
-
-      background-color: $light_bg_color;
+      //background-color: $light_bg_color;
+      @include bg_gradient(horizontal, $theme_gradient_start, $theme_gradient_end, 1);
+      color: $selected_fg_color;
+      font-weight: bold;
+      border: 1px solid $osd_borders_color;
+      transition-duration: 200;
     }
 
     &-greyed {
       @extend %appmenu_button;
       color: $insensitive_fg_color;
       font-style: italic;
+      transition-duration: 200;
 
       StIcon { opacity: 0.5; }
     }
@@ -161,11 +206,12 @@ $appmenu_large_padding: 15px;
 
   &-search-entry-icon {
     icon-size: $scalable_icon_size;
+    color: $accent_fg_color;
   }
 }
 
 #appmenu-search-entry {
-  @extend %entry;
+  @extend %entry_osd;
 }
 
 
