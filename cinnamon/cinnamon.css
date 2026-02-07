@@ -80,48 +80,48 @@ stage {
     color: #BFC3CD; }
 
 /* buttons */
-.notification-icon-button, .notification-button, .vkeyboard-key, .keyboard-key {
+.notification-icon-button, .notification-button, .vkeyboard-key, .keyboard-key, .icon-button, .button {
   border-radius: 0.6em;
   padding: 4px 24px;
   font-weight: bold; }
 
-.notification-icon-button, .notification-button, .vkeyboard-key, .keyboard-key {
+.notification-icon-button, .notification-button, .vkeyboard-key, .keyboard-key, .icon-button, .button {
   color: #BFC3CD;
   background-color: #1b2139; }
-  .notification-icon-button:focus, .notification-button:focus, .vkeyboard-key:focus, .keyboard-key:focus {
+  .notification-icon-button:focus, .notification-button:focus, .vkeyboard-key:focus, .keyboard-key:focus, .icon-button:focus, .button:focus {
     color: #BFC3CD;
     background-color: #1b2139;
     box-shadow: inset 0 0 1px 1px rgba(191, 195, 205, 0.4); }
-  .notification-icon-button:hover, .notification-button:hover, .vkeyboard-key:hover, .keyboard-key:hover {
+  .notification-icon-button:hover, .notification-button:hover, .vkeyboard-key:hover, .keyboard-key:hover, .icon-button:hover, .button:hover {
     color: #BFC3CD;
     background-color: #222946; }
-  .notification-icon-button:checked, .notification-button:checked, .vkeyboard-key:checked, .keyboard-key:checked {
+  .notification-icon-button:checked, .notification-button:checked, .vkeyboard-key:checked, .keyboard-key:checked, .icon-button:checked, .button:checked {
     color: #ffffff;
     background-color: #cc3700; }
-  .notification-icon-button:active, .notification-button:active, .vkeyboard-key:active, .keyboard-key:active {
+  .notification-icon-button:active, .notification-button:active, .vkeyboard-key:active, .keyboard-key:active, .icon-button:active, .button:active {
     color: #BFC3CD;
     background-color: #364170; }
-  .notification-icon-button:insensitive, .notification-button:insensitive, .vkeyboard-key:insensitive, .keyboard-key:insensitive {
+  .notification-icon-button:insensitive, .notification-button:insensitive, .vkeyboard-key:insensitive, .keyboard-key:insensitive, .icon-button:insensitive, .button:insensitive {
     color: rgba(191, 195, 205, 0.5);
     background-color: #161b2e; }
 
-.audio-device-selection-dialog .audio-selection-box .audio-selection-device, .polkit-dialog-user-combo, .bottombar StButton, .radio-applet-media-control-toolbar StButton, .sound-player StButton:small, .sound-player StButton {
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device, .polkit-dialog-user-combo, .icon-button.flat, .button.flat, .bottombar StButton, .radio-applet-media-control-toolbar StButton, .sound-player StButton:small, .sound-player StButton {
   color: #BFC3CD;
   background-color: inherit; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus, .polkit-dialog-user-combo:focus, .bottombar StButton:focus, .radio-applet-media-control-toolbar StButton:focus, .sound-player StButton:focus {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus, .polkit-dialog-user-combo:focus, .icon-button.flat:focus, .button.flat:focus, .bottombar StButton:focus, .radio-applet-media-control-toolbar StButton:focus, .sound-player StButton:focus {
     color: #BFC3CD;
     background-color: inherit;
     box-shadow: inset 0 0 1px 1px rgba(191, 195, 205, 0.4); }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover, .polkit-dialog-user-combo:hover, .bottombar StButton:hover, .radio-applet-media-control-toolbar StButton:hover, .sound-player StButton:hover {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover, .polkit-dialog-user-combo:hover, .icon-button.flat:hover, .button.flat:hover, .bottombar StButton:hover, .radio-applet-media-control-toolbar StButton:hover, .sound-player StButton:hover {
     color: rgba(255, 69, 0, 0.6);
     background-color: inherit; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive, .bottombar StButton:insensitive, .radio-applet-media-control-toolbar StButton:insensitive, .sound-player StButton:insensitive {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive, .icon-button.flat:insensitive, .button.flat:insensitive, .bottombar StButton:insensitive, .radio-applet-media-control-toolbar StButton:insensitive, .sound-player StButton:insensitive {
     color: rgba(191, 195, 205, 0.5);
     background-color: inherit; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:selected, .bottombar StButton:selected, .radio-applet-media-control-toolbar StButton:selected, .sound-player StButton:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active, .polkit-dialog-user-combo:active, .bottombar StButton:active, .radio-applet-media-control-toolbar StButton:active, .sound-player StButton:active {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:selected, .icon-button.flat:selected, .button.flat:selected, .bottombar StButton:selected, .radio-applet-media-control-toolbar StButton:selected, .sound-player StButton:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active, .polkit-dialog-user-combo:active, .icon-button.flat:active, .button.flat:active, .bottombar StButton:active, .radio-applet-media-control-toolbar StButton:active, .sound-player StButton:active {
     color: #BFC3CD;
     background-color: inherit; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked, .polkit-dialog-user-combo:checked, .bottombar StButton:checked, .radio-applet-media-control-toolbar StButton:checked, .sound-player StButton:checked {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked, .polkit-dialog-user-combo:checked, .icon-button.flat:checked, .button.flat:checked, .bottombar StButton:checked, .radio-applet-media-control-toolbar StButton:checked, .sound-player StButton:checked {
     color: orangered;
     background-color: inherit; }
 
@@ -1068,6 +1068,19 @@ StScrollBar StButton#hhandle {
   color: #BFC3CD;
   padding-top: 4px;
   text-align: center; }
+
+/* * * * * * * * * * * * * * * * *
+ * generic button style classes  *
+ * * * * * * * * * * * * * * * * */
+.button {
+  min-height: 22px; }
+
+.icon-button {
+  border-radius: 9999px;
+  padding: 4px;
+  min-height: 16px; }
+  .icon-button StIcon {
+    icon-size: 16px; }
 
 .calendar {
   margin-top: 10px;
