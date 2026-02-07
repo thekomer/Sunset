@@ -2,29 +2,29 @@
  * Buttons *
  ***********/
 // stuff for .needs-attention
-$_dot_color: if($variant=='light', $selected_bg_color,
-                                   lighten($selected_bg_color,15%));
+$_dot_color: if($variant== "light", $selected_bg_color, lighten($selected_bg_color, 15%));
 @keyframes needs_attention {
   from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.01,
-                                    to($_dot_color),
-                                    to(transparent));
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to($_dot_color), to(transparent));
   }
 
   to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to($selected_bg_color),
-                                    to(transparent));
+    background-image: -gtk-gradient(
+      radial,
+      center center,
+      0,
+      center center,
+      0.5,
+      to($selected_bg_color),
+      to(transparent)
+    );
   }
 }
 
 %button,
 button {
-  @at-root %button_basic, & {
+  @at-root %button_basic,
+    & {
     min-height: 20px;
     min-width: 16px;
     padding: 2px 6px;
@@ -46,89 +46,104 @@ button {
       &:hover {
         transition: $button_transition;
         transition-duration: 500ms;
-        @include button(hover,$selected_bg_color,$selected_fg_color);
+        @include button(hover, $selected_bg_color, $selected_fg_color);
 
-        &:active { transition: $button_transition; }
+        &:active {
+          transition: $button_transition;
+        }
       }
       &:backdrop {
-				&:hover{
-					transition: $button_transition;
-					transition-duration: 500ms;
-					color: inherit;
-					background: inherit;
-				}
+        &:hover {
+          transition: $button_transition;
+          transition-duration: 500ms;
+          color: inherit;
+          background: inherit;
+        }
       }
     }
 
     &:hover {
-			transition: $button_transition;
-			transition-duration: 500ms;
+      transition: $button_transition;
+      transition-duration: 500ms;
       //@include button(hover,$selected_bg_color,$selected_fg_color);
-			@include button(hover, $selected_bg_color, $selected_fg_color);
+      @include button(hover, $selected_bg_color, $selected_fg_color);
       -gtk-icon-effect: highlight;
     }
 
     &:active,
     &:checked {
-    	transition: $button_transition;
+      transition: $button_transition;
       transition-duration: 50ms;
-      @include button(active, darken($selected_bg_color,5%), $selected_fg_color);
+      @include button(active, darken($selected_bg_color, 5%), $selected_fg_color);
     }
 
     &:backdrop {
-      &.flat, & {
-				transition: $backdrop_transition;
+      &.flat,
+      & {
+        transition: $backdrop_transition;
         @include button(backdrop);
         -gtk-icon-effect: none;
 
         &:active,
-        &:checked { @include button(backdrop-active); }
+        &:checked {
+          @include button(backdrop-active);
+        }
 
         &:disabled {
           @include button(backdrop-insensitive);
 
           &:active,
-          &:checked { @include button(backdrop-insensitive-active); }
+          &:checked {
+            @include button(backdrop-insensitive-active);
+          }
         }
       }
       //&:backdrop {	// BUGfix - titlebutton backdrop prelight
-				//color: inherit;
-				//&:hover{
-					//background: inherit;
-				//}
-				//&:active, &:checked, &:selected {
-					//background: $backdrop_selected_bg_color;
-				//}
+      //color: inherit;
+      //&:hover{
+      //background: inherit;
+      //}
+      //&:active, &:checked, &:selected {
+      //background: $backdrop_selected_bg_color;
+      //}
       //}
     }
 
-    &.flat { &:backdrop, &:disabled, &:backdrop:disabled { @include button(undecorated); }}
+    &.flat {
+      &:backdrop,
+      &:disabled,
+      &:backdrop:disabled {
+        @include button(undecorated);
+      }
+    }
 
     &:disabled {
       @include button(insensitive);
 
       &:active,
-      &:checked { @include button(insensitive-active); }
+      &:checked {
+        @include button(insensitive-active);
+      }
     }
 
     &.image-button {
       min-width: 24px;
       padding-left: 4px;
       padding-right: 4px;
-      &.circular,&.sidebar-button{
+      &.circular,
+      &.sidebar-button {
         padding: 6px 4px;
         border-radius: 50px;
         box-shadow: none;
-       }
+      }
       &.sidebar-button {
         background-color: lighten($sidebar_bg_color, 7.77%);
         color: #fff;
-        &:hover{
+        &:hover {
           background-color: $selected_bg_color;
         }
       }
     }
-
 
     &.text-button {
       padding-left: 3em; // 16px;
@@ -153,22 +168,24 @@ button {
     }
   }
 
-  @at-root %button_selected, & {
+  @at-root %button_selected,
+    & {
     row:selected & {
-      @if $variant == 'light' { border-color: $selected_borders_color; }
+      @if $variant == "light" {
+        border-color: $selected_borders_color;
+      }
 
       &.flat:not(:active):not(:checked):not(:hover):not(disabled) {
         color: $selected_fg_color;
         border-color: transparent;
 
         &:backdrop {
-					color: if($variant=='light', $backdrop_base_color, $backdrop_fg_color);
-					background: $backdrop_base_color;
-				}
+          color: if($variant== "light", $backdrop_base_color, $backdrop_fg_color);
+          background: $backdrop_base_color;
+        }
       }
     }
   }
-
 
   // big standalone buttons like in Documents pager
   &.osd {
@@ -176,11 +193,13 @@ button {
     min-width: 24px;
     min-height: 20px;
 
-    &.image-button { min-width: 32px; }
+    &.image-button {
+      min-width: 32px;
+    }
 
     color: $osd_fg_color;
     border-radius: 0.5em; //border-radius: 5px;
-    outline-color: transparentize($osd_fg_color, 0.7);  //FIXME: define a color var?
+    outline-color: transparentize($osd_fg_color, 0.7); //FIXME: define a color var?
 
     @include button(osd);
 
@@ -203,7 +222,8 @@ button {
     }
 
     &:disabled {
-      &:backdrop, & {
+      &:backdrop,
+      & {
         @include button(osd-insensitive);
 
         border: none;
@@ -219,17 +239,31 @@ button {
 
   //overlay / OSD style
   @at-root %osd_button,
-  .osd & {
+    .osd & {
     @include button(osd);
 
-    &:hover { @include button(osd-hover); }
+    &:hover {
+      @include button(osd-hover);
+    }
 
     &:active,
-    &:checked { &:backdrop, & { @include button(osd-active); }}
+    &:checked {
+      &:backdrop,
+      & {
+        @include button(osd-active);
+      }
+    }
 
-    &:disabled { &:backdrop, & { @include button(osd-insensitive); }}
+    &:disabled {
+      &:backdrop,
+      & {
+        @include button(osd-insensitive);
+      }
+    }
 
-    &:backdrop { @include button(osd-backdrop); }
+    &:backdrop {
+      @include button(osd-backdrop);
+    }
 
     &.flat {
       @include button(undecorated);
@@ -238,7 +272,9 @@ button {
       text-shadow: 0 1px black;
       -gtk-icon-shadow: 0 1px black;
 
-      &:hover { @include button(osd-hover); }
+      &:hover {
+        @include button(osd-hover);
+      }
 
       &:disabled {
         @include button(osd-insensitive);
@@ -247,54 +283,71 @@ button {
         box-shadow: none;
       }
 
-      &:backdrop { @include button(undecorated); }
+      &:backdrop {
+        @include button(undecorated);
+      }
 
       &:active,
-      &:checked { @include button(osd-active); }
+      &:checked {
+        @include button(osd-active);
+      }
     }
   }
 
   // Suggested and Destructive Action buttons
-  @each $b_type, $b_color in (suggested-action, $suggested_color),
-                             (destructive-action, $destructive_color) {
+  @each $b_type, $b_color in (suggested-action, $suggested_color), (destructive-action, $destructive_color) {
     &.#{$b_type} {
       border: none;
 
-      @if $b_type ==  suggested-action {
+      @if $b_type == suggested-action {
         @include button(rounded, $b_color, white);
       } @else {
         @include button(rounded-red, $b_color, white);
       }
 
       &.flat {
-       // @include button(undecorated);
+        // @include button(undecorated);
         @include button(rounded, $b_color, white);
         //color: $b_color; //FIXME: does it work on the dark variant?
       }
 
-      &:hover { @include button(hover, $b_color, white); }
+      &:hover {
+        @include button(hover, $b_color, white);
+      }
 
       &:active,
-      &:checked { @include button(active, $b_color, white); }
+      &:checked {
+        @include button(active, $b_color, white);
+      }
 
       &:backdrop,
       &.flat:backdrop {
         @include button(backdrop, $b_color, white);
-        label { color: transparentize(white, 0.5);}
+        label {
+          color: transparentize(white, 0.5);
+        }
         &:active,
-        &:checked { @include button(backdrop-active, $b_color, white); }
+        &:checked {
+          @include button(backdrop-active, $b_color, white);
+        }
 
         &:disabled {
           @include button(backdrop-insensitive, $b_color, white);
-          label { color: transparentize(white, 0.5);}
+          label {
+            color: transparentize(white, 0.5);
+          }
 
           &:active,
-          &:checked { @include button(backdrop-insensitive-active, $b_color, white); }
+          &:checked {
+            @include button(backdrop-insensitive-active, $b_color, white);
+          }
         }
       }
 
       &.flat {
-        &:backdrop, &:disabled, &:backdrop:disabled {
+        &:backdrop,
+        &:disabled,
+        &:backdrop:disabled {
           @include button(undecorated);
 
           color: transparentize($b_color, 0.2);
@@ -305,20 +358,36 @@ button {
         @include button(insensitive, $b_color, white);
 
         &:active,
-        &:checked { @include button(insensitive-active, $b_color, white); }
+        &:checked {
+          @include button(insensitive-active, $b_color, white);
+        }
       }
 
       .osd & {
         @include button(osd, $b_color);
 
-        &:hover { @include button(osd-hover, $b_color); }
+        &:hover {
+          @include button(osd-hover, $b_color);
+        }
 
         &:active,
-        &:checked { &:backdrop, & { @include button(osd-active, $b_color); }}
+        &:checked {
+          &:backdrop,
+          & {
+            @include button(osd-active, $b_color);
+          }
+        }
 
-        &:disabled { &:backdrop, & { @include button(osd-insensitive, $b_color); }}
+        &:disabled {
+          &:backdrop,
+          & {
+            @include button(osd-insensitive, $b_color);
+          }
+        }
 
-        &:backdrop { @include button(osd-backdrop, $b_color); }
+        &:backdrop {
+          @include button(osd-backdrop, $b_color);
+        }
       }
     }
   }
@@ -331,14 +400,14 @@ button {
     outline-offset: -3px; // needs to be set or it gets overridden by GtkRadioButton outline-offset
 
     > label {
-      padding-left: 6px;  // label padding
+      padding-left: 6px; // label padding
       padding-right: 6px; //
     }
 
     > image {
-      padding-left: 6px;   // image padding
-      padding-right: 6px;  //
-      padding-top: 3px;    //
+      padding-left: 6px; // image padding
+      padding-right: 6px; //
+      padding-top: 3px; //
       padding-bottom: 3px; //
     }
 
@@ -357,7 +426,9 @@ button {
 
     &.needs-attention {
       > label,
-      > image { @extend %needs_attention; }
+      > image {
+        @extend %needs_attention;
+      }
 
       &:active,
       &:checked {
@@ -371,17 +442,21 @@ button {
   }
 
   //inline-toolbar buttons
-  .inline-toolbar &, .inline-toolbar &:backdrop {
+  .inline-toolbar &,
+  .inline-toolbar &:backdrop {
     border-radius: 0.2em; //border-radius: 2px;
     border-width: 1px;
     @extend %linked;
   }
 
-  .primary-toolbar &, .primary-toolbar .raised & { // tango icons don't need shadows
+  .primary-toolbar &,
+  .primary-toolbar .raised & {
+    // tango icons don't need shadows
     -gtk-icon-shadow: none;
 
-    &:hover { //&:focus  ...  focus used to be with hover : BUGfix
-      @include button(hover, $selected_bg_color , $selected_fg_color);
+    &:hover {
+      //&:focus  ...  focus used to be with hover : BUGfix
+      @include button(hover, $selected_bg_color, $selected_fg_color);
     }
   }
 
@@ -389,80 +464,110 @@ button {
   .linked > &:hover,
   .linked > &:active,
   .linked > &:checked,
-  .linked > &:backdrop { @extend %linked; }
+  .linked > &:backdrop {
+    @extend %linked;
+  }
 
   .linked.vertical > &,
   .linked.vertical > &:hover,
   .linked.vertical > &:active,
   .linked.vertical > &:checked,
-  .linked.vertical > &:backdrop { @extend %linked_vertical; }
+  .linked.vertical > &:backdrop {
+    @extend %linked_vertical;
+  }
 }
 
 %needs_attention {
   animation: needs_attention 150ms ease-in;
   $_dot_shadow: _text_shadow_color();
-  $_dot_shadow_r: if($variant=='light',0.5,0.45);
-  background-image: -gtk-gradient(radial,
-                                  center center, 0,
-                                  center center, 0.5,
-                                  to($_dot_color),
-                                  to(transparent)),
-                    -gtk-gradient(radial,
-                                  center center, 0,
-                                  center center, $_dot_shadow_r,
-                                  to($_dot_shadow),
-                                  to(transparent));
-  background-size: 6px 6px, 6px 6px;
+  $_dot_shadow_r: if($variant== "light", 0.5, 0.45);
+  background-image:
+    -gtk-gradient(radial, center center, 0, center center, 0.5, to($_dot_color), to(transparent)),
+    -gtk-gradient(radial, center center, 0, center center, $_dot_shadow_r, to($_dot_shadow), to(transparent));
+  background-size:
+    6px 6px,
+    6px 6px;
   background-repeat: no-repeat;
 
-  @if $variant == 'light' { background-position: right 3px, right 4px; }
+  @if $variant == "light" {
+    background-position:
+      right 3px,
+      right 4px;
+  } @else {
+    background-position:
+      right 3px,
+      right 2px;
+  }
 
-  @else { background-position: right 3px, right 2px; }
-
-  &:backdrop { background-size: 6px 6px, 0 0;}
+  &:backdrop {
+    background-size:
+      6px 6px,
+      0 0;
+  }
 
   &:dir(rtl) {
-    @if $variant == 'light' { background-position: left 3px, left 4px; }
-
-    @else { background-position: left 3px, left 2px; }
+    @if $variant == "light" {
+      background-position:
+        left 3px,
+        left 4px;
+    } @else {
+      background-position:
+        left 3px,
+        left 2px;
+    }
   }
 }
 
 toolbar {
   button {
-    &:hover { @include button(normal,darken($bg_color,7%));}
-    &:active { @include button(normal,darken($bg_color,12%));}
+    &:hover {
+      @include button(normal, darken($bg_color, 7%));
+    }
+    &:active {
+      @include button(normal, darken($bg_color, 12%));
+    }
   }
 }
 // all the following is for the +|- buttons on inline toolbars, that way
 // should really be deprecated...
-.inline-toolbar toolbutton > button { // redefining the button look is
-                                      // needed since those are flat...
+.inline-toolbar toolbutton > button {
+  // redefining the button look is
+  // needed since those are flat...
   @include button(undecorated);
 
-  &:hover { color: $selected_fg_color; }
+  &:hover {
+    color: $selected_fg_color;
+  }
 
   &:active,
-  &:checked{ color: darken($selected_bg_color, 5%); }
+  &:checked {
+    color: darken($selected_bg_color, 5%);
+  }
 
   &:disabled {
     color: $backdrop_text_color;
 
     &:active,
-    &:checked { color: transparentize(darken($selected_bg_color, 5%),0.7); }
+    &:checked {
+      color: transparentize(darken($selected_bg_color, 5%), 0.7);
+    }
   }
 
   &:backdrop {
     color: $backdrop_text_color;
 
     &:active,
-    &:checked { color: darken($selected_bg_color, 5%); }
+    &:checked {
+      color: darken($selected_bg_color, 5%);
+    }
 
     &:disabled {
       color: $backdrop_text_color;
 
       &:active,
-      &:checked { color: transparentize(darken($selected_bg_color, 5%),0.7); }
+      &:checked {
+        color: transparentize(darken($selected_bg_color, 5%), 0.7);
+      }
     }
   }
 }
@@ -542,7 +647,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   margin-bottom: 0;
 }
 
-%linked_vertical{
+%linked_vertical {
   @extend %linked_vertical_middle;
 
   &:first-child {
@@ -552,7 +657,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   }
 
   &:last-child {
-    border-bottom-left-radius: $radius;  //3px;
+    border-bottom-left-radius: $radius; //3px;
     border-bottom-right-radius: $radius; //3px;
     margin-bottom: 2px;
     border-style: solid;
@@ -566,7 +671,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   }
 }
 
-%linked_vertical_entry{
+%linked_vertical_entry {
   @extend %linked_vertical_middle;
 
   &:first-child {
@@ -594,8 +699,9 @@ toolbar.inline-toolbar toolbutton:backdrop {
   background-color: transparent;
   background-image: none;
   border-color: transparent;
-  box-shadow: inset 0 1px transparentize(white,1),
-              0 1px transparentize(white, 1);
+  box-shadow:
+    inset 0 1px transparentize(white, 1),
+    0 1px transparentize(white, 1);
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
@@ -611,47 +717,71 @@ modelbutton.flat,
 
   @extend %undecorated_button;
 
-  &:hover { background-color: $popover_hover_color; }
+  &:hover {
+    background-color: $popover_hover_color;
+  }
 
-  &:selected { @extend %selected_items; }
+  &:selected {
+    @extend %selected_items;
+  }
 
   &:backdrop,
-  &:backdrop:hover { @extend %undecorated_button; }
+  &:backdrop:hover {
+    @extend %undecorated_button;
+  }
 
   // FIXME: remove the following when the checks/radios rewrite lands
   check:last-child,
-  radio:last-child { margin-left: 8px; }
+  radio:last-child {
+    margin-left: 8px;
+  }
 
   check:first-child,
-  radio:first-child { margin-right: 8px; }
+  radio:first-child {
+    margin-right: 8px;
+  }
 }
 
 modelbutton.flat arrow {
   background: none;
 
-  &:hover { background: none; }
+  &:hover {
+    background: none;
+  }
 
-  &.left { -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
+  &.left {
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+  }
 
-  &.right { -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+  &.right {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+  }
 }
 
 button.color {
   padding: 4px;
 
   colorswatch:only-child {
-    &, overlay { border-radius: 0; }
+    &,
+    overlay {
+      border-radius: 0;
+    }
 
-    @if $variant == 'light' {
+    @if $variant == "light" {
       box-shadow: none;
 
       &:disabled,
-      &:backdrop { box-shadow: none; }
+      &:backdrop {
+        box-shadow: none;
+      }
     }
   }
 }
 
-notebook, list, .view, popover {
+notebook,
+list,
+.view,
+popover {
   button {
     box-shadow: none;
     &:backdrop {
