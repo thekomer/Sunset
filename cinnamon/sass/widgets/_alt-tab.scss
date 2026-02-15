@@ -15,7 +15,9 @@
     padding: 0.25em; //4px;
   }
 
-  &-item-container { spacing: 0.25em; } // 8px;
+  &-item-container {
+    spacing: 0.25em;
+  } // 8px;
 
   .item-box {
     padding: 0.5em; //8px;
@@ -29,12 +31,14 @@
     &:selected {
       color: $selected_fg_color;
       font-weight: bold;
-      background-color: transparentize($accent_color, 0.50);
+      background-color: transparentize($accent_color, 0.5);
       border-color: transparentize($accent_color, 0.15);
     }
   }
 
-  .thumbnail { width: 16em; } // 256px
+  .thumbnail {
+    width: 16em;
+  } // 256px
 
   .thumbnail-box {
     padding: 0.125em; //2px;
@@ -42,16 +46,16 @@
   }
   .separator {
     width: 1px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 
 .switcher-arrow {
-  border-color: rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0);
   color: $fg_color;
 
   &:highlighted {
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     color: $selected_fg_color;
   }
 }
