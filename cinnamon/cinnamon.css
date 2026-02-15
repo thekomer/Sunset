@@ -2014,7 +2014,7 @@ StScrollBar StButton#hhandle {
   border-radius: 0.6em; }
 
 .menu-favorites-button {
-  padding: .1em .5em;
+  padding: 0.1em 0.5em;
   border-radius: 0.6em;
   color: #BFC3CD; }
   .menu-favorites-button:hover {

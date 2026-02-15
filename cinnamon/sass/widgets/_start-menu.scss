@@ -2,7 +2,6 @@
  * start menu in Cinnamon >= v6.6 (with new class names)             *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-
 // New menu (since Cinnamon 6.6)
 //
 // Class diagram:
@@ -35,12 +34,13 @@ $appmenu_large_padding: 0.8em; // 15px;
 }
 
 .appmenu {
-
   // this can be used to color the entire menu background but we aren't using it here
   &-background {
     // using this to override the default padding on menus so widgets can span
     // the edge to edge.
-    .popup-menu-content { padding: 0; }
+    .popup-menu-content {
+      padding: 0;
+    }
   }
 
   &-main-box {
@@ -73,7 +73,7 @@ $appmenu_large_padding: 0.8em; // 15px;
 
   &-sidebar {
     padding: $appmenu_padding 0px;
-    background-color: transparentize($base_color, 0.70); //$base_color;
+    background-color: transparentize($base_color, 0.7); //$base_color;
     border-radius: $border_radius 0 0 $border_radius;
     border-right-width: 1px;
     border-color: $borders_color;
@@ -83,21 +83,22 @@ $appmenu_large_padding: 0.8em; // 15px;
     }
 
     .appmenu-system-button {
-    margin-top: 0.5em;
-    padding: $base_padding * 1.4;
-    border: 1px solid $osd_borders_color;
-    border-radius: 9999px;
-    &-shutdown {
-      background-color: $destructive_bg_color;
+      margin-top: 0.5em;
+      padding: $base_padding * 1.4;
+      border: 1px solid $osd_borders_color;
+      border-radius: 9999px;
+      &-shutdown {
+        background-color: $destructive_bg_color;
         &:hover {
           color: $selected_fg_color;
           background-color: $destructive_bg_color;
         }
-    }
-    &-lock:hover, &-logout:hover {
-      color: $selected_fg_color;
-      background-color: $hover_bg_color;
-    }
+      }
+      &-lock:hover,
+      &-logout:hover {
+        color: $selected_fg_color;
+        background-color: $hover_bg_color;
+      }
     }
   }
 
@@ -111,7 +112,6 @@ $appmenu_large_padding: 0.8em; // 15px;
     border: 1px solid transparent;
     min-width: 9em;
 
-
     padding: 3px $base_padding 3px $base_padding;
     margin: 0 $appmenu_padding 0 $appmenu_padding;
 
@@ -122,7 +122,6 @@ $appmenu_large_padding: 0.8em; // 15px;
 
       // border-color: $osd_border_color; // $borders_color;
       border: 1px solid $osd_borders_color;
-
     }
   }
 
@@ -134,12 +133,13 @@ $appmenu_large_padding: 0.8em; // 15px;
     border-radius: 9999px;
     &-shutdown {
       background-color: $destructive_bg_color;
-        &:hover {
-          color: $selected_fg_color;
-          background-color: $destructive_bg_color;
-        }
+      &:hover {
+        color: $selected_fg_color;
+        background-color: $destructive_bg_color;
+      }
     }
-    &-lock:hover, &-logout:hover {
+    &-lock:hover,
+    &-logout:hover {
       color: $selected_fg_color;
       background-color: $hover_bg_color;
     }
@@ -150,14 +150,18 @@ $appmenu_large_padding: 0.8em; // 15px;
     transition-duration: 200;
     border: 1px solid transparent;
 
-    &-label { padding: 0; }
+    &-label {
+      padding: 0;
+    }
 
     &-description {
       @extend %caption;
       color: $light_text_color;
     }
 
-    &:highlighted { font-weight: bold; }
+    &:highlighted {
+      font-weight: bold;
+    }
 
     &-selected {
       @extend %appmenu_button;
@@ -167,7 +171,9 @@ $appmenu_large_padding: 0.8em; // 15px;
       transition-duration: 200;
       border: 1px solid $osd_borders_color;
 
-      &:highlighted { font-weight: bold; }
+      &:highlighted {
+        font-weight: bold;
+      }
     }
   }
 
@@ -177,7 +183,9 @@ $appmenu_large_padding: 0.8em; // 15px;
     border: 1px solid transparent;
     min-width: 9em;
 
-    &-label { padding: 0; }
+    &-label {
+      padding: 0;
+    }
 
     &:hover {
       background-color: $hover_bg_color;
@@ -202,7 +210,9 @@ $appmenu_large_padding: 0.8em; // 15px;
       font-style: italic;
       transition-duration: 200;
 
-      StIcon { opacity: 0.5; }
+      StIcon {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -216,14 +226,12 @@ $appmenu_large_padding: 0.8em; // 15px;
   @extend %entry_osd;
 }
 
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * start menu in Cinnamon < v6.6 (will get deprecated)               *
  * - also used by some applets (i.e. Cinnamenu@json) and menu spices *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-
-  //FIXME: edit tile style from mint-y theme - vno cush thing in cinnamon theme
+//FIXME: edit tile style from mint-y theme - vno cush thing in cinnamon theme
 
 $menu_outer_padding: 0.5em;
 $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
@@ -235,11 +243,12 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
 }
 
 .menu {
-
-  &-background { background: inherit; }
-    // this can be used to color the entire menu background
-    // but we aren't using it here (we use it in .popup-menu-content selector
-    // in _menu.scss)
+  &-background {
+    background: inherit;
+  }
+  // this can be used to color the entire menu background
+  // but we aren't using it here (we use it in .popup-menu-content selector
+  // in _menu.scss)
 
   &-favorites-box {
     min-height: 1.4em;
@@ -252,7 +261,7 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
   }
 
   &-favorites-button {
-    padding: .1em .5em;
+    padding: 0.1em 0.5em;
     border-radius: $border_radius; // $base_border_radius;
     color: $osd_fg_color;
 
@@ -263,11 +272,19 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
     }
   }
 
-  &-categories-box { padding: $menu_outer_padding $base_padding * 4; }
-  &-applications-box { padding: $menu_outer_padding; }
+  &-categories-box {
+    padding: $menu_outer_padding $base_padding * 4;
+  }
+  &-applications-box {
+    padding: $menu_outer_padding;
+  }
   &-applications-inner-box {
-    &:ltr { padding-left: $base_padding * 4; }
-    &:rtl { padding-right: $base_padding * 4; }
+    &:ltr {
+      padding-left: $base_padding * 4;
+    }
+    &:rtl {
+      padding-right: $base_padding * 4;
+    }
   }
 
   &-application-button {
@@ -275,10 +292,13 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
     transition-duration: 200;
     border: 1px solid transparent;
 
+    &-label {
+      padding: 0;
+    }
 
-    &-label { padding: 0; }
-
-    &:highlighted { font-weight: bold; }
+    &:highlighted {
+      font-weight: bold;
+    }
 
     &-selected {
       @extend %start_menu_button;
@@ -288,7 +308,9 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       transition-duration: 200;
       border: 1px solid $borders_color;
 
-      &:highlighted { font-weight: bold; }
+      &:highlighted {
+        font-weight: bold;
+      }
     }
   }
 
@@ -299,7 +321,9 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
     border: 1px solid transparent;
     min-width: 9em;
 
-    &-label { padding: 0; }
+    &-label {
+      padding: 0;
+    }
 
     &:hover {
       background-color: $hover_bg_color;
@@ -319,7 +343,7 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       border: 1px solid $borders_color;
 
       transition-duration: 200;
-        //TODO: Improve so this is some kind of button colors, not explicitly selected
+      //TODO: Improve so this is some kind of button colors, not explicitly selected
     }
 
     &-greyed {
@@ -328,11 +352,14 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
       font-style: italic;
       transition-duration: 200;
 
-      StIcon { opacity: 0.5; }
+      StIcon {
+        opacity: 0.5;
+      }
     }
   }
 
-  &-context-menu {}
+  &-context-menu {
+  }
 
   &-selected-app-box {
     padding-right: $base_padding * 4;
@@ -340,11 +367,15 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
     text-align: right;
   }
 
-  &-selected-app-title { @extend %heading; }
-  &-selected-app-description { color: $insensitive_fg_color; }
+  &-selected-app-title {
+    @extend %heading;
+  }
+  &-selected-app-description {
+    color: $insensitive_fg_color;
+  }
 
   &-search-box {
-    padding: 0  0 $base_padding $menu_outer_padding;
+    padding: 0 0 $base_padding $menu_outer_padding;
   }
 }
 
