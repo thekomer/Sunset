@@ -1596,7 +1596,8 @@ StScrollBar StButton#hhandle {
   .popup-menu-item:insensitive {
     color: #555863;
     background: none; }
-  .popup-menu-item .check-box StBoxLayout {
+  .popup-menu-item .check-box StBoxLayout,
+  .popup-menu-item .radiobutton StBoxLayout {
     spacing: 0; }
 
 .popup-menu-arrow,
@@ -2120,7 +2121,7 @@ StScrollBar StButton#hhandle {
 .check-box:focus:checked StBin {
   background-image: url("assets/checkbox-focused.svg"); }
 
-.radiobutton CinnamonGenericContainer {
+.radiobutton StBoxLayout {
   spacing: 0.8em; }
 
 .radiobutton StBin {

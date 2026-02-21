@@ -35,7 +35,7 @@ $check_width: 1.25em; //20px;
 // radio
 
 .radiobutton {
-  CinnamonGenericContainer { spacing: 0.8em; }
+  StBoxLayout { spacing: 0.8em; }
 
   StBin {
     width: $check_width;
