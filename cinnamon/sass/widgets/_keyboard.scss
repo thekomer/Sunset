@@ -53,7 +53,7 @@
  * On screen keyboard in Cinnamon v6.6+  *
 * * * * * * * * * * * * * * * * * * * * */
 
-//TODO: test after cinnamon v6.6 release
+//TODO: test after cinnamon v6.6 release (!!! TEST SOON !!! PROBABLY DOES NOT WORK PROPERLY)
 
 $non_alpha_key_color: $lightest_bg_color;
 $shifted_key_color: $accent_bg_color;
@@ -93,20 +93,15 @@ $shifted_key_color: $accent_bg_color;
   &.shift-key-uppercase { background-color: $shifted_key_color; }
   &.enter-key { background-color: $shifted_key_color; }
 
+  &.modifier-key {
+    background-color: $non_alpha_key_color;
 
-  // TODO: pseudo class latched works better for temporarily changing the color.
+    &:hover, &:checked { @include button(hover); }
 
-  // &.modifier-key {
-  //   background-color: $non_alpha_key_color;
-
-  //   &:focus { @include button(focus); }
-  //   &:hover, &:checked { @include button(hover); }
-  //   &:active { @include button(active); }
-
-  //   &:latched {
-  //     background-color: $shifted_key_color;
-  //   }
-  // }
+    &:latched {
+      background-color: $shifted_key_color;
+    }
+  }
 
   StIcon { icon-size: 1.125em; }
 }

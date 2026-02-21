@@ -1507,7 +1507,7 @@ StScrollBar StButton#hhandle {
   border-radius: 8px;
   color: #BFC3CD; }
   .candidate-box:selected, .candidate-box:hover {
-    background-color: #222946; }
+    background-color: rgba(54, 65, 112, 0.25); }
 
 .candidate-page-button-box {
   height: 2em; }
@@ -1599,6 +1599,13 @@ StScrollBar StButton#hhandle {
     background-color: #cc3700; }
   .vkeyboard-key.enter-key {
     background-color: #cc3700; }
+  .vkeyboard-key.modifier-key {
+    background-color: #364170; }
+    .vkeyboard-key.modifier-key:hover, .vkeyboard-key.modifier-key:checked {
+      color: #BFC3CD;
+      background-color: #222946; }
+    .vkeyboard-key.modifier-key:latched {
+      background-color: #cc3700; }
   .vkeyboard-key StIcon {
     icon-size: 1.125em; }
 
