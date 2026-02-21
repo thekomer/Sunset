@@ -80,28 +80,28 @@ stage {
     color: #BFC3CD; }
 
 /* buttons */
-.notification-icon-button, .notification-button, .vkeyboard-key, .keyboard-key, .icon-button, .button {
+.notification-icon-button, .notification-button, .keyboard-key, .icon-button, .button {
   border-radius: 0.6em;
   padding: 4px 24px;
   font-weight: bold; }
 
-.notification-icon-button, .notification-button, .vkeyboard-key, .keyboard-key, .icon-button, .button {
+.notification-icon-button, .notification-button, .keyboard-key, .icon-button, .button {
   color: #BFC3CD;
   background-color: #1b2139; }
-  .notification-icon-button:focus, .notification-button:focus, .vkeyboard-key:focus, .keyboard-key:focus, .icon-button:focus, .button:focus {
+  .notification-icon-button:focus, .notification-button:focus, .keyboard-key:focus, .icon-button:focus, .button:focus {
     color: #BFC3CD;
     background-color: #1b2139;
     box-shadow: inset 0 0 1px 1px rgba(191, 195, 205, 0.4); }
-  .notification-icon-button:hover, .notification-button:hover, .vkeyboard-key:hover, .keyboard-key:hover, .icon-button:hover, .button:hover {
+  .notification-icon-button:hover, .notification-button:hover, .keyboard-key:hover, .icon-button:hover, .button:hover {
     color: #BFC3CD;
     background-color: #222946; }
-  .notification-icon-button:checked, .notification-button:checked, .vkeyboard-key:checked, .keyboard-key:checked, .icon-button:checked, .button:checked {
+  .notification-icon-button:checked, .notification-button:checked, .keyboard-key:checked, .icon-button:checked, .button:checked {
     color: #ffffff;
     background-color: #cc3700; }
-  .notification-icon-button:active, .notification-button:active, .vkeyboard-key:active, .keyboard-key:active, .icon-button:active, .button:active {
+  .notification-icon-button:active, .notification-button:active, .keyboard-key:active, .icon-button:active, .button:active {
     color: #BFC3CD;
     background-color: #364170; }
-  .notification-icon-button:insensitive, .notification-button:insensitive, .vkeyboard-key:insensitive, .keyboard-key:insensitive, .icon-button:insensitive, .button:insensitive {
+  .notification-icon-button:insensitive, .notification-button:insensitive, .keyboard-key:insensitive, .icon-button:insensitive, .button:insensitive {
     color: rgba(191, 195, 205, 0.5);
     background-color: #161b2e; }
 
@@ -1573,18 +1573,28 @@ StScrollBar StButton#hhandle {
   background-color: rgba(10, 12, 20, 0.95); }
 
 .vkeyboard-key-container {
-  padding: 0.2em;
-  spacing: 0.2em;
-  padding-left: 4em;
-  padding-right: 4em; }
+  padding: 0.1em;
+  spacing: 0.1em; }
 
 .vkeyboard-key {
-  font-size: 1.364em;
-  border-width: 1px;
-  border-style: solid;
+  color: #BFC3CD;
+  background-color: #1b2139;
+  font-size: 1.818em;
+  border: 1px solid rgba(191, 195, 205, 0.05);
   border-radius: 0.6em; }
-  .vkeyboard-key.shift-key-lowercase, .vkeyboard-key.escape-key, .vkeyboard-key.hide-key, .vkeyboard-key.non-alpha-key {
+  .vkeyboard-key:focus {
+    color: #BFC3CD;
+    background-color: #1b2139;
+    box-shadow: inset 0 0 1px 1px rgba(191, 195, 205, 0.4); }
+  .vkeyboard-key:hover, .vkeyboard-key:checked {
+    color: #BFC3CD;
+    background-color: #222946;
+    font-weight: bold; }
+  .vkeyboard-key:active {
+    color: #BFC3CD;
     background-color: #364170; }
+  .vkeyboard-key.shift-key-lowercase, .vkeyboard-key.escape-key, .vkeyboard-key.hide-key, .vkeyboard-key.non-alpha-key {
+    background-color: #15192b; }
     .vkeyboard-key.shift-key-lowercase:focus, .vkeyboard-key.escape-key:focus, .vkeyboard-key.hide-key:focus, .vkeyboard-key.non-alpha-key:focus {
       color: #BFC3CD;
       background-color: #1b2139;
@@ -1595,34 +1605,40 @@ StScrollBar StButton#hhandle {
     .vkeyboard-key.shift-key-lowercase:active, .vkeyboard-key.escape-key:active, .vkeyboard-key.hide-key:active, .vkeyboard-key.non-alpha-key:active {
       color: #BFC3CD;
       background-color: #364170; }
+  .vkeyboard-key.hide-key:hover {
+    color: #df6267; }
   .vkeyboard-key.shift-key-uppercase {
-    background-color: #cc3700; }
+    background-color: #364170; }
   .vkeyboard-key.enter-key {
     background-color: #cc3700; }
+    .vkeyboard-key.enter-key:hover {
+      background-color: orangered; }
+    .vkeyboard-key.enter-key:active {
+      background-color: #ff500f; }
   .vkeyboard-key.modifier-key {
-    background-color: #364170; }
+    background-color: #15192b; }
     .vkeyboard-key.modifier-key:hover, .vkeyboard-key.modifier-key:checked {
       color: #BFC3CD;
       background-color: #222946; }
     .vkeyboard-key.modifier-key:latched {
-      background-color: #cc3700; }
+      background-color: #364170; }
   .vkeyboard-key StIcon {
     icon-size: 1.125em; }
 
 .vkeyboard-subkeys {
   color: #BFC3CD;
   -arrow-border-radius: 0.6em;
-  -arrow-background-color: #0E111D;
-  -arrow-border-width: 1px;
-  -arrow-border-color: #364170;
-  -arrow-base: 1.2em;
-  -arrow-rise: 0.7em;
-  -boxpointer-gap: 0; }
+  -arrow-background-color: #06070c;
+  -arrow-border-width: 2px;
+  -arrow-border-color: #cc3700;
+  -arrow-base: 1.5em;
+  -arrow-rise: 0.5em;
+  -boxpointer-gap: 4px; }
 
 .word-suggestions {
-  font-size: 1.227em;
-  spacing: 1.25em;
-  min-height: 1.25em; }
+  font-size: 1.455em;
+  spacing: 20px;
+  min-height: 20pt; }
 
 .menu {
   min-width: 15em;

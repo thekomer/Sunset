@@ -53,10 +53,10 @@
  * On screen keyboard in Cinnamon v6.6+  *
 * * * * * * * * * * * * * * * * * * * * */
 
-//TODO: test after cinnamon v6.6 release (!!! TEST SOON !!! PROBABLY DOES NOT WORK PROPERLY)
+$key_border_radius: $border_radius;
 
-$non_alpha_key_color: $lightest_bg_color;
-$shifted_key_color: $accent_bg_color;
+$non_alpha_key_color: mix($bg_color, $button_bg_color, 50%);
+$shifted_key_color: $lightest_bg_color;
 
 #virtual-keyboard {
   background-color: $osd_bg_color;
@@ -64,34 +64,42 @@ $shifted_key_color: $accent_bg_color;
 
 // the container for individual keys
 .vkeyboard-key-container {
-    padding: 0.2em;
-    spacing: 0.2em;
-    padding-left: 4em;
-    padding-right: 4em;
+  padding: 0.1em; //$base_margin;
+  spacing: 0.1em; //$base_margin;
 }
 
 // the keys
 .vkeyboard-key {
 
-  @extend %button;
+  @include button(normal);
 
-  @include fontsize(20px);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: $border_radius;
+  &:focus { @include button(focus);}
+  &:hover, &:checked { @include button(hover); font-weight: bold; }
+  &:active { @include button(active); }
+
+  @include fontsize(20pt);
+  border: 1px solid $borders_color;
+  border-radius: $key_border_radius;
+
+  // background-color: $lighter_bg_color;
 
   &.shift-key-lowercase, &.escape-key, &.hide-key, &.non-alpha-key {
     background-color: $non_alpha_key_color;
 
-    // do I need this?
     &:focus { @include button(focus);}
     &:hover, &:checked { @include button(hover);}
     &:active { @include button(active); }
-
   }
 
-  &.shift-key-uppercase { background-color: $shifted_key_color; }
-  &.enter-key { background-color: $shifted_key_color; }
+  &.hide-key {
+    &:hover{  color: $destructive_color; }
+  }
+
+  &.shift-key-uppercase { background-color: $shifted_key_color }
+  &.enter-key { background-color: $accent_bg_color;
+    &:hover{  background-color: $accent_fg_color; }
+    &:active{  background-color: lighten($accent_fg_color, 3%); }
+  }
 
   &.modifier-key {
     background-color: $non_alpha_key_color;
@@ -110,17 +118,17 @@ $shifted_key_color: $accent_bg_color;
 .vkeyboard-subkeys {
   color: $fg_color;
   -arrow-border-radius: $border_radius;
-  -arrow-background-color: $bg_color;
-  -arrow-border-width: 1px;
-  -arrow-border-color: $lightest_bg_color;
-  -arrow-base: 1.2em;
-  -arrow-rise: 0.7em;
-  -boxpointer-gap: 0; // $base_padding;
+  -arrow-background-color: $panel_bg_color;
+  -arrow-border-width: 2px;
+  -arrow-border-color: $accent_bg_color;// lighten($bg_color, 9%);
+  -arrow-base: 1.5em;
+  -arrow-rise: 0.5em;
+  -boxpointer-gap: $base_padding;
 }
 
 // suggestions
 .word-suggestions {
-  @include fontsize(18px);
-  spacing: 1.25em; //20px;
-  min-height: 1.25em; // 20pt;
+  @include fontsize(16pt);
+  spacing: 20px;
+  min-height: 20pt;
 }
