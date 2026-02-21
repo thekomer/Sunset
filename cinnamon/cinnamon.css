@@ -1596,6 +1596,8 @@ StScrollBar StButton#hhandle {
   .popup-menu-item:insensitive {
     color: #555863;
     background: none; }
+  .popup-menu-item .check-box StBoxLayout {
+    spacing: 0; }
 
 .popup-menu-arrow,
 .popup-menu-icon {
@@ -2101,7 +2103,7 @@ StScrollBar StButton#hhandle {
   .toggle-switch:checked {
     background-image: url("assets/toggle-on.svg"); }
 
-.check-box CinnamonGenericContainer {
+.check-box StBoxLayout {
   spacing: 0.8em; }
 
 .check-box StBin {
@@ -2116,23 +2118,6 @@ StScrollBar StButton#hhandle {
   background-image: url("assets/checkbox.svg"); }
 
 .check-box:focus:checked StBin {
-  background-image: url("assets/checkbox-focused.svg"); }
-
-.check-box-2 StBoxLayout {
-  spacing: 0.8em; }
-
-.check-box-2 StBin {
-  width: 1.25em;
-  height: 1.25em;
-  background-image: url("assets/checkbox-off.svg"); }
-
-.check-box-2:focus StBin {
-  background-image: url("assets/checkbox-off-focused.svg"); }
-
-.check-box-2:checked StBin {
-  background-image: url("assets/checkbox.svg"); }
-
-.check-box-2:focus:checked StBin {
   background-image: url("assets/checkbox-focused.svg"); }
 
 .radiobutton CinnamonGenericContainer {
