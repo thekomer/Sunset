@@ -1485,6 +1485,50 @@ StScrollBar StButton#hhandle {
 #overview {
   spacing: 0.8em; }
 
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 12px;
+  -arrow-background-color: #0E111D;
+  -arrow-border-width: 1px;
+  -arrow-border-color: rgba(191, 195, 205, 0.05);
+  -arrow-base: 24px;
+  -arrow-rise: 12px;
+  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.candidate-popup-content {
+  padding: 0.5em;
+  spacing: 0.3em; }
+
+.candidate-index {
+  padding: 0 0.5em 0 0;
+  color: #a2a8b7; }
+
+.candidate-box {
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border-radius: 8px;
+  color: #BFC3CD; }
+  .candidate-box:selected, .candidate-box:hover {
+    background-color: #222946; }
+
+.candidate-page-button-box {
+  height: 2em; }
+  .vertical .candidate-page-button-box {
+    padding-top: 0.5em; }
+  .horizontal .candidate-page-button-box {
+    padding-left: 0.5em; }
+
+.candidate-page-button {
+  padding: 4px; }
+
+.candidate-page-button-previous {
+  border-radius: 8px 0px 0px 8px;
+  border-right-width: 0; }
+
+.candidate-page-button-next {
+  border-radius: 0px 8px 8px 0px; }
+
+.candidate-page-button-icon {
+  icon-size: 1em; }
+
 /* * * * * * * * * * * * * * * * * * * * * * *
  * on screen keyboard (up to Cinnamon < 6.6) *
  * * * * * * * * * * * * * * * * * * * * * * */
