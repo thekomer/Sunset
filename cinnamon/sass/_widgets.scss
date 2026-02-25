@@ -6,7 +6,8 @@
 @import "widgets/calendar";
 @import "widgets/desklet";
 @import "widgets/dialogs";
-@import 'widgets/screensaver';
+// @import 'widgets/screensaver';
+//TODO: test this with native screensaver after it arrives to live cinnamon
 @import "widgets/expo";
 @import "widgets/ibus-popup.scss";
 @import "widgets/keyboard";
