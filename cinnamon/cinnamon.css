@@ -1950,16 +1950,16 @@ StScrollBar StButton#hhandle {
   spacing: 0.6em; }
 
 .appmenu-right-box {
-  spacing: 0.3em;
+  spacing: 0.2em;
   padding: 0.6em 0.6em; }
 
 .appmenu-categories-applications-box {
   spacing: 0.8em; }
   .appmenu-categories-applications-box:top {
-    padding-top: 0.3em; }
+    padding-top: 0.2em; }
 
 .appmenu-applications-box {
-  padding-right: 0.3em; }
+  padding-right: 0.2em; }
 
 .appmenu-search-box {
   spacing: 0.6em; }
@@ -1971,9 +1971,12 @@ StScrollBar StButton#hhandle {
   border-right-width: 1px;
   border-color: rgba(191, 195, 205, 0.05); }
   .appmenu-sidebar-user-box {
-    margin-bottom: 0.4em; }
+    margin-bottom: 0.2em; }
+  .appmenu-sidebar-scrollview .appmenu-favs-box,
+  .appmenu-sidebar-scrollview .appmenu-places-box {
+    padding: 0.2em; }
   .appmenu-sidebar .appmenu-system-button {
-    margin-top: 0.5em;
+    margin-top: 0.6em;
     padding: 5.6px;
     border: 1px solid rgba(191, 195, 205, 0.05);
     border-radius: 9999px; }

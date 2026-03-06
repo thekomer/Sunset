@@ -23,7 +23,7 @@
 //    |     └─ appmenu-favs-box
 //    └─ appmenu-system-box
 
-$appmenu_small_padding: 0.3em; // 5px;
+$appmenu_small_padding: 0.2em; // 5px;
 $appmenu_padding: 0.6em; // 10px;
 $appmenu_large_padding: 0.8em; // 15px;
 
@@ -79,11 +79,18 @@ $appmenu_large_padding: 0.8em; // 15px;
     border-color: $borders_color;
 
     &-user-box {
-      margin-bottom: 0.4em;
+      margin-bottom: $appmenu_small_padding;
+    }
+
+    &-scrollview {
+      .appmenu-favs-box,
+      .appmenu-places-box {
+        padding: $appmenu_small_padding;
+      }
     }
 
     .appmenu-system-button {
-      margin-top: 0.5em;
+      margin-top: $appmenu_padding; //0.5em;
       padding: $base_padding * 1.4;
       border: 1px solid $osd_borders_color;
       border-radius: 9999px;
