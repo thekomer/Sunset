@@ -36,6 +36,7 @@ $appmenu_large_padding: 0.8em; // 15px;
 .appmenu {
   // this can be used to color the entire menu background but we aren't using it here
   &-background {
+    background: inherit;
     // using this to override the default padding on menus so widgets can span
     // the edge to edge.
     .popup-menu-content {

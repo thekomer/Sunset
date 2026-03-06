@@ -1943,8 +1943,10 @@ StScrollBar StButton#hhandle {
   spacing: 2px;
   border-radius: 0.6em; }
 
-.appmenu-background .popup-menu-content {
-  padding: 0; }
+.appmenu-background {
+  background: inherit; }
+  .appmenu-background .popup-menu-content {
+    padding: 0; }
 
 .appmenu-main-box {
   spacing: 0.6em; }
