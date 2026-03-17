@@ -43,7 +43,8 @@ stage {
 
 #notification StEntry, .prompt-dialog-password-entry, .run-dialog-entry {
   background-color: #161b2e;
-  color: #dfe1e6; }
+  color: #dfe1e6;
+  -st-progress-color: #cc3700; }
   #notification StEntry:focus, .prompt-dialog-password-entry:focus, .run-dialog-entry:focus, #notification StEntry:hover, .prompt-dialog-password-entry:hover, .run-dialog-entry:hover {
     background-color: #161b2e;
     color: #dfe1e6;
