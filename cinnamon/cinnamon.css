@@ -513,14 +513,14 @@ stage {
   padding: 0 4px; }
 
 .sound-player StButton {
-  border: 1px solid borders_color;
+  border: 1px solid transparent;
   width: 1.2em;
   height: 1.2em;
   padding: 4px; }
   .sound-player StButton StIcon {
     icon-size: 1em; }
   .sound-player StButton:small {
-    border: 1px solid borders_color;
+    border: 1px solid transparent;
     width: 1em;
     height: 1em; }
     .sound-player StButton:small StIcon {
@@ -1033,8 +1033,10 @@ StScrollBar StButton#hhandle {
     border-right-width: 0px; }
 
 #Tooltip {
-  padding: 8px;
-  margin: 2px; }
+  padding: 6px 12px;
+  margin: 6px;
+  border: 1px solid rgba(209, 212, 219, 0.05);
+  border-radius: 0.6em; }
 
 .user-icon {
   background-size: contain;

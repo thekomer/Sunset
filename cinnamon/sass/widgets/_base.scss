@@ -156,8 +156,11 @@ StScrollBar {
 #Tooltip {
   @extend %osd_base;
 
-  padding: $base_padding * 2;
-  margin: $base_margin;
+  padding: $base_padding * 1.5 $base_padding * 3;
+  margin: $base_margin * 3;
+
+  border: 1px solid $tooltip_borders_color;
+  border-radius: $border_radius;
 }
 
 // user avatar

@@ -101,3 +101,6 @@ $osd_fg_color: $fg_color;
 $osd_entry_bg_color: transparentize($entry_bg_color, 0.30); //$entry_bg_color;
 $osd_entry_fg_color: $osd_fg_color;
 $osd_shadow_color: rgba(1, 1, 1, 0.05);
+
+// tooltips
+$tooltip_borders_color: $borders_color;
