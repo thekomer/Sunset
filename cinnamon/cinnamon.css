@@ -1036,7 +1036,10 @@ StScrollBar StButton#hhandle {
   padding: 6px 12px;
   margin: 6px;
   border: 1px solid rgba(209, 212, 219, 0.05);
-  border-radius: 0.6em; }
+  border-radius: 0.6em;
+  background-color: rgba(10, 12, 20, 0.95);
+  color: #ffffff;
+  text-align: center; }
 
 .user-icon {
   background-size: contain;

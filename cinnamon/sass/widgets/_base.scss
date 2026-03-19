@@ -161,6 +161,12 @@ StScrollBar {
 
   border: 1px solid $tooltip_borders_color;
   border-radius: $border_radius;
+
+  background-color: $tooltip_bg_color;
+  color: $tooltip_fg_color;
+
+  //font-weight: 200;
+  text-align: center;
 }
 
 // user avatar
