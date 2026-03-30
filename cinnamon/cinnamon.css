@@ -1736,6 +1736,9 @@ StScrollBar StButton#hhandle {
     font-weight: normal;
     color: #D1D4DB; }
 
+.popup-printer-menu-item {
+  spacing-columns: 0.5em; }
+
 .popup-subtitle-menu-item {
   font-weight: normal; }
 

@@ -148,6 +148,11 @@ $menuitem_border_radius: $base_border_radius * 1;
   }
 }
 
+// printer applet menu item table (for cupsd dbus notification)
+.popup-printer-menu-item {
+  spacing-columns: 0.5em; //8px;
+}
+
 // Used in window quick list and power applet
 .popup-subtitle-menu-item { font-weight: normal; }
 
