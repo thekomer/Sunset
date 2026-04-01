@@ -1677,6 +1677,9 @@ StScrollBar StButton#hhandle {
 .popup-menu-icon {
   icon-size: 1.091em; }
 
+.popup-inhibitor-menu-item .popup-menu-icon {
+  icon-size: 1.637em; }
+
 .popup-sub-menu {
   border-radius: 0.6em;
   margin: 0 2px;
