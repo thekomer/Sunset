@@ -75,7 +75,7 @@ $menuitem_border_radius: $base_border_radius * 1;
     @extend %menuitem;
     background-color: transparentize($base_color, 0.75);//mix($bg_color, $base_color, 50%); //$base_color;
     margin: 0;
-    padding: 0.1em 0 0.1em 1.5em; // komer: changed to get larger surrent player indicator in audio applet menu
+    padding: 0.1em 0 0.1em 1.5em; // komer: changed to get larger current player indicator in audio applet menu
 
     &:active {
       background-color: $hover_bg_color; // $light_base_color;

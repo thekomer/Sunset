@@ -328,9 +328,9 @@
 
 .system-status-icon { icon-size: $scalable_icon-size; }
 
-/* * * * * * * * * * * * * * * * *
- *cinnamon-timer@jake1164 applet *
- * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * *
+ * cinnamon-timer@jake1164 applet  *
+ * * * * * * * * * * * * * * * * * */
 
 .timer {
   &-dialog-label {
@@ -432,6 +432,11 @@
   &-current-astronomy {
     padding-top: 0.313em;
     color:$panel_fg_color;
+  }
+
+  &-current-uvindex {
+    margin-left: 0.7em; // 7px;
+    margin-top: 0.03em; // 3px;
   }
 
   &-immediate-precipitation {

@@ -635,9 +635,9 @@ stage {
 .system-status-icon {
   icon-size: 1.091em; }
 
-/* * * * * * * * * * * * * * * * *
- *cinnamon-timer@jake1164 applet *
- * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * *
+ * cinnamon-timer@jake1164 applet  *
+ * * * * * * * * * * * * * * * * * */
 .timer-dialog-label {
   text-align: center;
   font-weight: bold; }
@@ -714,6 +714,10 @@ stage {
 .weather-current-astronomy {
   padding-top: 0.313em;
   color: #c3c7d0; }
+
+.weather-current-uvindex {
+  margin-left: 0.7em;
+  margin-top: 0.03em; }
 
 .weather-immediate-precipitation {
   color: orangered; }
