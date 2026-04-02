@@ -1,0 +1,96 @@
+/* * * * * * * * * * * * * * *
+ * gTile@shuairan extension  *
+ * * * * * * * * * * * * * * */
+
+.grid-title{
+	font-size: 1em;
+    font-weight: bold;
+    color: $osd_fg_color;
+    padding: .5em;
+    text-align:center;
+    max-width: 10em;
+}
+
+.grid-panel{
+    background-color: $osd_bg_color;
+    border-radius: $border_radius;
+}
+
+.table{
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+
+.table-element{
+    background-color: transparentize($osd_fg_color, 0.7);
+    border-radius: $border_radius;
+}
+
+.table-element:hover, .table-element:activate
+{
+    background-color: transparentize($osd_fg_color, 0.4);
+}
+
+.top-box
+{
+    padding:0.6em;
+}
+
+.settings-button
+{
+    background-color: transparentize($accent_bg_color, 0.6);
+    color: transparentize($osd_fg_color, 0.6);
+    min-width:2em;
+    border-radius:$border_radius;
+    padding:0.1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border:1px transparentize($accent_fg_color, 0.4);
+    max-height:2em;
+    min-height:2em;
+}
+
+.settings-button:activate
+{
+   background-color: transparentize($accent_bg_color, 0.3);
+    color: $osd_fg_color;
+    border:1px transparentize($accent_fg_color, 0.3);
+}
+
+.settings-button:activate:hover
+{
+    background-color: transparentize($accent_fg_color, 0.3);
+    color: $osd_fg_color;
+    border:1px transparentize($accent_fg_color, 0.2);
+}
+
+.settings-button:hover
+{
+    background-color: transparentize($accent_bg_color, 0.3);
+    color: $osd_fg_color;
+    border:1px transparentize($accent_fg_color, 0.3);
+}
+
+.grid-preview
+{
+     background-color: transparent;
+     border: transparent;
+}
+
+.grid-preview:activate
+{
+    //background-color: rgba(241,122,73,0.4);
+    background-color: transparentize($accent_bg_color, 0.75);  //rgba(73,122,241,0.4);
+    //border: 1px solid rgba(217,108,59,0.8);
+    border: 1px solid transparentize($accent_fg_color, 0.5);  // rgba(59,108,217,0.8);
+}
+
+.bottom-box
+{
+    padding-top:0.6em;
+    display:block;
+}
+
+.very-bottom-box {
+    padding-bottom:0.6em;
+}
