@@ -203,3 +203,62 @@
     }
   }
 }
+
+
+// Shared grouped-list style for autorun and processes dialogs
+%grouped-dialog-list {
+    .dialog-list-box {
+        background-color: transparentize($base_color, 0.3);
+        spacing: 0;
+
+        .dialog-list-item {
+            border-radius: 0;
+
+            &:first-child {
+              border-radius: $border_radius $border_radius 0 0;
+            }
+
+            &:last-child {
+              border-radius: 0 0 $border_radius $border_radius;
+            }
+        }
+    }
+}
+
+.processes-dialog {
+  .dialog-content-box {
+    .dialog-list {
+        @extend %grouped-dialog-list;
+    }
+  }
+}
+
+.autorun-dialog {
+  min-width: 30em;
+
+  .dialog-content-box {
+    margin-top: $base_margin;
+    margin-bottom: $base_margin * 3;
+    spacing: $base_margin * 3;
+    max-width: 28em;
+
+    .dialog-list {
+        @extend %grouped-dialog-list;
+    }
+
+    .autorun-dialog-heading {
+      @extend %title_2;
+      text-align: center;
+    }
+
+    .autorun-dialog-subheading {
+      @extend %title_4;
+      text-align: center;
+    }
+
+    .autorun-dialog-description {
+      @extend %caption; // GOOD-IDEA!
+      text-align: center;  // MAYBE!
+    }
+  }
+}

@@ -218,7 +218,7 @@ stage {
   font-weight: 800;
   font-size: 1.818em; }
 
-.message-dialog-content .message-dialog-title, .dialog .confirm-dialog-title {
+.autorun-dialog .dialog-content-box .autorun-dialog-heading, .message-dialog-content .message-dialog-title, .dialog .confirm-dialog-title {
   font-weight: 800;
   font-size: 1.364em; }
 
@@ -226,7 +226,7 @@ stage {
   font-weight: 700;
   font-size: 1.364em; }
 
-.workspace-switch-osd, .media-keys-osd, .message-dialog-content .message-dialog-title.lightweight, .calendar-events-date-label, .calendar-today-day-label, .user-widget.vertical .user-widget-label {
+.workspace-switch-osd, .media-keys-osd, .autorun-dialog .dialog-content-box .autorun-dialog-subheading, .message-dialog-content .message-dialog-title.lightweight, .calendar-events-date-label, .calendar-today-day-label, .user-widget.vertical .user-widget-label {
   font-weight: 700;
   font-size: 1.182em; }
 
@@ -234,7 +234,7 @@ stage {
   font-weight: 700;
   font-size: 1em; }
 
-.appmenu-application-button-description, .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .calendar-event-countdown, .caps-lock-warning-label {
+.appmenu-application-button-description, .autorun-dialog .dialog-content-box .autorun-dialog-description, .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .calendar-event-countdown, .caps-lock-warning-label {
   font-weight: 400;
   font-size: 0.818em; }
 
@@ -1255,9 +1255,17 @@ StScrollBar StButton#hhandle {
   .dialog-list .dialog-list-scrollview {
     max-height: 200px; }
   .dialog-list .dialog-list-box {
-    spacing: 1em; }
+    spacing: 1em;
+    border-radius: 0.6em; }
     .dialog-list .dialog-list-box .dialog-list-item {
-      spacing: 1em; }
+      spacing: 1em;
+      border-radius: 0.6em;
+      padding: 4px 8px;
+      transition-duration: 100ms; }
+      .dialog-list .dialog-list-box .dialog-list-item:hover {
+        background-color: rgba(54, 65, 112, 0.25); }
+      .dialog-list .dialog-list-box .dialog-list-item:selected {
+        background-color: #cc3700; }
       .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-title {
         font-weight: bold; }
       .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
@@ -1337,6 +1345,30 @@ StScrollBar StButton#hhandle {
         spacing: 8px; }
       .audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-icon {
         icon-size: 64px; }
+
+.autorun-dialog .dialog-content-box .dialog-list .dialog-list-box, .processes-dialog .dialog-content-box .dialog-list .dialog-list-box {
+  background-color: rgba(22, 27, 46, 0.7);
+  spacing: 0; }
+  .autorun-dialog .dialog-content-box .dialog-list .dialog-list-box .dialog-list-item, .processes-dialog .dialog-content-box .dialog-list .dialog-list-box .dialog-list-item {
+    border-radius: 0; }
+    .autorun-dialog .dialog-content-box .dialog-list .dialog-list-box .dialog-list-item:first-child, .processes-dialog .dialog-content-box .dialog-list .dialog-list-box .dialog-list-item:first-child {
+      border-radius: 0.6em 0.6em 0 0; }
+    .autorun-dialog .dialog-content-box .dialog-list .dialog-list-box .dialog-list-item:last-child, .processes-dialog .dialog-content-box .dialog-list .dialog-list-box .dialog-list-item:last-child {
+      border-radius: 0 0 0.6em 0.6em; }
+
+.autorun-dialog {
+  min-width: 30em; }
+  .autorun-dialog .dialog-content-box {
+    margin-top: 2px;
+    margin-bottom: 6px;
+    spacing: 6px;
+    max-width: 28em; }
+    .autorun-dialog .dialog-content-box .autorun-dialog-heading {
+      text-align: center; }
+    .autorun-dialog .dialog-content-box .autorun-dialog-subheading {
+      text-align: center; }
+    .autorun-dialog .dialog-content-box .autorun-dialog-description {
+      text-align: center; }
 
 .workspace-thumbnails {
   spacing: 1.6em; }
