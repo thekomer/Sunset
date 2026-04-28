@@ -1370,6 +1370,9 @@ StScrollBar StButton#hhandle {
     .autorun-dialog .dialog-content-box .autorun-dialog-description {
       text-align: center; }
 
+.popup-dialog .dialog {
+  box-shadow: 0 -1px #cc3700; }
+
 .workspace-thumbnails {
   spacing: 1.6em; }
 
