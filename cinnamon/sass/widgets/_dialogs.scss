@@ -41,8 +41,17 @@
   .dialog-list-box {
     spacing: 1em;
 
+    border-radius: $border_radius;
+
     .dialog-list-item {
       spacing: 1em;
+
+      border-radius: $border_radius;
+      padding: $base_padding $base_padding * 2;
+      transition-duration: 100ms;
+
+      &:hover { background-color: $hover_bg_color; }
+      &:selected { background-color: $accent_bg_color; }
 
       .dialog-list-item-title { font-weight: bold; }
       .dialog-list-item-description {
