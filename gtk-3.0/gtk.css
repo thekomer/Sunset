@@ -1298,15 +1298,28 @@ popover.background radiobutton.flat arrow {
 
 button.color {
   padding: 4px; }
-  button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
+  button.color colorswatch:only-child,
+  button.color colorswatch:only-child overlay {
     border-radius: 0; }
 
-notebook button, list button, .view button, iconview button, popover button {
+notebook button,
+list button,
+.view button,
+iconview button,
+popover button {
   box-shadow: none; }
-  notebook button:backdrop, list button:backdrop, .view button:backdrop, iconview button:backdrop, popover button:backdrop {
+  notebook button:backdrop,
+  list button:backdrop,
+  .view button:backdrop,
+  iconview button:backdrop,
+  popover button:backdrop {
     box-shadow: none; }
 
-notebook .linked > button, list .linked > button, .view .linked > button, iconview .linked > button, popover .linked > button {
+notebook .linked > button,
+list .linked > button,
+.view .linked > button,
+iconview .linked > button,
+popover .linked > button {
   box-shadow: none; }
 
 /***********
@@ -7112,9 +7125,11 @@ SheetStyleDialog.unity-force-quit {
   color: rgba(191, 195, 205, 0.8);
   background-color: #131727; }
 
-/* * * * * * * * * * * * *
- * Cinnamon screensaver  *
- * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * *
+ * Cinnamon screensaver                *
+ *  - used up to Cinnamon v6.6         *
+ *  - GTK standalone version - backup  *
+ * * * * * * * * * * * * * * * * * * * */
 .csstage .unlockbox {
   color: #bfc3cd;
   font-size: 1.2em;
