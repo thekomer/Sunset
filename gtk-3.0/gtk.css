@@ -6325,6 +6325,13 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #cc3700; }
 
+/*************
+ * Evolution *
+ *************/
+MessageList, *, button:link,
+button:visited {
+  -MessageList-new-mail-fg-color: cyan; }
+
 /**********************
  * Xfce4 Apps Heading *
  **********************/

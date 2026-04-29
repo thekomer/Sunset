@@ -209,3 +209,11 @@
     &:hover { border-color: $selected_bg_color; }
   }
  }
+/*************
+ * Evolution *
+ *************/
+
+ // hack: new messages getting cyan color
+ MessageList,* {
+        -MessageList-new-mail-fg-color: cyan;
+}
