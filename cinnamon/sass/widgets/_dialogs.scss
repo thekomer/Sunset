@@ -175,7 +175,7 @@
     border-radius: $border_radius; // $base_border_radius;
     padding: $base_padding $base_padding * 6;
 
-    // special case the :insensitive button sinc we want
+    // special case the :insensitive button sync we want
     // the label to be the normal color when there are
     // not multiple users
     &:insensitive { color: $fg_color; }
