@@ -1371,7 +1371,7 @@ StScrollBar StButton#hhandle {
       text-align: center; }
 
 .popup-dialog .dialog {
-  box-shadow: 0 -1px #cc3700; }
+  box-shadow: inset 0.2em 0em #cc3700; }
 
 .workspace-thumbnails {
   spacing: 1.6em; }
