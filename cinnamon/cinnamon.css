@@ -2455,3 +2455,33 @@ StScrollBar StButton#hhandle {
   .grouped-window-list-thumbnail-menu .separator {
     width: 1px;
     background-color: rgba(209, 212, 219, 0.05); }
+
+.grouped-window-list-scrollbox-scrollview.vfade {
+  -st-vfade-offset: 68px;
+  -st-hfade-offset: 0; }
+
+.grouped-window-list-scrollbox-scrollview.hfade {
+  -st-hfade-offset: 68px;
+  -st-vfade-offset: 0; }
+
+.grouped-window-list-scrollbox-button {
+  transition-duration: 100ms; }
+  .grouped-window-list-scrollbox-button-icon {
+    icon-size: 1.091em;
+    color: inherit; }
+  .grouped-window-list-scrollbox-button-start {
+    margin-right: 1px; }
+    .grouped-window-list-scrollbox-button-start.vertical {
+      margin-right: 0;
+      margin-bottom: 1px; }
+  .grouped-window-list-scrollbox-button-end {
+    margin-left: 1px; }
+    .grouped-window-list-scrollbox-button-end.vertical {
+      margin-left: 0;
+      margin-top: 1px; }
+  .grouped-window-list-scrollbox-button:hover {
+    background-color: rgba(54, 65, 112, 0.25);
+    color: #D1D4DB; }
+  .grouped-window-list-scrollbox-button:active {
+    background-color: #364170;
+    color: #D1D4DB; }
