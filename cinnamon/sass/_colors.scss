@@ -40,13 +40,15 @@ $light_bg_color: lighten($bg_color, 8%); // used only for $buttons_bg_color
 $lighter_bg_color: lighten($bg_color, 12%); // $hover_button_bg_color, applet corner bar background,
 $lightest_bg_color: lighten($bg_color, 24%); // hover bg color, active button bg, checked button bg, keyboard arrow borders,
 
+
 $light_base_color: lighten($base_color, 8%);
 
-// selected and hover colors
+// selected, hover and active colors
 $selected_fg_color: #ffffff;
 $selected_bg_color: $accent_bg_color;
 $hover_fg_color: #ffffff;
 $hover_bg_color: transparentize($lightest_bg_color, 0.75); // $lighter_bg_color;
+$active_bg_color: $lightest_bg_color;
 
 // colored elements
 $error_color: mix($fg_color, $red, 50%); //$lightred; //#e4705b;
