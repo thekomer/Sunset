@@ -240,6 +240,7 @@ $appmenu_large_padding: 0.8em; // 15px;
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 //FIXME: edit tile style from mint-y theme - vno cush thing in cinnamon theme
+//FIXME: entry border not highlighted while entry selected (probably by using @extend %entry;)
 
 $menu_outer_padding: 0.5em;
 $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
@@ -395,3 +396,190 @@ $menu_outer_border_radius: $border_radius; //$base_border_radius * 1.25;
   icon-size: $scalable_icon_size;
   color: $accent_fg_color;
 }
+
+//FIXME: needs revaluating before theme is built
+
+/* * * * * * * * * *
+ * cinnamenu11@cjb *
+ * * * * * * * * * */
+
+/*css nodes used by Cinnamenu
+┌──.menu-background
+.cinnamenu ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│┌──.menu-applications-outer-box .menu-applications-box───────────────────────────────────────────────────────────────────────────────────
+│|┌──.menu-favorites-box─────────────────┐┌──.menu-categories-scrollbox .vfade──┐┌──.menu-applications-scrollbox .vfade───────────────────
+│││┌──.menu-favorites-scrollbox .vfade──┐││┌──.menu-categories-box─────────────┐││┌──.menu-applications-inner-box .menu-applications-box──
+││││                                    ││││                                   ││││┌──.menu-applications-header-text───┐
+││││                                    ││││                                   ││││└───────────────────────────────────┘
+││││                                    ││││                                   ││││┌──.menu-applications-grid-box (not list view)──┐
+││││                                    ││││                                   ││││└───────────────────────────────────
+││┌──.menu-search-box─────────
+│││┌──#menu-search-entry──────────
+*/
+
+.menu {
+
+  &-favorites {
+  // session/favorites box (or none dependant on user options.)
+
+    &-box {
+      border-radius: $border_radius;
+    }
+    /* The Sidebar buttons (border radius fixed in sidebar.js) */
+    &-scrollbox { /* empty */ } /*and vfade*/
+    &-button {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      spacing: 0.6px;   /* space between icon + label */
+      &:hover { /* empty */ }
+    }
+  }
+
+  &-search {
+  // search box
+  // when search width = full menu width -> symmetry is hardcoded
+    &-box { /* empty */ }
+    &-entry-icon { /* empty */ }
+  }
+
+  &-categories {
+  // categories box
+    &-scrollbox { /* empty */ } /*and .vfade*/
+    &-box { /* empty */ }
+      // Note: when the favorites box is not on the left of the menu,
+      // menu-categories-box left padding will be reduced so that
+      // menu-categories-box left padding + menu-applications-outer-box
+      // left padding does not exceed 20px.
+      // Use menu-categories-box left margin to override
+  }
+
+  &-category {
+    &-button {
+      /* empty */
+      &:hover {  /*Only used when "activate categories on click" option is set.*/
+        background-color: rgba(128,128,128,0.2);
+      }
+      &:highlighted {
+        font-weight: bold;
+      }
+    }
+    &-label {}
+    &-selected {
+      /* empty */
+      &:highlighted {
+        font-weight: bold;
+      }
+    }
+    &-greyed {}
+  }
+
+  &-applications {
+  // applications box
+    &-scrollbox {} /*and .vfade*/
+    &-inner-box {} /*and .menu-applications-box for compatibility with old themes.*/
+    &-grid-box {
+      /*only used in grid view. There is no list view equivalent.*/
+      .menu-application-button,
+      .menu-application-button-selected {
+        /*remove l/r padding in grid view to allow maximum space for label*/
+        padding-top: 2px;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 8px;
+      }
+      .menu-application-button-label {
+        padding-top: 2px;
+        padding-right: 1px;
+        padding-left: 2px;
+        text-align: center;
+      }
+    }
+    &-header-text { /*(shows folder name, "no recent files", error messages etc)*/
+      font-weight: bold;
+      font-size: 110%;
+    }
+    &-subheading {
+      font-weight: bold;
+      font-size: 100%;
+      padding-top: 0.3em;
+      padding-left: 0.3em;
+      /*text-align: center;*//*known bug: causes label to jump about when resizing menu*/
+      &-clickable { /*emoji categories*/
+        font-size: 100%;
+      }
+    }
+
+  }
+
+  &-application {  /*Note: in grid view mode, top & bottom padding hard-codded to 8px */
+
+    &-button {
+      border-radius: 8px;
+
+      &:highlighted {
+      // Used to highlight newly installed apps in list or grid view
+        font-weight: bold;
+      }
+
+      &-label {}
+
+      &-selected {
+        &:highlighted {
+        // Used to highlight newly installed apps in list or grid view
+        font-weight: bold;
+        }
+      }
+
+    }
+  }
+}
+
+#menu {
+  &-search-entry {
+    border: none;
+    box-shadow: none;
+    background-image: none;
+    background-color: rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 8px 14px;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      background-image: none;
+      background-color: rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 8px 14px;
+    }
+  }
+}
+
+.cinnamenu {
+  &.menu-background {
+    border-radius: 14px;
+    padding-bottom: 9px;
+    box-shadow: 0 2px 15px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom:9px;
+  }
+
+  &.menu-background2 {
+    border-radius: 14px;
+    padding-bottom: 9px;
+    box-shadow: 0 2px 15px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/*---context menu---------------------------
+(.menu)*/
+
+/*---whole menu-----------------------------
+.cinnamenu (and .menu-background)
+(.menu)*/
+
+/*
+Note: You can make a style to apply to Cinnamenu applet but not other menu applets by
+preceding the class with ".cinnamenu ". Example:
+.cinnamenu .menu-application-button {
+    //this style will only apply to Cinnamenu applet.
+}
+*/
