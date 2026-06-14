@@ -1,8 +1,10 @@
-## Depreciation notice:
-
-Due to the lack of resources, this repo is deprecated.
-I will rebuild this theme later on with different base because - in my opinion - one of current base sources does not comply with GPL guidelines.
-'Till then, fill free to use it on old-stable linux releases. It works just fine for me on debian 11. **Thank you for your patience**.
+> [!WARNING]
+> ## Depreciation notice:
+> In my opinion - one of current base sources does not comply with GPL guidelines. I will have to rebase my theme.
+> Due to the lack of current resources, this repo is deprecated.
+>
+> Some commits are still coming for cinnamon, but GTK part is completely unmaintained.
+> I will rebuild this theme later on with different base. 'Till then, fill free to use it on old-stable linux releases. It works just fine for me on LMDE7 with Cinnamon. **Thank you for your patience**.
 
 * Theme rebuild **ETA: unknown!**
 * [placeholder repo](https://github.com/thekomer/Sunset-GTK)
